@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Bienvenid@s\n\n\nEl presente espacio recopila teor\u00eda y ejercicios pr\u00e1cticos sobre temas relacionados con la implementaci\u00f3n de redes y servicios utilizando, siempre que sea posible, software de c\u00f3digo abierto. Los contenidos intentan cubrir los objetivos propuestos en el dise\u00f1o curricular de la materia \nInstalaci\u00f3n, mantenimiento y reparaci\u00f3n de redes inform\u00e1ticas\n correspondiente al s\u00e9ptimo a\u00f1o de estudios de la escuela secundaria t\u00e9cnica, con orientaci\u00f3n \nT\u00e9cnico en Inform\u00e1tica Profesional y Personal\n, en Buenos Aires, Argentina. \n\n\nSoftware a emplear\n\n\nLas clases se dictar\u00e1n en un laboratorio virtual local ubicado en el instituto. No obstante, es posible obtener las herramientas de software que se utilizar\u00e1n a lo largo de la cursada: \n\n\n\n\nUbuntu Desktop 16.04 LTS - 32 bits\n\n\nUbuntu Desktop 16.04 LTS - 64 bits\n\n\nUbuntu Server 16.04 LTS - 32 bits\n\n\nUbuntu Server 16.04 LTS - 64 bits\n\n\n\n\n\n\nAtenci\u00f3n\n\n\nSitio en construcci\u00f3n", 
+            "text": "Bienvenid@s\n\n\nEl presente espacio recopila teor\u00eda y ejercicios pr\u00e1cticos sobre temas relacionados con la implementaci\u00f3n de redes y servicios utilizando, siempre que sea posible, software de c\u00f3digo abierto. Los contenidos intentan cubrir los objetivos propuestos en el dise\u00f1o curricular de la materia \nInstalaci\u00f3n, mantenimiento y reparaci\u00f3n de redes inform\u00e1ticas\n correspondiente al s\u00e9ptimo a\u00f1o de estudios de la escuela secundaria t\u00e9cnica, con orientaci\u00f3n \nT\u00e9cnico en Inform\u00e1tica Profesional y Personal\n, en Buenos Aires, Argentina. \n\n\nSistema operativo utilizado en las pr\u00e1cticas\n\n\nLas clases se dictar\u00e1n en un laboratorio virtual local ubicado en el instituto. No obstante, es posible obtener las herramientas de software que se utilizar\u00e1n a lo largo de la cursada, a fin de reproducir las pr\u00e1cticas en el hogar: \n\n\n\n\nUbuntu Desktop 16.04.4 LTS\n \n\n\nTorrent: \n[32 bits]\n \n[64 bits]\n \n\n\nISO: \n[32 bits]\n \n[64 bits]\n\n\n\n\n\n\nUbuntu Server 16.04.4 LTS\n \n\n\nTorrent: \n[32 bits]\n \n[64 bits]\n\n\nISO: \n[32 bits]\n \n[64 bits]", 
             "title": "Inicio"
         }, 
         {
@@ -11,9 +11,9 @@
             "title": "Bienvenid@s"
         }, 
         {
-            "location": "/#software-a-emplear", 
-            "text": "Las clases se dictar\u00e1n en un laboratorio virtual local ubicado en el instituto. No obstante, es posible obtener las herramientas de software que se utilizar\u00e1n a lo largo de la cursada:    Ubuntu Desktop 16.04 LTS - 32 bits  Ubuntu Desktop 16.04 LTS - 64 bits  Ubuntu Server 16.04 LTS - 32 bits  Ubuntu Server 16.04 LTS - 64 bits    Atenci\u00f3n  Sitio en construcci\u00f3n", 
-            "title": "Software a emplear"
+            "location": "/#sistema-operativo-utilizado-en-las-practicas", 
+            "text": "Las clases se dictar\u00e1n en un laboratorio virtual local ubicado en el instituto. No obstante, es posible obtener las herramientas de software que se utilizar\u00e1n a lo largo de la cursada, a fin de reproducir las pr\u00e1cticas en el hogar:    Ubuntu Desktop 16.04.4 LTS    Torrent:  [32 bits]   [64 bits]    ISO:  [32 bits]   [64 bits]    Ubuntu Server 16.04.4 LTS    Torrent:  [32 bits]   [64 bits]  ISO:  [32 bits]   [64 bits]", 
+            "title": "Sistema operativo utilizado en las pr\u00e1cticas"
         }, 
         {
             "location": "/ssh/authKey/", 
