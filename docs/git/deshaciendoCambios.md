@@ -1,6 +1,23 @@
 ## Deshaciendo cosas en Git
 En cualquier momento puedes querer deshacer algo. En esta sección veremos algunas herramientas básicas para deshacer cambios.
 
+### Reenviar una comfirmación (_commit_)
+Nos puede ocurrir que confirmamos un cambio antes de tiempo, olvidando agregar alguna modificación, un archivo o nos equivocamos en el mensaje de la confirmación. 
+
+Si deseamos desahacer la confirmación, podemos reconfirmarla con la opción --amend:
+
+```bash
+git commit --amend
+```
+Por ejemplo, si enviamos el _commit_ y luego nos damos cuenta que olvidamos incluir un archivo en el mismo, podemos hacerlo de la siguiente manera: 
+
+```bash
+$ git commit -m 'Mensaje del commit'
+$ git add archivoOlvidado
+$ git commit --amend
+```
+
+Al final terminaremos con un solo _commit_ (el segundo _commit_ reemplazará al primero)
 
 ### Deshacer el commit perdiendo las modificaciones
 Supongamos que queremos deshacer el último commit. En este caso, queremos desechar los cambios introducidos en ese commit. Para ello, ejecutamos el comando:
