@@ -1228,8 +1228,9 @@
                 
                 
                 <h1 id="ignorando-archivos-o-carpetas">Ignorando archivos o carpetas<a class="headerlink" href="#ignorando-archivos-o-carpetas" title="Permanent link">&para;</a></h1>
-<p>Suele ocurrir que no desees que git realice el seguimiento de ciertos archivos o carpetas, ya sea porque son archivos generados automáticamente, como archivos de log, o archivos generados por tu compilador. Para estos casos podés crear un archivo llamado <code>.gitignore</code>, en el que podrás incluir una lista de dichos recursos. </p>
-<p>Las reglas para los patrones que pueden ser incluidos en el archivo <code>.gitignore</code> son:</p>
+<p>Suele ocurrir que no desees que git realice el seguimiento de ciertos archivos o carpetas, ya sea porque son archivos generados automáticamente, como archivos de log, o archivos generados por tu compilador. </p>
+<p>Para estos casos podés crear un archivo llamado <code>.gitignore</code> en la raíz de la carpeta de nuestro proyecto, en el que podrás incluir una lista de dichos recursos. </p>
+<p>Las reglas para crear un archivo <code>.gitignore</code> son:</p>
 <ul>
 <li>Las líneas en blanco, o que comienzan por #, son ignoradas.</li>
 <li>Podés utilizar <a href="https://es.wikipedia.org/wiki/Expresi%C3%B3n_regular">expresiones regulares</a> estándar.</li>
@@ -1261,7 +1262,7 @@ doc/*.txt
 doc/**/*.txt
 </pre></div>
 
-<p>Donde como se puede apreciar, puede emplearse el uso de expresiones regulares como se explicó mas arriba: </p>
+<p>Se puede apreciar el uso de expresiones regulares como se explicó mas arriba. Podemos ampliar más este concepto, apelando a otro ejemplo: </p>
 <div class="codehilite"><pre><span></span>*.<span class="o">[</span>abc<span class="o">]</span>
 <span class="o">[</span><span class="m">0</span>-9<span class="o">]</span>.*
 *.htm?
