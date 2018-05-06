@@ -950,8 +950,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -964,6 +964,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1012,6 +1024,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1311,18 +1335,15 @@
 <div class="codehilite"><pre><span></span>mkdir /home/usuario/public_html
 </pre></div>
 
-
 <p>El paso siguiente será agregar en el directorio el contenido del sitio web como páginas web, imágenes, archivos de estilo, sripts, etc. Recordar que debe existir necesariamente algún archivo índice (por ejemplo, <code>index.html</code> o <code>index.php</code> o con cualquier otra extensión habilitada en la configuración del servidor). </p>
 <h2 id="configurando-el-host-virtual">Configurando el Host Virtual<a class="headerlink" href="#configurando-el-host-virtual" title="Permanent link">&para;</a></h2>
 <p>Para iniciar la configuración de nuestro <em>host virtual</em> nos dirigiremos a la siguiente carpeta: </p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> /etc/apache2/sites-available
 </pre></div>
 
-
 <p>Una vez ubicados en el directorio correspodiente nos disponemos a crear el <strong>archivo de configuracion del Host Virtual</strong> (el archivo en cuestión puede llamarse de cualquier forma, pero debe finalizar necesariamente con la extension <code>.conf</code>)</p>
 <div class="codehilite"><pre><span></span>nano misitio.lan.conf
 </pre></div>
-
 
 <p>Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemplo simple de configuracion para el sitio ficticio <code>misitio.lan</code>:</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
@@ -1348,7 +1369,6 @@
 <span class="nt">&lt;/VirtualHost&gt;</span>
 </pre></div>
 
-
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Los archivos de <em>log</em> son archivos en los que el sistema guarda información sobre el funcionamiento de algún servicio determinado indicando errores, advertencias, accesos, etc. En distribuciones GNU/Linux, se encuentran alojados bajo la ruta <code>/var/log/</code>. En el ejemplo, se ha optado por guardar dichos archivos en la carpeta home del usuario. </p>
@@ -1358,12 +1378,10 @@
 <div class="codehilite"><pre><span></span>sudo a2ensite misitio.lan.conf
 </pre></div>
 
-
 <p>Este comando creará un <a href="https:_es.wikipedia.org/wiki/Enlace_simb%C3%B3lico">enlace simbólico</a> del archivo <code>misitio.lan.conf</code> desde la carpeta <code>/etc/apache2/sites-available</code> hacia la carpeta <code>/etc/apache2/sites-enabled</code>. </p>
 <p>Por último, para que Apache haga efectivo todos los cambios, lo reiniciamos: </p>
 <div class="codehilite"><pre><span></span>sudo service apache2 restart
 </pre></div>
-
 
 <h2 id="accediendo-al-sitio-web">Accediendo al sitio web<a class="headerlink" href="#accediendo-al-sitio-web" title="Permanent link">&para;</a></h2>
 <p>El último paso que tendremos que dar para acceder a nuestro sitio web será definir cuál será el <a href="../../dns/archivoHosts/">método de resolución de su nombre de dominio</a>. </p>

@@ -896,8 +896,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -910,6 +910,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -958,6 +970,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1190,7 +1214,27 @@
                 
                 <p>La resolución inversa traduce las direcciones IP en los nombres correspondientes de los sistemas.</p>
 <p>La resolución inversa se configura en nuestro ejemplo en el archivo <code>/etc/bind/db.1.168.192</code></p>
-<div class="codehilite"><pre><span></span><span class="err">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">;</span>
 <span class="err">;</span> <span class="nb">BIND</span> - Archivo de zona para <span class="m">192</span>.168.0.xxx
 <span class="err">;</span>
 
@@ -1212,12 +1256,11 @@
 <span class="err">111</span>             <span class="nb">PTR</span>     mail.itel.lan.
 <span class="err">1</span>               <span class="nb">PTR</span>     router.itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <p>Verificamos que el archivo de configuración de la zona <code>0.168.192.in-addr.arpa</code> no contenga errores:</p>
 <div class="codehilite"><pre><span></span>named-checkzone <span class="m">0</span>.168.192.in-addr.arpa /etc/bind/db.0.168.192
 </pre></div>
-
 
 <p>Y reiniciamos el servicio:</p>
 <div class="codehilite"><pre><span></span>sudo service bind9 restart

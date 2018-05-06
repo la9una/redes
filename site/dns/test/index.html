@@ -986,8 +986,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -1000,6 +1000,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1048,6 +1060,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1377,12 +1401,10 @@
 <div class="codehilite"><pre><span></span>sudo apt install dnsutils
 </pre></div>
 
-
 <h3 id="sintaxis-basica">Sintaxis básica<a class="headerlink" href="#sintaxis-basica" title="Permanent link">&para;</a></h3>
 <p>La sintaxis del comando es la siguiente:</p>
 <div class="codehilite"><pre><span></span><span class="nb">dig</span> [@server] name [type]
 </pre></div>
-
 
 <p>Donde:</p>
 <ul>
@@ -1394,7 +1416,6 @@
 <p>Podemos consultar información DNS sobre el dominio <code>google.com.ar</code></p>
 <div class="codehilite"><pre><span></span>dig google.com.ar
 </pre></div>
-
 
 <p>Y obtendremos una salida similar a la siguiente: </p>
 <div class="codehilite"><pre><span></span><span class="err">;</span> <span class="nt">&lt;&lt;&gt;</span><span class="err">&gt;</span> <span class="nb">DiG</span> <span class="m">9</span>.10.3-P4-Ubuntu &lt;&lt;&gt;&gt; google.com.ar
@@ -1417,7 +1438,6 @@
 <span class="err">;;</span> <span class="nb">MSG</span> SIZE  rcvd: <span class="m">58</span>
 </pre></div>
 
-
 <p>Donde: </p>
 <ul>
 <li>Todas las líneas que inician con “;” son comentarios</li>
@@ -1434,7 +1454,6 @@ dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</
 dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</span>txt<span class="o">]</span>    <span class="c1"># txt record</span>
 dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</span>any<span class="o">]</span>    <span class="c1"># todos los registros</span>
 </pre></div>
-
 
 <h3 id="modificando-las-consultas">Modificando las consultas<a class="headerlink" href="#modificando-las-consultas" title="Permanent link">&para;</a></h3>
 <p><code>dig</code> permite, mediante el caracter <code>+</code>, agregar o quitar información de la salida. Veamos algunas opciones interesantes:</p>
@@ -1466,7 +1485,6 @@ dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</
 <p>Para más opciones y documentación, nada mejor que leer el man:</p>
 <div class="codehilite"><pre><span></span>man dig
 </pre></div>
-
 
 <h2 id="nslookup">Nslookup<a class="headerlink" href="#nslookup" title="Permanent link">&para;</a></h2>
 <p>Nslookup es un programa utilizado para saber si el DNS está resolviendo correctamente los nombres y las IPs. Se utiliza con el comando nslookup, que funciona tanto en Windows como en UNIX para obtener la dirección IP conociendo el nombre, y viceversa.</p>

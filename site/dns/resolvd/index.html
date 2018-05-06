@@ -896,8 +896,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -910,6 +910,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -958,6 +970,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1190,7 +1214,38 @@
                 
                 <p>La resolución de nombres convierte los nombres de los sistemas en sus correspondientes direcciones IP. Para una zona <code>home.lan</code>, los nombres <code>server</code>, <code>virtual</code>, <code>ns</code> y <code>router</code> son asociados a sus respectivas direcciones IP. </p>
 <p>La base de datos para la resolución de nombres en la zona <code>home.lan</code> está guardada en el archivo <code>/etc/bind/db.home.lan</code>:</p>
-<div class="codehilite"><pre><span></span><span class="err">;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">;</span>
 <span class="err">;</span> <span class="nb">BIND</span> - Archivo de zona para itel.lan
 <span class="err">;</span>
 
@@ -1223,14 +1278,13 @@
 <span class="nb">www</span>             CNAME   virtual
 <span class="nb">ftp</span>             CNAME   virtual
 </pre></div>
-
+</td></tr></table>
 
 <p>El protocolo DNS permite también la creación de alias, o canonical names, identificados por el tipo de registro CNAME. Un alias es un nombre alternativo de un sistema.</p>
 <p>Al final del archivo podrán declararse algunos <em>aliases</em> donde: el sistema <code>server</code> pasará también a ser conocido (CNAME o canonical name) como <code>proxy</code> y el servidor <code>virtual</code> responderá también por los nombres <code>www</code> y <code>ftp</code>. </p>
 <p>Finalmente, verificamos que el fichero de configuración de la zona <code>itel.lan</code> no contenga errores</p>
 <div class="codehilite"><pre><span></span>sudo named-checkzone itel.lan /etc/bind/db.itel.lan
 </pre></div>
-
 
 <p>Y reiniciamos el servicio: </p>
 <div class="codehilite"><pre><span></span>sudo service bind9 restart

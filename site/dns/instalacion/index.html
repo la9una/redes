@@ -938,8 +938,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -952,6 +952,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1000,6 +1012,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1272,27 +1296,20 @@
                 
                   <h1>Instalación</h1>
                 
-                <p>Para instalar este paquete, lo haremos con <code>apt</code>, loguados como administradores: </p>
+                <p>Para instalar este paquete, lo haremos con <code>apt</code>, loguados como administradores: 
 <div class="codehilite"><pre><span></span>sudo apt-get install bind9 bind9-doc dnsutils
-</pre></div>
-
-
+</pre></div></p>
 <p>De esta forma instalaríamos los programas necesarios para disponer de un completo servidor DNS con <strong>bind</strong>. Tan solo será necesario configurarlo y ponerlo en marcha. </p>
 <h2 id="iniciando-el-servidor">Iniciando el servidor<a class="headerlink" href="#iniciando-el-servidor" title="Permanent link">&para;</a></h2>
 <p>Para iniciar el servidor simplemente ejecutamos en una terminal:</p>
-<div class="codehilite"><pre><span></span>sudo service bind9 start
+<p><div class="codehilite"><pre><span></span>sudo service bind9 start
 </pre></div>
-
-
-<p>Y para verificar que el servicio esté corriendo (presionamos la letra <code>q</code> para salir: </p>
-<div class="codehilite"><pre><span></span>sudo service bind9 status
+Y para verificar que el servicio esté corriendo (presionamos la letra <code>q</code> para salir: </p>
+<p><div class="codehilite"><pre><span></span>sudo service bind9 status
 </pre></div>
-
-
-<p>O bien, si queremos verificar que el demonio <em>named</em> esté escuchando en el puerto 53</p>
+O bien, si queremos verificar que el demonio <em>named</em> esté escuchando en el puerto 53</p>
 <div class="codehilite"><pre><span></span>sudo netstat -puntl <span class="p">|</span> grep named
 </pre></div>
-
 
 <p>De esta forma instalaríamos los programas necesarios para disponer de un completo servidor DNS con <strong>bind</strong>. Tan solo será necesario configurarlo y ponerlo en marcha. </p>
 <h2 id="principales-archivos-de-configuracion">Principales archivos de configuración<a class="headerlink" href="#principales-archivos-de-configuracion" title="Permanent link">&para;</a></h2>

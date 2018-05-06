@@ -889,8 +889,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -903,6 +903,18 @@
   <li class="md-nav__item">
     <a href="../repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1053,6 +1065,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
+    </a>
   </li>
 
         
@@ -1383,29 +1407,23 @@
 <h3 id="reenviando-una-comfirmacion-commit">Reenviando una comfirmación (<em>commit</em>)<a class="headerlink" href="#reenviando-una-comfirmacion-commit" title="Permanent link">&para;</a></h3>
 <p>Nos puede ocurrir que confirmamos un cambio antes de tiempo, olvidando agregar alguna modificación, un archivo o nos equivocamos en el mensaje de la confirmación. </p>
 <p>Si deseamos desahacer la confirmación, podemos reconfirmarla con la opción --amend:</p>
-<div class="codehilite"><pre><span></span>git commit --amend
+<p><div class="codehilite"><pre><span></span>git commit --amend
 </pre></div>
-
-
-<p>Por ejemplo, si enviamos el <em>commit</em> y luego nos damos cuenta que olvidamos incluir un archivo en el mismo, podemos hacerlo de la siguiente manera: </p>
-<div class="codehilite"><pre><span></span>$ git commit -m <span class="s1">&#39;Mensaje del commit&#39;</span>
+Por ejemplo, si enviamos el <em>commit</em> y luego nos damos cuenta que olvidamos incluir un archivo en el mismo, podemos hacerlo de la siguiente manera: </p>
+<div class="codehilite"><pre><span></span>$ git commit -m <span class="s2">&quot;Mensaje del commit&quot;</span>
 $ git add archivoOlvidado
 $ git commit --amend
 </pre></div>
-
 
 <p>Al final terminaremos con un solo <em>commit</em> (el segundo <em>commit</em> reemplazará al primero)</p>
 <h3 id="deshacer-un-archivo-preparado">Deshacer un archivo preparado<a class="headerlink" href="#deshacer-un-archivo-preparado" title="Permanent link">&para;</a></h3>
 <p>Puede ocurrir que luego de hacer un <em>commit</em> deseamos editar sólo un arhivo que incluimos en él. 
 Para estas ocasiones puede resultar útil el siguiente comando: </p>
-<div class="codehilite"><pre><span></span>git reset HEAD <span class="o">[</span>archivo<span class="o">]</span>
+<p><div class="codehilite"><pre><span></span>git reset HEAD <span class="o">[</span>archivo<span class="o">]</span>
 </pre></div>
-
-
-<p>Por ejemplo: </p>
+Por ejemplo: </p>
 <div class="codehilite"><pre><span></span>git reset HEAD index.html
 </pre></div>
-
 
 <p>El archivo <code>index.html</code> ahora está modificado y, nuevamente, no preparado.</p>
 <h3 id="deshacer-todos-los-archivos-preparados">Deshacer todos los archivos preparados<a class="headerlink" href="#deshacer-todos-los-archivos-preparados" title="Permanent link">&para;</a></h3>
@@ -1415,12 +1433,12 @@ Para estas ocasiones puede resultar útil el siguiente comando: </p>
 <div class="codehilite"><pre><span></span>git reset HEAD~1
 </pre></div>
 
-
 <p>Así que podemos seguir trabajando, corregir el bug o completar las modificaciones que habíamos dejado incompletas y hacer un nuevo commit con los cambios completos. </p>
 <div class="admonition done">
 <p class="admonition-title">Sintaxis<p>La sintaxis <code>HEAD~1</code> del comando anterior la podríamos traducir como “El commit al que está apuntando la rama activa menos uno”. Si hubiésemos ejecutado el comando:</p>
-<p><code>bash
-git reset --hard HEAD~3</code></p>
+<div class="codehilite"><pre><span></span>git reset --hard HEAD~3
+</pre></div>
+
 <p>en lugar de deshacer el último commit deshaceríamos tres commits hacia atrás.</p>
 </p>
 </div>
@@ -1429,14 +1447,12 @@ git reset --hard HEAD~3</code></p>
 <div class="codehilite"><pre><span></span>git reset --hard HEAD~1
 </pre></div>
 
-
 <p>Habremos descartado todas las modificaciones hechas antes del último <em>commit</em> incluido éste último. </p>
 <h3 id="deshacer-un-archivo-modificado">Deshacer un archivo modificado<a class="headerlink" href="#deshacer-un-archivo-modificado" title="Permanent link">&para;</a></h3>
 <p>¿Qué tal si te das cuenta que no querés mantener los cambios del archivo <code>index.html</code> del ejemplo anterior? ¿Cómo volver al estado en el que estaba en la última confirmación (o
 cuando estaba recién clonado, o como sea que haya llegado a tu directorio de trabajo)? Con la opción <code>checkout --</code>:</p>
 <div class="codehilite"><pre><span></span>git checkout -- index.html
 </pre></div>
-
 
 <p>De esta manera, el archivo <code>index.html</code> volverá al estado que tenía luego del último <em>commit</em></p>
 <h2 id="base-de-conocimiento">Base de conocimiento<a class="headerlink" href="#base-de-conocimiento" title="Permanent link">&para;</a></h2>
@@ -1503,13 +1519,13 @@ cuando estaba recién clonado, o como sea que haya llegado a tu directorio de tr
           </a>
         
         
-          <a href="../etiquetas/" title="Etiquetado" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../logs/" title="Historial de confirmaciones" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                Etiquetado
+                Historial de confirmaciones
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

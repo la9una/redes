@@ -887,8 +887,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -901,6 +901,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -949,6 +961,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1392,7 +1416,6 @@
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> c:<span class="se">\P</span>rogram Files<span class="se">\N</span>SClient++
 </pre></div>
 
-
 <div class="admonition tip">
 <p class="admonition-title">Acceder a la carpeta NSClient++ desde la terminal<p>Podemos desplazarnos con el mouse hasta la carpeta en cuestión y una vez allí, copiar y pegar la ruta completa hacia la misma desde la barra de direcciones. </p>
 </p>
@@ -1400,7 +1423,6 @@
 <p>Y para cargar la configuración completa del cliente ejecutamos en la consola de Windows: </p>
 <div class="codehilite"><pre><span></span>nscp settings --generate --add-defaults --load-all
 </pre></div>
-
 
 <div class="admonition note">
 <p class="admonition-title">Salida del comando<p>El comando, en caso de ser correcto, no produce ninguna salida. Tampoco debemos preocuparnos si leemos el mensaje “Failed to register plugin”. </p>
@@ -1410,7 +1432,6 @@
 <p>Con un editor de texto plano serio (como Notepad++, Sublime Text, Visual Studio Code, Brackets, etc. ¡<em>Notepaders</em>, abstenerse!) abrimos el archivo <code>nsclient.ini</code> ubicado en la carpeta de instalación del programa. En este ejemplo, usamos <em>Notepad++</em>:</p>
 <div class="codehilite"><pre><span></span>start notepad++ nsclient.ini
 </pre></div>
-
 
 <div class="admonition note">
 <p class="admonition-title">Abrir el editor en modo gráfico<p>Si no deseamos usar la termial, podemos abrir el editor de texto en <strong>modo administrador</strong> y luego el archivo <code>nsclient.ini</code> ubicado, como se indicó mas arriba, en la carpeta de instalación del programa. </p>
@@ -1448,7 +1469,6 @@
 <span class="nv">NRPEServer</span> <span class="o">=</span> enabled
 </pre></div>
 
-
 <h3 id="verificando-que-nsclient-se-este-ejecutando">Verificando que NSClient++ se esté ejecutando<a class="headerlink" href="#verificando-que-nsclient-se-este-ejecutando" title="Permanent link">&para;</a></h3>
 <p>En Windows abrimos el diálogo <em>Ejecutar</em> pulsando las teclas <code>Windows</code> + <code>r</code> y ejecutamos <code>services.msc</code></p>
 <p><img alt="Servicios Windows" src="../imgNagios/services_01.png" /></p>
@@ -1462,22 +1482,18 @@
 <div class="codehilite"><pre><span></span>net stop nscp
 </pre></div>
 
-
 <p>Y para iniciarlo: </p>
 <div class="codehilite"><pre><span></span>net start nscp
 </pre></div>
-
 
 <h2 id="configurando-nsclient-en-el-servidor-nagios">Configurando NSClient++ en el servidor Nagios<a class="headerlink" href="#configurando-nsclient-en-el-servidor-nagios" title="Permanent link">&para;</a></h2>
 <p>Antes de continuar, es conveniente crear una copia de seguridad del archivo que modificaremos: </p>
 <div class="codehilite"><pre><span></span>sudo cp /etc/nagios-plugins/config/nt.cfg /etc/nagios-plugins/config/nt.cfg.original
 </pre></div>
 
-
 <p>Acto seguido, abrimos el archivo <strong>nt.cfg</strong>:  </p>
 <div class="codehilite"><pre><span></span>sudo vim /etc/nagios-plugins/config/nt.cfg
 </pre></div>
-
 
 <p>Y procederemos a modificar el archivo de tal manera que sólo debería quedarnos las siguientes líneas: </p>
 <div class="codehilite"><pre><span></span><span class="nb">define</span> command {
@@ -1485,7 +1501,6 @@
 <span class="nb">command_line</span>   <span class="sx">/usr/lib/nagios/plugins/check_nt</span> -H $HOSTADDRESS$ -p <span class="m">12489</span> -s contraseña -v $ARG1$ $ARG2$
 <span class="err">}</span>
 </pre></div>
-
 
 <p>Donde <strong>contraseña</strong>, es la clave elegida durante la instalación del agente NSClient++.</p>
 <p>Por último, tendremos que <a href="../configuracion/#verificando-la-configuracion-y-reiniciando-nagios">verificar la configuración y reiniciar el servidor Nagios</a> para guardar los cambios que hayamos introducido.</p>

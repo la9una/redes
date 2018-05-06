@@ -990,8 +990,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -1004,6 +1004,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1052,6 +1064,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1434,7 +1458,6 @@
 <div class="codehilite"><pre><span></span>sudo a2<span class="o">[</span>en<span class="p">|</span>dis<span class="o">]</span>mod nombreDelModulo
 </pre></div>
 
-
 <p>Donde: </p>
 <table>
 <thead>
@@ -1470,95 +1493,63 @@
 <div class="codehilite"><pre><span></span>sudo a2enmod userdir
 </pre></div>
 
-
 <p>En otras palabras, creará un <a href="https://es.wikipedia.org/wiki/Enlace_simb%C3%B3lico">enlace simbólico</a> del módulo <code>userdir</code> desde la carpeta  <code>/etc/apache2/mods-available</code> hacia la carpeta <code>/etc/apache2/mods-enabled</code>.</p>
 <h3 id="inicio-y-parada-del-servidor">Inicio y parada del servidor<a class="headerlink" href="#inicio-y-parada-del-servidor" title="Permanent link">&para;</a></h3>
 <p>Existen diversos comandos para gestionar el servidor web Apache. </p>
-<p><strong>Detener el servidor</strong></p>
+<p><strong>Detener el servidor</strong>
 <div class="codehilite"><pre><span></span>sudo systemctl stop apache2
-</pre></div>
-
-
-<p><strong>Iniciar el servidor</strong></p>
+</pre></div></p>
+<p><strong>Iniciar el servidor</strong>
 <div class="codehilite"><pre><span></span>sudo systemctl start apache2
-</pre></div>
-
-
-<p><strong>Reiniciar el servidor</strong></p>
+</pre></div></p>
+<p><strong>Reiniciar el servidor</strong>
 <div class="codehilite"><pre><span></span>sudo systemctl restart apache2
-</pre></div>
-
-
-<p><strong>Recargar la configuración del servidor (sin reiniciar)</strong></p>
+</pre></div></p>
+<p><strong>Recargar la configuración del servidor (sin reiniciar)</strong>
 <div class="codehilite"><pre><span></span>sudo systemctl reload apache2
-</pre></div>
-
-
-<p><strong>Estado del servidor</strong></p>
+</pre></div></p>
+<p><strong>Estado del servidor</strong>
 <div class="codehilite"><pre><span></span>sudo systemctl status apache2
-</pre></div>
-
-
-<p><strong>Verificar la configuración del servidor</strong></p>
+</pre></div></p>
+<p><strong>Verificar la configuración del servidor</strong>
 <div class="codehilite"><pre><span></span>sudo apache2ctl configtest
-</pre></div>
-
-
+</pre></div></p>
 <h4 id="compatibilidad-con-versiones-anteriores">Compatibilidad con versiones anteriores<a class="headerlink" href="#compatibilidad-con-versiones-anteriores" title="Permanent link">&para;</a></h4>
 <p>Las versiones más recientes del kernel de GNU/Linux adoptan el uso de <a href="https://es.wikipedia.org/wiki/Systemd">SystemD</a>. No obstante, versiones basadas en Debian anteriores a 2016, emplean el legendario <a href="https://es.wikipedia.org/wiki/System_V">SystemV</a>. Al momento de escribir esta documentación, en líneas generales, los sistemas basados en <strong>systemd</strong> conservan compatibilidad con <strong>systemV</strong>. Para el caso del servidor web Apache tenemos que: </p>
-<p><strong>Detener el servidor</strong></p>
+<p><strong>Detener el servidor</strong>
 <div class="codehilite"><pre><span></span>sudo service apache2 stop
 </pre></div>
-
-
-<p><strong>Iniciar el servidor</strong></p>
+<strong>Iniciar el servidor</strong>
 <div class="codehilite"><pre><span></span>sudo service apache2 start
 </pre></div>
-
-
-<p><strong>Reiniciar el servidor</strong></p>
+<strong>Reiniciar el servidor</strong>
 <div class="codehilite"><pre><span></span>sudo service apache2 restart
 </pre></div>
-
-
-<p><strong>Recargar la configuración del servidor (sin reiniciar)</strong></p>
+<strong>Recargar la configuración del servidor (sin reiniciar)</strong>
 <div class="codehilite"><pre><span></span>sudo service apache2 reload
-</pre></div>
-
-
+</pre></div></p>
 <h3 id="configurando-el-nombre-del-servidor">Configurando el <em>nombre</em> del servidor<a class="headerlink" href="#configurando-el-nombre-del-servidor" title="Permanent link">&para;</a></h3>
 <p>Al comprobar la configuración de Apache obtenemos el siguiente error:</p>
-<div class="codehilite"><pre><span></span>Set the <span class="s1">&#39;ServerName&#39;</span> directive globally to suppress this message 
+<p><div class="codehilite"><pre><span></span>Set the <span class="s1">&#39;ServerName&#39;</span> directive globally to suppress this message 
 Syntax OK
 </pre></div>
-
-
-<p>Para corregir esto, abrimos el archivo de configuración principal de Apache con nuestro editor de texto:</p>
-<div class="codehilite"><pre><span></span>sudo nano /etc/apache2/apache2.conf
+Para corregir esto, abrimos el archivo de configuración principal de Apache con nuestro editor de texto:</p>
+<p><div class="codehilite"><pre><span></span>sudo nano /etc/apache2/apache2.conf
 </pre></div>
-
-
-<p>Y agregamos al final del archivo la directiva <code>ServerName</code>, seguida del <strong>nombre de dominio</strong> o <strong>dirección IP</strong> de nuestro servidor web. Es decir: </p>
-<div class="codehilite"><pre><span></span><span class="nb">ServerName</span> dominio_del_servidor_o_IP 
+Y agregamos al final del archivo la directiva <code>ServerName</code>, seguida del <strong>nombre de dominio</strong> o <strong>dirección IP</strong> de nuestro servidor web. Es decir: </p>
+<p><div class="codehilite"><pre><span></span><span class="nb">ServerName</span> dominio_del_servidor_o_IP 
 </pre></div>
-
-
-<p>Guardamos y cerramos el archivo. Luego, para verificar que todo está bien (es decir, que no hay errores de sintaxis en el archivo de configuración de Apache):</p>
-<div class="codehilite"><pre><span></span>sudo apache2ctl configtest
+Guardamos y cerramos el archivo. Luego, para verificar que todo está bien (es decir, que no hay errores de sintaxis en el archivo de configuración de Apache):</p>
+<p><div class="codehilite"><pre><span></span>sudo apache2ctl configtest
 </pre></div>
-
-
-<p>Y como definimos la directiva global <code>ServerName</code>, veremos la siguiente salida: </p>
+Y como definimos la directiva global <code>ServerName</code>, veremos la siguiente salida: </p>
 <div class="codehilite"><pre><span></span><span class="nb">Output</span>
 Syntax OK
 </pre></div>
 
-
-<p>Por último, reiniciamos Apache para implementar los cambios:</p>
+<p>Por último, reiniciamos Apache para implementar los cambios:
 <div class="codehilite"><pre><span></span>sudo systemctl restart apache2
-</pre></div>
-
-
+</pre></div></p>
 <h2 id="php">PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h2>
 <p>El arcivo de configuración de PHP se llama <code>php.ini</code>. No existe un único archivo <code>php.ini</code>, más bien, existe un archivo <code>php.ini</code> para cada aplicación que lo utilice. </p>
 <table>
