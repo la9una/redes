@@ -943,6 +943,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#reenviando-una-comfirmacion-commit" title="Reenviando una comfirmación (commit)" class="md-nav__link">
+    Reenviando una comfirmación (commit)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-un-archivo-preparado" title="Deshacer un archivo preparado" class="md-nav__link">
+    Deshacer un archivo preparado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-un-archivo-modificado" title="Deshacer un Archivo Modificado" class="md-nav__link">
+    Deshacer un Archivo Modificado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#deshacer-el-commit-perdiendo-las-modificaciones" title="Deshacer el commit perdiendo las modificaciones" class="md-nav__link">
     Deshacer el commit perdiendo las modificaciones
   </a>
@@ -1219,6 +1240,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#reenviando-una-comfirmacion-commit" title="Reenviando una comfirmación (commit)" class="md-nav__link">
+    Reenviando una comfirmación (commit)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-un-archivo-preparado" title="Deshacer un archivo preparado" class="md-nav__link">
+    Deshacer un archivo preparado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-un-archivo-modificado" title="Deshacer un Archivo Modificado" class="md-nav__link">
+    Deshacer un Archivo Modificado
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#deshacer-el-commit-perdiendo-las-modificaciones" title="Deshacer el commit perdiendo las modificaciones" class="md-nav__link">
     Deshacer el commit perdiendo las modificaciones
   </a>
@@ -1271,6 +1313,42 @@
                 
                 <h2 id="deshaciendo-cosas-en-git">Deshaciendo cosas en Git<a class="headerlink" href="#deshaciendo-cosas-en-git" title="Permanent link">&para;</a></h2>
 <p>En cualquier momento puedes querer deshacer algo. En esta sección veremos algunas herramientas básicas para deshacer cambios.</p>
+<h3 id="reenviando-una-comfirmacion-commit">Reenviando una comfirmación (<em>commit</em>)<a class="headerlink" href="#reenviando-una-comfirmacion-commit" title="Permanent link">&para;</a></h3>
+<p>Nos puede ocurrir que confirmamos un cambio antes de tiempo, olvidando agregar alguna modificación, un archivo o nos equivocamos en el mensaje de la confirmación. </p>
+<p>Si deseamos desahacer la confirmación, podemos reconfirmarla con la opción --amend:</p>
+<div class="codehilite"><pre><span></span>git commit --amend
+</pre></div>
+
+
+<p>Por ejemplo, si enviamos el <em>commit</em> y luego nos damos cuenta que olvidamos incluir un archivo en el mismo, podemos hacerlo de la siguiente manera: </p>
+<div class="codehilite"><pre><span></span>$ git commit -m <span class="s1">&#39;Mensaje del commit&#39;</span>
+$ git add archivoOlvidado
+$ git commit --amend
+</pre></div>
+
+
+<p>Al final terminaremos con un solo <em>commit</em> (el segundo <em>commit</em> reemplazará al primero)</p>
+<h3 id="deshacer-un-archivo-preparado">Deshacer un archivo preparado<a class="headerlink" href="#deshacer-un-archivo-preparado" title="Permanent link">&para;</a></h3>
+<p>Puede ocurrir que luego de hacer un <em>commit</em> deseamos editar sólo un arhivo que incluimos en él. 
+Para estas ocasiones puede resultar útil el siguiente comando: </p>
+<div class="codehilite"><pre><span></span>git reset HEAD <span class="o">[</span>archivo<span class="o">]</span>
+</pre></div>
+
+
+<p>Por ejemplo: </p>
+<div class="codehilite"><pre><span></span>git reset HEAD index.html
+</pre></div>
+
+
+<p>El archivo <code>index.html</code> ahora está modificado y, nuevamente, no preparado.</p>
+<h3 id="deshacer-un-archivo-modificado">Deshacer un Archivo Modificado<a class="headerlink" href="#deshacer-un-archivo-modificado" title="Permanent link">&para;</a></h3>
+<p>¿Qué tal si te das cuenta que no querés mantener los cambios del archivo <code>index.html</code> del ejemplo anterior? ¿Cómo volver al estado en el que estaba en la última confirmación (o
+cuando estaba recién clonado, o como sea que haya llegado a tu directorio de trabajo)? Con la opción <code>checkout --</code>:</p>
+<div class="codehilite"><pre><span></span>git checkout -- index.html
+</pre></div>
+
+
+<p>De esta manera, el archivo <code>index.html</code> volverá al estado que tenía luego del último <em>commit</em></p>
 <h3 id="deshacer-el-commit-perdiendo-las-modificaciones">Deshacer el commit perdiendo las modificaciones<a class="headerlink" href="#deshacer-el-commit-perdiendo-las-modificaciones" title="Permanent link">&para;</a></h3>
 <p>Supongamos que queremos deshacer el último commit. En este caso, queremos desechar los cambios introducidos en ese commit. Para ello, ejecutamos el comando:</p>
 <div class="codehilite"><pre><span></span>git reset --hard HEAD~1
