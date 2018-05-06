@@ -127,6 +127,16 @@ git remote rm miapp
 ```
 
 ## 5. Recibiendo desde nuestros repositorios remotos
+Existen dos maneras de recibir contenido desde un repositorio remoto: 
+
+1. Mediante la combinación de los comandos `fetch` y `merge`
+2. Mediante el comando `pull`
+
+![Diferencia entre fetch-merge y pull](imgGit/fetchMergePull2.png)
+
+_Diferencia entre fetch-merge y pull_
+
+### 5.1. `fetch` y `merge`
 Para recuperar datos de tus repositorios remotos podemos ejecutar:
 
 ```bash
@@ -151,6 +161,7 @@ Estaremos en condiciones de verificar manualmente las diferencias. Para **fusion
 git merge origin/master
 ```
 
+### 5.2. `pull`
 Existe otra comando que combina, de una vez, las acciones de los comandos `fetch` y `merge`: el comando `pull`: 
 
 ```bash
@@ -159,7 +170,7 @@ git pull [nombreRepositorioRemoto] [rama]
 
 Al ejecutar `git pull`, por lo general se recupera la información del servidor remoto que clonamos, y automáticamente se intenta unir con el código con el que estamos trabajando actualmente.
 
-!!!fail "Error al intentar fusionar repositorios"
+!!!fail "Error al intentar fusionar repositorios de orígenes diferentes"
 		Si creamos un repositorio local y agregamos un origen (repositorio) externo, al intentar fusionar datos entre ambos obtendremos el siguiente error: 
 
 		`fatal: refusing to merge unrelated histories` 
@@ -168,10 +179,30 @@ Al ejecutar `git pull`, por lo general se recupera la información del servidor 
 
 		`git pull [nombreRemoto] [rama] --allow-unrelated-histories`
 
+### 5.3. Resolución de conflictos
+En múltiples instancias del flujo de trabajo con git podemos encontrarnos con la situación de resolver un conflicto de forma manual (por ejemplo, cuando poseemos dos versiones del mismo archivo). 
 
-![Diferencia entre fetch-merge y pull](imgGit/fetchMergePull2.png)
+Cada vez que estemos frente a un conclicto, git nos avisará insertando código que nos indicará los fragmentos de código afectados:
 
-_Diferencia entre fetch-merge y pull_
+```bash
+<<<<<<< HEAD
+     
+[Código en nuestro repositorio local] 
+ 
+=======
+     
+[Código en el repositorio remoto] 
+ 
+>>>>>>> [rama actual o número de commit]
+```
+
+Para resolver esta situación tendremos que: 
+
+1. Decidir cómo quedará el fragmento de código que mantendremos y borrar el resto
+2. Borrar los comentarios introducidos automáticamente por git, es decir `<<<<<<< HEAD`, `=======` y `>>>>>>> [rama actual o número de commit]`
+3. Guardar el archivo y agregar los cambios (`add`)
+4. Realizar la confirmación o _commit_
+5. Enviar los cambios al servidor remoto
 
 ## 6. Enviando hacia nuestros repositorios remotos
 
@@ -187,6 +218,26 @@ Por ejemplo, si queremos enviar nuestra rama (master) a nuestro servidor remoto 
 $ git push origin master
 ```
 
-!!!warning "Uso del comando `pull`"
-		Este comando funciona únicamente si hemos clonado desde un servidor remoto o agregado un origen remoto en el que tengamos permiso de escritura, y nadie ha enviado información mientras tanto. Si nosotros y otra persona clonamos un repositorio a la vez, y otro envía su información y luego enviamos la nuestra, nuestro envío será rechazado. En primer lugar, tendremos que "bajarnos" (`pull`) el trabajo de la otra persona e incorporarlo en el nuestro para que se nos permita hacer un envío (`push`). 
+!!!fail "Error al intentar realizar `git push`"
+		Puede ocurrir que otro desarrollador esté trabajando en el mismo archivo que nosotros y actualice el repositorio remoto antes que nosotros. En ese caso, al intentar hacer un `git push` obtendremos un error similar a este: 
+
+		```bash
+		error: failed to push some refs to 'xxx@yyy'
+		hint: Updates were rejected because the remote contains work that you do
+		hint: not have locally. This is usually caused by another repository pushing
+		hint: to the same ref. You may want to first integrate the remote changes
+		hint: (e.g., 'git pull ...') before pushing again.
+		hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+		```
+		En primer lugar, tendremos que "bajarnos" el trabajo de la otra persona:
+	
+		```bash
+		git pull [nombreRepositorioRemoto] [rama]
+		```
+		
+		Para luego, poder realizar el envío de nuestros cambios al repositorio remoto: 
+
+		```bash
+		git push [nombreRepositorioRemoto] [rama]
+		```
 		

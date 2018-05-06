@@ -921,9 +921,51 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Excluyendo recursos
+      </label>
+    
     <a href="./" title="Excluyendo recursos" class="md-nav__link md-nav__link--active">
       Excluyendo recursos
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-archivo-gitignore" title="Ejemplo de archivo .gitignore" class="md-nav__link">
+    Ejemplo de archivo .gitignore
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-expresiones-regulares" title="Uso de expresiones regulares" class="md-nav__link">
+    Uso de expresiones regulares
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1214,6 +1256,35 @@
     
   
   
+    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-archivo-gitignore" title="Ejemplo de archivo .gitignore" class="md-nav__link">
+    Ejemplo de archivo .gitignore
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uso-de-expresiones-regulares" title="Uso de expresiones regulares" class="md-nav__link">
+    Uso de expresiones regulares
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1237,7 +1308,8 @@
 <li>Podés excluir un directorio añadiendo una barra (/) al final del nombre del mismo.</li>
 <li>Podés negar un patrón añadiendo una exclamación (!) al principio.</li>
 </ul>
-<p>Un ejemplo de archivo <code>.gitignore</code> podría ser el siguiente:</p>
+<h2 id="ejemplo-de-archivo-gitignore">Ejemplo de archivo <code>.gitignore</code><a class="headerlink" href="#ejemplo-de-archivo-gitignore" title="Permanent link">&para;</a></h2>
+<p>Existen infinidad de maneras de escribir el contenido de un archivo <code>.gitignore</code> dependiendo, claro está, de las necesidades del usuario. Con todo, un ejemplo de este archivo podría ser el siguiente:</p>
 <div class="codehilite"><pre><span></span><span class="c1"># Las líneas que comienzan con (#) son consideradas comentarios </span>
 <span class="c1"># por tal motivo, no son tenidas en cuenta por git</span>
 
@@ -1262,7 +1334,8 @@ doc/*.txt
 doc/**/*.txt
 </pre></div>
 
-<p>Se puede apreciar el uso de expresiones regulares como se explicó mas arriba. Podemos ampliar más este concepto, apelando a otro ejemplo: </p>
+<h2 id="uso-de-expresiones-regulares">Uso de expresiones regulares<a class="headerlink" href="#uso-de-expresiones-regulares" title="Permanent link">&para;</a></h2>
+<p>En el ejemplo anterior se puede apreciar el uso de expresiones regulares como se explicó mas arriba. Podemos ampliar más este concepto, apelando a otro ejemplo: </p>
 <div class="codehilite"><pre><span></span>*.<span class="o">[</span>abc<span class="o">]</span>
 <span class="o">[</span><span class="m">0</span>-9<span class="o">]</span>.*
 *.htm?

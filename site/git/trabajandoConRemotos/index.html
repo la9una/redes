@@ -1039,6 +1039,33 @@
     5. Recibiendo desde nuestros repositorios remotos
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-fetch-y-merge" title="5.1. fetch y merge" class="md-nav__link">
+    5.1. fetch y merge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-pull" title="5.2. pull" class="md-nav__link">
+    5.2. pull
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-resolucion-de-conflictos" title="5.3. Resolución de conflictos" class="md-nav__link">
+    5.3. Resolución de conflictos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1408,6 +1435,33 @@
     5. Recibiendo desde nuestros repositorios remotos
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-fetch-y-merge" title="5.1. fetch y merge" class="md-nav__link">
+    5.1. fetch y merge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-pull" title="5.2. pull" class="md-nav__link">
+    5.2. pull
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-resolucion-de-conflictos" title="5.3. Resolución de conflictos" class="md-nav__link">
+    5.3. Resolución de conflictos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1537,6 +1591,14 @@ Por ejemplo: </p>
 </pre></div>
 
 <h2 id="5-recibiendo-desde-nuestros-repositorios-remotos">5. Recibiendo desde nuestros repositorios remotos<a class="headerlink" href="#5-recibiendo-desde-nuestros-repositorios-remotos" title="Permanent link">&para;</a></h2>
+<p>Existen dos maneras de recibir contenido desde un repositorio remoto: </p>
+<ol>
+<li>Mediante la combinación de los comandos <code>fetch</code> y <code>merge</code></li>
+<li>Mediante el comando <code>pull</code></li>
+</ol>
+<p><img alt="Diferencia entre fetch-merge y pull" src="../imgGit/fetchMergePull2.png" /></p>
+<p><em>Diferencia entre fetch-merge y pull</em></p>
+<h3 id="51-fetch-y-merge">5.1. <code>fetch</code> y <code>merge</code><a class="headerlink" href="#51-fetch-y-merge" title="Permanent link">&para;</a></h3>
 <p>Para recuperar datos de tus repositorios remotos podemos ejecutar:</p>
 <div class="codehilite"><pre><span></span>$ git fetch <span class="o">[</span>nombreRepositorioRemoto<span class="o">]</span> <span class="o">[</span>rama<span class="o">]</span>
 </pre></div>
@@ -1554,20 +1616,41 @@ Recupera toda la información enviada a ese servidor desde que lo clonamos (o de
 <div class="codehilite"><pre><span></span>git merge origin/master
 </pre></div>
 
+<h3 id="52-pull">5.2. <code>pull</code><a class="headerlink" href="#52-pull" title="Permanent link">&para;</a></h3>
 <p>Existe otra comando que combina, de una vez, las acciones de los comandos <code>fetch</code> y <code>merge</code>: el comando <code>pull</code>: </p>
 <div class="codehilite"><pre><span></span>git pull <span class="o">[</span>nombreRepositorioRemoto<span class="o">]</span> <span class="o">[</span>rama<span class="o">]</span>
 </pre></div>
 
 <p>Al ejecutar <code>git pull</code>, por lo general se recupera la información del servidor remoto que clonamos, y automáticamente se intenta unir con el código con el que estamos trabajando actualmente.</p>
 <div class="admonition fail">
-<p class="admonition-title">Error al intentar fusionar repositorios<p>Si creamos un repositorio local y agregamos un origen (repositorio) externo, al intentar fusionar datos entre ambos obtendremos el siguiente error: </p>
+<p class="admonition-title">Error al intentar fusionar repositorios de orígenes diferentes<p>Si creamos un repositorio local y agregamos un origen (repositorio) externo, al intentar fusionar datos entre ambos obtendremos el siguiente error: </p>
 <p><code>fatal: refusing to merge unrelated histories</code> </p>
 <p>Esto es así porque de forma predeterminada, los comandos de fusión de git, como <code>merge</code> y <code>pull</code> se niegan a fusionar historias que no comparten un antecesor común (es decir, se niegan a fusionar historias de dos proyectos que comenzaron sus vidas de forma independiente). Sin embargo, existe una opción para anular esta medida de seguridad: <code>--allow-unrelated-histories</code>. Entonces, si queremos ejecutar el comando <code>pull</code> lo haremos de la siguiente manera:</p>
 <p><code>git pull [nombreRemoto] [rama] --allow-unrelated-histories</code></p>
 </p>
 </div>
-<p><img alt="Diferencia entre fetch-merge y pull" src="../imgGit/fetchMergePull2.png" /></p>
-<p><em>Diferencia entre fetch-merge y pull</em></p>
+<h3 id="53-resolucion-de-conflictos">5.3. Resolución de conflictos<a class="headerlink" href="#53-resolucion-de-conflictos" title="Permanent link">&para;</a></h3>
+<p>En múltiples instancias del flujo de trabajo con git podemos encontrarnos con la situación de resolver un conflicto de forma manual (por ejemplo, cuando poseemos dos versiones del mismo archivo). </p>
+<p>Cada vez que estemos frente a un conclicto, git nos avisará insertando código que nos indicará los fragmentos de código afectados:</p>
+<div class="codehilite"><pre><span></span><span class="o">&lt;&lt;&lt;&lt;&lt;&lt;</span>&lt; HEAD
+
+<span class="o">[</span>Código en nuestro repositorio local<span class="o">]</span> 
+
+<span class="o">=======</span>
+
+<span class="o">[</span>Código en el repositorio remoto<span class="o">]</span> 
+
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; <span class="o">[</span>rama actual o número de commit<span class="o">]</span>
+</pre></div>
+
+<p>Para resolver esta situación tendremos que: </p>
+<ol>
+<li>Decidir cómo quedará el fragmento de código que mantendremos y borrar el resto</li>
+<li>Borrar los comentarios introducidos automáticamente por git, es decir <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>, <code>=======</code> y <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt; [rama actual o número de commit]</code></li>
+<li>Guardar el archivo y agregar los cambios (<code>add</code>)</li>
+<li>Realizar la confirmación o <em>commit</em></li>
+<li>Enviar los cambios al servidor remoto</li>
+</ol>
 <h2 id="6-enviando-hacia-nuestros-repositorios-remotos">6. Enviando hacia nuestros repositorios remotos<a class="headerlink" href="#6-enviando-hacia-nuestros-repositorios-remotos" title="Permanent link">&para;</a></h2>
 <p>Cuando tu proyecto se encuentra en un estado que deseamos compartir, tenemos que enviarlo a un repositorio remoto. El comando que nos permite hacer esto es sencillo: </p>
 <div class="codehilite"><pre><span></span>git push <span class="o">[</span>nombreRepositorioRemoto<span class="o">][</span>rama<span class="o">]</span>
@@ -1577,8 +1660,23 @@ Recupera toda la información enviada a ese servidor desde que lo clonamos (o de
 <div class="codehilite"><pre><span></span>$ git push origin master
 </pre></div>
 
-<div class="admonition warning">
-<p class="admonition-title">Uso del comando <code>pull</code><p>Este comando funciona únicamente si hemos clonado desde un servidor remoto o agregado un origen remoto en el que tengamos permiso de escritura, y nadie ha enviado información mientras tanto. Si nosotros y otra persona clonamos un repositorio a la vez, y otro envía su información y luego enviamos la nuestra, nuestro envío será rechazado. En primer lugar, tendremos que "bajarnos" (<code>pull</code>) el trabajo de la otra persona e incorporarlo en el nuestro para que se nos permita hacer un envío (<code>push</code>). </p>
+<div class="admonition fail">
+<p class="admonition-title">Error al intentar realizar <code>git push</code><p>Puede ocurrir que otro desarrollador esté trabajando en el mismo archivo que nosotros y actualice el repositorio remoto antes que nosotros. En ese caso, al intentar hacer un <code>git push</code> obtendremos un error similar a este: </p>
+<p><div class="codehilite"><pre><span></span>error: failed to push some refs to <span class="s1">&#39;xxx@yyy&#39;</span>
+hint: Updates were rejected because the remote contains work that you <span class="k">do</span>
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: <span class="o">(</span>e.g., <span class="s1">&#39;git pull ...&#39;</span><span class="o">)</span> before pushing again.
+hint: See the <span class="s1">&#39;Note about fast-forwards&#39;</span> in <span class="s1">&#39;git push --help&#39;</span> <span class="k">for</span> details.
+</pre></div>
+En primer lugar, tendremos que "bajarnos" el trabajo de la otra persona:</p>
+<div class="codehilite"><pre><span></span>git pull <span class="o">[</span>nombreRepositorioRemoto<span class="o">]</span> <span class="o">[</span>rama<span class="o">]</span>
+</pre></div>
+
+<p>Para luego, poder realizar el envío de nuestros cambios al repositorio remoto: </p>
+<div class="codehilite"><pre><span></span>git push <span class="o">[</span>nombreRepositorioRemoto<span class="o">]</span> <span class="o">[</span>rama<span class="o">]</span>
+</pre></div>
+
 </p>
 </div>
                 

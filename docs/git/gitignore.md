@@ -10,7 +10,8 @@ Las reglas para crear un archivo `.gitignore` son:
 * Podés excluir un directorio añadiendo una barra (/) al final del nombre del mismo.
 * Podés negar un patrón añadiendo una exclamación (!) al principio.
 
-Un ejemplo de archivo `.gitignore` podría ser el siguiente:
+## Ejemplo de archivo `.gitignore`
+Existen infinidad de maneras de escribir el contenido de un archivo `.gitignore` dependiendo, claro está, de las necesidades del usuario. Con todo, un ejemplo de este archivo podría ser el siguiente:
 
 ```bash
 # Las líneas que comienzan con (#) son consideradas comentarios 
@@ -38,7 +39,10 @@ doc/**/*.txt
 
 ```
 
-Se puede apreciar el uso de expresiones regulares como se explicó mas arriba. Podemos ampliar más este concepto, apelando a otro ejemplo: 
+
+
+## Uso de expresiones regulares
+En el ejemplo anterior se puede apreciar el uso de expresiones regulares como se explicó mas arriba. Podemos ampliar más este concepto, apelando a otro ejemplo: 
 
 ```bash
 *.[abc]
