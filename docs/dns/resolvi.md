@@ -3,7 +3,7 @@ La resolución inversa traduce las direcciones IP en los nombres correspondiente
 La resolución inversa se configura en nuestro ejemplo en el archivo `/etc/bind/db.1.168.192`
 
 
-```apache
+```apache linenums="1"
 
 ;
 ; BIND - Archivo de zona para 192.168.0.xxx

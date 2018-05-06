@@ -59,7 +59,7 @@ git remote -v
 
 Si tenemos más de un origen remoto, el comando los listará todos. 
 
-!!!danger "Remote name already exists"
+!!!fail "Remote name already exists"
 		Frente a este posible error común, podemos elegir entre las siguiente soluciones: 
 
 		1. [Usando un nuevo nombre para el origen remoto](trabajandoConRemotos/#32-asignando-un-nuevo-nombre-para-un-remoto)
@@ -159,7 +159,7 @@ git pull [nombreRepositorioRemoto] [rama]
 
 Al ejecutar `git pull`, por lo general se recupera la información del servidor remoto que clonamos, y automáticamente se intenta unir con el código con el que estamos trabajando actualmente.
 
-!!! error "Error al intentar fusionar repositorios"
+!!!fail "Error al intentar fusionar repositorios"
 		Si creamos un repositorio local y agregamos un origen (repositorio) externo, al intentar fusionar datos entre ambos obtendremos el siguiente error: 
 
 		`fatal: refusing to merge unrelated histories` 

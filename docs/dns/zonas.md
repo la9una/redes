@@ -25,9 +25,7 @@ sudo vim /etc/bind/named.conf.local
 
 Y declaramos los archivos de zona creados en el paso anterior: 
 
-```bash
-
-
+```bash linenums="1"
 // Zona de resolución directa
 
     zone "itel.lan" {
@@ -74,7 +72,7 @@ Anexa el nombre del dominio a registros no cualificados, tales como aquellos con
 
 Por ejemplo, un archivo de zona puede contener la línea siguiente: 
 
-```apache
+```apache linenums="1"
 $ORIGIN itel.lan.
 ```
 
@@ -136,7 +134,7 @@ Donde:
 
 Un ejemplo de aplicación para este registro: 
 
-```apache
+```apache linenums="1"
 @     IN     SOA    dns1.itel.lan.     hostmaster.itel.lan. (
                     2001062501 ; serial
                     21600      ; actualizar después de 6 horas
@@ -161,28 +159,28 @@ Es costumbre emplear dos servidores DNS con autoridad sobre el dominio. No es im
 
 Un ejemplo del uso de este registro: 
 
-```apache
+```apache linenums="1"
 itel.lan.   IN     NS     dns1.itel.lan.
 itel.lan.   IN     NS     dns2.itel.lan.
 ```
 
 Sin embargo, como se explicó mas arriba, el símbolo `@` reemplaza el nombre del archivo de zona. Por tanto, podemos escribir:  
 
-```apache
+```apache linenums="1"
 @   IN     NS     dns1.itel.lan.
 @   IN     NS     dns2.itel.lan.
 ```
 
 Inclusive es posible dejar el parámetro del nombre de zona en blanco ya que en el `RR` anterior se utilizó. La regla es: si no se especifica nada antes del parámetro `IN` se asume el valor que existía anteriormente. Por lo tanto la configuración del `RR` sería:
 
-```apache
+```apache linenums="1"
 IN     NS     dns1.itel.lan.
 IN     NS     dns2.itel.lan.
 ```
 
 Finalmente, podríamos prescindir también de la clase `IN` (_Internet_) ya que si no se no se especifica explícitamente, BIND utiliza el valor predeterminado `IN` de todos modos. Entonces, podríamos escribir: 
 
-```apache
+```apache linenums="1"
        NS     dns1.itel.lan.
        NS     dns2.itel.lan.
 ```
@@ -208,7 +206,7 @@ Donde:
 
 Un ejemplo de configuración para este registro: 
 
-```apache
+```apache linenums="1"
 itel.lan.    IN     MX     10     mail1.itel.lan.
 itel.lan.    IN     MX     20     mail2.itel.lan.
 ```
@@ -218,7 +216,7 @@ itel.lan.    IN     MX     20     mail2.itel.lan.
 
 No obstante, como se explicó en un [`RR` anterior](#ns-name-server), la configuración del registro se puede escribir de forma abreviada, como sigue: 
 
-```apache
+```apache linenums="1"
         MX     10     mail1.itel.lan.
         MX     20     mail2.itel.lan.
 ```
@@ -238,7 +236,7 @@ Si el valor `<host>` es omitido, o si en su lugar se usa el símbolo `@`, el reg
 
 Si consideramos el siguiente ejemplo de registro `A` para el archivo de zona `itel.lan`:
 
-```apache
+```apache linenums="1"
                      IN     A       192.168.0.3
 servidor.itel.lan    IN     A       192.168.0.5
 ```
@@ -247,7 +245,7 @@ Las peticiones para `itel.lan` son apuntadas a `192.168.0.3`, mientras que las s
 
 Naturalmente, podemos escribir de manera abreviada la configuración para este registro: 
 
-```apache
+```apache linenums="1"
             A       192.168.0.3
 servidor    A       192.168.0.5
 ```
@@ -267,7 +265,7 @@ Donde cualquier petición enviada a `<alias-name>` apuntará al host `<real-name
 
 Veamos el ejemplo siguiente de aplicación: 
 
-```apache
+```apache linenums="1"
 servidor.itel.lan      IN     A       192.168.0.5
 www.itel.lan           IN     CNAME   servidor.itel.lan
 ```
@@ -276,7 +274,7 @@ Un registro `A` vincula un nombre de host a una dirección IP, mientras que un r
 
 De manera abreviada: 
 
-```apache
+```apache linenums="1"
 servidor    A       192.168.0.5
 www         CNAME   servidor
 ```
@@ -295,7 +293,7 @@ El valor `<last-IP-digit>` se refiere al último número en una dirección IP qu
 
 Un ejemplo de configuración empleando este registro: 
 
-```apache
+```apache linenums="1"
 42.0.168.192.   IN PTR  servidor.itel.lan.
 114.0.168.192.  IN PTR  desarrollo.itel.lan.   
 135.0.168.192.  IN PTR  externo.itel.lan.
@@ -303,7 +301,7 @@ Un ejemplo de configuración empleando este registro:
 
 Y de forma resumida: 
 
-```apache
+```apache linenums="1"
 42      PTR     servidor.itel.lan.
 114     PTR     desarrollo.itel.lan.   
 135     PTR     externo.itel.lan.
@@ -342,7 +340,7 @@ name     ttl    class   rr       text
 
 El ejemplo siguiente muestra un **archivo de zona de resolución directa**:
 
-```apache
+```apache linenums="1" hl_lines="20 21 22 23"
 $ORIGIN itel.lan.
 $TTL 86400
 
@@ -375,7 +373,7 @@ www          IN     CNAME   server2
 
 Y, a continuación, un **archivo de zona de resolución inversa**:
 
-```apache
+```apache linenums="1"
 $ORIGIN 0.168.192.in-addr.arpa.
 $TTL 86400
 

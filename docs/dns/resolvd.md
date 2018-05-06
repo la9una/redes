@@ -2,7 +2,7 @@ La resolución de nombres convierte los nombres de los sistemas en sus correspon
 
 La base de datos para la resolución de nombres en la zona `home.lan` está guardada en el archivo `/etc/bind/db.home.lan`:
 
-```apache
+```apache linenums="1"
 ;
 ; BIND - Archivo de zona para itel.lan
 ;

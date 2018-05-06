@@ -12,47 +12,6 @@ git diff [rama1] [rama2]
 ```
 
 
-## Historial
-
-Podemos ver el historial de commits del proyecto usando el comando `log`
-
-Muestra el historial con el formato que indicamos:
-
-```bash
-git log --pretty=format:"%h - %an, %ar : %s"
-```
-
-Cambiamos la n por cualquier número entero, por ejemplo: `git log -2` nos mostrará los 2 commits más recientes:
-
-```bash
-git log -n
-```
-
-Muestra los commits realizados después de la fecha especificada:
-
-```bash
-git log --after="2016-04-07 00:00:00"
-```
-
-Muestra los commits realizados antes de la fecha especificada:
-
-```bash
-git log --before="2016-04-08 00:00:00"
-```
-
-Las banderas del comando `git log` se pueden usar juntas según son convenga, por ejemplo:
-
-```bash
-git log --after="2016-04-07 12:00:00" --before="2016-04-07 12:30:00"
-```
-
-Este comando nos muestra el historial en una sola línea por commit:
-
-```bash
-git log --oneline
-```
-
-
 ## Renombrar archivos
 Podemos renombrar archivos directamente desde Git con el comando
 

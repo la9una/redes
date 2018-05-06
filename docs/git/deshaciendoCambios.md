@@ -12,7 +12,7 @@ git commit --amend
 Por ejemplo, si enviamos el _commit_ y luego nos damos cuenta que olvidamos incluir un archivo en el mismo, podemos hacerlo de la siguiente manera: 
 
 ```bash
-$ git commit -m 'Mensaje del commit'
+$ git commit -m "Mensaje del commit"
 $ git add archivoOlvidado
 $ git commit --amend
 ```

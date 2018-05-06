@@ -14,7 +14,7 @@ sudo vim base
 
 Y añadimos el dominio `itel.lan` en el archivo, de manera que nos quede:
 
-```apache
+```apache linenums="1"
 domain itel.lan
 search itel.lan
 nameserver 127.0.0.1
@@ -24,7 +24,7 @@ De esta forma, cuando nos referimos al sistema `server`, éste será buscado en 
 
 Además, verificamos que en el archivo `/etc/nsswitch.conf` la resolución de nombres pase también por el servicio DNS:
 
-```bash
+```bash linenums="1"
 hosts:  files dns
 ```
 

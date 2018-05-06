@@ -11,7 +11,6 @@ repo_url: 'https://github.com/la9una/redes'
 # Copyright
 copyright: '2018 &nbsp; Raul Jesus Lopez'
 
-
 # Tema
 theme:
   name: 'material'
@@ -41,20 +40,28 @@ extra:
 #    - type: 'linkedin'
 #      link: 'https://de.linkedin.com/in/john-doe'
 
+## CSS Adicional
 extra_css:
   - 'stylesheets/extra.css'
 
-# Extensions
+# Extensiones
 markdown_extensions:
-  - pymdownx.arithmatex
   - admonition
 #  - codehilite(guess_lang=false,linenums=true)
   - codehilite(guess_lang=false)
-  - toc(permalink=true)
+  - toc:
+      permalink: true
   - footnotes
   - pymdownx.critic
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tilde
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+######################################################################
+### DOCUMENTACIÓN ####################################################
+######################################################################
 
 # Páginas
 pages: 
@@ -111,6 +118,7 @@ pages:
     - Trabajando con remotos: 'git/trabajandoConRemotos.md'
     - Ramas: 'git/ramas.md'
     - Deshaciendo cambios: 'git/deshaciendoCambios.md'
+    - Historial de confirmaciones: 'git/logs.md'
     - Etiquetado: 'git/etiquetas.md'
     - Otros comandos: 'git/otrosComandosGit.md'
     - Ejemplo de uso de git: 'git/ejemploGit.md'
