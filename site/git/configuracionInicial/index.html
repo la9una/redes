@@ -1334,15 +1334,15 @@ Y hacer lo propio con tu dirección de correo electrónico: </p>
 <li>[servidor] Es la dirección IP o nombre de dominio del servidor proxy</li>
 <li>[puerto] Es el puerto con el que está configurado el servidor proxy</li>
 </ul>
+<p>Un ejemplo de aplicación para un servidor proxy sin autenticación: </p>
+<div class="codehilite"><pre><span></span>git config --global http.proxy http://192.168.0.250:3128
+</pre></div>
+
 <p>Si deseamos "limpiar" la configuración anterior del proxy, ejecutamos: </p>
 <p><div class="codehilite"><pre><span></span>git config --global --unset http.proxy
 </pre></div>
 Finalmente, para verificar la configuración actual del proxy: </p>
 <div class="codehilite"><pre><span></span>git config --global --get http.proxy
-</pre></div>
-
-<p>Un ejemplo de aplicación para un servidor proxy sin autenticación: </p>
-<div class="codehilite"><pre><span></span>git config --global http.proxy http://192.168.0.250:3128
 </pre></div>
 
 <h3 id="comprobando-tu-configuracion">Comprobando tu configuración<a class="headerlink" href="#comprobando-tu-configuracion" title="Permanent link">&para;</a></h3>

@@ -30,6 +30,12 @@ Donde:
 * [servidor] Es la dirección IP o nombre de dominio del servidor proxy
 * [puerto] Es el puerto con el que está configurado el servidor proxy
 
+Un ejemplo de aplicación para un servidor proxy sin autenticación: 
+
+```bash
+git config --global http.proxy http://192.168.0.250:3128
+```
+
 Si deseamos "limpiar" la configuración anterior del proxy, ejecutamos: 
 
 ```bash
@@ -40,13 +46,6 @@ Finalmente, para verificar la configuración actual del proxy:
 ```bash
 git config --global --get http.proxy
 ```
-
-Un ejemplo de aplicación para un servidor proxy sin autenticación: 
-
-```bash
-git config --global http.proxy http://192.168.0.250:3128
-```
-
 
 ###Comprobando tu configuración
 Podés comprobar qué valor utilizará Git para una clave específica ejecutando `git config <key>`:
