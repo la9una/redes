@@ -1,3 +1,5 @@
+Una de las grandes ventajas de git es el modo en que gestiona los cambios realizado en los diferentes recursos de nuestro proyecto. 
+
 ## Los cuatro estados de un proyecto en git
 Las modificaciones que hacemos a nuestro proyecto pueden estar en 4 estados distintos:
 
@@ -33,6 +35,12 @@ new file: index.html
 
 ###4. Confirmado (_committed_)
 Las modificaciones están guardadas con un mensaje que explica los cambios realizados. Por ejemplo, el estado de los archivos y carpetas de mi proyecto una vez que realicé un _commit_.
+
+Ejemplo de salida: 
+
+```
+nothing to commit, working directory clean
+```
 
 ## Las tres secciones de un proyecto git
 Lo antes dicho nos lleva a las tres secciones principales de un proyecto de Git: 

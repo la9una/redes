@@ -1,7 +1,9 @@
 # Ignorando archivos o carpetas
-Suele ocurrir que no desees que git realice el seguimiento de ciertos archivos o carpetas, ya sea porque son archivos generados automáticamente, como archivos de log, o archivos generados por tu compilador. Para estos casos podés crear un archivo llamado `.gitignore`, en el que podrás incluir una lista de dichos recursos. 
+Suele ocurrir que no desees que git realice el seguimiento de ciertos archivos o carpetas, ya sea porque son archivos generados automáticamente, como archivos de log, o archivos generados por tu compilador. 
 
-Las reglas para los patrones que pueden ser incluidos en el archivo `.gitignore` son:
+Para estos casos podés crear un archivo llamado `.gitignore` en la raíz de la carpeta de nuestro proyecto, en el que podrás incluir una lista de dichos recursos. 
+
+Las reglas para crear un archivo `.gitignore` son:
 
 * Las líneas en blanco, o que comienzan por #, son ignoradas.
 * Podés utilizar [expresiones regulares](https://es.wikipedia.org/wiki/Expresi%C3%B3n_regular) estándar.
@@ -36,7 +38,7 @@ doc/**/*.txt
 
 ```
 
-Donde como se puede apreciar, puede emplearse el uso de expresiones regulares como se explicó mas arriba: 
+Se puede apreciar el uso de expresiones regulares como se explicó mas arriba. Podemos ampliar más este concepto, apelando a otro ejemplo: 
 
 ```bash
 *.[abc]
