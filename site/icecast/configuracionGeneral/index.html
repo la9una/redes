@@ -943,8 +943,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -957,6 +957,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1005,6 +1017,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1302,7 +1326,6 @@
 <span class="nt">&lt;/authentication&gt;</span>
 </pre></div>
 
-
 <p>Donde tendremos que modificar como mínimo, los valores <code>hackme</code> por otros que deseemos. </p>
 <table>
 <thead>
@@ -1335,18 +1358,15 @@
 <div class="codehilite"><pre><span></span><span class="nt">&lt;hostname&gt;</span><span class="err">http://www</span>.<span class="err">miservidor</span>.<span class="err">com</span><span class="nt">&lt;/hostname&gt;</span>
 </pre></div>
 
-
 <p>O bien, si disponemos de la dirección IP del servidor</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;hostname&gt;</span><span class="err">http://192</span>.<span class="err">168</span>.<span class="err">0</span>.<span class="err">232</span><span class="nt">&lt;/hostname&gt;</span>
 </pre></div>
-
 
 <p>Por último, nos desplazamos a la sección <code>listen-socket</code> y colocamos el <strong>número de puerto</strong> desde el cual trasmitiremos: </p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;listen-socket&gt;</span>
  <span class="nt">&lt;port&gt;</span><span class="err">8000</span><span class="nt">&lt;/port&gt;</span>
 <span class="nt">&lt;/listen-socket&gt;</span>
 </pre></div>
-
 
 <h2 id="limites">Límites<a class="headerlink" href="#limites" title="Permanent link">&para;</a></h2>
 <p>Por defecto, icecast permite 2 (dos) fuentes de audio simultáneas con un máximo de 100 (cien) clientes totales. Para cambiar esto y otros parámetros, tendremos que ubicar la sección <strong>limits</strong>:</p>
@@ -1366,7 +1386,6 @@
     <span class="err">--&gt;</span>
 <span class="nt">&lt;/limits&gt;</span>
 </pre></div>
-
 
 <p>Donde las etiquetas de la sección: </p>
 <table>

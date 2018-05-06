@@ -1069,8 +1069,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -1083,6 +1083,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1131,6 +1143,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1548,14 +1572,24 @@ Atención</p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> <span class="sx">/etc/bind</span> &amp;&amp; sudo touch db.itel.lan db.0.168.192
 </pre></div>
 
-
 <p>Luego, abrimos el archivo <code>/etc/bind/named.conf.local</code>:</p>
 <div class="codehilite"><pre><span></span>sudo vim /etc/bind/named.conf.local
 </pre></div>
 
-
 <p>Y declaramos los archivos de zona creados en el paso anterior: </p>
-<div class="codehilite"><pre><span></span>// Zona de resolución directa
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>// Zona de resolución directa
 
     zone <span class="s2">&quot;itel.lan&quot;</span> <span class="o">{</span>
         <span class="nb">type</span> master<span class="p">;</span>
@@ -1569,12 +1603,11 @@ Atención</p>
         file <span class="s2">&quot;/etc/bind/db.0.168.192&quot;</span><span class="p">;</span>
     <span class="o">}</span><span class="p">;</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Por último, verificamos que el archivo de configuración no contenga errores:</p>
 <div class="codehilite"><pre><span></span>sudo named-checkconf
 </pre></div>
-
 
 <h2 id="contenido-de-los-archivos-de-zona">Contenido de los archivos de zona<a class="headerlink" href="#contenido-de-los-archivos-de-zona" title="Permanent link">&para;</a></h2>
 <p>Los Archivos de zona contienen información sobre un espacio de nombres particular. </p>
@@ -1592,9 +1625,9 @@ Atención</p>
 <h4 id="origin">$ORIGIN<a class="headerlink" href="#origin" title="Permanent link">&para;</a></h4>
 <p>Anexa el nombre del dominio a registros no cualificados, tales como aquellos con el nombre de host solamente.</p>
 <p>Por ejemplo, un archivo de zona puede contener la línea siguiente: </p>
-<div class="codehilite"><pre><span></span><span class="err">$</span><span class="nb">ORIGIN</span> itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">$</span><span class="nb">ORIGIN</span> itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <p>Entonces, a cualquier nombre utilizado en <em>registros de recursos</em> que no terminen en un punto (.) se le agregará <code>itel.lan</code></p>
 <div class="admonition done">
@@ -1617,7 +1650,6 @@ Atención</p>
                     <span class="nt">&lt;time-to-expire&gt;</span>
                     <span class="nt">&lt;minimum-TTL&gt;</span> <span class="err">)</span>
 </pre></div>
-
 
 <p>Donde:</p>
 <ul>
@@ -1658,14 +1690,19 @@ Atención</p>
 </p>
 </div>
 <p>Un ejemplo de aplicación para este registro: </p>
-<div class="codehilite"><pre><span></span><span class="err">@</span>     <span class="nb">IN</span>     SOA    dns1.itel.lan.     hostmaster.itel.lan. (
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">@</span>     <span class="nb">IN</span>     SOA    dns1.itel.lan.     hostmaster.itel.lan. (
                     <span class="err">2001062501</span> <span class="err">;</span> <span class="nb">serial</span>
                     <span class="m">21600</span>      ; actualizar después de <span class="m">6</span> horas
                     <span class="err">3600</span>       <span class="err">;</span> <span class="nb">reintentar</span> después de <span class="m">1</span> hora
                     <span class="err">604800</span>     <span class="err">;</span> <span class="nb">expirar</span> después de <span class="m">1</span> semana
                     <span class="err">86400</span> <span class="err">)</span>    <span class="err">;</span> <span class="nb">TTL</span> mínimo de <span class="m">1</span> día
 </pre></div>
-
+</td></tr></table>
 
 <h4 id="ns-name-server">NS (<em>Name Server</em>)<a class="headerlink" href="#ns-name-server" title="Permanent link">&para;</a></h4>
 <p>Anuncia los nombres de servidores con autoridad sobre una zona particular.</p>
@@ -1674,32 +1711,35 @@ Atención</p>
 <span class="nt">&lt;zone-name&gt;</span>            <span class="nb">IN</span>      NS     &lt;nameserver-name&gt;
 </pre></div>
 
-
 <p>Donde <code>&lt;zone-name&gt;</code> es el nombre de la zona sobre la que el servidor posee autoridad. Luego, el <code>&lt;nameserver-name&gt;</code> debería ser un FQDN.</p>
 <p>Es costumbre emplear dos servidores DNS con autoridad sobre el dominio. No es importante si estos nombres de servidores son esclavos o si son maestros; ambos son considerados con autoridad sobre el dominio. </p>
 <p>Un ejemplo del uso de este registro: </p>
-<div class="codehilite"><pre><span></span><span class="err">itel</span>.<span class="err">lan</span>.   <span class="nb">IN</span>     NS     dns1.itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">itel</span>.<span class="err">lan</span>.   <span class="nb">IN</span>     NS     dns1.itel.lan.
 <span class="err">itel</span>.<span class="err">lan</span>.   <span class="nb">IN</span>     NS     dns2.itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <p>Sin embargo, como se explicó mas arriba, el símbolo <code>@</code> reemplaza el nombre del archivo de zona. Por tanto, podemos escribir:  </p>
-<div class="codehilite"><pre><span></span><span class="err">@</span>   <span class="nb">IN</span>     NS     dns1.itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">@</span>   <span class="nb">IN</span>     NS     dns1.itel.lan.
 <span class="err">@</span>   <span class="nb">IN</span>     NS     dns2.itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <p>Inclusive es posible dejar el parámetro del nombre de zona en blanco ya que en el <code>RR</code> anterior se utilizó. La regla es: si no se especifica nada antes del parámetro <code>IN</code> se asume el valor que existía anteriormente. Por lo tanto la configuración del <code>RR</code> sería:</p>
-<div class="codehilite"><pre><span></span><span class="nb">IN</span>     NS     dns1.itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">IN</span>     NS     dns1.itel.lan.
 <span class="nb">IN</span>     NS     dns2.itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <p>Finalmente, podríamos prescindir también de la clase <code>IN</code> (<em>Internet</em>) ya que si no se no se especifica explícitamente, BIND utiliza el valor predeterminado <code>IN</code> de todos modos. Entonces, podríamos escribir: </p>
-<div class="codehilite"><pre><span></span>       <span class="nb">NS</span>     dns1.itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>       <span class="nb">NS</span>     dns1.itel.lan.
        <span class="nb">NS</span>     dns2.itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <h4 id="mx-mail-exchange">MX (<em>Mail eXchange</em>)<a class="headerlink" href="#mx-mail-exchange" title="Permanent link">&para;</a></h4>
 <p>Indica dónde debería de ir el correo enviado a un espacio de nombres particular controlado por esta zona.</p>
@@ -1707,7 +1747,6 @@ Atención</p>
 <div class="codehilite"><pre><span></span><span class="nb">name</span>           ttl     class    rr     priority            server
 <span class="nt">&lt;zone-name&gt;</span>            <span class="nb">IN</span>       MX     &lt;preference-value&gt;  &lt;email-server-name&gt;
 </pre></div>
-
 
 <p>Donde: </p>
 <ul>
@@ -1722,20 +1761,22 @@ Atención</p>
 </li>
 </ul>
 <p>Un ejemplo de configuración para este registro: </p>
-<div class="codehilite"><pre><span></span><span class="err">itel</span>.<span class="err">lan</span>.    <span class="nb">IN</span>     MX     <span class="m">10</span>     mail1.itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">itel</span>.<span class="err">lan</span>.    <span class="nb">IN</span>     MX     <span class="m">10</span>     mail1.itel.lan.
 <span class="err">itel</span>.<span class="err">lan</span>.    <span class="nb">IN</span>     MX     <span class="m">20</span>     mail2.itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <div class="admonition done">
 <p class="admonition-title">Prioridad de los servidores de correo<p>En el ejemplo anterior, el primer servidor de correo <code>mail1.itel.lan</code> es preferido al servidor de correo <code>mail2.itel.lan</code> cuando se recibe correo destinado para el dominio <code>itel.lan</code>. </p>
 </p>
 </div>
 <p>No obstante, como se explicó en un <a href="#ns-name-server"><code>RR</code> anterior</a>, la configuración del registro se puede escribir de forma abreviada, como sigue: </p>
-<div class="codehilite"><pre><span></span>        <span class="nb">MX</span>     <span class="m">10</span>     mail1.itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>        <span class="nb">MX</span>     <span class="m">10</span>     mail1.itel.lan.
         <span class="nb">MX</span>     <span class="m">20</span>     mail2.itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <h4 id="a-address">A (<em>Address</em>)<a class="headerlink" href="#a-address" title="Permanent link">&para;</a></h4>
 <p>Un registro <code>A</code> o de direcciones enlaza un dominio con la dirección IP física de un servidor. </p>
@@ -1744,20 +1785,21 @@ Atención</p>
 <span class="nt">&lt;host&gt;</span>          <span class="nb">IN</span>      A     &lt;IP-address&gt;
 </pre></div>
 
-
 <p>Si el valor <code>&lt;host&gt;</code> es omitido, o si en su lugar se usa el símbolo <code>@</code>, el registro <code>A</code> apunta a una dirección IP por defecto. Esto es así para todas las peticiones no FQDN.</p>
 <p>Si consideramos el siguiente ejemplo de registro <code>A</code> para el archivo de zona <code>itel.lan</code>:</p>
-<div class="codehilite"><pre><span></span>                     <span class="nb">IN</span>     A       <span class="m">192.168.0.3</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>                     <span class="nb">IN</span>     A       <span class="m">192.168.0.3</span>
 <span class="err">servidor</span>.<span class="err">itel</span>.<span class="nb">lan</span>    IN     A       <span class="m">192.168.0.5</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Las peticiones para <code>itel.lan</code> son apuntadas a <code>192.168.0.3</code>, mientras que las solicitudes para <code>servidor.itel.lan</code> son dirigidas a <code>192.168.0.5</code>. </p>
 <p>Naturalmente, podemos escribir de manera abreviada la configuración para este registro: </p>
-<div class="codehilite"><pre><span></span>            <span class="nb">A</span>       <span class="m">192.168.0.3</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>            <span class="nb">A</span>       <span class="m">192.168.0.3</span>
 <span class="nb">servidor</span>    A       <span class="m">192.168.0.5</span>
 </pre></div>
-
+</td></tr></table>
 
 <h4 id="cname-canonical-name">CNAME (<em>Canonical Name</em>)<a class="headerlink" href="#cname-canonical-name" title="Permanent link">&para;</a></h4>
 <p>El registro de nombre canónico, enlaza un nombre con otro. Es también conocido como un alias.</p>
@@ -1766,20 +1808,21 @@ Atención</p>
 <span class="nt">&lt;alias-name&gt;</span>            <span class="nb">IN</span>      CNAME       &lt;real-name&gt;
 </pre></div>
 
-
 <p>Donde cualquier petición enviada a <code>&lt;alias-name&gt;</code> apuntará al host <code>&lt;real-name&gt;</code>. </p>
 <p>Veamos el ejemplo siguiente de aplicación: </p>
-<div class="codehilite"><pre><span></span><span class="err">servidor</span>.<span class="err">itel</span>.<span class="nb">lan</span>      IN     A       <span class="m">192.168.0.5</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">servidor</span>.<span class="err">itel</span>.<span class="nb">lan</span>      IN     A       <span class="m">192.168.0.5</span>
 <span class="err">www</span>.<span class="err">itel</span>.<span class="nb">lan</span>           IN     CNAME   servidor.itel.lan
 </pre></div>
-
+</td></tr></table>
 
 <p>Un registro <code>A</code> vincula un nombre de host a una dirección IP, mientras que un registro <code>CNAME</code> apunta al nombre host <code>www.itel.lan</code>, comúnmente usado para este.</p>
 <p>De manera abreviada: </p>
-<div class="codehilite"><pre><span></span><span class="nb">servidor</span>    A       <span class="m">192.168.0.5</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">servidor</span>    A       <span class="m">192.168.0.5</span>
 <span class="nb">www</span>         CNAME   servidor
 </pre></div>
-
+</td></tr></table>
 
 <h4 id="ptr-pointer">PTR (<em>PoinTeR</em>)<a class="headerlink" href="#ptr-pointer" title="Permanent link">&para;</a></h4>
 <p>Los registros <code>PTR</code> o punteros, son usados principalmente para la resolución inversa de nombres, pues ellos apuntan direcciones IP de vuelta a un nombre particular. </p>
@@ -1788,21 +1831,24 @@ Atención</p>
 <span class="nt">&lt;last-IP-digit&gt;</span>            <span class="nb">IN</span>      PTR    &lt;FQDN-of-system&gt;
 </pre></div>
 
-
 <p>El valor <code>&lt;last-IP-digit&gt;</code> se refiere al último número en una dirección IP que apunta al <code>FQDN</code> de un sistema particular. </p>
 <p>Un ejemplo de configuración empleando este registro: </p>
-<div class="codehilite"><pre><span></span><span class="err">42</span>.<span class="err">0</span>.<span class="err">168</span>.<span class="err">192</span>.   <span class="nb">IN</span> PTR  servidor.itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">42</span>.<span class="err">0</span>.<span class="err">168</span>.<span class="err">192</span>.   <span class="nb">IN</span> PTR  servidor.itel.lan.
 <span class="err">114</span>.<span class="err">0</span>.<span class="err">168</span>.<span class="err">192</span>.  <span class="nb">IN</span> PTR  desarrollo.itel.lan.   
 <span class="err">135</span>.<span class="err">0</span>.<span class="err">168</span>.<span class="err">192</span>.  <span class="nb">IN</span> PTR  externo.itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <p>Y de forma resumida: </p>
-<div class="codehilite"><pre><span></span><span class="err">42</span>      <span class="nb">PTR</span>     servidor.itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">42</span>      <span class="nb">PTR</span>     servidor.itel.lan.
 <span class="err">114</span>     <span class="nb">PTR</span>     desarrollo.itel.lan.   
 <span class="err">135</span>     <span class="nb">PTR</span>     externo.itel.lan.
 </pre></div>
-
+</td></tr></table>
 
 <h3 id="otros-registros">Otros registros<a class="headerlink" href="#otros-registros" title="Permanent link">&para;</a></h3>
 <p>Existen muchos otros registros de recursos disponibles. En la presente documentación se listaron los de uso frecuente. No obstante, a continuación se reseñan algunos de ellos: </p>
@@ -1812,14 +1858,12 @@ Atención</p>
 <span class="nt">&lt;host&gt;</span>          <span class="nb">IN</span>      AAAA     &lt;IPv6-address&gt;
 </pre></div>
 
-
 <h4 id="txt-text-record">TXT (<em>Text Record</em>)<a class="headerlink" href="#txt-text-record" title="Permanent link">&para;</a></h4>
 <p>Un registro TXT es un registro DNS que proporciona información de texto a fuentes externas a tu dominio y que se puede utilizar con distintos fines. El valor del registro puede corresponder a un texto legible por una máquina o por una persona. </p>
 <p>La sintaxis de declración de este registro es: </p>
 <div class="codehilite"><pre><span></span><span class="nb">name</span>     ttl    class   rr       text
 <span class="nt">&lt;host&gt;</span>          <span class="nb">IN</span>      TXT      <span class="s2">&quot;Algún texto descriptivo&quot;</span>
 </pre></div>
-
 
 <div class="admonition info">
 <p class="admonition-title">Resource records<p>Existen muchos más tipos de registros de recursos aunque no son tan comunes. Podés consultar más información sobre los mismos: </p>
@@ -1832,7 +1876,34 @@ Atención</p>
 <h2 id="ejemplos-de-archivos-de-zonas">Ejemplos de archivos de zonas<a class="headerlink" href="#ejemplos-de-archivos-de-zonas" title="Permanent link">&para;</a></h2>
 <p>Vistos individualmente, las directivas y registros de recursos pueden ser difíciles de comprender. Sin embargo, cuando se colocan juntos en un mismo archivo, se vuelven más fáciles de entender.</p>
 <p>El ejemplo siguiente muestra un <strong>archivo de zona de resolución directa</strong>:</p>
-<div class="codehilite"><pre><span></span><span class="err">$</span><span class="nb">ORIGIN</span> itel.lan.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">$</span><span class="nb">ORIGIN</span> itel.lan.
 <span class="err">$</span><span class="nb">TTL</span> <span class="m">86400</span>
 
 
@@ -1851,20 +1922,35 @@ Atención</p>
 
              <span class="nb">IN</span>     A       <span class="m">192.168.0.5</span>
 
-<span class="nb">server1</span>      IN     A       <span class="m">192.168.0.6</span>
-<span class="nb">server2</span>      IN     A       <span class="m">192.168.0.7</span>
-<span class="nb">dns1</span>         IN     A       <span class="m">192.168.0.2</span>
-<span class="nb">dns2</span>         IN     A       <span class="m">192.168.0.3</span>
-
+<span class="hll"><span class="nb">server1</span>      IN     A       <span class="m">192.168.0.6</span>
+</span><span class="hll"><span class="nb">server2</span>      IN     A       <span class="m">192.168.0.7</span>
+</span><span class="hll"><span class="nb">dns1</span>         IN     A       <span class="m">192.168.0.2</span>
+</span><span class="hll"><span class="nb">dns2</span>         IN     A       <span class="m">192.168.0.3</span>
+</span>
 <span class="nb">ftp</span>          IN     CNAME   server1
 <span class="nb">mail</span>         IN     CNAME   server1
 <span class="nb">mail2</span>        IN     CNAME   server2
 <span class="nb">www</span>          IN     CNAME   server2
 </pre></div>
-
+</td></tr></table>
 
 <p>Y, a continuación, un <strong>archivo de zona de resolución inversa</strong>:</p>
-<div class="codehilite"><pre><span></span><span class="err">$</span><span class="nb">ORIGIN</span> <span class="m">0</span>.168.192.in-addr.arpa.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">$</span><span class="nb">ORIGIN</span> <span class="m">0</span>.168.192.in-addr.arpa.
 <span class="err">$</span><span class="nb">TTL</span> <span class="m">86400</span>
 
 
@@ -1881,6 +1967,7 @@ Atención</p>
 <span class="err">6</span>     <span class="nb">IN</span>     PTR    server1.itel.lan.
 <span class="err">7</span>     <span class="nb">IN</span>     PTR    server2.itel.lan.
 </pre></div>
+</td></tr></table>
                 
                   
                 

@@ -5,7 +5,7 @@ Git guarda la historia de todos los _commits_ realizados dentro de un proyecto d
 git log
 ```
 
-## Formateando la salida del historial
+## Formatear la salida del historial
 
 Una opción realmente útil es `--pretty`, que modifica el formato de la salida y donde tenemos unos cuantos estilos disponibles: `oneline`, `short`, `full`, `fuller`, que muestran la salida en un formato parecido, pero añadiendo menos o más información, respectivamente y `format` mediante la cual podemos definir nuestro propio formato :
 
@@ -49,6 +49,12 @@ Las opciones oneline y format son especialmente útiles combinadas con otra opci
 git log --pretty=format:"%h %s" --graph
 ```
 
+Una manera simplificada de escribir la salida del log: 
+
+```bash
+git log --graph --oneline --decorate
+```
+
 Finalmente, si deseamos obtener una salida detallada del registo de confirmaciones o de cada _commit_:
 
 ```bash
@@ -72,55 +78,95 @@ Este tipo de salidas serán más interesantes cuando empecemos a hablar sobre [r
 | `--pretty`        | Muestra las confirmaciones usando un formato alternativo. Posibles  opciones son `oneline`, `short`, `full`, `fuller` y `format` (mediante el cual  puedes especificar tu propio formato). |
 
 
-## Limitando la salida del historial
+## Filtrar la salida del historial
+Es posible aplicar filtros a la información que git mostrará en pantalla mediante el uso de opciones.
 
-Nos muestra los `n` _commits_ más recientes (donde `n` es un número entero cualquiera: 
+### Por tiempo
+Podemos mostrar los `n` _commits_ más recientes (donde `n` es un número entero cualquiera): 
 
 ```bash
 git log -[n]
 ```
 
-Por ejemplo: 
+De esta manera, si queremos mostrar los últimos 2 commits realizados: 
 
 ```bash
 git log -2
 ```
 
-Nos mostrará los últimos 2 commits realizados.
+Existen otras opciones temporales como `--since` (desde) y `--until` (hasta) sí que resultan muy útiles. 
 
-Existen otras opciones temporales como `--since` (desde) y `--until` (hasta) sí que resultan muy útiles. Por ejemplo, este comando lista todas las confirmaciones hechas durante las dos últimas semanas:
+!!! tip "Opciones temporales"
+		Este comando acepta muchos formatos. Podés indicar una fecha concreta (`2008-01-15`), o relativa, como `2 years 1 day 3 minutes ago` ("hace 2 años, 1 día y 3 minutos") y muchas opciones más. 
+
+Listar las confirmaciones hechas durante las dos últimas semanas:
 
 ```bash
 git log --since=2.weeks
 ```
 
-Este comando acepta muchos formatos. Puedes indicar una fecha concreta (`2008-01-15`), o relativa, como `2 years 1 day 3 minutes ago` ("hace 2 años, 1 día y 3 minutos"). Por ejemplo: 
+Listar las confirmaciones hechas desde hace 2 años y 3 meses: 
 
 ```bash
-git log --since=2018-04-30, --until="2018-05-03"
+git log --since=2.years.3.months.ago
 ```
 
-git log --since="2.days 3.minutes"
-
-También puedes filtrar la lista para que muestre sólo aquellas confirmaciones que cumplen ciertos criterios. La opción --author te permite filtrar por autor, y --grep te permite buscar palabras clave entre los mensajes de confirmación. (Ten en cuenta que si quieres aplicar ambas opciones simultáneamente, tienes que añadir --all-match, o el comando mostrará las confirmaciones que cumplan cualquiera de las dos, no necesariamente las dos a la vez.)
-
-
-
-Muestra los commits realizados después de la fecha especificada:
+Listar las confirmaciones hechas hasta ayer a las 6 am: 
 
 ```bash
-git log --after="2016-04-07 00:00:00"
+git log --until="6am yesterday"
 ```
 
-Muestra los commits realizados antes de la fecha especificada:
+Listar las confirmaciones hechas hechas desde hace 60 segundos: 
 
 ```bash
-git log --before="2016-04-08 00:00:00"
+git log --since=60.seconds.ago
 ```
 
-Las banderas del comando `git log` se pueden usar juntas según son convenga, por ejemplo:
+Listar las confirmaciones hechas entre fechas específicas: 
 
 ```bash
-git log --after="2016-04-07 12:00:00" --before="2016-04-07 12:30:00"
+git log --since="2018-04-30", --until="2018-05-03"
 ```
 
+O listar las confirmaciones realizadas antes de una fecha y hora determinada: 
+
+```bash
+git log --until="2018-05-01 03:25:00"
+```
+
+El ejemplo anterior, pero ahora empleando otro formato para la fecha y hora: 
+
+```bash
+git log --until="Mon May 1 03:25:43 2018"
+```
+
+
+!!!tip "Comandos equivalentes"
+		Los comandos `--until` y `--since`, introducidos en versiones de git más recientes, son equivalentes a `--before` y `--after` respectivamente.
+
+### Por autor 
+
+También puedes filtrar la lista para que muestre sólo aquellas confirmaciones que cumplen ciertos criterios. 
+
+La opción `--author` nos permite filtrar por autor. En el ejemplo, _matchean_ los nombres de autor tales como Jorge, José, Jonathan, etc. Podemos especificar el nombre del autor completo, si conocemos el mismo:
+
+```bash
+git log --author="Jo"
+```
+
+### Por contenido
+La opción `--grep` nos permite buscar palabras clave entre los mensajes de confirmación:
+
+```bash
+git log --grep="Mensaje del commit a buscar"
+```
+
+Otra opción interesante que filtra la salida del historial de confirmaciones teniendo en cuenta el contenido de los archivos de nuestro proyecto: 
+
+```bash
+git log -S "Texto a buscar en los archivos de nuestro proyecto"
+```
+
+!!!note "Uso de opciones simultáneas"
+		Tené en cuenta que si querés aplicar ambas opciones `--author` y  `--grep` simultáneamente, tendrás que añadir la opción `--all-match`. De otro modo, el comando mostrará las confirmaciones que cumplan cualquiera de las dos, no necesariamente las dos a la vez. 

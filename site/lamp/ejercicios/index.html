@@ -1011,8 +1011,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -1025,6 +1025,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1073,6 +1085,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1497,7 +1521,6 @@
 <span class="x">&lt;/html&gt;</span>
 </pre></div>
 
-
 <h4 id="creacion-de-los-archivos-de-configuracion">Creación de los archivos de configuración<a class="headerlink" href="#creacion-de-los-archivos-de-configuracion" title="Permanent link">&para;</a></h4>
 <p>Se deben crear los archivos de configuración de cada <strong>Host Virtual</strong> solicitado por el cliente. Tener en cuenta que para todos los casos, el administrador sera <code>admin@penguin.net</code>.</p>
 <h4 id="resolucion-de-nombres">Resolución de nombres<a class="headerlink" href="#resolucion-de-nombres" title="Permanent link">&para;</a></h4>
@@ -1515,7 +1538,6 @@
 <div class="codehilite"><pre><span></span><span class="nb">sudo</span> nano etc/apache2/apache2.conf
 </pre></div>
 
-
 <p>Y modificamos el archivo de configuración general de Apache, aproximadamente en la línea 153 y que posee el siguiente aspecto: </p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;Directory</span> <span class="s">/</span><span class="nt">&gt;</span>
 <span class="nb">Options</span> FollowSymLinks
@@ -1524,7 +1546,6 @@
 <span class="nt">&lt;/Directory&gt;</span>
 </pre></div>
 
-
 <p>Tendremos que modificarlo para que quede: </p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;Directory</span> <span class="s">/</span><span class="nt">&gt;</span>
 <span class="nb">Options</span> FollowSymLinks
@@ -1532,7 +1553,6 @@
 <span class="c"># Require all denied</span>
 <span class="nt">&lt;/Directory&gt;</span>
 </pre></div>
-
 
 <h2 id="ejercicio-2">Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permanent link">&para;</a></h2>
 <p>Una vez que hayamos <a href="../instalacion/">instalado correctamente el entorno LAMP</a> podremos instalar en el servidor web distintas aplicaciones webs que funcionen con dicha tecnología (PHP y MySQL). </p>
@@ -1548,7 +1568,6 @@
 <p>Podés elegir la que desees y descargarlas en el directorio raíz de tu sitio web de la siguiente manera:  </p>
 <div class="codehilite"><pre><span></span>wget http://url_de_la_aplicacion/aplicacion.zip
 </pre></div>
-
 
 <h4 id="instalando-la-aplicacion">Instalando la aplicación<a class="headerlink" href="#instalando-la-aplicacion" title="Permanent link">&para;</a></h4>
 <p>Tendremos que <strong>descomprimir la aplicación descargada en el directorio raíz de nuestro sitio</strong>. Luego, abriremos nuestro navegador web y visitaremos la dirección web <code>http://tudominio/aplicacion</code> o bien <code>http://tuDireccionIP/aplicacion</code> y seguir las instrucciones de instalación. </p>

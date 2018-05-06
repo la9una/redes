@@ -887,8 +887,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -901,6 +901,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -949,6 +961,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1303,18 +1327,15 @@
 <div class="codehilite"><pre><span></span>sudo mkdir /etc/nagios3/objetos
 </pre></div>
 
-
 <h2 id="creando-nuestros-archivos-de-configuracion">Creando nuestros archivos de configuración<a class="headerlink" href="#creando-nuestros-archivos-de-configuracion" title="Permanent link">&para;</a></h2>
 <p>Dentro de la carpeta que creamos del paso anterior, <strong>colocaremos nuestros archivos de configuración</strong> los cuáles tendremos que crear, asignándoles un nombre arbitrario, pero con la extensión <strong>.cfg</strong>. Los archivos que crearemos serán: <code>equipos.cfg</code>, <code>grupos.cfg</code> y <code>servicios.cfg</code>.</p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> /etc/nagios3/objetos/ <span class="o">&amp;&amp;</span> sudo touch equipos.cfg grupos.cfg servicios.cfg iconos.cfg
 </pre></div>
 
-
 <h2 id="agregando-nuestra-configuracion-a-nagios">Agregando nuestra configuración a Nagios<a class="headerlink" href="#agregando-nuestra-configuracion-a-nagios" title="Permanent link">&para;</a></h2>
 <p>Tendremos que "notificar" a Nagios de los cambios que hemos introducido. Para ello, abriremos el archivo de configuración principal de Nagios: </p>
 <div class="codehilite"><pre><span></span>sudo vim /etc/nagios3/nagios.cfg
 </pre></div>
-
 
 <p>Una vez abierto el archivo, en algún lugar del mismo, agregaremos la siguiente línea que indica la ubicación de nuestro archivo de configuración: </p>
 <div class="codehilite"><pre><span></span><span class="c"># Equipos que forman parte de la red</span>
@@ -1330,13 +1351,11 @@
 <span class="err">cfg_file=/etc/nagios3/objetos/iconos</span>.<span class="nb">cfg</span>
 </pre></div>
 
-
 <p>Para finalizar, guardaremos los cambios y cerraremos el editor.</p>
 <h2 id="verificando-la-configuracion-y-reiniciando-nagios">Verificando la configuración y reiniciando Nagios<a class="headerlink" href="#verificando-la-configuracion-y-reiniciando-nagios" title="Permanent link">&para;</a></h2>
 <p>Cada vez que realicemos cambios en los archivos de configuración del servidor tendremos que verificar que dichar configuración sea la correcta. Para ellos ejecutaremos el siguiente comando:</p>
 <div class="codehilite"><pre><span></span>sudo nagios3 -v /etc/nagios3/nagios.cfg
 </pre></div>
-
 
 <div class="admonition note">
 <p class="admonition-title">Advertencias y errores</p>
@@ -1345,7 +1364,6 @@
 <p>Si la configuración está libre de errores entonces podremos reiniciar el servidor: </p>
 <div class="codehilite"><pre><span></span>sudo service nagios3 restart
 </pre></div>
-
 
 <p>Si todo salió bien, podremos ingresar al panel web de administración desde un navegador y ver plasmados los cambios realizados. </p>
 <h2 id="panel-de-administracion">Panel de administración<a class="headerlink" href="#panel-de-administracion" title="Permanent link">&para;</a></h2>

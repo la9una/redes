@@ -887,8 +887,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -901,6 +901,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -949,6 +961,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1300,7 +1324,6 @@
 <div class="codehilite"><pre><span></span>sudo vim /etc/nagios3/objetos/servicios.cfg
 </pre></div>
 
-
 <p>En el archivo, <strong>tendremos que agregar los servicios que deseemos monitorear</strong> en los equipos. </p>
 <h2 id="monitoreando-servicios-en-gnulinux">Monitoreando servicios en GNU/Linux<a class="headerlink" href="#monitoreando-servicios-en-gnulinux" title="Permanent link">&para;</a></h2>
 <p>Por ejemplo, podríamos <strong>monitorear en un servidor GNU/Linux</strong>, el estado del <strong>servidor web</strong>, <strong>ftp</strong> y <strong>ssh</strong>: </p>
@@ -1342,7 +1365,6 @@
 <span class="nb">check_command</span>           check_ssh
 <span class="err">}</span>
 </pre></div>
-
 
 <div class="admonition note">
 <p class="admonition-title">Sobre los servicios</p>
@@ -1459,7 +1481,6 @@
 <span class="nb">check_command</span>           check_nt!SERVICESTATE!-d SHOWALL -l MpsSvc
 <span class="err">}</span> 
 </pre></div>
-
 
 <p>Por último, tendremos que <a href="../configuracion/#verificando-la-configuracion-y-reiniciando-nagios">verificar la configuración y reiniciar el servidor Nagios</a> para guardar los cambios que hayamos introducido.</p>
 <h3 id="agregando-monitoreo-de-estado-de-servicios">Agregando monitoreo de estado de servicios<a class="headerlink" href="#agregando-monitoreo-de-estado-de-servicios" title="Permanent link">&para;</a></h3>

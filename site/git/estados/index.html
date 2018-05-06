@@ -13,7 +13,7 @@
         <meta name="description" content="Redes de datos con software libre">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/git/losTresEstados/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/git/estados/">
       
       
         <meta name="author" content="Raul Jesus Lopez">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Los tres estados - Redes con software libre</title>
+        <title>Estados de un proyecto - Redes con software libre</title>
       
     
     
@@ -101,6 +101,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#los-cuatro-estados-de-un-proyecto-en-git" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -123,7 +127,7 @@
                 Redes con software libre
               </span>
               <span class="md-header-nav__topic">
-                Los tres estados
+                Estados de un proyecto
               </span>
             
           
@@ -891,9 +895,117 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
-    <a href="./" title="Los tres estados" class="md-nav__link md-nav__link--active">
-      Los tres estados
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Estados de un proyecto
+      </label>
+    
+    <a href="./" title="Estados de un proyecto" class="md-nav__link md-nav__link--active">
+      Estados de un proyecto
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#los-cuatro-estados-de-un-proyecto-en-git" title="Los cuatro estados de un proyecto en git" class="md-nav__link">
+    Los cuatro estados de un proyecto en git
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sin-seguimiento-untracked" title="1. Sin seguimiento (untracked)" class="md-nav__link">
+    1. Sin seguimiento (untracked)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modificado-modified" title="2. Modificado (modified)" class="md-nav__link">
+    2. Modificado (modified)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-preparado-staged" title="3. Preparado (staged)" class="md-nav__link">
+    3. Preparado (staged)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-confirmado-committed" title="4. Confirmado (committed)" class="md-nav__link">
+    4. Confirmado (committed)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#las-tres-secciones-de-un-proyecto-git" title="Las tres secciones de un proyecto git" class="md-nav__link">
+    Las tres secciones de un proyecto git
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-el-directorio-de-trabajo-working-directory" title="1. El directorio de trabajo (Working directory)" class="md-nav__link">
+    1. El directorio de trabajo (Working directory)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-el-area-de-preparacion-staging-area" title="2. El área de preparación (Staging area)" class="md-nav__link">
+    2. El área de preparación (Staging area)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-el-directorio-de-git-git-directory" title="3. El directorio de Git (Git directory)" class="md-nav__link">
+    3. El directorio de Git (Git directory)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumiendo" title="Resumiendo" class="md-nav__link">
+    Resumiendo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -906,6 +1018,18 @@
   <li class="md-nav__item">
     <a href="../repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -954,6 +1078,18 @@
   <li class="md-nav__item">
     <a href="../deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1174,31 +1310,161 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#los-cuatro-estados-de-un-proyecto-en-git" title="Los cuatro estados de un proyecto en git" class="md-nav__link">
+    Los cuatro estados de un proyecto en git
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-sin-seguimiento-untracked" title="1. Sin seguimiento (untracked)" class="md-nav__link">
+    1. Sin seguimiento (untracked)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-modificado-modified" title="2. Modificado (modified)" class="md-nav__link">
+    2. Modificado (modified)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-preparado-staged" title="3. Preparado (staged)" class="md-nav__link">
+    3. Preparado (staged)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-confirmado-committed" title="4. Confirmado (committed)" class="md-nav__link">
+    4. Confirmado (committed)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#las-tres-secciones-de-un-proyecto-git" title="Las tres secciones de un proyecto git" class="md-nav__link">
+    Las tres secciones de un proyecto git
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-el-directorio-de-trabajo-working-directory" title="1. El directorio de trabajo (Working directory)" class="md-nav__link">
+    1. El directorio de trabajo (Working directory)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-el-area-de-preparacion-staging-area" title="2. El área de preparación (Staging area)" class="md-nav__link">
+    2. El área de preparación (Staging area)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-el-directorio-de-git-git-directory" title="3. El directorio de Git (Git directory)" class="md-nav__link">
+    3. El directorio de Git (Git directory)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumiendo" title="Resumiendo" class="md-nav__link">
+    Resumiendo
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/git/losTresEstados.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/la9una/redes/edit/master/docs/git/estados.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Los tres estados</h1>
+                  <h1>Estados de un proyecto</h1>
                 
-                <p>Git tiene tres estados principales en los que se pueden encontrar tus archivos:</p>
-<ol>
-<li>Modificado (<strong>modified</strong>), significa que has modificado el archivo pero todavía no lo has confirmado a tu base de datos.</li>
-<li>Preparado (<strong>staged</strong>), significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima confirmación.</li>
-<li>Confirmado (<strong>committed</strong>), significa que los datos están almacenados de manera segura en tu base de datos local.</li>
-</ol>
-<p>Esto nos lleva a las tres secciones principales de un proyecto de Git: </p>
-<p><img alt="Secciones de Git" src="../imgGit/areas.png" />
-<em>Directorio de trabajo, área de almacenamiento, y el directorio Git.</em></p>
-<ol>
-<li>El directorio de trabajo (<strong>Working directory</strong>) es una copia de una versión del proyecto. Estos archivos se sacan de la base de datos comprimida en el directorio de Git, y se colocan en disco para que los puedas usar o modificar.</li>
-<li>El área de preparación (<strong>Staging area</strong>) es un archivo, generalmente contenido en tu directorio de Git, que almacena información acerca de lo que va a ir en tu próxima confirmación. A veces se le denomina índice (“index”), pero se está convirtiendo en estándar el referirse a ella como el área de preparación.</li>
-<li>El directorio de Git (<strong>Git directory</strong>) es donde se almacenan los metadatos y la base de datos de objetos para tu proyecto. Es la parte más importante de Git, y es lo que se copia cuando clonas un repositorio desde otra computadora.</li>
-</ol>
-<p>Resumiendo: </p>
+                <h2 id="los-cuatro-estados-de-un-proyecto-en-git">Los cuatro estados de un proyecto en git<a class="headerlink" href="#los-cuatro-estados-de-un-proyecto-en-git" title="Permanent link">&para;</a></h2>
+<p>Las modificaciones que hacemos a nuestro proyecto pueden estar en 4 estados distintos:</p>
+<h3 id="1-sin-seguimiento-untracked">1. Sin seguimiento (<em>untracked</em>)<a class="headerlink" href="#1-sin-seguimiento-untracked" title="Permanent link">&para;</a></h3>
+<p>Son los archivos que nunca fueron agregados al repositorio. Por ejemplo, cuando agrego archivos nuevos a mi proyecto.</p>
+<p>Ejemplo de salida: </p>
+<div class="codehilite"><pre><span></span>Untracked files:
+index.html
+</pre></div>
+
+<h3 id="2-modificado-modified">2. Modificado (<em>modified</em>)<a class="headerlink" href="#2-modificado-modified" title="Permanent link">&para;</a></h3>
+<p>Las modificaciones todavı́a no están marcadas como <em>staged</em>. Por ejemplo, cuando realizo modificaciones en archivos o carpetas que git "sigue".</p>
+<p>Ejemplo de salida: </p>
+<div class="codehilite"><pre><span></span>Changes not staged for commit:
+modified: index.html
+</pre></div>
+
+<h3 id="3-preparado-staged">3. Preparado (<em>staged</em>)<a class="headerlink" href="#3-preparado-staged" title="Permanent link">&para;</a></h3>
+<p>Las modificaciones están en <em>staged</em> e irán en la próxima confirmación de cambios (<em>commit</em>). Por ejemplo, cuando agrego las modificaciones realizadas a los archivos o carpetas de mi proyecto con el comando <code>add</code>.</p>
+<p>Ejemplo de salida: </p>
+<div class="codehilite"><pre><span></span>Changes to be committed:
+new file: index.html
+</pre></div>
+
+<h3 id="4-confirmado-committed">4. Confirmado (<em>committed</em>)<a class="headerlink" href="#4-confirmado-committed" title="Permanent link">&para;</a></h3>
+<p>Las modificaciones están guardadas con un mensaje que explica los cambios realizados. Por ejemplo, el estado de los archivos y carpetas de mi proyecto una vez que realicé un <em>commit</em>.</p>
+<h2 id="las-tres-secciones-de-un-proyecto-git">Las tres secciones de un proyecto git<a class="headerlink" href="#las-tres-secciones-de-un-proyecto-git" title="Permanent link">&para;</a></h2>
+<p>Lo antes dicho nos lleva a las tres secciones principales de un proyecto de Git: </p>
+<p><img alt="Flujo de trabajo local en Git" src="../imgGit/gitFlujoTrabajoLocal.png" /></p>
+<h3 id="1-el-directorio-de-trabajo-working-directory">1. El directorio de trabajo (<em>Working directory</em>)<a class="headerlink" href="#1-el-directorio-de-trabajo-working-directory" title="Permanent link">&para;</a></h3>
+<p>Es una copia de una versión del proyecto. Estos archivos se sacan de la base de datos comprimida en el directorio de Git, y se colocan en disco para que los puedas usar o modificar.</p>
+<h3 id="2-el-area-de-preparacion-staging-area">2. El área de preparación (<em>Staging area</em>)<a class="headerlink" href="#2-el-area-de-preparacion-staging-area" title="Permanent link">&para;</a></h3>
+<p>Es un archivo, generalmente contenido en tu directorio de Git, que almacena información acerca de lo que va a ir en tu próxima confirmación. A veces se le denomina índice (“index”), pero se está convirtiendo en estándar el referirse a ella como el área de preparación.</p>
+<h3 id="3-el-directorio-de-git-git-directory">3. El directorio de Git (<em>Git directory</em>)<a class="headerlink" href="#3-el-directorio-de-git-git-directory" title="Permanent link">&para;</a></h3>
+<p>Es el lugar donde se almacenan los metadatos y la base de datos de objetos para tu proyecto. Es la parte más importante de Git, y es lo que se copia cuando clonas un repositorio desde otra computadora.</p>
+<h3 id="resumiendo">Resumiendo<a class="headerlink" href="#resumiendo" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1210,29 +1476,21 @@
 <tbody>
 <tr>
 <td>Directorio de trabajo</td>
-<td>Modificado</td>
-<td>Archivos modificados</td>
+<td>Modificado (<em>modified</em>)</td>
+<td>Archivos modificados que aún no forman parte del repositorio</td>
 </tr>
 <tr>
 <td>Área de preparación</td>
-<td>Preparado</td>
+<td>Preparado (<em>staged</em>)</td>
 <td>Archivos modificados que están listos para formar parte del repositorio</td>
 </tr>
 <tr>
 <td>Directorio Git</td>
-<td>Confirmado</td>
+<td>Confirmado <em>committed</em>)</td>
 <td>Archivos que forman parte del repositorio</td>
 </tr>
 </tbody>
 </table>
-<p>El <strong>flujo de trabajo</strong> básico en Git es algo así:</p>
-<ol>
-<li>Modificas una serie de archivos en tu directorio de trabajo.</li>
-<li>Preparas los archivos, añadiéndolos a tu área de preparación.</li>
-<li>Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación y almacena esa copia instantánea de manera permanente en tu directorio de Git.</li>
-</ol>
-<p>Si una versión concreta de un archivo está en el directorio de Git, se considera confirmada (<strong>committed</strong>). Si ha sufrido cambios desde que se obtuvo del repositorio, pero ha sido añadida al área de preparación, está preparada (<strong>staged</strong>). Y si ha sufrido cambios desde que se obtuvo del repositorio, pero no se ha preparado, está modificada (<strong>modified</strong>). </p>
-<p><img alt="Flujo de trabajo local en Git" src="../imgGit/gitFlujoTrabajoLocal.png" /></p>
                 
                   
                 
@@ -1245,9 +1503,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "http://www.rauljesus.xyz/redes/git/losTresEstados/";
+      this.page.url = "http://www.rauljesus.xyz/redes/git/estados/";
       this.page.identifier =
-        "/git/losTresEstados/";
+        "/git/estados/";
     };
     (function() {
       var d = document, s = d.createElement("script");

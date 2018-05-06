@@ -206,13 +206,19 @@
     </url>
         
     <url>
-     <loc>http://www.rauljesus.xyz/redes/git/losTresEstados/</loc>
+     <loc>http://www.rauljesus.xyz/redes/git/estados/</loc>
      <lastmod>2018-05-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/repositorioLocal/</loc>
+     <lastmod>2018-05-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://www.rauljesus.xyz/redes/git/gitignore/</loc>
      <lastmod>2018-05-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -237,6 +243,12 @@
         
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/deshaciendoCambios/</loc>
+     <lastmod>2018-05-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://www.rauljesus.xyz/redes/git/logs/</loc>
      <lastmod>2018-05-06</lastmod>
      <changefreq>daily</changefreq>
     </url>

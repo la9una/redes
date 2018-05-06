@@ -983,8 +983,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -997,6 +997,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1045,6 +1057,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1386,11 +1410,9 @@
 <p><img alt="Puttygen 03" src="../imgSSH/puttygen_03.png" /></p>
 <h3 id="en-gnulinux">En GNU/Linux<a class="headerlink" href="#en-gnulinux" title="Permanent link">&para;</a></h3>
 <p><em>Logueados</em> con nuestro usuario normal en la <strong>máquina local</strong>, ejecutamos: </p>
-<div class="codehilite"><pre><span></span><span class="err">ssh-</span><span class="nb">keygen</span>
+<p><div class="codehilite"><pre><span></span><span class="err">ssh-</span><span class="nb">keygen</span>
 </pre></div>
-
-
-<p>Aunque podemos ingresar otros valores, si presionamos la tecla <em>Enter</em> estaremos aceptando los valores por defecto para los nombres de las llaves y su ubicación, a saber: </p>
+Aunque podemos ingresar otros valores, si presionamos la tecla <em>Enter</em> estaremos aceptando los valores por defecto para los nombres de las llaves y su ubicación, a saber: </p>
 <table>
 <thead>
 <tr>
@@ -1426,13 +1448,11 @@
 <p>Tendremos que copiar la clave pública en el servidor agregándola al archivo <code>/home/usuario/.ssh/authorized_keys</code> del usuario remoto. (donde deberá reemplazar <code>usuario</code> por el usuario remoto). </p>
 <h3 id="metodo-manual">Método manual<a class="headerlink" href="#metodo-manual" title="Permanent link">&para;</a></h3>
 <p>Tendremos que iniciar sesión en el servidor con el usuario al que queremos permitir acceso mediante el uso de clave asimétrica. Ejecutamos los siguintes comandos (uno por vez):</p>
-<div class="codehilite"><pre><span></span><span class="nb">cd</span>
+<p><div class="codehilite"><pre><span></span><span class="nb">cd</span>
 cd .ssh
 <span class="nb">vim</span> authorized_keys
 </pre></div>
-
-
-<p>Una vez abierto el archivo <code>authorized_keys</code> tendremos que copiar dentro de él, el contenido de la clave pública generada en el punto anterior, vereficando que el formato de la misma sea el similar al siguiente:</p>
+Una vez abierto el archivo <code>authorized_keys</code> tendremos que copiar dentro de él, el contenido de la clave pública generada en el punto anterior, vereficando que el formato de la misma sea el similar al siguiente:</p>
 <div class="codehilite"><pre><span></span>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCB007n/ww+ouN4gSLKssMxXnBOvf9LGt4L
 ojG6rs6hPB09j9R/T17/x4lhJA0F3FR1rP6kYBRsWj2aThGw6HXLm9/5zytK6Ztg3RPKK+4k
 Yjh6541NYsnEAZuXz0jTTyAUfrtU3Z5E003C4oxOj6H0rfIF1kKI9MAQLMdpGW1GYEIgS9Ez
@@ -1441,14 +1461,11 @@ O7TCUSBdLQlgMVOFq1I2uPWQOkOWQAHukEOmfjy2jctxSDBQ220ymjaNsHT4kgtZg2AYYgPq
 dAv8JggJICUvax2T9va5 usuario@dominio_o_direccion_ip_servidor
 </pre></div>
 
-
 <h3 id="metodo-por-comandos">Método por comandos<a class="headerlink" href="#metodo-por-comandos" title="Permanent link">&para;</a></h3>
 <p>Para que podamos iniciar sesión en el servidor remoto, ejecutamos en la <strong>máquina local</strong>: </p>
-<div class="codehilite"><pre><span></span><span class="err">ssh-copy-</span><span class="nb">id</span> usuario_remoto@ip_del_servidor_remoto
+<p><div class="codehilite"><pre><span></span><span class="err">ssh-copy-</span><span class="nb">id</span> usuario_remoto@ip_del_servidor_remoto
 </pre></div>
-
-
-<p>Se nos pedirá la contraseña del usuario remoto. </p>
+Se nos pedirá la contraseña del usuario remoto. </p>
 <p>Ahora se puede usar la llave privada correspondiente para iniciar sesión en el servidor.</p>
 <h2 id="deshabilitando-el-inicio-de-sesion-por-contrasena-en-el-servidor">Deshabilitando el inicio de sesión por contraseña en el servidor<a class="headerlink" href="#deshabilitando-el-inicio-de-sesion-por-contrasena-en-el-servidor" title="Permanent link">&para;</a></h2>
 <p>Ahora que nuestro usuario puede usar las llaves SSH para iniciar sesión en el servidor remoto, podemos aumentar la seguridad del mismo desactivando la autenticación por contraseña.</p>
@@ -1461,21 +1478,16 @@ dAv8JggJICUvax2T9va5 usuario@dominio_o_direccion_ip_servidor
 <div class="codehilite"><pre><span></span><span class="nb">sudo</span> nano <span class="sx">/etc/ssh/sshd_config</span>
 </pre></div>
 
-
 <p>Buscamos la línea que contiene la palabra <code>PasswordAuthentication</code> y, descomentamos la línea en caso que esté comentada (borrando el caracter # al comienzo de la línea). Luego cambiamos su valor a "no". Debería verse así después de haber realizado el cambio:</p>
 <div class="codehilite"><pre><span></span><span class="nb">PasswordAuthentication</span> no
 </pre></div>
 
-
 <p>Para hacer efectivos los cambios, reiniciamos el servidor SSH: </p>
-<div class="codehilite"><pre><span></span>sudo systemctl reload sshd
+<p><div class="codehilite"><pre><span></span>sudo systemctl reload sshd
 </pre></div>
-
-
-<p>O bien: </p>
+O bien: </p>
 <div class="codehilite"><pre><span></span>sudo service sshd reload
 </pre></div>
-
 
 <div class="admonition done">
 <p class="admonition-title">¡Listo!</p>

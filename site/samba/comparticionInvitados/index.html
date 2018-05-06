@@ -892,8 +892,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -906,6 +906,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -954,6 +966,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1189,23 +1213,16 @@
 <div class="codehilite"><pre><span></span><span class="nb">mkdir</span> -p <span class="sx">/opt/invitados</span>
 </pre></div>
 
-
-<p>Luego, modificar la propiedad de la carpeta: </p>
+<p>Luego, modificar la propiedad de la carpeta: 
 <div class="codehilite"><pre><span></span><span class="nb">chown</span> -R nobody:nogroup <span class="sx">/opt/invitados</span>
-</pre></div>
-
-
-<p>Y los permisos:  </p>
+</pre></div></p>
+<p>Y los permisos:<br />
 <div class="codehilite"><pre><span></span><span class="nb">chmod</span> -R ugo+rwx <span class="sx">/opt/invitados</span> 
 </pre></div>
-
-
-<p>O el comando equivalente:</p>
-<div class="codehilite"><pre><span></span><span class="nb">chmod</span> -R <span class="m">777</span> <span class="sx">/opt/invitados</span> 
+O el comando equivalente:</p>
+<p><div class="codehilite"><pre><span></span><span class="nb">chmod</span> -R <span class="m">777</span> <span class="sx">/opt/invitados</span> 
 </pre></div>
-
-
-<p>Por último, tendremos que agregar al archivo de configuración principal de Samba (<code>/etc/samba/smb.conf</code>) el siguiente bloque de código: </p>
+Por último, tendremos que agregar al archivo de configuración principal de Samba (<code>/etc/samba/smb.conf</code>) el siguiente bloque de código: </p>
 <div class="codehilite"><pre><span></span><span class="err">[invitados]</span>
 
     <span class="c"># Carpeta a compartir</span>
@@ -1223,7 +1240,6 @@
     <span class="c"># Cualquier usuario sin contraseña tiene permiso de acceso</span>
     <span class="nb">guest</span> ok = yes
 </pre></div>
-
 
 <div class="admonition warning">
 <p class="admonition-title">Atención<p>Cualquier usuario del sistema Windows podrá leer y escribir en esta carpeta, aún cuando no posea una contraseña para el inicio de sesión en Windows ni esté registrado en el servidor Samba.  </p>

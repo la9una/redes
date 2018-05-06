@@ -887,8 +887,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../git/losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../../git/estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -901,6 +901,18 @@
   <li class="md-nav__item">
     <a href="../../git/repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -949,6 +961,18 @@
   <li class="md-nav__item">
     <a href="../../git/deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../git/logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1274,13 +1298,11 @@
 <div class="codehilite"><pre><span></span>sudo apt-get install nagios3 nagios-nrpe-plugin
 </pre></div>
 
-
 <p>Durante las instalación se nos solicitará la contraseña de administración. Podemos omitir este paso ya que consiguraremos la contraseña en el paso siguiente. </p>
 <h2 id="modificando-la-contrasena-de-administrador">Modificando la contraseña de administrador<a class="headerlink" href="#modificando-la-contrasena-de-administrador" title="Permanent link">&para;</a></h2>
 <p>El <strong>usuario administrador</strong> por defecto es <strong>nagiosadmin</strong>. Para <strong>modificar la contraseña</strong> de este usuario, ejecutamos:</p>
 <div class="codehilite"><pre><span></span>sudo htpasswd -c /etc/nagios3/htpasswd.users nagiosadmin
 </pre></div>
-
 
 <h2 id="ingresando-a-la-administracion">Ingresando a la administración<a class="headerlink" href="#ingresando-a-la-administracion" title="Permanent link">&para;</a></h2>
 <p>Nagios posee una interfaz web que facilita la administración del servidor. La misma puede ser accedida desde un navegador introduciendo la dirección: ''http://ip.de.tu.servidor/nagios''</p>

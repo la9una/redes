@@ -889,8 +889,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../losTresEstados/" title="Los tres estados" class="md-nav__link">
-      Los tres estados
+    <a href="../estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
     </a>
   </li>
 
@@ -903,6 +903,18 @@
   <li class="md-nav__item">
     <a href="../repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
       Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
     </a>
   </li>
 
@@ -1045,6 +1057,18 @@
   <li class="md-nav__item">
     <a href="../deshaciendoCambios/" title="Deshaciendo cambios" class="md-nav__link">
       Deshaciendo cambios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
     </a>
   </li>
 
@@ -1375,7 +1399,6 @@ $ mkdir .ssh <span class="o">&amp;&amp;</span> chmod <span class="m">700</span> 
 $ touch .ssh/authorized_keys <span class="o">&amp;&amp;</span> chmod <span class="m">600</span> .ssh/authorized_keys
 </pre></div>
 
-
 <p>Y a continuación añades las claves públicas de los desarrolladores al archivo authorized_keys del usuario git que has creado. Suponiendo que hayas recibido las claves por correo electrónico y que las has guardado en archivos temporales. Y recordando que las claves públicas son algo así como:</p>
 <div class="codehilite"><pre><span></span>$ cat /tmp/id_rsa.juan.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCB007n/ww+ouN4gSLKssMxXnBOvf9LGt4L
@@ -1386,13 +1409,11 @@ O7TCUSBdLQlgMVOFq1I2uPWQOkOWQAHukEOmfjy2jctxSDBQ220ymjaNsHT4kgtZg2AYYgPq
 dAv8JggJICUvax2T9va5 gsg-keypair
 </pre></div>
 
-
 <p>No tienes más que añadirlas al archivo authorized_keys dentro del directorio .ssh:</p>
 <div class="codehilite"><pre><span></span>$ cat /tmp/id_rsa.juan.pub &gt;&gt; ~/.ssh/authorized_keys
 $ cat /tmp/id_rsa.pedro.pub &gt;&gt; ~/.ssh/authorized_keys
 $ cat /tmp/id_rsa.jessica.pub &gt;&gt; ~/.ssh/authorized_key
 </pre></div>
-
 
 <h2 id="2-git-en-un-servidor-propio">2. Git en un servidor propio<a class="headerlink" href="#2-git-en-un-servidor-propio" title="Permanent link">&para;</a></h2>
 <p>Mantener <strong>tu propio servidor</strong> te da control y te permite correr tu servidor dentro de tu propio cortafuegos, pero tal servidor generalmente requiere una importante cantidad de tu tiempo para configurar y mantener. </p>
@@ -1400,36 +1421,26 @@ $ cat /tmp/id_rsa.jessica.pub &gt;&gt; ~/.ssh/authorized_key
 <h3 id="21-partiendo-de-un-repositorio-git-existente">2.1. Partiendo de un repositorio Git existente<a class="headerlink" href="#21-partiendo-de-un-repositorio-git-existente" title="Permanent link">&para;</a></h3>
 <p>Para configurar por primera vez un servidor de Git, hay que exportar un repositorio existente en un nuevo repositorio vacío, es decir, un repositorio que no contiene un directorio de trabajo. Esto es generalmente fácil de hacer.</p>
 <p>En primer lugar clonamos un repositorio Git existente: </p>
-<div class="codehilite"><pre><span></span>git clone --bare miRepositorioGitExistente miNuevoRepositorio.git
+<p><div class="codehilite"><pre><span></span>git clone --bare miRepositorioGitExistente miNuevoRepositorio.git
 </pre></div>
-
-
-<p>Y luego permitimos que el repositorio sea compartido: </p>
-<div class="codehilite"><pre><span></span>git config core.sharedRepository <span class="nb">true</span>
+Y luego permitimos que el repositorio sea compartido: </p>
+<p><div class="codehilite"><pre><span></span>git config core.sharedRepository <span class="nb">true</span>
 </pre></div>
-
-
-<p>Sin embargo, ambas órdenes se pueden ejecutar en una sola: </p>
+Sin embargo, ambas órdenes se pueden ejecutar en una sola: </p>
 <div class="codehilite"><pre><span></span>git clone --bare --shared miRepositorioGitExistente miNuevoRepositorio.git
 </pre></div>
-
 
 <h3 id="22-partiendo-desde-de-una-carpeta-vacia">2.2. Partiendo desde de una carpeta vacía<a class="headerlink" href="#22-partiendo-desde-de-una-carpeta-vacia" title="Permanent link">&para;</a></h3>
 <p>Otra de las maneras de crear un repositorio vacío es partiendo de una carpeta vacía sobre la cual inicializaremos un repositorio Git. </p>
 <p>Para ello, creamos el directorio que contendrá el repositorio: </p>
-<div class="codehilite"><pre><span></span>mkdir miRepositorio.git
+<p><div class="codehilite"><pre><span></span>mkdir miRepositorio.git
 </pre></div>
-
-
-<p>E ingresamos en él:</p>
-<div class="codehilite"><pre><span></span><span class="nb">cd</span> miRepositorio.git
+E ingresamos en él:</p>
+<p><div class="codehilite"><pre><span></span><span class="nb">cd</span> miRepositorio.git
 </pre></div>
-
-
-<p>E inicializamos un repositorio vacío y compartido:</p>
+E inicializamos un repositorio vacío y compartido:</p>
 <div class="codehilite"><pre><span></span>git init --bare --shared
 </pre></div>
-
 
 <h2 id="3-git-en-un-servidor-hospedado">3. Git en un servidor hospedado<a class="headerlink" href="#3-git-en-un-servidor-hospedado" title="Permanent link">&para;</a></h2>
 <p>Si almacenas tus datos en un <strong>servidor hospedado</strong>, es fácil de configurar y mantener; sin embargo, tienes que ser capaz de mantener tu código en los servidores de alguien más, y algunas organizaciones no te lo permitirán.</p>
@@ -1489,7 +1500,7 @@ $ cat /tmp/id_rsa.jessica.pub &gt;&gt; ~/.ssh/authorized_key
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../repositorioLocal/" title="Inicializando repositorio local" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../gitignore/" title="Excluyendo recursos" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1498,7 +1509,7 @@ $ cat /tmp/id_rsa.jessica.pub &gt;&gt; ~/.ssh/authorized_key
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Inicializando repositorio local
+                Excluyendo recursos
               </span>
             </div>
           </a>
