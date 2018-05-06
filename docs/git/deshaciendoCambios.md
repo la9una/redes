@@ -53,6 +53,7 @@ Así que podemos seguir trabajando, corregir el bug o completar las modificacion
 		```bash
 		git reset --hard HEAD~3
 		```
+		
 		en lugar de deshacer el último commit deshaceríamos tres commits hacia atrás.
 
 #### Descartar las modificaciones
