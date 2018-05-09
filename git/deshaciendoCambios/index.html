@@ -1500,8 +1500,8 @@ Donde <code>numeroDeHash</code> es el número de hash del <em>commit</em> al cua
 <p>Por ejemplo: </p>
 <p><div class="codehilite"><pre><span></span>git checkout -b prueba 56a4e5c08
 </pre></div>
-Una vez realizado los cambios necesarios, podremos volver a nuestra rama principal y fusionar la nueva rama con ésta:</p>
-<div class="codehilite"><pre><span></span>git checkout master <span class="o">&amp;&amp;</span> git branch -d prueba
+Una vez realizado los cambios necesarios, podremos volver a nuestra rama principal, fusionar la nueva rama con ésta y eliminar la rama que habiamos creado:</p>
+<div class="codehilite"><pre><span></span>git checkout master <span class="o">&amp;&amp;</span> git merge prueba <span class="o">&amp;&amp;</span> git branch -d prueba
 </pre></div>
 
 <p>No obstante,si tenemos claro que deseamos volver hacia atrás a un punto concreto del historial descartando todos los cambios posteriores, podemos recurrir al siguiente comando: </p>
