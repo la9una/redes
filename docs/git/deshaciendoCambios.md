@@ -122,10 +122,10 @@ Por ejemplo:
 ```bash
 git checkout -b prueba 56a4e5c08
 ```
-Una vez realizado los cambios necesarios, podremos volver a nuestra rama principal y fusionar la nueva rama con ésta:
+Una vez realizado los cambios necesarios, podremos volver a nuestra rama principal, fusionar la nueva rama con ésta y eliminar la rama que habiamos creado:
 
 ```bash
-git checkout master && git branch -d prueba
+git checkout master && git merge prueba && git branch -d prueba
 ```
 
 No obstante,si tenemos claro que deseamos volver hacia atrás a un punto concreto del historial descartando todos los cambios posteriores, podemos recurrir al siguiente comando: 
