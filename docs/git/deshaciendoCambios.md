@@ -19,7 +19,7 @@ $ git commit --amend
 
 Al final terminaremos con un solo _commit_ (el segundo _commit_ reemplazará al primero)
 
-### Deshacer un archivo preparado
+### Deshacer un archivo preparado (manteniendo las modificaciones)
 Puede ocurrir que luego de hacer un _commit_ deseamos editar sólo un arhivo que incluimos en él. 
 Para estas ocasiones puede resultar útil el siguiente comando: 
 
@@ -56,6 +56,19 @@ Así que podemos seguir trabajando, corregir el bug o completar las modificacion
 		
 		en lugar de deshacer el último commit deshaceríamos tres commits hacia atrás.
 
+		También, podemos deshacer el commit actual: 
+
+		```bash
+		git reset --hard HEAD
+		```
+
+		O deshacer el commit inmediato anterior: 
+
+		```bash
+		git reset --hard HEAD^
+
+		```
+
 #### Descartar las modificaciones
 Supongamos que queremos deshacer el último _commit_ y, además, desechar los cambios introducidos en él. Para ello, ejecutamos el comando:
 
@@ -77,6 +90,56 @@ git checkout -- index.html
 De esta manera, el archivo `index.html` volverá al estado que tenía luego del último _commit_
 
 
+## Volver hacia una confirmción posterior
+Git nos permite volver hacia atrás a cualquier _commit_ que forme parte de la historia de nuestro proyecto, deshaciendo los cambios posteriores al commit elegido. Para ello, es suficiente ejecutar el siguiente comando: 
+
+```bash
+git checkout [numeroDeHash]
+```
+Donde `numeroDeHash` es el número de hash del _commit_ al cual deseamos retornar. 
+
+Por ejemplo: 
+
+```bash
+git checkout 56a4e5c08
+```
+
+!!!done "Obtener número de hash"
+		Podemos obtener el número de hash fácilmente con el siguiente comando: 
+
+		```bash
+		git log --oneline
+		```
+
+Sin embargo, esta acción dejaría al proyecto sin referencia a `HEAD`. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los _commits_ que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso `git garbage collection process` tendremos que crear una nueva rama del último commit que hemos realizado:
+
+```bash
+git checkout -b [ramaNueva] [numeroDeHash]
+```
+
+Por ejemplo: 
+
+```bash
+git checkout -b prueba 56a4e5c08
+```
+Una vez realizado los cambios necesarios, podremos volver a nuestra rama principal y fusionar la nueva rama con ésta:
+
+```bash
+git checkout master && git branch -d prueba
+```
+
+No obstante,si tenemos claro que deseamos volver hacia atrás a un punto concreto del historial descartando todos los cambios posteriores, podemos recurrir al siguiente comando: 
+
+```bash
+git reset --hard [numeroDeHash]
+```
+
+Por ejemplo: 
+
+```bash
+git reset --hard 56a4e5c08
+```
+De esta manera, nuestro proyecto se encontrará según el _commit_ apuntado. 
 
 
 
