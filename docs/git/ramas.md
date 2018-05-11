@@ -4,7 +4,8 @@ Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocu
 !!!done "La rama master"
 		La rama “master” en Git no es una rama especial. Es como cualquier otra rama. La única razón por la cual aparece en casi todos los repositorios es porque es la que crea por defecto el comando git init y la gente no se molesta en cambiarle el nombre.
 
-## Crear una rama nueva
+## Trabajando con ramas locales
+### Crear una rama nueva 
 
 ¿Qué sucede cuando creas una nueva rama? Simplemente se crea un nuevo apuntador para que lo podamos moverlo libremente. Por ejemplo, supongamos que queremos crear una rama nueva denominada "testing". Para ello, ejecutaremos el comando: 
 
@@ -21,7 +22,7 @@ Y, ¿cómo sabe Git en qué rama estamos en este momento? Mediante un apuntador 
 
 ![Ramas en Git - 02](imgGit/branch_02.png)
 
-## Cambiar de Rama
+### Cambiar de Rama 
 
 Para saltar de una rama a otra, tenemos que utilizar el comando `git checkout`. Hagamos una prueba, saltando a la rama `testing` recién creada:
 
@@ -33,13 +34,10 @@ Esto mueve el apuntador HEAD a la rama testing.
 
 ![Ramas en Git - 03](imgGit/branch_03.png)
 
-
-
 Observamos algo interesante: la rama testing avanza, mientras que la rama master permanece en la confirmación donde estaba cuando lanzaste el comando git checkout para saltar. 
 
 
 ![Ramas en Git - 04](imgGit/branch_04.png)
-
 
 Volvamos ahora a la rama master:
 
@@ -62,13 +60,13 @@ Ahora el historial de nuestro proyecto diverge. Hemos creado una rama y saltado 
 		```
 
 
-## Eliminar una rama
+### Eliminar una rama 
 Para borrar una rama utilizamos el sencillo comando: 
 
 ```bash
 git branch -d ramaABorrar
 ```
-## Fusionar ramas
+### Fusionar ramas
 Es probable que luego de un tiempo de trabajar sobre una rama que hallamos creado quisiéramos fusionarla con la rama principal. Para ello, debemos asegurarnos de estar posicionandos en la rama principal (comunmente llamada _master_) y ejecutar el comando: 
 
 ```bash
@@ -76,7 +74,34 @@ git merge ramaAFusionar
 ```
 De esta manera, Git fusionará los cambios hechos en la rama alternativa con la rama principal. 
 
-## Estudio de caso: uso de ramas
+## Tabajando con ramas remotas
+Hasta aquí, todo el trabajo con las ramas se ha hecho de modo local, es decir, en nuestro equipo. 
+
+### Publicar una rama (remotoa)
+Para publicar nuestra rama local en el servidor remoto, tenderemos que ejecutar el siguiente comando: 
+
+```bash
+git push <nombreRepositorioRemoto> <rama>
+```
+Por ejemplo: 
+
+```bash
+git push origin master
+```
+
+### Eliminar una rama remota
+Aunque hayamos elminado la rama de forma local, deberemos hacerlo también de manera remota: 
+
+```bash
+git push <nombreRepositorioRemoto> --delete <rama>
+```
+Por ejemplo: 
+
+```bash
+git push origin --delete master
+```
+
+# Estudio de caso: uso de ramas
 
 Vamos a presentar un ejemplo simple de ramificar y de fusionar, con un flujo de trabajo que se podría presentar en la realidad. Imagina que sigues los siguientes pasos:
 

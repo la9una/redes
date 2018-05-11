@@ -6,6 +6,12 @@ a. Hemos creado nuestro **repositorio local "desde cero"** y deseamos vincularlo
 
 b. Nos encontramos trabajando localmente sobre un **repositorio que hemos clonado** desde un repositorio remoto. En ese caso, nuestro repositorio local ya poseerá un origen remoto (que será la dirección del repositorio remoto que clonamos en nuestra computadora). No obstante, de manera opcional, podemos agregarle otros origenes remotos con los que deseemos sincronizar, siguiendo los pasos descriptos en esta guía.
 
+!!!done "Repositorios remotos"
+		Un repositorio remoto no es más que un servidor que soporta el trabajo con git. Podemos instalar nuestro propio servidor en la nube, o bien crear una cuenta en algún servidor hospedado: 
+
+		* [Bitbucket](https://bitbucket.org/account/signin/)
+		* [GitHub](https://github.com/login)
+		* [GitLab](https://gitlab.com/users/sign_in)
 
 ## 1. Agregando un origen remoto
 

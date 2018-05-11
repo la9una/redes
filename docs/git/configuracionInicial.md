@@ -36,30 +36,31 @@ Un ejemplo de aplicación para un servidor proxy sin autenticación:
 git config --global http.proxy http://192.168.0.250:3128
 ```
 
-Si deseamos "limpiar" la configuración anterior del proxy, ejecutamos: 
+### Gestionando tu configuración
+Podés comprobar qué valor utilizará Git para una clave específica ejecutando:
 
 ```bash
-git config --global --unset http.proxy
+git config <key>
 ```
-Finalmente, para verificar la configuración actual del proxy: 
-
-```bash
-git config --global --get http.proxy
-```
-
-###Comprobando tu configuración
-Podés comprobar qué valor utilizará Git para una clave específica ejecutando `git config <key>`:
+Donde `<key>` es el valor que de la configuración que deseas consultar. Por ejemplo: 
 
 ```bash
 $ git config user.name
 ```
-Donde `<key>` es el valor que de la configuración que deseas consultar. 
-
-
 Pero si querés comprobar toda tu configuración, podés usar el siguiente comando:
 
 ```bash
 git config --list
+```
+Además, podés dar de baja cualquier variable de configuración, mediante el comando: 
+
+```bash
+git config --global --unset <key>
+```
+Por ejemplo: 
+
+```bash
+git config --global --unset http.proxy
 ```
 
 !!!tip "Ayuda sobre Git"
