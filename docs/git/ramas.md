@@ -1,3 +1,4 @@
+##Ramas o _branches_
 Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocurre naturalmente para resolver problemas o crear nuevas funcionalidades. En la práctica permiten que nuestro proyecto pueda tener diversos estados y que los desarrolladores sean capaces de pasar de uno a otro de una manera ágil. Cuando inicializamos un proyecto con Git automáticamente nos encontramos en una rama a la que se denomina "master". 
 
 
@@ -5,6 +6,8 @@ Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocu
 		La rama “master” en Git no es una rama especial. Es como cualquier otra rama. La única razón por la cual aparece en casi todos los repositorios es porque es la que crea por defecto el comando git init y la gente no se molesta en cambiarle el nombre.
 
 ## Trabajando con ramas locales
+Podemos gestionar ramas en git en nuestro equipo
+
 ### Crear una rama nueva 
 
 ¿Qué sucede cuando creas una nueva rama? Simplemente se crea un nuevo apuntador para que lo podamos moverlo libremente. Por ejemplo, supongamos que queremos crear una rama nueva denominada "testing". Para ello, ejecutaremos el comando: 
@@ -77,7 +80,7 @@ De esta manera, Git fusionará los cambios hechos en la rama alternativa con la 
 ## Tabajando con ramas remotas
 Hasta aquí, todo el trabajo con las ramas se ha hecho de modo local, es decir, en nuestro equipo. 
 
-### Publicar una rama (remotoa)
+### Publicar una rama
 Para publicar nuestra rama local en el servidor remoto, tenderemos que ejecutar el siguiente comando: 
 
 ```bash
@@ -89,7 +92,7 @@ Por ejemplo:
 git push origin master
 ```
 
-### Eliminar una rama remota
+### Eliminar una rama
 Aunque hayamos elminado la rama de forma local, deberemos hacerlo también de manera remota: 
 
 ```bash

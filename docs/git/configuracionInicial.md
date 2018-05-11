@@ -37,6 +37,7 @@ git config --global http.proxy http://192.168.0.250:3128
 ```
 
 ### Gestionando tu configuración
+
 Podés comprobar qué valor utilizará Git para una clave específica ejecutando:
 
 ```bash
