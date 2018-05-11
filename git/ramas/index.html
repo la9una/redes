@@ -101,7 +101,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#trabajando-con-ramas-locales" tabindex="1" class="md-skip">
+      <a href="#ramas-o-branches" tabindex="1" class="md-skip">
         Saltar a contenido
       </a>
     
@@ -957,65 +957,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Ramas
-      </label>
-    
     <a href="./" title="Ramas" class="md-nav__link md-nav__link--active">
       Ramas
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#crear-una-rama-nueva" title="Crear una rama nueva" class="md-nav__link">
-    Crear una rama nueva
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cambiar-de-rama" title="Cambiar de Rama" class="md-nav__link">
-    Cambiar de Rama
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#eliminar-una-rama" title="Eliminar una rama" class="md-nav__link">
-    Eliminar una rama
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fusionar-ramas" title="Fusionar ramas" class="md-nav__link">
-    Fusionar ramas
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
-            Comentarios
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -1270,49 +1214,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#crear-una-rama-nueva" title="Crear una rama nueva" class="md-nav__link">
-    Crear una rama nueva
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cambiar-de-rama" title="Cambiar de Rama" class="md-nav__link">
-    Cambiar de Rama
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#eliminar-una-rama" title="Eliminar una rama" class="md-nav__link">
-    Eliminar una rama
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fusionar-ramas" title="Fusionar ramas" class="md-nav__link">
-    Fusionar ramas
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
-            Comentarios
-          </a>
-        </li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1326,12 +1227,14 @@
                   <a href="https://github.com/la9una/redes/edit/master/docs/git/ramas.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <p>Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocurre naturalmente para resolver problemas o crear nuevas funcionalidades. En la práctica permiten que nuestro proyecto pueda tener diversos estados y que los desarrolladores sean capaces de pasar de uno a otro de una manera ágil. Cuando inicializamos un proyecto con Git automáticamente nos encontramos en una rama a la que se denomina "master". </p>
+                <h2 id="ramas-o-branches">Ramas o <em>branches</em><a class="headerlink" href="#ramas-o-branches" title="Permanent link">&para;</a></h2>
+<p>Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocurre naturalmente para resolver problemas o crear nuevas funcionalidades. En la práctica permiten que nuestro proyecto pueda tener diversos estados y que los desarrolladores sean capaces de pasar de uno a otro de una manera ágil. Cuando inicializamos un proyecto con Git automáticamente nos encontramos en una rama a la que se denomina "master". </p>
 <div class="admonition done">
 <p class="admonition-title">La rama master<p>La rama “master” en Git no es una rama especial. Es como cualquier otra rama. La única razón por la cual aparece en casi todos los repositorios es porque es la que crea por defecto el comando git init y la gente no se molesta en cambiarle el nombre.</p>
 </p>
 </div>
 <h2 id="trabajando-con-ramas-locales">Trabajando con ramas locales<a class="headerlink" href="#trabajando-con-ramas-locales" title="Permanent link">&para;</a></h2>
+<p>Podemos gestionar ramas en git en nuestro equipo</p>
 <h3 id="crear-una-rama-nueva">Crear una rama nueva<a class="headerlink" href="#crear-una-rama-nueva" title="Permanent link">&para;</a></h3>
 <p>¿Qué sucede cuando creas una nueva rama? Simplemente se crea un nuevo apuntador para que lo podamos moverlo libremente. Por ejemplo, supongamos que queremos crear una rama nueva denominada "testing". Para ello, ejecutaremos el comando: </p>
 <div class="codehilite"><pre><span></span>git branch testing
@@ -1377,7 +1280,7 @@
 De esta manera, Git fusionará los cambios hechos en la rama alternativa con la rama principal. </p>
 <h2 id="tabajando-con-ramas-remotas">Tabajando con ramas remotas<a class="headerlink" href="#tabajando-con-ramas-remotas" title="Permanent link">&para;</a></h2>
 <p>Hasta aquí, todo el trabajo con las ramas se ha hecho de modo local, es decir, en nuestro equipo. </p>
-<h3 id="publicar-una-rama-remotoa">Publicar una rama (remotoa)<a class="headerlink" href="#publicar-una-rama-remotoa" title="Permanent link">&para;</a></h3>
+<h3 id="publicar-una-rama">Publicar una rama<a class="headerlink" href="#publicar-una-rama" title="Permanent link">&para;</a></h3>
 <p>Para publicar nuestra rama local en el servidor remoto, tenderemos que ejecutar el siguiente comando: </p>
 <p><div class="codehilite"><pre><span></span>git push &lt;nombreRepositorioRemoto&gt; &lt;rama&gt;
 </pre></div>
@@ -1385,7 +1288,7 @@ Por ejemplo: </p>
 <div class="codehilite"><pre><span></span>git push origin master
 </pre></div>
 
-<h3 id="eliminar-una-rama-remota">Eliminar una rama remota<a class="headerlink" href="#eliminar-una-rama-remota" title="Permanent link">&para;</a></h3>
+<h3 id="eliminar-una-rama_1">Eliminar una rama<a class="headerlink" href="#eliminar-una-rama_1" title="Permanent link">&para;</a></h3>
 <p>Aunque hayamos elminado la rama de forma local, deberemos hacerlo también de manera remota: </p>
 <p><div class="codehilite"><pre><span></span>git push &lt;nombreRepositorioRemoto&gt; --delete &lt;rama&gt;
 </pre></div>
