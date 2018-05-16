@@ -126,7 +126,7 @@ Una vez realizado los cambios necesarios, podremos volver a nuestra rama princip
 ```bash
 git checkout master && git merge prueba && git branch -d prueba
 ```
-
+### Volviendo definitivamente hacia una confirmación anterior
 No obstante,si tenemos claro que deseamos volver hacia atrás a un punto concreto del historial descartando todos los cambios posteriores, podemos recurrir al siguiente comando: 
 
 ```bash
