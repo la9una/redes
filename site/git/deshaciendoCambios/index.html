@@ -1201,9 +1201,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#volver-hacia-una-confirmacion-posterior" title="Volver hacia una confirmación posterior" class="md-nav__link">
-    Volver hacia una confirmación posterior
+  <a href="#volver-hacia-una-confirmacion-anterior" title="Volver hacia una confirmación anterior" class="md-nav__link">
+    Volver hacia una confirmación anterior
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creando-una-rama-a-partir-de-una-confirmacion-anterior" title="Creando una rama a partir de una confirmación anterior" class="md-nav__link">
+    Creando una rama a partir de una confirmación anterior
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1532,9 +1545,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#volver-hacia-una-confirmacion-posterior" title="Volver hacia una confirmación posterior" class="md-nav__link">
-    Volver hacia una confirmación posterior
+  <a href="#volver-hacia-una-confirmacion-anterior" title="Volver hacia una confirmación anterior" class="md-nav__link">
+    Volver hacia una confirmación anterior
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creando-una-rama-a-partir-de-una-confirmacion-anterior" title="Creando una rama a partir de una confirmación anterior" class="md-nav__link">
+    Creando una rama a partir de una confirmación anterior
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1631,7 +1657,7 @@ Por ejemplo: </p>
 </pre></div>
 
 <p>De esta manera, el archivo <code>index.html</code> volverá al estado que tenía luego del último <em>commit</em></p>
-<h2 id="volver-hacia-una-confirmacion-posterior">Volver hacia una confirmación posterior<a class="headerlink" href="#volver-hacia-una-confirmacion-posterior" title="Permanent link">&para;</a></h2>
+<h2 id="volver-hacia-una-confirmacion-anterior">Volver hacia una confirmación anterior<a class="headerlink" href="#volver-hacia-una-confirmacion-anterior" title="Permanent link">&para;</a></h2>
 <p>Git nos permite volver hacia atrás a cualquier <em>commit</em> que forme parte de la historia de nuestro proyecto, deshaciendo los cambios posteriores al commit elegido. Para ello, es suficiente ejecutar el siguiente comando: </p>
 <p><div class="codehilite"><pre><span></span>git checkout <span class="o">[</span>numeroDeHash<span class="o">]</span>
 </pre></div>
@@ -1647,6 +1673,7 @@ Donde <code>numeroDeHash</code> es el número de hash del <em>commit</em> al cua
 
 </p>
 </div>
+<h3 id="creando-una-rama-a-partir-de-una-confirmacion-anterior">Creando una rama a partir de una confirmación anterior<a class="headerlink" href="#creando-una-rama-a-partir-de-una-confirmacion-anterior" title="Permanent link">&para;</a></h3>
 <p>Sin embargo, esta acción dejaría al proyecto sin referencia a <code>HEAD</code>. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los <em>commits</em> que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso <code>git garbage collection process</code> tendremos que crear una nueva rama del último commit que hemos realizado:</p>
 <div class="codehilite"><pre><span></span>git checkout -b <span class="o">[</span>ramaNueva<span class="o">]</span> <span class="o">[</span>numeroDeHash<span class="o">]</span>
 </pre></div>
