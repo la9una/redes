@@ -109,23 +109,9 @@ git checkout 56a4e5c08
 		git log --oneline
 		```
 
-### Creando una rama a partir de una confirmación anterior 
-Sin embargo, esta acción dejaría al proyecto sin referencia a `HEAD`. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los _commits_ que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso `git garbage collection process` tendremos que crear una nueva rama del último commit que hemos realizado:
+Sin embargo, esta acción dejaría al proyecto sin referencia a `HEAD`. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los _commits_ que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso `git garbage collection process` tendremos que [crear una nueva rama del último commit que hemos realizado](ramas.md#crear-una-rama-a-partir-de-una-confirmacion-anterior).
 
-```bash
-git checkout -b [ramaNueva] [numeroDeHash]
-```
 
-Por ejemplo: 
-
-```bash
-git checkout -b prueba 56a4e5c08
-```
-Una vez realizado los cambios necesarios, podremos volver a nuestra rama principal, fusionar la nueva rama con ésta y eliminar la rama que habiamos creado:
-
-```bash
-git checkout master && git merge prueba && git branch -d prueba
-```
 ### Volviendo definitivamente hacia una confirmación anterior
 No obstante,si tenemos claro que deseamos volver hacia atrás a un punto concreto del historial descartando todos los cambios posteriores, podemos recurrir al siguiente comando: 
 

@@ -25,6 +25,24 @@ Y, ¿cómo sabe Git en qué rama estamos en este momento? Mediante un apuntador 
 
 ![Ramas en Git - 02](imgGit/branch_02.png)
 
+### Crear una rama a partir de una confirmación anterior 
+Es posible crear una rama a partir de un _commit_ determinado. Para ello, deberemos conocer de antemano [el número de _hash_ del _commit_](logs.mr#formatear-la-salida-del-historial) en cuestión y ejecutar: 
+
+```bash
+git checkout -b [ramaNueva] [numeroDeHash]
+```
+
+Por ejemplo: 
+
+```bash
+git checkout -b prueba 56a4e5c08
+```
+Una vez realizado los cambios necesarios, podremos volver a nuestra rama principal, fusionar la nueva rama con ésta y eliminar la rama que habiamos creado:
+
+```bash
+git checkout master && git merge prueba && git branch -d prueba
+```
+
 ### Cambiar de Rama 
 
 Para saltar de una rama a otra, tenemos que utilizar el comando `git checkout`. Hagamos una prueba, saltando a la rama `testing` recién creada:
