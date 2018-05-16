@@ -1,5 +1,8 @@
 ## Simulacro de examen
 
+!!!tip "Importante"
+		Antes de continuar con los puntos siguientes, el alumno deberá esperar que el docente vise los puntos 8, 9 y 12. 
+
 1. Crear un repositorio vacío en modo local
 2. Configuar git con tus nombre de usuario, mail y servidor proxy
 3. En la rama `master`, crear el archivo `test1.txt`, `test2.txt` y `test3.txt`. Confirmar después de cada creación de archivo.
@@ -20,11 +23,6 @@
 15. Agregar las etiquetas y subirlas al servidor: 
 	1. `v1` - Al primer commit
 	2. `v1.1` - Al último commit 
-
-!!!tip "Importante"
-		Antes de continuar con los puntos siguientes, el alumno deberá mostrar al docente los puntos 8, 9. 
-
-		Finalmente, el alumno deberá esperar que el docente haga cambios en el repositorio del alumno para poder continuar (punto 12)
 
 !!!warning "Crear contenido de archivos desde la terminal git en Windows"
 		Es posible que al editar un archivo en Windows usando la terminal de git nos aparezca un error, puesto que Windows y Lunux gestionan de manera diferente el contenido de los mismos. En ese caso, ejecutar:
