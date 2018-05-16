@@ -1,7 +1,7 @@
 ## Deshaciendo cosas en Git
 En cualquier momento puedes querer deshacer algo. En esta sección veremos algunas herramientas básicas para deshacer cambios.
 
-### Reenviando una comfirmación (_commit_)
+### Reescribir una comfirmación (_commit_)
 Nos puede ocurrir que confirmamos un cambio antes de tiempo, olvidando agregar alguna modificación, un archivo o nos equivocamos en el mensaje de la confirmación. 
 
 Si deseamos desahacer la confirmación, podemos reconfirmarla con la opción --amend:
@@ -20,8 +20,7 @@ $ git commit --amend
 Al final terminaremos con un solo _commit_ (el segundo _commit_ reemplazará al primero)
 
 ### Deshacer un archivo preparado (manteniendo las modificaciones)
-Puede ocurrir que luego de hacer un _commit_ deseamos editar sólo un arhivo que incluimos en él. 
-Para estas ocasiones puede resultar útil el siguiente comando: 
+Puede ocurrir que luego de hacer un _commit_ deseamos editar sólo un arhivo que incluimos en él. Para estas ocasiones puede resultar útil el siguiente comando: 
 
 ```bash
 git reset HEAD [archivo]
@@ -32,10 +31,10 @@ Por ejemplo:
 git reset HEAD index.html
 ```
 
-El archivo `index.html` ahora está modificado y, nuevamente, no preparado.
+El archivo `index.html` ahora está modificado (además, se mantienen las modificaciones hechas) y, nuevamente, no preparado.
 
 ### Deshacer todos los archivos preparados
-Podemos volver atrás todos los cambios incluidos en una confirmación o _commit_, y elegir si deseamos mantener las modificaciones hechas en ella o descartarlas: 
+Podemos volver atrás todos los cambios incluidos en una confirmación o _commit_, y elegir si deseamos mantener las modificaciones hechas en ella o descartarlas. 
 
 #### Mantener las modificaciones
 Existe la posibilidad de eliminar el commit pero manteniendo las modificaciones que contiene ese commit en el área de trabajo. Para ello, ejecutaríamos el siguiente comando:
@@ -80,8 +79,7 @@ Habremos descartado todas las modificaciones hechas antes del último _commit_ i
 
 
 ### Deshacer un archivo modificado
-¿Qué tal si te das cuenta que no querés mantener los cambios del archivo `index.html` del ejemplo anterior? ¿Cómo volver al estado en el que estaba en la última confirmación (o
-cuando estaba recién clonado, o como sea que haya llegado a tu directorio de trabajo)? Con la opción `checkout --`:
+¿Qué tal si te das cuenta que no querés mantener los cambios del archivo `index.html` del ejemplo anterior? ¿Cómo volver al estado en el que estaba en la última confirmación (o cuando estaba recién clonado, o como sea que haya llegado a tu directorio de trabajo)? Con la opción `checkout --`:
 
 ```bash
 git checkout -- index.html

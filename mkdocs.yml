@@ -1,6 +1,6 @@
 # Información general
-site_name: 'Redes con software libre'
-site_description: 'Redes de datos con software libre'
+site_name: 'Redes'
+site_description: 'Instalación, mantenimiento y reparación de redes informáticas'
 site_author: 'Raul Jesus Lopez'
 site_url: http://www.rauljesus.xyz/redes
 
@@ -17,8 +17,8 @@ theme:
   custom_dir: 'material'
   language: 'es'
   palette:
-    primary: 'deep orange'
-    accent: 'orange'
+    primary: 'green'
+    accent: 'green'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
@@ -66,9 +66,19 @@ markdown_extensions:
 # Páginas
 pages: 
 - Inicio: 'index.md'
-- SSH: 
+- GNU/Linux:
+    - Introducción: 'gnuLinux/userWhyLinux.md'
+#    - La terminal de comandos: 'terminal.md'
+#    - Sistema de archivos: 'sistemaArchivos.md'
+    - Archivos y carpetas: 'gnuLinux/userFilesystem.md'
+    - Compresión y descompresión: 'gnuLinux/userCompression.md'
+    - El editor nano: 'gnuLinux/userNano.md'
+    - El editor vim: 'gnuLinux/userVim.md'
+    - Búsquedas: 'gnuLinux/userSearch.md'
+    - Scripts: 'gnuLinux/userBashScripting.md'
+- Servidor SSH: 
     - Autenticación de llave pública: 'ssh/authKey.md'
-- Resolución de nombres: 
+- Servidor de nombres: 
     - El archivo hosts: 'dns/archivoHosts.md'
     - ¿Qué es el DNS?: 'dns/index.md'
     - BIND: 
@@ -84,15 +94,16 @@ pages:
         - Realizando pruebas: 'dns/test.md'
 #- pfSense:
 #      - Introducción: 'pfsense/index.md'
-- LAMP:
-    - ¿Qué es LAMP?: 'lamp/queEs.md'
-    - Instalación: 'lamp/instalacion.md'
-    - Gestión básica: 'lamp/gestionBasica.md'
-    - Web de usuario: 'lamp/userdir.md'
-    - Hosts virtuales: 'lamp/virtualHosts.md'
-#    - WebDav: 'lamp/webDav.md'
-    - Ejercicios: 'lamp/ejercicios.md'
-- Samba:
+- Servidor web:
+  - LAMP:
+        - ¿Qué es LAMP?: 'lamp/queEs.md'
+        - Instalación: 'lamp/instalacion.md'
+        - Gestión básica: 'lamp/gestionBasica.md'
+        - Web de usuario: 'lamp/userdir.md'
+        - Hosts virtuales: 'lamp/virtualHosts.md'
+    #    - WebDav: 'lamp/webDav.md'
+        - Ejercicios: 'lamp/ejercicios.md'
+- Servidor de compartición:
     - ¿Qué es SAMBA?: 'samba/index.md'
     - Instalación: 'samba/instalacion.md'
     - Configuración general: 'samba/configuracionGeneral.md'
@@ -102,16 +113,18 @@ pages:
     - Carpeta de invitados: 'samba/comparticionInvitados.md'
     - Clientes Windows: 'samba/clientesWindows.md'
     - Ejercicios: 'samba/ejercicios.md'
-- Icecast:
+- Servidor proxy: 
+    - ITEL: 'proxy/index.md'
+- Servidor de streaming:
     - ¿Qué es Icecast?: 'icecast/index.md'
     - Instalación: 'icecast/instalacion.md'
     - Inicializando el servidor: 'icecast/inicializacion.md'
     - Configuración general: 'icecast/configuracionGeneral.md'
     - Broadcasting: 'icecast/broadcasting.md'
     - Administración: 'icecast/administracion.md'
-- Git:
+- Control de versiones:
     - ¿Qué es Git?: 'git/index.md'
-    - Entornos distribuidos: 'git/flujoEntornosDistribuidos.md'
+#    - Entornos distribuidos: 'git/flujoEntornosDistribuidos.md'
     - Instalación de Git: 'git/instalacion.md'
     - Configuración inicial: 'git/configuracionInicial.md'
     - Estados de un proyecto: 'git/estados.md'
@@ -125,15 +138,15 @@ pages:
     - Etiquetado: 'git/etiquetas.md'
     - Otros comandos: 'git/otrosComandosGit.md'
     - Ejemplo de uso de git: 'git/ejemploGit.md'
-- Nagios:
-    - ¿Qué es Nagios?: 'nagios/index.md'
-    - Instalación: 'nagios/instalacion.md'
-    - Configuración inicial: 'nagios/configuracion.md'
-    - Definiendo equipos: 'nagios/equipos.md'
-    - Definiendo grupos: 'nagios/grupos.md'
-    - Definiendo servicios: 'nagios/servicios.md'
-    - Agente Windows: 'nagios/nsclient.md'
-    - Definiendo íconos: 'nagios/iconos.md'
-    - Recursos adicionales: 'nagios/recursos.md'
-- Proxy: 
-    - Instrucciones: 'proxy/index.md'
+    - Cheatsheet: "git/cheatsheet.md"
+- Monitoreo de redes:
+  - Nagios: 
+      - ¿Qué es Nagios?: 'nagios/index.md'
+      - Instalación: 'nagios/instalacion.md'
+      - Configuración inicial: 'nagios/configuracion.md'
+      - Definiendo equipos: 'nagios/equipos.md'
+      - Definiendo grupos: 'nagios/grupos.md'
+      - Definiendo servicios: 'nagios/servicios.md'
+      - Agente Windows: 'nagios/nsclient.md'
+      - Definiendo íconos: 'nagios/iconos.md'
+      - Recursos adicionales: 'nagios/recursos.md'

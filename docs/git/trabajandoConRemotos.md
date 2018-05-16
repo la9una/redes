@@ -27,18 +27,7 @@ Donde:
 * `[nombreRepositorioRemoto]` Es el nombre del origen remoto (comunmente _origin_ aunque puede ser cualquier otro)
 * `[urlRepositorioRemoto]` Es la dirección URL o ruta hacia el repositorio remoto que deseamos vincular
 
-### 1.1. Agregando repositorio remoto [SSH]
-```bash
-git remote add origin usuario@192.168.0.200:/home/usuario/miRepositorio.git
-```
-Donde:
-
-* `origin` es el nombre que le asignamos al repositorio remoto
-* `usuario` es el nombre de usuario en el servidor remoto.
-* `192.168.0.200` es la dirección IP (o nombre de dominio) del servidor remoto. 
-* `/home/usuario/miRepositorio.git` es la ruta donde se ubica el repositorio en el servidor remoto.
-
-### 1.2. Agregando repositorio remoto [HTTPS]
+### 1.1. Agregando repositorio remoto [HTTPS]
 ```bash
 git remote add origin https://github.com/usuario/repositorio.git
 ```
@@ -48,6 +37,17 @@ Donde:
 * `https://github.com` el el nombre de dominio del servidor remoto.
 * `usuario` es el nombre de usuario en el servidor remoto.
 * `repositorio.git` es el nombre repositorio en el servidor remoto.
+
+### 1.2. Agregando repositorio remoto [SSH]
+```bash
+git remote add origin usuario@192.168.0.200:/home/usuario/miRepositorio.git
+```
+Donde:
+
+* `origin` es el nombre que le asignamos al repositorio remoto
+* `usuario` es el nombre de usuario en el servidor remoto.
+* `192.168.0.200` es la dirección IP (o nombre de dominio) del servidor remoto. 
+* `/home/usuario/miRepositorio.git` es la ruta donde se ubica el repositorio en el servidor remoto.
 
 ## 2. Visualizar orígenes remotos
 Para ver los remotos que tenemos configurados, debemos ejecutar:

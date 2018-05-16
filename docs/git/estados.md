@@ -62,5 +62,5 @@ Es el lugar donde se almacenan los metadatos y la base de datos de objetos para 
 | --------------------- | ---------------------- | ---------------------------------------- |
 | Directorio de trabajo | Modificado (_modified_)             | Archivos modificados que aún no forman parte del repositorio                    |
 | Área de preparación   | Preparado (_staged_)              | Archivos modificados que están listos para formar parte del repositorio |
-| Directorio Git        | Confirmado _committed_)       | Archivos que forman parte del repositorio |
+| Directorio Git        | Confirmado (_committed_)       | Archivos que forman parte del repositorio |
 
