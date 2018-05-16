@@ -1,7 +1,7 @@
 ## Simulacro de examen
 
-!!!tip "Importante"
-		Antes de continuar con los puntos siguientes, el alumno deberá esperar que el docente vise los puntos 8, 9 y 12. 
+!!!warning "Importante"
+		Antes de continuar con el ejercicio, el alumno deberá detener su trabajo y esperar que el docente vise los puntos 8, 9 y 12. 
 
 1. Crear un repositorio vacío en modo local
 2. Configuar git con tus nombre de usuario, mail y servidor proxy
@@ -24,7 +24,7 @@
 	1. `v1` - Al primer commit
 	2. `v1.1` - Al último commit 
 
-!!!warning "Crear contenido de archivos desde la terminal git en Windows"
+!!!fail "Crear contenido de archivos desde la terminal git en Windows"
 		Es posible que al editar un archivo en Windows usando la terminal de git nos aparezca un error, puesto que Windows y Lunux gestionan de manera diferente el contenido de los mismos. En ese caso, ejecutar:
 	
 		```
