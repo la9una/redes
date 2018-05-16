@@ -17,7 +17,7 @@
 	2. Agregar un repositorio remoto llamado `repotest`. 
 	3. Agregar al usuario `la9una` como colaborador del repositorio.
 8. Subir las ramas locales al servidor
-9. Fusionar la rama `personal` con la rama `master`
+9. Fusionar la rama `personal` con la rama `master`, incluyendo el texto "Fusionando rama personal con master" como texto del _commit_.
 10. Eliminar la rama `personal` en modo local y remoto
 11. Esperar por los cambios que realizará el docente en la rama `master`. Luego: 
 	1. Traer los cambios de la rama `master`
@@ -25,8 +25,8 @@
 12. A partir de la rama `master`, crear una nueva rama llamada `fix` tomando como origen el segundo commit.   
 13. Agregar el archivo `parche.txt` y confirmar los cambios. Subir los cambios al servidor. 
 14. Agregar las etiquetas y subirlas al servidor: 
-	1. `v1` - Al primer commit
-	2. `v1.1` - Al último commit 
+	1. `v1` - Al primer commit, con el texto "Versión 1 Liberada" como mensaje de etiqueta.
+	2. `v1.1` - Al último commit, con el texto "Versión 1.1 Liberada" como mensaje de etiqueta
 
 !!!fail "Crear contenido de archivos desde la terminal git en Windows"
 		Es posible que al editar un archivo en Windows usando la terminal de git nos aparezca un error, puesto que Windows y Lunux gestionan de manera diferente el contenido de los mismos. En ese caso, ejecutar:
