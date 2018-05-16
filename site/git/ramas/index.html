@@ -1401,7 +1401,7 @@
 <p>Y, ¿cómo sabe Git en qué rama estamos en este momento? Mediante un apuntador especial denominado HEAD. Este apuntador se ubica en la rama local en la que estemos en ese momento, en este caso la rama <code>master</code>; pues <strong>el comando <code>git branch</code> solamente crea una nueva rama, y no salta a dicha rama</strong>.</p>
 <p><img alt="Ramas en Git - 02" src="../imgGit/branch_02.png" /></p>
 <h3 id="crear-una-rama-a-partir-de-una-confirmacion-anterior">Crear una rama a partir de una confirmación anterior<a class="headerlink" href="#crear-una-rama-a-partir-de-una-confirmacion-anterior" title="Permanent link">&para;</a></h3>
-<p>Es posible crear una rama a partir de un <em>commit</em> determinado. Para ello, deberemos conocer de antemano <a href="../logs.mr#formatear-la-salida-del-historial">el número de <em>hash</em> del <em>commit</em></a> en cuestión y ejecutar: </p>
+<p>Es posible crear una rama a partir de un <em>commit</em> determinado. Para ello, deberemos conocer de antemano <a href="../logs/#formatear-la-salida-del-historial">el número de <em>hash</em> del <em>commit</em></a> en cuestión y ejecutar: </p>
 <div class="codehilite"><pre><span></span>git checkout -b <span class="o">[</span>ramaNueva<span class="o">]</span> <span class="o">[</span>numeroDeHash<span class="o">]</span>
 </pre></div>
 
