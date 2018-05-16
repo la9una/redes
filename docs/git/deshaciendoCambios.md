@@ -88,7 +88,7 @@ git checkout -- index.html
 De esta manera, el archivo `index.html` volverá al estado que tenía luego del último _commit_
 
 
-## Volver hacia una confirmación posterior
+## Volver hacia una confirmación anterior
 Git nos permite volver hacia atrás a cualquier _commit_ que forme parte de la historia de nuestro proyecto, deshaciendo los cambios posteriores al commit elegido. Para ello, es suficiente ejecutar el siguiente comando: 
 
 ```bash
@@ -109,6 +109,7 @@ git checkout 56a4e5c08
 		git log --oneline
 		```
 
+### Creando una rama a partir de una confirmación anterior 
 Sin embargo, esta acción dejaría al proyecto sin referencia a `HEAD`. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los _commits_ que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso `git garbage collection process` tendremos que crear una nueva rama del último commit que hemos realizado:
 
 ```bash
