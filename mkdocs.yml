@@ -138,7 +138,8 @@ pages:
     - Etiquetado: 'git/etiquetas.md'
     - Otros comandos: 'git/otrosComandosGit.md'
     - Ejemplo de uso de git: 'git/ejemploGit.md'
-    - Cheatsheet: "git/cheatsheet.md"
+#    - Cheatsheet: "git/cheatsheet.md"
+    - Ejercicios: 'git/ejercicios.md'
 - Monitoreo de redes:
   - Nagios: 
       - ¿Qué es Nagios?: 'nagios/index.md'
