@@ -17,7 +17,9 @@
 9. Subir las ramas locales al servidor
 10. Fusionar la rama `personal` con la rama `master`
 11. Eliminar la rama `personal` en modo local y remoto
-12. Esperar por los cambios que realizará el docente en la rama `compartida`. Traer los cambios de la rama `compartida` y resolver los conflictos (agrega el texto "Conflicto resuelto"). Confirmar y subir los cambios al servidor.
+12. Esperar por los cambios que realizará el docente en la rama `compartida`. Luego: 
+	1. Traer los cambios de la rama `compartida`
+	2. Resolver los conflictos generados, agregando el texto "Conflicto resuelto por -Nombre de alumno-" dentro del archivo `test5.txt` y al mensaje del _commit_. Confirmar y subir los cambios al servidor.
 13. A partir de la rama `master`, crear una nueva rama llamada `fix` tomando como origen el segundo commit.   
 14. Agregar el archivo `parche.txt` y confirmar los cambios. Subir los cambios al servidor. 
 15. Agregar las etiquetas y subirlas al servidor: 
