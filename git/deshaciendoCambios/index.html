@@ -1209,13 +1209,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creando-una-rama-a-partir-de-una-confirmacion-anterior" title="Creando una rama a partir de una confirmación anterior" class="md-nav__link">
-    Creando una rama a partir de una confirmación anterior
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#volviendo-definitivamente-hacia-una-confirmacion-anterior" title="Volviendo definitivamente hacia una confirmación anterior" class="md-nav__link">
     Volviendo definitivamente hacia una confirmación anterior
   </a>
@@ -1560,13 +1553,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#creando-una-rama-a-partir-de-una-confirmacion-anterior" title="Creando una rama a partir de una confirmación anterior" class="md-nav__link">
-    Creando una rama a partir de una confirmación anterior
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#volviendo-definitivamente-hacia-una-confirmacion-anterior" title="Volviendo definitivamente hacia una confirmación anterior" class="md-nav__link">
     Volviendo definitivamente hacia una confirmación anterior
   </a>
@@ -1687,18 +1673,7 @@ Donde <code>numeroDeHash</code> es el número de hash del <em>commit</em> al cua
 
 </p>
 </div>
-<h3 id="creando-una-rama-a-partir-de-una-confirmacion-anterior">Creando una rama a partir de una confirmación anterior<a class="headerlink" href="#creando-una-rama-a-partir-de-una-confirmacion-anterior" title="Permanent link">&para;</a></h3>
-<p>Sin embargo, esta acción dejaría al proyecto sin referencia a <code>HEAD</code>. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los <em>commits</em> que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso <code>git garbage collection process</code> tendremos que crear una nueva rama del último commit que hemos realizado:</p>
-<div class="codehilite"><pre><span></span>git checkout -b <span class="o">[</span>ramaNueva<span class="o">]</span> <span class="o">[</span>numeroDeHash<span class="o">]</span>
-</pre></div>
-
-<p>Por ejemplo: </p>
-<p><div class="codehilite"><pre><span></span>git checkout -b prueba 56a4e5c08
-</pre></div>
-Una vez realizado los cambios necesarios, podremos volver a nuestra rama principal, fusionar la nueva rama con ésta y eliminar la rama que habiamos creado:</p>
-<div class="codehilite"><pre><span></span>git checkout master <span class="o">&amp;&amp;</span> git merge prueba <span class="o">&amp;&amp;</span> git branch -d prueba
-</pre></div>
-
+<p>Sin embargo, esta acción dejaría al proyecto sin referencia a <code>HEAD</code>. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los <em>commits</em> que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso <code>git garbage collection process</code> tendremos que <a href="../ramas/#crear-una-rama-a-partir-de-una-confirmacion-anterior">crear una nueva rama del último commit que hemos realizado</a>.</p>
 <h3 id="volviendo-definitivamente-hacia-una-confirmacion-anterior">Volviendo definitivamente hacia una confirmación anterior<a class="headerlink" href="#volviendo-definitivamente-hacia-una-confirmacion-anterior" title="Permanent link">&para;</a></h3>
 <p>No obstante,si tenemos claro que deseamos volver hacia atrás a un punto concreto del historial descartando todos los cambios posteriores, podemos recurrir al siguiente comando: </p>
 <div class="codehilite"><pre><span></span>git reset --hard <span class="o">[</span>numeroDeHash<span class="o">]</span>
