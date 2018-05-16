@@ -22,4 +22,13 @@
 	2. `v1.1` - Al último commit 
 
 !!!tip "Importante"
-		Antes de continuar con los puntos siguientes, el alumno deberá mostrar al docente los puntos 8, 9
+		Antes de continuar con los puntos siguientes, el alumno deberá mostrar al docente los puntos 8, 9. 
+
+		Finalmente, el alumno deberá esperar que el docente haga cambios en el repositorio del alumno para poder continuar (punto 12)
+
+!!!warning "Crear contenido de archivos desde la terminal git en Windows"
+		Es posible que al editar un archivo en Windows usando la terminal de git nos aparezca un error, puesto que Windows y Lunux gestionan de manera diferente el contenido de los mismos. En ese caso, ejecutar:
+	
+		```
+		git config --global core.autocrlf true
+		```
