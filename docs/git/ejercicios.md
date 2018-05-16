@@ -5,10 +5,13 @@
 
 1. Crear un repositorio vacío en modo local
 2. Configuar git con tus nombre de usuario, mail y servidor proxy
-3. En la rama `master`, crear el archivo `test1.txt`, `test2.txt` y `test3.txt`. Confirmar después de cada creación de archivo.
-4. Crear 2 ramas llamadas `personal` y `compartida`
-5. En la rama `personal`, crear el archivo `test4.txt` y confirmarlo.
-6. En la rama `compartida` crear el archivo `test5.txt`, agregar el texto "Apellido y nombre". Confirmar los cambios.
+3. En la rama `master`, 
+	1. Crear el archivo `test1.txt`, `test2.txt` confirmando los cambios en cada caso. 
+	2. Crear dos archivos: `test3.txt` `test4.txt` y `.gitignore`. Incluir en este último, al archivo `test3.txt`.  
+	3. Confirmar los cambios.
+4. Crear 2 ramas llamadas `personal` y `feature`
+5. En la rama `personal`, crear el archivo `test5.txt` y confirmarlo.
+6. En la rama `feature` crear el archivo `test6.txt`, agregar el texto "Apellido y nombre". Confirmar los cambios.
 7. En [github.com](https://github.com/login):
 	1. Indicar nombre de usuario al docente.
 	2. Agregar un repositorio remoto llamado `repotest`. 
