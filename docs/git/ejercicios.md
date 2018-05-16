@@ -11,7 +11,7 @@
 	3. Confirmar los cambios.
 4. Crear 2 ramas llamadas `personal` y `feature`
 5. En la rama `personal`, crear el archivo `test5.txt` y confirmarlo.
-6. En la rama `master` crear el archivo `test1.txt`, agregar el texto "Apellido y nombre". Confirmar los cambios.
+6. En la rama `master`, agregar el texto "Apellido y nombre" al archivo `test1.txt`. Confirmar los cambios.
 7. En [github.com](https://github.com/login):
 	1. Indicar nombre de usuario al docente.
 	2. Agregar un repositorio remoto llamado `repotest`. 
