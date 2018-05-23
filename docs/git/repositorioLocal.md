@@ -67,7 +67,12 @@ git clone [url]
 		Git permite usar distintos protocolos de transferencia: https://, git:// o el protocolo de transferencia SSH.
 
 ### 2.1. Clonando un repositorio remoto existente [SSH]
+Si disponemos de acceso a una _Shell segura_ en nuestro servidor, podremos emplear este protocolo para clonar nuestro repositorio: 
 
+```bash
+git clone git+ssh://<usuario>@<dominioDelServidor>:<rutaHaciaElRepositorioGit>
+```
+Por ejemplo:
 
 ```bash
 git clone git+ssh://usuario@192.168.0.200:/home/usuario/miRepositorio.git

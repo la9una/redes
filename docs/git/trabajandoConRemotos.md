@@ -20,7 +20,7 @@ Si quisieramos **sincronizar nuestro repositorio local con un repositorio remoto
 La sintaxis general para realizar esta acción es: 
 
 ```bash
-git remote add [nombreRepositorioRemoto] [urlRepositorioRemoto]
+git remote add <nombreRepositorioRemoto> <urlRepositorioRemoto>
 ```
 Donde:
 
@@ -215,7 +215,7 @@ Para resolver esta situación tendremos que:
 Cuando tu proyecto se encuentra en un estado que deseamos compartir, tenemos que enviarlo a un repositorio remoto. El comando que nos permite hacer esto es sencillo: 
 
 ```bash
-git push [nombreRepositorioRemoto][rama]
+git push <nombreRepositorioRemoto><rama>
 ```
 
 Por ejemplo, si queremos enviar nuestra rama (master) a nuestro servidor remoto (origin), ejecutaríamos el siguiente comando:

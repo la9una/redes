@@ -132,13 +132,13 @@ pages:
     - Excluyendo recursos: 'git/gitignore.md'
     - Git en el servidor: 'git/servidorGit.md'
     - Trabajando con remotos: 'git/trabajandoConRemotos.md'
-    - Ramas: 'git/ramas.md'
+    - Ramas: 'git/branches.md'
     - Deshaciendo cambios: 'git/deshaciendoCambios.md'
     - Historial de confirmaciones: 'git/logs.md'
     - Etiquetado: 'git/etiquetas.md'
     - Otros comandos: 'git/otrosComandosGit.md'
     - Ejemplo de uso de git: 'git/ejemploGit.md'
-#    - Cheatsheet: "git/cheatsheet.md"
+    - Cheatsheet: "git/cheatsheet.md"
     - Ejercicios: 'git/ejercicios.md'
 - Monitoreo de redes:
   - Nagios: 

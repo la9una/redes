@@ -141,7 +141,7 @@ Por ejemplo:
 git push origin --delete master
 ```
 
-# Estudio de caso: uso de ramas
+## Estudio de caso: uso de ramas
 
 Vamos a presentar un ejemplo simple de ramificar y de fusionar, con un flujo de trabajo que se podría presentar en la realidad. Imagina que sigues los siguientes pasos:
 
