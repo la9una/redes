@@ -1,16 +1,20 @@
 ## Evaluación
 
 !!!warning "Importante"
-		Antes de continuar con el ejercicio, el alumno deberá detener su trabajo y esperar que el docente vise los puntos 2.c. y 7. 
+		Antes de continuar con el ejercicio, el alumno deberá detener su trabajo y esperar que el docente vise los puntos:
+
+		* 2.c. 
+		* 4
+		* 7.a.  
 
 1. Iniciá sesión con tu cuenta en [github.com](https://github.com/login):
 	1. Indicá tu nombre de usuario al docente.
 	2. Agregá un repositorio llamado `eval` (respetar nombre y minúsculas). 
-	3. Agregar al usuario `la9una` como colaborador del repositorio.  
+	3. Agregar al usuario `la9una` como colaborador del repositorio.
 2. Creá un repositorio vacío en modo local
 	1. Configurá git con tus nombre de usuario, mail y servidor proxy
 	2. Creá el archivo `.gitignore` y excluí el archivo `master4.txt`. 
-	3. Creá los archivos `master[1-4].txt`, **confirmando los cambios despúes de creá cada archivo** con el texto "Creando el archivo n", donde "n" deberá ser reemplazado por el número de archivo.  
+	3. Creá los archivos `master[1-4].txt`, **confirmando los cambios despúes de creá cada archivo** con el texto "Creando el archivo n" (donde "n" deberá ser reemplazado por el número de cada archivo).  
 3. Creá una rama llamada `evaluacion` e ingresá dentro de ésta.
 	1. Creá el archivo `evaluacion1.txt` y confirmarlo. 
 4. Publicá los cambios de ambas ramas en el servidor remoto.
@@ -21,9 +25,9 @@
 	2. Traé los cambios de la rama
 	3. En el nuevo archivo `README.md` (creado por el profesor) agregá el texto "Editado por -Nombre de alumno-", que será también el texto empleado en la comfirmación. Subí los cambios al servidor.
 	4. Agregá las siguientes etiquetas y subilas al servidor: 
-		1. `evalua1.0` - Al primer commit, con el texto "Evaluación 1" como mensaje de etiqueta.
-		2. `evalua1.1` - Al último commit, con el texto "Evaluación 2" como mensaje de etiqueta
-8. Creá una nueva rama llamada `prueba`, tomando como origen la rama `master`, a partir del primer _commit_ realizada en esta rama.
+		1. `evalua0.1` - Al primer commit, con el texto "Evaluación 1" como mensaje de etiqueta.
+		2. `evalua1.2` - Al último commit, con el texto "Evaluación 2" como mensaje de etiqueta
+8. Creá una nueva rama llamada `prueba`, tomando como origen la rama `master`, a partir del _commit_ en el que interviene el profesor. 
 	1. Escribí dentro del archivo `README.md` el texto "Rama prueba creada", usando el mismo texto para la confirmación. Guardá los cambios en el servidor.     
 
 

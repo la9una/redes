@@ -109,7 +109,7 @@ git checkout 56a4e5c08
 		git log --oneline
 		```
 
-Sin embargo, esta acción dejaría al proyecto sin referencia a `HEAD`. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los _commits_ que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso `git garbage collection process` tendremos que [crear una nueva rama del último commit que hemos realizado](ramas.md#crear-una-rama-a-partir-de-una-confirmacion-anterior).
+Sin embargo, esta acción dejaría al proyecto sin referencia a `HEAD`. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los _commits_ que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso `git garbage collection process` tendremos que [crear una nueva rama del último commit que hemos realizado](branches.md#crear-una-rama-a-partir-de-una-confirmacion-anterior).
 
 
 ### Volviendo definitivamente hacia una confirmación anterior

@@ -61,7 +61,7 @@ Finalmente, si deseamos obtener una salida detallada del registo de confirmacion
 git log --stat
 ```
 
-Este tipo de salidas serán más interesantes cuando empecemos a hablar sobre [ramificaciones y combinaciones](ramas.md).
+Este tipo de salidas serán más interesantes cuando empecemos a hablar sobre [ramificaciones y combinaciones](branches.md).
 
 Éstas son sólo algunas de las opciones para formatear la salida de `git log` (existen muchas más):
 

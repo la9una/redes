@@ -13,7 +13,7 @@
         <meta name="description" content="Instalación, mantenimiento y reparación de redes informáticas">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/git/ramas/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/git/branches/">
       
       
         <meta name="author" content="Raul Jesus Lopez">
@@ -1110,12 +1110,125 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Ramas
+      </label>
     
     <a href="./" title="Ramas" class="md-nav__link md-nav__link--active">
       Ramas
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ramas-o-branches" title="Ramas o branches" class="md-nav__link">
+    Ramas o branches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trabajando-con-ramas-locales" title="Trabajando con ramas locales" class="md-nav__link">
+    Trabajando con ramas locales
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-rama-nueva" title="Crear una rama nueva" class="md-nav__link">
+    Crear una rama nueva
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-rama-a-partir-de-una-confirmacion-anterior" title="Crear una rama a partir de una confirmación anterior" class="md-nav__link">
+    Crear una rama a partir de una confirmación anterior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambiar-de-rama" title="Cambiar de Rama" class="md-nav__link">
+    Cambiar de Rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-una-rama" title="Eliminar una rama" class="md-nav__link">
+    Eliminar una rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fusionar-ramas" title="Fusionar ramas" class="md-nav__link">
+    Fusionar ramas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabajando-con-ramas-remotas" title="Tabajando con ramas remotas" class="md-nav__link">
+    Tabajando con ramas remotas
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#publicar-una-rama" title="Publicar una rama" class="md-nav__link">
+    Publicar una rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-una-rama_1" title="Eliminar una rama" class="md-nav__link">
+    Eliminar una rama
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estudio-de-caso-uso-de-ramas" title="Estudio de caso: uso de ramas" class="md-nav__link">
+    Estudio de caso: uso de ramas
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1176,6 +1289,18 @@
   <li class="md-nav__item">
     <a href="../ejemploGit/" title="Ejemplo de uso de git" class="md-nav__link">
       Ejemplo de uso de git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cheatsheet/" title="Cheatsheet" class="md-nav__link">
+      Cheatsheet
     </a>
   </li>
 
@@ -1367,8 +1492,110 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
   
+    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ramas-o-branches" title="Ramas o branches" class="md-nav__link">
+    Ramas o branches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trabajando-con-ramas-locales" title="Trabajando con ramas locales" class="md-nav__link">
+    Trabajando con ramas locales
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-rama-nueva" title="Crear una rama nueva" class="md-nav__link">
+    Crear una rama nueva
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-una-rama-a-partir-de-una-confirmacion-anterior" title="Crear una rama a partir de una confirmación anterior" class="md-nav__link">
+    Crear una rama a partir de una confirmación anterior
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cambiar-de-rama" title="Cambiar de Rama" class="md-nav__link">
+    Cambiar de Rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-una-rama" title="Eliminar una rama" class="md-nav__link">
+    Eliminar una rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fusionar-ramas" title="Fusionar ramas" class="md-nav__link">
+    Fusionar ramas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tabajando-con-ramas-remotas" title="Tabajando con ramas remotas" class="md-nav__link">
+    Tabajando con ramas remotas
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#publicar-una-rama" title="Publicar una rama" class="md-nav__link">
+    Publicar una rama
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-una-rama_1" title="Eliminar una rama" class="md-nav__link">
+    Eliminar una rama
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estudio-de-caso-uso-de-ramas" title="Estudio de caso: uso de ramas" class="md-nav__link">
+    Estudio de caso: uso de ramas
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1380,19 +1607,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/git/ramas.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/la9una/redes/edit/master/docs/git/branches.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
+                
+                  <h1>Ramas</h1>
                 
                 <h2 id="ramas-o-branches">Ramas o <em>branches</em><a class="headerlink" href="#ramas-o-branches" title="Permanent link">&para;</a></h2>
-<p>Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocurre naturalmente para resolver problemas o crear nuevas funcionalidades. En la práctica permiten que nuestro proyecto pueda tener diversos estados y que los desarrolladores sean capaces de pasar de uno a otro de una manera ágil. Cuando inicializamos un proyecto con Git automáticamente nos encontramos en una rama a la que se denomina "master". </p>
+<p>Las ramas son caminos que puede tomar el desarrollo de un software, algo que ocurre naturalmente para resolver problemas o crear nuevas funcionalidades. En la práctica permiten que nuestro proyecto pueda tener diversos estados y que los desarrolladores sean capaces de pasar de uno a otro de una manera ágil. Cuando inicializamos un proyecto con Git automáticamente nos encontramos en una rama a la que se denomina <code>master</code>. </p>
 <div class="admonition done">
-<p class="admonition-title">La rama master<p>La rama “master” en Git no es una rama especial. Es como cualquier otra rama. La única razón por la cual aparece en casi todos los repositorios es porque es la que crea por defecto el comando git init y la gente no se molesta en cambiarle el nombre.</p>
+<p class="admonition-title">La rama master<p>La rama <code>master</code> en Git no es una rama especial. Es como cualquier otra rama. La única razón por la cual aparece en casi todos los repositorios es porque es la que crea por defecto el comando git init y la gente no se molesta en cambiarle el nombre.</p>
 </p>
 </div>
 <h2 id="trabajando-con-ramas-locales">Trabajando con ramas locales<a class="headerlink" href="#trabajando-con-ramas-locales" title="Permanent link">&para;</a></h2>
 <p>Podemos gestionar ramas en git en nuestro equipo</p>
 <h3 id="crear-una-rama-nueva">Crear una rama nueva<a class="headerlink" href="#crear-una-rama-nueva" title="Permanent link">&para;</a></h3>
-<p>¿Qué sucede cuando creas una nueva rama? Simplemente se crea un nuevo apuntador para que lo podamos moverlo libremente. Por ejemplo, supongamos que queremos crear una rama nueva denominada "testing". Para ello, ejecutaremos el comando: </p>
+<p>¿Qué sucede cuando creas una nueva rama? Simplemente se crea un nuevo apuntador para que lo podamos moverlo libremente. Por ejemplo, supongamos que queremos crear una rama nueva denominada <code>testing</code>. Para ello, ejecutaremos el comando: </p>
 <div class="codehilite"><pre><span></span>git branch testing
 </pre></div>
 
@@ -1433,7 +1662,9 @@ Una vez realizado los cambios necesarios, podremos volver a nuestra rama princip
 <p>Ahora el historial de nuestro proyecto diverge. Hemos creado una rama y saltado a ella, hemos trabajado sobre ella; hemos vuelto a la rama original, y hemos trabajado también sobre ella. Los cambios realizados en ambas sesiones de trabajo están aislados en ramas independientes: podemos saltar libremente de una a otra según estimemos oportuno.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip sobre la creación de ramas<p>Para crear una nueva rama y saltar a ella, en un solo paso, podemos utilizar el comando:</p>
-<p><code>git checkout -b nuevaRama</code></p>
+<div class="codehilite"><pre><span></span>git checkout -b nuevaRama
+</pre></div>
+
 </p>
 </div>
 <h3 id="eliminar-una-rama">Eliminar una rama<a class="headerlink" href="#eliminar-una-rama" title="Permanent link">&para;</a></h3>
@@ -1453,9 +1684,19 @@ De esta manera, Git fusionará los cambios hechos en la rama alternativa con la 
 <p><div class="codehilite"><pre><span></span>git push &lt;nombreRepositorioRemoto&gt; &lt;rama&gt;
 </pre></div>
 Por ejemplo: </p>
-<div class="codehilite"><pre><span></span>git push origin master
+<p><div class="codehilite"><pre><span></span>git push origin master
 </pre></div>
-
+Sin embargo, podremos publicar nuestros cambios en <strong>todas las ramas</strong> remotas a la vez, ejecutando: </p>
+<p><div class="codehilite"><pre><span></span>git push --all &lt;nombreRepositorioRemoto&gt; 
+</pre></div>
+Por ejemplo: </p>
+<div class="admonition done">
+<p class="admonition-title">Superpush<p>El comando: </p>
+<p><div class="codehilite"><pre><span></span>git push --all &lt;nombreRepositorioRemoto&gt; 
+</pre></div>
+No sólo sube todas las ramas locales hacia las ramas remotas, sino también lo hace con las eqtiquetas. </p>
+</p>
+</div>
 <h3 id="eliminar-una-rama_1">Eliminar una rama<a class="headerlink" href="#eliminar-una-rama_1" title="Permanent link">&para;</a></h3>
 <p>Aunque hayamos elminado la rama de forma local, deberemos hacerlo también de manera remota: </p>
 <p><div class="codehilite"><pre><span></span>git push &lt;nombreRepositorioRemoto&gt; --delete &lt;rama&gt;
@@ -1464,7 +1705,7 @@ Por ejemplo: </p>
 <div class="codehilite"><pre><span></span>git push origin --delete master
 </pre></div>
 
-<h1 id="estudio-de-caso-uso-de-ramas">Estudio de caso: uso de ramas<a class="headerlink" href="#estudio-de-caso-uso-de-ramas" title="Permanent link">&para;</a></h1>
+<h2 id="estudio-de-caso-uso-de-ramas">Estudio de caso: uso de ramas<a class="headerlink" href="#estudio-de-caso-uso-de-ramas" title="Permanent link">&para;</a></h2>
 <p>Vamos a presentar un ejemplo simple de ramificar y de fusionar, con un flujo de trabajo que se podría presentar en la realidad. Imagina que sigues los siguientes pasos:</p>
 <ol>
 <li>
@@ -1504,9 +1745,9 @@ Por ejemplo: </p>
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "http://www.rauljesus.xyz/redes/git/ramas/";
+      this.page.url = "http://www.rauljesus.xyz/redes/git/branches/";
       this.page.identifier =
-        "/git/ramas/";
+        "/git/branches/";
     };
     (function() {
       var d = document, s = d.createElement("script");
