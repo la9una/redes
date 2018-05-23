@@ -1179,7 +1179,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ramas/" title="Ramas" class="md-nav__link">
+    <a href="../branches/" title="Ramas" class="md-nav__link">
       Ramas
     </a>
   </li>
@@ -1241,6 +1241,18 @@
   <li class="md-nav__item">
     <a href="../ejemploGit/" title="Ejemplo de uso de git" class="md-nav__link">
       Ejemplo de uso de git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cheatsheet/" title="Cheatsheet" class="md-nav__link">
+      Cheatsheet
     </a>
   </li>
 
@@ -1558,6 +1570,10 @@ E inicializamos un repositorio git:</p>
 </p>
 </div>
 <h3 id="21-clonando-un-repositorio-remoto-existente-ssh">2.1. Clonando un repositorio remoto existente [SSH]<a class="headerlink" href="#21-clonando-un-repositorio-remoto-existente-ssh" title="Permanent link">&para;</a></h3>
+<p>Si disponemos de acceso a una <em>Shell segura</em> en nuestro servidor, podremos emplear este protocolo para clonar nuestro repositorio: </p>
+<p><div class="codehilite"><pre><span></span>git clone git+ssh://&lt;usuario&gt;@&lt;dominioDelServidor&gt;:&lt;rutaHaciaElRepositorioGit&gt;
+</pre></div>
+Por ejemplo:</p>
 <p><div class="codehilite"><pre><span></span>git clone git+ssh://usuario@192.168.0.200:/home/usuario/miRepositorio.git
 </pre></div>
 Donde:</p>

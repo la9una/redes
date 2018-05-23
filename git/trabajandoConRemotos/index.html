@@ -1254,7 +1254,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ramas/" title="Ramas" class="md-nav__link">
+    <a href="../branches/" title="Ramas" class="md-nav__link">
       Ramas
     </a>
   </li>
@@ -1316,6 +1316,18 @@
   <li class="md-nav__item">
     <a href="../ejemploGit/" title="Ejemplo de uso de git" class="md-nav__link">
       Ejemplo de uso de git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cheatsheet/" title="Cheatsheet" class="md-nav__link">
+      Cheatsheet
     </a>
   </li>
 
@@ -1670,7 +1682,7 @@
 <h2 id="1-agregando-un-origen-remoto">1. Agregando un origen remoto<a class="headerlink" href="#1-agregando-un-origen-remoto" title="Permanent link">&para;</a></h2>
 <p>Si quisieramos <strong>sincronizar nuestro repositorio local con un repositorio remoto</strong>, primero deberíamos agregar el origen remoto, es decir, la dirección del servidor remoto con el que deseamos sincronizar nuestros archivos. Cabe aclarar que para poder realizar esta acción el administrador del repositorio remoto debe habernos otorgados los permisos correspondientes. </p>
 <p>La sintaxis general para realizar esta acción es: </p>
-<p><div class="codehilite"><pre><span></span>git remote add <span class="o">[</span>nombreRepositorioRemoto<span class="o">]</span> <span class="o">[</span>urlRepositorioRemoto<span class="o">]</span>
+<p><div class="codehilite"><pre><span></span>git remote add &lt;nombreRepositorioRemoto&gt; &lt;urlRepositorioRemoto&gt;
 </pre></div>
 Donde:</p>
 <ul>
@@ -1818,7 +1830,7 @@ Recupera toda la información enviada a ese servidor desde que lo clonamos (o de
 </ol>
 <h2 id="6-enviando-hacia-nuestros-repositorios-remotos">6. Enviando hacia nuestros repositorios remotos<a class="headerlink" href="#6-enviando-hacia-nuestros-repositorios-remotos" title="Permanent link">&para;</a></h2>
 <p>Cuando tu proyecto se encuentra en un estado que deseamos compartir, tenemos que enviarlo a un repositorio remoto. El comando que nos permite hacer esto es sencillo: </p>
-<div class="codehilite"><pre><span></span>git push <span class="o">[</span>nombreRepositorioRemoto<span class="o">][</span>rama<span class="o">]</span>
+<div class="codehilite"><pre><span></span>git push &lt;nombreRepositorioRemoto&gt;&lt;rama&gt;
 </pre></div>
 
 <p>Por ejemplo, si queremos enviar nuestra rama (master) a nuestro servidor remoto (origin), ejecutaríamos el siguiente comando:</p>
@@ -1895,7 +1907,7 @@ En primer lugar, tendremos que "bajarnos" el trabajo de la otra persona:</p>
           </a>
         
         
-          <a href="../ramas/" title="Ramas" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../branches/" title="Ramas" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
