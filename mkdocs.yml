@@ -52,12 +52,19 @@ markdown_extensions:
   - toc:
       permalink: true
   - footnotes
-  - pymdownx.critic
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.details
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
   - pymdownx.superfences
   - pymdownx.tilde
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML'
 
 ######################################################################
 ### DOCUMENTACIÓN ####################################################
@@ -151,3 +158,5 @@ pages:
       - Agente Windows: 'nagios/nsclient.md'
       - Definiendo íconos: 'nagios/iconos.md'
       - Recursos adicionales: 'nagios/recursos.md'
+- Troubleshooting:
+  - Windows: 'troubleshooting/netTools.md'

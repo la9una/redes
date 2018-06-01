@@ -1,3 +1,38 @@
+Ejercicios de práctica sobre git, el popular software de control de veriones. 
+
+## Recuperatorio
+
+!!!warning "Importante"
+		Antes de continuar con el ejercicio, el alumno deberá detener su trabajo y esperar que el docente revise el punto 5. 
+
+1. Iniciá sesión con tu cuenta en [gitLab](http://192.168.0.209/users/sign_in):
+	1. Indicá tu nombre de usuario al docente.
+	2. Agregá un repositorio llamado `recuperatorio` (respetar nombre y minúsculas). 
+	3. Agregar al usuario `la9una` como colaborador del repositorio.
+2. Creá un repositorio vacío en modo local
+	1. Configurá git con tus nombre de usuario y mail
+	2. Creá el archivo `.gitignore` y excluí el archivo `recupera4.txt`. 
+	3. Creá los archivos `recupera[1-4].txt`, **confirmando los cambios despúes de creá cada archivo** con el texto "Creando el archivo n" (donde "n" deberá ser reemplazado por el número de cada archivo).  
+3. A partir de `master`, creá una rama llamada `versionado` e ingresá dentro de ésta.
+	1. Creá los archivos `evaluacion1.txt` y `evaluacion2.txt`. Confirmá los cambios por separado. 
+4. Publicá los cambios de ambas ramas en el servidor remoto.
+5. Esperá a que el profesor clone tu repositorio y realice cambios. 
+	2. Traé los cambios de la rama
+	3. En el nuevo archivo `README.md` (creado por el profesor) agregá el texto "Editado por -Nombre de alumno-", que será también el texto empleado en la comfirmación. Subí los cambios al servidor.
+	4. Agregá las siguientes etiquetas y subilas al servidor: 
+		1. `recu1` - Al primer commit, con el texto "Evaluación 1" como mensaje de etiqueta.
+		2. `recu2` - Al último commit, con el texto "Evaluación 2" como mensaje de etiqueta
+6. Creá una nueva rama llamada `fix`, tomando como origen la rama `master`, a partir del _commit_ en el que interviene el profesor. 
+	1. Escribí dentro del archivo `README.md` el texto "Rama fix creada", usando el mismo texto para la confirmación. Guardá los cambios en el servidor.     
+
+
+!!!fail "creá contenido de archivos desde la terminal git en Windows"
+		Es posible que al editar un archivo en Windows usando la terminal de git nos aparezca un error, puesto que Windows y Lunux gestionan de manera diferente el contenido de los mismos. En ese caso, ejecutar:
+	
+		```
+		git config --global core.autocrlf true
+		```
+
 ## Evaluación
 
 !!!warning "Importante"
