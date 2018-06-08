@@ -39,7 +39,7 @@ nano misitio.lan.conf
 Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemplo simple de configuracion para el sitio ficticio `misitio.lan`:
 
 
-```apache
+```apache linenums="1"
 <VirtualHost *:80>
 
  # Correo del administrador del servidor

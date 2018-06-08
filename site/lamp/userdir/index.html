@@ -1565,19 +1565,29 @@ Solo resta agregar el contenido del sitio web dentro de la carpeta <code>public_
 </pre></div>
 
 <p>Un vez abierto el archivo, tenemos que desplazarnos hasta el final del archivo hasta ubicar el siguiente bloque de código:</p>
-<p><div class="codehilite"><pre><span></span><span class="nt">&lt;IfModule</span> <span class="s">mod_userdir.c</span><span class="nt">&gt;</span>
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;IfModule</span> <span class="s">mod_userdir.c</span><span class="nt">&gt;</span>
     <span class="nt">&lt;Directory</span> <span class="s">/home/*/public_html</span><span class="nt">&gt;</span>
-        <span class="nb">php_admin_flag</span> engine <span class="k">Off</span>
-    <span class="nt">&lt;/Directory&gt;</span>
+<span class="hll">        <span class="nb">php_admin_flag</span> engine <span class="k">Off</span>
+</span>    <span class="nt">&lt;/Directory&gt;</span>
 <span class="nt">&lt;/IfModule&gt;</span>
 </pre></div>
-Comentamos el bloque de manera que quede así: </p>
-<div class="codehilite"><pre><span></span><span class="c">#&lt;IfModule mod_userdir.c&gt;</span>
-<span class="c">#    &lt;Directory /home/*/public_html&gt;</span>
-<span class="c">#        php_admin_flag engine Off</span>
-<span class="c">#    &lt;/Directory&gt;</span>
-<span class="c">#&lt;/IfModule&gt;</span>
+</td></tr></table>
+Y <em>seteamos</em> la directiva <code>php_admin_flag engine</code> en <code>On</code>: </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;IfModule</span> <span class="s">mod_userdir.c</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Directory</span> <span class="s">/home/*/public_html</span><span class="nt">&gt;</span>
+<span class="hll">        <span class="nb">php_admin_flag</span> engine <span class="k">On</span>
+</span>    <span class="nt">&lt;/Directory&gt;</span>
+<span class="nt">&lt;/IfModule&gt;</span>
 </pre></div>
+</td></tr></table>
 
 <p>Para hacer efectivos los cambios realizados, reiniciamos Apache: </p>
 <div class="codehilite"><pre><span></span>sudo systemctl restart apache2

@@ -1,0 +1,33 @@
+Teoria
+	TCP/IP
+		Protocolos
+		Puertos
+	Fragmentacion
+	Direccionamiento
+
+Instalacion 
+
+SO
+	Windows Server
+	Linux
+	Virtualizacion
+	Cloud (OpenStack/Xen/VMWare)
+
+Adaptadores de red
+	IP
+
+Servicios
+	NTP
+	DNS
+	DHCP
+	WEB
+	LDAP
+	VPN
+	PROXY? FIREWALL? PFSENSE?
+	VOIP?
+
+Mantenimiento
+	FCAPS
+	DEVOPS?
+
+Reparacion

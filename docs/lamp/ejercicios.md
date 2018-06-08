@@ -125,8 +125,9 @@ A continuación se ofrecen distintas aplicaciones para su descarga junto con las
 
 La siguiente lista de aplicaciones se encuentra alojada en el servidor local. Son ejemplos de aplicaciones populares en internet:
 
+* [Dolibarr](https://www.dolibarr.org/downloads)
 * [Dokuwiki](https://download.dokuwiki.org/)
-* [FengOffice](https://sourceforge.net/projects/opengoo/files/latest/download)
+* [FengOffice](https://www.fengoffice.com/web/community/downloads.php)
 * [Joomla!](https://downloads.joomla.org/es/cms/joomla3)
 * [Wordpress](https://wordpress.org/download/)
 

@@ -53,21 +53,21 @@ nano /etc/apache2/mods-available/php7.0.conf
 
 Un vez abierto el archivo, tenemos que desplazarnos hasta el final del archivo hasta ubicar el siguiente bloque de código:
 
-```apache
+```apache linenums="1" hl_lines="3"
 <IfModule mod_userdir.c>
     <Directory /home/*/public_html>
         php_admin_flag engine Off
     </Directory>
 </IfModule>
 ```
-Comentamos el bloque de manera que quede así: 
+Y _seteamos_ la directiva `php_admin_flag engine` en `On`: 
 
-```apache
-#<IfModule mod_userdir.c>
-#    <Directory /home/*/public_html>
-#        php_admin_flag engine Off
-#    </Directory>
-#</IfModule>
+```apache linenums="1" hl_lines="3"
+<IfModule mod_userdir.c>
+    <Directory /home/*/public_html>
+        php_admin_flag engine On
+    </Directory>
+</IfModule>
 ```
 
 Para hacer efectivos los cambios realizados, reiniciamos Apache: 
