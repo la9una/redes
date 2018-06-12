@@ -347,8 +347,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../gnuLinux/repositorios/" title="Repositorios" class="md-nav__link">
+      Repositorios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../gnuLinux/userBashScripting/" title="Scripts" class="md-nav__link">
       Scripts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/usuarios/" title="Usuarios" class="md-nav__link">
+      Usuarios
     </a>
   </li>
 
@@ -1730,10 +1754,10 @@
 <h4 id="creacion-de-los-archivos-de-configuracion">Creación de los archivos de configuración<a class="headerlink" href="#creacion-de-los-archivos-de-configuracion" title="Permanent link">&para;</a></h4>
 <p>Se deben crear los archivos de configuración de cada <strong>Host Virtual</strong> solicitado por el cliente. Tener en cuenta que para todos los casos, el administrador sera <code>admin@penguin.net</code>.</p>
 <h4 id="resolucion-de-nombres">Resolución de nombres<a class="headerlink" href="#resolucion-de-nombres" title="Permanent link">&para;</a></h4>
-<p>Se debe realizar a través del método del archivo hosts.</p>
+<p>Se debe realizar a través del <a href="../../../dns/archivoHosts/">método del archivo hosts</a>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Automatización de tareas</p>
-<p>Tal vez sería más practico realizar todas las acciones anteriores valiendose de un script. ¿Te animás a escribirlo? </p>
+<p>Sería más practico realizar todas las acciones anteriores valiendose de un script. ¿Te animás a escribirlo? </p>
 </div>
 <h3 id="posibles-errores">Posibles errores<a class="headerlink" href="#posibles-errores" title="Permanent link">&para;</a></h3>
 <div class="admonition error">
@@ -1745,20 +1769,30 @@
 </pre></div>
 
 <p>Y modificamos el archivo de configuración general de Apache, aproximadamente en la línea 153 y que posee el siguiente aspecto: </p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;Directory</span> <span class="s">/</span><span class="nt">&gt;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;Directory</span> <span class="s">/</span><span class="nt">&gt;</span>
 <span class="nb">Options</span> FollowSymLinks
 <span class="nb">AllowOverride</span> <span class="k">None</span>
-<span class="nb">Require</span> <span class="k">all</span> denied
-<span class="nt">&lt;/Directory&gt;</span>
+<span class="hll"><span class="nb">Require</span> <span class="k">all</span> denied
+</span><span class="nt">&lt;/Directory&gt;</span>
 </pre></div>
+</td></tr></table>
 
 <p>Tendremos que modificarlo para que quede: </p>
-<div class="codehilite"><pre><span></span><span class="nt">&lt;Directory</span> <span class="s">/</span><span class="nt">&gt;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;Directory</span> <span class="s">/</span><span class="nt">&gt;</span>
 <span class="nb">Options</span> FollowSymLinks
 <span class="nb">AllowOverride</span> <span class="k">None</span>
-<span class="c"># Require all denied</span>
-<span class="nt">&lt;/Directory&gt;</span>
+<span class="hll"><span class="c"># Require all denied</span>
+</span><span class="nt">&lt;/Directory&gt;</span>
 </pre></div>
+</td></tr></table>
 
 <h2 id="ejercicio-2">Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permanent link">&para;</a></h2>
 <p>Una vez que hayamos <a href="../instalacion/">instalado correctamente el entorno LAMP</a> podremos instalar en el servidor web distintas aplicaciones webs que funcionen con dicha tecnología (PHP y MySQL). </p>

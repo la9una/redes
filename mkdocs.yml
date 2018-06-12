@@ -82,7 +82,9 @@ pages:
     - El editor nano: 'gnuLinux/userNano.md'
     - El editor vim: 'gnuLinux/userVim.md'
     - Búsquedas: 'gnuLinux/userSearch.md'
+    - Repositorios: 'gnuLinux/repositorios.md'
     - Scripts: 'gnuLinux/userBashScripting.md'
+    - Usuarios: 'gnuLinux/usuarios.md'
 - Servidor SSH: 
     - Autenticación de llave pública: 'ssh/authKey.md'
 - Servidor de nombres: 

@@ -77,10 +77,10 @@ Dentro de los **directorios raíz** creados en el punto anterior (necesariamente
 Se deben crear los archivos de configuración de cada **Host Virtual** solicitado por el cliente. Tener en cuenta que para todos los casos, el administrador sera `admin@penguin.net`.
 
 #### Resolución de nombres ####
-Se debe realizar a través del método del archivo hosts.
+Se debe realizar a través del [método del archivo hosts](../../dns/archivoHosts/).
 
 !!! tip "Automatización de tareas"
-	Tal vez sería más practico realizar todas las acciones anteriores valiendose de un script. ¿Te animás a escribirlo? 
+	Sería más practico realizar todas las acciones anteriores valiendose de un script. ¿Te animás a escribirlo? 
 
 
 ### Posibles errores
@@ -97,7 +97,7 @@ sudo nano etc/apache2/apache2.conf
 
 Y modificamos el archivo de configuración general de Apache, aproximadamente en la línea 153 y que posee el siguiente aspecto: 
 
-```apache
+```apache linenums="1" hl_lines="4"
 <Directory />
 Options FollowSymLinks
 AllowOverride None
@@ -107,7 +107,7 @@ Require all denied
 	
 Tendremos que modificarlo para que quede: 
 
-```apache
+```apache linenums="1" hl_lines="4"
 <Directory />
 Options FollowSymLinks
 AllowOverride None
