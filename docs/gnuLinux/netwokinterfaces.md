@@ -14,14 +14,14 @@ auto lo
 iface lo inet loopback
 
 # Primera placa de red
-auto eth0
-iface eth0 inet dhcp
+auto enp0s25
+iface enp0s25 inet dhcp
 ```
 
 Finalmente habilitamos la interfaz de red
 
 ```bash
-sudo ifdown eth0 && sudo ifup eth0
+sudo ifdown enp0s25 && sudo ifup enp0s25
 ```
 
 Y reiniciamos el demonio de red
@@ -38,8 +38,8 @@ auto lo
 iface lo inet loopback
 
 # Primera placa de red
-auto eth0
-iface eth0 inet static
+auto enp0s25
+iface enp0s25 inet static
 	address <dirección-ip-mv>
 	network <dirección-de-red>
 	netmask <máscara-de-red>
@@ -54,8 +54,8 @@ auto lo
 iface lo inet loopback
 
 # Primera placa de red
-auto eth0
-iface eth0 inet static
+auto enp0s25
+iface enp0s25 inet static
 	# Dirección del equipo
 	address 192.168.0.222
 	# Dirección de red
@@ -69,7 +69,7 @@ iface eth0 inet static
 Habilitamos la interfaz de red
 
 ```bash
-sudo ifdown eth0 && sudo ifup eth0
+sudo ifdown enp0s25 && sudo ifup enp0s25
 ```
 
 Reiniciamos el demonio de red
