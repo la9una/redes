@@ -1747,13 +1747,13 @@ auto lo
 iface lo inet loopback
 
 <span class="c1"># Primera placa de red</span>
-auto eth0
-iface eth0 inet dhcp
+auto enp0s25
+iface enp0s25 inet dhcp
 </pre></div>
 </td></tr></table>
 
 <p>Finalmente habilitamos la interfaz de red</p>
-<div class="codehilite"><pre><span></span>sudo ifdown eth0 <span class="o">&amp;&amp;</span> sudo ifup eth0
+<div class="codehilite"><pre><span></span>sudo ifdown enp0s25 <span class="o">&amp;&amp;</span> sudo ifup enp0s25
 </pre></div>
 
 <p>Y reiniciamos el demonio de red</p>
@@ -1776,8 +1776,8 @@ auto lo
 iface lo inet loopback
 
 <span class="c1"># Primera placa de red</span>
-auto eth0
-iface eth0 inet static
+auto enp0s25
+iface enp0s25 inet static
     address &lt;dirección-ip-mv&gt;
     network &lt;dirección-de-red&gt;
     netmask &lt;máscara-de-red&gt;
@@ -1805,8 +1805,8 @@ iface eth0 inet static
 <span class="nb">iface</span> lo inet loopback
 
 <span class="c"># Primera placa de red</span>
-<span class="nb">auto</span> eth0
-<span class="nb">iface</span> eth0 inet static
+<span class="nb">auto</span> enp0s25
+<span class="nb">iface</span> enp0s25 inet static
     <span class="c"># Dirección del equipo</span>
     <span class="nb">address</span> <span class="m">192.168.0.222</span>
     <span class="c"># Dirección de red</span>
@@ -1819,7 +1819,7 @@ iface eth0 inet static
 </td></tr></table>
 
 <p>Habilitamos la interfaz de red</p>
-<div class="codehilite"><pre><span></span>sudo ifdown eth0 <span class="o">&amp;&amp;</span> sudo ifup eth0
+<div class="codehilite"><pre><span></span>sudo ifdown enp0s25 <span class="o">&amp;&amp;</span> sudo ifup enp0s25
 </pre></div>
 
 <p>Reiniciamos el demonio de red</p>
