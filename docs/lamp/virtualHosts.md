@@ -55,10 +55,10 @@ Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemp
  DocumentRoot	/home/usuario/public_html	
  
  # Ruta en la que Apache escribirá el registor de errores
- ErrorLog	/home/usuario/errores_misitio.lan.log
+ ErrorLog	/home/usuario/public_html/errores.log
  
  # Ruta en la que Apache escribirá el registor accesos
- CustomLog	/home/usuario/accessos_misitio.lan.log combined
+ CustomLog	/home/usuario/public_html/accessos.log combined
 
 </VirtualHost>
 

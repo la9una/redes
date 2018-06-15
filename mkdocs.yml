@@ -74,17 +74,27 @@ extra_javascript:
 pages: 
 - Inicio: 'index.md'
 - GNU/Linux:
-    - Introducción: 'gnuLinux/userWhyLinux.md'
+  - Introducción:
+    - ¿Por qué GNU/Linux?: 'gnuLinux/userWhyLinux.md'
+    - Distribuciones: 'gnuLinux/distros.md'
 #    - La terminal de comandos: 'terminal.md'
 #    - Sistema de archivos: 'sistemaArchivos.md'
+  - Sistema de archivos:
+    - FHS: 'gnuLinux/fhs.md'    
     - Archivos y carpetas: 'gnuLinux/userFilesystem.md'
     - Compresión y descompresión: 'gnuLinux/userCompression.md'
     - El editor nano: 'gnuLinux/userNano.md'
     - El editor vim: 'gnuLinux/userVim.md'
     - Búsquedas: 'gnuLinux/userSearch.md'
-    - Repositorios: 'gnuLinux/repositorios.md'
-    - Scripts: 'gnuLinux/userBashScripting.md'
+  - Usuarios y permisos:
     - Usuarios: 'gnuLinux/usuarios.md'
+  - Gestión de software:
+    - Repositorios: 'gnuLinux/repositorios.md'
+  - Gestión de red:
+    - Interfaces de red: 'gnuLinux/netwokinterfaces.md'
+  - Automatización:
+    - Scripts: 'gnuLinux/userBashScripting.md'
+    - Tareas: 'gnuLinux/tasks.md'
 - Servidor SSH: 
     - Autenticación de llave pública: 'ssh/authKey.md'
 - Servidor de nombres: 
