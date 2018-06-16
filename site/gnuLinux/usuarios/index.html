@@ -1703,6 +1703,36 @@
                   <h1>Usuarios</h1>
                 
                 <h2 id="usuarios-y-permisos">Usuarios y permisos<a class="headerlink" href="#usuarios-y-permisos" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tipo de usuario</th>
+<th>UID</th>
+<th>Ejemplos</th>
+<th>Características</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Superusuario</td>
+<td>0</td>
+<td>root</td>
+<td>Acceso total a todos los directorios, archivos y configuraciones del sistema</td>
+</tr>
+<tr>
+<td>Especiales</td>
+<td>1-100</td>
+<td>Cuentas del sistema: bin, daemon, shutdown, mail, squid, apache, entre otras</td>
+<td>Poseen privilegios de superusuario restringidos. No poseen contraseñas (nologin) y generalmente se crean al momento de instalación del sistema o aplicaciones</td>
+</tr>
+<tr>
+<td>Normales</td>
+<td>1000-*</td>
+<td>Cuentas de usuario: juan, pedro, florencia</td>
+<td>Tienen privilegios completos sólo dentro de su directorio ´home´</td>
+</tr>
+</tbody>
+</table>
 <p><a href="../usuariosPermisos.pdf">Descargar documento</a>.</p>
                 
                   

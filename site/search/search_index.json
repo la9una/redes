@@ -497,12 +497,12 @@
         }, 
         {
             "location": "/gnuLinux/usuarios/", 
-            "text": "Usuarios y permisos\n\n\nDescargar documento\n.", 
+            "text": "Usuarios y permisos\n\n\n\n\n\n\n\n\nTipo de usuario\n\n\nUID\n\n\nEjemplos\n\n\nCaracter\u00edsticas\n\n\n\n\n\n\n\n\n\n\nSuperusuario\n\n\n0\n\n\nroot\n\n\nAcceso total a todos los directorios, archivos y configuraciones del sistema\n\n\n\n\n\n\nEspeciales\n\n\n1-100\n\n\nCuentas del sistema: bin, daemon, shutdown, mail, squid, apache, entre otras\n\n\nPoseen privilegios de superusuario restringidos. No poseen contrase\u00f1as (nologin) y generalmente se crean al momento de instalaci\u00f3n del sistema o aplicaciones\n\n\n\n\n\n\nNormales\n\n\n1000-*\n\n\nCuentas de usuario: juan, pedro, florencia\n\n\nTienen privilegios completos s\u00f3lo dentro de su directorio \u00b4home\u00b4\n\n\n\n\n\n\n\n\nDescargar documento\n.", 
             "title": "Usuarios"
         }, 
         {
             "location": "/gnuLinux/usuarios/#usuarios-y-permisos", 
-            "text": "Descargar documento .", 
+            "text": "Tipo de usuario  UID  Ejemplos  Caracter\u00edsticas      Superusuario  0  root  Acceso total a todos los directorios, archivos y configuraciones del sistema    Especiales  1-100  Cuentas del sistema: bin, daemon, shutdown, mail, squid, apache, entre otras  Poseen privilegios de superusuario restringidos. No poseen contrase\u00f1as (nologin) y generalmente se crean al momento de instalaci\u00f3n del sistema o aplicaciones    Normales  1000-*  Cuentas de usuario: juan, pedro, florencia  Tienen privilegios completos s\u00f3lo dentro de su directorio \u00b4home\u00b4     Descargar documento .", 
             "title": "Usuarios y permisos"
         }, 
         {
