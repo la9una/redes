@@ -14,14 +14,14 @@ auto lo
 iface lo inet loopback
 
 # Primera placa de red
-auto enp0s25
-iface enp0s25 inet dhcp
+auto enp0s3
+iface enp0s3 inet dhcp
 ```
 
 Finalmente habilitamos la interfaz de red
 
 ```bash
-sudo ifdown enp0s25 && sudo ifup enp0s25
+sudo ifdown enp0s3 && sudo ifup enp0s3
 ```
 
 Y reiniciamos el demonio de red
@@ -38,8 +38,8 @@ auto lo
 iface lo inet loopback
 
 # Primera placa de red
-auto enp0s25
-iface enp0s25 inet static
+auto enp0s3
+iface enp0s3 inet static
 	address <dirección-ip-mv>
 	network <dirección-de-red>
 	netmask <máscara-de-red>
@@ -54,8 +54,8 @@ auto lo
 iface lo inet loopback
 
 # Primera placa de red
-auto enp0s25
-iface enp0s25 inet static
+auto enp0s3
+iface enp0s3 inet static
 	# Dirección del equipo
 	address 192.168.0.222
 	# Dirección de red
@@ -66,16 +66,52 @@ iface enp0s25 inet static
 	gateway 192.168.0.1
 ```
 
-Habilitamos la interfaz de red
+Deshabilitamos la interfaz de red
 
 ```bash
-sudo ifdown enp0s25 && sudo ifup enp0s25
+sudo ifdown enp0s3
 ```
+_O bien_
+
+```bash
+sudo ip link set enp0s3 down
+```
+
+Volvemos a habilitar la interfaz de red
+
+```bash
+sudo ifup enp0s3
+```
+
+_O bien_
+
+```bash
+sudo ip link set enp0s3 up
+```
+
 
 Reiniciamos el demonio de red
 
 ```bash
+sudo service networking restart
+```
+
+_O bien_
+
+```bash
 sudo /etc/init.d/networking restart
+```
+
+Y si es necesario, reiniciamos el sistema
+
+```bash
+sudo init 6
+```
+
+_O bien_
+
+```bash
+sudo reboot
 ```
 
 ## Verificando IP del equipo
@@ -84,7 +120,7 @@ Para poder visualizar la direcciones IPs asignadas a las interfaces de red que t
 ```bash
 sudo ifconfig
 ```
-O bien: 
+_O bien_ 
 
 ```bash
 sudo ip a
