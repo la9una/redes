@@ -1747,13 +1747,13 @@ auto lo
 iface lo inet loopback
 
 <span class="c1"># Primera placa de red</span>
-auto enp0s25
-iface enp0s25 inet dhcp
+auto enp0s3
+iface enp0s3 inet dhcp
 </pre></div>
 </td></tr></table>
 
 <p>Finalmente habilitamos la interfaz de red</p>
-<div class="codehilite"><pre><span></span>sudo ifdown enp0s25 <span class="o">&amp;&amp;</span> sudo ifup enp0s25
+<div class="codehilite"><pre><span></span>sudo ifdown enp0s3 <span class="o">&amp;&amp;</span> sudo ifup enp0s3
 </pre></div>
 
 <p>Y reiniciamos el demonio de red</p>
@@ -1776,8 +1776,8 @@ auto lo
 iface lo inet loopback
 
 <span class="c1"># Primera placa de red</span>
-auto enp0s25
-iface enp0s25 inet static
+auto enp0s3
+iface enp0s3 inet static
     address &lt;dirección-ip-mv&gt;
     network &lt;dirección-de-red&gt;
     netmask &lt;máscara-de-red&gt;
@@ -1805,8 +1805,8 @@ iface enp0s25 inet static
 <span class="nb">iface</span> lo inet loopback
 
 <span class="c"># Primera placa de red</span>
-<span class="nb">auto</span> enp0s25
-<span class="nb">iface</span> enp0s25 inet static
+<span class="nb">auto</span> enp0s3
+<span class="nb">iface</span> enp0s3 inet static
     <span class="c"># Dirección del equipo</span>
     <span class="nb">address</span> <span class="m">192.168.0.222</span>
     <span class="c"># Dirección de red</span>
@@ -1818,19 +1818,42 @@ iface enp0s25 inet static
 </pre></div>
 </td></tr></table>
 
-<p>Habilitamos la interfaz de red</p>
-<div class="codehilite"><pre><span></span>sudo ifdown enp0s25 <span class="o">&amp;&amp;</span> sudo ifup enp0s25
+<p>Deshabilitamos la interfaz de red</p>
+<p><div class="codehilite"><pre><span></span>sudo ifdown enp0s3
+</pre></div>
+<em>O bien</em></p>
+<div class="codehilite"><pre><span></span>sudo ip link <span class="nb">set</span> enp0s3 down
+</pre></div>
+
+<p>Volvemos a habilitar la interfaz de red</p>
+<div class="codehilite"><pre><span></span>sudo ifup enp0s3
+</pre></div>
+
+<p><em>O bien</em></p>
+<div class="codehilite"><pre><span></span>sudo ip link <span class="nb">set</span> enp0s3 up
 </pre></div>
 
 <p>Reiniciamos el demonio de red</p>
+<div class="codehilite"><pre><span></span>sudo service networking restart
+</pre></div>
+
+<p><em>O bien</em></p>
 <div class="codehilite"><pre><span></span>sudo /etc/init.d/networking restart
+</pre></div>
+
+<p>Y si es necesario, reiniciamos el sistema</p>
+<div class="codehilite"><pre><span></span>sudo init <span class="m">6</span>
+</pre></div>
+
+<p><em>O bien</em></p>
+<div class="codehilite"><pre><span></span>sudo reboot
 </pre></div>
 
 <h2 id="verificando-ip-del-equipo">Verificando IP del equipo<a class="headerlink" href="#verificando-ip-del-equipo" title="Permanent link">&para;</a></h2>
 <p>Para poder visualizar la direcciones IPs asignadas a las interfaces de red que tengamos configuradas en el equipo podemos ejecutar: </p>
 <p><div class="codehilite"><pre><span></span>sudo ifconfig
 </pre></div>
-O bien: </p>
+<em>O bien</em> </p>
 <div class="codehilite"><pre><span></span>sudo ip a
 </pre></div>
                 
