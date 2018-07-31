@@ -54,24 +54,35 @@ Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemp
 	# Carpeta raíz donde se alojarán las páginas web 
 	DocumentRoot	/home/usuario/public_html	
 	 
-	# Ruta en la que Apache escribirá el registor de errores
+	# Ruta en la que Apache escribirá el registro de errores
 	ErrorLog		/home/usuario/public_html/errores.log
 
-	# Ruta en la que Apache escribirá el registor accesos
+	# Ruta en la que Apache escribirá el registro accesos
 	CustomLog		/home/usuario/public_html/accessos.log combined
 
 </VirtualHost>
 
 <Directory /home/usuario/public_html/>
+	
+	# Indexes permite indexar el contenido del directorio 
+	# FollowSymLinks permite acceder a enlaces simbólicos (accesos directos)
 	Options Indexes FollowSymLinks
+
+	# Evita que el archivo .htaccess sobreescriba directivas de configuración
     AllowOverride None
+
+    # Permitir el acceso al directorio
     Require all granted
+
 </Directory>     
 
 ```
 
-!!! note "Nota"
+!!! info "Archivos de log"
 	Los archivos de _log_ son archivos en los que el sistema guarda información sobre el funcionamiento de algún servicio determinado indicando errores, advertencias, accesos, etc. En distribuciones GNU/Linux, se encuentran alojados bajo la ruta `/var/log/`. En el ejemplo, se ha optado por guardar dichos archivos en la carpeta home del usuario. 
+
+!!! help "Documentación de Apache Web Server"
+	La presente guía está basada en la versión 2.4.x del servidor web incluida en Ubuntu Server 16.04 LTS. Es recomendable consultar la [extensa documentación oficial](https://httpd.apache.org/docs/2.4/es/) para profundizar los conceptos abordados en la práctica.  
 
 ## Habilitando el sitio creado
 
