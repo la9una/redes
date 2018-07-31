@@ -42,25 +42,31 @@ Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemp
 ```apache linenums="1"
 <VirtualHost *:80>
 
- # Correo del administrador del servidor
- ServerAdmin	tunombre@mail.com
- 
- # Nombre de dominio del sitio
- ServerName	misitio.lan
- 
- # Alias del nombre de dominio del sitio
- ServerAlias	www.misitio.lan http://misitio.lan
- 
- # Carpeta raíz donde se alojarán las páginas web 
- DocumentRoot	/home/usuario/public_html	
- 
- # Ruta en la que Apache escribirá el registor de errores
- ErrorLog	/home/usuario/public_html/errores.log
- 
- # Ruta en la que Apache escribirá el registor accesos
- CustomLog	/home/usuario/public_html/accessos.log combined
+	# Correo del administrador del servidor
+	ServerAdmin		tunombre@mail.com
+	 
+	# Nombre de dominio del sitio
+	ServerName		misitio.lan
+
+	# Alias del nombre de dominio del sitio
+	ServerAlias		www.misitio.lan http://misitio.lan
+
+	# Carpeta raíz donde se alojarán las páginas web 
+	DocumentRoot	/home/usuario/public_html	
+	 
+	# Ruta en la que Apache escribirá el registor de errores
+	ErrorLog		/home/usuario/public_html/errores.log
+
+	# Ruta en la que Apache escribirá el registor accesos
+	CustomLog		/home/usuario/public_html/accessos.log combined
 
 </VirtualHost>
+
+<Directory /home/usuario/public_html/>
+	Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>     
 
 ```
 

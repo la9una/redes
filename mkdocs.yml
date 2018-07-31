@@ -159,6 +159,11 @@ pages:
     - Ejemplo de uso de git: 'git/ejemploGit.md'
     - Cheatsheet: "git/cheatsheet.md"
     - Ejercicios: 'git/ejercicios.md'
+- Automatización:
+  - Ansible:
+      - ¿Qué es?: 'ansible/index.md'
+      - Instalación: 'ansible/instalacion.md'
+      - Introducción a YAML: 'ansible/yaml.md'
 - Monitoreo de redes:
   - Nagios: 
       - ¿Qué es Nagios?: 'nagios/index.md'
