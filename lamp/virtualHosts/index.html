@@ -1883,7 +1883,15 @@
 24
 25
 26
-27</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+27
+28
+29
+30
+31
+32
+33
+34
+35</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
 
     <span class="c"># Correo del administrador del servidor</span>
     <span class="nb">ServerAdmin</span>     tunombre@mail.com
@@ -1897,25 +1905,37 @@
     <span class="c"># Carpeta raíz donde se alojarán las páginas web </span>
     <span class="nb">DocumentRoot</span>    <span class="sx">/home/usuario/public_html</span>   
 
-    <span class="c"># Ruta en la que Apache escribirá el registor de errores</span>
+    <span class="c"># Ruta en la que Apache escribirá el registro de errores</span>
     <span class="nb">ErrorLog</span>        <span class="sx">/home/usuario/public_html/errores.log</span>
 
-    <span class="c"># Ruta en la que Apache escribirá el registor accesos</span>
+    <span class="c"># Ruta en la que Apache escribirá el registro accesos</span>
     <span class="nb">CustomLog</span>       <span class="sx">/home/usuario/public_html/accessos.log</span> combined
 
 <span class="nt">&lt;/VirtualHost&gt;</span>
 
 <span class="nt">&lt;Directory</span> <span class="s">/home/usuario/public_html/</span><span class="nt">&gt;</span>
+
+    <span class="c"># Indexes permite indexar el contenido del directorio </span>
+    <span class="c"># FollowSymLinks permite acceder a enlaces simbólicos (accesos directos)</span>
     <span class="nb">Options</span> Indexes FollowSymLinks
+
+    <span class="c"># Evita que el archivo .htaccess sobreescriba directivas de configuración</span>
     <span class="nb">AllowOverride</span> <span class="k">None</span>
+
+    <span class="c"># Permitir el acceso al directorio</span>
     <span class="nb">Require</span> <span class="k">all</span> granted
+
 <span class="nt">&lt;/Directory&gt;</span>     
 </pre></div>
 </td></tr></table>
 
-<div class="admonition note">
-<p class="admonition-title">Nota</p>
+<div class="admonition info">
+<p class="admonition-title">Archivos de log</p>
 <p>Los archivos de <em>log</em> son archivos en los que el sistema guarda información sobre el funcionamiento de algún servicio determinado indicando errores, advertencias, accesos, etc. En distribuciones GNU/Linux, se encuentran alojados bajo la ruta <code>/var/log/</code>. En el ejemplo, se ha optado por guardar dichos archivos en la carpeta home del usuario. </p>
+</div>
+<div class="admonition help">
+<p class="admonition-title">Documentación de Apache Web Server</p>
+<p>La presente guía está basada en la versión 2.4.x del servidor web incluida en Ubuntu Server 16.04 LTS. Es recomendable consultar la <a href="https://httpd.apache.org/docs/2.4/es/">extensa documentación oficial</a> para profundizar los conceptos abordados en la práctica.  </p>
 </div>
 <h2 id="habilitando-el-sitio-creado">Habilitando el sitio creado<a class="headerlink" href="#habilitando-el-sitio-creado" title="Permanent link">&para;</a></h2>
 <p>Para que Apache ponga el sitio en modo <strong>habilitado</strong> (hasta ahora lo definimos, pero no lo habilitamos), ejecutamos en la terminal:</p>
