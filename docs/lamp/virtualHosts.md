@@ -40,6 +40,10 @@ Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemp
 
 
 ```apache linenums="1"
+###################################
+### Definición del Host Virtual ###
+###################################
+
 <VirtualHost *:80>
 
 	# Correo del administrador del servidor
@@ -61,6 +65,11 @@ Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemp
 	CustomLog		/home/usuario/public_html/accessos.log combined
 
 </VirtualHost>
+
+
+#########################################
+### Permisos sobre el directorio raíz ###
+#########################################
 
 <Directory /home/usuario/public_html/>
 	
@@ -99,7 +108,4 @@ Por último, para que Apache haga efectivo todos los cambios, lo reiniciamos:
 ```bash
 sudo service apache2 restart
 ```
-
-## Accediendo al sitio web
-El último paso que tendremos que dar para acceder a nuestro sitio web será definir cuál será el [método de resolución de su nombre de dominio](../dns/archivoHosts.md). 
  

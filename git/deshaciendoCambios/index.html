@@ -1,0 +1,2184 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Instalación, mantenimiento y reparación de redes informáticas">
+      
+      
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/git/deshaciendoCambios/">
+      
+      
+        <meta name="author" content="Raul Jesus Lopez">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es, en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.4, mkdocs-material-2.9.1">
+    
+    
+      
+        <title>Deshaciendo cambios - Redes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.6079476c.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#4caf50">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#deshaciendo-cosas-en-git" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="http://www.rauljesus.xyz/redes" title="Redes" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Redes
+              </span>
+              <span class="md-header-nav__topic">
+                Deshaciendo cambios
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/la9una/redes/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Ver en GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Redes
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/la9una/redes/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      Ver en GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      GNU/Linux
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        GNU/Linux
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Introducción
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        Introducción
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/userWhyLinux/" title="¿Por qué GNU/Linux?" class="md-nav__link">
+      ¿Por qué GNU/Linux?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/distros/" title="Distribuciones" class="md-nav__link">
+      Distribuciones
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Sistema de archivos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        Sistema de archivos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/fhs/" title="FHS" class="md-nav__link">
+      FHS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/userFilesystem/" title="Archivos y carpetas" class="md-nav__link">
+      Archivos y carpetas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/userCompression/" title="Compresión y descompresión" class="md-nav__link">
+      Compresión y descompresión
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/userNano/" title="El editor nano" class="md-nav__link">
+      El editor nano
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/userVim/" title="El editor vim" class="md-nav__link">
+      El editor vim
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/userSearch/" title="Búsquedas" class="md-nav__link">
+      Búsquedas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Usuarios y permisos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Usuarios y permisos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/usuarios/" title="Usuarios" class="md-nav__link">
+      Usuarios
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Gestión de software
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Gestión de software
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/repositorios/" title="Repositorios" class="md-nav__link">
+      Repositorios
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Gestión de red
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        Gestión de red
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/netwokinterfaces/" title="Interfaces de red" class="md-nav__link">
+      Interfaces de red
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      Automatización
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        Automatización
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/userBashScripting/" title="Scripts" class="md-nav__link">
+      Scripts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../gnuLinux/tasks/" title="Tareas" class="md-nav__link">
+      Tareas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Servidor SSH
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Servidor SSH
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ssh/authKey/" title="Autenticación de llave pública" class="md-nav__link">
+      Autenticación de llave pública
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Servidor de nombres
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Servidor de nombres
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/archivoHosts/" title="El archivo hosts" class="md-nav__link">
+      El archivo hosts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/" title="¿Qué es el DNS?" class="md-nav__link">
+      ¿Qué es el DNS?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      BIND
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        BIND
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/bind/" title="Introducción" class="md-nav__link">
+      Introducción
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/instalacion/" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/cache/" title="DNS caché" class="md-nav__link">
+      DNS caché
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3-4" type="checkbox" id="nav-4-3-4">
+    
+    <label class="md-nav__link" for="nav-4-3-4">
+      DNS local
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-3-4">
+        DNS local
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/zonas/" title="Zona de autoridad" class="md-nav__link">
+      Zona de autoridad
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/resolvd/" title="Resolución directa" class="md-nav__link">
+      Resolución directa
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/resolvi/" title="Resolución inversa" class="md-nav__link">
+      Resolución inversa
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/resolver/" title="Configurando el resolver" class="md-nav__link">
+      Configurando el resolver
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/clientes/" title="Configurando clientes" class="md-nav__link">
+      Configurando clientes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/test/" title="Realizando pruebas" class="md-nav__link">
+      Realizando pruebas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Servidor web
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Servidor web
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      LAMP
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        LAMP
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lamp/queEs/" title="¿Qué es LAMP?" class="md-nav__link">
+      ¿Qué es LAMP?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lamp/instalacion/" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lamp/gestionBasica/" title="Gestión básica" class="md-nav__link">
+      Gestión básica
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lamp/userdir/" title="Web de usuario" class="md-nav__link">
+      Web de usuario
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lamp/virtualHosts/" title="Hosts virtuales" class="md-nav__link">
+      Hosts virtuales
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../lamp/ejercicios/" title="Ejercicios" class="md-nav__link">
+      Ejercicios
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Servidor de compartición
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Servidor de compartición
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samba/" title="¿Qué es SAMBA?" class="md-nav__link">
+      ¿Qué es SAMBA?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samba/instalacion/" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samba/configuracionGeneral/" title="Configuración general" class="md-nav__link">
+      Configuración general
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samba/gestionUsuarios/" title="Gestión de usuarios" class="md-nav__link">
+      Gestión de usuarios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samba/comparticionUsuario/" title="Carpeta de usuario" class="md-nav__link">
+      Carpeta de usuario
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samba/comparticionGrupo/" title="Carpeta de grupo" class="md-nav__link">
+      Carpeta de grupo
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samba/comparticionInvitados/" title="Carpeta de invitados" class="md-nav__link">
+      Carpeta de invitados
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samba/clientesWindows/" title="Clientes Windows" class="md-nav__link">
+      Clientes Windows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../samba/ejercicios/" title="Ejercicios" class="md-nav__link">
+      Ejercicios
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Servidor proxy
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Servidor proxy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../proxy/" title="ITEL" class="md-nav__link">
+      ITEL
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Servidor de streaming
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Servidor de streaming
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../icecast/" title="¿Qué es Icecast?" class="md-nav__link">
+      ¿Qué es Icecast?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../icecast/instalacion/" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../icecast/inicializacion/" title="Inicializando el servidor" class="md-nav__link">
+      Inicializando el servidor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../icecast/configuracionGeneral/" title="Configuración general" class="md-nav__link">
+      Configuración general
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../icecast/broadcasting/" title="Broadcasting" class="md-nav__link">
+      Broadcasting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../icecast/administracion/" title="Administración" class="md-nav__link">
+      Administración
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
+    
+    <label class="md-nav__link" for="nav-9">
+      Control de versiones
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Control de versiones
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="¿Qué es Git?" class="md-nav__link">
+      ¿Qué es Git?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../instalacion/" title="Instalación de Git" class="md-nav__link">
+      Instalación de Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../configuracionInicial/" title="Configuración inicial" class="md-nav__link">
+      Configuración inicial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../estados/" title="Estados de un proyecto" class="md-nav__link">
+      Estados de un proyecto
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../repositorioLocal/" title="Inicializando repositorio local" class="md-nav__link">
+      Inicializando repositorio local
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../gitignore/" title="Excluyendo recursos" class="md-nav__link">
+      Excluyendo recursos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../servidorGit/" title="Git en el servidor" class="md-nav__link">
+      Git en el servidor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../trabajandoConRemotos/" title="Trabajando con remotos" class="md-nav__link">
+      Trabajando con remotos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../branches/" title="Ramas" class="md-nav__link">
+      Ramas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Deshaciendo cambios
+      </label>
+    
+    <a href="./" title="Deshaciendo cambios" class="md-nav__link md-nav__link--active">
+      Deshaciendo cambios
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deshaciendo-cosas-en-git" title="Deshaciendo cosas en Git" class="md-nav__link">
+    Deshaciendo cosas en Git
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reescribir-una-comfirmacion-commit" title="Reescribir una comfirmación (commit)" class="md-nav__link">
+    Reescribir una comfirmación (commit)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-un-archivo-preparado-manteniendo-las-modificaciones" title="Deshacer un archivo preparado (manteniendo las modificaciones)" class="md-nav__link">
+    Deshacer un archivo preparado (manteniendo las modificaciones)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-todos-los-archivos-preparados" title="Deshacer todos los archivos preparados" class="md-nav__link">
+    Deshacer todos los archivos preparados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mantener-las-modificaciones" title="Mantener las modificaciones" class="md-nav__link">
+    Mantener las modificaciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descartar-las-modificaciones" title="Descartar las modificaciones" class="md-nav__link">
+    Descartar las modificaciones
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-un-archivo-modificado" title="Deshacer un archivo modificado" class="md-nav__link">
+    Deshacer un archivo modificado
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volver-hacia-una-confirmacion-anterior" title="Volver hacia una confirmación anterior" class="md-nav__link">
+    Volver hacia una confirmación anterior
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#volviendo-definitivamente-hacia-una-confirmacion-anterior" title="Volviendo definitivamente hacia una confirmación anterior" class="md-nav__link">
+    Volviendo definitivamente hacia una confirmación anterior
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-de-conocimiento" title="Base de conocimiento" class="md-nav__link">
+    Base de conocimiento
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../logs/" title="Historial de confirmaciones" class="md-nav__link">
+      Historial de confirmaciones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../etiquetas/" title="Etiquetado" class="md-nav__link">
+      Etiquetado
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../otrosComandosGit/" title="Otros comandos" class="md-nav__link">
+      Otros comandos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ejemploGit/" title="Ejemplo de uso de git" class="md-nav__link">
+      Ejemplo de uso de git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cheatsheet/" title="Cheatsheet" class="md-nav__link">
+      Cheatsheet
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ejercicios/" title="Ejercicios" class="md-nav__link">
+      Ejercicios
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Automatización
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Automatización
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10-1" type="checkbox" id="nav-10-1">
+    
+    <label class="md-nav__link" for="nav-10-1">
+      Ansible
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-10-1">
+        Ansible
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ansible/" title="¿Qué es?" class="md-nav__link">
+      ¿Qué es?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ansible/instalacion/" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ansible/yaml/" title="Introducción a YAML" class="md-nav__link">
+      Introducción a YAML
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Monitoreo de redes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        Monitoreo de redes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-1" type="checkbox" id="nav-11-1">
+    
+    <label class="md-nav__link" for="nav-11-1">
+      Nagios
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-1">
+        Nagios
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nagios/" title="¿Qué es Nagios?" class="md-nav__link">
+      ¿Qué es Nagios?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nagios/instalacion/" title="Instalación" class="md-nav__link">
+      Instalación
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nagios/configuracion/" title="Configuración inicial" class="md-nav__link">
+      Configuración inicial
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nagios/equipos/" title="Definiendo equipos" class="md-nav__link">
+      Definiendo equipos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nagios/grupos/" title="Definiendo grupos" class="md-nav__link">
+      Definiendo grupos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nagios/servicios/" title="Definiendo servicios" class="md-nav__link">
+      Definiendo servicios
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nagios/nsclient/" title="Agente Windows" class="md-nav__link">
+      Agente Windows
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nagios/iconos/" title="Definiendo íconos" class="md-nav__link">
+      Definiendo íconos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../nagios/recursos/" title="Recursos adicionales" class="md-nav__link">
+      Recursos adicionales
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../troubleshooting/netTools/" title="Windows" class="md-nav__link">
+      Windows
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deshaciendo-cosas-en-git" title="Deshaciendo cosas en Git" class="md-nav__link">
+    Deshaciendo cosas en Git
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reescribir-una-comfirmacion-commit" title="Reescribir una comfirmación (commit)" class="md-nav__link">
+    Reescribir una comfirmación (commit)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-un-archivo-preparado-manteniendo-las-modificaciones" title="Deshacer un archivo preparado (manteniendo las modificaciones)" class="md-nav__link">
+    Deshacer un archivo preparado (manteniendo las modificaciones)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-todos-los-archivos-preparados" title="Deshacer todos los archivos preparados" class="md-nav__link">
+    Deshacer todos los archivos preparados
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mantener-las-modificaciones" title="Mantener las modificaciones" class="md-nav__link">
+    Mantener las modificaciones
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descartar-las-modificaciones" title="Descartar las modificaciones" class="md-nav__link">
+    Descartar las modificaciones
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deshacer-un-archivo-modificado" title="Deshacer un archivo modificado" class="md-nav__link">
+    Deshacer un archivo modificado
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#volver-hacia-una-confirmacion-anterior" title="Volver hacia una confirmación anterior" class="md-nav__link">
+    Volver hacia una confirmación anterior
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#volviendo-definitivamente-hacia-una-confirmacion-anterior" title="Volviendo definitivamente hacia una confirmación anterior" class="md-nav__link">
+    Volviendo definitivamente hacia una confirmación anterior
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-de-conocimiento" title="Base de conocimiento" class="md-nav__link">
+    Base de conocimiento
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/la9una/redes/edit/master/docs/git/deshaciendoCambios.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Deshaciendo cambios</h1>
+                
+                <h2 id="deshaciendo-cosas-en-git">Deshaciendo cosas en Git<a class="headerlink" href="#deshaciendo-cosas-en-git" title="Permanent link">&para;</a></h2>
+<p>En cualquier momento puedes querer deshacer algo. En esta sección veremos algunas herramientas básicas para deshacer cambios.</p>
+<h3 id="reescribir-una-comfirmacion-commit">Reescribir una comfirmación (<em>commit</em>)<a class="headerlink" href="#reescribir-una-comfirmacion-commit" title="Permanent link">&para;</a></h3>
+<p>Nos puede ocurrir que confirmamos un cambio antes de tiempo, olvidando agregar alguna modificación, un archivo o nos equivocamos en el mensaje de la confirmación. </p>
+<p>Si deseamos desahacer la confirmación, podemos reconfirmarla con la opción --amend:</p>
+<p><div class="codehilite"><pre><span></span>git commit --amend
+</pre></div>
+Por ejemplo, si enviamos el <em>commit</em> y luego nos damos cuenta que olvidamos incluir un archivo en el mismo, podemos hacerlo de la siguiente manera: </p>
+<div class="codehilite"><pre><span></span>$ git commit -m <span class="s2">&quot;Mensaje del commit&quot;</span>
+$ git add archivoOlvidado
+$ git commit --amend
+</pre></div>
+
+<p>Al final terminaremos con un solo <em>commit</em> (el segundo <em>commit</em> reemplazará al primero)</p>
+<h3 id="deshacer-un-archivo-preparado-manteniendo-las-modificaciones">Deshacer un archivo preparado (manteniendo las modificaciones)<a class="headerlink" href="#deshacer-un-archivo-preparado-manteniendo-las-modificaciones" title="Permanent link">&para;</a></h3>
+<p>Puede ocurrir que luego de hacer un <em>commit</em> deseamos editar sólo un arhivo que incluimos en él. Para estas ocasiones puede resultar útil el siguiente comando: </p>
+<p><div class="codehilite"><pre><span></span>git reset HEAD <span class="o">[</span>archivo<span class="o">]</span>
+</pre></div>
+Por ejemplo: </p>
+<div class="codehilite"><pre><span></span>git reset HEAD index.html
+</pre></div>
+
+<p>El archivo <code>index.html</code> ahora está modificado (además, se mantienen las modificaciones hechas) y, nuevamente, no preparado.</p>
+<h3 id="deshacer-todos-los-archivos-preparados">Deshacer todos los archivos preparados<a class="headerlink" href="#deshacer-todos-los-archivos-preparados" title="Permanent link">&para;</a></h3>
+<p>Podemos volver atrás todos los cambios incluidos en una confirmación o <em>commit</em>, y elegir si deseamos mantener las modificaciones hechas en ella o descartarlas. </p>
+<h4 id="mantener-las-modificaciones">Mantener las modificaciones<a class="headerlink" href="#mantener-las-modificaciones" title="Permanent link">&para;</a></h4>
+<p>Existe la posibilidad de eliminar el commit pero manteniendo las modificaciones que contiene ese commit en el área de trabajo. Para ello, ejecutaríamos el siguiente comando:</p>
+<div class="codehilite"><pre><span></span>git reset HEAD~1
+</pre></div>
+
+<p>Así que podemos seguir trabajando, corregir el bug o completar las modificaciones que habíamos dejado incompletas y hacer un nuevo commit con los cambios completos. </p>
+<div class="admonition done">
+<p class="admonition-title">Sintaxis<p>La sintaxis <code>HEAD~1</code> del comando anterior la podríamos traducir como “El commit al que está apuntando la rama activa menos uno”. Si hubiésemos ejecutado el comando:</p>
+<div class="codehilite"><pre><span></span>git reset --hard HEAD~3
+</pre></div>
+
+<p>en lugar de deshacer el último commit deshaceríamos tres commits hacia atrás.</p>
+<p>También, podemos deshacer el commit actual: </p>
+<div class="codehilite"><pre><span></span>git reset --hard HEAD
+</pre></div>
+
+<p>O deshacer el commit inmediato anterior: </p>
+<div class="codehilite"><pre><span></span>git reset --hard HEAD^
+</pre></div>
+
+</p>
+</div>
+<h4 id="descartar-las-modificaciones">Descartar las modificaciones<a class="headerlink" href="#descartar-las-modificaciones" title="Permanent link">&para;</a></h4>
+<p>Supongamos que queremos deshacer el último <em>commit</em> y, además, desechar los cambios introducidos en él. Para ello, ejecutamos el comando:</p>
+<div class="codehilite"><pre><span></span>git reset --hard HEAD~1
+</pre></div>
+
+<p>Habremos descartado todas las modificaciones hechas antes del último <em>commit</em> incluido éste último. </p>
+<h3 id="deshacer-un-archivo-modificado">Deshacer un archivo modificado<a class="headerlink" href="#deshacer-un-archivo-modificado" title="Permanent link">&para;</a></h3>
+<p>¿Qué tal si te das cuenta que no querés mantener los cambios del archivo <code>index.html</code> del ejemplo anterior? ¿Cómo volver al estado en el que estaba en la última confirmación (o cuando estaba recién clonado, o como sea que haya llegado a tu directorio de trabajo)? Con la opción <code>checkout --</code>:</p>
+<div class="codehilite"><pre><span></span>git checkout -- index.html
+</pre></div>
+
+<p>De esta manera, el archivo <code>index.html</code> volverá al estado que tenía luego del último <em>commit</em></p>
+<h2 id="volver-hacia-una-confirmacion-anterior">Volver hacia una confirmación anterior<a class="headerlink" href="#volver-hacia-una-confirmacion-anterior" title="Permanent link">&para;</a></h2>
+<p>Git nos permite volver hacia atrás a cualquier <em>commit</em> que forme parte de la historia de nuestro proyecto, deshaciendo los cambios posteriores al commit elegido. Para ello, es suficiente ejecutar el siguiente comando: </p>
+<p><div class="codehilite"><pre><span></span>git checkout <span class="o">[</span>numeroDeHash<span class="o">]</span>
+</pre></div>
+Donde <code>numeroDeHash</code> es el número de hash del <em>commit</em> al cual deseamos retornar. </p>
+<p>Por ejemplo: </p>
+<div class="codehilite"><pre><span></span>git checkout 56a4e5c08
+</pre></div>
+
+<div class="admonition done">
+<p class="admonition-title">Obtener número de hash<p>Podemos obtener el número de hash fácilmente con el siguiente comando: </p>
+<div class="codehilite"><pre><span></span>git log --oneline
+</pre></div>
+
+</p>
+</div>
+<p>Sin embargo, esta acción dejaría al proyecto sin referencia a <code>HEAD</code>. Eso significa que podemos hacer cambios y modificaciones sobre el código del momento en el que nos hemos situado y hacer los <em>commits</em> que necesitemos, pero si queremos que esos cambios se mantengan en git y no sean eliminados por el proceso <code>git garbage collection process</code> tendremos que <a href="../branches/#crear-una-rama-a-partir-de-una-confirmacion-anterior">crear una nueva rama del último commit que hemos realizado</a>.</p>
+<h3 id="volviendo-definitivamente-hacia-una-confirmacion-anterior">Volviendo definitivamente hacia una confirmación anterior<a class="headerlink" href="#volviendo-definitivamente-hacia-una-confirmacion-anterior" title="Permanent link">&para;</a></h3>
+<p>No obstante,si tenemos claro que deseamos volver hacia atrás a un punto concreto del historial descartando todos los cambios posteriores, podemos recurrir al siguiente comando: </p>
+<div class="codehilite"><pre><span></span>git reset --hard <span class="o">[</span>numeroDeHash<span class="o">]</span>
+</pre></div>
+
+<p>Por ejemplo: </p>
+<p><div class="codehilite"><pre><span></span>git reset --hard 56a4e5c08
+</pre></div>
+De esta manera, nuestro proyecto se encontrará según el <em>commit</em> apuntado. </p>
+<h2 id="base-de-conocimiento">Base de conocimiento<a class="headerlink" href="#base-de-conocimiento" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="http://aprendegit.com/como-deshacer-el-ultimo-commit-en-git">http://aprendegit.com/como-deshacer-el-ultimo-commit-en-git</a></li>
+<li>https://pajarokillo.wordpress.com/2015/02/23/deshaciendo-cambios-con-git/</li>
+<li>http://www.7sabores.com/blog/como-revertir-un-push-git</li>
+<li>https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting</li>
+<li>https://styde.net/deshaciendo-cosas-en-git/</li>
+<li>https://es.stackoverflow.com/questions/3575/quitar-archivos-a%C3%B1adidos-antes-de-un-commit</li>
+<li>http://rogerdudler.github.io/git-guide/index.es.html</li>
+<li>https://gist.github.com/jelcaf/1404619</li>
+<li>https://es.stackoverflow.com/questions/1458/regresar-un-repositorio-a-un-commit-especifico</li>
+<li>https://loquemeinteresadelared.wordpress.com/2016/03/28/git-cookbook-que-es-el-estado-o-modo-detached-head/#more-877</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+  <h2 id="__comments">Comentarios</h2>
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://www.rauljesus.xyz/redes/git/deshaciendoCambios/";
+      this.page.identifier =
+        "/git/deshaciendoCambios/";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//rauljesus-xyz.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../branches/" title="Ramas" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Ramas
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../logs/" title="Historial de confirmaciones" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Historial de confirmaciones
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            2018 &nbsp; Raul Jesus Lopez
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://twitter.com/la9una" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://www.facebook.com/rauljesuslopez" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/la9una" class="md-footer-social__link fa fa-github"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+            
+          
+          
+            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"0.17.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
