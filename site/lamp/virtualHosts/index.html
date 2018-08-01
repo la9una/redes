@@ -958,13 +958,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#accediendo-al-sitio-web" title="Accediendo al sitio web" class="md-nav__link">
-    Accediendo al sitio web
-  </a>
-  
-</li>
-      
       
       
       
@@ -979,6 +972,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../resolucionNombres/" title="Resolución de nombres" class="md-nav__link">
+      Resolución de nombres
+    </a>
   </li>
 
         
@@ -1799,13 +1804,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#accediendo-al-sitio-web" title="Accediendo al sitio web" class="md-nav__link">
-    Accediendo al sitio web
-  </a>
-  
-</li>
-      
       
       
       
@@ -1891,7 +1889,20 @@
 32
 33
 34
-35</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c">###################################</span>
+<span class="c">### Definición del Host Virtual ###</span>
+<span class="c">###################################</span>
+
+<span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
 
     <span class="c"># Correo del administrador del servidor</span>
     <span class="nb">ServerAdmin</span>     tunombre@mail.com
@@ -1912,6 +1923,11 @@
     <span class="nb">CustomLog</span>       <span class="sx">/home/usuario/public_html/accessos.log</span> combined
 
 <span class="nt">&lt;/VirtualHost&gt;</span>
+
+
+<span class="c">#########################################</span>
+<span class="c">### Permisos sobre el directorio raíz ###</span>
+<span class="c">#########################################</span>
 
 <span class="nt">&lt;Directory</span> <span class="s">/home/usuario/public_html/</span><span class="nt">&gt;</span>
 
@@ -1946,9 +1962,6 @@
 <p>Por último, para que Apache haga efectivo todos los cambios, lo reiniciamos: </p>
 <div class="codehilite"><pre><span></span>sudo service apache2 restart
 </pre></div>
-
-<h2 id="accediendo-al-sitio-web">Accediendo al sitio web<a class="headerlink" href="#accediendo-al-sitio-web" title="Permanent link">&para;</a></h2>
-<p>El último paso que tendremos que dar para acceder a nuestro sitio web será definir cuál será el <a href="../../dns/archivoHosts/">método de resolución de su nombre de dominio</a>. </p>
                 
                   
                 
@@ -2000,13 +2013,13 @@
           </a>
         
         
-          <a href="../ejercicios/" title="Ejercicios" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../resolucionNombres/" title="Resolución de nombres" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                Ejercicios
+                Resolución de nombres
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
