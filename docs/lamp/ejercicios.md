@@ -1,5 +1,18 @@
-A continuación se listan dos ejercicios en los que deberás aplicar los conocimientos adquiridos. 
+A continuación se listan ejercicios en los que deberás aplicar los conocimientos adquiridos. Como norma general, la secuencia de pasos a seguir es la siguiente: 
 
+**Como usuarios normales**
+
+1. Crear el usuario
+2. Crear dentro de la `home` del usuario, la carpeta `public_html`, es decir `/home/<usuario>/public_html`
+3. Generar el contenido del sitio (`index.html`, `index.php`, etc) y colocarlo en la carpeta creada en el punto anterior
+
+**Como usuario root**
+
+1. Ubicarnos en la carpeta `/etc/apache2/sites-available`
+2. Crear el archivo de configuración para nuestro dominio con la extensión `.conf` (por ejemplo, `unsitioficticio.jaja.conf`) 
+3. Habilitar el sitio (por ejemplo, `a2ensite unsitioficticio.jaja.conf`) y reiniciar Apache
+4. Modificar el archivo `hosts` (en nuestra máquina física)
+5. Ingresar al sitio con el navegador 
 
 ## Ejercicio 1
 
@@ -75,11 +88,19 @@ Se debe realizar a través del [método del archivo hosts](../../dns/archivoHost
 
 Una vez que hayamos [instalado correctamente el entorno LAMP](instalacion.md) podremos instalar en el servidor web distintas aplicaciones webs que funcionen con dicha tecnología (PHP y MySQL). 
 
-A continuación se ofrecen distintas aplicaciones para su descarga junto con las indicaciones de instalación. 
+Crea los siguientes dominios: 
 
-####Descargando las aplicaciones
+| Dominio    | Usuario                | Directorio raíz (DocumentRoot)           |
+| ---- | ---------------------- | ---------------------------------------- |
+| itel.lan    | itel            | `/home/itel/public_html`    |
+| promo2018.fest    | promo    | `/home/promo/public_html` |
 
-La siguiente lista de aplicaciones se encuentra alojada en el servidor local. Son ejemplos de aplicaciones populares en internet:
+E instala las siguientes aplicaciones: 
+
+* Wordpress en `itel.lan`
+* Joomla! en `promo2018.fest`
+
+Podemos encontrar las aplicaciones en internet:
 
 * [Dolibarr](https://www.dolibarr.org/downloads)
 * [Dokuwiki](https://download.dokuwiki.org/)
@@ -87,17 +108,18 @@ La siguiente lista de aplicaciones se encuentra alojada en el servidor local. So
 * [Joomla!](https://downloads.joomla.org/es/cms/joomla3)
 * [Wordpress](https://wordpress.org/download/)
 
+O bien descargarlas desde la red local, disponibles en [http://192.168.0.200/aplicaciones](http://192.168.0.200/aplicaciones)
 
-Podés elegir la que desees y descargarlas en el directorio raíz de tu sitio web de la siguiente manera:  
+En cualquier caso, descargamos la aplicación seleccionada en el directorio raíz de nuestro sitio web:  
 
 ```bash
 wget http://url_de_la_aplicacion/aplicacion.zip
 ```
+Luego, **descomprimimos la aplicación descargada en el directorio raíz de nuestro sitio**. Abrimos nuestro navegador web y visitamos la dirección web `http://tudominio/aplicacion` o bien `http://tuDireccionIP/aplicacion` y seguir las instrucciones de instalación. 
 
-####Instalando la aplicación
-
-Tendremos que **descomprimir la aplicación descargada en el directorio raíz de nuestro sitio**. Luego, abriremos nuestro navegador web y visitaremos la dirección web `http://tudominio/aplicacion` o bien `http://tuDireccionIP/aplicacion` y seguir las instrucciones de instalación. 
-
-
-!!! done "Base de datos"
+!!! warning "Gestión de la base de datos"
 	Dependiendo de la aplicación web que hayas elegido, es posible que necesites crear una base de datos. Para ello, dirigite a `http://tudominio/phpmyadmin` o `http://tuDireccionIP/phpmyadmin` e ingresá con las credenciales del usuario root. Una vez allí podrás crear la base de datos solicitada.
+
+
+
+

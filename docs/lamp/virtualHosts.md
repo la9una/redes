@@ -93,6 +93,13 @@ Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemp
 !!! help "Documentación de Apache Web Server"
 	La presente guía está basada en la versión 2.4.x del servidor web incluida en Ubuntu Server 16.04 LTS. Es recomendable consultar la [extensa documentación oficial](https://httpd.apache.org/docs/2.4/es/) para profundizar los conceptos abordados en la práctica.  
 
+## Verficicando archivo de configuración
+Para verificar que la sintaxis del host virtual es la correcta, ejecutamos: 
+
+```bash
+sudo apache2ctl -t
+```
+
 ## Habilitando el sitio creado
 
 Para que Apache ponga el sitio en modo **habilitado** (hasta ahora lo definimos, pero no lo habilitamos), ejecutamos en la terminal:
@@ -101,8 +108,10 @@ Para que Apache ponga el sitio en modo **habilitado** (hasta ahora lo definimos,
 sudo a2ensite misitio.lan.conf
 ```
 
-Este comando creará un [enlace simbólico](https:_es.wikipedia.org/wiki/Enlace_simb%C3%B3lico) del archivo `misitio.lan.conf` desde la carpeta `/etc/apache2/sites-available` hacia la carpeta `/etc/apache2/sites-enabled`. 
+!!! done "¿Qué ocurre cuando habilitamos un sitio?"
+El comando anterior creará un [enlace simbólico](https:_es.wikipedia.org/wiki/Enlace_simb%C3%B3lico) del archivo `misitio.lan.conf` desde la carpeta `/etc/apache2/sites-available` hacia la carpeta `/etc/apache2/sites-enabled`. 
 
+## Reiniciando Apache 
 Por último, para que Apache haga efectivo todos los cambios, lo reiniciamos: 
 
 ```bash
