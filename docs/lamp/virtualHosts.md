@@ -8,20 +8,6 @@ Una de las aplicaciones de la característica de Apache llamada _VirtualHosts_ c
 
 	El hecho de que estén funcionando en la misma máquina física pasa completamente desapercibido para el usuario que visita esos sitios web.
 
-
-##Creando el contenido web
-
-En primer lugar creamos la carpeta donde se alojaran las paginas web del **host virtual** que definiremos. 
-
-Por ejemplo:
-
-```bash
-mkdir /home/usuario/public_html
-```
-
-El paso siguiente será agregar en el directorio el contenido del sitio web como páginas web, imágenes, archivos de estilo, sripts, etc. Recordar que debe existir necesariamente algún archivo índice (por ejemplo, `index.html` o `index.php` o con cualquier otra extensión habilitada en la configuración del servidor). 
-
-
 ## Configurando el Host Virtual
 
 Para iniciar la configuración de nuestro _host virtual_ nos dirigiremos a la siguiente carpeta: 
@@ -33,7 +19,7 @@ cd /etc/apache2/sites-available
 Una vez ubicados en el directorio correspodiente nos disponemos a crear el **archivo de configuracion del Host Virtual** (el archivo en cuestión puede llamarse de cualquier forma, pero debe finalizar necesariamente con la extension `.conf`)
 
 ```bash
-nano misitio.lan.conf
+nano midominio.tld.conf
 ```
 
 Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemplo simple de configuracion para el sitio ficticio `misitio.lan`:
@@ -50,19 +36,19 @@ Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemp
 	ServerAdmin		tunombre@mail.com
 	 
 	# Nombre de dominio del sitio
-	ServerName		misitio.lan
+	ServerName		midominio.tld
 
 	# Alias del nombre de dominio del sitio
-	ServerAlias		www.misitio.lan http://misitio.lan
+	ServerAlias		www.midominio.tld http://midominio.tld
 
 	# Carpeta raíz donde se alojarán las páginas web 
-	DocumentRoot	/home/usuario/public_html	
+	DocumentRoot	/home/<usuario>/public_html	
 	 
 	# Ruta en la que Apache escribirá el registro de errores
-	ErrorLog		/home/usuario/public_html/errores.log
+	ErrorLog		/home/<usuario>/public_html/errores.log
 
 	# Ruta en la que Apache escribirá el registro accesos
-	CustomLog		/home/usuario/public_html/accessos.log combined
+	CustomLog		/home/<usuario>/public_html/accessos.log combined
 
 </VirtualHost>
 
@@ -71,7 +57,7 @@ Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemp
 ### Permisos sobre el directorio raíz ###
 #########################################
 
-<Directory /home/usuario/public_html/>
+<Directory /home/<usuario>/public_html/>
 	
 	# Indexes permite indexar el contenido del directorio 
 	# FollowSymLinks permite acceder a enlaces simbólicos (accesos directos)
@@ -105,7 +91,7 @@ sudo apache2ctl -t
 Para que Apache ponga el sitio en modo **habilitado** (hasta ahora lo definimos, pero no lo habilitamos), ejecutamos en la terminal:
 
 ```bash
-sudo a2ensite misitio.lan.conf
+sudo a2ensite misitio.tld.conf
 ```
 
 !!! done "¿Qué ocurre cuando habilitamos un sitio?"

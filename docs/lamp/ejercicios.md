@@ -1,18 +1,18 @@
 A continuación se listan ejercicios en los que deberás aplicar los conocimientos adquiridos. Como norma general, la secuencia de pasos a seguir es la siguiente: 
 
-**Como usuarios normales**
-
-1. Crear el usuario
-2. Crear dentro de la `home` del usuario, la carpeta `public_html`, es decir `/home/<usuario>/public_html`
-3. Generar el contenido del sitio (`index.html`, `index.php`, etc) y colocarlo en la carpeta creada en el punto anterior
-
 **Como usuario root**
 
-1. Ubicarnos en la carpeta `/etc/apache2/sites-available`
-2. Crear el archivo de configuración para nuestro dominio con la extensión `.conf` (por ejemplo, `unsitioficticio.jaja.conf`) 
-3. Habilitar el sitio (por ejemplo, `a2ensite unsitioficticio.jaja.conf`) y reiniciar Apache
-4. Modificar el archivo `hosts` (en nuestra máquina física)
-5. Ingresar al sitio con el navegador 
+1. Crear el usuario o los usuarios que necesitemos
+2. Ubicarnos en la carpeta `/etc/apache2/sites-available`
+3. Crear el archivo de configuración para nuestro dominio con la extensión `.conf` (por ejemplo, `unsitioficticio.net.conf`) 
+4. Habilitar el sitio (por ejemplo, `a2ensite unsitioficticio.net.conf`) y reiniciar Apache
+5. Modificar el archivo `hosts` (en nuestra máquina física)
+6. Ingresar al sitio con el navegador 
+
+**Como usuarios normales**
+
+1. Crear dentro de la `home` del usuario, la carpeta `public_html`, es decir `/home/<usuario>/public_html`
+2. Generar el contenido del sitio (`index.html`, `index.php`, etc) y colocarlo en la carpeta creada en el punto anterior
 
 ## Ejercicio 1
 
