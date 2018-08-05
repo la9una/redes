@@ -33,13 +33,13 @@ Si en cambio, deseamos abrir el archivo en **Microsoft Windows**, haremos clic d
 
 	Si importar el sistema operativo, la sintaxis del archivo _hosts_ será la siguiente: 
 
-	`ip.del.equipo  nombre_De_Dominio`	
+	`<ip.del.equipo>  <nombre_De_Dominio>`	
 
 
-Si tomamos como ejemplo el dominio ficticio `misitio.lan` y suponiendo que la dirección IP del equipo servidor es `192.168.0.33`:
+Si tomamos como ejemplo el dominio ficticio `dominio.tld` y suponiendo que la dirección IP del equipo servidor es `192.168.0.33`:
 
 ```bash
-192.168.0.33  www.miisito.lan  misitio.lan  http://misitio.lan
+192.168.0.33  www.dominio.tld  dominio.tld  http://dominio.tld
 ```
 
 Si configuramos correctamente el archivo _hosts_ de nuestro sistema, podremos acceder al/los dominio/s especificados. 

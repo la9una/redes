@@ -56,7 +56,7 @@ sudo a2enmod userdir
 
 En otras palabras, creará un [enlace simbólico](https://es.wikipedia.org/wiki/Enlace_simb%C3%B3lico) del módulo `userdir` desde la carpeta  `/etc/apache2/mods-available` hacia la carpeta `/etc/apache2/mods-enabled`.
 
-### Inicio y parada del servidor
+### Gestión general del servidor
 
 Existen diversos comandos para gestionar el servidor web Apache. 
 

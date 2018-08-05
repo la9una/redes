@@ -43,7 +43,7 @@ Aunque podemos ingresar otros valores, si presionamos la tecla _Enter_ estaremos
 
 | Recurso              | Tipo                | Descripción                              |
 | -------------------- | ------------------- | ---------------------------------------- |
-| `/home/usuario/.ssh` | Directorio (oculto) | Ubicación por defecto de los archivos de clave |
+| `/home/<usuario>/.ssh` | Directorio (oculto) | Ubicación por defecto de los archivos de clave |
 | `id_rsa`             | Archivo             | Llave privada                            |
 | `id_rsa.pub`         | Archivo             | Llave pública                            |
 
@@ -54,7 +54,7 @@ A continuación, se nos pedirá el **ingreso de una frase de contraseña o _pass
 	Si dejamos la contraseña en blanco podremos usar la llave sin introducir contraseña. Si ingresamos una contraseña necesitaremos ambas (la llave privada y la contraseña) para iniciar sesión. Asegurar las llaves con contraseña es más seguro, pero ambos métodos tienen sus usos y son más seguros que la autenticación de contraseña básica.
 
 ## Copiando la llave pública
-Tendremos que copiar la clave pública en el servidor agregándola al archivo `/home/usuario/.ssh/authorized_keys` del usuario remoto. (donde deberá reemplazar `usuario` por el usuario remoto). 
+Tendremos que copiar la clave pública en el servidor agregándola al archivo `/home/<usuario>/.ssh/authorized_keys` del usuario remoto. (donde deberá reemplazar `usuario` por el usuario remoto). 
 
 ### Método manual
 Tendremos que iniciar sesión en el servidor con el usuario al que queremos permitir acceso mediante el uso de clave asimétrica. Ejecutamos los siguintes comandos (uno por vez):
@@ -80,7 +80,7 @@ dAv8JggJICUvax2T9va5 usuario@dominio_o_direccion_ip_servidor
 Para que podamos iniciar sesión en el servidor remoto, ejecutamos en la **máquina local**: 
 
 ```apache
-ssh-copy-id usuario_remoto@ip_del_servidor_remoto
+ssh-copy-id <usuario_remoto>@<ip_del_servidor_remoto>
 ```
 Se nos pedirá la contraseña del usuario remoto. 
 

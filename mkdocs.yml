@@ -120,7 +120,6 @@ pages:
         - Gestión básica: 'lamp/gestionBasica.md'
         - Web de usuario: 'lamp/userdir.md'
         - Hosts virtuales: 'lamp/virtualHosts.md'
-        - Resolución de nombres: 'lamp/resolucionNombres.md'
     #    - WebDav: 'lamp/webDav.md'
         - Ejercicios: 'lamp/ejercicios.md'
 - Servidor de compartición:

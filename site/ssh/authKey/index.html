@@ -1014,18 +1014,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../lamp/resolucionNombres/" title="Resolución de nombres" class="md-nav__link">
-      Resolución de nombres
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../lamp/ejercicios/" title="Ejercicios" class="md-nav__link">
       Ejercicios
     </a>
@@ -1939,7 +1927,7 @@ Aunque podemos ingresar otros valores, si presionamos la tecla <em>Enter</em> es
 </thead>
 <tbody>
 <tr>
-<td><code>/home/usuario/.ssh</code></td>
+<td><code>/home/&lt;usuario&gt;/.ssh</code></td>
 <td>Directorio (oculto)</td>
 <td>Ubicación por defecto de los archivos de clave</td>
 </tr>
@@ -1961,7 +1949,7 @@ Aunque podemos ingresar otros valores, si presionamos la tecla <em>Enter</em> es
 <p>Si dejamos la contraseña en blanco podremos usar la llave sin introducir contraseña. Si ingresamos una contraseña necesitaremos ambas (la llave privada y la contraseña) para iniciar sesión. Asegurar las llaves con contraseña es más seguro, pero ambos métodos tienen sus usos y son más seguros que la autenticación de contraseña básica.</p>
 </div>
 <h2 id="copiando-la-llave-publica">Copiando la llave pública<a class="headerlink" href="#copiando-la-llave-publica" title="Permanent link">&para;</a></h2>
-<p>Tendremos que copiar la clave pública en el servidor agregándola al archivo <code>/home/usuario/.ssh/authorized_keys</code> del usuario remoto. (donde deberá reemplazar <code>usuario</code> por el usuario remoto). </p>
+<p>Tendremos que copiar la clave pública en el servidor agregándola al archivo <code>/home/&lt;usuario&gt;/.ssh/authorized_keys</code> del usuario remoto. (donde deberá reemplazar <code>usuario</code> por el usuario remoto). </p>
 <h3 id="metodo-manual">Método manual<a class="headerlink" href="#metodo-manual" title="Permanent link">&para;</a></h3>
 <p>Tendremos que iniciar sesión en el servidor con el usuario al que queremos permitir acceso mediante el uso de clave asimétrica. Ejecutamos los siguintes comandos (uno por vez):</p>
 <p><div class="codehilite"><pre><span></span><span class="nb">cd</span>
@@ -1979,7 +1967,7 @@ dAv8JggJICUvax2T9va5 usuario@dominio_o_direccion_ip_servidor
 
 <h3 id="metodo-por-comandos">Método por comandos<a class="headerlink" href="#metodo-por-comandos" title="Permanent link">&para;</a></h3>
 <p>Para que podamos iniciar sesión en el servidor remoto, ejecutamos en la <strong>máquina local</strong>: </p>
-<p><div class="codehilite"><pre><span></span><span class="err">ssh-copy-</span><span class="nb">id</span> usuario_remoto@ip_del_servidor_remoto
+<p><div class="codehilite"><pre><span></span><span class="err">ssh-copy-</span><span class="nb">id</span> &lt;usuario_remoto&gt;@&lt;ip_del_servidor_remoto&gt;
 </pre></div>
 Se nos pedirá la contraseña del usuario remoto. </p>
 <p>Ahora se puede usar la llave privada correspondiente para iniciar sesión en el servidor.</p>

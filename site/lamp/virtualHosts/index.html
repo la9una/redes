@@ -101,7 +101,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#configurando-el-host-virtual" tabindex="1" class="md-skip">
+      <a href="#creando-archivo-de-configuracion-del-host-virtual" tabindex="1" class="md-skip">
         Saltar a contenido
       </a>
     
@@ -933,22 +933,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configurando-el-host-virtual" title="Configurando el Host Virtual" class="md-nav__link">
-    Configurando el Host Virtual
+  <a href="#creando-archivo-de-configuracion-del-host-virtual" title="Creando archivo de configuración del Host Virtual" class="md-nav__link">
+    Creando archivo de configuración del Host Virtual
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verficicando-archivo-de-configuracion" title="Verficicando archivo de configuración" class="md-nav__link">
-    Verficicando archivo de configuración
+  <a href="#habilitando-el-host-virtual" title="Habilitando el Host Virtual" class="md-nav__link">
+    Habilitando el Host Virtual
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#habilitando-el-sitio-creado" title="Habilitando el sitio creado" class="md-nav__link">
-    Habilitando el sitio creado
+  <a href="#deshabilitando-el-host-virtual" title="Deshabilitando el Host Virtual" class="md-nav__link">
+    Deshabilitando el Host Virtual
   </a>
   
 </li>
@@ -956,6 +956,13 @@
         <li class="md-nav__item">
   <a href="#reiniciando-apache" title="Reiniciando Apache" class="md-nav__link">
     Reiniciando Apache
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolucion-del-nombre-de-dominio" title="Resolución del nombre de dominio" class="md-nav__link">
+    Resolución del nombre de dominio
   </a>
   
 </li>
@@ -974,18 +981,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../resolucionNombres/" title="Resolución de nombres" class="md-nav__link">
-      Resolución de nombres
-    </a>
   </li>
 
         
@@ -1786,22 +1781,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configurando-el-host-virtual" title="Configurando el Host Virtual" class="md-nav__link">
-    Configurando el Host Virtual
+  <a href="#creando-archivo-de-configuracion-del-host-virtual" title="Creando archivo de configuración del Host Virtual" class="md-nav__link">
+    Creando archivo de configuración del Host Virtual
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#verficicando-archivo-de-configuracion" title="Verficicando archivo de configuración" class="md-nav__link">
-    Verficicando archivo de configuración
+  <a href="#habilitando-el-host-virtual" title="Habilitando el Host Virtual" class="md-nav__link">
+    Habilitando el Host Virtual
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#habilitando-el-sitio-creado" title="Habilitando el sitio creado" class="md-nav__link">
-    Habilitando el sitio creado
+  <a href="#deshabilitando-el-host-virtual" title="Deshabilitando el Host Virtual" class="md-nav__link">
+    Deshabilitando el Host Virtual
   </a>
   
 </li>
@@ -1809,6 +1804,13 @@
         <li class="md-nav__item">
   <a href="#reiniciando-apache" title="Reiniciando Apache" class="md-nav__link">
     Reiniciando Apache
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolucion-del-nombre-de-dominio" title="Resolución del nombre de dominio" class="md-nav__link">
+    Resolución del nombre de dominio
   </a>
   
 </li>
@@ -1847,16 +1849,16 @@
 <p>Los sitios web virtuales pueden estar <strong>basados en direcciones IP</strong>, lo que significa que cada sitio web tiene una dirección IP diferente, o <strong>basados en nombres diferentes</strong>, lo que significa que con una sola dirección IP están funcionando sitios web con diferentes nombres (de dominio). </p>
 <p>El hecho de que estén funcionando en la misma máquina física pasa completamente desapercibido para el usuario que visita esos sitios web.</p>
 </div>
-<h2 id="configurando-el-host-virtual">Configurando el Host Virtual<a class="headerlink" href="#configurando-el-host-virtual" title="Permanent link">&para;</a></h2>
+<h2 id="creando-archivo-de-configuracion-del-host-virtual">Creando archivo de configuración del Host Virtual<a class="headerlink" href="#creando-archivo-de-configuracion-del-host-virtual" title="Permanent link">&para;</a></h2>
 <p>Para iniciar la configuración de nuestro <em>host virtual</em> nos dirigiremos a la siguiente carpeta: </p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> /etc/apache2/sites-available
 </pre></div>
 
 <p>Una vez ubicados en el directorio correspodiente nos disponemos a crear el <strong>archivo de configuracion del Host Virtual</strong> (el archivo en cuestión puede llamarse de cualquier forma, pero debe finalizar necesariamente con la extension <code>.conf</code>)</p>
-<div class="codehilite"><pre><span></span>nano midominio.tld.conf
+<div class="codehilite"><pre><span></span>nano dominio.tld.conf
 </pre></div>
 
-<p>Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemplo simple de configuracion para el sitio ficticio <code>misitio.lan</code>:</p>
+<p>Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemplo simple de configuracion para el sitio ficticio <code>dominio.tld</code>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -1900,20 +1902,23 @@
 41
 42
 43
-44</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c">###################################</span>
+44
+45
+46
+47</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c">###################################</span>
 <span class="c">### Definición del Host Virtual ###</span>
 <span class="c">###################################</span>
 
 <span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
 
     <span class="c"># Correo del administrador del servidor</span>
-    <span class="nb">ServerAdmin</span>     tunombre@mail.com
+    <span class="nb">ServerAdmin</span>     nombre@mail.com
 
     <span class="c"># Nombre de dominio del sitio</span>
-    <span class="nb">ServerName</span>      midominio.tld
+    <span class="nb">ServerName</span>      dominio.tld
 
     <span class="c"># Alias del nombre de dominio del sitio</span>
-    <span class="nb">ServerAlias</span>     www.midominio.tld http://midominio.tld
+    <span class="nb">ServerAlias</span>     www.dominio.tld http://dominio.tld
 
     <span class="c"># Carpeta raíz donde se alojarán las páginas web </span>
     <span class="nb">DocumentRoot</span>    <span class="sx">/home/</span>&lt;usuario&gt;/public_html 
@@ -1925,6 +1930,9 @@
     <span class="nb">CustomLog</span>       <span class="sx">/home/</span>&lt;usuario&gt;/public_html/accessos.log combined
 
 <span class="nt">&lt;/VirtualHost&gt;</span>
+
+<span class="c"># Nota: reemplazar &lt;usuario&gt; por el nombre de usuario real en cada caso. </span>
+<span class="c"># Por ejemplo: /home/juan/public_html</span>
 
 
 <span class="c">#########################################</span>
@@ -1947,32 +1955,62 @@
 </pre></div>
 </td></tr></table>
 
-<div class="admonition info">
-<p class="admonition-title">Archivos de log</p>
-<p>Los archivos de <em>log</em> son archivos en los que el sistema guarda información sobre el funcionamiento de algún servicio determinado indicando errores, advertencias, accesos, etc. En distribuciones GNU/Linux, se encuentran alojados bajo la ruta <code>/var/log/</code>. En el ejemplo, se ha optado por guardar dichos archivos en la carpeta home del usuario. </p>
+<div class="admonition tip">
+<p class="admonition-title">Document Root</p>
+<p>Aunque no es necesario definir la carpeta raíz de los documentos web dentro del directorio del usuario, sí es una práctica recomendada, especialmente dentro de los proveedores de servicio de <a href="https://es.wikipedia.org/wiki/Alojamiento_web"><em>web hosting</em></a>.</p>
+<p>Bajo el mismo criterio, se incluyen en el directorio del usuario los archivos de <a href="https://es.wikipedia.org/wiki/Log_(inform%C3%A1tica)"><em>log</em></a> generados automáticamente por Apache.  </p>
 </div>
 <div class="admonition help">
 <p class="admonition-title">Documentación de Apache Web Server</p>
 <p>La presente guía está basada en la versión 2.4.x del servidor web incluida en Ubuntu Server 16.04 LTS. Es recomendable consultar la <a href="https://httpd.apache.org/docs/2.4/es/">extensa documentación oficial</a> para profundizar los conceptos abordados en la práctica.  </p>
 </div>
-<h2 id="verficicando-archivo-de-configuracion">Verficicando archivo de configuración<a class="headerlink" href="#verficicando-archivo-de-configuracion" title="Permanent link">&para;</a></h2>
-<p>Para verificar que la sintaxis del host virtual es la correcta, ejecutamos: </p>
-<div class="codehilite"><pre><span></span>sudo apache2ctl -t
+<h2 id="habilitando-el-host-virtual">Habilitando el Host Virtual<a class="headerlink" href="#habilitando-el-host-virtual" title="Permanent link">&para;</a></h2>
+<p>Hasta ahora hemos definido nuestro <em>host</em> virtual, pero no lo hemos habilitado. Para "levantar" el sitio, es decir, para que Apache ponga el sitio en modo <strong>habilitado</strong> , ejecutamos en la terminal:</p>
+<p><div class="codehilite"><pre><span></span>sudo a2ensite dominio.tld.conf
 </pre></div>
-
-<h2 id="habilitando-el-sitio-creado">Habilitando el sitio creado<a class="headerlink" href="#habilitando-el-sitio-creado" title="Permanent link">&para;</a></h2>
-<p>Para que Apache ponga el sitio en modo <strong>habilitado</strong> (hasta ahora lo definimos, pero no lo habilitamos), ejecutamos en la terminal:</p>
-<div class="codehilite"><pre><span></span>sudo a2ensite misitio.tld.conf
-</pre></div>
-
+Donde:</p>
+<ul>
+<li><code>a2</code>      Apache2</li>
+<li><code>en</code>      Enable (habilitar)</li>
+<li><code>site</code>    Sitio web </li>
+<li><code>dominio.tdl.conf</code> Archivo de configuración del <em>host</em> virtual</li>
+</ul>
 <div class="admonition done">
-<p class="admonition-title">¿Qué ocurre cuando habilitamos un sitio?</p>
+<p class="admonition-title">¿Qué ocurre cuando habilitamos un sitio?<p>El comando anterior creará un <a href="https:_es.wikipedia.org/wiki/Enlace_simb%C3%B3lico">enlace simbólico</a> del archivo <code>dominio.tld.conf</code> desde la carpeta <code>/etc/apache2/sites-available</code> hacia la carpeta <code>/etc/apache2/sites-enabled</code>. </p>
+</p>
 </div>
-<p>El comando anterior creará un <a href="https:_es.wikipedia.org/wiki/Enlace_simb%C3%B3lico">enlace simbólico</a> del archivo <code>misitio.lan.conf</code> desde la carpeta <code>/etc/apache2/sites-available</code> hacia la carpeta <code>/etc/apache2/sites-enabled</code>. </p>
+<h2 id="deshabilitando-el-host-virtual">Deshabilitando el Host Virtual<a class="headerlink" href="#deshabilitando-el-host-virtual" title="Permanent link">&para;</a></h2>
+<p>Una vez que hayamos "levantado" el sitio web con el comando <code>a2ensite</code> y realicemos cambios en el archivo de configuración del <em>host</em> virtual, para hacer efectivos los cambios tendremos que "bajar" el sitio y luego, volverlo a subir. En ocasiones, tambén nos valeremos de este comando cuando deseemos dejar fuera de linea un sitio.</p>
+<p><div class="codehilite"><pre><span></span>sudo a2dissite dominio.tld.conf
+</pre></div>
+Donde:</p>
+<ul>
+<li><code>a2</code>      Apache2</li>
+<li><code>dis</code>     Disable (deshabilitar)</li>
+<li><code>site</code>    Sitio web </li>
+<li><code>dominio.tdl.conf</code> Archivo de configuración del <em>host</em> virtual</li>
+</ul>
 <h2 id="reiniciando-apache">Reiniciando Apache<a class="headerlink" href="#reiniciando-apache" title="Permanent link">&para;</a></h2>
 <p>Por último, para que Apache haga efectivo todos los cambios, lo reiniciamos: </p>
 <div class="codehilite"><pre><span></span>sudo service apache2 restart
 </pre></div>
+
+<p>Es posible que al hacerlo, Apache nos indique la presencia de errores. Para determinar cuáles son esos errores, ejecutamos: </p>
+<p><div class="codehilite"><pre><span></span>sudo apache2ctl -t
+</pre></div>
+Una vez solucionado el problema, podremos reiniciar Apache sin problemas. </p>
+<div class="admonition tip">
+<p class="admonition-title">Comandos de gestión de Apache<p>Existen otros comandos ofrecidos por el servidor para gestionar diversas tareas y que podés encontrar en una sección anterior llamada <a href="../gestionBasica/#gestion-general-del-servidor">Gestión básica del servidor</a>. </p>
+</p>
+</div>
+<h2 id="resolucion-del-nombre-de-dominio">Resolución del nombre de dominio<a class="headerlink" href="#resolucion-del-nombre-de-dominio" title="Permanent link">&para;</a></h2>
+<p>Nuestro sitio ya está listo para ser "servido" por el Apache de manera que podamos acceder a él mediante un navegador web. Sin embargo, para que esto sea posible, antes tendremos que "avisarle" al resto de los equipos de la red LAN (o del mundo, si nuestro nombre de dominio no es local) que existe un nombre de dominio asociado a una dirección IP determinada y viceversa. </p>
+<p>Es decir, precisamos que nuestro equipo "resuelva" dicho nombre de dominio, es decir, sea capaz de traducir a qué dirección IP apunta el mismo (por ejemplo, la dirección IP correpondiente al dominio <code>www.itel.edu.ar</code> es <code>168.197.51.107</code>). </p>
+<p>Existen dos caminos para configurar la resolución de nuestros nombres dominios (en nuestro caso, son dominios locales, es decir, no "reales" sólo accesibles desde nuestra red LAN), a saber: </p>
+<ul>
+<li><a href="../../dns/archivoHosts/">Empleando el archivo hosts de cada equipo</a></li>
+<li><a href="../../dns/bind">Configurando un servidor DNS local</a> </li>
+</ul>
                 
                   
                 
@@ -2024,13 +2062,13 @@
           </a>
         
         
-          <a href="../resolucionNombres/" title="Resolución de nombres" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../ejercicios/" title="Ejercicios" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                Resolución de nombres
+                Ejercicios
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
