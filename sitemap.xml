@@ -56,11 +56,6 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://www.rauljesus.xyz/redes/gnuLinux/netwokinterfaces/</loc>
-     <lastmod>2018-10-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/userBashScripting/</loc>
      <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
@@ -72,6 +67,11 @@
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/networking/</loc>
+     <lastmod>2018-10-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://www.rauljesus.xyz/redes/gnuLinux/netwokinterfaces/</loc>
      <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
