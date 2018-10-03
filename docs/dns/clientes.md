@@ -1,4 +1,24 @@
-Para que los clientes puedan resolver dominios empleando nuestro servidor tendremos que seguir el siguiente procedimiento: 
+Para que los clientes puedan resolver dominios empleando nuestro servidor tendremos que seguir procedimiento determinado que será distinto dependiendo del sistema operativo en cuestión.  
+
+## Windows
+
+Accedé a "Conexiones de red". Para ello presioná la combinación de teclas <kbd><i class="fab fa-windows"></i></kbd> + <kbd>R</kbd> y escribí `ncpa.cpl` en el formulario del cuadro de dialogo "Ejecutar". Por último, hacé clic en el botón "Aceptar":
+
+![Acceso a Conexiones de red](imgDNS/resolver_win_01.png)
+
+Mediante un clic derecho sobre el adaptador de red a través del cual estás conectado a la red (Ethernet, Wifi, etc) y seleccioná la opción "Propiedades" del menú contextual:
+
+![Seleción de adaptador de red](imgDNS/resolver_win_02.png)
+
+Se abrirá la ventana de propiedades del adaptador de red. Seleccioná la opción "Protocolo de Internet versión 4 (TCP/IPv4)": 
+
+![Propiedades de TCP/IP v4](imgDNS/resolver_win_03.png)
+
+Por último, escribí la dirección IP de tu servidor DNS seleccionando la opción "Usar las siguientes direcciones de servidor DNS": 
+
+![Configuración del servidor DNS](imgDNS/resolver_win_04.png)
+
+En el ejemplo, la dirección IP del servidor DNS preferido es `192.168.0.222`: deberás cambiar dicha dirección IP por la dirección IP de tu servidor DNS. En caso de disponer de un servidor DNS adicional, deberá agregarse en formulario "Servidor DNS alternativo". 
 
 ## GNU/Linux
 Nos dirigimos al directorio `/etc/resolvconf/resolv.conf.d/`:
@@ -22,9 +42,3 @@ search itel.lan
 nameserver 192.168.0.xxx
 ```
 
-## Windows 
-En sistemas operativos basados en Microsoft Windows, tendremos que dirigirnos hasta opnciones de red y editar la sección IPv4: 
-
-![Cliente WIndows DNS](imgDNS/dnsClienteWindows7.png)
-
-En el ejemplo, el equipo obtiene su dirección IP automáticamente (por DHCP). Simplemente, habría que cambiar la dirección del servidor DNS por el que apunta al nuestro. 

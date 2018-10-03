@@ -136,7 +136,7 @@ Una vez solucionado el problema, podremos reiniciar Apache sin problemas.
 ## Resolución del nombre de dominio
 Nuestro sitio ya está listo para ser "servido" por el Apache de manera que podamos acceder a él mediante un navegador web. Sin embargo, para que esto sea posible, antes tendremos que "avisarle" al resto de los equipos de la red LAN (o del mundo, si nuestro nombre de dominio no es local) que existe un nombre de dominio asociado a una dirección IP determinada y viceversa. 
 
-Es decir, precisamos que nuestro equipo "resuelva" dicho nombre de dominio, es decir, sea capaz de traducir a qué dirección IP apunta el mismo (por ejemplo, la dirección IP correpondiente al dominio `www.itel.edu.ar` es `168.197.51.107`). 
+En otras palabras, precisamos que nuestro equipo "resuelva" dicho nombre de dominio o, lo que es lo mismo, sea capaz de traducir a qué dirección IP apunta el mismo (por ejemplo, la dirección IP correpondiente al dominio `www.itel.edu.ar` es `168.197.51.107`). 
 
 Existen dos caminos para configurar la resolución de nuestros nombres dominios (en nuestro caso, son dominios locales, es decir, no "reales" sólo accesibles desde nuestra red LAN), a saber: 
 

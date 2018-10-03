@@ -172,9 +172,13 @@ zip <nombreDeArchivo.zip> <recursoAComprimir>
 Si deseamos proteger con contraseña un archivo comprimido, debemos proceder de esta manera (en el proceso se nos pedirá ingresar la contraseña): 
 
 ```bash
+zip -re <nombreDeArchivo.zip> <recursoAComprimir>
+```
+También: 
+
+```bash
 zip --encrypt <nombreDeArchivo.zip> <recursoAComprimir>
 ```
-
 O bien (inseguro) del siguiente modo: 
 
 ```bash
@@ -182,9 +186,11 @@ zip --password <contraseña> <nombreDeArchivo.zip> <recursoAComprimir>
 ```
 
 Para poder **descomprimir los archivos zip**, se usa el siguiente comando:
+
 ```bash
 unzip <nombreDeArchivo.zip>
 ```
+
 O bien, si queremos descomprimir el contenido del archivo `.zip` en un directorio particular: 
 
 ```bash
@@ -202,7 +208,8 @@ Para** ver el contenido de un archivo zip** (sin abrirlo), se pone el siguiente 
 ```bash
 unzip -v <nombreDeArchivo.zip>
 ```
-##Archivos .rar
+
+## Archivos .rar
 
 Para **comprimir en formato rar**, se usara el siguiente comando:
 
@@ -233,6 +240,7 @@ Para **ver el contenido de un archivo rar** (sin abrirlo), se usa el siguiente c
 ```bash
 unrar -v <nombreDeArchivo.rar>
 ```
+
 O bien, 
 
 ```bash

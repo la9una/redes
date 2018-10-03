@@ -29,14 +29,14 @@ Si en cambio, deseamos abrir el archivo en **Microsoft Windows**, haremos clic d
 
 ## Modificando el archivo _hosts_
 
-!!! done "Contenido del archivo _hosts_"
+Si importar el sistema operativo, la sintaxis del archivo _hosts_ será la siguiente: 
 
-	Si importar el sistema operativo, la sintaxis del archivo _hosts_ será la siguiente: 
+```bash
+<ip.del.equipo>  <nombre_De_Dominio>
+```
 
-	`<ip.del.equipo>  <nombre_De_Dominio>`	
 
-
-Si tomamos como ejemplo el dominio ficticio `dominio.tld` y suponiendo que la dirección IP del equipo servidor es `192.168.0.33`:
+Si tomamos como ejemplo el dominio ficticio `dominio.tld` y suponiendo que la dirección IP del equipo servidor es `192.168.0.33`, el contenido del archivo _hosts_ nos quedará como sigue:
 
 ```bash
 192.168.0.33  www.dominio.tld  dominio.tld  http://dominio.tld
@@ -46,3 +46,19 @@ Si configuramos correctamente el archivo _hosts_ de nuestro sistema, podremos ac
 
 !!! warning "Resolución de dominios empleando el archivo _hosts_"
 	Si en una red local, decidimos resolver los nombres de dominio valiéndonos del archivo _hosts_ tendremos que copiar el mismo archivo _hosts_ en cada uno de los equipos que compongan la red.
+
+## El archivo hosts y la seguridad
+Como estudiamos anteriormente, el arhivo _hosts_ fue creado para la resolución de dominios. Sin embargo, dicho archivo posee opciones interesantes para securizar un sistema que compone una red informática. 
+
+### TCP Wrappers
+{EN DESARROLLO}
+
+* https://blog.carreralinux.com.ar/2016/10/reglas-para-tcp-wrappers-ejemplos-linux/
+* https://www.taringa.net/posts/linux/16178276/Asegurando-el-sistema-con-hosts-deny-allow.html
+
+### Blacklists 
+Es posible bloquear el acceso a dominios indeseados (con contenido inapropiado o malware, por ejemplo) mediante el archivo _hosts_. Para este cometido, existen en la red diversas listas negras o _blacklists_ que contienen información sobre dominios maliciosos, ahorrándonos gran parte del trabajo. 
+
+* [Ultimate Hosts Blacklist](https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist)
+* [DNSBL - Domain Name System Blacklists](https://www.dnsbl.info/dnsbl-list.php)
+* [Hosts](https://github.com/StevenBlack/hosts)

@@ -79,6 +79,10 @@ find dir1/ -user pepe
 ```
 Busca dentro del directorio dir1, los recursos que tengan como propietario al usuario "pepe"
 
+find <directorio> -name "*.<extensionDelArchivo>" -print | xargs sed -i "s/<PalabraAReemplazar/PalabraNueva/g"
+
+Busca dentro de un directorio, todos los archivos con una extensión determinada y modifica una cadena en todos ellos
+
 
 ## grep
 

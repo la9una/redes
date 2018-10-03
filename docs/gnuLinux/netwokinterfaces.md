@@ -44,6 +44,7 @@ iface enp0s3 inet static
 	network <dirección-de-red>
 	netmask <máscara-de-red>
 	gateway <dirección-ip-router>
+	dns-nameservers <dirección-ip-servidor-dns>
 ```
 
 Por ejemplo: 
@@ -64,6 +65,8 @@ iface enp0s3 inet static
 	netmask 255.255.255.0
 	# Puerta de enlace predeterminada
 	gateway 192.168.0.1
+	# Servidor DNS
+	dns-nameservers 8.8.8.8
 ```
 
 Deshabilitamos la interfaz de red
