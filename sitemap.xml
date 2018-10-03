@@ -2,387 +2,392 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>http://www.rauljesus.xyz/redes/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/userWhyLinux/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/distros/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/fhs/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/userFilesystem/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/userCompression/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/userNano/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/userVim/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/userSearch/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://www.rauljesus.xyz/redes/gnuLinux/usuarios/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <loc>http://www.rauljesus.xyz/redes/gnuLinux/adminPermissions/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/repositorios/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/netwokinterfaces/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/userBashScripting/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/gnuLinux/tasks/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://www.rauljesus.xyz/redes/networking/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/ssh/authKey/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/dns/archivoHosts/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/dns/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://www.rauljesus.xyz/redes/dns/dnsmasq/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/dns/bind/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://www.rauljesus.xyz/redes/dns/instalacion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <loc>http://www.rauljesus.xyz/redes/dns/bind/instalacion/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://www.rauljesus.xyz/redes/dns/cache/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <loc>http://www.rauljesus.xyz/redes/dns/bind/cache/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://www.rauljesus.xyz/redes/dns/zonas/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <loc>http://www.rauljesus.xyz/redes/dns/bind/cacheEjemplo/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://www.rauljesus.xyz/redes/dns/resolvd/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <loc>http://www.rauljesus.xyz/redes/dns/bind/zonas/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://www.rauljesus.xyz/redes/dns/resolvi/</loc>
-     <lastmod>2018-08-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://www.rauljesus.xyz/redes/dns/resolver/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <loc>http://www.rauljesus.xyz/redes/dns/bind/zonasEjemplo/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/dns/clientes/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://www.rauljesus.xyz/redes/dns/test/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <loc>http://www.rauljesus.xyz/redes/dns/dnsQuery/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/lamp/queEs/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/lamp/instalacion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/lamp/gestionBasica/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/lamp/userdir/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/lamp/virtualHosts/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/lamp/ejercicios/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/samba/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/samba/instalacion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/samba/configuracionGeneral/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/samba/gestionUsuarios/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/samba/comparticionUsuario/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/samba/comparticionGrupo/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/samba/comparticionInvitados/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/samba/clientesWindows/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/samba/ejercicios/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/proxy/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/icecast/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/icecast/instalacion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/icecast/inicializacion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/icecast/configuracionGeneral/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/icecast/broadcasting/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/icecast/administracion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/instalacion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/configuracionInicial/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/estados/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/repositorioLocal/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/gitignore/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/servidorGit/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/trabajandoConRemotos/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/branches/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/deshaciendoCambios/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/logs/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/etiquetas/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/otrosComandosGit/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/ejemploGit/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/cheatsheet/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/git/ejercicios/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/ansible/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/ansible/instalacion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/ansible/yaml/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/nagios/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/nagios/instalacion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/nagios/configuracion/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/nagios/equipos/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/nagios/grupos/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/nagios/servicios/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/nagios/nsclient/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/nagios/iconos/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/nagios/recursos/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>http://www.rauljesus.xyz/redes/troubleshooting/netTools/</loc>
-     <lastmod>2018-08-05</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
