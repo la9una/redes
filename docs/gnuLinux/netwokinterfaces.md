@@ -128,3 +128,27 @@ _O bien_
 ```bash
 sudo ip a
 ```
+
+## Configurando Proxy de la red
+Crear un archivo vacío dentro de `/etc/apt` llamado `apt-conf`
+
+```bash
+sudo vi /etc/apt/apt.conf
+```
+
+E ingresá el siguiente contenido: 
+
+```bash linenums="1"
+Acquire::http::Proxy "http://<direccion-IP-del-proxy>:<puerto>";
+```
+
+!!!warning "Proxy con autenticación / seguro"
+		En caso que necesitamos autenticarnos en el servidor proxy, cambiaremos la línea 
+		
+		`http://<direccion-IP-del-proxy>:<puerto>` 
+		
+		por 
+		
+		`http://<usuario>:<contraseña>@<direccion-IP-del-proxy>:<puerto>` 
+		
+		Si se trata de un servidor seguro, simplemente cambiaremos `http` por `https`

@@ -90,13 +90,12 @@ pages:
     - Usuarios: 'gnuLinux/adminPermissions.md'
   - Gestión de software:
     - Repositorios: 'gnuLinux/repositorios.md'
-  - Gestión de red:
-    - Interfaces de red: 'gnuLinux/netwokinterfaces.md'
   - Automatización:
     - Scripts: 'gnuLinux/userBashScripting.md'
     - Tareas: 'gnuLinux/tasks.md'
-- Networing: 
-  - Introducción: 'networking/index.md'
+  - Networing: 
+    - Introducción: 'networking/index.md'
+    - Interfaz de red: 'gnuLinux/netwokinterfaces.md'
 - Servidor SSH: 
     - Autenticación de llave pública: 'ssh/authKey.md'
 - Servidor de nombres: 
