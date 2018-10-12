@@ -1994,13 +1994,13 @@
 <td>mail1</td>
 <td>Servidor de Correo Primario</td>
 <td>mail1.itel.lan</td>
-<td>192.168.0.1</td>
+<td>192.168.0.8</td>
 </tr>
 <tr>
 <td>mail2</td>
 <td>Servidor de Correo Secundario</td>
 <td>mail2.itel.lan</td>
-<td>192.168.0.1</td>
+<td>192.168.0.9</td>
 </tr>
 <tr>
 <td>server1</td>
@@ -2016,11 +2016,6 @@
 </tr>
 </tbody>
 </table>
-<p>itel.lan.           IN      A        192.168.0.5
-dns1.itel.lan.      IN      A        192.168.0.2
-dns2.itel.lan.      IN      A        192.168.0.3
-server1.itel.lan.   IN      A        192.168.0.6
-server2.itel.lan.   IN      A        192.168.0.7</p>
 <p>Para ello, seguiremos unos sencillos pasos que se detallan a continuación. </p>
 <h3 id="creando-el-directorio-donde-alojaremos-nuestros-archivos-de-zona">Creando el directorio donde alojaremos nuestros archivos de zona<a class="headerlink" href="#creando-el-directorio-donde-alojaremos-nuestros-archivos-de-zona" title="Permanent link">&para;</a></h3>
 <p>Aunque este paso no es estrictamente necesario, lo haremos para mantener el orden de nuestros archivos de zona: crearemos una carpeta llamada <code>zonas</code> dentro del directorio principal de <strong>bind</strong>: </p>
@@ -2123,7 +2118,9 @@ server2.itel.lan.   IN      A        192.168.0.7</p>
 31
 32
 33
-34</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">;</span>
+34
+35
+36</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">;</span>
 <span class="err">;</span> <span class="nb">BIND</span> - Archivo de zona de resolución directa - itel.lan
 <span class="err">;</span>
 
@@ -2149,6 +2146,8 @@ server2.itel.lan.   IN      A        192.168.0.7</p>
 <span class="err">itel</span>.<span class="err">lan</span>.           <span class="nb">IN</span>      A        <span class="m">192.168.0.5</span>
 <span class="err">dns1</span>.<span class="err">itel</span>.<span class="err">lan</span>.      <span class="nb">IN</span>      A        <span class="m">192.168.0.2</span>
 <span class="err">dns2</span>.<span class="err">itel</span>.<span class="err">lan</span>.      <span class="nb">IN</span>      A        <span class="m">192.168.0.3</span>
+<span class="err">mail1</span>.<span class="err">itel</span>.<span class="err">lan</span>.     <span class="nb">IN</span>      A        <span class="m">192.168.0.8</span>
+<span class="err">mail2</span>.<span class="err">itel</span>.<span class="err">lan</span>.     <span class="nb">IN</span>      A        <span class="m">192.168.0.9</span>
 <span class="err">server1</span>.<span class="err">itel</span>.<span class="err">lan</span>.   <span class="nb">IN</span>      A        <span class="m">192.168.0.6</span>
 <span class="err">server2</span>.<span class="err">itel</span>.<span class="err">lan</span>.   <span class="nb">IN</span>      A        <span class="m">192.168.0.7</span>
 
@@ -2222,8 +2221,8 @@ ftp.itel.lan.       IN      CNAME    server1
             <span class="nb">A</span>       <span class="m">192.168.0.5</span>
 <span class="nb">dns1</span>        A       <span class="m">192.168.0.2</span>
 <span class="nb">dns2</span>        A       <span class="m">192.168.0.3</span>
-<span class="nb">mail1</span>       A       <span class="m">192.168.0.21</span>
-<span class="nb">mail2</span>       A       <span class="m">192.168.0.22</span>
+<span class="nb">mail1</span>       A       <span class="m">192.168.0.8</span>
+<span class="nb">mail2</span>       A       <span class="m">192.168.0.9</span>
 <span class="nb">server1</span>     A       <span class="m">192.168.0.6</span>
 <span class="nb">server2</span>     A       <span class="m">192.168.0.7</span>
 
@@ -2256,7 +2255,8 @@ ftp         CNAME   server1
 17
 18
 19
-20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">;</span>
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="err">;</span>
 <span class="err">;</span> <span class="nb">BIND</span> - Archivo de zona de resolución inversa - itel.lan
 <span class="err">;</span>
 
@@ -2273,7 +2273,8 @@ ftp         CNAME   server1
 
 <span class="err">2</span>     <span class="nb">IN</span>     NS     dns1.itel.lan.
 <span class="err">3</span>     <span class="nb">IN</span>     NS     dns2.itel.lan.
-
+<span class="err">8</span>     <span class="nb">IN</span>     PTR    mail1.itel.lan.
+<span class="err">9</span>     <span class="nb">IN</span>     PTR    mail2.itel.lan.  
 <span class="err">6</span>     <span class="nb">IN</span>     PTR    server1.itel.lan.
 <span class="err">7</span>     <span class="nb">IN</span>     PTR    server2.itel.lan.
 </pre></div>
@@ -2284,10 +2285,11 @@ ftp         CNAME   server1
 <div class="codehilite"><pre><span></span>sudo named-checkconf
 </pre></div>
 
-<p>Y reiniciamos el servidor: </p>
-<p><div class="codehilite"><pre><span></span>sudo /etc/init.d/bind9 restart
+<p>Y reiniciamos el servidor:</p>
+<div class="codehilite"><pre><span></span>sudo /etc/init.d/bind9 restart
 </pre></div>
-O bien: </p>
+
+<p>O bien:</p>
 <div class="codehilite"><pre><span></span>sudo service bind9 restart
 </pre></div>
                 
