@@ -13,18 +13,10 @@ Configurar los archivos de zona necesarios para el dominio local `itel.lan`, que
 | ------- | ----------------------------- | ---------------- | ----------- |
 | dns1    | Servidor DNS Primario         | dns1.itel.lan    | 192.168.0.2 |
 | dns2    | Servidor DNS Secundario       | dns2.itel.lan    | 192.168.0.3 |
-| mail1   | Servidor de Correo Primario   | mail1.itel.lan   | 192.168.0.1 |
-| mail2   | Servidor de Correo Secundario | mail2.itel.lan   | 192.168.0.1 |
+| mail1   | Servidor de Correo Primario   | mail1.itel.lan   | 192.168.0.8 |
+| mail2   | Servidor de Correo Secundario | mail2.itel.lan   | 192.168.0.9 |
 | server1 | Servidor Web                  | server1.itel.lan | 192.168.0.6 |
 | server2 | Servidor LDAP                 | server2.itel.lan | 192.168.0.7 |
-
-
-itel.lan.           IN      A        192.168.0.5
-dns1.itel.lan.      IN      A        192.168.0.2
-dns2.itel.lan.      IN      A        192.168.0.3
-server1.itel.lan.   IN      A        192.168.0.6
-server2.itel.lan.   IN      A        192.168.0.7
-
 
 Para ello, seguiremos unos sencillos pasos que se detallan a continuación. 
 
@@ -106,6 +98,8 @@ itel.lan.           IN      MX       20     mail2.itel.lan.
 itel.lan.           IN      A        192.168.0.5
 dns1.itel.lan.      IN      A        192.168.0.2
 dns2.itel.lan.      IN      A        192.168.0.3
+mail1.itel.lan.     IN      A        192.168.0.8
+mail2.itel.lan.     IN      A        192.168.0.9
 server1.itel.lan.   IN      A        192.168.0.6
 server2.itel.lan.   IN      A        192.168.0.7
 
@@ -146,8 +140,8 @@ $TTL 86400
             A       192.168.0.5
 dns1        A       192.168.0.2
 dns2        A       192.168.0.3
-mail1       A       192.168.0.21
-mail2       A       192.168.0.22
+mail1       A       192.168.0.8
+mail2       A       192.168.0.9
 server1     A       192.168.0.6
 server2     A       192.168.0.7
 
@@ -181,7 +175,8 @@ $TTL 86400
 
 2     IN     NS     dns1.itel.lan.
 3     IN     NS     dns2.itel.lan.
-
+8     IN     PTR    mail1.itel.lan.
+9     IN     PTR    mail2.itel.lan.  
 6     IN     PTR    server1.itel.lan.
 7     IN     PTR    server2.itel.lan.
 ```
@@ -194,12 +189,13 @@ Por último, verificamos que el archivo de configuración no contenga errores:
 sudo named-checkconf
 ```
 
-Y reiniciamos el servidor: 
+Y reiniciamos el servidor:
 
 ```bash
 sudo /etc/init.d/bind9 restart
 ```
-O bien: 
+
+O bien:
 
 ```bash
 sudo service bind9 restart

@@ -4,17 +4,17 @@ Podemos comprobar el funcionamiento del servidor DNS empleando, entre otros, dos
 ## Nslookup (Windows, Linux y Mac)
 Nslookup es un programa utilizado para saber si el DNS está resolviendo correctamente los nombres y las IPs. Se utiliza con el comando nslookup, que funciona tanto en Windows como en UNIX para obtener la dirección IP conociendo el nombre, y viceversa.
 
-!!!tip "nslookup en Windows"
-        Para acceder fácilmente a la herramienta ´nslookup´ en sistemas basados en Windows, ejecutamos la combinación de teclas <kbd><i class="fab fa-windows"></i></kbd> + <kbd>R</kbd> y escribimos la palabra `cmd` para abrir una ventana de símbolo de sistema. 
-
-
 ### Iniciando nslookup
 Simplemente, ejecutamos el nombre del programa en un terminal: 
 
 ```bash
 nslookup
 ```
-El comando deberá devolvernos la dirección IP del servidor DNS que tenemos configurado en nuestra máquina Windows (física)
+
+El comando deberá devolvernos la **dirección IP del servidor DNS** que tenemos configurado en nuestro equipo (físico).
+
+!!!tip "Abrir símbolo de sistema (terminal) en Windows"
+        Para abrir rápidamente la terminal en sistemas basados en Windows, ejecutamos la combinación de teclas <kbd><i class="fab fa-windows"></i></kbd> + <kbd>R</kbd> y escribimos la palabra `cmd`. 
 
 ### Consultando direcciones ip
 Luego, preguntaremos por algún nombre de dominio que hayamos definido. Por ejemplo: 
@@ -23,10 +23,10 @@ Luego, preguntaremos por algún nombre de dominio que hayamos definido. Por ejem
 > host.midominio.lan
 ```
 
-El comando deberá devolvernos la dirección IP del nombre de dominio consultado.
+El comando deberá devolvernos la **dirección IP asociada al nombre de dominio** consultado.
 
 ### Consultando nombres de dominio
-Además, podremos consultar a qué dominio corresponde determinada dirección ip, ingresándola en el _prompt_:
+Además, podremos consultar **a qué dominio corresponde determinada dirección ip**, ingresándola en el _prompt_:
 
 ```bash
 > 192.168.0.200
@@ -37,7 +37,6 @@ o bien:
 ```bash
 > server 192.168.0.200
 ```
-
 
 ## dig (Linux y Mac)
 
