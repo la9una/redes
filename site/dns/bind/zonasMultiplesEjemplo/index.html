@@ -1928,7 +1928,7 @@
                 
                   <h1>Ejemplo - Zonas múltiples</h1>
                 
-                <p>Es posible configurar un único servidor para que resuelva diferentes nombres de dominio.</p>
+                <p>Es posible configurar un único servidor para que resuelva diferentes nombres de dominio. En este ejemplo, configuraremos nuestro servidor DNS para que sea capaz de resolver consultas directas en inversas para los dominios ficticios: <code>dominio1.com</code> y <code>dominio2.org</code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Número de serie<p>Al configurar un mismo servidor para que resuelva varios dominios, los archivos de zona deberán tener el <strong>mismo número de serie</strong>.</p>
 </p>
@@ -1938,7 +1938,7 @@
 <div class="codehilite"><pre><span></span><span class="nb">sudo</span> vim <span class="sx">/etc/bind/named.conf.local</span>
 </pre></div>
 
-<p>Y declaramos nuestros archivos de zona. En el ejemplo, lo haremos para los dominios <code>dominio1.com</code> y <code>dominio2.org</code>:</p>
+<p>Y declaramos nuestros archivos de zona: de resolución directa para los dominios mencionados y un único archivo de zona de resolución inversa:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
