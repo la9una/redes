@@ -1,29 +1,47 @@
 Podemos comprobar el funcionamiento del servidor DNS empleando, entre otros, dos comandos: `dig` y `nslookup`.
 
 
-## Nslookup
+## Nslookup (Windows, Linux y Mac)
 Nslookup es un programa utilizado para saber si el DNS está resolviendo correctamente los nombres y las IPs. Se utiliza con el comando nslookup, que funciona tanto en Windows como en UNIX para obtener la dirección IP conociendo el nombre, y viceversa.
 
-###  Uso en Windows
-Ejecutamos la combinación de teclas <kbd><i class="fab fa-windows"></i></kbd> + <kbd>R</kbd> y escribimos la palabra `cmd` para abrir una ventana de símbolo de sistema. Luego, ejecutamos: 
+!!!tip "nslookup en Windows"
+        Para acceder fácilmente a la herramienta ´nslookup´ en sistemas basados en Windows, ejecutamos la combinación de teclas <kbd><i class="fab fa-windows"></i></kbd> + <kbd>R</kbd> y escribimos la palabra `cmd` para abrir una ventana de símbolo de sistema. 
 
+
+### Iniciando nslookup
+Simplemente, ejecutamos el nombre del programa en un terminal: 
 
 ```bash
 nslookup
 ```
 El comando deberá devolvernos la dirección IP del servidor DNS que tenemos configurado en nuestra máquina Windows (física)
 
+### Consultando direcciones ip
 Luego, preguntaremos por algún nombre de dominio que hayamos definido. Por ejemplo: 
 
 ```bash
-> alumno.itel.lan
+> host.midominio.lan
 ```
+
 El comando deberá devolvernos la dirección IP del nombre de dominio consultado.
 
+### Consultando nombres de dominio
+Además, podremos consultar a qué dominio corresponde determinada dirección ip, ingresándola en el _prompt_:
 
-## dig (_domain information groper_)
+```bash
+> 192.168.0.200
+```
 
-_dig_ es una herramienta flexible para consultar información a los servidores DNS: ejecuta un _lookup_ a los servicios de DNS y nos devuelve la salida que necesitemos.
+o bien:
+
+```bash
+> server 192.168.0.200
+```
+
+
+## dig (Linux y Mac)
+
+_dig_ (_domain information groper_) es una herramienta flexible para consultar información a los servidores DNS: ejecuta un _lookup_ a los servicios de DNS y nos devuelve la salida que necesitemos.
 
 Constituye una herramienta útil para encontrar errores y hacer _troubleshooting_ a los servicios de nombres, ya que es una herramienta muy útil, fácil de utilizar, y con una salida limpia.
 
@@ -134,6 +152,3 @@ Para más opciones y documentación, nada mejor que leer el man:
 ```bash
 man dig
 ```
-
-
-

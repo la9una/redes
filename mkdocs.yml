@@ -111,7 +111,8 @@ pages:
             - Ejemplo práctico: 'dns/bind/cacheEjemplo.md'
         - DNS local: 
             - Archivos de zona: 'dns/bind/zonas.md'
-            - Ejemplo práctico: 'dns/bind/zonasEjemplo.md'
+            - Ejemplo - Zonas: 'dns/bind/zonasEjemplo.md'
+            - Ejemplo - Zonas múltiples: 'dns/bind/zonasMultiplesEjemplo.md'
     - Configurando clientes: 'dns/clientes.md'
     - Consultas DNS: 'dns/dnsQuery.md'
 #- pfSense:

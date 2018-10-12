@@ -42,7 +42,7 @@
     
     
       
-        <title>Ejemplo práctico - Redes</title>
+        <title>Ejemplo - Zonas - Redes</title>
       
     
     
@@ -127,7 +127,7 @@
                 Redes
               </span>
               <span class="md-header-nav__topic">
-                Ejemplo práctico
+                Ejemplo - Zonas
               </span>
             
           
@@ -844,11 +844,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Ejemplo práctico
+        Ejemplo - Zonas
       </label>
     
-    <a href="./" title="Ejemplo práctico" class="md-nav__link md-nav__link--active">
-      Ejemplo práctico
+    <a href="./" title="Ejemplo - Zonas" class="md-nav__link md-nav__link--active">
+      Ejemplo - Zonas
     </a>
     
       
@@ -930,6 +930,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../zonasMultiplesEjemplo/" title="Ejemplo - Zonas múltiples" class="md-nav__link">
+      Ejemplo - Zonas múltiples
+    </a>
   </li>
 
         
@@ -1970,13 +1982,13 @@
 <td>dns1</td>
 <td>Servidor DNS Primario</td>
 <td>dns1.itel.lan</td>
-<td>192.168.0.1</td>
+<td>192.168.0.2</td>
 </tr>
 <tr>
 <td>dns2</td>
 <td>Servidor DNS Secundario</td>
 <td>dns2.itel.lan</td>
-<td>192.168.0.1</td>
+<td>192.168.0.3</td>
 </tr>
 <tr>
 <td>mail1</td>
@@ -1994,16 +2006,21 @@
 <td>server1</td>
 <td>Servidor Web</td>
 <td>server1.itel.lan</td>
-<td>192.168.0.1</td>
+<td>192.168.0.6</td>
 </tr>
 <tr>
 <td>server2</td>
 <td>Servidor LDAP</td>
 <td>server2.itel.lan</td>
-<td>192.168.0.1</td>
+<td>192.168.0.7</td>
 </tr>
 </tbody>
 </table>
+<p>itel.lan.           IN      A        192.168.0.5
+dns1.itel.lan.      IN      A        192.168.0.2
+dns2.itel.lan.      IN      A        192.168.0.3
+server1.itel.lan.   IN      A        192.168.0.6
+server2.itel.lan.   IN      A        192.168.0.7</p>
 <p>Para ello, seguiremos unos sencillos pasos que se detallan a continuación. </p>
 <h3 id="creando-el-directorio-donde-alojaremos-nuestros-archivos-de-zona">Creando el directorio donde alojaremos nuestros archivos de zona<a class="headerlink" href="#creando-el-directorio-donde-alojaremos-nuestros-archivos-de-zona" title="Permanent link">&para;</a></h3>
 <p>Aunque este paso no es estrictamente necesario, lo haremos para mantener el orden de nuestros archivos de zona: crearemos una carpeta llamada <code>zonas</code> dentro del directorio principal de <strong>bind</strong>: </p>
@@ -2324,13 +2341,13 @@ O bien: </p>
           </a>
         
         
-          <a href="../../clientes/" title="Configurando clientes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../zonasMultiplesEjemplo/" title="Ejemplo - Zonas múltiples" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                Configurando clientes
+                Ejemplo - Zonas múltiples
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -11,12 +11,20 @@ Configurar los archivos de zona necesarios para el dominio local `itel.lan`, que
 
 | Host    | Rol                           | FQDN Privado     | IP Privada  |
 | ------- | ----------------------------- | ---------------- | ----------- |
-| dns1    | Servidor DNS Primario         | dns1.itel.lan    | 192.168.0.1 |
-| dns2    | Servidor DNS Secundario       | dns2.itel.lan    | 192.168.0.1 |
+| dns1    | Servidor DNS Primario         | dns1.itel.lan    | 192.168.0.2 |
+| dns2    | Servidor DNS Secundario       | dns2.itel.lan    | 192.168.0.3 |
 | mail1   | Servidor de Correo Primario   | mail1.itel.lan   | 192.168.0.1 |
 | mail2   | Servidor de Correo Secundario | mail2.itel.lan   | 192.168.0.1 |
-| server1 | Servidor Web                  | server1.itel.lan | 192.168.0.1 |
-| server2 | Servidor LDAP                 | server2.itel.lan | 192.168.0.1 |
+| server1 | Servidor Web                  | server1.itel.lan | 192.168.0.6 |
+| server2 | Servidor LDAP                 | server2.itel.lan | 192.168.0.7 |
+
+
+itel.lan.           IN      A        192.168.0.5
+dns1.itel.lan.      IN      A        192.168.0.2
+dns2.itel.lan.      IN      A        192.168.0.3
+server1.itel.lan.   IN      A        192.168.0.6
+server2.itel.lan.   IN      A        192.168.0.7
+
 
 Para ello, seguiremos unos sencillos pasos que se detallan a continuación. 
 

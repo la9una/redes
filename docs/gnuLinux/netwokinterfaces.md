@@ -130,13 +130,15 @@ sudo ip a
 ```
 
 ## Configurando Proxy de la red
-Crear un archivo vacío dentro de `/etc/apt` llamado `apt-conf`
+Si nuestro equipo se encuentra detrás de un proxy, tendremos que realizar configuraciones adicionales. 
+
+1. Crear un archivo vacío dentro de `/etc/apt` llamado `apt-conf`:
 
 ```bash
 sudo vi /etc/apt/apt.conf
 ```
 
-E ingresá el siguiente contenido: 
+2. Ingresar el siguiente contenido: 
 
 ```bash linenums="1"
 Acquire::http::Proxy "http://<direccion-IP-del-proxy>:<puerto>";
