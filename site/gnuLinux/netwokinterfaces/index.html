@@ -894,8 +894,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../dns/bind/zonasEjemplo/" title="Ejemplo práctico" class="md-nav__link">
-      Ejemplo práctico
+    <a href="../../dns/bind/zonasEjemplo/" title="Ejemplo - Zonas" class="md-nav__link">
+      Ejemplo - Zonas
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dns/bind/zonasMultiplesEjemplo/" title="Ejemplo - Zonas múltiples" class="md-nav__link">
+      Ejemplo - Zonas múltiples
     </a>
   </li>
 
@@ -2022,11 +2034,16 @@ iface enp0s3 inet static
 </pre></div>
 
 <h2 id="configurando-proxy-de-la-red">Configurando Proxy de la red<a class="headerlink" href="#configurando-proxy-de-la-red" title="Permanent link">&para;</a></h2>
-<p>Crear un archivo vacío dentro de <code>/etc/apt</code> llamado <code>apt-conf</code></p>
+<p>Si nuestro equipo se encuentra detrás de un proxy, tendremos que realizar configuraciones adicionales. </p>
+<ol>
+<li>Crear un archivo vacío dentro de <code>/etc/apt</code> llamado <code>apt-conf</code>:</li>
+</ol>
 <div class="codehilite"><pre><span></span>sudo vi /etc/apt/apt.conf
 </pre></div>
 
-<p>E ingresá el siguiente contenido: </p>
+<ol>
+<li>Ingresar el siguiente contenido: </li>
+</ol>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Acquire::http::Proxy <span class="s2">&quot;http://&lt;direccion-IP-del-proxy&gt;:&lt;puerto&gt;&quot;</span><span class="p">;</span>
 </pre></div>
 </td></tr></table>
