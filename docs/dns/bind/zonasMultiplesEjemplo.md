@@ -1,4 +1,4 @@
-Es posible configurar un único servidor para que resuelva diferentes nombres de dominio.
+Es posible configurar un único servidor para que resuelva diferentes nombres de dominio. En este ejemplo, configuraremos nuestro servidor DNS para que sea capaz de resolver consultas directas en inversas para los dominios ficticios: `dominio1.com` y `dominio2.org`.
 
 !!!warning "Número de serie"
         Al configurar un mismo servidor para que resuelva varios dominios, los archivos de zona deberán tener el **mismo número de serie**.
@@ -11,7 +11,7 @@ Para ello, abrimos el archivo `named.conf.local`:
 sudo vim /etc/bind/named.conf.local
 ```
 
-Y declaramos nuestros archivos de zona. En el ejemplo, lo haremos para los dominios `dominio1.com` y `dominio2.org`:
+Y declaramos nuestros archivos de zona: de resolución directa para los dominios mencionados y un único archivo de zona de resolución inversa:
 
 ```apache linenums="1"
 
@@ -141,3 +141,4 @@ $TTL    604800
 12   IN  PTR    web2.dominio2.org.
 
 ```
+
