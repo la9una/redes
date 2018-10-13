@@ -87,7 +87,8 @@ pages:
     - El editor vim: 'gnuLinux/userVim.md'
     - Búsquedas: 'gnuLinux/userSearch.md'
   - Usuarios y permisos:
-    - Usuarios: 'gnuLinux/adminPermissions.md'
+    - Usuarios y Grupos: 'gnuLinux/userUserGroups.md'
+    - Permisos: 'gnuLinux/userPermissions.md'
   - Gestión de software:
     - Repositorios: 'gnuLinux/repositorios.md'
   - Automatización:

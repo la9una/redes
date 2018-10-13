@@ -13,7 +13,7 @@
         <meta name="description" content="Instalación, mantenimiento y reparación de redes informáticas">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/gnuLinux/adminPermissions/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/gnuLinux/userUserGroups/">
       
       
         <meta name="author" content="Raul Jesus Lopez">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Usuarios - Redes</title>
+        <title>Usuarios y Grupos - Redes</title>
       
     
     
@@ -127,7 +127,7 @@
                 Redes
               </span>
               <span class="md-header-nav__topic">
-                Usuarios
+                Usuarios y Grupos
               </span>
             
           
@@ -449,11 +449,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Usuarios
+        Usuarios y Grupos
       </label>
     
-    <a href="./" title="Usuarios" class="md-nav__link md-nav__link--active">
-      Usuarios
+    <a href="./" title="Usuarios y Grupos" class="md-nav__link md-nav__link--active">
+      Usuarios y Grupos
     </a>
     
       
@@ -525,6 +525,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../userPermissions/" title="Permisos" class="md-nav__link">
+      Permisos
+    </a>
   </li>
 
         
@@ -1933,10 +1945,10 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/gnuLinux/adminPermissions.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/la9una/redes/edit/master/docs/gnuLinux/userUserGroups.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Usuarios</h1>
+                  <h1>Usuarios y Grupos</h1>
                 
                 <h2 id="usuarios-en-gnulinux">Usuarios en GNU/Linux<a class="headerlink" href="#usuarios-en-gnulinux" title="Permanent link">&para;</a></h2>
 <p>Linux es un sistema multiusuario, por lo tanto, la tarea de añadir, modificar, eliminar y en general administrar usuarios se convierte en algo no solo rutinario, sino importante, además de ser un elemento de seguridad.</p>
@@ -1971,7 +1983,7 @@ usermod
 userdel
 passwd</p>
 <h2 id="grupos-en-gnulinux">Grupos en GNU/Linux<a class="headerlink" href="#grupos-en-gnulinux" title="Permanent link">&para;</a></h2>
-<p>Cuando en GNU/Linux creamos un <strong>usuario</strong> (User), automáticamente se crea un <strong>grupo</strong> (Group) que lleva el mismo nombre del ususario creado. Por defecto, el usuario creado pertenece a su grupo homónimo. </p>
+<p>Cuando en GNU/Linux creamos un <strong>usuario</strong> (User), automáticamente se crea un <strong>grupo</strong> (Group) que lleva el mismo nombre del ususario creado. Por defecto, el usuario creado pertenece a su grupo homónimo. Por otro lado, es posible crear grupos y agrupar usuarios a ellos. </p>
 <h3 id="gestion-de-grupos">Gestión de grupos<a class="headerlink" href="#gestion-de-grupos" title="Permanent link">&para;</a></h3>
 <p>addgroup
 groupmod
@@ -1982,6 +1994,75 @@ finger</p>
 </p>
 </div>
 <h2 id="permisos">Permisos<a class="headerlink" href="#permisos" title="Permanent link">&para;</a></h2>
+<p>Existen 3 categorías (o niveles) de permisos sobre los distintos recursos (archivos, carpetas, impresoras, etc.), a saber:</p>
+<table>
+<thead>
+<tr>
+<th>Símbolo</th>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>u</code></td>
+<td>User</td>
+<td>Usuario propietario</td>
+</tr>
+<tr>
+<td><code>g</code></td>
+<td>Group</td>
+<td>Grupo propietario</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td>Others</td>
+<td>Otros usuarios</td>
+</tr>
+</tbody>
+</table>
+<p>Para cada uno de los <strong>3 niveles de permisos</strong> tenemos <strong>3 tipos de permisos</strong>. Cada uno de ellos posee, además, un valor numérico: </p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Valor simbólico</th>
+<th>Valor octal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lectura</td>
+<td><code>r</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>Escritura</td>
+<td><code>w</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>Ejecucción</td>
+<td><code>x</code></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Entonces, un recurso que posee permisos totales,será: 
+    | Atributo  | Valor simbólico | Valor octal |
+| -------   | ------ | ------------------- |
+| Lectura   | r   | 4           |
+| Escritura | w | 2           |
+| Ejecucción | x | 1      |
+        U   G   O
+Simbólico   rwx rwx rwx
+Octal       7   7   7</p>
+<p>¿Qué permisos tiene?
+        U   G   O
+Simbólico   rwx r-x r--
+Octal       7   5   4</p>
+<p>Simbólico   rw- r-- r--
+Octal       6   4   4</p>
 <p>Finalmente, existen <strong>otros</strong> (Others) usuarios en el sistema. </p>
 <p>Esto se representa simbólicamente: </p>
 <table>
@@ -2049,9 +2130,9 @@ finger</p>
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "http://www.rauljesus.xyz/redes/gnuLinux/adminPermissions/";
+      this.page.url = "http://www.rauljesus.xyz/redes/gnuLinux/userUserGroups/";
       this.page.identifier =
-        "/gnuLinux/adminPermissions/";
+        "/gnuLinux/userUserGroups/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -2088,13 +2169,13 @@ finger</p>
           </a>
         
         
-          <a href="../repositorios/" title="Repositorios" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../userPermissions/" title="Permisos" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                Repositorios
+                Permisos
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

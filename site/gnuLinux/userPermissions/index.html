@@ -13,7 +13,7 @@
         <meta name="description" content="Instalación, mantenimiento y reparación de redes informáticas">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/nagios/servicios/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/gnuLinux/userPermissions/">
       
       
         <meta name="author" content="Raul Jesus Lopez">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Definiendo servicios - Redes</title>
+        <title>Permisos - Redes</title>
       
     
     
@@ -101,7 +101,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#monitoreando-servicios-en-gnulinux" tabindex="1" class="md-skip">
+      <a href="#niveles-de-permisos" tabindex="1" class="md-skip">
         Saltar a contenido
       </a>
     
@@ -127,7 +127,7 @@
                 Redes
               </span>
               <span class="md-header-nav__topic">
-                Definiendo servicios
+                Permisos
               </span>
             
           
@@ -254,10 +254,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       GNU/Linux
@@ -294,7 +296,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/userWhyLinux/" title="¿Por qué GNU/Linux?" class="md-nav__link">
+    <a href="../userWhyLinux/" title="¿Por qué GNU/Linux?" class="md-nav__link">
       ¿Por qué GNU/Linux?
     </a>
   </li>
@@ -306,7 +308,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/distros/" title="Distribuciones" class="md-nav__link">
+    <a href="../distros/" title="Distribuciones" class="md-nav__link">
       Distribuciones
     </a>
   </li>
@@ -342,7 +344,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/fhs/" title="FHS" class="md-nav__link">
+    <a href="../fhs/" title="FHS" class="md-nav__link">
       FHS
     </a>
   </li>
@@ -354,7 +356,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/userFilesystem/" title="Archivos y carpetas" class="md-nav__link">
+    <a href="../userFilesystem/" title="Archivos y carpetas" class="md-nav__link">
       Archivos y carpetas
     </a>
   </li>
@@ -366,7 +368,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/userCompression/" title="Compresión y descompresión" class="md-nav__link">
+    <a href="../userCompression/" title="Compresión y descompresión" class="md-nav__link">
       Compresión y descompresión
     </a>
   </li>
@@ -378,7 +380,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/userNano/" title="El editor nano" class="md-nav__link">
+    <a href="../userNano/" title="El editor nano" class="md-nav__link">
       El editor nano
     </a>
   </li>
@@ -390,7 +392,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/userVim/" title="El editor vim" class="md-nav__link">
+    <a href="../userVim/" title="El editor vim" class="md-nav__link">
       El editor vim
     </a>
   </li>
@@ -402,7 +404,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/userSearch/" title="Búsquedas" class="md-nav__link">
+    <a href="../userSearch/" title="Búsquedas" class="md-nav__link">
       Búsquedas
     </a>
   </li>
@@ -417,10 +419,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
     
     <label class="md-nav__link" for="nav-2-3">
       Usuarios y permisos
@@ -438,7 +442,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/userUserGroups/" title="Usuarios y Grupos" class="md-nav__link">
+    <a href="../userUserGroups/" title="Usuarios y Grupos" class="md-nav__link">
       Usuarios y Grupos
     </a>
   </li>
@@ -448,11 +452,85 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../gnuLinux/userPermissions/" title="Permisos" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Permisos
+      </label>
+    
+    <a href="./" title="Permisos" class="md-nav__link md-nav__link--active">
       Permisos
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#niveles-de-permisos" title="Niveles de permisos" class="md-nav__link">
+    Niveles de permisos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-permisos" title="Tipos de permisos" class="md-nav__link">
+    Tipos de permisos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-algunos-valores-de-permisos" title="Ejemplo de algunos valores de permisos" class="md-nav__link">
+    Ejemplo de algunos valores de permisos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intererpretando-los-permisos" title="Intererpretando los permisos" class="md-nav__link">
+    Intererpretando los permisos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#averiguando-permisos" title="Averiguando permisos" class="md-nav__link">
+    Averiguando permisos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -486,7 +564,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/repositorios/" title="Repositorios" class="md-nav__link">
+    <a href="../repositorios/" title="Repositorios" class="md-nav__link">
       Repositorios
     </a>
   </li>
@@ -522,7 +600,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/userBashScripting/" title="Scripts" class="md-nav__link">
+    <a href="../userBashScripting/" title="Scripts" class="md-nav__link">
       Scripts
     </a>
   </li>
@@ -534,7 +612,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/tasks/" title="Tareas" class="md-nav__link">
+    <a href="../tasks/" title="Tareas" class="md-nav__link">
       Tareas
     </a>
   </li>
@@ -582,7 +660,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../gnuLinux/netwokinterfaces/" title="Interfaz de red" class="md-nav__link">
+    <a href="../netwokinterfaces/" title="Interfaz de red" class="md-nav__link">
       Interfaz de red
     </a>
   </li>
@@ -1586,12 +1664,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
     <label class="md-nav__link" for="nav-11">
       Monitoreo de redes
@@ -1607,12 +1683,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-1" type="checkbox" id="nav-11-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-1" type="checkbox" id="nav-11-1">
     
     <label class="md-nav__link" for="nav-11-1">
       Nagios
@@ -1630,7 +1704,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="¿Qué es Nagios?" class="md-nav__link">
+    <a href="../../nagios/" title="¿Qué es Nagios?" class="md-nav__link">
       ¿Qué es Nagios?
     </a>
   </li>
@@ -1642,7 +1716,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../instalacion/" title="Instalación" class="md-nav__link">
+    <a href="../../nagios/instalacion/" title="Instalación" class="md-nav__link">
       Instalación
     </a>
   </li>
@@ -1654,7 +1728,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../configuracion/" title="Configuración inicial" class="md-nav__link">
+    <a href="../../nagios/configuracion/" title="Configuración inicial" class="md-nav__link">
       Configuración inicial
     </a>
   </li>
@@ -1666,7 +1740,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../equipos/" title="Definiendo equipos" class="md-nav__link">
+    <a href="../../nagios/equipos/" title="Definiendo equipos" class="md-nav__link">
       Definiendo equipos
     </a>
   </li>
@@ -1678,7 +1752,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../grupos/" title="Definiendo grupos" class="md-nav__link">
+    <a href="../../nagios/grupos/" title="Definiendo grupos" class="md-nav__link">
       Definiendo grupos
     </a>
   </li>
@@ -1688,71 +1762,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Definiendo servicios
-      </label>
-    
-    <a href="./" title="Definiendo servicios" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../nagios/servicios/" title="Definiendo servicios" class="md-nav__link">
       Definiendo servicios
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-  
-    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#monitoreando-servicios-en-gnulinux" title="Monitoreando servicios en GNU/Linux" class="md-nav__link">
-    Monitoreando servicios en GNU/Linux
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#monitoreando-servicios-en-windows" title="Monitoreando servicios en Windows" class="md-nav__link">
-    Monitoreando servicios en Windows
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#agregando-monitoreo-de-estado-de-servicios" title="Agregando monitoreo de estado de servicios" class="md-nav__link">
-    Agregando monitoreo de estado de servicios
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
-            Comentarios
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1762,7 +1776,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../nsclient/" title="Agente Windows" class="md-nav__link">
+    <a href="../../nagios/nsclient/" title="Agente Windows" class="md-nav__link">
       Agente Windows
     </a>
   </li>
@@ -1774,7 +1788,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../iconos/" title="Definiendo íconos" class="md-nav__link">
+    <a href="../../nagios/iconos/" title="Definiendo íconos" class="md-nav__link">
       Definiendo íconos
     </a>
   </li>
@@ -1786,7 +1800,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../recursos/" title="Recursos adicionales" class="md-nav__link">
+    <a href="../../nagios/recursos/" title="Recursos adicionales" class="md-nav__link">
       Recursos adicionales
     </a>
   </li>
@@ -1857,23 +1871,37 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#monitoreando-servicios-en-gnulinux" title="Monitoreando servicios en GNU/Linux" class="md-nav__link">
-    Monitoreando servicios en GNU/Linux
+  <a href="#niveles-de-permisos" title="Niveles de permisos" class="md-nav__link">
+    Niveles de permisos
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#monitoreando-servicios-en-windows" title="Monitoreando servicios en Windows" class="md-nav__link">
-    Monitoreando servicios en Windows
+  <a href="#tipos-de-permisos" title="Tipos de permisos" class="md-nav__link">
+    Tipos de permisos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplo-de-algunos-valores-de-permisos" title="Ejemplo de algunos valores de permisos" class="md-nav__link">
+    Ejemplo de algunos valores de permisos
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#agregando-monitoreo-de-estado-de-servicios" title="Agregando monitoreo de estado de servicios" class="md-nav__link">
-    Agregando monitoreo de estado de servicios
+  <a href="#intererpretando-los-permisos" title="Intererpretando los permisos" class="md-nav__link">
+    Intererpretando los permisos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#averiguando-permisos" title="Averiguando permisos" class="md-nav__link">
+    Averiguando permisos
   </a>
   
 </li>
@@ -1905,193 +1933,116 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/nagios/servicios.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/la9una/redes/edit/master/docs/gnuLinux/userPermissions.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Definiendo servicios</h1>
+                  <h1>Permisos</h1>
                 
-                <p>En este paso definiremos qué parámetros vamos a monitorear. Para ello, abriremos el archivo <code>servicios.cfg</code> creado con anterioridad: </p>
-<div class="codehilite"><pre><span></span>sudo vim /etc/nagios3/objetos/servicios.cfg
-</pre></div>
-
-<p>En el archivo, <strong>tendremos que agregar los servicios que deseemos monitorear</strong> en los equipos. </p>
-<h2 id="monitoreando-servicios-en-gnulinux">Monitoreando servicios en GNU/Linux<a class="headerlink" href="#monitoreando-servicios-en-gnulinux" title="Permanent link">&para;</a></h2>
-<p>Por ejemplo, podríamos <strong>monitorear en un servidor GNU/Linux</strong>, el estado del <strong>servidor web</strong>, <strong>ftp</strong> y <strong>ssh</strong>: </p>
-<div class="codehilite"><pre><span></span><span class="c">#######################</span>
-<span class="c"># Servicios genéricos #</span>
-<span class="c">#######################</span>
-
-<span class="c">### Ping ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Comprobando conectividad
-<span class="nb">check_command</span>           check_ping!200.0,20%!600.0,60%
-<span class="nb">normal_check_interval</span>   <span class="m">5</span>
-<span class="nb">retry_check_interval</span>    <span class="m">1</span>
-<span class="err">}</span> 
-
-<span class="c">### Estado del servidor web ###</span>
-<span class="nb">define</span> service{
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Estado del protocolo HTTP
-<span class="nb">check_command</span>           check_http
-<span class="err">}</span>
-
-<span class="c">### Estado del servidor FTP ###</span>
-<span class="nb">define</span> service{
-<span class="nb">use</span>                     generic-service     
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Estado del protocolo FTP
-<span class="nb">check_command</span>           check_ftp
-<span class="err">}</span>
-
-<span class="c">### Estado del servidor SSH ###</span>
-<span class="nb">define</span> service{
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Estado del protcolo SSH
-<span class="nb">check_command</span>           check_ssh
-<span class="err">}</span>
-</pre></div>
-
-<div class="admonition note">
-<p class="admonition-title">Sobre los servicios</p>
-<p>Los servicios que vamos a monitorear se pueden configurar para:</p>
+                <p>En sistemas tipo *NIX cada elemento o recurso del mismo (archivos, carpetas, impresoras, dispositivos, enlaces, etc.) posee permisos de acceso que ofrecen un importante mecanismo de seguridad ante accesos no deseados.</p>
+<h3 id="niveles-de-permisos">Niveles de permisos<a class="headerlink" href="#niveles-de-permisos" title="Permanent link">&para;</a></h3>
+<p>Existen 3 categorías (o niveles) de permisos sobre los distintos recursos (archivos, carpetas, impresoras, etc.), a saber:</p>
+<table>
+<thead>
+<tr>
+<th>Símbolo</th>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>u</code></td>
+<td>User</td>
+<td>Usuario propietario</td>
+</tr>
+<tr>
+<td><code>g</code></td>
+<td>Group</td>
+<td>Grupo propietario</td>
+</tr>
+<tr>
+<td><code>o</code></td>
+<td>Others</td>
+<td>Otros usuarios</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tipos-de-permisos">Tipos de permisos<a class="headerlink" href="#tipos-de-permisos" title="Permanent link">&para;</a></h3>
+<p>Para cada uno de los <strong>3 niveles de permisos</strong> tenemos <strong>3 tipos de permisos</strong>. Cada uno de ellos posee, además, un valor numérico: </p>
+<table>
+<thead>
+<tr>
+<th>Atributo</th>
+<th>Valor simbólico</th>
+<th>Valor octal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lectura</td>
+<td><code>r</code></td>
+<td>4</td>
+</tr>
+<tr>
+<td>Escritura</td>
+<td><code>w</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>Ejecucción</td>
+<td><code>x</code></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ejemplo-de-algunos-valores-de-permisos">Ejemplo de algunos valores de permisos<a class="headerlink" href="#ejemplo-de-algunos-valores-de-permisos" title="Permanent link">&para;</a></h3>
+<p>Teniendo en cuenta lo antes expuesto, un recurso que posee permisos totales será:</p>
+<table>
+<thead>
+<tr>
+<th>Formato</th>
+<th>u (user)</th>
+<th>g (group)</th>
+<th>o (others)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simbólico</td>
+<td>rwx</td>
+<td>rwx</td>
+<td>rwx</td>
+</tr>
+<tr>
+<td>Octal</td>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<p>Los valores numéricos asignados a cada símbolo (<code>r</code>, <code>w</code> y <code>x</code>) se suman para obtener el valor octal del permiso. Es decir: <code>r + w + x = 4 + 2 + 1 = 7</code>. Esto debe hacerse para cada nivel de permisos: <code>user</code>, <code>group</code> y <code>others</code>.</p>
+<div class="admonition question">
+<p class="admonition-title">¿Los tipos de permisos se escriben en cualquier orden?<p>La respuesta es NO. Tanto los niveles como los tipos de permisos se leen siempre de izquierda a derecha, y en este orden: </p>
 <ul>
-<li>
-<p>un equipo en particular, mediante la directiva <strong>host_name</strong> o</p>
-</li>
-<li>
-<p>para un grupo de equipos empleando la directiva <strong>hostgroup_name</strong>.</p>
-</li>
+<li>Para los niveles de permisos: <code>u</code>, <code>g</code> y <code>o</code></li>
+<li>Para los tipos de permisos: <code>r</code>, <code>w</code> y <code>x</code></li>
 </ul>
+</p>
 </div>
-<p>Para finalizar, tendremos que <a href="../configuracion/#verificando-la-configuracion-y-reiniciando-nagios">verificar la configuración y reiniciar el servidor Nagios</a> para guardar los cambios que hayamos introducido.</p>
-<h2 id="monitoreando-servicios-en-windows">Monitoreando servicios en Windows<a class="headerlink" href="#monitoreando-servicios-en-windows" title="Permanent link">&para;</a></h2>
-<p>Si ahora, por ejemplo, queremos monitorear un equipo con el <strong>sistema Microsoft Windows</strong>, debermos previamente <a href="../nsclient/#instalacion-de-nsclient">instalar y configurar el agente NSClient++</a> en la máquina Windows que deseamos monitorear:</p>
-<div class="codehilite"><pre><span></span><span class="c">####################################</span>
-<span class="c"># Servicios en equipos con Windows #</span>
-<span class="c">####################################</span>
-
-<span class="c">### Verificando funcionamiento del agente ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Estado del agente NSClient++
-<span class="nb">check_command</span>           check_nt!CLIENTVERSION
-<span class="err">}</span> 
-
-<span class="c">### Uptime del sistema ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Uptime
-<span class="nb">check_command</span>           check_nt!UPTIME
-<span class="err">}</span> 
-
-<span class="c">### Uso del CPU ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Carga del CPU
-<span class="nb">check_command</span>           check_nt!CPULOAD!-l <span class="m">5</span>,80,90
-<span class="err">}</span> 
-
-<span class="c">### Uso de la memoria RAM ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Uso de memoria RAM
-<span class="nb">check_command</span>           check_nt!MEMUSE!-w <span class="m">80</span> -c <span class="m">90</span>
-<span class="err">}</span> 
-
-<span class="c">### Espacio disponible en disco C: ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Espacio en disco C:/
-<span class="nb">check_command</span>           check_nt!USEDDISKSPACE!-l C -w <span class="m">80</span> -c <span class="m">90</span>
-<span class="err">}</span> 
-
-<span class="c">### Espacio disponible en disco F: ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Espacio en disco F:/
-<span class="nb">check_command</span>           check_nt!USEDDISKSPACE!-l F -w <span class="m">90</span> -c <span class="m">95</span>
-<span class="err">}</span> 
-
-<span class="c">### Estado del Explorador de Windows ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Proceso: Explorador de Windows
-<span class="nb">check_command</span>           check_nt!PROCSTATE!-d SHOWALL -l explorer.exe
-<span class="err">}</span> 
-
-<span class="c">### Estado del antivirus AVG ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Proceso: Antivirus AVG
-<span class="nb">check_command</span>           check_nt!PROCSTATE!-d SHOWALL -l avgrsa.exe
-<span class="err">}</span> 
-
-<span class="c">### Estado del protocolo SNMP ###</span>
-<span class="nb">define</span> service {
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Servicio: SNMP
-<span class="nb">check_command</span>           check_nt!SERVICESTATE!-d SHOWALL -l SNMP
-<span class="err">}</span> 
-
-<span class="c">### Estado del servicio de Windows Update ###</span>
-<span class="nb">define</span> service{
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Servicio: Windows Update
-<span class="nb">check_command</span>           check_nt!SERVICESTATE!-d SHOWALL -l wuauserv
-<span class="err">}</span> 
-
-<span class="c">### Estado del servicio de activación de Windows ###</span>
-<span class="nb">define</span> service{
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Servicio: Activacion de Windows
-<span class="nb">check_command</span>           check_nt!SERVICESTATE!-d SHOWALL -l WatAdminSvc
-<span class="err">}</span> 
-
-<span class="c">### Estado del Firewall de Windows ###</span>
-<span class="nb">define</span> service{
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Servicio: Firewall de Windows
-<span class="nb">check_command</span>           check_nt!SERVICESTATE!-d SHOWALL -l MpsSvc
-<span class="err">}</span> 
-</pre></div>
-
-<p>Por último, tendremos que <a href="../configuracion/#verificando-la-configuracion-y-reiniciando-nagios">verificar la configuración y reiniciar el servidor Nagios</a> para guardar los cambios que hayamos introducido.</p>
-<h3 id="agregando-monitoreo-de-estado-de-servicios">Agregando monitoreo de estado de servicios<a class="headerlink" href="#agregando-monitoreo-de-estado-de-servicios" title="Permanent link">&para;</a></h3>
-<p>Si quisiésemos agregar el monitoreo del estado de algún servicio en Windows (es decir, saber si se está ejecutando o no) abrimos el diálogo <em>Ejecutar</em> pulsando las teclas <code>Windows</code> + <code>r</code> y ejecutamos <code>services.msc</code></p>
-<p><img alt="Servicios Windows" src="../imgNagios/services_01.png" /></p>
-<p>Luego, seleccionamos el servicio a monitorear. Por ejemplo, el <strong>Cliente DHCP</strong>. Hacemos clic derecho sobre el mismo y seleccionamos <em>Propiedades</em> del menú contextual</p>
-<p><img alt="Servicios Windows" src="../imgNagios/services_05.png" /></p>
-<p>Tendremos que copiar el nombre del servicio <strong>tal cual</strong>, es decir, respetando las mayúsculas y minúsculas. En este caso, <code>Dhcp</code></p>
-<p><img alt="Servicios Windows" src="../imgNagios/services_06.png" /></p>
-<p>Por último, tendremos que definir el monitoreo del mismo en el archivo <code>servicios.cfg</code>, donde sólo tendremos que cambiar la última palabra de la última línea: </p>
-<div class="codehilite"><pre><span></span><span class="c">####################################</span>
-<span class="c"># Servicios en equipos con Windows #</span>
-<span class="c">####################################</span>
-
-<span class="c">### Verificando funcionamiento del Cliente DHCP ###</span>
-<span class="nb">define</span> service{
-<span class="nb">use</span>                     generic-service
-<span class="nb">hostgroup_name</span>          sala1
-<span class="nb">service_description</span>     Servicio: Cliente DHCP
-<span class="nb">check_command</span>           check_nt!SERVICESTATE!-d SHOWALL -l Dhcp
-<span class="err">}</span> 
+<h4 id="intererpretando-los-permisos">Intererpretando los permisos<a class="headerlink" href="#intererpretando-los-permisos" title="Permanent link">&para;</a></h4>
+<p>No hay mejor manera de comprender el modo en que se expresan los permisos que practicando. Determiná el valor de los siguientes permisos, expresando tu respuestas en formato simbólico u octal, según corresponda:  </p>
+<ol>
+<li><code>rwxr-xr-x</code></li>
+<li><code>r--r--r--</code></li>
+<li><code>rw-rw-r-x</code></li>
+<li><code>644</code></li>
+<li><code>700</code></li>
+<li><code>442</code></li>
+</ol>
+<details class="done"><summary>Respuestas</summary><ol><li><code>755</code></li><li><code>444</code></li><li><code>665</code></li><li><code>rw-r--r--</code></li><li><code>rwx------</code></li><li><code>r--r---w-</code></li></ol></details><h4 id="averiguando-permisos">Averiguando permisos<a class="headerlink" href="#averiguando-permisos" title="Permanent link">&para;</a></h4>
+<p>Para poder determinar cuáles son los permisos de un determinado recursos, ejecutá el siguiente comando: </p>
+<div class="codehilite"><pre><span></span>ls -lh
 </pre></div>
                 
                   
@@ -2105,9 +2056,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "http://www.rauljesus.xyz/redes/nagios/servicios/";
+      this.page.url = "http://www.rauljesus.xyz/redes/gnuLinux/userPermissions/";
       this.page.identifier =
-        "/nagios/servicios/";
+        "/gnuLinux/userPermissions/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -2129,7 +2080,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../grupos/" title="Definiendo grupos" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../userUserGroups/" title="Usuarios y Grupos" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -2138,19 +2089,19 @@
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Definiendo grupos
+                Usuarios y Grupos
               </span>
             </div>
           </a>
         
         
-          <a href="../nsclient/" title="Agente Windows" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../repositorios/" title="Repositorios" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                Agente Windows
+                Repositorios
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
