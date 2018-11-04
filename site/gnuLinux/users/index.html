@@ -13,7 +13,7 @@
         <meta name="description" content="Instalación, mantenimiento y reparación de redes informáticas">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/gnuLinux/userUserGroups/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/gnuLinux/users/">
       
       
         <meta name="author" content="Raul Jesus Lopez">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Usuarios y Grupos - Redes</title>
+        <title>Usuarios - Redes</title>
       
     
     
@@ -127,7 +127,7 @@
                 Redes
               </span>
               <span class="md-header-nav__topic">
-                Usuarios y Grupos
+                Usuarios
               </span>
             
           
@@ -427,11 +427,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
     
     <label class="md-nav__link" for="nav-2-3">
-      Usuarios y permisos
+      Usuarios, grupos y permisos
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-2-3">
-        Usuarios y permisos
+        Usuarios, grupos y permisos
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -447,54 +447,80 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Usuarios y Grupos
+        Usuarios
       </label>
     
-    <a href="./" title="Usuarios y Grupos" class="md-nav__link md-nav__link--active">
-      Usuarios y Grupos
+    <a href="./" title="Usuarios" class="md-nav__link md-nav__link--active">
+      Usuarios
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Tabla de contenidos</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#usuarios-en-gnulinux" title="Usuarios en GNU/Linux" class="md-nav__link">
-    Usuarios en GNU/Linux
+  <a href="#archivos-de-sistema-que-almacenan-informacion-sobre-los-usuarios" title="Archivos de sistema que almacenan información sobre los usuarios" class="md-nav__link">
+    Archivos de sistema que almacenan información sobre los usuarios
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#etcpasswd" title="/etc/passwd" class="md-nav__link">
+    /etc/passwd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etcshadow" title="/etc/shadow" class="md-nav__link">
+    /etc/shadow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gestion-de-usuarios" title="Gestión de usuarios" class="md-nav__link">
     Gestión de usuarios
   </a>
   
-</li>
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#grupos-en-gnulinux" title="Grupos en GNU/Linux" class="md-nav__link">
-    Grupos en GNU/Linux
+          <li class="md-nav__item">
+  <a href="#adduser" title="adduser" class="md-nav__link">
+    adduser
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gestion-de-grupos" title="Gestión de grupos" class="md-nav__link">
-    Gestión de grupos
+  <a href="#sintaxis" title="Sintaxis" class="md-nav__link">
+    Sintaxis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-uso" title="Ejemplo de uso" class="md-nav__link">
+    Ejemplo de uso
   </a>
   
 </li>
@@ -503,11 +529,104 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#permisos" title="Permisos" class="md-nav__link">
-    Permisos
+        
+          <li class="md-nav__item">
+  <a href="#usermod-user-modification" title="usermod (user modification)" class="md-nav__link">
+    usermod (user modification)
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis_1" title="Sintaxis" class="md-nav__link">
+    Sintaxis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-de-uso-frecuente" title="Opciones de uso frecuente" class="md-nav__link">
+    Opciones de uso frecuente
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-uso" title="Ejemplos de uso" class="md-nav__link">
+    Ejemplos de uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userdel-user-delete" title="userdel (user delete)" class="md-nav__link">
+    userdel (user delete)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis_2" title="Sintaxis" class="md-nav__link">
+    Sintaxis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-de-uso-frecuente_1" title="Opciones de uso frecuente" class="md-nav__link">
+    Opciones de uso frecuente
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-uso_1" title="Ejemplo de uso" class="md-nav__link">
+    Ejemplo de uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passwd-password" title="passwd (password)" class="md-nav__link">
+    passwd (password)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis_3" title="Sintaxis" class="md-nav__link">
+    Sintaxis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-uso_2" title="Ejemplo de uso" class="md-nav__link">
+    Ejemplo de uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -534,7 +653,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../userPermissions/" title="Permisos" class="md-nav__link">
+    <a href="../groups/" title="Grupos" class="md-nav__link">
+      Grupos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../permissions/" title="Permisos" class="md-nav__link">
       Permisos
     </a>
   </li>
@@ -1872,41 +2003,65 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="toc">Tabla de contenidos</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#usuarios-en-gnulinux" title="Usuarios en GNU/Linux" class="md-nav__link">
-    Usuarios en GNU/Linux
+  <a href="#archivos-de-sistema-que-almacenan-informacion-sobre-los-usuarios" title="Archivos de sistema que almacenan información sobre los usuarios" class="md-nav__link">
+    Archivos de sistema que almacenan información sobre los usuarios
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#etcpasswd" title="/etc/passwd" class="md-nav__link">
+    /etc/passwd
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etcshadow" title="/etc/shadow" class="md-nav__link">
+    /etc/shadow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gestion-de-usuarios" title="Gestión de usuarios" class="md-nav__link">
     Gestión de usuarios
   </a>
   
-</li>
+    <nav class="md-nav">
+      <ul class="md-nav__list">
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#grupos-en-gnulinux" title="Grupos en GNU/Linux" class="md-nav__link">
-    Grupos en GNU/Linux
+          <li class="md-nav__item">
+  <a href="#adduser" title="adduser" class="md-nav__link">
+    adduser
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gestion-de-grupos" title="Gestión de grupos" class="md-nav__link">
-    Gestión de grupos
+  <a href="#sintaxis" title="Sintaxis" class="md-nav__link">
+    Sintaxis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-uso" title="Ejemplo de uso" class="md-nav__link">
+    Ejemplo de uso
   </a>
   
 </li>
@@ -1915,11 +2070,104 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#permisos" title="Permisos" class="md-nav__link">
-    Permisos
+        
+          <li class="md-nav__item">
+  <a href="#usermod-user-modification" title="usermod (user modification)" class="md-nav__link">
+    usermod (user modification)
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis_1" title="Sintaxis" class="md-nav__link">
+    Sintaxis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-de-uso-frecuente" title="Opciones de uso frecuente" class="md-nav__link">
+    Opciones de uso frecuente
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplos-de-uso" title="Ejemplos de uso" class="md-nav__link">
+    Ejemplos de uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#userdel-user-delete" title="userdel (user delete)" class="md-nav__link">
+    userdel (user delete)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis_2" title="Sintaxis" class="md-nav__link">
+    Sintaxis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opciones-de-uso-frecuente_1" title="Opciones de uso frecuente" class="md-nav__link">
+    Opciones de uso frecuente
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-uso_1" title="Ejemplo de uso" class="md-nav__link">
+    Ejemplo de uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#passwd-password" title="passwd (password)" class="md-nav__link">
+    passwd (password)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sintaxis_3" title="Sintaxis" class="md-nav__link">
+    Sintaxis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-uso_2" title="Ejemplo de uso" class="md-nav__link">
+    Ejemplo de uso
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1945,179 +2193,222 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/gnuLinux/userUserGroups.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/la9una/redes/edit/master/docs/gnuLinux/users.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Usuarios y Grupos</h1>
-                
-                <h2 id="usuarios-en-gnulinux">Usuarios en GNU/Linux<a class="headerlink" href="#usuarios-en-gnulinux" title="Permanent link">&para;</a></h2>
+                <h1 id="usuarios-en-gnulinux">Usuarios en GNU/Linux<a class="headerlink" href="#usuarios-en-gnulinux" title="Permanent link">&para;</a></h1>
 <p>Linux es un sistema multiusuario, por lo tanto, la tarea de añadir, modificar, eliminar y en general administrar usuarios se convierte en algo no solo rutinario, sino importante, además de ser un elemento de seguridad.</p>
 <p>Podemos identificar al menos, tres tipos de usuarios:</p>
-<p><strong>Usuario root</strong>
-<em>   También llamado superusuario o administrador.
-</em>   Su UID (User ID) es 0 (cero).
-<em> Es la única cuenta de usuario con privilegios sobre todo el sistema.
-</em> Acceso total a todos los archivos y directorios con independencia de propietarios y permisos.
-<em> Controla la administración de cuentas de usuarios.
-</em> Ejecuta tareas de mantenimiento del sistema.
-<em> Puede detener el sistema.
-</em> Instala software en el sistema.
-* Puede modificar o reconfigurar el kernel, controladores, etc.</p>
-<p><strong>Usuarios especiales</strong>
-<em> También llamados usuarios de sistema.
-</em> Su UID (User ID) está entre 1 y 999.
-<em> Ejemplos: bin, daemon, adm, lp, sync, shutdown, mail, operator, squid, apache, etc.
-</em> Se les llama también cuentas del sistema.
-<em> No tiene todos los privilegios del usuario root, pero dependiendo de la cuenta asumen distintos privilegios de root.
-</em> No tienen contraseñas pues son cuentas que no están diseñadas para iniciar sesiones con ellas  (también llamadas cuentas de "no inicio de sesión" o <em>nologin</em>).
-* Se crean (generalmente) automáticamente al momento de la instalación de Linux o de una aplicación.</p>
-<p><strong>Usuarios normales</strong>
-<em> Son las personas o usuarios finales que utilizarán el sistema operativo. 
-</em> Su UID (User ID) a partir de 1000. 
-<em> Cada usuario dispone de un directorio de trabajo ubicado en <code>/home/&lt;usuario&gt;</code>.
-</em> Poseen privilegios totales únicamente sobre los recursos alojados en su directorio de trabajo.
-* El inicio de sesión generalmente está protegido por contraseña o clave de cifrado.</p>
-<h3 id="gestion-de-usuarios">Gestión de usuarios<a class="headerlink" href="#gestion-de-usuarios" title="Permanent link">&para;</a></h3>
-<p>adduser
-usermod
-userdel
-passwd</p>
-<h2 id="grupos-en-gnulinux">Grupos en GNU/Linux<a class="headerlink" href="#grupos-en-gnulinux" title="Permanent link">&para;</a></h2>
-<p>Cuando en GNU/Linux creamos un <strong>usuario</strong> (User), automáticamente se crea un <strong>grupo</strong> (Group) que lleva el mismo nombre del ususario creado. Por defecto, el usuario creado pertenece a su grupo homónimo. Por otro lado, es posible crear grupos y agrupar usuarios a ellos. </p>
-<h3 id="gestion-de-grupos">Gestión de grupos<a class="headerlink" href="#gestion-de-grupos" title="Permanent link">&para;</a></h3>
-<p>addgroup
-groupmod
-groupdel</p>
-<div class="admonition done">
-<p class="admonition-title">Información sobre usuarios y grupos<p>id 
-finger</p>
-</p>
-</div>
-<h2 id="permisos">Permisos<a class="headerlink" href="#permisos" title="Permanent link">&para;</a></h2>
-<p>Existen 3 categorías (o niveles) de permisos sobre los distintos recursos (archivos, carpetas, impresoras, etc.), a saber:</p>
+<p><strong>Usuario root</strong></p>
+<ul>
+<li>También llamado superusuario o administrador.</li>
+<li>Su UID (User ID) es 0 (cero).</li>
+<li>Es la única cuenta de usuario con privilegios sobre todo el sistema.</li>
+<li>Acceso total a todos los archivos y directorios con independencia de propietarios y permisos.</li>
+<li>Controla la administración de cuentas de usuarios.</li>
+<li>Ejecuta tareas de mantenimiento del sistema.</li>
+<li>Puede detener el sistema.</li>
+<li>Instala software en el sistema.</li>
+<li>Puede modificar o reconfigurar el kernel, controladores, etc.</li>
+</ul>
+<p><strong>Usuarios especiales</strong></p>
+<ul>
+<li>También llamados usuarios de sistema.</li>
+<li>Su UID (User ID) está entre 1 y 999.</li>
+<li>Ejemplos: bin, daemon, adm, lp, sync, shutdown, mail, operator, squid, apache, etc.</li>
+<li>Se les llama también cuentas del sistema.</li>
+<li>No tiene todos los privilegios del usuario root, pero dependiendo de la cuenta asumen distintos privilegios de root.</li>
+<li>No tienen contraseñas pues son cuentas que no están diseñadas para iniciar sesiones con ellas  (también llamadas cuentas de "no inicio de sesión" o <em>nologin</em>).</li>
+<li>Se crean (generalmente) automáticamente al momento de la instalación de Linux o de una aplicación.</li>
+</ul>
+<p><strong>Usuarios normales</strong></p>
+<ul>
+<li>Son las personas o usuarios finales que utilizarán el sistema operativo. </li>
+<li>Su UID (User ID) a partir de 1000. </li>
+<li>Cada usuario dispone de un directorio de trabajo ubicado en <code>/home/&lt;usuario&gt;</code>.</li>
+<li>Poseen privilegios totales únicamente sobre los recursos alojados en su directorio de trabajo.</li>
+<li>El inicio de sesión generalmente está protegido por contraseña o clave de cifrado.</li>
+</ul>
+<h2 id="archivos-de-sistema-que-almacenan-informacion-sobre-los-usuarios">Archivos de sistema que almacenan información sobre los usuarios<a class="headerlink" href="#archivos-de-sistema-que-almacenan-informacion-sobre-los-usuarios" title="Permanent link">&para;</a></h2>
+<p>Como sabemos, los sistemas basados en UNIX alamacenan la mayor parte de la información en archivos de texto plano. Veamos a continuación algunos de ellos. </p>
+<h3 id="etcpasswd">/etc/passwd<a class="headerlink" href="#etcpasswd" title="Permanent link">&para;</a></h3>
+<p>Cualquiera que sea la cuenta de usuario, todas ellas se encuentran definidas en el archivo de configuración <code>/etc/passwd</code>. Este archivo es de texto tipo ASCII, se crea al momento de la instalación con el usuario <code>root</code> y las cuentas especiales, más las cuentas de usuarios normales que se hayan indicado al momento de la instalación.</p>
+<p>Podemos consultarlo ejecutando el siguiente comando: </p>
+<div class="codehilite"><pre><span></span>sudo less /etc/passwd
+</pre></div>
+
+<p>El archivo /etc/passwd contiene una línea para cada usuario, similar at las siguientes</p>
+<div class="codehilite"><pre><span></span>root:x:0:0:root:/root:/bin/bash
+sergio:x:501:500:Sergio González:/home/sergio:/bin/bash
+</pre></div>
+
+<p>Como podemos observar, existen "campos" delimitados por dos puntos <code>:</code>. De izquierda a derecha son 7 (siete): </p>
 <table>
 <thead>
 <tr>
-<th>Símbolo</th>
-<th>Tipo</th>
+<th>Campo</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>u</code></td>
-<td>User</td>
-<td>Usuario propietario</td>
-</tr>
-<tr>
-<td><code>g</code></td>
-<td>Group</td>
-<td>Grupo propietario</td>
-</tr>
-<tr>
-<td><code>o</code></td>
-<td>Others</td>
-<td>Otros usuarios</td>
-</tr>
-</tbody>
-</table>
-<p>Para cada uno de los <strong>3 niveles de permisos</strong> tenemos <strong>3 tipos de permisos</strong>. Cada uno de ellos posee, además, un valor numérico: </p>
-<table>
-<thead>
-<tr>
-<th>Atributo</th>
-<th>Valor simbólico</th>
-<th>Valor octal</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Lectura</td>
-<td><code>r</code></td>
-<td>4</td>
-</tr>
-<tr>
-<td>Escritura</td>
-<td><code>w</code></td>
-<td>2</td>
-</tr>
-<tr>
-<td>Ejecucción</td>
-<td><code>x</code></td>
 <td>1</td>
-</tr>
-</tbody>
-</table>
-<p>Entonces, un recurso que posee permisos totales,será: 
-    | Atributo  | Valor simbólico | Valor octal |
-| -------   | ------ | ------------------- |
-| Lectura   | r   | 4           |
-| Escritura | w | 2           |
-| Ejecucción | x | 1      |
-        U   G   O
-Simbólico   rwx rwx rwx
-Octal       7   7   7</p>
-<p>¿Qué permisos tiene?
-        U   G   O
-Simbólico   rwx r-x r--
-Octal       7   5   4</p>
-<p>Simbólico   rw- r-- r--
-Octal       6   4   4</p>
-<p>Finalmente, existen <strong>otros</strong> (Others) usuarios en el sistema. </p>
-<p>Esto se representa simbólicamente: </p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Usuario (User)</th>
-<th>Grupo (Group)</th>
-<th>Otros (Others)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Símbolo</td>
-<td>u</td>
-<td>g</td>
-<td>o</td>
-</tr>
-</tbody>
-</table>
-<p>Donde, en relación a la propiedad de un recurso determinado:
-<em> <strong>u</strong> (User), simboliza el usuario propietario de un recurso, 
-</em> <strong>g</strong> (Group), representa el grupo propietario de un recurso,
-* <strong>o</strong> (Others), refieren al resto de los usuarios del sistema. </p>
-<p>Los permisos indican a cuáles recursos pueden acceder los usuarios y con que nivel de acceso pueden hacerlo. Cada tipo de permiso se puede representar con una letra y poseen un valor numérico fijo asignado:  </p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Lectura (Read)</th>
-<th>Escritura (Write)</th>
-<th>Ejecucción (Execute)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Símbolo</td>
-<td>r</td>
-<td>w</td>
-<td>x</td>
+<td>Es el nombre del usuario y debe ser único.</td>
 </tr>
 <tr>
-<td>Valor</td>
-<td>4</td>
 <td>2</td>
-<td>1</td>
+<td>La 'x' indica la presencia de contraseña (encriptada) del usuario.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Número de identificación del usuario (UID). Debe ser único.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Numeración de identificación del grupo (GID). El que aparece es el número de grupo principal del usuario, y grupos secundarios, en caso de existir.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Comentarios o el nombre completo del usuario.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Directorio de trabajo donde se sitúa al usuario después del inicio de sesión (generalmente es <code>/home/usuario</code>).</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Shell que va a utilizar el usuario de forma predeterminada.</td>
 </tr>
 </tbody>
 </table>
-<p>Cada usuario o grupo puede poseer distintos niveles de acceso a los recursos. Estos niveles de acceso están dados por la capacidad de leer, escribir o ejecutar uno o varios recursos determinados.  </p>
+<h3 id="etcshadow">/etc/shadow<a class="headerlink" href="#etcshadow" title="Permanent link">&para;</a></h3>
+<p>El archivo <code>/etc/shadow</code> contiene las contraseñas cifradas de los usuarios. Contiene una línea para cada usuario, almacenando información adicional de los mismos. Un ejemplo de contenido de este archivo: </p>
+<div class="codehilite"><pre><span></span>root:ghy675gjuXCc12r5gt78uuu6R:10568:0:99999:7:7:-1::
+sergio:rfgf886DG778sDFFDRRu78asd:10568:0:-1:9:-1:-1::
+</pre></div>
+
+<p>La información de cada usuario está dividida en 9 campos delimitados cada uno por <code>:</code> dos puntos:</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Es el nombre del usuario y debe ser único.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Contraseña cifrada o encriptada. Un <code>*</code> indica cuenta de <em>nologin</em>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Días transcurridos desde el 01/01/1970 hasta la fecha en que la contraseña fue cambiada por última vez.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Número de días que deben transcurrir hasta que la contraseña se pueda volver a cambiar.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Número de días tras los cuales hay que cambiar la contraseña. (-1 significa nunca). A partir de este dato se obtiene la fecha de expiración de la contraseña.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Número de días antes de la expiración de la contraseña en que se le avisará al usuario al inicio de la sesión.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Días después de la expiración en que la contraseña se inhabilitara, si es que no se cambio.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Fecha de caducidad de la cuenta. Se expresa en días transcurridos desde el 01/01/1970.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Reservado.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gestion-de-usuarios">Gestión de usuarios<a class="headerlink" href="#gestion-de-usuarios" title="Permanent link">&para;</a></h2>
+<p>A continuación se listan los comandos necesarios para agregar, eliminar y modificar los usuarios del sistemas y sus atributos. </p>
+<h3 id="adduser">adduser<a class="headerlink" href="#adduser" title="Permanent link">&para;</a></h3>
+<p>Para agregar usuarios al sistema</p>
+<h5 id="sintaxis">Sintaxis<a class="headerlink" href="#sintaxis" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span>sudo adduser &lt;nombreDelNuevoUsuario&gt;
+</pre></div>
+
+<h5 id="ejemplo-de-uso">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso" title="Permanent link">&para;</a></h5>
+<p>Crear el usuario <code>juan</code>, solicitando el ingreso de su contraseña durante el proceso. </p>
+<div class="codehilite"><pre><span></span>sudo adduser juan
+</pre></div>
+
+<h3 id="usermod-user-modification">usermod (user modification)<a class="headerlink" href="#usermod-user-modification" title="Permanent link">&para;</a></h3>
+<p>Modifica diversos atributos del usuario.</p>
+<h5 id="sintaxis_1">Sintaxis<a class="headerlink" href="#sintaxis_1" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span>sudo usermod &lt;opciones&gt; &lt;nombreDeUsuario&gt;
+</pre></div>
+
+<h5 id="opciones-de-uso-frecuente">Opciones de uso frecuente<a class="headerlink" href="#opciones-de-uso-frecuente" title="Permanent link">&para;</a></h5>
 <ul>
-<li><strong>r</strong> (Read), permiso de lectura</li>
-<li><strong>w</strong> (Write) , permiso de escritura</li>
-<li><strong>x</strong> (Execute), permiso de ejecucción</li>
+<li><code>-c</code> Cambiar el nombre para mostrar del usuario</li>
+<li><code>-d</code> Cambiar el directorio “home” del usuario</li>
+<li><code>-s</code> Cambiar el “shell” del usuario</li>
+<li><code>-g</code> Modifica el grupo primario del usuario</li>
+<li><code>-G</code> Modifica el o los grupo/s secundario/s del usuario</li>
+<li><code>-L</code> Deshabilitar el acceso del usuario</li>
+<li><code>-U</code> Habilitar el acceso del usuario</li>
 </ul>
+<h5 id="ejemplos-de-uso">Ejemplos de uso<a class="headerlink" href="#ejemplos-de-uso" title="Permanent link">&para;</a></h5>
+<p>Modifica la <code>home</code> del usuario <code>pedro</code> por <code>/tmp/directorio</code>:</p>
+<div class="codehilite"><pre><span></span>sudo usermod -d /tmp/directorio pedro
+</pre></div>
+
+<p>Deshabilita el acceso o <em>login</em> del usuario <code>pedro</code>:</p>
+<div class="codehilite"><pre><span></span>sudo usermod -L pedro
+</pre></div>
+
+<p>Deshabilita el uso de la “shell” para el usuario <code>pedro</code>:</p>
+<div class="codehilite"><pre><span></span>sudo usermod -s /dev/null pedro
+</pre></div>
+
+<p>Cambia el grupo principal del usuario <code>pedro</code> a <code>grupete</code>:</p>
+<div class="codehilite"><pre><span></span>sudo usermod -g grupete pedro
+</pre></div>
+
+<p>Agrega el usuario <code>pedro</code> a los grupos secundarios <code>grupo1</code> y <code>grupo2</code>. Si volvemos a ejecutar el comando, omitiendo el nombre de algún grupo, el usuario dejará de pertenecer al grupo omitido:</p>
+<div class="codehilite"><pre><span></span>sudo usermod -G grupo1,grupo2 pedro
+</pre></div>
+
+<h3 id="userdel-user-delete">userdel (user delete)<a class="headerlink" href="#userdel-user-delete" title="Permanent link">&para;</a></h3>
+<p>Elimina una cuenta de usuario existente. </p>
+<h5 id="sintaxis_2">Sintaxis<a class="headerlink" href="#sintaxis_2" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span>sudo userdel &lt;nombreDeUsuario&gt;
+</pre></div>
+
+<h5 id="opciones-de-uso-frecuente_1">Opciones de uso frecuente<a class="headerlink" href="#opciones-de-uso-frecuente_1" title="Permanent link">&para;</a></h5>
+<ul>
+<li><code>-r</code> Elimina el usuario junto a todos sus archivos personales. </li>
+</ul>
+<h5 id="ejemplo-de-uso_1">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso_1" title="Permanent link">&para;</a></h5>
+<p>Elimina el usuario <code>pedro</code> y su directorio <code>home</code> y configuraciones adicionales:</p>
+<div class="codehilite"><pre><span></span>sudo  userdel -r pedro
+</pre></div>
+
+<h3 id="passwd-password">passwd (password)<a class="headerlink" href="#passwd-password" title="Permanent link">&para;</a></h3>
+<p>Modifica la contraseña de un usuario existente. </p>
+<h5 id="sintaxis_3">Sintaxis<a class="headerlink" href="#sintaxis_3" title="Permanent link">&para;</a></h5>
+<div class="codehilite"><pre><span></span>sudo passwd &lt;nombreDeUsuario&gt;
+</pre></div>
+
+<h5 id="ejemplo-de-uso_2">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso_2" title="Permanent link">&para;</a></h5>
+<p>Solicita una nueva contraseña para el usuario llamado <code>juan</code>:</p>
+<div class="codehilite"><pre><span></span>passwd juan
+</pre></div>
                 
                   
                 
@@ -2130,9 +2421,9 @@ Octal       6   4   4</p>
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "http://www.rauljesus.xyz/redes/gnuLinux/userUserGroups/";
+      this.page.url = "http://www.rauljesus.xyz/redes/gnuLinux/users/";
       this.page.identifier =
-        "/gnuLinux/userUserGroups/";
+        "/gnuLinux/users/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -2169,13 +2460,13 @@ Octal       6   4   4</p>
           </a>
         
         
-          <a href="../userPermissions/" title="Permisos" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../groups/" title="Grupos" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                Permisos
+                Grupos
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
