@@ -1,0 +1,17 @@
+####################
+Listar sesiones SSH
+####################
+
+
+
+netstat -tnpa | grep 'ESTABLISHED.*sshd'
+
+ps auxwww | grep sshd:
+
+ps ax | grep sshd
+
+echo $SSH_CONNECTION
+
+cat /var/log/sshd.log | grep hendrenj | grep session
+
+Fuente: https://unix.stackexchange.com/questions/92560/list-all-connected-ssh-sessions
