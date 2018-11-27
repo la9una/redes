@@ -86,7 +86,7 @@ pages:
     - El editor nano: 'gnuLinux/userNano.md'
     - El editor vim: 'gnuLinux/userVim.md'
     - Búsquedas: 'gnuLinux/userSearch.md'
-  - Usuarios, grupos y permisos:
+  - Sistema de permisos:
     - Usuarios: 'gnuLinux/users.md'
     - Grupos: 'gnuLinux/groups.md'
     - Permisos: 'gnuLinux/permissions.md'
