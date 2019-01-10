@@ -2,9 +2,24 @@
 Listar sesiones SSH
 ####################
 
+-> Ultimos accesos
 
 
-netstat -tnpa | grep 'ESTABLISHED.*sshd'
+sudo grep sshd /var/log/auth.log | grep "Nov 23" | grep "192.168.0."
+
+
+sudo grep sshd /var/log/auth.log | grep "Disconnected"
+
+
+sudo cat /var/log/auth.log 
+
+last -20 -w
+
+last -20 -i
+
+-> Conexiones activas
+
+sudo netstat -tnpa | grep 'ESTABLISHED.*sshd'
 
 ps auxwww | grep sshd:
 
