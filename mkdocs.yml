@@ -48,7 +48,8 @@ extra_css:
 markdown_extensions:
   - admonition
 #  - codehilite(guess_lang=false,linenums=true)
-  - codehilite(guess_lang=false)
+#  - codehilite(guess_lang=false)
+  - codehilite
   - toc:
       permalink: true
   - footnotes
@@ -73,6 +74,8 @@ extra_javascript:
 # Páginas
 pages: 
 - Inicio: 'index.md'
+- Redes locales: 
+    - Recursos: 'redeslocales/recursos.md'
 - GNU/Linux:
   - Introducción:
     - ¿Por qué GNU/Linux?: 'gnuLinux/userWhyLinux.md'
