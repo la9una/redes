@@ -82,6 +82,7 @@ pages:
     - Distribuciones: 'gnuLinux/distros.md'
 #    - La terminal de comandos: 'terminal.md'
 #    - Sistema de archivos: 'sistemaArchivos.md'
+    - Distribuciones: 'gnuLinux/tipsShellinabox.md'
   - Sistema de archivos:
     - FHS: 'gnuLinux/fhs.md'    
     - Archivos y carpetas: 'gnuLinux/userFilesystem.md'
@@ -173,6 +174,7 @@ pages:
       - ¿Qué es?: 'ansible/index.md'
       - Instalación: 'ansible/instalacion.md'
       - Introducción a YAML: 'ansible/yaml.md'
+      - Conexión: 'ansible/conexion.md'
 - Monitoreo de redes:
   - Nagios: 
       - ¿Qué es Nagios?: 'nagios/index.md'

@@ -3,7 +3,7 @@ Shellinabox es una aplicación que nos permite ejecutar un emulador de terminal 
 Para instalar esta aplicación ejecutamos: 
 
 ```apache
-sudo apt-get install shellinabox  
+sudo apt-get install shellinabox
 ```
 Luego, tendremos que editar el archivo de configuración de la aplicación: 
 

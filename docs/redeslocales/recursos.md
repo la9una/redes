@@ -1,9 +1,9 @@
 A continuación se listan recursos bibliográficos que se emplearán en el desarrollo de la materia: 
 
+![Books](imgRedesLocales/books.jpg)
 
 
 ## Libros
-
 **Redes locales. Ciclo Formativo de Grado Medio (2da. Edición)**<br />
 _Domingo Abad_<br />
 [<i class="fas fa-cloud-download-alt"></i> Versión imprimible](books/domingoAbadRedesLocales.pdf)<br />
