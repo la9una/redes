@@ -42,7 +42,7 @@
     
     
       
-        <title>Gestionando las conexiones - Redes</title>
+        <title>Conexión - Redes</title>
       
     
     
@@ -127,7 +127,7 @@
                 Redes
               </span>
               <span class="md-header-nav__topic">
-                Gestionando las conexiones
+                Conexión
               </span>
             
           
@@ -343,6 +343,18 @@
 
   <li class="md-nav__item">
     <a href="gnuLinux/distros/" title="Distribuciones" class="md-nav__link">
+      Distribuciones
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="gnuLinux/tipsShellinabox/" title="Distribuciones" class="md-nav__link">
       Distribuciones
     </a>
   </li>
@@ -1550,10 +1562,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
     <label class="md-nav__link" for="nav-11">
       Automatización
@@ -1569,10 +1583,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-1" type="checkbox" id="nav-11-1">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11-1" type="checkbox" id="nav-11-1" checked>
     
     <label class="md-nav__link" for="nav-11-1">
       Ansible
@@ -1617,6 +1633,143 @@
     <a href="ansible/yaml/" title="Introducción a YAML" class="md-nav__link">
       Introducción a YAML
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Conexión
+      </label>
+    
+    <a href="ansible/conexion/" title="Conexión" class="md-nav__link md-nav__link--active">
+      Conexión
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definiendo-nodos" title="Definiendo nodos" class="md-nav__link">
+    Definiendo nodos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-conexiones" title="Tipos de conexiones" class="md-nav__link">
+    Tipos de conexiones
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-conexion-local-localhost" title="1. Conexión local (localhost)" class="md-nav__link">
+    1. Conexión local (localhost)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-conexion-remota" title="2. Conexión remota" class="md-nav__link">
+    2. Conexión remota
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-definiendo-usuarios-de-conexion" title="2.1. Definiendo usuarios de conexión" class="md-nav__link">
+    2.1. Definiendo usuarios de conexión
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-definiendo-claves-ssh" title="2.2. Definiendo claves SSH" class="md-nav__link">
+    2.2. Definiendo claves SSH
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generando-claves-en-el-servidor" title="Generando claves en el servidor" class="md-nav__link">
+    Generando claves en el servidor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurando-los-nodos-con-la-clave-publica-del-servidor" title="Configurando los nodos con la clave pública del servidor" class="md-nav__link">
+    Configurando los nodos con la clave pública del servidor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprobando-conectividad-con-los-nodos" title="Comprobando conectividad con los nodos" class="md-nav__link">
+    Comprobando conectividad con los nodos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecutando-comandos-en-los-nodos" title="Ejecutando comandos en los nodos" class="md-nav__link">
+    Ejecutando comandos en los nodos
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comentarios" class="md-nav__link md-nav__link--active">
+            Comentarios
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2065,6 +2218,41 @@ Donde <code class="codehilite">SERVIDOR</code> corresponde al nombre de dominio 
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="ansible/yaml/" title="Introducción a YAML" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Introducción a YAML
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="nagios/" title="¿Qué es Nagios?" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                ¿Qué es Nagios?
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
