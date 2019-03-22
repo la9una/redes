@@ -17,4 +17,12 @@ _Wireless Networking in the Developing World_<br />
 _Raphaël Hertzog. Roland Mas_<br />
 [<i class="fas fa-cloud-download-alt"></i> Versión imprimible](books/debian-handbook.pdf) &nbsp; [<i class="fas fa-cloud-download-alt"></i> Versión ebook](books/debian-handbook.epub)<br />
 
+## Enlaces
+
+**WikiBooks**<br />
+[Mejores prácticas para redes de datos](https://es.wikibooks.org/wiki/Mejores_pr%C3%A1cticas_para_redes_de_datos)<br />
+
+**Servidor Debian**<br />
+[Cómo instalar un servidor Linux con Debian 9 'Stretch'](https://servidordebian.org/es/start)
+
 

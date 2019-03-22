@@ -15,6 +15,9 @@ copyright: '2018 &nbsp; Raul Jesus Lopez'
 theme:
   name: 'material'
 #  custom_dir: 'material'
+#theme:
+#  name: null
+#  custom_dir: 'mkdocs-material/material'
   language: 'es'
   palette:
     primary: 'green'
@@ -72,7 +75,7 @@ extra_javascript:
 ######################################################################
 
 # Páginas
-pages: 
+nav: 
 - Inicio: 'index.md'
 - Redes locales: 
     - Recursos: 'redeslocales/recursos.md'
@@ -104,6 +107,9 @@ pages:
     - Interfaz de red: 'gnuLinux/netwokinterfaces.md'
 - Servidor SSH: 
     - Autenticación de llave pública: 'ssh/authKey.md'
+- Servidor DHCP: 
+    - Introducción: 'dhcp/index.md'
+    - Instalación: 'dhcp/instalacion.md'
 - Servidor de nombres: 
     - El archivo hosts: 'dns/archivoHosts.md'
     - ¿Qué es el DNS?: 'dns/index.md'

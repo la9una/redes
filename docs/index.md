@@ -2,6 +2,19 @@
 
 El presente espacio recopila teoría y ejercicios prácticos sobre temas relacionados con la implementación de redes y servicios utilizando, siempre que sea posible, software de código abierto. Los contenidos intentan cubrir los objetivos propuestos en el diseño curricular de la materia **Instalación, mantenimiento y reparación de redes informáticas** correspondiente al séptimo año de estudios de la escuela secundaria técnica, con orientación **Técnico en Informática Profesional y Personal**, en Buenos Aires, Argentina. 
 
+**Prof. Raúl Jesús López**<br />
+Datos de contacto: 
+
+**Telegram**<br />
+<i class="fa fa-telegram" aria-hidden="true"></i>&nbsp;&nbsp;[t.me/rauljesus](https://t.me/rauljesus)<br />
+
+_Podés descargar Telegram desde [Play Store](https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=es_419) o [App Store](https://itunes.apple.com/ar/app/telegram-messenger/id686449807?mt=8)_<br />
+
+
+**Correo Electrónico**<br />
+<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;profesor<i class="fa fa-at"></i>rauljesus.xyz<br />
+
+
 ![GNU/Linux Networking](linuxNetworking.jpg)
 _Fuente de la imagen: [lynda.com](https://www.lynda.com)_
 
