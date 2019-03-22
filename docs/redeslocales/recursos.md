@@ -1,9 +1,7 @@
 A continuación se listan recursos bibliográficos que se emplearán en el desarrollo de la materia: 
 
-![Books](imgRedesLocales/books.jpg)
-
-
 ## Libros
+![Books](imgRedesLocales/books.jpg)<br />
 **Redes locales. Ciclo Formativo de Grado Medio (2da. Edición)**<br />
 _Domingo Abad_<br />
 [<i class="fas fa-cloud-download-alt"></i> Versión imprimible](books/domingoAbadRedesLocales.pdf)<br />
@@ -18,11 +16,12 @@ _Raphaël Hertzog. Roland Mas_<br />
 [<i class="fas fa-cloud-download-alt"></i> Versión imprimible](books/debian-handbook.pdf) &nbsp; [<i class="fas fa-cloud-download-alt"></i> Versión ebook](books/debian-handbook.epub)<br />
 
 ## Enlaces
+![Links](imgRedesLocales/links.jpg)<br />
 
 **WikiBooks**<br />
-[Mejores prácticas para redes de datos](https://es.wikibooks.org/wiki/Mejores_pr%C3%A1cticas_para_redes_de_datos)<br />
+[<i class="fas fa-globe"></i>&nbsp;Mejores prácticas para redes de datos](https://es.wikibooks.org/wiki/Mejores_pr%C3%A1cticas_para_redes_de_datos)<br />
 
 **Servidor Debian**<br />
-[Cómo instalar un servidor Linux con Debian 9 'Stretch'](https://servidordebian.org/es/start)
+[<i class="fas fa-globe"></i>&nbsp;Cómo instalar un servidor Linux con Debian 9 'Stretch'](https://servidordebian.org/es/start)
 
 
