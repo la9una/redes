@@ -25,3 +25,13 @@ _Raphaël Hertzog. Roland Mas_<br />
 [<i class="fas fa-globe"></i>&nbsp;Cómo instalar un servidor Linux con Debian 9 'Stretch'](https://servidordebian.org/es/start)
 
 
+**Diseño de Rack**<br />
+
+[<i class="fas fa-globe"></i>&nbsp;draw.io](https://www.draw.io/?lightbox=&p=ex1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Rack%20Diagram.html#Uhttps%3A%2F%2Fdrive.google.com%2Fa%2Fseibert-media.net%2Fuc%3Fid%3D1JjVjc6f3CEIEC5xtMWTHXx5j7W6iE3MI%26export%3Ddownload)<br />
+
+[<i class="fas fa-globe"></i>&nbsp;smartdraw.com](https://www.smartdraw.com/rack-diagram/examples/rack-diagram/)<br />
+
+[<i class="fas fa-globe"></i>Aplicaciones Android para medir WiFi](https://www.netspotapp.com/es/wifi-analyzer-apps-android.html)
+
+
+
