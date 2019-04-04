@@ -1,7 +1,15 @@
 A continuación se listan recursos bibliográficos que se emplearán en el desarrollo de la materia: 
 
+## Cursos
+
+**Técnico en redes de datos**<br />
+_capacitateparaelempleo.org_<br />
+[<i class="fas fa-globe"></i>&nbsp;Versión online](https://capacitateparaelempleo.org/pages.php?r=.tema&tagID=55)&nbsp;&nbsp;[<i class="fas fa-cloud-download-alt"></i>&nbsp;Versión descargable](https://drive.google.com/open?id=1X8pEa24sjHBKzV4UNfu4Q4pb1iepXnyy)<br />
+
+
+
 ## Libros
-![Books](imgRedesLocales/books.jpg)<br />
+
 **Redes locales. Ciclo Formativo de Grado Medio (2da. Edición)**<br />
 _Domingo Abad_<br />
 [<i class="fas fa-cloud-download-alt"></i> Versión imprimible](books/domingoAbadRedesLocales.pdf)<br />
@@ -16,7 +24,7 @@ _Raphaël Hertzog. Roland Mas_<br />
 [<i class="fas fa-cloud-download-alt"></i> Versión imprimible](books/debian-handbook.pdf) &nbsp; [<i class="fas fa-cloud-download-alt"></i> Versión ebook](books/debian-handbook.epub)<br />
 
 ## Enlaces
-![Links](imgRedesLocales/links.jpg)<br />
+
 
 **WikiBooks**<br />
 [<i class="fas fa-globe"></i>&nbsp;Mejores prácticas para redes de datos](https://es.wikibooks.org/wiki/Mejores_pr%C3%A1cticas_para_redes_de_datos)<br />
