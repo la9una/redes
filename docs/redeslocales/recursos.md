@@ -44,4 +44,15 @@ _Raphaël Hertzog. Roland Mas_<br />
 [<i class="fas fa-globe"></i>&nbsp;Aplicaciones Android para medir WiFi](https://www.netspotapp.com/es/wifi-analyzer-apps-android.html)
 
 
+**Subneteo de redes**
+
+[<i class="fas fa-globe"></i>&nbsp;Subnetting: ¿cómo funcionan las subredes?](https://www.ionos.es/digitalguide/servidores/know-how/subnetting-como-funcionan-las-subredes/)<br />
+
+[<i class="fas fa-globe"></i>&nbsp;Tutorial de Subneteo Clase A, B, C -
+Ejercicios de Subnetting CCNA 1](http://www.unico.com.ec/subneteo.pdf)<br />
+
+
+
+
+
 
