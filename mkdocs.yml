@@ -82,10 +82,10 @@ nav:
 - GNU/Linux:
   - Introducción:
     - ¿Por qué GNU/Linux?: 'gnuLinux/userWhyLinux.md'
-    - Distribuciones: 'gnuLinux/distros.md'
+    - La terminal: 'gnuLinux/terminal.md'
 #    - La terminal de comandos: 'terminal.md'
 #    - Sistema de archivos: 'sistemaArchivos.md'
-    - Distribuciones: 'gnuLinux/tipsShellinabox.md'
+#    - Distribuciones: 'gnuLinux/tipsShellinabox.md'
   - Sistema de archivos:
     - FHS: 'gnuLinux/fhs.md'    
     - Archivos y carpetas: 'gnuLinux/userFilesystem.md'
