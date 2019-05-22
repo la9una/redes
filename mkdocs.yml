@@ -79,6 +79,7 @@ nav:
 - Inicio: 'index.md'
 - Redes locales: 
     - Recursos: 'redeslocales/recursos.md'
+    - Sistemas Operativos: 'redeslocales/sistemas.md'
 - GNU/Linux:
   - Introducción:
     - ¿Por qué GNU/Linux?: 'gnuLinux/userWhyLinux.md'
