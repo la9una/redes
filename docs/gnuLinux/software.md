@@ -29,6 +29,7 @@ La instalación de software en distribuciones GNU/Linux se puede llevar adelante
 En este curso, pondremos incapié en el punto 2. 
 
 ### Comando básicos para gestión de software
+A continuación se listan comandos básicos de gestión de software para distribuciones basadas en Debian, mediante el gestor de paquetes **apt**.
 
 **Actualizar la información de los repositorios**
 Esta acción no instalará ningún paquete, solo comparará la base de datos de paquetes remota con la base de datos de paquetes instalados localemnte e informará actualizaciones en caso de existir.  
