@@ -99,7 +99,8 @@ nav:
     - Grupos: 'gnuLinux/groups.md'
     - Permisos: 'gnuLinux/permissions.md'
   - Gestión de software:
-    - Repositorios: 'gnuLinux/repositorios.md'
+    - Introducción: 'gnuLinux/software.md'
+    - Repositorio local: 'gnuLinux/repositoriosITEL.md'
   - Automatización:
     - Scripts: 'gnuLinux/userBashScripting.md'
     - Tareas: 'gnuLinux/tasks.md'

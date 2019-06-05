@@ -1,3 +1,5 @@
+# Repositorio local 
+
 Para usar los respositorios locales (alojados en el servidor del profesor), se deben seguir estos pasos: 
 
 ## 1. Abrir el archivo de repositorio
@@ -13,8 +15,8 @@ Para ello, anteponemos el signo de numeral (`#`) al comienzo de cada línea para
 Para ello, copiar y pegar las siguientes líneas: 
 
 ```bash
-deb http://192.168.0.200/ubuntu xenial main restricted universe multiverse
-deb http://192.168.0.200/ubuntu xenial-updates main restricted universe multiverse
+deb http://192.168.0.200/ubuntu bionic main restricted universe
+deb http://192.168.0.200/ubuntu bionic-updates main restricted universe
 ```
 
 # 4. Actualizar la información
@@ -24,4 +26,4 @@ Debemos indicar al sistema que hemos cambiado los repositorios ejecutando el sig
 sudo apt update
 ```
 
-Listo! A partir de ahora podremos instalar software desde el repositorio local, ubicado en nuestra red LAN. 
+Listo! A partir de ahora podremos instalar paquetes de software desde el repositorio local, ubicado en nuestra red LAN. 
