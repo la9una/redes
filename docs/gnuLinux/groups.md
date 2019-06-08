@@ -83,6 +83,9 @@ sudo groupdel migrupo
 		En caso de modificar opciones relacionadas con nuestro propio usuario, podremos hacerlo sin necesidad de invocar permisos de superusuario. 
 
 ## Consultando información sobre usuarios y grupos
+Existen una serie de comandos para verificar los grupos de un usuario y su configuración, sean éstos primarios o secundarios
+
+### id
 El comando `id` exhibe el UID y el GID de un usuario determinado, así como los grupos a los que éste pertenece. Si ejecutamos el siguiente comando: 
 
 ```bash
@@ -95,5 +98,20 @@ Para mostrar información relativa al usuario llamado `juan`:
 ```bash
 sudo id juan
 ```
+
+### groups
+El comando `groups` exhibe los grupos asociados a un usuario determinado, sin especificar si éstos son primarios o secundarios en relación a éste. 
+
+```bash
+sudo gropups <nombreDeUsuario>
+```
+
+##### Ejemplo de uso
+Para mostrar los grupos a los cuales está asociado el usuario llamado `juan`, ejecutamos:
+
+```bash
+sudo groups juan
+```
+Si ejecutamos el comando `groups` sin ninguna opción, nos mostrará la información de los grupos del usuario actual. 
 
 

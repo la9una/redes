@@ -86,7 +86,7 @@ nav:
     - La terminal: 'gnuLinux/terminal.md'
 #    - La terminal de comandos: 'terminal.md'
 #    - Sistema de archivos: 'sistemaArchivos.md'
-#    - Distribuciones: 'gnuLinux/tipsShellinabox.md'
+    - Tips: 'gnuLinux/tips.md'
   - Sistema de archivos:
     - FHS: 'gnuLinux/fhs.md'    
     - Archivos y carpetas: 'gnuLinux/userFilesystem.md'

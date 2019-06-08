@@ -1,9 +1,11 @@
+## shellinabox 
+
 Shellinabox es una aplicación que nos permite ejecutar un emulador de terminal que funciona en un navegador web. 
 
 Para instalar esta aplicación ejecutamos: 
 
 ```apache
-sudo apt-get install shellinabox
+sudo apt install shellinabox
 ```
 Luego, tendremos que editar el archivo de configuración de la aplicación: 
 
@@ -16,17 +18,18 @@ Una vez abierto el archivo deshabilitaremos el protocolo `https`. Para ello tend
 ```apache
 SHELLINABOX_ARGS="--no-beep"
 ```
+
 Para que quede de la siguiente manera: 
 
 ```apache
 SHELLINABOX_ARGS="--no-beep --disable-ssl" 
+```
 
-Opcionalmente podemos cambiar el puerto de escucha. 
+Reiniciamos el servicio: 
 
 ```apache
-Reiniciamos el servicio: 
-```
 sudo service shellinabox restart
+```
 
 Y acedemos desde un navegador a: 
 
@@ -34,6 +37,24 @@ Y acedemos desde un navegador a:
 http://ip_de_la_maquina:4200
 ```
 
+## tree
+La herramienta `tree` como su nombre lo indica, muestra el sistema de archivos bajo la forma de árbol, ofreciendo una experiencia más usable. 
 
+Es necesario instalarla, ejecutando: 
 
+```apache
+sudo apt install tree
+```
 
+### Opciones de uso frecuente
+
+* `-u` imprime el nombre del usuario dueño de un recurso
+* `-g` imprime el nombre del grupo propietario de un recurso
+* `-p` imprime los permisos de un recurso
+
+### Ejempo de uso
+
+```apache
+tree -pug carpeta
+```
+Muestra el contenido de `carpeta` en forma de árbol, exhibiendo usuarios y grupos así como los permisos. 
