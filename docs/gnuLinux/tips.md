@@ -48,9 +48,16 @@ sudo apt install tree
 
 ### Opciones de uso frecuente
 
-* `-u` imprime el nombre del usuario dueño de un recurso
-* `-g` imprime el nombre del grupo propietario de un recurso
-* `-p` imprime los permisos de un recurso
+* `-u` imprime el nombre del usuario dueño de cada recurso
+* `-g` imprime el nombre del grupo propietario de cada recurso
+* `-p` imprime los permisos de cada recurso
+* `-s` imprime el tamaño de cada recurso
+* `-t` imprime los recursos ordenándolos según fecha de modificación
+* `-D` imprime fecha de la última modificación de cada recurso
+* `–dirsfirst` lista los directorios en primera lugar
+* `-r` muestra la salida en orden alfabético inverso
+
+
 
 ### Ejempo de uso
 
