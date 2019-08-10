@@ -64,8 +64,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.superfences
   - pymdownx.tilde
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+#  - pymdownx.emoji:
+#      emoji_generator: !!python/name:pymdownx.emoji.to_svg
 
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML'
@@ -79,7 +79,7 @@ nav:
 - Inicio: 'index.md'
 - Redes locales: 
     - Recursos: 'redeslocales/recursos.md'
-    - Tareas ITEL: 'redeslocales/TODO.md'
+    - Tareas ITEL: 'redeslocales/todo.md'
 - GNU/Linux:
   - Introducción:
     - ¿Por qué GNU/Linux?: 'gnuLinux/userWhyLinux.md'
