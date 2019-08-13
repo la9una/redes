@@ -3,7 +3,7 @@
 Listado de herramientas de software para desplegar y testear antes de su uso en producción
 
 ## Gestión de equipos de trabajo
-* [Taiga.io](https://taiga.io/)
+* [Taiga](https://taiga.io/)
 * [Kanboard](https://kanboard.org/)
 * [phabricator](https://phacility.com/phabricator/)
 * [Redmine](https://www.redmine.org)
@@ -16,6 +16,12 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 ## Filtrado web
 * [NxFilter](https://nxfilter.org/p3/)
 
-## Monitoreo 
+## Backup
+[Bacula](https://www.bacula.org)
+
+## Soporte
+* [GLPI](https://glpi-project.org/)
+* [Zammad](https://zammad.org/)
+* [Request Tracker](https://bestpractical.com/request-tracker)
 * [Nagios](https://www.nagios.org/)
 
