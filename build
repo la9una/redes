@@ -4,7 +4,7 @@
 echo "*****************************"
 echo "Generando el sitio estático"
 echo "*****************************"
-mkdocs build
+mkdocs build --clean
 sleep 1
 echo "[OK]"
 echo "*************************************"
