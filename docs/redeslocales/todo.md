@@ -22,9 +22,26 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 ## Backup
 [Bacula](https://www.bacula.org)
 
+## Gestión de usuarios y servicios
+* [FreeIPA](https://www.freeipa.org/page/Main_Page)
+
+## Gestión de sistemas operativos
+* [Fog Project](https://fogproject.org/)
+
+## Nube privada
+* [OwnCloud](https://owncloud.org/)
+
 ## Soporte
 * [GLPI](https://glpi-project.org/)
 * [Zammad](https://zammad.org/)
 * [Request Tracker](https://bestpractical.com/request-tracker)
-* [Nagios](https://www.nagios.org/)
 
+## DevOps
+* [Git Lab](https://about.gitlab.com/)
+* [Ansible](https://www.ansible.com/)
+* [OpenShift](https://www.openshift.com/)
+* [WildFly](https://wildfly.org/)
+
+## Monitoreo
+* [Nagios](https://www.nagios.org/)
+* [Zabbix](https://www.zabbix.com/)
