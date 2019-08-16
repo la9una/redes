@@ -2,6 +2,9 @@
 
 Listado de herramientas de software para desplegar y testear antes de su uso en producción
 
+![Red ITEL](imgRedesLocales/ITEL_Network_2019.png)
+
+
 ## Gestión de equipos de trabajo
 * [Taiga](https://taiga.io/)
 * [Kanboard](https://kanboard.org/)
