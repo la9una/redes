@@ -2434,13 +2434,13 @@
 <p>Los modos <strong>normal</strong>, <strong>inserción</strong> y <strong>línea de órdenes</strong> suelen ser los más utilizados y, por lo mismo, serán los que estudiaremos en esta guía. </p>
 <ul>
 <li>
-<p><strong>Normal (o Comando)</strong>: es el modo principal y siempre se puede acceder a él presionando la tecla <code class="codehilite">Esc</code>. Cuando <strong>Vim inicia lo hace en este modo</strong>. En este modo <strong>no podemos editar directamente el texto</strong> sino que lo haremos a través de <strong>comandos</strong> basados en teclas o combinaciones de éstas. </p>
+<p><strong>Normal (o Comando)</strong>: es el modo principal y siempre se puede acceder a él presionando la tecla <code class="codehilite"><span class="n">Esc</span></code>. Cuando <strong>Vim inicia lo hace en este modo</strong>. En este modo <strong>no podemos editar directamente el texto</strong> sino que lo haremos a través de <strong>comandos</strong> basados en teclas o combinaciones de éstas. </p>
 </li>
 <li>
-<p><strong>Modo inserción</strong>: para acceder a este modo debemos presionar la tecla <code class="codehilite">i</code>. En este modo podremos insertar texto, es decir, <strong>escribir dentro de un archivo</strong> como lo solemos hacer normalmente. </p>
+<p><strong>Modo inserción</strong>: para acceder a este modo debemos presionar la tecla <code class="codehilite"><span class="n">i</span></code>. En este modo podremos insertar texto, es decir, <strong>escribir dentro de un archivo</strong> como lo solemos hacer normalmente. </p>
 </li>
 <li>
-<p><strong>CMD (o CMD)</strong>: para acceder a este modo debemos presionar la tecla <code class="codehilite">:</code> y seguidamente, introducir el comando que deseamos ejecutar finalizando con la tecla <code class="codehilite">Enter</code>. Es decir, <code class="codehilite">:comando Enter</code>. Este modo se utiliza generalmente para guardar y salir del documento, así como para realizar búsquedas complejas y otras operaciones relacionadas con la configuración del programa.</p>
+<p><strong>CMD (o CMD)</strong>: para acceder a este modo debemos presionar la tecla <code class="codehilite"><span class="p">:</span></code> y seguidamente, introducir el comando que deseamos ejecutar finalizando con la tecla <code class="codehilite"><span class="n">Enter</span></code>. Es decir, <code class="codehilite"><span class="p">:</span><span class="n">comando</span> <span class="n">Enter</span></code>. Este modo se utiliza generalmente para guardar y salir del documento, así como para realizar búsquedas complejas y otras operaciones relacionadas con la configuración del programa.</p>
 </li>
 </ul>
 <h2 id="abrir-un-archivo">Abrir un archivo<a class="headerlink" href="#abrir-un-archivo" title="Permanent link">&para;</a></h2>
@@ -2474,35 +2474,35 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">:bn</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">bn</span></code></td>
 <td>Abrir el siguiente buffer disponible.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:bp</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">bp</span></code></td>
 <td>Abrir el buffer anterior disponible.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:bf</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">bf</span></code></td>
 <td>Abrir el primer buffer disponible.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:bl</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">bl</span></code></td>
 <td>Abrir el último buffer de la lista.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:bd</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">bd</span></code></td>
 <td>Eliminar buffer  actual de la lista. No elimina el archivo del disco.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:bd buffer</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">bd</span> <span class="n">buffer</span></code></td>
 <td>Eliminar un <em>buffer</em> determinado de la lista. No elimina el archivo del disco.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:ls</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">ls</span></code></td>
 <td>Lista los buffers abiertos.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:args</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">args</span></code></td>
 <td>Lista los buffers abiertos.</td>
 </tr>
 </tbody>
@@ -2539,17 +2539,17 @@
 </tr>
 <tr>
 <td>gg</td>
-<td><code class="codehilite">:0</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="mi">0</span></code></td>
 <td>Ir al comienzo del archivo</td>
 </tr>
 <tr>
 <td>G</td>
-<td><code class="codehilite">:$</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="err">$</span></code></td>
 <td>Ir al final del archivo</td>
 </tr>
 <tr>
 <td><em>n</em> G</td>
-<td><code class="codehilite">:n</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">n</span></code></td>
 <td>Ir a la línea <em>n</em> del archivo</td>
 </tr>
 <tr>
@@ -2586,12 +2586,12 @@
 <tbody>
 <tr>
 <td>-</td>
-<td><code class="codehilite">:split</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">split</span></code></td>
 <td>Dividir la pantalla horizonalmente</td>
 </tr>
 <tr>
 <td>-</td>
-<td><code class="codehilite">:vsplit</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">vsplit</span></code></td>
 <td>Dividir la pantalla verticalemnte</td>
 </tr>
 <tr>
@@ -2613,12 +2613,12 @@
 <tbody>
 <tr>
 <td>-</td>
-<td><code class="codehilite">:tabe</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">tabe</span></code></td>
 <td>Crear una nueva pestaña vacía</td>
 </tr>
 <tr>
 <td>-</td>
-<td><code class="codehilite">:tabs</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">tabs</span></code></td>
 <td>Listar pestañas abiertas</td>
 </tr>
 <tr>
@@ -2633,7 +2633,7 @@
 </tr>
 <tr>
 <td>-</td>
-<td><code class="codehilite">:tabm n</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">tabm</span> <span class="n">n</span></code></td>
 <td>Ubicar la pestaña actual en la posición <em>n</em></td>
 </tr>
 </tbody>
@@ -2753,15 +2753,15 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">:g/algo/t$</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">g</span><span class="o">/</span><span class="n">algo</span><span class="o">/</span><span class="n">t$</span></code></td>
 <td>Copiar todas las líneas que contengan la palabra <em>algo</em> al final del archivo.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:g/algo/m$</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">g</span><span class="o">/</span><span class="n">algo</span><span class="o">/</span><span class="n">m$</span></code></td>
 <td>Mover todas las líneas que contengan la palabra <em>algo</em> al final del archivo.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:m[+/-]n</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">m</span><span class="p">[</span><span class="o">+/-</span><span class="p">]</span><span class="n">n</span></code></td>
 <td>Mover la línea actual <em>n</em> veces hacia abajo (-) o hacia arriba (+)</td>
 </tr>
 </tbody>
@@ -2823,23 +2823,23 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">:g/borrar/d</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">g</span><span class="o">/</span><span class="n">borrar</span><span class="o">/</span><span class="n">d</span></code></td>
 <td>Eliminar todas las líneas que contengan la palabra <em>borrar</em></td>
 </tr>
 <tr>
-<td><code class="codehilite">:g/^\s*$/d</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">g</span><span class="o">/^</span><span class="err">\</span><span class="n">s</span><span class="o">*</span><span class="err">$</span><span class="o">/</span><span class="n">d</span></code></td>
 <td>Eliminar todas las líneas vacías o en blanco.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:g/^#/d</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">g</span><span class="o">/^#/</span><span class="n">d</span></code></td>
 <td>Eliminar todas las líneas que estén comentadas.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:g!/^#/d</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">g</span><span class="o">!/^#/</span><span class="n">d</span></code></td>
 <td>Eliminar todas las líneas que no estén comentadas.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:g/^\(#\|$\)/d</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">g</span><span class="o">/^</span><span class="err">\</span><span class="p">(</span><span class="o">#</span><span class="err">\</span><span class="o">|</span><span class="err">$\</span><span class="p">)</span><span class="o">/</span><span class="n">d</span></code></td>
 <td>Eliminar todas las líneas que estén comentadas y en blanco.</td>
 </tr>
 </tbody>
@@ -2904,15 +2904,15 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">:%s/old/new/g</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="o">%</span><span class="n">s</span><span class="o">/</span><span class="k">old</span><span class="o">/</span><span class="k">new</span><span class="o">/</span><span class="k">g</span></code></td>
 <td>Reemplazar <em>old</em> por <em>new</em> en todo el archivo</td>
 </tr>
 <tr>
-<td><code class="codehilite">:s/old/new/g</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">s</span><span class="o">/</span><span class="k">old</span><span class="o">/</span><span class="k">new</span><span class="o">/</span><span class="k">g</span></code></td>
 <td>Reemplazar <em>old</em> por <em>new</em> en la línea actual.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:n,m s/old/new/g</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">n</span><span class="p">,</span><span class="n">m</span> <span class="n">s</span><span class="o">/</span><span class="k">old</span><span class="o">/</span><span class="k">new</span><span class="o">/</span><span class="k">g</span></code></td>
 <td>Reemplazar <em>old</em> por <em>new</em> entre las líneas <em>n</em> a <em>m</em>.</td>
 </tr>
 </tbody>
@@ -2949,51 +2949,51 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">:w</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">w</span></code></td>
 <td>Guardar los cambios.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:w!</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">w</span><span class="o">!</span></code></td>
 <td>Forzar guardar los cambios.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:w nuevo.txt</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">w</span> <span class="n">nuevo</span><span class="p">.</span><span class="n">txt</span></code></td>
 <td>Guardar el contenido del archivo actual en <em>nuevo.txt</em>.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:w! nuevo.txt</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">w</span><span class="o">!</span> <span class="n">nuevo</span><span class="p">.</span><span class="n">txt</span></code></td>
 <td>Forzar guardar el contenido del archivo actual en <em>nuevo.txt</em> sobrescribiéndolo si existe.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:n,m w nuevo.txt</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">n</span><span class="p">,</span><span class="n">m</span> <span class="n">w</span> <span class="n">nuevo</span><span class="p">.</span><span class="n">txt</span></code></td>
 <td>Guardar el texto comprendido entre las líneas <em>n</em> y <em>m</em> en <em>nuevo.txt</em>.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:q</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">q</span></code></td>
 <td>Salir.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:q!</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">q</span><span class="o">!</span></code></td>
 <td>Forzar salir sin guardar los cambios.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:wq</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">wq</span></code></td>
 <td>Guardar los cambios y salir.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:wq!</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">wq</span><span class="o">!</span></code></td>
 <td>Forzar guardar los cambios y salir.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:e nuevo.txt</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">e</span> <span class="n">nuevo</span><span class="p">.</span><span class="n">txt</span></code></td>
 <td>Abrir <em>nuevo.txt</em> sin guardar los cambios en el archivo actual.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:e! nuevo.txt</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">e</span><span class="o">!</span> <span class="n">nuevo</span><span class="p">.</span><span class="n">txt</span></code></td>
 <td>Forzar abrir <em>nuevo.txt</em> sin guardar los cambios en el archivo actual.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:x</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">x</span></code></td>
 <td>Guardar los cambios y salir.</td>
 </tr>
 </tbody>
@@ -3026,54 +3026,54 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">:set autoindent</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">set</span> <span class="n">autoindent</span></code></td>
 <td>Sangría automática</td>
 </tr>
 <tr>
-<td><code class="codehilite">:set shiftwidth=4</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">set</span> <span class="n">shiftwidth</span><span class="o">=</span><span class="mi">4</span></code></td>
 <td>Definir cuatro espacios para la sangría</td>
 </tr>
 <tr>
-<td><code class="codehilite">:syntax on</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="n">syntax</span> <span class="k">on</span></code></td>
 <td>Habilitar resaltado de sintáxis</td>
 </tr>
 <tr>
-<td><code class="codehilite">set encoding=utf-8</code></td>
+<td><code class="codehilite"><span class="k">set</span> <span class="k">encoding</span><span class="o">=</span><span class="n">utf</span><span class="o">-</span><span class="mi">8</span></code></td>
 <td>Encoding UTF8</td>
 </tr>
 <tr>
-<td><code class="codehilite">:set number</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">set</span> <span class="nb">number</span></code></td>
 <td>Habilitar numeración de líneas</td>
 </tr>
 <tr>
-<td><code class="codehilite">:set number!</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">set</span> <span class="nb">number</span><span class="o">!</span></code></td>
 <td>Deshabilitar numeración de líneas</td>
 </tr>
 <tr>
-<td><code class="codehilite">:set wrap</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">set</span> <span class="n">wrap</span></code></td>
 <td>Habiliar el ajuste de líneas.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:set nowrap</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">set</span> <span class="n">nowrap</span></code></td>
 <td>Deshabilitar el ajuste de líneas.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:set hlsearch</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">set</span> <span class="n">hlsearch</span></code></td>
 <td>Habilitar resaltado de coincidencias de búsqueda.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:set nohlsearch</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="k">set</span> <span class="n">nohlsearch</span></code></td>
 <td>Deshabilitar resaltado de coincidencias de búsqueda.</td>
 </tr>
 <tr>
-<td><code class="codehilite">:! comando</code></td>
+<td><code class="codehilite"><span class="p">:</span><span class="o">!</span> <span class="n">comando</span></code></td>
 <td>Ejecutar un <em>comando</em> de Linux sin salir del editor</td>
 </tr>
 </tbody>
 </table>
 <p>_Estas funcionalidades se aplicarán en tiempo real al archivo que tengamos abierto en ese momento, pero se perderán una vez que cerremos el editor. A continuación se explica como guardar permanente nuestras preferencias _</p>
-<p>Para establecer la configuración que deseemos de manera permanente tendremos que abrir (o crear, en caso de no existir) el archivo <code class="codehilite"><span class="na">.vimrc</span></code> en la carpeta <code class="codehilite">home</code> de nuestro usuario:</p>
-<p><div class="codehilite"><pre><span></span>bash$ cd /home/tuUsuario &amp;&amp; vim .vimrc
+<p>Para establecer la configuración que deseemos de manera permanente tendremos que abrir (o crear, en caso de no existir) el archivo <code class="codehilite"><span class="na">.vimrc</span></code> en la carpeta <code class="codehilite"><span class="n">home</span></code> de nuestro usuario:</p>
+<p><div class="codehilite"><pre><span></span><span class="n">bash$</span> <span class="n">cd</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">tuUsuario</span> <span class="o">&amp;&amp;</span> <span class="n">vim</span> <span class="p">.</span><span class="n">vimrc</span>
 </pre></div>
 Dentro del archivo en cuestión podremos <em>setear</em> la configuración deseada: </p>
 <div class="codehilite"><pre><span></span><span class="c">&quot; Esquema de colores</span>

@@ -2376,7 +2376,7 @@ De izquierda a derecha encontramos 4 campos: </p>
 </tr>
 <tr>
 <td>2</td>
-<td>Contraseña cifrada o encriptada. Un <code class="codehilite">*</code> indica cuenta de <em>nologin</em>.</td>
+<td>Contraseña cifrada o encriptada. Un <code class="codehilite"><span class="o">*</span></code> indica cuenta de <em>nologin</em>.</td>
 </tr>
 <tr>
 <td>3</td>
@@ -2398,7 +2398,7 @@ De izquierda a derecha encontramos 4 campos: </p>
 </pre></div>
 
 <h5 id="ejemplo-de-uso">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso" title="Permanent link">&para;</a></h5>
-<p>Agrega un grupo llamado <code class="codehilite">migrupo</code>:</p>
+<p>Agrega un grupo llamado <code class="codehilite"><span class="n">migrupo</span></code>:</p>
 <div class="codehilite"><pre><span></span>sudo addgroup migrupo
 </pre></div>
 
@@ -2410,10 +2410,10 @@ De izquierda a derecha encontramos 4 campos: </p>
 
 <h5 id="opciones-de-uso-frecuente">Opciones de uso frecuente<a class="headerlink" href="#opciones-de-uso-frecuente" title="Permanent link">&para;</a></h5>
 <ul>
-<li><code class="codehilite">-n</code> Cambia el nombre del grupo. </li>
+<li><code class="codehilite"><span class="o">-</span><span class="n">n</span></code> Cambia el nombre del grupo. </li>
 </ul>
 <h6 id="ejemplo-de-uso_1">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso_1" title="Permanent link">&para;</a></h6>
-<p>Cambia el nombre del grupo <code class="codehilite">NombreViejoDelGrupo</code> por <code class="codehilite">NombreNuevoDelGrupo</code>:</p>
+<p>Cambia el nombre del grupo <code class="codehilite"><span class="n">NombreViejoDelGrupo</span></code> por <code class="codehilite"><span class="n">NombreNuevoDelGrupo</span></code>:</p>
 <div class="codehilite"><pre><span></span>sudo groupmod -n NombreViejoDelGrupo NombreNuevoDelGrupo
 </pre></div>
 
@@ -2424,7 +2424,7 @@ De izquierda a derecha encontramos 4 campos: </p>
 </pre></div>
 
 <h5 id="ejemplo-de-uso_2">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso_2" title="Permanent link">&para;</a></h5>
-<p>Elimina el grupo llamado <code class="codehilite">migrupo</code>:</p>
+<p>Elimina el grupo llamado <code class="codehilite"><span class="n">migrupo</span></code>:</p>
 <div class="codehilite"><pre><span></span>sudo groupdel migrupo
 </pre></div>
 
@@ -2435,25 +2435,25 @@ De izquierda a derecha encontramos 4 campos: </p>
 <h2 id="consultando-informacion-sobre-usuarios-y-grupos">Consultando información sobre usuarios y grupos<a class="headerlink" href="#consultando-informacion-sobre-usuarios-y-grupos" title="Permanent link">&para;</a></h2>
 <p>Existen una serie de comandos para verificar los grupos de un usuario y su configuración, sean éstos primarios o secundarios</p>
 <h3 id="id">id<a class="headerlink" href="#id" title="Permanent link">&para;</a></h3>
-<p>El comando <code class="codehilite">id</code> exhibe el UID y el GID de un usuario determinado, así como los grupos a los que éste pertenece. Si ejecutamos el siguiente comando: </p>
+<p>El comando <code class="codehilite"><span class="n">id</span></code> exhibe el UID y el GID de un usuario determinado, así como los grupos a los que éste pertenece. Si ejecutamos el siguiente comando: </p>
 <div class="codehilite"><pre><span></span>sudo id &lt;nombreDeUsuario&gt;
 </pre></div>
 
 <h5 id="ejemplo-de-uso_3">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso_3" title="Permanent link">&para;</a></h5>
-<p>Para mostrar información relativa al usuario llamado <code class="codehilite">juan</code>:</p>
+<p>Para mostrar información relativa al usuario llamado <code class="codehilite"><span class="n">juan</span></code>:</p>
 <div class="codehilite"><pre><span></span>sudo id juan
 </pre></div>
 
 <h3 id="groups">groups<a class="headerlink" href="#groups" title="Permanent link">&para;</a></h3>
-<p>El comando <code class="codehilite">groups</code> exhibe los grupos asociados a un usuario determinado, sin especificar si éstos son primarios o secundarios en relación a éste. </p>
+<p>El comando <code class="codehilite"><span class="n">groups</span></code> exhibe los grupos asociados a un usuario determinado, sin especificar si éstos son primarios o secundarios en relación a éste. </p>
 <div class="codehilite"><pre><span></span>sudo gropups &lt;nombreDeUsuario&gt;
 </pre></div>
 
 <h5 id="ejemplo-de-uso_4">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso_4" title="Permanent link">&para;</a></h5>
-<p>Para mostrar los grupos a los cuales está asociado el usuario llamado <code class="codehilite">juan</code>, ejecutamos:</p>
+<p>Para mostrar los grupos a los cuales está asociado el usuario llamado <code class="codehilite"><span class="n">juan</span></code>, ejecutamos:</p>
 <p><div class="codehilite"><pre><span></span>sudo groups juan
 </pre></div>
-Si ejecutamos el comando <code class="codehilite">groups</code> sin ninguna opción, nos mostrará la información de los grupos del usuario actual. </p>
+Si ejecutamos el comando <code class="codehilite"><span class="n">groups</span></code> sin ninguna opción, nos mostrará la información de los grupos del usuario actual. </p>
                 
                   
                 

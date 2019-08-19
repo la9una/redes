@@ -2026,9 +2026,9 @@
                 
                   <h1>Configuración general</h1>
                 
-                <p>Icecast2 viene con los archivos de configuración ubicados en <code class="codehilite">/etc/icecast2</code>. Podemos modificar las opciones del servidor editando el archivo <code class="codehilite">/etc/icecast2/icecast.xml</code>. </p>
+                <p>Icecast2 viene con los archivos de configuración ubicados en <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">icecast2</span></code>. Podemos modificar las opciones del servidor editando el archivo <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">icecast2</span><span class="o">/</span><span class="n">icecast</span><span class="p">.</span><span class="n">xml</span></code>. </p>
 <h2 id="usuarios-y-contrasenas">Usuarios y contraseñas<a class="headerlink" href="#usuarios-y-contrasenas" title="Permanent link">&para;</a></h2>
-<p>Buscamos la sección <code class="codehilite">authentication</code>: </p>
+<p>Buscamos la sección <code class="codehilite"><span class="n">authentication</span></code>: </p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;authentication&gt;</span>
 
     <span class="nt">&lt;!--</span> <span class="s">Sources log in with username &#39;source&#39; --</span><span class="nt">&gt;</span>
@@ -2044,7 +2044,7 @@
 <span class="nt">&lt;/authentication&gt;</span>
 </pre></div>
 
-<p>Donde tendremos que modificar como mínimo, los valores <code class="codehilite">hackme</code> por otros que deseemos. </p>
+<p>Donde tendremos que modificar como mínimo, los valores <code class="codehilite"><span class="n">hackme</span></code> por otros que deseemos. </p>
 <table>
 <thead>
 <tr>
@@ -2054,25 +2054,25 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">source-password</code></td>
-<td>Contraseña del usuario <code class="codehilite">source</code>, utilizado por defecto para trasmitir contenido.</td>
+<td><code class="codehilite"><span class="k">source</span><span class="o">-</span><span class="n">password</span></code></td>
+<td>Contraseña del usuario <code class="codehilite"><span class="k">source</span></code>, utilizado por defecto para trasmitir contenido.</td>
 </tr>
 <tr>
-<td><code class="codehilite">relay-password</code></td>
-<td>Contraseña del usuario <code class="codehilite">relay</code>. Útil en caso de habilitar un servidor de streaming secundario.</td>
+<td><code class="codehilite"><span class="n">relay</span><span class="o">-</span><span class="n">password</span></code></td>
+<td>Contraseña del usuario <code class="codehilite"><span class="n">relay</span></code>. Útil en caso de habilitar un servidor de streaming secundario.</td>
 </tr>
 <tr>
-<td><code class="codehilite">admin-user</code></td>
+<td><code class="codehilite"><span class="k">admin</span><span class="o">-</span><span class="k">user</span></code></td>
 <td>Nombre del usuario administrador (panel de administración web).</td>
 </tr>
 <tr>
-<td><code class="codehilite">admin-password</code></td>
+<td><code class="codehilite"><span class="k">admin</span><span class="o">-</span><span class="n">password</span></code></td>
 <td>Contraseña del usuario administrador (panel de administración web).</td>
 </tr>
 </tbody>
 </table>
 <h2 id="direccion-del-servidor">Dirección del servidor<a class="headerlink" href="#direccion-del-servidor" title="Permanent link">&para;</a></h2>
-<p>Buscamos la sección <code class="codehilite">hostname</code> y colocamos la <strong>dirección IP</strong> o <strong>nombre de dominio</strong> de nuestro servidor de streaming. A continuación, dos ejemplos de configuración (ficticios):</p>
+<p>Buscamos la sección <code class="codehilite"><span class="n">hostname</span></code> y colocamos la <strong>dirección IP</strong> o <strong>nombre de dominio</strong> de nuestro servidor de streaming. A continuación, dos ejemplos de configuración (ficticios):</p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;hostname&gt;</span><span class="err">http://www</span>.<span class="err">miservidor</span>.<span class="err">com</span><span class="nt">&lt;/hostname&gt;</span>
 </pre></div>
 
@@ -2080,7 +2080,7 @@
 <div class="codehilite"><pre><span></span><span class="nt">&lt;hostname&gt;</span><span class="err">http://192</span>.<span class="err">168</span>.<span class="err">0</span>.<span class="err">232</span><span class="nt">&lt;/hostname&gt;</span>
 </pre></div>
 
-<p>Por último, nos desplazamos a la sección <code class="codehilite">listen-socket</code> y colocamos el <strong>número de puerto</strong> desde el cual trasmitiremos: </p>
+<p>Por último, nos desplazamos a la sección <code class="codehilite"><span class="k">listen</span><span class="o">-</span><span class="n">socket</span></code> y colocamos el <strong>número de puerto</strong> desde el cual trasmitiremos: </p>
 <div class="codehilite"><pre><span></span><span class="nt">&lt;listen-socket&gt;</span>
  <span class="nt">&lt;port&gt;</span><span class="err">8000</span><span class="nt">&lt;/port&gt;</span>
 <span class="nt">&lt;/listen-socket&gt;</span>
@@ -2100,7 +2100,7 @@
     <span class="nb">change</span> from the default <span class="m">64</span>k. Applies to <span class="k">all</span> mountpoints. --&gt;
     <span class="nt">&lt;burst-size&gt;</span><span class="err">65535</span><span class="nt">&lt;/burst-size&gt;</span>
     <span class="nt">&lt;!--</span>
-    <span class="s">&lt;max-bandwidth</span><span class="nt">&gt;</span><span class="err">100M</span><span class="nt">&lt;/max-bandwidth&gt;</span>
+    <span class="s">&lt;max-bandwidth&gt;100M&lt;/max-bandwidth</span><span class="nt">&gt;</span>
     <span class="err">--&gt;</span>
 <span class="nt">&lt;/limits&gt;</span>
 </pre></div>
@@ -2115,35 +2115,35 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">clients</code></td>
+<td><code class="codehilite"><span class="n">clients</span></code></td>
 <td>Cantidad máxima de clientes conectados para todo el servidor (no por punto de montaje).</td>
 </tr>
 <tr>
-<td><code class="codehilite">sources</code></td>
+<td><code class="codehilite"><span class="n">sources</span></code></td>
 <td>Número máximo de fuentes (puntos de montaje) permitidas en todo el servidor</td>
 </tr>
 <tr>
-<td><code class="codehilite">queue-size</code></td>
+<td><code class="codehilite"><span class="n">queue</span><span class="o">-</span><span class="k">size</span></code></td>
 <td>Tamaño de la cola de espera (en bytes). Generalmente, un cliente con problemas de conexión pasa a la cola.</td>
 </tr>
 <tr>
-<td><code class="codehilite">client-timeout</code></td>
+<td><code class="codehilite"><span class="n">client</span><span class="o">-</span><span class="n">timeout</span></code></td>
 <td>Tiempo de espera máximo (en segundos) para reconexión de un cliente. No se usa.</td>
 </tr>
 <tr>
-<td><code class="codehilite">header-timeout</code></td>
+<td><code class="codehilite"><span class="n">header</span><span class="o">-</span><span class="n">timeout</span></code></td>
 <td>Tiempo de espera máximo (en segundos) para iniciar una conexión. No se usa.</td>
 </tr>
 <tr>
-<td><code class="codehilite">source-timeout</code></td>
+<td><code class="codehilite"><span class="k">source</span><span class="o">-</span><span class="n">timeout</span></code></td>
 <td>Tiempo de espera máximo (en segundos) para recibir contenido desde una fuente. Pasado el tiempo, la fuente se elimina.</td>
 </tr>
 <tr>
-<td><code class="codehilite">burst-size</code></td>
-<td>Tamaño máximo de<code class="codehilite">buffer</code>. Por defecto, su valor es de 64 kbytes y debe ser siempre menor al valor de <code class="codehilite">queue-size</code>.</td>
+<td><code class="codehilite"><span class="n">burst</span><span class="o">-</span><span class="k">size</span></code></td>
+<td>Tamaño máximo de<code class="codehilite"><span class="n">buffer</span></code>. Por defecto, su valor es de 64 kbytes y debe ser siempre menor al valor de <code class="codehilite"><span class="n">queue</span><span class="o">-</span><span class="k">size</span></code>.</td>
 </tr>
 <tr>
-<td><code class="codehilite">max-bandwidth</code></td>
+<td><code class="codehilite"><span class="k">max</span><span class="o">-</span><span class="n">bandwidth</span></code></td>
 <td>Ancho de banda máximo. Por defecto, es de 64 kbytes</td>
 </tr>
 </tbody>

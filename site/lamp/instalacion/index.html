@@ -2084,7 +2084,7 @@
                 
                 <div class="admonition warning">
 <p class="admonition-title">Ingreso de datos</p>
-<p>Durante la instalación se solicitará en varias ocasiones el ingreso de información por parte del usuario. Por ejemplo, la contraseña del usuario root de la base de datos, o el tipo de servicio a instalar si usamos <code class="codehilite">tasksel</code>. Conviene prestar atención en cada paso para evitar errores de configuración. </p>
+<p>Durante la instalación se solicitará en varias ocasiones el ingreso de información por parte del usuario. Por ejemplo, la contraseña del usuario root de la base de datos, o el tipo de servicio a instalar si usamos <code class="codehilite"><span class="n">tasksel</span></code>. Conviene prestar atención en cada paso para evitar errores de configuración. </p>
 </div>
 <p>Para disponer de un servidor web <strong>LAMP</strong> ejecutaremos los comandos que se indican a continuación. </p>
 <h3 id="instalacion-de-lamp">Instalación de LAMP<a class="headerlink" href="#instalacion-de-lamp" title="Permanent link">&para;</a></h3>
@@ -2094,7 +2094,7 @@
 <p>O bien: </p>
 <p><div class="codehilite"><pre><span></span>sudo tasksel
 </pre></div>
-Debiendo seleccionar la opción <strong>LAMP Server</strong> del menú exhibido en pantalla. En caso de no tener instalada la herramienta <code class="codehilite">tasksel</code> la instalamos: </p>
+Debiendo seleccionar la opción <strong>LAMP Server</strong> del menú exhibido en pantalla. En caso de no tener instalada la herramienta <code class="codehilite"><span class="n">tasksel</span></code> la instalamos: </p>
 <div class="codehilite"><pre><span></span>sudo apt install tasksel
 </pre></div>
 
@@ -2106,10 +2106,10 @@ Debiendo seleccionar la opción <strong>LAMP Server</strong> del menú exhibido 
 <h2 id="verificando-la-instalacion">Verificando la instalación<a class="headerlink" href="#verificando-la-instalacion" title="Permanent link">&para;</a></h2>
 <p>Para verificar el correcto funcionamiento del servidor, seguiremos los pasos que se detallan a continuación.</p>
 <h3 id="apache">Apache<a class="headerlink" href="#apache" title="Permanent link">&para;</a></h3>
-<p>Abrimos el navegador web y nos dirigimos a la siguiente dirección: <code class="codehilite">http://nombreDominioServidor</code> o <code class="codehilite">http://direccionIPServidor</code>. En cualquier caso deberíamos visualizar la página de bienvenida del servidor web:</p>
+<p>Abrimos el navegador web y nos dirigimos a la siguiente dirección: <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">nombreDominioServidor</span></code> o <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">direccionIPServidor</span></code>. En cualquier caso deberíamos visualizar la página de bienvenida del servidor web:</p>
 <p><img alt="Apache" src="../imgLamp/lampWorks.png" /></p>
 <h3 id="php">PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h3>
-<p>Dentro de la carpeta raíz por defecto del servidor web <code class="codehilite">/var/www/html</code>, creamos un archivo con el nombre <code class="codehilite">info.php</code> (en realidad, se puede llamar como prefieras):</p>
+<p>Dentro de la carpeta raíz por defecto del servidor web <code class="codehilite"><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">html</span></code>, creamos un archivo con el nombre <code class="codehilite"><span class="n">info</span><span class="p">.</span><span class="n">php</span></code> (en realidad, se puede llamar como prefieras):</p>
 <p><div class="codehilite"><pre><span></span>sudo nano /var/www/html/info.php
 </pre></div>
 Y agregaremos al archivo el contenido:</p>
@@ -2117,10 +2117,10 @@ Y agregaremos al archivo el contenido:</p>
 <span class="nb">phpinfo</span><span class="p">();</span>
 <span class="cp">?&gt;</span><span class="x"></span>
 </pre></div>
-Luego de guardar los cambios al archivo, abrimos un navegador web y visitamos la dirección <code class="codehilite">http://nombreDominioServidor/info.php</code> ó <code class="codehilite">http://direccionIPServidor/ìnfo.php</code> y deberíamos la página de información sobre php:</p>
+Luego de guardar los cambios al archivo, abrimos un navegador web y visitamos la dirección <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">nombreDominioServidor</span><span class="o">/</span><span class="n">info</span><span class="p">.</span><span class="n">php</span></code> ó <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">direccionIPServidor</span><span class="o">/</span><span class="err">ì</span><span class="n">nfo</span><span class="p">.</span><span class="n">php</span></code> y deberíamos la página de información sobre php:</p>
 <p><img alt="PHPInfo" src="../imgLamp/lampPhpInfo.png" /></p>
 <h3 id="phpmyadmin">phpMyAdmin<a class="headerlink" href="#phpmyadmin" title="Permanent link">&para;</a></h3>
-<p>Abrimos nuestro navegador y nos dirigimos a <code class="codehilite">http://nombreDominioServidor/phpmyadmin</code> ó <code class="codehilite">http://direccionIPServidor/phpmyadmin</code>. Veremos una página similar a ésta: </p>
+<p>Abrimos nuestro navegador y nos dirigimos a <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">nombreDominioServidor</span><span class="o">/</span><span class="n">phpmyadmin</span></code> ó <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">direccionIPServidor</span><span class="o">/</span><span class="n">phpmyadmin</span></code>. Veremos una página similar a ésta: </p>
 <p><img alt="phpMyAdmin" src="../imgLamp/lampPhpMyAdmin.png" /></p>
 <p>E iniciamos sesión con las siguientes credenciales: </p>
 <ul>

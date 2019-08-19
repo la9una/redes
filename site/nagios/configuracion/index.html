@@ -2042,13 +2042,13 @@
                 
                   <h1>Configuración inicial</h1>
                 
-                <p>Una vez que hayamos instalado Nagios, disponemos de la carpeta <code class="codehilite">/etc/nagios3</code> que contiene los archivos de configuración del programa.</p>
+                <p>Una vez que hayamos instalado Nagios, disponemos de la carpeta <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">nagios3</span></code> que contiene los archivos de configuración del programa.</p>
 <p>A fin de mantener el orden, <strong>crearemos una carpeta en la que alojaremos nuestros archivos de configuración personalizados</strong>. Tanto el nombre de la carpeta que crearemos, como su ubicaiión son arbitrarios, pudiéndose emplear otros en su lugar: </p>
 <div class="codehilite"><pre><span></span>sudo mkdir /etc/nagios3/objetos
 </pre></div>
 
 <h2 id="creando-nuestros-archivos-de-configuracion">Creando nuestros archivos de configuración<a class="headerlink" href="#creando-nuestros-archivos-de-configuracion" title="Permanent link">&para;</a></h2>
-<p>Dentro de la carpeta que creamos del paso anterior, <strong>colocaremos nuestros archivos de configuración</strong> los cuáles tendremos que crear, asignándoles un nombre arbitrario, pero con la extensión <strong>.cfg</strong>. Los archivos que crearemos serán: <code class="codehilite">equipos.cfg</code>, <code class="codehilite">grupos.cfg</code> y <code class="codehilite">servicios.cfg</code>.</p>
+<p>Dentro de la carpeta que creamos del paso anterior, <strong>colocaremos nuestros archivos de configuración</strong> los cuáles tendremos que crear, asignándoles un nombre arbitrario, pero con la extensión <strong>.cfg</strong>. Los archivos que crearemos serán: <code class="codehilite"><span class="n">equipos</span><span class="p">.</span><span class="n">cfg</span></code>, <code class="codehilite"><span class="n">grupos</span><span class="p">.</span><span class="n">cfg</span></code> y <code class="codehilite"><span class="n">servicios</span><span class="p">.</span><span class="n">cfg</span></code>.</p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> /etc/nagios3/objetos/ <span class="o">&amp;&amp;</span> sudo touch equipos.cfg grupos.cfg servicios.cfg iconos.cfg
 </pre></div>
 

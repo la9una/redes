@@ -6,6 +6,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 
 
 ## Gestión de equipos de trabajo
+* [IceScrum](https://www.icescrum.com/)
 * [Kanboard](https://kanboard.org/)
 * [Phabricator](https://phacility.com/phabricator/)
 * [Redmine](https://www.redmine.org)
@@ -75,20 +76,32 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Wiki.js](https://wiki.js.org/)
 
 ## Red social
+* [Elgg](https://elgg.org/)
 * [HumHub](https://www.humhub.org/en)
 * [Movim](https://movim.eu/)
 * [OSSN](https://www.opensource-socialnetwork.org/)
 
-## Soporte
+## HelpDesk
 * [GLPI](https://glpi-project.org/)
 * [Open Supports](https://www.opensupports.com/)
 * [OTRS](https://community.otrs.com/)
 * [Request Tracker](https://bestpractical.com/request-tracker)
 * [Zammad](https://zammad.org/)
 
+## Mensajería
+* [Keybase](https://keybase.io/)
+* [Mattermost](https://mattermost.com/)
+* [Mibew](https://mibew.org/es/)
+* [Mumble](https://wiki.mumble.info/wiki/Main_Page)
+* [Riot](https://about.riot.im/)
+* [RocketChat](https://rocket.chat/)
+* [Tox](https://tox.chat/)
+* [Zulip](https://zulipchat.com/hello/)
+
 ## DevOps
 * [Ansible](https://www.ansible.com/)
 * [Git Lab](https://about.gitlab.com/)
+* [Gitea](https://gitea.io/en-us/)
 * [Jenkins](https://jenkins.io/)
 * [OpenShift](https://www.openshift.com/)
 * [WildFly](https://wildfly.org/)
@@ -118,10 +131,16 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Zabbix](https://www.zabbix.com/)
 
 ## Plataformas de virtualizacion
+* [Apache Mesos](https://mesos.apache.org/)
 * [Danube Cloud](https://danubecloud.org/)
+* [Docker](https://www.docker.com/)
+* [Kubernetes](https://kubernetes.io/es/)
+* [Nebula](https://nebula-orchestrator.github.io/)
+* [Nomad](https://www.nomadproject.io/)
 * [OpenStack](https://www.openstack.org/) 
-* [Proxmox])(https://www.proxmox.com/en/proxmox-ve)
+* [Proxmox](https://www.proxmox.com/en/proxmox-ve)
 * [UVMM](https://www.univention.com/products/ucs/functions/virtualization-uvmm/)
+* [Vamp](https://nebula-orchestrator.github.io/)
 * [XCP-ng](https://xcp-ng.org/)
 
 

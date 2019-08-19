@@ -2116,7 +2116,7 @@
 <p><img alt="Filezilla" src="../imgNagios/filezilla_05.png" /></p>
 <p>De esta manera, en la ventana izquierda del programa veremos nuestros archivos de Windows y en la ventana derecha, la carpeta <em>home</em> de nuestro usuario en el servidor Nagios:</p>
 <p><img alt="Filezilla" src="../imgNagios/filezilla_06.png" /></p>
-<p>A continuación nos desplazamos hacia la carpeta <code class="codehilite">/usr/share/nagios/htdocs/images/</code> que contiene los íconos preinstalados de Nagios que se mostrarán en la vista de mapa:</p>
+<p>A continuación nos desplazamos hacia la carpeta <code class="codehilite"><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="k">share</span><span class="o">/</span><span class="n">nagios</span><span class="o">/</span><span class="n">htdocs</span><span class="o">/</span><span class="n">images</span><span class="o">/</span></code> que contiene los íconos preinstalados de Nagios que se mostrarán en la vista de mapa:</p>
 <p><img alt="Filezilla" src="../imgNagios/filezilla_07.png" /></p>
 <p>Haciendo clic derecho sobre la carpeta en cuestión podemos descargar los archivos de imagen de ícono para visualizaros con mayor comodidad:</p>
 <p><img alt="Filezilla" src="../imgNagios/filezilla_08.png" /></p>
@@ -2160,7 +2160,7 @@
 <span class="err">}</span>
 </pre></div>
 
-<p>Por ejemplo, tomando un ícono entre los ofrecidos por Nagios para un <em>host</em> llamado <code class="codehilite">windowsServer</code>: </p>
+<p>Por ejemplo, tomando un ícono entre los ofrecidos por Nagios para un <em>host</em> llamado <code class="codehilite"><span class="n">windowsServer</span></code>: </p>
 <div class="codehilite"><pre><span></span><span class="c"># Definiendo íconos para un equpo (individualmente)</span>
 <span class="nb">define</span> hostextinfo {
 <span class="nb">host_name</span>       windowsServer
@@ -2185,7 +2185,7 @@
 </div>
 <p>Por último, tendremos que <a href="configuracion/#verificando-la-configuracion-y-reiniciando-nagios">verificar la configuración y reiniciar el servidor Nagios</a> para guardar los cambios que hayamos introducido.</p>
 <h2 id="creando-nuestro-propios-iconos">Creando nuestro propios íconos<a class="headerlink" href="#creando-nuestro-propios-iconos" title="Permanent link">&para;</a></h2>
-<p>Nagios aloja las imágenes (iconos) que se mostrarán en el mapa en <code class="codehilite">/usr/share/nagios/htdocs/images</code>. </p>
+<p>Nagios aloja las imágenes (iconos) que se mostrarán en el mapa en <code class="codehilite"><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="k">share</span><span class="o">/</span><span class="n">nagios</span><span class="o">/</span><span class="n">htdocs</span><span class="o">/</span><span class="n">images</span></code>. </p>
 <p>Dentro de esta carpeta debemos copiar nuestros iconos personalizados. </p>
 <p>Al crear nuestra imagen deberemos tener en cuenta el formato de la misma:</p>
 <ul>
@@ -2199,7 +2199,7 @@
 <li>iconoPersonalizado.gif</li>
 </ul>
 <h3 id="instalando-las-herramientas">Instalando las herramientas<a class="headerlink" href="#instalando-las-herramientas" title="Permanent link">&para;</a></h3>
-<p>Para poder realizar la conversión de formato de imágenes necesitaremos instalar las siguientes herramientas: <code class="codehilite">imagemagick</code>, <code class="codehilite">libgd-tools</code> y <code class="codehilite">netpbm</code>.</p>
+<p>Para poder realizar la conversión de formato de imágenes necesitaremos instalar las siguientes herramientas: <code class="codehilite"><span class="n">imagemagick</span></code>, <code class="codehilite"><span class="n">libgd</span><span class="o">-</span><span class="n">tools</span></code> y <code class="codehilite"><span class="n">netpbm</span></code>.</p>
 <div class="codehilite"><pre><span></span>sudo apt-get install libgd-tools netpbm imagemagick
 </pre></div>
 
@@ -2208,7 +2208,7 @@
 <div class="codehilite"><pre><span></span>pngtogd2 iconoPersonalizado.png iconoPersonalizado.gd2 <span class="m">1</span> <span class="m">1</span>
 </pre></div>
 
-<p>Donde <em>iconoPersonalizado.png</em> es la imagen  <code class="codehilite"><span class="na">.png</span></code> que deseamos convertir e <em>iconoPersonalizado.gd2</em> es el nombre de la imagen convertida en formato <code class="codehilite"><span class="na">.gd2</span></code>. El parámetro <code class="codehilite">1 1</code> indica que la conversión debe crearse en formato raw (crudo), y que el archivo debe crearse sin compresión.</p>
+<p>Donde <em>iconoPersonalizado.png</em> es la imagen  <code class="codehilite"><span class="na">.png</span></code> que deseamos convertir e <em>iconoPersonalizado.gd2</em> es el nombre de la imagen convertida en formato <code class="codehilite"><span class="na">.gd2</span></code>. El parámetro <code class="codehilite"><span class="mi">1</span> <span class="mi">1</span></code> indica que la conversión debe crearse en formato raw (crudo), y que el archivo debe crearse sin compresión.</p>
 <h3 id="convirtiendo-png-a-gif">Convirtiendo .png a .gif<a class="headerlink" href="#convirtiendo-png-a-gif" title="Permanent link">&para;</a></h3>
 <p>Para realizar esta conversión, simplemente ejecutamos: </p>
 <div class="codehilite"><pre><span></span>convert iconoPersonalizado.png iconoPersonalizado.gif

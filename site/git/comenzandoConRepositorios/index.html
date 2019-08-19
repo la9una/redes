@@ -2135,7 +2135,7 @@ Y luego nos introducimos en ella: </p>
 <h4 id="6-vinculamos-el-repositorio-local-con-el-repositorio-remoto">6. Vinculamos el repositorio local con el repositorio remoto<a class="headerlink" href="#6-vinculamos-el-repositorio-local-con-el-repositorio-remoto" title="Permanent link">&para;</a></h4>
 <p><div class="codehilite"><pre><span></span>git remote add origin usuario@192.168.0.200:/home/usuario/miRepositorio.git
 </pre></div>
-Donde tendremos que reemplazar <code class="codehilite">usuario</code> por nuestro nombre de usuario en el servidor y <code class="codehilite">192.168.0.200</code> por la dirección IP de nuestro servidor. Por último tendremos que cambiar <code class="codehilite">/home/usuario/miRepositorio.git</code> por la ruta de donde se ubica nuestro repositorio en el servidor.</p>
+Donde tendremos que reemplazar <code class="codehilite"><span class="n">usuario</span></code> por nuestro nombre de usuario en el servidor y <code class="codehilite"><span class="mi">192</span><span class="p">.</span><span class="mi">168</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">200</span></code> por la dirección IP de nuestro servidor. Por último tendremos que cambiar <code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">usuario</span><span class="o">/</span><span class="n">miRepositorio</span><span class="p">.</span><span class="n">git</span></code> por la ruta de donde se ubica nuestro repositorio en el servidor.</p>
 <h4 id="7-sincronizamos-nuestros-archivos">7. Sincronizamos nuestros archivos<a class="headerlink" href="#7-sincronizamos-nuestros-archivos" title="Permanent link">&para;</a></h4>
 <p>Para que los cambios realizados en los archivos de manera local se sincronicen con el servidor remoto tendremos que ejecutar: </p>
 <div class="codehilite"><pre><span></span>git push origin master
@@ -2146,10 +2146,10 @@ Donde tendremos que reemplazar <code class="codehilite">usuario</code> por nuest
 </p>
 </div>
 <h2 id="clonando-un-repositorio-git-existente">Clonando un repositorio git existente<a class="headerlink" href="#clonando-un-repositorio-git-existente" title="Permanent link">&para;</a></h2>
-<p>Si deseas obtener una copia de un repositorio Git existente — por ejemplo, un proyecto en el que te gustaría contribuir — el comando que necesitas es <code class="codehilite">git clone</code>:</p>
+<p>Si deseas obtener una copia de un repositorio Git existente — por ejemplo, un proyecto en el que te gustaría contribuir — el comando que necesitas es <code class="codehilite"><span class="n">git</span> <span class="n">clone</span></code>:</p>
 <p><div class="codehilite"><pre><span></span>git clone git+ssh://usuario@192.168.0.200:/home/usuario/miRepositorio.git
 </pre></div>
-Donde tendremos que reemplazar <code class="codehilite">usuario</code> por nuestro nombre de usuario en el servidor y <code class="codehilite">192.168.0.200</code> por la dirección IP de nuestro servidor. Por último tendremos que cambiar <code class="codehilite">/home/usuario/miRepositorio.git</code> por la ruta de donde se ubica nuestro repositorio en el servidor.</p>
+Donde tendremos que reemplazar <code class="codehilite"><span class="n">usuario</span></code> por nuestro nombre de usuario en el servidor y <code class="codehilite"><span class="mi">192</span><span class="p">.</span><span class="mi">168</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">200</span></code> por la dirección IP de nuestro servidor. Por último tendremos que cambiar <code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">usuario</span><span class="o">/</span><span class="n">miRepositorio</span><span class="p">.</span><span class="n">git</span></code> por la ruta de donde se ubica nuestro repositorio en el servidor.</p>
 <div class="admonition done">
 <p class="admonition-title">Protocolos compatibles con Git<p>Git permite usar distintos protocolos de transferencia: https://, git:// o el protocolo de transferencia SSH.</p>
 </p>
@@ -2158,12 +2158,12 @@ Donde tendremos que reemplazar <code class="codehilite">usuario</code> por nuest
 <div class="codehilite"><pre><span></span>git clone https://dominio.com/proyecto
 </pre></div>
 
-<p>Esto crea un directorio llamado <code class="codehilite">proyecto</code>, inicializa un directorio <code class="codehilite">git</code> en su interior, descarga toda la información de ese repositorio y saca una copia de trabajo de la última versión.</p>
+<p>Esto crea un directorio llamado <code class="codehilite"><span class="n">proyecto</span></code>, inicializa un directorio <code class="codehilite"><span class="n">git</span></code> en su interior, descarga toda la información de ese repositorio y saca una copia de trabajo de la última versión.</p>
 <p>Si deseamos clonar un repositorio en una carpeta que contenga un nombre distinto al del repositorio original: </p>
 <div class="codehilite"><pre><span></span>git clone https://dominio.com/proyecto miProyecto
 </pre></div>
 
-<p>Ese comando creará el directorio de destino llamado <code class="codehilite">miProyecto</code>.</p>
+<p>Ese comando creará el directorio de destino llamado <code class="codehilite"><span class="n">miProyecto</span></code>.</p>
 <div class="admonition done">
 <p class="admonition-title">Directorio oculto .git<p>En el repositorio existe un directorio oculto llamado <code class="codehilite"><span class="na">.git</span></code> el cual contiene todos los archivos necesarios para el correcto funcionamiento de Git. </p>
 </p>
