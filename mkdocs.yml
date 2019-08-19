@@ -9,7 +9,7 @@ repo_name: 'Ver en GitHub'
 repo_url: 'https://github.com/la9una/redes'
 
 # Copyright
-copyright: '2018 &nbsp; Raul Jesus Lopez'
+copyright: '2019 &nbsp; Raul Jesus Lopez'
 
 # Tema
 theme:
@@ -56,7 +56,7 @@ markdown_extensions:
   - toc:
       permalink: true
   - footnotes
-  - pymdownx.arithmatex
+#  - pymdownx.arithmatex
   - pymdownx.caret
   - pymdownx.details
   - pymdownx.inlinehilite
