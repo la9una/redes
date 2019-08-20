@@ -106,6 +106,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [GLPI](https://glpi-project.org/)
 * [Open Supports](https://www.opensupports.com/)
 * [OTRS](https://community.otrs.com/)
+* [osTicket](https://osticket.com/)
 * [Request Tracker](https://bestpractical.com/request-tracker)
 * [Zammad](https://zammad.org/)
 
