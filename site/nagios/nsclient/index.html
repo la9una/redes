@@ -2121,7 +2121,7 @@
 <p><img alt="NSClient" src="../imgNagios/nsclient_07.png" /></p>
 <h2 id="habilitando-modulos-de-nsclient">Habilitando módulos de NSClient++<a class="headerlink" href="#habilitando-modulos-de-nsclient" title="Permanent link">&para;</a></h2>
 <p>La interfaz web de <em>NSClient++</em> ofrece información útil para verificar el correcto funcionamiento del agente y carga de los módulos. </p>
-<p>Para ello, en Windows accedemos a la siguiente dirección: <code class="codehilite">https://127.0.0.1:8443</code></p>
+<p>Para ello, en Windows accedemos a la siguiente dirección: <code class="codehilite"><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="mi">127</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">:</span><span class="mi">8443</span></code></p>
 <p><img alt="NSClient" src="../imgNagios/nsclient_09.png" /></p>
 <p>Una vez allí iniciamos sesión con la contraseña que definimos al momento de la instalación del cliente</p>
 <p><img alt="NSClient" src="../imgNagios/nsclient_10.png" /></p>
@@ -2149,12 +2149,12 @@
 </p>
 </div>
 <h3 id="habilitando-los-modulos-manualmente">Habilitando los módulos manualmente<a class="headerlink" href="#habilitando-los-modulos-manualmente" title="Permanent link">&para;</a></h3>
-<p>Con un editor de texto plano serio (como Notepad++, Sublime Text, Visual Studio Code, Brackets, etc. ¡<em>Notepaders</em>, abstenerse!) abrimos el archivo <code class="codehilite">nsclient.ini</code> ubicado en la carpeta de instalación del programa. En este ejemplo, usamos <em>Notepad++</em>:</p>
+<p>Con un editor de texto plano serio (como Notepad++, Sublime Text, Visual Studio Code, Brackets, etc. ¡<em>Notepaders</em>, abstenerse!) abrimos el archivo <code class="codehilite"><span class="n">nsclient</span><span class="p">.</span><span class="n">ini</span></code> ubicado en la carpeta de instalación del programa. En este ejemplo, usamos <em>Notepad++</em>:</p>
 <div class="codehilite"><pre><span></span>start notepad++ nsclient.ini
 </pre></div>
 
 <div class="admonition note">
-<p class="admonition-title">Abrir el editor en modo gráfico<p>Si no deseamos usar la termial, podemos abrir el editor de texto en <strong>modo administrador</strong> y luego el archivo <code class="codehilite">nsclient.ini</code> ubicado, como se indicó mas arriba, en la carpeta de instalación del programa. </p>
+<p class="admonition-title">Abrir el editor en modo gráfico<p>Si no deseamos usar la termial, podemos abrir el editor de texto en <strong>modo administrador</strong> y luego el archivo <code class="codehilite"><span class="n">nsclient</span><span class="p">.</span><span class="n">ini</span></code> ubicado, como se indicó mas arriba, en la carpeta de instalación del programa. </p>
 <p><img alt="NSClient" src="../imgNagios/nsclient_08.png" /></p>
 </p>
 </div>
@@ -2190,7 +2190,7 @@
 </pre></div>
 
 <h3 id="verificando-que-nsclient-se-este-ejecutando">Verificando que NSClient++ se esté ejecutando<a class="headerlink" href="#verificando-que-nsclient-se-este-ejecutando" title="Permanent link">&para;</a></h3>
-<p>En Windows abrimos el diálogo <em>Ejecutar</em> pulsando las teclas <code class="codehilite">Windows</code> + <code class="codehilite">r</code> y ejecutamos <code class="codehilite">services.msc</code></p>
+<p>En Windows abrimos el diálogo <em>Ejecutar</em> pulsando las teclas <code class="codehilite"><span class="n">Windows</span></code> + <code class="codehilite"><span class="n">r</span></code> y ejecutamos <code class="codehilite"><span class="n">services</span><span class="p">.</span><span class="n">msc</span></code></p>
 <p><img alt="Servicios Windows" src="../imgNagios/services_01.png" /></p>
 <p>Hacemos clic derecho sobre el servicio <em>NSClient++ Monitoring Agent</em> y seleccionamos la opción <em>Propiedades</em> del menú contextual</p>
 <p><img alt="Servicios Windows" src="../imgNagios/services_02.png" /></p>

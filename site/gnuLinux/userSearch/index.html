@@ -2231,7 +2231,7 @@
 </pre></div>
 
 <h3 id="opciones-de-uso-frecuente">Opciones de uso frecuente<a class="headerlink" href="#opciones-de-uso-frecuente" title="Permanent link">&para;</a></h3>
-<p>El comando tiene muchas opciones, aunque en esta guía sólo se listan algunas: aquellas que permiten discriminar <strong>búsquedas</strong> por <strong>nombre</strong> <code class="codehilite">(-name)</code>, por <strong>tipo</strong> <code class="codehilite">(-type)</code>,  <strong>tamaño</strong> <code class="codehilite">(-size)</code>, <strong>usuario</strong> <code class="codehilite">(-user)</code> y por <strong>tiempo</strong></p>
+<p>El comando tiene muchas opciones, aunque en esta guía sólo se listan algunas: aquellas que permiten discriminar <strong>búsquedas</strong> por <strong>nombre</strong> <code class="codehilite"><span class="p">(</span><span class="o">-</span><span class="n">name</span><span class="p">)</span></code>, por <strong>tipo</strong> <code class="codehilite"><span class="p">(</span><span class="o">-</span><span class="k">type</span><span class="p">)</span></code>,  <strong>tamaño</strong> <code class="codehilite"><span class="p">(</span><span class="o">-</span><span class="k">size</span><span class="p">)</span></code>, <strong>usuario</strong> <code class="codehilite"><span class="p">(</span><span class="o">-</span><span class="k">user</span><span class="p">)</span></code> y por <strong>tiempo</strong></p>
 <h4 id="nombre">Nombre<a class="headerlink" href="#nombre" title="Permanent link">&para;</a></h4>
 <p>Explicita los términos de búsqueda, los cuales deben encerrarse entre comillas simples (' ') o dobles (" ")</p>
 <h4 id="usuario">Usuario<a class="headerlink" href="#usuario" title="Permanent link">&para;</a></h4>
@@ -2301,7 +2301,7 @@
 <h3 id="ejemplos">Ejemplos<a class="headerlink" href="#ejemplos" title="Permanent link">&para;</a></h3>
 <p><div class="codehilite"><pre><span></span>sudo find /etc -name <span class="s2">&quot;*.conf&quot;</span>
 </pre></div>
-Busca en el directorio <code class="codehilite">/etc</code> todos los archivos que finalicen con la extensión <code class="codehilite"><span class="na">.conf</span></code></p>
+Busca en el directorio <code class="codehilite"><span class="o">/</span><span class="n">etc</span></code> todos los archivos que finalicen con la extensión <code class="codehilite"><span class="na">.conf</span></code></p>
 <p><div class="codehilite"><pre><span></span>sudo find / -type d -name <span class="s2">&quot;samba&quot;</span>
 </pre></div>
 Busca en el directorio raíz todos las carpetas que contengan el nombre "samba"</p>
@@ -2370,7 +2370,7 @@ Busca dentro del directorio dir1, los recursos que tengan como propietario al us
 Busca la palabra algo, sin discriminar entre mayúsculas y minúsculas dentro del archivo textoImportante.txt</p>
 <p><div class="codehilite"><pre><span></span>ls -l <span class="p">|</span> grep <span class="s2">&quot;server&quot;</span>
 </pre></div>
-Toma la salida del comando <code class="codehilite">ls -l</code> y buscar archivos que contengan la palabra "server"</p>
+Toma la salida del comando <code class="codehilite"><span class="n">ls</span> <span class="o">-</span><span class="n">l</span></code> y buscar archivos que contengan la palabra "server"</p>
 <h2 id="expresiones-regulares">Expresiones regulares<a class="headerlink" href="#expresiones-regulares" title="Permanent link">&para;</a></h2>
 <p>Tambien conocidas como <em>regex</em>, es un conjunto de caracteres que forman un patrón de búsqueda. A continuación se listan algunas de ellas junto con ejemplos relacionados con comandos. </p>
 <table>
@@ -2395,7 +2395,7 @@ Toma la salida del comando <code class="codehilite">ls -l</code> y buscar archiv
 </tr>
 <tr>
 <td>~</td>
-<td>Representa el directorio <code class="codehilite">home</code> del usuario actual</td>
+<td>Representa el directorio <code class="codehilite"><span class="n">home</span></code> del usuario actual</td>
 </tr>
 <tr>
 <td>^</td>

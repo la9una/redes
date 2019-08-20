@@ -2061,7 +2061,7 @@
 <h3 id="git-tiene-integridad">Git tiene integridad<a class="headerlink" href="#git-tiene-integridad" title="Permanent link">&para;</a></h3>
 <p>Todo en Git es verificado mediante una suma de comprobación (checksum en inglés) antes de ser almacenado, y es identificado a partir de ese momento mediante dicha suma. Esto significa que es imposible cambiar los contenidos de cualquier archivo o directorio sin que Git lo sepa. Esta funcionalidad está integrada en Git al más bajo nivel y es parte integral de su filosofía. No puedes perder información durante su transmisión o sufrir corrupción de archivos sin que Git sea capaz de detectarlo.</p>
 <p>El mecanismo que usa Git para generar esta suma de comprobación se conoce como hash SHA-1. Se trata de una cadena de 40 caracteres hexadecimales (0-9 y a-f), y se calcula en base a los contenidos del archivo o estructura del directorio en Git. Un hash SHA-1 se ve de la siguiente forma:</p>
-<div class="codehilite"><pre><span></span>24b9da6552252987aa493b52f8696cd6d3b00373
+<div class="codehilite"><pre><span></span><span class="mi">24</span><span class="n">b9da6552252987aa493b52f8696cd6d3b00373</span>
 </pre></div>
 
 <p>Verás estos valores hash por todos lados en Git porque son usados con mucha frecuencia. De hecho, Git guarda todo no por nombre de archivo, sino por el valor hash de sus contenidos.</p>

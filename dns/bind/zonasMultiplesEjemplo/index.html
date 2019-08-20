@@ -2070,13 +2070,13 @@
                 
                   <h1>Ejemplo - Zonas múltiples</h1>
                 
-                <p>Es posible configurar un único servidor para que resuelva diferentes nombres de dominio. En este ejemplo, configuraremos nuestro servidor DNS para que sea capaz de resolver consultas directas en inversas para los dominios ficticios: <code class="codehilite">dominio1.com</code> y <code class="codehilite">dominio2.org</code>.</p>
+                <p>Es posible configurar un único servidor para que resuelva diferentes nombres de dominio. En este ejemplo, configuraremos nuestro servidor DNS para que sea capaz de resolver consultas directas en inversas para los dominios ficticios: <code class="codehilite"><span class="n">dominio1</span><span class="p">.</span><span class="n">com</span></code> y <code class="codehilite"><span class="n">dominio2</span><span class="p">.</span><span class="n">org</span></code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Número de serie<p>Al configurar un mismo servidor para que resuelva varios dominios, los archivos de zona deberán tener el <strong>mismo número de serie</strong>.</p>
 </p>
 </div>
 <h2 id="1-declaramos-los-archivos-de-zona">1. Declaramos los archivos de zona<a class="headerlink" href="#1-declaramos-los-archivos-de-zona" title="Permanent link">&para;</a></h2>
-<p>Para ello, abrimos el archivo <code class="codehilite">named.conf.local</code>:</p>
+<p>Para ello, abrimos el archivo <code class="codehilite"><span class="n">named</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="k">local</span></code>:</p>
 <div class="codehilite"><pre><span></span><span class="nb">sudo</span> vim <span class="sx">/etc/bind/named.conf.local</span>
 </pre></div>
 

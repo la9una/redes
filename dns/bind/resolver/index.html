@@ -1966,7 +1966,7 @@
                 <p>Finalmente, en nuestra máquina física tendremos que colocar la dirección IP de nuestro servidor DNS, a fin que podamos acceder a los nombres de doiminios definidos. </p>
 <h2 id="en-microsoft-windows">En Microsoft Windows<a class="headerlink" href="#en-microsoft-windows" title="Permanent link">&para;</a></h2>
 <h2 id="en-gnulinux">En GNU/Linux<a class="headerlink" href="#en-gnulinux" title="Permanent link">&para;</a></h2>
-<p>Para ello, nos dirigimos al directorio <code class="codehilite">/etc/resolvconf/resolv.conf.d/</code>:</p>
+<p>Para ello, nos dirigimos al directorio <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">resolvconf</span><span class="o">/</span><span class="n">resolv</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="n">d</span><span class="o">/</span></code>:</p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> resolvconf/resolv.conf.d
 </pre></div>
 
@@ -1974,7 +1974,7 @@
 <div class="codehilite"><pre><span></span><span class="nb">sudo</span> vim base
 </pre></div>
 
-<p>Y añadimos el dominio <code class="codehilite">itel.lan</code> en el archivo, de manera que nos quede:</p>
+<p>Y añadimos el dominio <code class="codehilite"><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code> en el archivo, de manera que nos quede:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">domain</span> itel.lan
@@ -1983,8 +1983,8 @@
 </pre></div>
 </td></tr></table>
 
-<p>De esta forma, cuando nos referimos al sistema <code class="codehilite">server</code>, éste será buscado en el dominio <code class="codehilite">itel.lan</code>, resultando en el <strong>FQHN</strong> <code class="codehilite">server.itel.lan</code></p>
-<p>Además, verificamos que en el archivo <code class="codehilite">/etc/nsswitch.conf</code> la resolución de nombres pase también por el servicio DNS:</p>
+<p>De esta forma, cuando nos referimos al sistema <code class="codehilite"><span class="n">server</span></code>, éste será buscado en el dominio <code class="codehilite"><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code>, resultando en el <strong>FQHN</strong> <code class="codehilite"><span class="n">server</span><span class="p">.</span><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code></p>
+<p>Además, verificamos que en el archivo <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">nsswitch</span><span class="p">.</span><span class="n">conf</span></code> la resolución de nombres pase también por el servicio DNS:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>hosts:  files dns
 </pre></div>
 </td></tr></table>

@@ -2343,14 +2343,14 @@
 <ul>
 <li>Son las personas o usuarios finales que utilizarán el sistema operativo. </li>
 <li>Su UID (User ID) a partir de 1000. </li>
-<li>Cada usuario dispone de un directorio de trabajo ubicado en <code class="codehilite">/home/&lt;usuario&gt;</code>.</li>
+<li>Cada usuario dispone de un directorio de trabajo ubicado en <code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/&lt;</span><span class="n">usuario</span><span class="o">&gt;</span></code>.</li>
 <li>Poseen privilegios totales únicamente sobre los recursos alojados en su directorio de trabajo.</li>
 <li>El inicio de sesión generalmente está protegido por contraseña o clave de cifrado.</li>
 </ul>
 <h2 id="archivos-de-sistema-que-almacenan-informacion-sobre-los-usuarios">Archivos de sistema que almacenan información sobre los usuarios<a class="headerlink" href="#archivos-de-sistema-que-almacenan-informacion-sobre-los-usuarios" title="Permanent link">&para;</a></h2>
 <p>Como sabemos, los sistemas basados en UNIX alamacenan la mayor parte de la información en archivos de texto plano. Veamos a continuación algunos de ellos. </p>
 <h3 id="etcpasswd">/etc/passwd<a class="headerlink" href="#etcpasswd" title="Permanent link">&para;</a></h3>
-<p>Cualquiera que sea la cuenta de usuario, todas ellas se encuentran definidas en el archivo de configuración <code class="codehilite">/etc/passwd</code>. Este archivo es de texto tipo ASCII, se crea al momento de la instalación con el usuario <code class="codehilite">root</code> y las cuentas especiales, más las cuentas de usuarios normales que se hayan indicado al momento de la instalación.</p>
+<p>Cualquiera que sea la cuenta de usuario, todas ellas se encuentran definidas en el archivo de configuración <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">passwd</span></code>. Este archivo es de texto tipo ASCII, se crea al momento de la instalación con el usuario <code class="codehilite"><span class="n">root</span></code> y las cuentas especiales, más las cuentas de usuarios normales que se hayan indicado al momento de la instalación.</p>
 <p>Podemos consultarlo ejecutando el siguiente comando: </p>
 <div class="codehilite"><pre><span></span>sudo less /etc/passwd
 </pre></div>
@@ -2360,7 +2360,7 @@
 sergio:x:501:500:Sergio González:/home/sergio:/bin/bash
 </pre></div>
 
-<p>Como podemos observar, existen "campos" delimitados por dos puntos <code class="codehilite">:</code>. De izquierda a derecha son 7 (siete): </p>
+<p>Como podemos observar, existen "campos" delimitados por dos puntos <code class="codehilite"><span class="p">:</span></code>. De izquierda a derecha son 7 (siete): </p>
 <table>
 <thead>
 <tr>
@@ -2391,7 +2391,7 @@ sergio:x:501:500:Sergio González:/home/sergio:/bin/bash
 </tr>
 <tr>
 <td>6</td>
-<td>Directorio de trabajo donde se sitúa al usuario después del inicio de sesión (generalmente es <code class="codehilite">/home/usuario</code>).</td>
+<td>Directorio de trabajo donde se sitúa al usuario después del inicio de sesión (generalmente es <code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">usuario</span></code>).</td>
 </tr>
 <tr>
 <td>7</td>
@@ -2400,12 +2400,12 @@ sergio:x:501:500:Sergio González:/home/sergio:/bin/bash
 </tbody>
 </table>
 <h3 id="etcshadow">/etc/shadow<a class="headerlink" href="#etcshadow" title="Permanent link">&para;</a></h3>
-<p>El archivo <code class="codehilite">/etc/shadow</code> contiene las contraseñas cifradas de los usuarios. Contiene una línea para cada usuario, almacenando información adicional de los mismos. Un ejemplo de contenido de este archivo: </p>
+<p>El archivo <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">shadow</span></code> contiene las contraseñas cifradas de los usuarios. Contiene una línea para cada usuario, almacenando información adicional de los mismos. Un ejemplo de contenido de este archivo: </p>
 <div class="codehilite"><pre><span></span>root:ghy675gjuXCc12r5gt78uuu6R:10568:0:99999:7:7:-1::
 sergio:rfgf886DG778sDFFDRRu78asd:10568:0:-1:9:-1:-1::
 </pre></div>
 
-<p>La información de cada usuario está dividida en 9 campos delimitados cada uno por <code class="codehilite">:</code> dos puntos:</p>
+<p>La información de cada usuario está dividida en 9 campos delimitados cada uno por <code class="codehilite"><span class="p">:</span></code> dos puntos:</p>
 <table>
 <thead>
 <tr>
@@ -2420,7 +2420,7 @@ sergio:rfgf886DG778sDFFDRRu78asd:10568:0:-1:9:-1:-1::
 </tr>
 <tr>
 <td>2</td>
-<td>Contraseña cifrada o encriptada. Un <code class="codehilite">*</code> indica cuenta de <em>nologin</em>.</td>
+<td>Contraseña cifrada o encriptada. Un <code class="codehilite"><span class="o">*</span></code> indica cuenta de <em>nologin</em>.</td>
 </tr>
 <tr>
 <td>3</td>
@@ -2461,7 +2461,7 @@ sergio:rfgf886DG778sDFFDRRu78asd:10568:0:-1:9:-1:-1::
 </pre></div>
 
 <h5 id="ejemplo-de-uso">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso" title="Permanent link">&para;</a></h5>
-<p>Crear el usuario <code class="codehilite">juan</code>, solicitando el ingreso de su contraseña durante el proceso. </p>
+<p>Crear el usuario <code class="codehilite"><span class="n">juan</span></code>, solicitando el ingreso de su contraseña durante el proceso. </p>
 <div class="codehilite"><pre><span></span>sudo adduser juan
 </pre></div>
 
@@ -2473,32 +2473,32 @@ sergio:rfgf886DG778sDFFDRRu78asd:10568:0:-1:9:-1:-1::
 
 <h5 id="opciones-de-uso-frecuente">Opciones de uso frecuente<a class="headerlink" href="#opciones-de-uso-frecuente" title="Permanent link">&para;</a></h5>
 <ul>
-<li><code class="codehilite">-c</code> Cambiar el nombre para mostrar del usuario</li>
-<li><code class="codehilite">-d</code> Cambiar el directorio “home” del usuario</li>
-<li><code class="codehilite">-s</code> Cambiar el “shell” del usuario</li>
-<li><code class="codehilite">-g</code> Modifica el grupo primario del usuario</li>
-<li><code class="codehilite">-G</code> Modifica el o los grupo/s secundario/s del usuario</li>
-<li><code class="codehilite">-L</code> Deshabilitar el acceso del usuario</li>
-<li><code class="codehilite">-U</code> Habilitar el acceso del usuario</li>
+<li><code class="codehilite"><span class="o">-</span><span class="k">c</span></code> Cambiar el nombre para mostrar del usuario</li>
+<li><code class="codehilite"><span class="o">-</span><span class="n">d</span></code> Cambiar el directorio “home” del usuario</li>
+<li><code class="codehilite"><span class="o">-</span><span class="n">s</span></code> Cambiar el “shell” del usuario</li>
+<li><code class="codehilite"><span class="o">-</span><span class="k">g</span></code> Modifica el grupo primario del usuario</li>
+<li><code class="codehilite"><span class="o">-</span><span class="k">G</span></code> Modifica el o los grupo/s secundario/s del usuario</li>
+<li><code class="codehilite"><span class="o">-</span><span class="n">L</span></code> Deshabilitar el acceso del usuario</li>
+<li><code class="codehilite"><span class="o">-</span><span class="n">U</span></code> Habilitar el acceso del usuario</li>
 </ul>
 <h5 id="ejemplos-de-uso">Ejemplos de uso<a class="headerlink" href="#ejemplos-de-uso" title="Permanent link">&para;</a></h5>
-<p>Modifica la <code class="codehilite">home</code> del usuario <code class="codehilite">pedro</code> por <code class="codehilite">/tmp/directorio</code>:</p>
+<p>Modifica la <code class="codehilite"><span class="n">home</span></code> del usuario <code class="codehilite"><span class="n">pedro</span></code> por <code class="codehilite"><span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">directorio</span></code>:</p>
 <div class="codehilite"><pre><span></span>sudo usermod -d /tmp/directorio pedro
 </pre></div>
 
-<p>Deshabilita el acceso o <em>login</em> del usuario <code class="codehilite">pedro</code>:</p>
+<p>Deshabilita el acceso o <em>login</em> del usuario <code class="codehilite"><span class="n">pedro</span></code>:</p>
 <div class="codehilite"><pre><span></span>sudo usermod -L pedro
 </pre></div>
 
-<p>Deshabilita el uso de la “shell” para el usuario <code class="codehilite">pedro</code>:</p>
+<p>Deshabilita el uso de la “shell” para el usuario <code class="codehilite"><span class="n">pedro</span></code>:</p>
 <div class="codehilite"><pre><span></span>sudo usermod -s /dev/null pedro
 </pre></div>
 
-<p>Cambia el grupo principal del usuario <code class="codehilite">pedro</code> a <code class="codehilite">grupete</code>:</p>
+<p>Cambia el grupo principal del usuario <code class="codehilite"><span class="n">pedro</span></code> a <code class="codehilite"><span class="n">grupete</span></code>:</p>
 <div class="codehilite"><pre><span></span>sudo usermod -g grupete pedro
 </pre></div>
 
-<p>Agrega el usuario <code class="codehilite">pedro</code> a los grupos secundarios <code class="codehilite">grupo1</code> y <code class="codehilite">grupo2</code>. Si volvemos a ejecutar el comando, omitiendo el nombre de algún grupo, el usuario dejará de pertenecer al grupo omitido:</p>
+<p>Agrega el usuario <code class="codehilite"><span class="n">pedro</span></code> a los grupos secundarios <code class="codehilite"><span class="n">grupo1</span></code> y <code class="codehilite"><span class="n">grupo2</span></code>. Si volvemos a ejecutar el comando, omitiendo el nombre de algún grupo, el usuario dejará de pertenecer al grupo omitido:</p>
 <div class="codehilite"><pre><span></span>sudo usermod -G grupo1,grupo2 pedro
 </pre></div>
 
@@ -2510,10 +2510,10 @@ sergio:rfgf886DG778sDFFDRRu78asd:10568:0:-1:9:-1:-1::
 
 <h5 id="opciones-de-uso-frecuente_1">Opciones de uso frecuente<a class="headerlink" href="#opciones-de-uso-frecuente_1" title="Permanent link">&para;</a></h5>
 <ul>
-<li><code class="codehilite">-r</code> Elimina el usuario junto a todos sus archivos personales. </li>
+<li><code class="codehilite"><span class="o">-</span><span class="n">r</span></code> Elimina el usuario junto a todos sus archivos personales. </li>
 </ul>
 <h5 id="ejemplo-de-uso_1">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso_1" title="Permanent link">&para;</a></h5>
-<p>Elimina el usuario <code class="codehilite">pedro</code> y su directorio <code class="codehilite">home</code> y configuraciones adicionales:</p>
+<p>Elimina el usuario <code class="codehilite"><span class="n">pedro</span></code> y su directorio <code class="codehilite"><span class="n">home</span></code> y configuraciones adicionales:</p>
 <div class="codehilite"><pre><span></span>sudo  userdel -r pedro
 </pre></div>
 
@@ -2524,7 +2524,7 @@ sergio:rfgf886DG778sDFFDRRu78asd:10568:0:-1:9:-1:-1::
 </pre></div>
 
 <h5 id="ejemplo-de-uso_2">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso_2" title="Permanent link">&para;</a></h5>
-<p>Solicita una nueva contraseña para el usuario llamado <code class="codehilite">juan</code>:</p>
+<p>Solicita una nueva contraseña para el usuario llamado <code class="codehilite"><span class="n">juan</span></code>:</p>
 <div class="codehilite"><pre><span></span>passwd juan
 </pre></div>
                 

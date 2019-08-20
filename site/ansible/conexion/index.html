@@ -2169,7 +2169,7 @@
                 <h1 id="gestionando-las-conexiones">Gestionando las conexiones<a class="headerlink" href="#gestionando-las-conexiones" title="Permanent link">&para;</a></h1>
 <p>Ansible tiene en cuenta dos tipos de equipos: <strong>servidor</strong> y <strong>nodos</strong>. En el primero se instalará y gestionará Ansible y los nodos serán los equipos a ser administrados por la herramienta. </p>
 <h2 id="definiendo-nodos">Definiendo nodos<a class="headerlink" href="#definiendo-nodos" title="Permanent link">&para;</a></h2>
-<p>Antes de comenzar a emplear Ansible, conviene definir los nodos que gestionaremos en el archivo <code class="codehilite">hosts</code>. Para ello, abriremos el archivo en cuestión: </p>
+<p>Antes de comenzar a emplear Ansible, conviene definir los nodos que gestionaremos en el archivo <code class="codehilite"><span class="n">hosts</span></code>. Para ello, abriremos el archivo en cuestión: </p>
 <p><div class="codehilite"><pre><span></span>sudo vim /etc/ansible/hosts
 </pre></div>
 Y agregaremos, empleando una linea para cada uno de ellos, los nodos a gestionar. Cabe aclarar que podremos emplear nombres de hosts o direcciones IP: </p>
@@ -2192,7 +2192,7 @@ otroservidor.com
 </pre></div>
 
 <h3 id="1-conexion-local-localhost">1. Conexión local (localhost)<a class="headerlink" href="#1-conexion-local-localhost" title="Permanent link">&para;</a></h3>
-<p>Empleado para realizar pruebas, es la conexión que realiza el servidor con sí mismo. Cabe aclarar que <code class="codehilite">localhost</code> debe estar definido con conexión local en el archivo <code class="codehilite">hosts</code>,  mediante la directiva <code class="codehilite">ansible_connection=local</code> según se explicó mas arriba, en la definición de los nodos. </p>
+<p>Empleado para realizar pruebas, es la conexión que realiza el servidor con sí mismo. Cabe aclarar que <code class="codehilite"><span class="n">localhost</span></code> debe estar definido con conexión local en el archivo <code class="codehilite"><span class="n">hosts</span></code>,  mediante la directiva <code class="codehilite"><span class="n">ansible_connection</span><span class="o">=</span><span class="k">local</span></code> según se explicó mas arriba, en la definición de los nodos. </p>
 <p>Luego, para realizar la prueba de conectividad ejecutamos:</p>
 <div class="codehilite"><pre><span></span>sudo ansible localhost -m ping
 </pre></div>
@@ -2206,7 +2206,7 @@ otroservidor.com
 </ol>
 <h4 id="21-definiendo-usuarios-de-conexion">2.1. Definiendo usuarios de conexión<a class="headerlink" href="#21-definiendo-usuarios-de-conexion" title="Permanent link">&para;</a></h4>
 <p>Para que el servidor pueda establecer conexión con los nodos, tendremos que especificar con que usuario (uno para cada nodo) tendrá que hacerlo. Es importante destacar que dichos usuarios deben existir en los nodos. </p>
-<p>Simplemente, tendremos que editar el archivo <code class="codehilite">/etc/ansible/hosts</code> y agregar la información correspondiente: </p>
+<p>Simplemente, tendremos que editar el archivo <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ansible</span><span class="o">/</span><span class="n">hosts</span></code> y agregar la información correspondiente: </p>
 <div class="codehilite"><pre><span></span><span class="c1"># Máquina local, donde se ejecuta Ansible</span>
 localhost <span class="nv">ansible_connection</span><span class="o">=</span><span class="nb">local</span> <span class="nv">ansible_user</span><span class="o">=</span>juan
 <span class="c1"># Dirección IP del nodo X</span>
@@ -2219,27 +2219,27 @@ otroservidor.com <span class="nv">ansible_user</span><span class="o">=</span>luc
 <p>Adicionalmete, para que el server pueda establecer conexión con los nodos, éstos deben poseer registrada la clave pública del servidor. </p>
 <h5 id="generando-claves-en-el-servidor">Generando claves en el servidor<a class="headerlink" href="#generando-claves-en-el-servidor" title="Permanent link">&para;</a></h5>
 <p>Para generar las claves SSH, ejecutamos en el servidor: </p>
-<p><div class="codehilite"><pre><span></span>sudo ssh-keygen
+<p><div class="codehilite"><pre><span></span><span class="n">sudo</span> <span class="n">ssh</span><span class="o">-</span><span class="n">keygen</span>
 </pre></div>
 Y luego presionar la tecla  <em>Enter</em> ante cada pregunta. El comando nos generará la clave pública y la clave privada necesarias para la conexión al servidor. </p>
-<p>Si al momento de generar las claves, hemos dejado las opciones por defecto, las mismas se crearán en el directorio <code class="codehilite">/root/.ssh</code>:</p>
+<p>Si al momento de generar las claves, hemos dejado las opciones por defecto, las mismas se crearán en el directorio <code class="codehilite"><span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="p">.</span><span class="n">ssh</span></code>:</p>
 <div class="codehilite"><pre><span></span>/root/.ssh/
 ├── id_rsa
 └── id_rsa.pub
 </pre></div>
 
-<p>Donde <code class="codehilite">id_rsa</code> es la clave privada y <code class="codehilite">id_rsa.pub</code> es la clave pública. </p>
+<p>Donde <code class="codehilite"><span class="n">id_rsa</span></code> es la clave privada y <code class="codehilite"><span class="n">id_rsa</span><span class="p">.</span><span class="n">pub</span></code> es la clave pública. </p>
 <h5 id="configurando-los-nodos-con-la-clave-publica-del-servidor">Configurando los nodos con la clave pública del servidor<a class="headerlink" href="#configurando-los-nodos-con-la-clave-publica-del-servidor" title="Permanent link">&para;</a></h5>
-<p>Luego, tendremos que copiar el contenido del archivo <code class="codehilite">id_rsa.pub</code> dentro del archivo <code class="codehilite">authorized_keys</code> ubicado en la carpeta del usuario de los clientes. </p>
-<p>Por ejemplo, para un usuario llamado <strong>raul</strong>, el archivo <code class="codehilite">authorized_keys</code> se encuentra en <code class="codehilite">/home/raul/.ssh/authorized_keys</code></p>
+<p>Luego, tendremos que copiar el contenido del archivo <code class="codehilite"><span class="n">id_rsa</span><span class="p">.</span><span class="n">pub</span></code> dentro del archivo <code class="codehilite"><span class="n">authorized_keys</span></code> ubicado en la carpeta del usuario de los clientes. </p>
+<p>Por ejemplo, para un usuario llamado <strong>raul</strong>, el archivo <code class="codehilite"><span class="n">authorized_keys</span></code> se encuentra en <code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">raul</span><span class="o">/</span><span class="p">.</span><span class="n">ssh</span><span class="o">/</span><span class="n">authorized_keys</span></code></p>
 <h4 id="comprobando-conectividad-con-los-nodos">Comprobando conectividad con los nodos<a class="headerlink" href="#comprobando-conectividad-con-los-nodos" title="Permanent link">&para;</a></h4>
 <p>Una vez realizados los pasos anteriores, nos ubicamos en el servidor y ejecutamos: </p>
 <p><div class="codehilite"><pre><span></span>sudo ansible all -m ping 
 </pre></div>
-Otra manera de comprobar conectividad con un nodo sin necesidad de especificar el usuario en el archivo <code class="codehilite">/etc/ansible/hosts</code>: </p>
+Otra manera de comprobar conectividad con un nodo sin necesidad de especificar el usuario en el archivo <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">ansible</span><span class="o">/</span><span class="n">hosts</span></code>: </p>
 <p><div class="codehilite"><pre><span></span>sudo ansible SERVIDOR -u USUARIO -m ping
 </pre></div>
-Donde <code class="codehilite">SERVIDOR</code> corresponde al nombre de dominio o dirección IP del nodo a administrar y <code class="codehilite">USUARIO</code> al nombre de usuario existente en el nodo en cuestión. </p>
+Donde <code class="codehilite"><span class="n">SERVIDOR</span></code> corresponde al nombre de dominio o dirección IP del nodo a administrar y <code class="codehilite"><span class="n">USUARIO</span></code> al nombre de usuario existente en el nodo en cuestión. </p>
 <h2 id="ejecutando-comandos-en-los-nodos">Ejecutando comandos en los nodos<a class="headerlink" href="#ejecutando-comandos-en-los-nodos" title="Permanent link">&para;</a></h2>
 <p>Mediante Ansible, es posible ejecutar tareas en lo nodos de manera simulanea. Por ejemplo: </p>
 <div class="codehilite"><pre><span></span>sudo ansible all -a <span class="s2">&quot;ls -l&quot;</span>

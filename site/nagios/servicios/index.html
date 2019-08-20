@@ -2040,7 +2040,7 @@
                 
                   <h1>Definiendo servicios</h1>
                 
-                <p>En este paso definiremos qué parámetros vamos a monitorear. Para ello, abriremos el archivo <code class="codehilite">servicios.cfg</code> creado con anterioridad: </p>
+                <p>En este paso definiremos qué parámetros vamos a monitorear. Para ello, abriremos el archivo <code class="codehilite"><span class="n">servicios</span><span class="p">.</span><span class="n">cfg</span></code> creado con anterioridad: </p>
 <div class="codehilite"><pre><span></span>sudo vim /etc/nagios3/objetos/servicios.cfg
 </pre></div>
 
@@ -2204,13 +2204,13 @@
 
 <p>Por último, tendremos que <a href="configuracion/#verificando-la-configuracion-y-reiniciando-nagios">verificar la configuración y reiniciar el servidor Nagios</a> para guardar los cambios que hayamos introducido.</p>
 <h3 id="agregando-monitoreo-de-estado-de-servicios">Agregando monitoreo de estado de servicios<a class="headerlink" href="#agregando-monitoreo-de-estado-de-servicios" title="Permanent link">&para;</a></h3>
-<p>Si quisiésemos agregar el monitoreo del estado de algún servicio en Windows (es decir, saber si se está ejecutando o no) abrimos el diálogo <em>Ejecutar</em> pulsando las teclas <code class="codehilite">Windows</code> + <code class="codehilite">r</code> y ejecutamos <code class="codehilite">services.msc</code></p>
+<p>Si quisiésemos agregar el monitoreo del estado de algún servicio en Windows (es decir, saber si se está ejecutando o no) abrimos el diálogo <em>Ejecutar</em> pulsando las teclas <code class="codehilite"><span class="n">Windows</span></code> + <code class="codehilite"><span class="n">r</span></code> y ejecutamos <code class="codehilite"><span class="n">services</span><span class="p">.</span><span class="n">msc</span></code></p>
 <p><img alt="Servicios Windows" src="../imgNagios/services_01.png" /></p>
 <p>Luego, seleccionamos el servicio a monitorear. Por ejemplo, el <strong>Cliente DHCP</strong>. Hacemos clic derecho sobre el mismo y seleccionamos <em>Propiedades</em> del menú contextual</p>
 <p><img alt="Servicios Windows" src="../imgNagios/services_05.png" /></p>
-<p>Tendremos que copiar el nombre del servicio <strong>tal cual</strong>, es decir, respetando las mayúsculas y minúsculas. En este caso, <code class="codehilite">Dhcp</code></p>
+<p>Tendremos que copiar el nombre del servicio <strong>tal cual</strong>, es decir, respetando las mayúsculas y minúsculas. En este caso, <code class="codehilite"><span class="n">Dhcp</span></code></p>
 <p><img alt="Servicios Windows" src="../imgNagios/services_06.png" /></p>
-<p>Por último, tendremos que definir el monitoreo del mismo en el archivo <code class="codehilite">servicios.cfg</code>, donde sólo tendremos que cambiar la última palabra de la última línea: </p>
+<p>Por último, tendremos que definir el monitoreo del mismo en el archivo <code class="codehilite"><span class="n">servicios</span><span class="p">.</span><span class="n">cfg</span></code>, donde sólo tendremos que cambiar la última palabra de la última línea: </p>
 <div class="codehilite"><pre><span></span><span class="c">####################################</span>
 <span class="c"># Servicios en equipos con Windows #</span>
 <span class="c">####################################</span>

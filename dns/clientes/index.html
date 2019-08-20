@@ -2014,7 +2014,7 @@
                 
                 <p>Para que los clientes puedan resolver dominios empleando nuestro servidor tendremos que seguir procedimiento determinado que será distinto dependiendo del sistema operativo en cuestión.  </p>
 <h2 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
-<p>Accedé a "Conexiones de red". Para ello presioná la combinación de teclas <kbd><i class="fab fa-windows"></i></kbd> + <kbd>R</kbd> y escribí <code class="codehilite">ncpa.cpl</code> en el formulario del cuadro de dialogo "Ejecutar". Por último, hacé clic en el botón "Aceptar":</p>
+<p>Accedé a "Conexiones de red". Para ello presioná la combinación de teclas <kbd><i class="fab fa-windows"></i></kbd> + <kbd>R</kbd> y escribí <code class="codehilite"><span class="n">ncpa</span><span class="p">.</span><span class="n">cpl</span></code> en el formulario del cuadro de dialogo "Ejecutar". Por último, hacé clic en el botón "Aceptar":</p>
 <p><img alt="Acceso a Conexiones de red" src="../imgDNS/resolver_win_01.png" /></p>
 <p>Mediante un clic derecho sobre el adaptador de red a través del cual estás conectado a la red (Ethernet, Wifi, etc) y seleccioná la opción "Propiedades" del menú contextual:</p>
 <p><img alt="Seleción de adaptador de red" src="../imgDNS/resolver_win_02.png" /></p>
@@ -2022,17 +2022,17 @@
 <p><img alt="Propiedades de TCP/IP v4" src="../imgDNS/resolver_win_03.png" /></p>
 <p>Por último, escribí la dirección IP de tu servidor DNS seleccionando la opción "Usar las siguientes direcciones de servidor DNS": </p>
 <p><img alt="Configuración del servidor DNS" src="../imgDNS/resolver_win_04.png" /></p>
-<p>En el ejemplo, la dirección IP del servidor DNS preferido es <code class="codehilite">192.168.0.222</code>: deberás cambiar dicha dirección IP por la dirección IP de tu servidor DNS. En caso de disponer de un servidor DNS adicional, deberá agregarse en formulario "Servidor DNS alternativo". </p>
+<p>En el ejemplo, la dirección IP del servidor DNS preferido es <code class="codehilite"><span class="mi">192</span><span class="p">.</span><span class="mi">168</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">222</span></code>: deberás cambiar dicha dirección IP por la dirección IP de tu servidor DNS. En caso de disponer de un servidor DNS adicional, deberá agregarse en formulario "Servidor DNS alternativo". </p>
 <h2 id="gnulinux">GNU/Linux<a class="headerlink" href="#gnulinux" title="Permanent link">&para;</a></h2>
-<p>Nos dirigimos al directorio <code class="codehilite">/etc/resolvconf/resolv.conf.d/</code>:</p>
+<p>Nos dirigimos al directorio <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">resolvconf</span><span class="o">/</span><span class="n">resolv</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="n">d</span><span class="o">/</span></code>:</p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> resolvconf/resolv.conf.d
 </pre></div>
 
-<p>Luego abrimos el archivo <code class="codehilite">base</code>: </p>
+<p>Luego abrimos el archivo <code class="codehilite"><span class="n">base</span></code>: </p>
 <div class="codehilite"><pre><span></span><span class="nb">sudo</span> vim base
 </pre></div>
 
-<p>Y añadimos el dominio <code class="codehilite">itel.lan</code> en el archivo, de manera que nos quede:</p>
+<p>Y añadimos el dominio <code class="codehilite"><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code> en el archivo, de manera que nos quede:</p>
 <div class="codehilite"><pre><span></span><span class="nb">domain</span> itel.lan
 <span class="nb">search</span> itel.lan
 <span class="c"># Dirección IP de nuestro servidor DNS</span>

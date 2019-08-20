@@ -2109,7 +2109,7 @@
 <li><strong>Archivo de zona de resolución inversa</strong> contiene la información necesaria para convertir direcciones IP en el respectivo nombre de sistema. </li>
 </ul>
 <h2 id="cuales-son-los-objetivos-de-esta-seccion">¿Cuáles son los objetivos de esta sección?<a class="headerlink" href="#cuales-son-los-objetivos-de-esta-seccion" title="Permanent link">&para;</a></h2>
-<p>Configurar los archivos de zona necesarios para el dominio local <code class="codehilite">itel.lan</code>, que a su vez, albergará los siguientes subdominios:</p>
+<p>Configurar los archivos de zona necesarios para el dominio local <code class="codehilite"><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code>, que a su vez, albergará los siguientes subdominios:</p>
 <table>
 <thead>
 <tr>
@@ -2160,7 +2160,7 @@
 </table>
 <p>Para ello, seguiremos unos sencillos pasos que se detallan a continuación. </p>
 <h3 id="creando-el-directorio-donde-alojaremos-nuestros-archivos-de-zona">Creando el directorio donde alojaremos nuestros archivos de zona<a class="headerlink" href="#creando-el-directorio-donde-alojaremos-nuestros-archivos-de-zona" title="Permanent link">&para;</a></h3>
-<p>Aunque este paso no es estrictamente necesario, lo haremos para mantener el orden de nuestros archivos de zona: crearemos una carpeta llamada <code class="codehilite">zonas</code> dentro del directorio principal de <strong>bind</strong>: </p>
+<p>Aunque este paso no es estrictamente necesario, lo haremos para mantener el orden de nuestros archivos de zona: crearemos una carpeta llamada <code class="codehilite"><span class="n">zonas</span></code> dentro del directorio principal de <strong>bind</strong>: </p>
 <div class="codehilite"><pre><span></span><span class="nb">sudo</span> mkdir <span class="sx">/etc/bind/zonas</span> &amp;&amp; cd <span class="sx">/etc/bind/zonas</span>
 </pre></div>
 
@@ -2176,14 +2176,14 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite">db.itel.lan</code></td>
+<td><code class="codehilite"><span class="n">db</span><span class="p">.</span><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code></td>
 <td>Resolución directa</td>
-<td><code class="codehilite">/etc/bind/zonas</code></td>
+<td><code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">bind</span><span class="o">/</span><span class="n">zonas</span></code></td>
 </tr>
 <tr>
-<td><code class="codehilite">db.0.168.192</code></td>
+<td><code class="codehilite"><span class="n">db</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">168</span><span class="p">.</span><span class="mi">192</span></code></td>
 <td>Resolución inversa</td>
-<td><code class="codehilite">/etc/bind/zonas</code></td>
+<td><code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">bind</span><span class="o">/</span><span class="n">zonas</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -2192,7 +2192,7 @@
 </pre></div>
 
 <h3 id="declarando-los-archivos-de-zona">Declarando los archivos de zona<a class="headerlink" href="#declarando-los-archivos-de-zona" title="Permanent link">&para;</a></h3>
-<p>Debemos "avisar" a <strong>bind</strong> que hemos creado nuestros archivos de zona. Lo haremos abriendo el archivo <code class="codehilite">/etc/bind/named.conf.local</code>:</p>
+<p>Debemos "avisar" a <strong>bind</strong> que hemos creado nuestros archivos de zona. Lo haremos abriendo el archivo <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">bind</span><span class="o">/</span><span class="n">named</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="k">local</span></code>:</p>
 <div class="codehilite"><pre><span></span>sudo vim /etc/bind/named.conf.local
 </pre></div>
 
@@ -2226,7 +2226,7 @@
 </td></tr></table>
 
 <h3 id="creanto-el-contenido-de-nuestro-archivo-de-zona-de-resolucion-directa">Creanto el contenido de nuestro archivo de zona de resolución directa<a class="headerlink" href="#creanto-el-contenido-de-nuestro-archivo-de-zona-de-resolucion-directa" title="Permanent link">&para;</a></h3>
-<p>A continuación se exhibe el contenido de un hipotético archivo de zona de resolución directa (y que hemos llamado <code class="codehilite">db.itel.lan</code>) para el dominio <code class="codehilite">itel.lan</code>:</p>
+<p>A continuación se exhibe el contenido de un hipotético archivo de zona de resolución directa (y que hemos llamado <code class="codehilite"><span class="n">db</span><span class="p">.</span><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code>) para el dominio <code class="codehilite"><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -2377,7 +2377,7 @@ ftp         CNAME   server1
 </td></tr></table>
 
 <h3 id="creanto-el-contenido-de-nuestro-archivo-de-zona-de-resolucion-inversa">Creanto el contenido de nuestro archivo de zona de resolución inversa<a class="headerlink" href="#creanto-el-contenido-de-nuestro-archivo-de-zona-de-resolucion-inversa" title="Permanent link">&para;</a></h3>
-<p>Ahora, se muestra el contenido de ejemplo del archivo de zona de resolución inversa (que hemos llamado <code class="codehilite">db.0.168.192</code>) para el dominio <code class="codehilite">itel.lan</code>:</p>
+<p>Ahora, se muestra el contenido de ejemplo del archivo de zona de resolución inversa (que hemos llamado <code class="codehilite"><span class="n">db</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">168</span><span class="p">.</span><span class="mi">192</span></code>) para el dominio <code class="codehilite"><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3

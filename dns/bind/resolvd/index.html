@@ -1917,8 +1917,8 @@
                 
                   <h1>Resolvd</h1>
                 
-                <p>La resolución de nombres convierte los nombres de los sistemas en sus correspondientes direcciones IP. Para una zona <code class="codehilite">home.lan</code>, los nombres <code class="codehilite">server</code>, <code class="codehilite">virtual</code>, <code class="codehilite">ns</code> y <code class="codehilite">router</code> son asociados a sus respectivas direcciones IP. </p>
-<p>La base de datos para la resolución de nombres en la zona <code class="codehilite">home.lan</code> está guardada en el archivo <code class="codehilite">/etc/bind/db.home.lan</code>:</p>
+                <p>La resolución de nombres convierte los nombres de los sistemas en sus correspondientes direcciones IP. Para una zona <code class="codehilite"><span class="n">home</span><span class="p">.</span><span class="n">lan</span></code>, los nombres <code class="codehilite"><span class="n">server</span></code>, <code class="codehilite"><span class="n">virtual</span></code>, <code class="codehilite"><span class="n">ns</span></code> y <code class="codehilite"><span class="n">router</span></code> son asociados a sus respectivas direcciones IP. </p>
+<p>La base de datos para la resolución de nombres en la zona <code class="codehilite"><span class="n">home</span><span class="p">.</span><span class="n">lan</span></code> está guardada en el archivo <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">bind</span><span class="o">/</span><span class="n">db</span><span class="p">.</span><span class="n">home</span><span class="p">.</span><span class="n">lan</span></code>:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -1986,8 +1986,8 @@
 </td></tr></table>
 
 <p>El protocolo DNS permite también la creación de alias, o canonical names, identificados por el tipo de registro CNAME. Un alias es un nombre alternativo de un sistema.</p>
-<p>Al final del archivo podrán declararse algunos <em>aliases</em> donde: el sistema <code class="codehilite">server</code> pasará también a ser conocido (CNAME o canonical name) como <code class="codehilite">proxy</code> y el servidor <code class="codehilite">virtual</code> responderá también por los nombres <code class="codehilite">www</code> y <code class="codehilite">ftp</code>. </p>
-<p>Finalmente, verificamos que el fichero de configuración de la zona <code class="codehilite">itel.lan</code> no contenga errores</p>
+<p>Al final del archivo podrán declararse algunos <em>aliases</em> donde: el sistema <code class="codehilite"><span class="n">server</span></code> pasará también a ser conocido (CNAME o canonical name) como <code class="codehilite"><span class="n">proxy</span></code> y el servidor <code class="codehilite"><span class="n">virtual</span></code> responderá también por los nombres <code class="codehilite"><span class="n">www</span></code> y <code class="codehilite"><span class="n">ftp</span></code>. </p>
+<p>Finalmente, verificamos que el fichero de configuración de la zona <code class="codehilite"><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code> no contenga errores</p>
 <div class="codehilite"><pre><span></span>sudo named-checkzone itel.lan /etc/bind/db.itel.lan
 </pre></div>
 

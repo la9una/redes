@@ -1929,7 +1929,7 @@
                 <p>Es posible que necesitamos que <strong>cada usuario del sistema sea capaz de leer y escribir en su directorio de trabajo vía </strong>Samba**, según el siguiente esquema: </p>
 <p><br />
 <img alt="Directorios para cada usuario" src="../imgSamba/sambaejemplo.png" /></p>
-<p>Para ello agregamos al archivo de configuración <code class="codehilite">/etc/samba/smb.conf</code> debajo del bloque <code class="codehilite">[global]</code>:</p>
+<p>Para ello agregamos al archivo de configuración <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">samba</span><span class="o">/</span><span class="n">smb</span><span class="p">.</span><span class="n">conf</span></code> debajo del bloque <code class="codehilite"><span class="o">[</span><span class="n">global</span><span class="o">]</span><span class="w"></span></code>:</p>
 <div class="codehilite"><pre><span></span><span class="err">[homes]</span>
     <span class="c"># Comentario</span>
     <span class="nb">comment</span> = Carpeta personal de cada usuario
