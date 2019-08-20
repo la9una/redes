@@ -55,7 +55,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Vesta](https://vestacp.com/)
 * [Webmin](http://www.webmin.com/)
 
-## Nube privada
+## Almacenamiento de archivos
 * [IPFS](https://ipfs.io/)
 * [NextCloud](https://nextcloud.com/)
 * [OwnCloud](https://owncloud.org/)
