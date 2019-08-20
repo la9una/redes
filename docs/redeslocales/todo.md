@@ -65,6 +65,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 ## Base de conocimiento
 * [BokStack](https://www.bookstackapp.com/)
 * [DocPress](https://docpress.github.io/)
+* [Docusaurus](https://docusaurus.io/)
 * [Docute](https://docute.org/)
 * [DocFX](https://dotnet.github.io/docfx/)
 * [Dokuwiki](https://www.dokuwiki.org)
@@ -74,6 +75,26 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [SkyDocs](https://skydocs.skyost.eu/en/)
 * [Raneto](http://raneto.com/)
 * [Wiki.js](https://wiki.js.org/)
+
+## Gestores de contenido
+* [CMS.js](https://chrisdiana.dev/cms.js/)
+* [Drupal](https://www.drupal.org/)
+* [Gatsby](https://www.gatsbyjs.org/)
+* [Ghost](https://ghost.org/)
+* [Grav](https://getgrav.org/)
+* [Hexo](https://hexo.io/)
+* [Hugo](https://gohugo.io/)
+* [Jekyll](https://jekyllrb.com/)
+* [Joomla!](https://www.joomla.org/)
+* [Middleman](https://middlemanapp.com/)
+* [Next.js](https://nextjs.org/)
+* [Nuxt.js](https://nuxtjs.org/)
+* [October](https://octobercms.com/)
+* [Publii](https://getpublii.com/)
+* [Silex](https://www.silex.me/)
+* [Vapid](https://www.vapid.com/)
+* [VuePress](https://vuepress.vuejs.org/)
+* [Wordpress](https://wordpress.org/)
 
 ## Red social
 * [Elgg](https://elgg.org/)
