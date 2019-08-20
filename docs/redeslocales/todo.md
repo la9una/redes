@@ -112,7 +112,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Cacti](https://www.cacti.net/)
 * [Checkmk](https://checkmk.com/)
 * [Cicada](https://github.com/little-brother/cicada) 
-* [Centreon](https://www.centreon.com/solutions/centreon/)
+* [Centreon](https://www.centreon.com/en/solutions/centreon/)
 * [EyesOfNetwork](https://www.eyesofnetwork.com/)
 * [Graphite](https://graphiteapp.org/)
 * [LibreNMS](https://www.librenms.org/)
