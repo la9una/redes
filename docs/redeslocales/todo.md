@@ -1,11 +1,11 @@
-# Herramientas de sotware
+## Herramientas de sotware
 
 Listado de herramientas de software para desplegar y testear antes de su uso en producción en el instituto. 
 
 ![Red ITEL](imgRedesLocales/ITEL_Network_2019.png)
 
 
-## Gestión de equipos de trabajo
+### Gestión de equipos de trabajo
 * [IceScrum](https://www.icescrum.com/)
 * [Kanboard](https://kanboard.org/)
 * [Phabricator](https://phacility.com/phabricator/)
@@ -13,35 +13,35 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Taiga](https://taiga.io/)
 * [Taskboard](https://taskboard.matthewross.me/)
 
-## Documentación e inventario
+### Documentación e inventario
 * [NetBox](https://netbox.readthedocs.io/en/stable/)
 * [OCS Inventory](https://ocsinventory-ng.org/?lang=en)
 
-## Web Filters
+### Web Filters
 * [Apache Traffic Server](https://trafficserver.apache.org/)
 * [Artica Proxy](http://artica-proxy.com/)
 * [Hosts](https://github.com/StevenBlack/hosts)
 * [NxFilter](https://nxfilter.org/p3/)
 * [Pi-Hole](https://pi-hole.net/)
 
-## Backup
+### Backup
 * [Bacula](https://www.bacula.org)
 * [Duplicati](https://www.duplicati.com/)
 * [RClone](https://rclone.org/)
 * [Syncthing](https://syncthing.net/)
 
-## Gestión de usuarios
+### Gestión de usuarios
 * [CAS](https://apereo.github.io/cas/6.0.x/index.html)
 * [FreeIPA](https://www.freeipa.org/page/Main_Page)
 * [KeyCloak](https://www.keycloak.org/)
 * [OpenLDAP](https://www.openldap.org/)
 * [RazDC](http://razdc.com/)
 
-## Gestión de sistemas operativos
+### Gestión de sistemas operativos
 * [Clonezilla](https://clonezilla.org)
 * [Fog Project](https://fogproject.org/)
 
-## Gestión de servicios
+### Gestión de servicios
 * [Admin4](http://www.admin4.org/)
 * [AegiProject](http://www.aegirproject.org/)
 * [Ajenti](http://ajenti.org/)
@@ -55,14 +55,14 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Vesta](https://vestacp.com/)
 * [Webmin](http://www.webmin.com/)
 
-## Almacenamiento de archivos
+### Almacenamiento de archivos
 * [IPFS](https://ipfs.io/)
 * [NextCloud](https://nextcloud.com/)
 * [OwnCloud](https://owncloud.org/)
 * [Pydio](https://pydio.com/en)
 * [Sotrj](https://storj.io/)
 
-## Base de conocimiento
+### Base de conocimiento
 * [BokStack](https://www.bookstackapp.com/)
 * [DocPress](https://docpress.github.io/)
 * [Docusaurus](https://docusaurus.io/)
@@ -76,7 +76,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Raneto](http://raneto.com/)
 * [Wiki.js](https://wiki.js.org/)
 
-## Gestores de contenido
+### Gestores de contenido
 * [CMS.js](https://chrisdiana.dev/cms.js/)
 * [Drupal](https://www.drupal.org/)
 * [Gatsby](https://www.gatsbyjs.org/)
@@ -96,13 +96,13 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [VuePress](https://vuepress.vuejs.org/)
 * [Wordpress](https://wordpress.org/)
 
-## Red social
+### Red social
 * [Elgg](https://elgg.org/)
 * [HumHub](https://www.humhub.org/en)
 * [Movim](https://movim.eu/)
 * [OSSN](https://www.opensource-socialnetwork.org/)
 
-## HelpDesk
+### HelpDesk
 * [GLPI](https://glpi-project.org/)
 * [Open Supports](https://www.opensupports.com/)
 * [OTRS](https://community.otrs.com/)
@@ -110,7 +110,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Request Tracker](https://bestpractical.com/request-tracker)
 * [Zammad](https://zammad.org/)
 
-## Mensajería
+### Mensajería
 * [Keybase](https://keybase.io/)
 * [Mattermost](https://mattermost.com/)
 * [Mibew](https://mibew.org/es/)
@@ -120,7 +120,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Tox](https://tox.chat/)
 * [Zulip](https://zulipchat.com/hello/)
 
-## DevOps
+### DevOps
 * [Ansible](https://www.ansible.com/)
 * [Git Lab](https://about.gitlab.com/)
 * [Gitea](https://gitea.io/en-us/)
@@ -128,7 +128,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [OpenShift](https://www.openshift.com/)
 * [WildFly](https://wildfly.org/)
 
-## Monitoreo
+### Monitoreo
 * [Alerta](https://alerta.io/)
 * [Cabot](https://cabotapp.com/)
 * [Cacti](https://www.cacti.net/)
@@ -152,7 +152,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Smokeping](https://oss.oetiker.ch/smokeping/)
 * [Zabbix](https://www.zabbix.com/)
 
-## Plataformas de virtualizacion
+### Plataformas de virtualizacion
 * [Apache Mesos](https://mesos.apache.org/)
 * [Danube Cloud](https://danubecloud.org/)
 * [Docker](https://www.docker.com/)
@@ -166,7 +166,7 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [XCP-ng](https://xcp-ng.org/)
 
 
-## PaaS
+### PaaS
 * [CapRover](https://caprover.com/)
 * [CloudFoundry](https://www.cloudfoundry.org/)
 * [Cloudify](https://cloudify.co/)
@@ -178,6 +178,26 @@ Listado de herramientas de software para desplegar y testear antes de su uso en 
 * [Rancher](https://rancher.com/)
 
 
-## IDE
+### IDE
 * [Plunker](http://plnkr.co/)
 * [Theia](https://www.theia-ide.org/)
+
+
+## Temario para el debate y/o exposición
+
+* Metodologías Ágiles 
+    * Kanban
+    * Lean Software Development (LSD)
+    * Programación Extrema (XP)
+    * Scrum
+    * Conceptos relacionados
+        * Kaizen
+        * Kaikaku
+        * 5S
+        * Open Space
+* DevOps
+    * Integración continua
+    * Entrega continua
+    * Despliegue continuo
+    * Cloud computing PaaS (IaaS y SaaS) / Microservicios
+    * Gestión de la configuración
