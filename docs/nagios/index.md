@@ -8,4 +8,5 @@ Según [Wikipedia](http://www.es.wikipedia.org/wiki/Nagios)
 >
 >Se trata de un software que proporciona una gran versatilidad para **consultar prácticamente cualquier parámetro de interés de un sistema**, **generando alertas** que pueden ser recibidas por los responsables correspondientes a través del correo electrónico y mensajes SMS entre otros medios, cuando los parámetros >excedan los márgenes definidos por el administrador de red. 
 
+### [Evaluación de Nagios](filesNagios/2019_itel_redes_eval_nagios.pdf)
 
