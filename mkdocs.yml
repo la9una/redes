@@ -199,3 +199,5 @@ nav:
       - Recursos adicionales: 'nagios/recursos.md'
 - Troubleshooting:
   - Windows: 'troubleshooting/netTools.md'
+- Anexos:
+  - Aprogramas: 'anexos/programas.md'
