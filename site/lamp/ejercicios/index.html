@@ -23,7 +23,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
       
-        <meta name="lang:search.language" content="es, en">
+        <meta name="lang:search.language" content="es">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -375,7 +375,7 @@
     <label class="md-nav__link" for="nav-3-2">
       Sistema de archivos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-2">
         Sistema de archivos
       </label>
@@ -471,7 +471,7 @@
     <label class="md-nav__link" for="nav-3-3">
       Sistema de permisos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-3">
         Sistema de permisos
       </label>
@@ -531,7 +531,7 @@
     <label class="md-nav__link" for="nav-3-4">
       Gestión de software
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-4">
         Gestión de software
       </label>
@@ -579,7 +579,7 @@
     <label class="md-nav__link" for="nav-3-5">
       Automatización
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-5">
         Automatización
       </label>
@@ -627,7 +627,7 @@
     <label class="md-nav__link" for="nav-3-6">
       Networing
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-6">
         Networing
       </label>
@@ -807,7 +807,7 @@
     <label class="md-nav__link" for="nav-6-3">
       dnsmasq
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-3">
         dnsmasq
       </label>
@@ -843,7 +843,7 @@
     <label class="md-nav__link" for="nav-6-4">
       BIND
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-4">
         BIND
       </label>
@@ -886,7 +886,7 @@
     <label class="md-nav__link" for="nav-6-4-3">
       DNS caché
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="8">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-3">
         DNS caché
       </label>
@@ -934,7 +934,7 @@
     <label class="md-nav__link" for="nav-6-4-4">
       DNS local
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="9">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-4">
         DNS local
       </label>
@@ -1997,6 +1997,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Anexos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Anexos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../anexos/programas/" title="Aprogramas" class="md-nav__link">
+      Aprogramas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -2102,16 +2138,16 @@
 <p><strong>Como usuario root</strong></p>
 <ol>
 <li>Crear el usuario o los usuarios que necesitemos</li>
-<li>Ubicarnos en la carpeta <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apache2</span><span class="o">/</span><span class="n">sites</span><span class="o">-</span><span class="n">available</span></code></li>
-<li>Crear el archivo de configuración para nuestro dominio con la extensión <code class="codehilite"><span class="na">.conf</span></code> (por ejemplo, <code class="codehilite"><span class="n">unsitioficticio</span><span class="p">.</span><span class="n">net</span><span class="p">.</span><span class="n">conf</span></code>) </li>
-<li>Habilitar el sitio (por ejemplo, <code class="codehilite"><span class="n">a2ensite</span> <span class="n">unsitioficticio</span><span class="p">.</span><span class="n">net</span><span class="p">.</span><span class="n">conf</span></code>) y reiniciar Apache</li>
-<li>Modificar el archivo <code class="codehilite"><span class="n">hosts</span></code> (en nuestra máquina física)</li>
+<li>Ubicarnos en la carpeta <code class="codehilite">/etc/apache2/sites-available</code></li>
+<li>Crear el archivo de configuración para nuestro dominio con la extensión <code class="codehilite"><span class="na">.conf</span></code> (por ejemplo, <code class="codehilite">unsitioficticio.net.conf</code>) </li>
+<li>Habilitar el sitio (por ejemplo, <code class="codehilite">a2ensite unsitioficticio.net.conf</code>) y reiniciar Apache</li>
+<li>Modificar el archivo <code class="codehilite">hosts</code> (en nuestra máquina física)</li>
 <li>Ingresar al sitio con el navegador </li>
 </ol>
 <p><strong>Como usuarios normales</strong></p>
 <ol>
-<li>Crear dentro de la <code class="codehilite"><span class="n">home</span></code> del usuario, la carpeta <code class="codehilite"><span class="n">public_html</span></code>, es decir <code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/&lt;</span><span class="n">usuario</span><span class="o">&gt;/</span><span class="n">public_html</span></code></li>
-<li>Generar el contenido del sitio (<code class="codehilite"><span class="k">index</span><span class="p">.</span><span class="n">html</span></code>, <code class="codehilite"><span class="k">index</span><span class="p">.</span><span class="n">php</span></code>, etc) y colocarlo en la carpeta creada en el punto anterior</li>
+<li>Crear dentro de la <code class="codehilite">home</code> del usuario, la carpeta <code class="codehilite">public_html</code>, es decir <code class="codehilite">/home/&lt;usuario&gt;/public_html</code></li>
+<li>Generar el contenido del sitio (<code class="codehilite">index.html</code>, <code class="codehilite">index.php</code>, etc) y colocarlo en la carpeta creada en el punto anterior</li>
 </ol>
 <h2 id="ejercicio-1">Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permanent link">&para;</a></h2>
 <p>La empresa "Penguin S.A.", dispone de un servidor web dedicado y tan solo una direccion IP. La empresa necesita que su servidor web gestione diferentes sitios web, cada uno con su nombre de dominio.</p>
@@ -2134,17 +2170,17 @@
 <tr>
 <td>1</td>
 <td>penguin.net</td>
-<td><code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">penguin</span><span class="o">/</span><span class="n">public_html</span></code></td>
+<td><code class="codehilite">/home/penguin/public_html</code></td>
 </tr>
 <tr>
 <td>2</td>
 <td>patagon.penguin.net</td>
-<td><code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">patagon</span><span class="o">/</span><span class="n">public_html</span></code></td>
+<td><code class="codehilite">/home/patagon/public_html</code></td>
 </tr>
 <tr>
 <td>3</td>
 <td>phpmyadmin.penguin.net</td>
-<td><code class="codehilite"><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="k">share</span><span class="o">/</span><span class="n">phpmyadmin</span></code></td>
+<td><code class="codehilite">/usr/share/phpmyadmin</code></td>
 </tr>
 </tbody>
 </table>
@@ -2157,8 +2193,8 @@
 <h4 id="creacion-de-contenido-web">Creación de contenido web<a class="headerlink" href="#creacion-de-contenido-web" title="Permanent link">&para;</a></h4>
 <p>Dentro de los <strong>directorios raíz</strong> creados en el punto anterior (necesariamente deberá existir una página llamada index.html o index.php) y a modo de ejemplo, deberán crearse las siguientes páginas: </p>
 <ol>
-<li>Para <strong>penguin.net</strong>: un archivo <code class="codehilite"><span class="k">index</span><span class="p">.</span><span class="n">html</span></code> con la frase "Penguin.net - Sitio Oficial"</li>
-<li>Para <strong>patagon.penguin.net</strong>, un archivo <code class="codehilite"><span class="k">index</span><span class="p">.</span><span class="n">php</span></code> con el siguiente contenido: </li>
+<li>Para <strong>penguin.net</strong>: un archivo <code class="codehilite">index.html</code> con la frase "Penguin.net - Sitio Oficial"</li>
+<li>Para <strong>patagon.penguin.net</strong>, un archivo <code class="codehilite">index.php</code> con el siguiente contenido: </li>
 </ol>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -2193,7 +2229,7 @@
 </td></tr></table>
 
 <h4 id="creacion-de-los-archivos-de-configuracion">Creación de los archivos de configuración<a class="headerlink" href="#creacion-de-los-archivos-de-configuracion" title="Permanent link">&para;</a></h4>
-<p>Se deben crear los archivos de configuración de cada <a href="../virtualHosts/">Host Virtual</a> solicitado por el cliente. Tener en cuenta que para todos los casos, el administrador sera <code class="codehilite"><span class="k">admin</span><span class="nv">@penguin</span><span class="p">.</span><span class="n">net</span><span class="w"></span></code>.</p>
+<p>Se deben crear los archivos de configuración de cada <a href="../virtualHosts/">Host Virtual</a> solicitado por el cliente. Tener en cuenta que para todos los casos, el administrador sera <code class="codehilite">admin@penguin.net</code>.</p>
 <h4 id="resolucion-de-nombres">Resolución de nombres<a class="headerlink" href="#resolucion-de-nombres" title="Permanent link">&para;</a></h4>
 <p>Se debe realizar a través del <a href="../../dns/archivoHosts/">método del archivo hosts</a>.</p>
 <div class="admonition tip">
@@ -2215,19 +2251,19 @@
 <tr>
 <td>itel.lan</td>
 <td>itel</td>
-<td><code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">itel</span><span class="o">/</span><span class="n">public_html</span></code></td>
+<td><code class="codehilite">/home/itel/public_html</code></td>
 </tr>
 <tr>
 <td>promo2018.fest</td>
 <td>promo</td>
-<td><code class="codehilite"><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">promo</span><span class="o">/</span><span class="n">public_html</span></code></td>
+<td><code class="codehilite">/home/promo/public_html</code></td>
 </tr>
 </tbody>
 </table>
 <p>E instala las siguientes aplicaciones: </p>
 <ul>
-<li>Wordpress en <code class="codehilite"><span class="n">itel</span><span class="p">.</span><span class="n">lan</span></code></li>
-<li>Joomla! en <code class="codehilite"><span class="n">promo2018</span><span class="p">.</span><span class="n">fest</span></code></li>
+<li>Wordpress en <code class="codehilite">itel.lan</code></li>
+<li>Joomla! en <code class="codehilite">promo2018.fest</code></li>
 </ul>
 <p>Podemos encontrar las aplicaciones en internet:</p>
 <ul>
@@ -2241,10 +2277,10 @@
 <p>En cualquier caso, descargamos la aplicación seleccionada en el directorio raíz de nuestro sitio web:  </p>
 <p><div class="codehilite"><pre><span></span>wget http://url_de_la_aplicacion/aplicacion.zip
 </pre></div>
-Luego, <strong>descomprimimos la aplicación descargada en el directorio raíz de nuestro sitio</strong>. Abrimos nuestro navegador web y visitamos la dirección web <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">tudominio</span><span class="o">/</span><span class="n">aplicacion</span></code> o bien <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">tuDireccionIP</span><span class="o">/</span><span class="n">aplicacion</span></code> y seguir las instrucciones de instalación. </p>
+Luego, <strong>descomprimimos la aplicación descargada en el directorio raíz de nuestro sitio</strong>. Abrimos nuestro navegador web y visitamos la dirección web <code class="codehilite">http://tudominio/aplicacion</code> o bien <code class="codehilite">http://tuDireccionIP/aplicacion</code> y seguir las instrucciones de instalación. </p>
 <div class="admonition warning">
 <p class="admonition-title">Gestión de la base de datos</p>
-<p>Dependiendo de la aplicación web que hayas elegido, es posible que necesites crear una base de datos. Para ello, dirigite a <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">tudominio</span><span class="o">/</span><span class="n">phpmyadmin</span></code> o <code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">tuDireccionIP</span><span class="o">/</span><span class="n">phpmyadmin</span></code> e ingresá con las credenciales del usuario root. Una vez allí podrás crear la base de datos solicitada.</p>
+<p>Dependiendo de la aplicación web que hayas elegido, es posible que necesites crear una base de datos. Para ello, dirigite a <code class="codehilite">http://tudominio/phpmyadmin</code> o <code class="codehilite">http://tuDireccionIP/phpmyadmin</code> e ingresá con las credenciales del usuario root. Una vez allí podrás crear la base de datos solicitada.</p>
 </div>
                 
                   
@@ -2344,10 +2380,6 @@ Luego, <strong>descomprimimos la aplicación descargada en el directorio raíz d
               
             
           
-            
-          
-          
-            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       

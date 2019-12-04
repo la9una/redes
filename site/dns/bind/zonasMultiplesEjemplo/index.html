@@ -23,7 +23,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
       
-        <meta name="lang:search.language" content="es, en">
+        <meta name="lang:search.language" content="es">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -375,7 +375,7 @@
     <label class="md-nav__link" for="nav-3-2">
       Sistema de archivos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-2">
         Sistema de archivos
       </label>
@@ -471,7 +471,7 @@
     <label class="md-nav__link" for="nav-3-3">
       Sistema de permisos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-3">
         Sistema de permisos
       </label>
@@ -531,7 +531,7 @@
     <label class="md-nav__link" for="nav-3-4">
       Gestión de software
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-4">
         Gestión de software
       </label>
@@ -579,7 +579,7 @@
     <label class="md-nav__link" for="nav-3-5">
       Automatización
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-5">
         Automatización
       </label>
@@ -627,7 +627,7 @@
     <label class="md-nav__link" for="nav-3-6">
       Networing
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-6">
         Networing
       </label>
@@ -809,7 +809,7 @@
     <label class="md-nav__link" for="nav-6-3">
       dnsmasq
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-3">
         dnsmasq
       </label>
@@ -847,7 +847,7 @@
     <label class="md-nav__link" for="nav-6-4">
       BIND
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-4">
         BIND
       </label>
@@ -890,7 +890,7 @@
     <label class="md-nav__link" for="nav-6-4-3">
       DNS caché
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="8">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-3">
         DNS caché
       </label>
@@ -940,7 +940,7 @@
     <label class="md-nav__link" for="nav-6-4-4">
       DNS local
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="9">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-4">
         DNS local
       </label>
@@ -1978,6 +1978,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Anexos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Anexos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../anexos/programas/" title="Aprogramas" class="md-nav__link">
+      Aprogramas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -2058,13 +2094,13 @@
                 
                   <h1>Ejemplo - Zonas múltiples</h1>
                 
-                <p>Es posible configurar un único servidor para que resuelva diferentes nombres de dominio. En este ejemplo, configuraremos nuestro servidor DNS para que sea capaz de resolver consultas directas en inversas para los dominios ficticios: <code class="codehilite"><span class="n">dominio1</span><span class="p">.</span><span class="n">com</span></code> y <code class="codehilite"><span class="n">dominio2</span><span class="p">.</span><span class="n">org</span></code>.</p>
+                <p>Es posible configurar un único servidor para que resuelva diferentes nombres de dominio. En este ejemplo, configuraremos nuestro servidor DNS para que sea capaz de resolver consultas directas en inversas para los dominios ficticios: <code class="codehilite">dominio1.com</code> y <code class="codehilite">dominio2.org</code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Número de serie<p>Al configurar un mismo servidor para que resuelva varios dominios, los archivos de zona deberán tener el <strong>mismo número de serie</strong>.</p>
 </p>
 </div>
 <h2 id="1-declaramos-los-archivos-de-zona">1. Declaramos los archivos de zona<a class="headerlink" href="#1-declaramos-los-archivos-de-zona" title="Permanent link">&para;</a></h2>
-<p>Para ello, abrimos el archivo <code class="codehilite"><span class="n">named</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="k">local</span></code>:</p>
+<p>Para ello, abrimos el archivo <code class="codehilite">named.conf.local</code>:</p>
 <div class="codehilite"><pre><span></span><span class="nb">sudo</span> vim <span class="sx">/etc/bind/named.conf.local</span>
 </pre></div>
 
@@ -2347,10 +2383,6 @@
               
             
           
-            
-          
-          
-            <script src="../../../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       

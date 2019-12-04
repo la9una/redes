@@ -23,7 +23,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
       
-        <meta name="lang:search.language" content="es, en">
+        <meta name="lang:search.language" content="es">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -375,7 +375,7 @@
     <label class="md-nav__link" for="nav-3-2">
       Sistema de archivos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-2">
         Sistema de archivos
       </label>
@@ -471,7 +471,7 @@
     <label class="md-nav__link" for="nav-3-3">
       Sistema de permisos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-3">
         Sistema de permisos
       </label>
@@ -531,7 +531,7 @@
     <label class="md-nav__link" for="nav-3-4">
       Gestión de software
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-4">
         Gestión de software
       </label>
@@ -579,7 +579,7 @@
     <label class="md-nav__link" for="nav-3-5">
       Automatización
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-5">
         Automatización
       </label>
@@ -627,7 +627,7 @@
     <label class="md-nav__link" for="nav-3-6">
       Networing
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-6">
         Networing
       </label>
@@ -807,7 +807,7 @@
     <label class="md-nav__link" for="nav-6-3">
       dnsmasq
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-3">
         dnsmasq
       </label>
@@ -843,7 +843,7 @@
     <label class="md-nav__link" for="nav-6-4">
       BIND
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-4">
         BIND
       </label>
@@ -886,7 +886,7 @@
     <label class="md-nav__link" for="nav-6-4-3">
       DNS caché
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="8">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-3">
         DNS caché
       </label>
@@ -934,7 +934,7 @@
     <label class="md-nav__link" for="nav-6-4-4">
       DNS local
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="9">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-4">
         DNS local
       </label>
@@ -1942,6 +1942,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Anexos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Anexos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../anexos/programas/" title="Aprogramas" class="md-nav__link">
+      Aprogramas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1988,7 +2024,7 @@
                 
                   <h1>Definiendo equipos</h1>
                 
-                <p>Abrimos el archivo que nombramos como <code class="codehilite"><span class="n">equipos</span><span class="p">.</span><span class="n">cfg</span></code>:</p>
+                <p>Abrimos el archivo que nombramos como <code class="codehilite">equipos.cfg</code>:</p>
 <div class="codehilite"><pre><span></span>sudo nano /etc/nagios3/objetos/equipos.cfg
 </pre></div>
 
@@ -2052,7 +2088,7 @@
 <p>De más está afirmar la conveniencia del uso de comentarios (#) para ganar claridad y orden a la hora de crear nuestro archivo de configuración. </p>
 <p>Por último, tendremos que <a href="configuracion/#verificando-la-configuracion-y-reiniciando-nagios">verificar la configuración y reiniciar el servidor Nagios</a> para guardar los cambios que hayamos introducido.</p>
 <h2 id="diseno-de-topologia-de-red">Diseño de topología de red<a class="headerlink" href="#diseno-de-topologia-de-red" title="Permanent link">&para;</a></h2>
-<p>Nagios permite configurar los <em>hosts</em> distinguiéndolos entre <em>padres</em> e <em>hijos</em> usando la directiva <code class="codehilite"><span class="n">parents</span></code>. Veámoslo con un ejemplo <a href="https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/3/en/networkreachability.html">extraído de la documentación de Nagios</a>, donde la siguiente topología de red:</p>
+<p>Nagios permite configurar los <em>hosts</em> distinguiéndolos entre <em>padres</em> e <em>hijos</em> usando la directiva <code class="codehilite">parents</code>. Veámoslo con un ejemplo <a href="https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/3/en/networkreachability.html">extraído de la documentación de Nagios</a>, donde la siguiente topología de red:</p>
 <p><img alt="Parents" src="../imgNagios/parents.png" /></p>
 <p>Se corresponde con la siguiente configuración de <em>hosts</em> (la configuración de cada <em>host</em> aparece simplificada con fines didácticos )</p>
 <div class="codehilite"><pre><span></span><span class="c"># Localhost (el servidor Nagios) no posee padre</span>
@@ -2204,10 +2240,6 @@
               
             
           
-            
-          
-          
-            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       

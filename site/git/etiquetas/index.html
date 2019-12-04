@@ -23,7 +23,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
       
-        <meta name="lang:search.language" content="es, en">
+        <meta name="lang:search.language" content="es">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -375,7 +375,7 @@
     <label class="md-nav__link" for="nav-3-2">
       Sistema de archivos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-2">
         Sistema de archivos
       </label>
@@ -471,7 +471,7 @@
     <label class="md-nav__link" for="nav-3-3">
       Sistema de permisos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-3">
         Sistema de permisos
       </label>
@@ -531,7 +531,7 @@
     <label class="md-nav__link" for="nav-3-4">
       Gestión de software
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-4">
         Gestión de software
       </label>
@@ -579,7 +579,7 @@
     <label class="md-nav__link" for="nav-3-5">
       Automatización
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-5">
         Automatización
       </label>
@@ -627,7 +627,7 @@
     <label class="md-nav__link" for="nav-3-6">
       Networing
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-6">
         Networing
       </label>
@@ -807,7 +807,7 @@
     <label class="md-nav__link" for="nav-6-3">
       dnsmasq
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-3">
         dnsmasq
       </label>
@@ -843,7 +843,7 @@
     <label class="md-nav__link" for="nav-6-4">
       BIND
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-4">
         BIND
       </label>
@@ -886,7 +886,7 @@
     <label class="md-nav__link" for="nav-6-4-3">
       DNS caché
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="8">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-3">
         DNS caché
       </label>
@@ -934,7 +934,7 @@
     <label class="md-nav__link" for="nav-6-4-4">
       DNS local
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="9">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-4">
         DNS local
       </label>
@@ -2005,6 +2005,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Anexos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Anexos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../anexos/programas/" title="Aprogramas" class="md-nav__link">
+      Aprogramas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -2119,7 +2155,7 @@
 <p>Una <strong>etiqueta ligera</strong> es muy parecido a una rama que no cambia - simplemente es un puntero a un commit específico.</p>
 <p>Sin embargo, las <strong>etiquetas anotadas</strong> se guardan en la base de datos de Git como objetos enteros. Tienen un checksum; contienen el nombre del etiquetador, correo electrónico y fecha; tienen un mensaje asociado; y pueden ser firmadas y verificadas con GNU Privacy Guard (GPG). </p>
 <h3 id="etiquetas-anotadas">Etiquetas Anotadas<a class="headerlink" href="#etiquetas-anotadas" title="Permanent link">&para;</a></h3>
-<p>Crear una etiqueta anotada en Git es sencillo, utilizando la opción <code class="codehilite"><span class="o">-</span><span class="n">a</span></code> cuando ejecutamos el comando <code class="codehilite"><span class="n">tag</span></code>:</p>
+<p>Crear una etiqueta anotada en Git es sencillo, utilizando la opción <code class="codehilite">-a</code> cuando ejecutamos el comando <code class="codehilite">tag</code>:</p>
 <div class="codehilite"><pre><span></span>git tag -a <span class="o">[</span>nombreDeEtiqueta<span class="o">]</span> -m <span class="s1">&#39;Mensaje asociado a la etiqueta&#39;</span>
 </pre></div>
 
@@ -2127,9 +2163,9 @@
 <div class="codehilite"><pre><span></span>git tag -a v1.2 -m <span class="s1">&#39;Nueva versión multiusuario&#39;</span>
 </pre></div>
 
-<p>La opción <code class="codehilite"><span class="o">-</span><span class="n">m</span></code> especifica el mensaje de la etiqueta, el cual es guardado junto con ella. Si no especificás el mensaje de una etiqueta anotada, Git abrirá el editor de texto para que lo escribas.</p>
+<p>La opción <code class="codehilite">-m</code> especifica el mensaje de la etiqueta, el cual es guardado junto con ella. Si no especificás el mensaje de una etiqueta anotada, Git abrirá el editor de texto para que lo escribas.</p>
 <h3 id="etiquetas-ligeras">Etiquetas Ligeras<a class="headerlink" href="#etiquetas-ligeras" title="Permanent link">&para;</a></h3>
-<p>La otra forma de etiquetar un <code class="codehilite"><span class="k">commit</span></code> es mediante una etiqueta ligera. Una etiqueta ligera no es más que el <a href="https://es.wikipedia.org/wiki/Suma_de_verificaci%C3%B3n"><em>checksum</em></a> de un <code class="codehilite"><span class="k">commit</span></code> guardado en un archivo - no incluye más información. Para crear una etiqueta ligera ejecutamos:</p>
+<p>La otra forma de etiquetar un <code class="codehilite">commit</code> es mediante una etiqueta ligera. Una etiqueta ligera no es más que el <a href="https://es.wikipedia.org/wiki/Suma_de_verificaci%C3%B3n"><em>checksum</em></a> de un <code class="codehilite">commit</code> guardado en un archivo - no incluye más información. Para crear una etiqueta ligera ejecutamos:</p>
 <p><div class="codehilite"><pre><span></span>git tag <span class="o">[</span>nombreDeEtiqueta<span class="o">]</span>
 </pre></div>
 Por ejemplo: </p>
@@ -2137,10 +2173,10 @@ Por ejemplo: </p>
 </pre></div>
 
 <h3 id="etiquetado-tardio">Etiquetado Tardío<a class="headerlink" href="#etiquetado-tardio" title="Permanent link">&para;</a></h3>
-<p>También podés etiquetar <code class="codehilite"><span class="n">commits</span></code> mucho tiempo después de haberlos hecho. Para ello, tendremos que ejecutar el siguiente comando: </p>
+<p>También podés etiquetar <code class="codehilite">commits</code> mucho tiempo después de haberlos hecho. Para ello, tendremos que ejecutar el siguiente comando: </p>
 <p><div class="codehilite"><pre><span></span>git tag -a <span class="o">[</span>nombreDeEtiqueta<span class="o">]</span> <span class="o">[</span>numeroHashAbreviado<span class="o">]</span>
 </pre></div>
-Donde podremos obtener el <em>hash</em> abreviado de un <code class="codehilite"><span class="k">commit</span></code> ejecutando: </p>
+Donde podremos obtener el <em>hash</em> abreviado de un <code class="codehilite">commit</code> ejecutando: </p>
 <div class="codehilite"><pre><span></span>git log --oneline
 </pre></div>
 
@@ -2151,11 +2187,11 @@ Donde podremos obtener el <em>hash</em> abreviado de un <code class="codehilite"
 <h2 id="visualizando-etiquetas">Visualizando etiquetas<a class="headerlink" href="#visualizando-etiquetas" title="Permanent link">&para;</a></h2>
 <p>Git dispone de comandos para visualizar las etiquetas creadas así como la información asociada a alguna de ellas en espcial. </p>
 <h3 id="listando-etiquetas">Listando etiquetas<a class="headerlink" href="#listando-etiquetas" title="Permanent link">&para;</a></h3>
-<p>Para ver la lista de las etiquetas creadas, ejecutaremos el comando <code class="codehilite"><span class="n">tag</span></code>:</p>
+<p>Para ver la lista de las etiquetas creadas, ejecutaremos el comando <code class="codehilite">tag</code>:</p>
 <div class="codehilite"><pre><span></span>git tag
 </pre></div>
 
-<p>También podemos listar todas las etiquetas que cumplan con un patrón de búsqueda determinado, con la opcion <code class="codehilite"><span class="o">-</span><span class="n">l</span></code>: </p>
+<p>También podemos listar todas las etiquetas que cumplan con un patrón de búsqueda determinado, con la opcion <code class="codehilite">-l</code>: </p>
 <div class="codehilite"><pre><span></span>git tag l- <span class="o">[</span>patronDeBusqueda<span class="o">]</span>
 </pre></div>
 
@@ -2173,7 +2209,7 @@ Por ejemplo: </p>
 </pre></div>
 
 <h2 id="compartiendo-etiquetas">Compartiendo etiquetas<a class="headerlink" href="#compartiendo-etiquetas" title="Permanent link">&para;</a></h2>
-<p>Por defecto, el comando <code class="codehilite"><span class="n">git</span> <span class="n">push</span></code> no transfiere las etiquetas a los servidores remotos. Es necesario enviar las etiquetas de forma explícita al servidor luego de que las hayas creado. Este proceso es similar al de compartir ramas remotas:</p>
+<p>Por defecto, el comando <code class="codehilite">git push</code> no transfiere las etiquetas a los servidores remotos. Es necesario enviar las etiquetas de forma explícita al servidor luego de que las hayas creado. Este proceso es similar al de compartir ramas remotas:</p>
 <div class="codehilite"><pre><span></span>git push <span class="o">[</span>nombreRepositorioRemoto<span class="o">]</span> <span class="o">[</span>nombreDeEtiqueta<span class="o">]</span> <span class="o">[</span>rama<span class="o">]</span>
 </pre></div>
 
@@ -2181,7 +2217,7 @@ Por ejemplo: </p>
 <div class="codehilite"><pre><span></span>git push origin v1.4 master
 </pre></div>
 
-<p>Si queremos enviar varias etiquetas a la vez, podemos usar la opción <code class="codehilite"><span class="c1">--tags</span></code> del comando <code class="codehilite"><span class="n">git</span> <span class="n">push</span></code>. Esto enviará al servidor remoto todas las etiquetas que aun no existen en él.</p>
+<p>Si queremos enviar varias etiquetas a la vez, podemos usar la opción <code class="codehilite">--tags</code> del comando <code class="codehilite">git push</code>. Esto enviará al servidor remoto todas las etiquetas que aun no existen en él.</p>
 <div class="codehilite"><pre><span></span>git push <span class="o">[</span>nombreRepositorioRemoto<span class="o">]</span> --tags <span class="o">[</span>rama<span class="o">]</span>
 </pre></div>
 
@@ -2288,10 +2324,6 @@ Por ejemplo: </p>
               
             
           
-            
-          
-          
-            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       

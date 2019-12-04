@@ -23,7 +23,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
       
-        <meta name="lang:search.language" content="es, en">
+        <meta name="lang:search.language" content="es">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -375,7 +375,7 @@
     <label class="md-nav__link" for="nav-3-2">
       Sistema de archivos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-2">
         Sistema de archivos
       </label>
@@ -471,7 +471,7 @@
     <label class="md-nav__link" for="nav-3-3">
       Sistema de permisos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-3">
         Sistema de permisos
       </label>
@@ -531,7 +531,7 @@
     <label class="md-nav__link" for="nav-3-4">
       Gestión de software
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-4">
         Gestión de software
       </label>
@@ -579,7 +579,7 @@
     <label class="md-nav__link" for="nav-3-5">
       Automatización
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-5">
         Automatización
       </label>
@@ -627,7 +627,7 @@
     <label class="md-nav__link" for="nav-3-6">
       Networing
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-6">
         Networing
       </label>
@@ -809,7 +809,7 @@
     <label class="md-nav__link" for="nav-6-3">
       dnsmasq
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-3">
         dnsmasq
       </label>
@@ -847,7 +847,7 @@
     <label class="md-nav__link" for="nav-6-4">
       BIND
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-4">
         BIND
       </label>
@@ -892,7 +892,7 @@
     <label class="md-nav__link" for="nav-6-4-3">
       DNS caché
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="8">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-3">
         DNS caché
       </label>
@@ -978,7 +978,7 @@
     <label class="md-nav__link" for="nav-6-4-4">
       DNS local
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="9">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-4">
         DNS local
       </label>
@@ -1948,6 +1948,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Anexos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Anexos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../anexos/programas/" title="Aprogramas" class="md-nav__link">
+      Aprogramas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -1995,7 +2031,7 @@
                 
                 
                 <h1 id="dns-cache-ejemplo">DNS Caché - Ejemplo<a class="headerlink" href="#dns-cache-ejemplo" title="Permanent link">&para;</a></h1>
-<p>La configuración del servidor DNS caché se encuentra en el archivo <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">bind</span><span class="o">/</span><span class="n">named</span><span class="p">.</span><span class="n">conf</span><span class="p">.</span><span class="k">options</span></code></p>
+<p>La configuración del servidor DNS caché se encuentra en el archivo <code class="codehilite">/etc/bind/named.conf.options</code></p>
 <p>Antes de comenzar, siempre conviene realizar una copia de seguridad del arvhivo en cuestión: </p>
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> /etc/bind <span class="se">\</span>
 sudo cp named.conf.options named.conf.options.original
@@ -2070,7 +2106,7 @@ sudo cp named.conf.options named.conf.options.original
 <p>La siguiente son etiquetas de comentarios válidas:</p>
 <ul>
 <li>
-<p><code class="codehilite"><span class="o">//</span></code> ó <code class="codehilite"><span class="o">#</span></code> Para realizar comentarios de una sola línea, al comienzo de la misma. </p>
+<p><code class="codehilite">//</code> ó <code class="codehilite">#</code> Para realizar comentarios de una sola línea, al comienzo de la misma. </p>
 </li>
 <li>
 <p><code class="codehilite"><span class="cm">/* texto */</span><span class="w"></span></code> Para realizar comentarios multilínea, colocando texto entre estas etiquetas. </p>
@@ -2086,15 +2122,15 @@ sudo cp named.conf.options named.conf.options.original
 <p><strong>Forwarders</strong>: son los servidores DNS a los cuáles consultará nuestro servidor DNS en caso de no ser capaz de resolver un nombre de dominio. En el ejemplo, se usan los servidores DNS públicos de <em>Google</em> y, para tener otra opción, también se añade la IP del <em>router</em>, puesto que generalmente, es la dirección IP  ofrecida por nuestro proveedor de internet para la resolución de nombres de dominio. </p>
 </li>
 <li>
-<p><strong>Listas de control de acceso</strong>: de manera conveniente se crea una lista de las direcciones IP que podrán realizar consultas a nuestro servidor DNS. En el ejemplo, se creó una lista llamada <em>permitidos</em>, la cual incluye todas las direcciones IP de la red <code class="codehilite"><span class="mi">192</span><span class="p">.</span><span class="mi">168</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="o">/</span><span class="mi">24</span></code>, la dirección local o <code class="codehilite"><span class="n">localhost</span></code> y todas las direcciones IP vinculadas con todas las interfaces de red del servidor, con la palabra reservada <code class="codehilite"><span class="n">localnets</span></code>. Todos los otros pedidos <strong>serán ignorados</strong>, para evitar eventuales utilizaciones abusivas de nuestro servidor DNS por parte de terceros</p>
+<p><strong>Listas de control de acceso</strong>: de manera conveniente se crea una lista de las direcciones IP que podrán realizar consultas a nuestro servidor DNS. En el ejemplo, se creó una lista llamada <em>permitidos</em>, la cual incluye todas las direcciones IP de la red <code class="codehilite">192.168.0.0/24</code>, la dirección local o <code class="codehilite">localhost</code> y todas las direcciones IP vinculadas con todas las interfaces de red del servidor, con la palabra reservada <code class="codehilite">localnets</code>. Todos los otros pedidos <strong>serán ignorados</strong>, para evitar eventuales utilizaciones abusivas de nuestro servidor DNS por parte de terceros</p>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Opciones de permisión</p>
 <p>Además de emplear el nombre de una <em>acl</em> creada (en nuestro ejemplo, <em>permitidos</em>), los valores que podemos utilizar a la hora de establecer los permisos para los distintos <em>hosts</em> son: </p>
 <ul>
-<li><code class="codehilite"><span class="k">none</span></code>: ninguno</li>
-<li><code class="codehilite"><span class="k">any</span></code>: todos</li>
+<li><code class="codehilite">none</code>: ninguno</li>
+<li><code class="codehilite">any</code>: todos</li>
 </ul>
 </div>
 <h2 id="verificando-la-configuracion">Verificando la configuración<a class="headerlink" href="#verificando-la-configuracion" title="Permanent link">&para;</a></h2>
@@ -2203,10 +2239,6 @@ sudo cp named.conf.options named.conf.options.original
               
             
           
-            
-          
-          
-            <script src="../../../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       

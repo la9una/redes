@@ -23,7 +23,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
       
-        <meta name="lang:search.language" content="es, en">
+        <meta name="lang:search.language" content="es">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -377,7 +377,7 @@
     <label class="md-nav__link" for="nav-3-2">
       Sistema de archivos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-2">
         Sistema de archivos
       </label>
@@ -475,7 +475,7 @@
     <label class="md-nav__link" for="nav-3-3">
       Sistema de permisos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-3">
         Sistema de permisos
       </label>
@@ -704,7 +704,7 @@
     <label class="md-nav__link" for="nav-3-4">
       Gestión de software
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-4">
         Gestión de software
       </label>
@@ -752,7 +752,7 @@
     <label class="md-nav__link" for="nav-3-5">
       Automatización
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-5">
         Automatización
       </label>
@@ -800,7 +800,7 @@
     <label class="md-nav__link" for="nav-3-6">
       Networing
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-6">
         Networing
       </label>
@@ -980,7 +980,7 @@
     <label class="md-nav__link" for="nav-6-3">
       dnsmasq
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-3">
         dnsmasq
       </label>
@@ -1016,7 +1016,7 @@
     <label class="md-nav__link" for="nav-6-4">
       BIND
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-4">
         BIND
       </label>
@@ -1059,7 +1059,7 @@
     <label class="md-nav__link" for="nav-6-4-3">
       DNS caché
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="8">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-3">
         DNS caché
       </label>
@@ -1107,7 +1107,7 @@
     <label class="md-nav__link" for="nav-6-4-4">
       DNS local
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="9">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-4">
         DNS local
       </label>
@@ -2077,6 +2077,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Anexos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Anexos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../anexos/programas/" title="Aprogramas" class="md-nav__link">
+      Aprogramas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -2258,7 +2294,7 @@
                 
                   <h1>Permisos</h1>
                 
-                <p>En sistemas tipo <code class="codehilite"><span class="o">*</span><span class="n">NIX</span></code> cada elemento o recurso del mismo (archivos, carpetas, impresoras, dispositivos, enlaces, etc.) posee permisos de acceso que ofrecen un importante mecanismo de seguridad ante accesos no deseados.</p>
+                <p>En sistemas tipo <code class="codehilite">*NIX</code> cada elemento o recurso del mismo (archivos, carpetas, impresoras, dispositivos, enlaces, etc.) posee permisos de acceso que ofrecen un importante mecanismo de seguridad ante accesos no deseados.</p>
 <h2 id="niveles-de-permisos">Niveles de permisos<a class="headerlink" href="#niveles-de-permisos" title="Permanent link">&para;</a></h2>
 <p>Existen 3 categorías (o niveles) de permisos sobre los distintos recursos (archivos, carpetas, impresoras, etc.), a saber:</p>
 <table>
@@ -2271,17 +2307,17 @@
 </thead>
 <tbody>
 <tr>
-<td><code class="codehilite"><span class="n">u</span></code></td>
+<td><code class="codehilite">u</code></td>
 <td>User</td>
 <td>Usuario propietario</td>
 </tr>
 <tr>
-<td><code class="codehilite"><span class="k">g</span></code></td>
+<td><code class="codehilite">g</code></td>
 <td>Group</td>
 <td>Grupo propietario</td>
 </tr>
 <tr>
-<td><code class="codehilite"><span class="n">o</span></code></td>
+<td><code class="codehilite">o</code></td>
 <td>Others</td>
 <td>Otros usuarios</td>
 </tr>
@@ -2300,17 +2336,17 @@
 <tbody>
 <tr>
 <td>Lectura</td>
-<td><code class="codehilite"><span class="n">r</span></code></td>
+<td><code class="codehilite">r</code></td>
 <td>4</td>
 </tr>
 <tr>
 <td>Escritura</td>
-<td><code class="codehilite"><span class="n">w</span></code></td>
+<td><code class="codehilite">w</code></td>
 <td>2</td>
 </tr>
 <tr>
 <td>Ejecucción</td>
-<td><code class="codehilite"><span class="n">x</span></code></td>
+<td><code class="codehilite">x</code></td>
 <td>1</td>
 </tr>
 </tbody>
@@ -2341,32 +2377,32 @@
 </tr>
 </tbody>
 </table>
-<p>Los valores numéricos asignados a cada símbolo (<code class="codehilite"><span class="n">r</span></code>, <code class="codehilite"><span class="n">w</span></code> y <code class="codehilite"><span class="n">x</span></code>) se suman para obtener el valor octal del permiso. Es decir: <code class="codehilite"><span class="n">r</span> <span class="o">+</span> <span class="n">w</span> <span class="o">+</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">=</span> <span class="mi">7</span></code>. Esto debe hacerse para cada nivel de permisos: <code class="codehilite"><span class="k">user</span></code>, <code class="codehilite"><span class="k">group</span></code> y <code class="codehilite"><span class="n">others</span></code>.</p>
+<p>Los valores numéricos asignados a cada símbolo (<code class="codehilite">r</code>, <code class="codehilite">w</code> y <code class="codehilite">x</code>) se suman para obtener el valor octal del permiso. Es decir: <code class="codehilite">r + w + x = 4 + 2 + 1 = 7</code>. Esto debe hacerse para cada nivel de permisos: <code class="codehilite">user</code>, <code class="codehilite">group</code> y <code class="codehilite">others</code>.</p>
 <div class="admonition question">
 <p class="admonition-title">¿Los tipos de permisos se escriben en cualquier orden?<p>La respuesta es NO. Tanto los niveles como los tipos de permisos se leen siempre de izquierda a derecha, y en este orden: </p>
 <ul>
-<li>Para los niveles de permisos: <code class="codehilite"><span class="n">u</span></code>, <code class="codehilite"><span class="k">g</span></code> y <code class="codehilite"><span class="n">o</span></code></li>
-<li>Para los tipos de permisos: <code class="codehilite"><span class="n">r</span></code>, <code class="codehilite"><span class="n">w</span></code> y <code class="codehilite"><span class="n">x</span></code></li>
+<li>Para los niveles de permisos: <code class="codehilite">u</code>, <code class="codehilite">g</code> y <code class="codehilite">o</code></li>
+<li>Para los tipos de permisos: <code class="codehilite">r</code>, <code class="codehilite">w</code> y <code class="codehilite">x</code></li>
 </ul>
 </p>
 </div>
 <h3 id="interpretando-los-permisos">Interpretando los permisos<a class="headerlink" href="#interpretando-los-permisos" title="Permanent link">&para;</a></h3>
 <p>No hay mejor manera de comprender el modo en que se expresan los permisos que practicando. Determiná el valor de los siguientes permisos, expresando tu respuestas en formato simbólico u octal, según corresponda:  </p>
 <ol>
-<li><code class="codehilite"><span class="n">rwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span></code></li>
-<li><code class="codehilite"><span class="n">r</span><span class="c1">--r--r--</span></code></li>
-<li><code class="codehilite"><span class="n">rw</span><span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">-</span><span class="n">x</span></code></li>
-<li><code class="codehilite"><span class="mi">644</span></code></li>
-<li><code class="codehilite"><span class="mi">700</span></code></li>
-<li><code class="codehilite"><span class="mi">442</span></code></li>
+<li><code class="codehilite">rwxr-xr-x</code></li>
+<li><code class="codehilite">r--r--r--</code></li>
+<li><code class="codehilite">rw-rw-r-x</code></li>
+<li><code class="codehilite">644</code></li>
+<li><code class="codehilite">700</code></li>
+<li><code class="codehilite">442</code></li>
 </ol>
 <details class="done"><summary>Respuestas</summary><ol>
-<li><code class="codehilite"><span class="mi">755</span></code></li>
-<li><code class="codehilite"><span class="mi">444</span></code></li>
-<li><code class="codehilite"><span class="mi">665</span></code></li>
-<li><code class="codehilite"><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="c1">--r--</span></code></li>
-<li><code class="codehilite"><span class="n">rwx</span><span class="c1">------</span></code></li>
-<li><code class="codehilite"><span class="n">r</span><span class="c1">--r---w-</span></code></li>
+<li><code class="codehilite">755</code></li>
+<li><code class="codehilite">444</code></li>
+<li><code class="codehilite">665</code></li>
+<li><code class="codehilite">rw-r--r--</code></li>
+<li><code class="codehilite">rwx------</code></li>
+<li><code class="codehilite">r--r---w-</code></li>
 </ol>
 </details>
 <h3 id="consultando-permisos">Consultando permisos<a class="headerlink" href="#consultando-permisos" title="Permanent link">&para;</a></h3>
@@ -2385,10 +2421,10 @@
 <p>Donde:</p>
 <ol>
 <li>La primer columna está compuesta por 10 caracteres: el primer caracter indica el tipo de archivo y los restantes nueve caracteres, sus permisos en formato simbólico. Respecto al primer caracter, puede adquirir los siguientes valores:<ul>
-<li><code class="codehilite"><span class="o">-</span></code> archivo</li>
-<li><code class="codehilite"><span class="n">d</span></code> directorio</li>
-<li><code class="codehilite"><span class="n">l</span></code> enlace simbólico (acceso directo)</li>
-<li><code class="codehilite"><span class="n">b</span></code> dispositivo en bloque (dispositivo de hardware) o archivo binario</li>
+<li><code class="codehilite">-</code> archivo</li>
+<li><code class="codehilite">d</code> directorio</li>
+<li><code class="codehilite">l</code> enlace simbólico (acceso directo)</li>
+<li><code class="codehilite">b</code> dispositivo en bloque (dispositivo de hardware) o archivo binario</li>
 </ul>
 </li>
 <li>La segunda columna indica el número de enlaces que existen hacia el archivo o directorio</li>
@@ -2423,7 +2459,7 @@
 <div class="codehilite"><pre><span></span>chmod a+x archivo.txt
 </pre></div>
 
-<p>Donde la letra <code class="codehilite"><span class="n">a</span></code> indica <strong>todos</strong> (all)</p>
+<p>Donde la letra <code class="codehilite">a</code> indica <strong>todos</strong> (all)</p>
 <div class="admonition waring">
 <p class="admonition-title">Modificando permisos<p>Sólo podemos cambiar permisos a los recursos de los cuáles somos propietarios</p>
 </p>
@@ -2439,7 +2475,7 @@
 <div class="codehilite"><pre><span></span>sudo chown pepe:ventas contabilidad.xls
 </pre></div>
 
-<p>Al archivo <code class="codehilite"><span class="n">resumen</span><span class="p">.</span><span class="n">docx</span></code>, que tiene como usuario propietario al usuario <code class="codehilite"><span class="n">alex</span></code>, y como grupo propietario a <code class="codehilite"><span class="n">alex</span></code>, se le cambia sólo el grupo propietario, dejando sin cambios al usuario propietario del mismo: </p>
+<p>Al archivo <code class="codehilite">resumen.docx</code>, que tiene como usuario propietario al usuario <code class="codehilite">alex</code>, y como grupo propietario a <code class="codehilite">alex</code>, se le cambia sólo el grupo propietario, dejando sin cambios al usuario propietario del mismo: </p>
 <div class="codehilite"><pre><span></span>sudo chown :ventas resumen.docx
 </pre></div>
 
@@ -2451,10 +2487,10 @@
 
 <h5 id="opciones-de-uso-frecuente">Opciones de uso frecuente<a class="headerlink" href="#opciones-de-uso-frecuente" title="Permanent link">&para;</a></h5>
 <ul>
-<li><code class="codehilite"><span class="o">-</span><span class="n">R</span></code> Modifica el grupo de manera recursiva (los cambios se aplican también a los subdirectorios)</li>
+<li><code class="codehilite">-R</code> Modifica el grupo de manera recursiva (los cambios se aplican también a los subdirectorios)</li>
 </ul>
 <h5 id="ejemplo-de-uso_1">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso_1" title="Permanent link">&para;</a></h5>
-<p>Modifica el grupo primario de la carpeta <code class="codehilite"><span class="n">miCarpeta</span></code> por el grupo <code class="codehilite"><span class="n">administradores</span></code>, de manera recursiva:</p>
+<p>Modifica el grupo primario de la carpeta <code class="codehilite">miCarpeta</code> por el grupo <code class="codehilite">administradores</code>, de manera recursiva:</p>
 <div class="codehilite"><pre><span></span>sudo chgrp -R administradores miCarpeta
 </pre></div>
                 
@@ -2555,10 +2591,6 @@
               
             
           
-            
-          
-          
-            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       

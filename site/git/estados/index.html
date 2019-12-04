@@ -23,7 +23,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
       
-        <meta name="lang:search.language" content="es, en">
+        <meta name="lang:search.language" content="es">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -375,7 +375,7 @@
     <label class="md-nav__link" for="nav-3-2">
       Sistema de archivos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-2">
         Sistema de archivos
       </label>
@@ -471,7 +471,7 @@
     <label class="md-nav__link" for="nav-3-3">
       Sistema de permisos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-3">
         Sistema de permisos
       </label>
@@ -531,7 +531,7 @@
     <label class="md-nav__link" for="nav-3-4">
       Gestión de software
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-4">
         Gestión de software
       </label>
@@ -579,7 +579,7 @@
     <label class="md-nav__link" for="nav-3-5">
       Automatización
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-5">
         Automatización
       </label>
@@ -627,7 +627,7 @@
     <label class="md-nav__link" for="nav-3-6">
       Networing
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-6">
         Networing
       </label>
@@ -807,7 +807,7 @@
     <label class="md-nav__link" for="nav-6-3">
       dnsmasq
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-3">
         dnsmasq
       </label>
@@ -843,7 +843,7 @@
     <label class="md-nav__link" for="nav-6-4">
       BIND
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-4">
         BIND
       </label>
@@ -886,7 +886,7 @@
     <label class="md-nav__link" for="nav-6-4-3">
       DNS caché
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="8">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-3">
         DNS caché
       </label>
@@ -934,7 +934,7 @@
     <label class="md-nav__link" for="nav-6-4-4">
       DNS local
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="9">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-4">
         DNS local
       </label>
@@ -2015,6 +2015,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Anexos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Anexos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../anexos/programas/" title="Aprogramas" class="md-nav__link">
+      Aprogramas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -2142,28 +2178,28 @@
 <h3 id="1-sin-seguimiento-untracked">1. Sin seguimiento (<em>untracked</em>)<a class="headerlink" href="#1-sin-seguimiento-untracked" title="Permanent link">&para;</a></h3>
 <p>Son los archivos que nunca fueron agregados al repositorio. Por ejemplo, cuando agrego archivos nuevos a mi proyecto.</p>
 <p>Ejemplo de salida: </p>
-<div class="codehilite"><pre><span></span><span class="n">Untracked</span> <span class="n">files</span><span class="p">:</span>
-<span class="k">index</span><span class="p">.</span><span class="n">html</span>
+<div class="codehilite"><pre><span></span>Untracked files:
+index.html
 </pre></div>
 
 <h3 id="2-modificado-modified">2. Modificado (<em>modified</em>)<a class="headerlink" href="#2-modificado-modified" title="Permanent link">&para;</a></h3>
 <p>Las modificaciones todavı́a no están marcadas como <em>staged</em>. Por ejemplo, cuando realizo modificaciones en archivos o carpetas que git "sigue".</p>
 <p>Ejemplo de salida: </p>
-<div class="codehilite"><pre><span></span><span class="nv">Changes</span> <span class="nv">not</span> <span class="nv">staged</span> <span class="k">for</span> <span class="nv">commit</span>:
-<span class="nv">modified</span>: <span class="nv">index</span>.<span class="nv">html</span>
+<div class="codehilite"><pre><span></span>Changes not staged for commit:
+modified: index.html
 </pre></div>
 
 <h3 id="3-preparado-staged">3. Preparado (<em>staged</em>)<a class="headerlink" href="#3-preparado-staged" title="Permanent link">&para;</a></h3>
-<p>Las modificaciones están en <em>staged</em> e irán en la próxima confirmación de cambios (<em>commit</em>). Por ejemplo, cuando agrego las modificaciones realizadas a los archivos o carpetas de mi proyecto con el comando <code class="codehilite"><span class="k">add</span></code>.</p>
+<p>Las modificaciones están en <em>staged</em> e irán en la próxima confirmación de cambios (<em>commit</em>). Por ejemplo, cuando agrego las modificaciones realizadas a los archivos o carpetas de mi proyecto con el comando <code class="codehilite">add</code>.</p>
 <p>Ejemplo de salida: </p>
-<div class="codehilite"><pre><span></span><span class="n">Changes</span> <span class="k">to</span> <span class="n">be</span> <span class="k">committed</span><span class="p">:</span>
-<span class="k">new</span> <span class="n">file</span><span class="p">:</span> <span class="k">index</span><span class="p">.</span><span class="n">html</span>
+<div class="codehilite"><pre><span></span>Changes to be committed:
+new file: index.html
 </pre></div>
 
 <h3 id="4-confirmado-committed">4. Confirmado (<em>committed</em>)<a class="headerlink" href="#4-confirmado-committed" title="Permanent link">&para;</a></h3>
 <p>Las modificaciones están guardadas con un mensaje que explica los cambios realizados. Por ejemplo, el estado de los archivos y carpetas de mi proyecto una vez que realicé un <em>commit</em>.</p>
 <p>Ejemplo de salida: </p>
-<div class="codehilite"><pre><span></span><span class="k">nothing</span> <span class="k">to</span> <span class="k">commit</span><span class="p">,</span> <span class="n">working</span> <span class="n">directory</span> <span class="n">clean</span>
+<div class="codehilite"><pre><span></span>nothing to commit, working directory clean
 </pre></div>
 
 <h2 id="las-tres-secciones-de-un-proyecto-git">Las tres secciones de un proyecto git<a class="headerlink" href="#las-tres-secciones-de-un-proyecto-git" title="Permanent link">&para;</a></h2>
@@ -2300,10 +2336,6 @@
               
             
           
-            
-          
-          
-            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       

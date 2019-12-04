@@ -23,7 +23,7 @@
       
         <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
       
-        <meta name="lang:search.language" content="es, en">
+        <meta name="lang:search.language" content="es">
       
         <meta name="lang:search.pipeline.stopwords" content="True">
       
@@ -377,7 +377,7 @@
     <label class="md-nav__link" for="nav-3-2">
       Sistema de archivos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-2">
         Sistema de archivos
       </label>
@@ -473,7 +473,7 @@
     <label class="md-nav__link" for="nav-3-3">
       Sistema de permisos
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-3">
         Sistema de permisos
       </label>
@@ -533,7 +533,7 @@
     <label class="md-nav__link" for="nav-3-4">
       Gestión de software
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-4">
         Gestión de software
       </label>
@@ -581,7 +581,7 @@
     <label class="md-nav__link" for="nav-3-5">
       Automatización
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="6">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-5">
         Automatización
       </label>
@@ -631,7 +631,7 @@
     <label class="md-nav__link" for="nav-3-6">
       Networing
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="7">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-6">
         Networing
       </label>
@@ -866,7 +866,7 @@
     <label class="md-nav__link" for="nav-6-3">
       dnsmasq
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="4">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-3">
         dnsmasq
       </label>
@@ -902,7 +902,7 @@
     <label class="md-nav__link" for="nav-6-4">
       BIND
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="5">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-6-4">
         BIND
       </label>
@@ -945,7 +945,7 @@
     <label class="md-nav__link" for="nav-6-4-3">
       DNS caché
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="8">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-3">
         DNS caché
       </label>
@@ -993,7 +993,7 @@
     <label class="md-nav__link" for="nav-6-4-4">
       DNS local
     </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="9">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="3">
       <label class="md-nav__title" for="nav-6-4-4">
         DNS local
       </label>
@@ -1963,6 +1963,42 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
+    
+    <label class="md-nav__link" for="nav-15">
+      Anexos
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-15">
+        Anexos
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../anexos/programas/" title="Aprogramas" class="md-nav__link">
+      Aprogramas
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -2166,7 +2202,7 @@ iface enp0s3 inet static
 <h2 id="configurando-proxy-de-la-red">Configurando Proxy de la red<a class="headerlink" href="#configurando-proxy-de-la-red" title="Permanent link">&para;</a></h2>
 <p>Si nuestro equipo se encuentra detrás de un proxy, tendremos que realizar configuraciones adicionales. </p>
 <ol>
-<li>Crear un archivo vacío dentro de <code class="codehilite"><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span></code> llamado <code class="codehilite"><span class="n">apt</span><span class="o">-</span><span class="n">conf</span></code>:</li>
+<li>Crear un archivo vacío dentro de <code class="codehilite">/etc/apt</code> llamado <code class="codehilite">apt-conf</code>:</li>
 </ol>
 <div class="codehilite"><pre><span></span>sudo vi /etc/apt/apt.conf
 </pre></div>
@@ -2180,10 +2216,10 @@ iface enp0s3 inet static
 
 <div class="admonition warning">
 <p class="admonition-title">Proxy con autenticación / seguro<p>En caso que necesitamos autenticarnos en el servidor proxy, cambiaremos la línea </p>
-<p><code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//&lt;</span><span class="n">direccion</span><span class="o">-</span><span class="n">IP</span><span class="o">-</span><span class="n">del</span><span class="o">-</span><span class="n">proxy</span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n">puerto</span><span class="o">&gt;</span></code> </p>
+<p><code class="codehilite">http://&lt;direccion-IP-del-proxy&gt;:&lt;puerto&gt;</code> </p>
 <p>por </p>
-<p><code class="codehilite"><span class="n">http</span><span class="p">:</span><span class="o">//&lt;</span><span class="n">usuario</span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n">contraseña</span><span class="o">&gt;@&lt;</span><span class="n">direccion</span><span class="o">-</span><span class="n">IP</span><span class="o">-</span><span class="n">del</span><span class="o">-</span><span class="n">proxy</span><span class="o">&gt;</span><span class="p">:</span><span class="o">&lt;</span><span class="n">puerto</span><span class="o">&gt;</span></code> </p>
-<p>Si se trata de un servidor seguro, simplemente cambiaremos <code class="codehilite"><span class="n">http</span></code> por <code class="codehilite"><span class="n">https</span></code></p>
+<p><code class="codehilite">http://&lt;usuario&gt;:&lt;contraseña&gt;@&lt;direccion-IP-del-proxy&gt;:&lt;puerto&gt;</code> </p>
+<p>Si se trata de un servidor seguro, simplemente cambiaremos <code class="codehilite">http</code> por <code class="codehilite">https</code></p>
 </p>
 </div>
                 
@@ -2284,10 +2320,6 @@ iface enp0s3 inet static
               
             
           
-            
-          
-          
-            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
           
         
       
