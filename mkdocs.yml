@@ -14,7 +14,7 @@ copyright: '2019 &nbsp; Raul Jesus Lopez'
 # Tema
 theme:
   name: 'material'
-#  custom_dir: 'material'
+  custom_dir: 'material'
 #theme:
 #  name: null
 #  custom_dir: 'mkdocs-material/material'
@@ -31,8 +31,8 @@ theme:
 # Extra
 extra:
   search:
-    language: 'es, en'
-  disqus: 'rauljesus-xyz'
+    language: 'es'
+#  disqus: 'rauljesus-xyz'
   social:
     - type: 'twitter'
       link: 'https://twitter.com/la9una'
