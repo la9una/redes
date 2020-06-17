@@ -6,71 +6,73 @@ site_url: http://www.rauljesus.xyz/redes
 
 # Repositorio
 repo_name: 'Ver en GitHub'
-repo_url: 'https://github.com/la9una/redes'
+repo_url: 'https://github.com/la9una/web'
 
 # Copyright
-copyright: '2019 &nbsp; Raul Jesus Lopez'
+copyright: 'Raul Jesus Lopez'
 
 # Tema
 theme:
   name: 'material'
-  custom_dir: 'material'
-#theme:
-#  name: null
-#  custom_dir: 'mkdocs-material/material'
   language: 'es'
+  icon:
+ #   logo: material/library
+    logo: fontawesome/solid/graduation-cap
+    repo: fontawesome/brands/git-alt
   palette:
     primary: 'green'
     accent: 'green'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
-#  feature:
-#    tabs: true
+  feature:
+    tabs: true
 
 # Extra
 extra:
-  search:
-    language: 'es'
-#  disqus: 'rauljesus-xyz'
+  disqus: 'rauljesus-xyz'
+  manifest: manifest.webmanifest
   social:
-    - type: 'twitter'
+    - icon: fontawesome/brands/twitter
       link: 'https://twitter.com/la9una'
-    - type: 'facebook'
+    - icon: fontawesome/brands/facebook-f
       link: 'https://www.facebook.com/rauljesuslopez'
-    - type: 'github'
+    - icon: fontawesome/brands/github
       link: 'https://github.com/la9una'
-#    - type: 'linkedin'
-#      link: 'https://de.linkedin.com/in/john-doe'
-
-## CSS Adicional
-extra_css:
-  - 'stylesheets/extra.css'
 
 # Extensiones
 markdown_extensions:
   - admonition
-#  - codehilite(guess_lang=false,linenums=true)
-#  - codehilite(guess_lang=false)
   - codehilite
   - toc:
       permalink: true
   - footnotes
   - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
   - pymdownx.caret
+  - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.keys
+  - pymdownx.magiclink
   - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.tabbed
   - pymdownx.tilde
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
 
 extra_javascript:
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+
+plugins:
+  - search # necessary for search to work
+  - git-revision-date-localized:
+      type: date
 
 
 ######################################################################
@@ -86,12 +88,12 @@ nav:
 - GNU/Linux:
   - Introducción:
     - ¿Por qué GNU/Linux?: 'gnuLinux/userWhyLinux.md'
-    - La terminal: 'gnuLinux/terminal.md'
 #    - La terminal de comandos: 'terminal.md'
 #    - Sistema de archivos: 'sistemaArchivos.md'
-    - Tips: 'gnuLinux/tips.md'
-  - Sistema de archivos:
-    - FHS: 'gnuLinux/fhs.md'    
+#    - Tips: 'gnuLinux/tips.md'
+  - Comandos básicos:
+#    - FHS: 'gnuLinux/fhs.md'    
+    - La terminal: 'gnuLinux/terminal.md'
     - Archivos y carpetas: 'gnuLinux/userFilesystem.md'
     - Compresión y descompresión: 'gnuLinux/userCompression.md'
     - El editor nano: 'gnuLinux/userNano.md'
@@ -106,7 +108,7 @@ nav:
     - Repositorio local: 'gnuLinux/repositoriosITEL.md'
   - Automatización:
     - Scripts: 'gnuLinux/userBashScripting.md'
-    - Tareas: 'gnuLinux/tasks.md'
+#    - Tareas: 'gnuLinux/tasks.md'
   - Networing: 
     - Introducción: 'networking/index.md'
     - Interfaz de red: 'gnuLinux/netwokinterfaces.md'
