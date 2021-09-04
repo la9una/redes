@@ -99,7 +99,6 @@ nav:
 - Inicio: 'index.md'
 - GNU/Linux:
   - Historia: 'gnuLinux/basics-history.md'
-  - ¿Por qué GNU/Linux?: 'gnuLinux/basics-why-linux.md'
   - GUI vs CLI: 'gnuLinux/basics-desktop-terminal.md'
   - Comandos básicos:
     - Archivos y carpetas: 'gnuLinux/basics-filesystem.md'
