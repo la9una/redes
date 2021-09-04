@@ -4,7 +4,7 @@ Veamos un esquema de la arquitectura de sistemas basados en GNU/Linux:
 
 ![Arquitectura de GNU/Linux](imgGNULinux/linux-architecture.jpg)
 
-Como se puede apreciar, el entorno gráfico (GUI) se encuentra totalmente aislado del emulador de terminal (CLI). Por tanto, en sistemas basados en GNU/Linux podemos prescindir absolutamente del entorno gráfico para operar en el sistema, a diferencia de otros sistemas como Microsoft Windows en donde el entorno de escritorio forma parate del _kernel_ del sistema. 
+Como se puede apreciar, el entorno gráfico (GUI) se encuentra totalmente aislado de la consola de comandos (CLI). Por tanto, en sistemas basados en GNU/Linux podemos prescindir absolutamente del entorno gráfico para operar en el sistema, a diferencia de otros sistemas como Microsoft Windows en donde el entorno de escritorio forma parate del _kernel_ del sistema. 
 
 Hechas las aclaraciones, cabe resaltar que en ambientes de administradores de sistemas y desarrollo se prefiere el uso de la terminal para gestionar las tareas del sistema. Y esto es así por diversas razones: 
 
