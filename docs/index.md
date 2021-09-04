@@ -1,0 +1,13 @@
+# Bienvenid@s
+
+El presente espacio recopila teoría y ejercicios prácticos sobre temas relacionados con la implementación de redes y servicios utilizando, siempre que sea posible, software de código abierto. Los contenidos intentan cubrir los objetivos propuestos en el diseño curricular de la materia **Instalación, mantenimiento y reparación de redes informáticas** correspondiente al séptimo año de estudios de la escuela secundaria técnica, con orientación **Técnico en Informática Profesional y Personal**, en Buenos Aires, Argentina. 
+
+:fontawesome-brands-telegram: &nbsp;[t.me/rauljesus](https://t.me/rauljesus)
+
+![GNU/Linux Networking](https://cdn.lynda.com/course/731746/731746-636652783882258193-16x9.jpg "GNU/Linux Networking")
+_Fuente: lynda.com_
+
+
+
+
+

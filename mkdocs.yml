@@ -1,0 +1,142 @@
+# Información general
+site_name: 'Redes'
+site_description: 'Instalación, mantenimiento y reparación de redes informáticas'
+site_author: 'Raul Jesus Lopez'
+site_url: http://www.rauljesus.xyz/redes
+
+# Repositorio
+repo_name: 'Ver en GitHub'
+repo_url: 'https://github.com/la9una/redes'
+
+# Copyright
+copyright: 'Raul Jesus Lopez'
+
+# Tema
+theme:
+  name: 'material'
+  language: 'es'
+  icon:
+    logo: fontawesome/solid/graduation-cap
+    repo: fontawesome/brands/git-alt
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: 'deep purple'
+      accent: 'deep purple'
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: 'deep purple'
+      accent: 'deep purple'
+      toggle:
+        icon: material/toggle-switch
+        name: Cambiar a modo claro
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  features:
+  #  - navigation.tabs
+  #  - navigation.tabs.sticky
+    - navigation.sections
+  #  - header.autohide
+# Extra
+extra:
+  disqus: 'rauljesus-xyz'
+  manifest: manifest.webmanifest
+  social:
+    - icon: fontawesome/brands/twitter
+      link: 'https://twitter.com/la9una'
+    - icon: fontawesome/brands/facebook-f
+      link: 'https://www.facebook.com/rauljesuslopez'
+    - icon: fontawesome/brands/instagram
+      link: 'https://www.instagram.com/la9una'
+    - icon: fontawesome/brands/github
+      link: 'https://github.com/la9una'
+
+# Extensiones
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - footnotes
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+####################################################################
+######################## MENU DE NAVEGACIÓN ########################
+####################################################################
+
+# Páginas
+nav: 
+- Inicio: 'index.md'
+- GNU/Linux:
+  - Historia: 'gnuLinux/basics-history.md'
+  - ¿Por qué GNU/Linux?: 'gnuLinux/basics-why-linux.md'
+  - Comandos básicos:
+    - La terminal: 'gnuLinux/basics-terminal.md'
+    - Archivos y carpetas: 'gnuLinux/basics-filesystem.md'
+    - Compresión y descompresión: 'gnuLinux/basics-compression.md'
+    - El editor nano: 'gnuLinux/basics-nano.md'
+    - El editor vim: 'gnuLinux/basics-vim.md'
+    - Búsquedas: 'gnuLinux/basics-search.md'
+    - Scripting: 'gnuLinux/basics-bash-scripting.md'
+    - Tips: 'gnuLinux/basics-tips.md'
+
+  - Redes:
+    - Interfaces de red: 'gnuLinux/network-interfaces.md'
+  - Gestión de software:
+    - Repositorios: 'gnuLinux/software-repositories.md'
+    - Paquetes: 'gnuLinux/software-packages.md'
+  - Sistema de permisos:
+    - Usuarios: 'gnuLinux/access-users.md'
+    - Grupos: 'gnuLinux/access-groups.md'
+    - Permisos: 'gnuLinux/access-permissions.md'
+- Servidor web:
+  - LAMP:
+        - ¿Qué es LAMP?: 'lamp/index.md'
+        - Instalación: 'lamp/lamp-install.md'
+        - Gestión básica: 'lamp/lamp-basics.md'
+        - Web de usuario: 'lamp/lamp-userdir.md'
+        - Hosts virtuales: 'lamp/lamp-virtualhosts.md'
+    #    - WebDav: 'lamp/webDav.md'
+        - Ejercicios: 'lamp/lamp-exercises.md'
+- Servidor de nombres: 
+    - Introducción: 'dns/index.md'
+    - El archivo hosts: 'dns/dns-hosts.md'
+    - BIND: 
+        - Introducción: 'dns/bind/index.md'
+        - Instalación: 'dns/bind/bind-install.md'
+        - DNS caché: 
+            - Teoría: 'dns/bind/bind-cache.md'
+            - Ejemplo práctico: 'dns/bind/bind-cache-example.md'
+        - DNS local: 
+            - Archivos de zona: 'dns/bind/bind-zones.md'
+            - Ejemplo - Zonas: 'dns/bind/bind-zones-example.md'
+            - Ejemplo - Zonas múltiples: 'dns/bind/bind-zones-example-multiple.md'
+    - Configurando clientes: 'dns/dns-clients.md'
+    - Consultas DNS: 'dns/dns-query.md'
