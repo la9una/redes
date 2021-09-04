@@ -1,12 +1,13 @@
 #!/bin/bash
 # Script para pushear mkdocs en GitHub
 version=docs
-echo "*************************************"
-echo "Guardando cambios en la rama main"
-echo "*************************************"
+echo "**********************************"
+echo "Enviando cambios de la rama main"
+echo "**********************************"
 sleep 1
 echo "[OK]"
 git checkout main
+mike deploy $version
 git add .
 echo "Ingrese texto del commit"
 read commitext
@@ -15,16 +16,15 @@ read commitext
 git commit -m "$commitext"
 git push
 echo "[OK]"
-echo "*****************************"
-echo "Generando el sitio estático"
-echo "*****************************"
-mike deploy $version
+echo "**************************************"
+echo "Enviando cambios en la rama gh-pages"
+echo "**************************************"
 git checkout gh-pages
 git push
 git checkout main
 sleep 1
 echo "[OK]"
-echo "*************************************"
+echo "*********************************"
 echo "Tareas realizadas exitosamente!"
-echo "*************************************"
+echo "*********************************"
 
