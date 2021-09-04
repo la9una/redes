@@ -1,6 +1,6 @@
 # El editor de textos vim
 
-[VIM](http://www.vim.org/) (del inglés _Vi IMproved_ ó _Vi mejorado_, en español) es un editor de texto basado en terminal creado a partir del editor [vi](https://es.wikipedia.org/wiki/Vi), presente en todos los sistemas UNIX. Dada su naturaleza, al igual que otros editores similares como [nano](userNano.md) se gestiona a través del teclado.
+[VIM](http://www.vim.org/) (del inglés _Vi IMproved_ ó _Vi mejorado_, en español) es un editor de texto basado en terminal creado a partir del editor [vi](https://es.wikipedia.org/wiki/Vi), presente en todos los sistemas UNIX. Dada su naturaleza, al igual que otros editores similares como [nano](basics-nano.md) se gestiona a través del teclado.
 
 El desarrollo de este poderoso editor se remonta al año 1991 y desde aquel entonces no ha cesado de incorporar características. Amado u odiado, este editor [ofrece múltiples opciones](https://es.wikipedia.org/wiki/Vim#Principales_funcionalidades) en una sola herramienta, siendo altamente configurable para adaptarse a distintas necesidades de programadores y profesionales de la informática. 
 
