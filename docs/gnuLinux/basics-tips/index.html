@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#shellinabox" class="md-skip">
+        <a href="#visualizando-archivos-y-carpetas-en-forma-de-arbol" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -423,18 +423,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#shellinabox" class="md-nav__link">
-    shellinabox
+  <a href="#visualizando-archivos-y-carpetas-en-forma-de-arbol" class="md-nav__link">
+    Visualizando archivos y carpetas en forma de árbol
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tree" class="md-nav__link">
-    tree
-  </a>
-  
-    <nav class="md-nav" aria-label="tree">
+    <nav class="md-nav" aria-label="Visualizando archivos y carpetas en forma de árbol">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -453,6 +446,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecutando-la-terminal-en-el-navegador" class="md-nav__link">
+    Ejecutando la terminal en el navegador
+  </a>
   
 </li>
       
@@ -1029,18 +1029,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#shellinabox" class="md-nav__link">
-    shellinabox
+  <a href="#visualizando-archivos-y-carpetas-en-forma-de-arbol" class="md-nav__link">
+    Visualizando archivos y carpetas en forma de árbol
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tree" class="md-nav__link">
-    tree
-  </a>
-  
-    <nav class="md-nav" aria-label="tree">
+    <nav class="md-nav" aria-label="Visualizando archivos y carpetas en forma de árbol">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1059,6 +1052,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejecutando-la-terminal-en-el-navegador" class="md-nav__link">
+    Ejecutando la terminal en el navegador
+  </a>
   
 </li>
       
@@ -1081,27 +1081,8 @@
                 
                   <h1>Tips</h1>
                 
-                <h2 id="shellinabox">shellinabox<a class="headerlink" href="#shellinabox" title="Permanent link">&para;</a></h2>
-<p>Shellinabox es una aplicación que nos permite ejecutar un emulador de terminal que funciona en un navegador web. </p>
-<p>Para instalar esta aplicación ejecutamos: </p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">sudo</span> apt install shellinabox
-</code></pre></div>
-Luego, tendremos que editar el archivo de configuración de la aplicación: </p>
-<div class="highlight"><pre><span></span><code><span class="nb">vim</span> <span class="sx">/etc/default/shellinabox</span>
-</code></pre></div>
-<p>Una vez abierto el archivo deshabilitaremos el protocolo <code>https</code>. Para ello tendremos que modificar la siguiente línea:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">SHELLINABOX_ARGS</span>=<span class="s2">&quot;--no-beep&quot;</span>
-</code></pre></div>
-<p>Para que quede de la siguiente manera: </p>
-<div class="highlight"><pre><span></span><code><span class="nb">SHELLINABOX_ARGS</span>=<span class="s2">&quot;--no-beep --disable-ssl&quot;</span> 
-</code></pre></div>
-<p>Reiniciamos el servicio: </p>
-<div class="highlight"><pre><span></span><code><span class="nb">sudo</span> service shellinabox restart
-</code></pre></div>
-<p>Y acedemos desde un navegador a: </p>
-<div class="highlight"><pre><span></span><code><span class="nb">http</span>://ip_de_la_maquina:4200
-</code></pre></div>
-<h2 id="tree">tree<a class="headerlink" href="#tree" title="Permanent link">&para;</a></h2>
+                <p>Sugerencias, trucos para mejorar tu experiencia usando GNU/Linux</p>
+<h2 id="visualizando-archivos-y-carpetas-en-forma-de-arbol">Visualizando archivos y carpetas en forma de árbol<a class="headerlink" href="#visualizando-archivos-y-carpetas-en-forma-de-arbol" title="Permanent link">&para;</a></h2>
 <p>La herramienta <code>tree</code> como su nombre lo indica, muestra el sistema de archivos bajo la forma de árbol, ofreciendo una experiencia más usable. </p>
 <p>Es necesario instalarla, ejecutando: </p>
 <div class="highlight"><pre><span></span><code><span class="nb">sudo</span> apt install tree
@@ -1121,6 +1102,26 @@ Luego, tendremos que editar el archivo de configuración de la aplicación: </p>
 <p><div class="highlight"><pre><span></span><code><span class="nb">tree</span> -pug carpeta
 </code></pre></div>
 Muestra el contenido de <code>carpeta</code> en forma de árbol, exhibiendo usuarios y grupos así como los permisos. </p>
+<h2 id="ejecutando-la-terminal-en-el-navegador">Ejecutando la terminal en el navegador<a class="headerlink" href="#ejecutando-la-terminal-en-el-navegador" title="Permanent link">&para;</a></h2>
+<p>Shellinabox es una aplicación que nos permite ejecutar un emulador de terminal que funciona en un navegador web. </p>
+<p>Para instalar esta aplicación ejecutamos: </p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">sudo</span> apt install shellinabox
+</code></pre></div>
+Luego, tendremos que editar el archivo de configuración de la aplicación: </p>
+<div class="highlight"><pre><span></span><code><span class="nb">vim</span> <span class="sx">/etc/default/shellinabox</span>
+</code></pre></div>
+<p>Una vez abierto el archivo deshabilitaremos el protocolo <code>https</code>. Para ello tendremos que modificar la siguiente línea:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">SHELLINABOX_ARGS</span>=<span class="s2">&quot;--no-beep&quot;</span>
+</code></pre></div>
+<p>Para que quede de la siguiente manera: </p>
+<div class="highlight"><pre><span></span><code><span class="nb">SHELLINABOX_ARGS</span>=<span class="s2">&quot;--no-beep --disable-ssl&quot;</span> 
+</code></pre></div>
+<p>Reiniciamos el servicio: </p>
+<div class="highlight"><pre><span></span><code><span class="nb">sudo</span> service shellinabox restart
+</code></pre></div>
+<p>Y acedemos desde un navegador a: </p>
+<div class="highlight"><pre><span></span><code><span class="nb">http</span>://ip_de_la_maquina:4200
+</code></pre></div>
                 
               
               
