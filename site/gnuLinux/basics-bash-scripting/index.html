@@ -20,7 +20,7 @@
     
     
       
-        <title>Scripting - Redes</title>
+        <title>Bash scripting - Redes</title>
       
     
     
@@ -103,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Scripting
+              Bash scripting
             
           </span>
         </div>
@@ -390,12 +390,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Scripting
+          Bash scripting
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Scripting
+        Bash scripting
       </a>
       
         
@@ -414,6 +414,47 @@
   <a href="#creando-scripts" class="md-nav__link">
     Creando scripts
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    Ejemplos
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hola-mundo" class="md-nav__link">
+    Hola mundo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificar-si-el-usuario-es-root" class="md-nav__link">
+    Verificar si el usuario es root
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificando-la-existencia-de-un-directorio-antes-de-crearlo" class="md-nav__link">
+    Verificando la existencia de un directorio antes de crearlo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fecha-actual" class="md-nav__link">
+    Fecha actual
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1008,6 +1049,47 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ejemplos" class="md-nav__link">
+    Ejemplos
+  </a>
+  
+    <nav class="md-nav" aria-label="Ejemplos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hola-mundo" class="md-nav__link">
+    Hola mundo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificar-si-el-usuario-es-root" class="md-nav__link">
+    Verificar si el usuario es root
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificando-la-existencia-de-un-directorio-antes-de-crearlo" class="md-nav__link">
+    Verificando la existencia de un directorio antes de crearlo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fecha-actual" class="md-nav__link">
+    Fecha actual
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1025,9 +1107,10 @@
                   </a>
                 
                 
-                  <h1>Scripting</h1>
+                  <h1>Bash scripting</h1>
                 
-                <h2 id="creando-scripts">Creando scripts<a class="headerlink" href="#creando-scripts" title="Permanent link">&para;</a></h2>
+                <p>Bash es uno de los intérpretes de comandos más populares empleados en sistemas GNU/Linux. Además, consituye en sí mismo un lengua de programación con el que es posible desarrollar scripts para automatizar todo tipo de tareas. </p>
+<h2 id="creando-scripts">Creando scripts<a class="headerlink" href="#creando-scripts" title="Permanent link">&para;</a></h2>
 <p>La terminal de GNU/Linux, en la mayoria de las distribuciones, emplea BASH un emulador de terminal que posee su propio lenguaje de programación, denominado <em>Bash scripting</em>. </p>
 <p>Para crear un script bastará con seguir los siguientes pasos: </p>
 <p>[1.] Crear un archivo de texto</p>
@@ -1043,6 +1126,43 @@
 </code></pre></div>
 <p>o bien</p>
 <div class="highlight"><pre><span></span><code>./nombreScript
+</code></pre></div>
+<h2 id="ejemplos">Ejemplos<a class="headerlink" href="#ejemplos" title="Permanent link">&para;</a></h2>
+<p>Hé aquí algunos ejemplos de las cosas que se pueden hacer con Bash. Por supuesto, no trata de ser una muestra exhaustiva, solo ilustrativa. Disponemos de una basta información en internet con <a href="https://devdocs.io/bash/">guías y manuales de uso</a>.</p>
+<h3 id="hola-mundo">Hola mundo<a class="headerlink" href="#hola-mundo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="nb">echo</span> <span class="s2">&quot;Hola mundo!&quot;</span>
+</code></pre></div>
+<h3 id="verificar-si-el-usuario-es-root">Verificar si el usuario es root<a class="headerlink" href="#verificar-si-el-usuario-es-root" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="nv">$EUID</span> -ne <span class="m">0</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+   <span class="nb">echo</span> <span class="s2">&quot;This script must be run as root&quot;</span> 
+   <span class="nb">exit</span> <span class="m">1</span>
+<span class="k">fi</span>
+</code></pre></div>
+<h3 id="verificando-la-existencia-de-un-directorio-antes-de-crearlo">Verificando la existencia de un directorio antes de crearlo<a class="headerlink" href="#verificando-la-existencia-de-un-directorio-antes-de-crearlo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="nb">echo</span> <span class="s2">&quot;Enter directory name&quot;</span>
+<span class="nb">read</span> ndir
+<span class="k">if</span> <span class="o">[</span> -d <span class="s2">&quot;</span><span class="nv">$ndir</span><span class="s2">&quot;</span> <span class="o">]</span>
+<span class="k">then</span>
+<span class="nb">echo</span> <span class="s2">&quot;Directory exist&quot;</span>
+<span class="k">else</span>
+<span class="sb">`</span>mkdir <span class="nv">$ndir</span><span class="sb">`</span>
+<span class="nb">echo</span> <span class="s2">&quot;Directory created&quot;</span>
+<span class="k">fi</span>
+</code></pre></div>
+<h3 id="fecha-actual">Fecha actual<a class="headerlink" href="#fecha-actual" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="nv">Year</span><span class="o">=</span><span class="sb">`</span>date +%Y<span class="sb">`</span>
+<span class="nv">Month</span><span class="o">=</span><span class="sb">`</span>date +%m<span class="sb">`</span>
+<span class="nv">Day</span><span class="o">=</span><span class="sb">`</span>date +%d<span class="sb">`</span>
+<span class="nv">Hour</span><span class="o">=</span><span class="sb">`</span>date +%H<span class="sb">`</span>
+<span class="nv">Minute</span><span class="o">=</span><span class="sb">`</span>date +%M<span class="sb">`</span>
+<span class="nv">Second</span><span class="o">=</span><span class="sb">`</span>date +%S<span class="sb">`</span>
+<span class="nb">echo</span> <span class="sb">`</span>date<span class="sb">`</span>
+<span class="nb">echo</span> <span class="s2">&quot;Current Date is: </span><span class="nv">$Day</span><span class="s2">-</span><span class="nv">$Month</span><span class="s2">-</span><span class="nv">$Year</span><span class="s2">&quot;</span>
+<span class="nb">echo</span> <span class="s2">&quot;Current Time is: </span><span class="nv">$Hour</span><span class="s2">:</span><span class="nv">$Minute</span><span class="s2">:</span><span class="nv">$Second</span><span class="s2">&quot;</span>
 </code></pre></div>
                 
               

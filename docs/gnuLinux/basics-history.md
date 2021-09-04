@@ -26,7 +26,7 @@ Muchos ven en este mensaje el nacimiento de Linux. A decir verdad, Linus sólo h
 
 Años antes un tal [Richard Stallman](https://es.wikipedia.org/wiki/Richard_Stallman) físico y programador estadounidense estaba cocinando junto a su equipo un proyecto de software libre que finalmente fue liberado en 1983: [el proyecto GNU](https://www.gnu.org/home.es.html). Dos años más tarde, fundaría la [Free Software Foundation](https://www.fsf.org/es). 
 
-Finalemnte, ambos sumaron esfuerzos, ya que uno aportaba lo que le faltaba al otro. Así nació [Linux ó GNU/Linux](https://es.wikipedia.org/wiki/Controversia_por_la_denominaci%C3%B3n_GNU/Linux) (Kernel Linux + Software GNU)
+Finalmente, ambos sumaron esfuerzos, ya que uno aportaba lo que le faltaba al otro. Así nació [Linux ó GNU/Linux](https://es.wikipedia.org/wiki/Controversia_por_la_denominaci%C3%B3n_GNU/Linux) (Kernel Linux + Software GNU)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MNXIXDbEmVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

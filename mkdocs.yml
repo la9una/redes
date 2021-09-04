@@ -106,7 +106,7 @@ nav:
     - El editor nano: 'gnuLinux/basics-nano.md'
     - El editor vim: 'gnuLinux/basics-vim.md'
     - Búsquedas: 'gnuLinux/basics-search.md'
-    - Scripting: 'gnuLinux/basics-bash-scripting.md'
+    - Bash scripting: 'gnuLinux/basics-bash-scripting.md'
     - Tips: 'gnuLinux/basics-tips.md'
 
   - Redes:

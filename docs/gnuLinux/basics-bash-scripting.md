@@ -1,3 +1,7 @@
+Bash es uno de los intérpretes de comandos más populares empleados en sistemas GNU/Linux. Además, consituye en sí mismo un lengua de programación con el que es posible desarrollar scripts para automatizar todo tipo de tareas. 
+
+
+
 ## Creando scripts
 La terminal de GNU/Linux, en la mayoria de las distribuciones, emplea BASH un emulador de terminal que posee su propio lenguaje de programación, denominado _Bash scripting_. 
 
@@ -30,4 +34,54 @@ o bien
 
 ```
 ./nombreScript
+```
+
+## Ejemplos
+Hé aquí algunos ejemplos de las cosas que se pueden hacer con Bash. Por supuesto, no trata de ser una muestra exhaustiva, solo ilustrativa. Disponemos de una basta información en internet con [guías y manuales de uso](https://devdocs.io/bash/).
+
+
+### Hola mundo
+```bash
+#!/bin/bash
+echo "Hola mundo!"
+```
+
+### Verificar si el usuario es root
+
+```bash
+#!/bin/bash
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
+fi
+```
+
+### Verificando la existencia de un directorio antes de crearlo
+
+```bash
+#!/bin/bash
+echo "Enter directory name"
+read ndir
+if [ -d "$ndir" ]
+then
+echo "Directory exist"
+else
+`mkdir $ndir`
+echo "Directory created"
+fi
+```
+
+### Fecha actual
+
+```bash
+#!/bin/bash
+Year=`date +%Y`
+Month=`date +%m`
+Day=`date +%d`
+Hour=`date +%H`
+Minute=`date +%M`
+Second=`date +%S`
+echo `date`
+echo "Current Date is: $Day-$Month-$Year"
+echo "Current Time is: $Hour:$Minute:$Second"
 ```
