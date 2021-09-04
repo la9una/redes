@@ -301,23 +301,3 @@ La guía ofrecida en este curso intenta ser sólo una pequeña introducción al 
 * Curso Vim - Martín Algañaraz: [1](https://www.youtube.com/watch?v=-9xmHw-T_ik), [2](https://www.youtube.com/watch?v=LPcwn09xOFA) y [3](https://www.youtube.com/watch?v=_feT1Zr97EA)
 * [VimCasts](http://vimcasts.org/) (en inglés)
 
-### Manuales / Tutoriales
-
-* [Curso de VIM](http://://hipertextual.com/archivo/tag/curso-de-vim/)
-* [Manual para empezar a usar Vim](http://://www.emezeta.com/articulos/manual-para-aprender-a-utilizar-vim)
-* [Manual de Vim](http://://agcapa.es/manual-de-vim/)
-* [Vim en español - ArchWiki](http://s://wiki.archlinux.org/index.php/Vim_%28Espa%C3%B1ol%29)
-* [Manual/Tutorial de Vim por Santiago Romero](http://://www.sromero.org/wiki/linux/aplicaciones/manual_vim)
-* [Vim AdventuresCurso de Vim por Andre Raso Vázquez](http://s://github.com/AnderRasoVazquez/curso-de-vim)
-* [Tutorial de Vi/Vim](http://://www.linuxhispano.net/2011/03/16/tutorial-de-vivim/)
-
-### Libros y apuntes
-
-* [Vim - Referencia rápida](http://://es.tldp.org/Tutoriales/doc-tutorial-vim/Guia-Vim.pdf)
-* [Learning Vi and Vim editors (O'Reilly)](http://://pntpm4.ulb.ac.be/pntpm/Files/OReilly.Learning.the.vi.and.Vim.Editors.7th.Edition.Jul.2008.pdf)
-* [Vi and Vim editors. Pocket Reference (O'Reilly)](http://://www.doc-developpement-durable.org/file/Projets-informatiques/cours-&-manuels-informatiques/Shell/vi%20and%20Vim%20Editors%20Pocket%20Reference,%202nd%20Edition.pdf)
-
-### Guías interactivas 
-* [Open Vim](http://://www.openvim.com/) (en inglés)
-* [Vim Adventures](http://://vim-adventures.com/) (en inglés)
-

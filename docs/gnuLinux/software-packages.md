@@ -1,13 +1,4 @@
-# Gestión de software
-El modelo de distribución y gestión de software en las diferentes versiones (llamadas comunmente "distribuciones") de GNU/Linux data de hace algunos años y se han ido optimizando con el tiempo, siendo emulado por otras plataformas y dispositivos. 
-
-## Repositorios de software 
-Cada distribución de GNU/Linux, en general, posee su propio repositorio de software. Esto es, servidores distribuidos a lo largo del planeta que ofrecen software bajo demanda, una suerte de "tienda de aplicaciones" para cada distribución. Para ser más precisos, cada distribución tiene su propio repositorio de software que es "espejado" (clonado) por otros servidores en diversos países y regiones y ofrecido a los usuarios finales del sistema operativo. 
-
-
-!!! done "Configuración del repositorio"
-
-        En distribuciones basadas en Debian, el archivo del sistema que contiene información sobre los repositorios se encuentra en el archivo `/etc/apt/sources.list`. Repositorios secundarios, pueden encontrarse en archivos independientes dentro de la carpeta `/etc/apt/sources.list.d/`. 
+El modelo de distribución y gestión de software en las diferentes [distribuciones de GNU/Linux](https://es.wikipedia.org/wiki/Distribuci%C3%B3n_Linux) o versiones del sistema operativo GNU/Linux data de hace algunos años y se han ido optimizando con el tiempo, siendo emulado por otras plataformas y dispositivos. 
 
 ## Formatos de paquetes 
 En ambientes *NIX es común referirse a los distintos programas de software bajo el nombre de "paquetes". No obstante, no existe un único tipo/formato de paquetes: estos dependen de cada distribución. 
@@ -18,12 +9,16 @@ En ambientes *NIX es común referirse a los distintos programas de software bajo
         * `.rpm` (CenOS, Fedora, RedHat, etc)
         * `.deb` (Debian, Ubuntu, Linux Mint, etc)
 
+!!! info "Sobre esta guía"
+	La presente documentación sólo abordará la gestión de software compatible con sistemas basados en [Debian](https://www.debian.org/index.es.html) o derviadas (como Ubuntu, Linux Mint, etc.), dejando de lado otro tipo de paqueterías.  
+
+
 ## Instalación de software
-La instalación de software en distribuciones GNU/Linux se puede llevar adelante mediante 3 maneras diferentes: 
+La instalación de software en distribuciones GNU/Linux se puede llevar adelante mediante 4 maneras diferentes: 
 
 1. A través de la tienda de aplicaciones de la distribución
-2. Mediante un gestor de paquetes alternativo
-3. Instalando paquetes de manera aislada
+2. Mediante la terminal de comandos
+3. Instalando paquetes individuales (.deb o .rpm) 
 4. Compilando paquetes a partir de su código fuente
 
 En este curso, pondremos incapié en el punto 2. 
