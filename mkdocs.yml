@@ -100,8 +100,8 @@ nav:
 - GNU/Linux:
   - Historia: 'gnuLinux/basics-history.md'
   - ¿Por qué GNU/Linux?: 'gnuLinux/basics-why-linux.md'
+  - GUI vs CLI: 'gnuLinux/basics-desktop-terminal.md'
   - Comandos básicos:
-    - La terminal: 'gnuLinux/basics-terminal.md'
     - Archivos y carpetas: 'gnuLinux/basics-filesystem.md'
     - Compresión y descompresión: 'gnuLinux/basics-compression.md'
     - El editor nano: 'gnuLinux/basics-nano.md'
