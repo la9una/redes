@@ -41,6 +41,7 @@ theme:
   #  - navigation.tabs.sticky
     - navigation.sections
   #  - header.autohide
+
 # Extra
 extra:
   disqus: 'rauljesus-xyz'
@@ -54,6 +55,8 @@ extra:
       link: 'https://www.instagram.com/la9una'
     - icon: fontawesome/brands/github
       link: 'https://github.com/la9una'
+  version:
+    provider: mike
 
 # Extensiones
 markdown_extensions:
