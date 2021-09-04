@@ -13,14 +13,14 @@
         <meta name="author" content="Raul Jesus Lopez">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/0.1/dns/dnsQuery/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/0.1/lamp/lamp-virtualhosts/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.5">
     
     
       
-        <title>Consultas DNS - Redes</title>
+        <title>Hosts virtuales - Redes</title>
       
     
     
@@ -28,10 +28,6 @@
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#7e56c2">
         
       
     
@@ -59,13 +55,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nslookup-windows-linux-y-mac" class="md-skip">
+        <a href="#creando-archivo-de-configuracion-del-host-virtual" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -103,12 +103,34 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Consultas DNS
+              Hosts virtuales
             
           </span>
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -368,6 +390,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../gnuLinux/basics-bash-scripting/" class="md-nav__link">
+        Scripting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../gnuLinux/basics-tips/" class="md-nav__link">
         Tips
       </a>
@@ -546,14 +580,16 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         Servidor web
@@ -569,12 +605,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
       
       <label class="md-nav__link" for="__nav_3_1">
         LAMP
@@ -592,7 +630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/queEs/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         ¿Qué es LAMP?
       </a>
     </li>
@@ -604,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/instalacion/" class="md-nav__link">
+      <a href="../lamp-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -616,7 +654,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/gestionBasica/" class="md-nav__link">
+      <a href="../lamp-basics/" class="md-nav__link">
         Gestión básica
       </a>
     </li>
@@ -628,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/userdir/" class="md-nav__link">
+      <a href="../lamp-userdir/" class="md-nav__link">
         Web de usuario
       </a>
     </li>
@@ -638,11 +676,75 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../lamp/virtualHosts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Hosts virtuales
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Hosts virtuales
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creando-archivo-de-configuracion-del-host-virtual" class="md-nav__link">
+    Creando archivo de configuración del Host Virtual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#habilitando-el-host-virtual" class="md-nav__link">
+    Habilitando el Host Virtual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deshabilitando-el-host-virtual" class="md-nav__link">
+    Deshabilitando el Host Virtual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reiniciando-apache" class="md-nav__link">
+    Reiniciando Apache
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resolucion-del-nombre-de-dominio" class="md-nav__link">
+    Resolución del nombre de dominio
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -652,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/ejercicios/" class="md-nav__link">
+      <a href="../lamp-exercises/" class="md-nav__link">
         Ejercicios
       </a>
     </li>
@@ -677,16 +779,14 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       <label class="md-nav__link" for="__nav_4">
         Servidor de nombres
@@ -704,8 +804,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
-        ¿Qué es el DNS?
+      <a href="../../dns/" class="md-nav__link">
+        Introducción
       </a>
     </li>
   
@@ -716,7 +816,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../archivoHosts/" class="md-nav__link">
+      <a href="../../dns/dns-hosts/" class="md-nav__link">
         El archivo hosts
       </a>
     </li>
@@ -749,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bind/" class="md-nav__link">
+      <a href="../../dns/bind/" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -761,7 +861,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bind/instalacion/" class="md-nav__link">
+      <a href="../../dns/bind/bind-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -794,7 +894,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bind/cache/" class="md-nav__link">
+      <a href="../../dns/bind/bind-cache/" class="md-nav__link">
         Teoría
       </a>
     </li>
@@ -806,7 +906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bind/cacheEjemplo/" class="md-nav__link">
+      <a href="../../dns/bind/bind-cache-example/" class="md-nav__link">
         Ejemplo práctico
       </a>
     </li>
@@ -845,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bind/zonas/" class="md-nav__link">
+      <a href="../../dns/bind/bind-zones/" class="md-nav__link">
         Archivos de zona
       </a>
     </li>
@@ -857,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bind/zonasEjemplo/" class="md-nav__link">
+      <a href="../../dns/bind/bind-zones-example/" class="md-nav__link">
         Ejemplo - Zonas
       </a>
     </li>
@@ -869,7 +969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bind/zonasMultiplesEjemplo/" class="md-nav__link">
+      <a href="../../dns/bind/bind-zones-example-multiple/" class="md-nav__link">
         Ejemplo - Zonas múltiples
       </a>
     </li>
@@ -893,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../clientes/" class="md-nav__link">
+      <a href="../../dns/dns-clients/" class="md-nav__link">
         Configurando clientes
       </a>
     </li>
@@ -903,129 +1003,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Consultas DNS
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../dns/dns-query/" class="md-nav__link">
         Consultas DNS
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#nslookup-windows-linux-y-mac" class="md-nav__link">
-    Nslookup (Windows, Linux y Mac)
-  </a>
-  
-    <nav class="md-nav" aria-label="Nslookup (Windows, Linux y Mac)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#iniciando-nslookup" class="md-nav__link">
-    Iniciando nslookup
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consultando-direcciones-ip" class="md-nav__link">
-    Consultando direcciones ip
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consultando-nombres-de-dominio" class="md-nav__link">
-    Consultando nombres de dominio
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dig-linux-y-mac" class="md-nav__link">
-    dig (Linux y Mac)
-  </a>
-  
-    <nav class="md-nav" aria-label="dig (Linux y Mac)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#instalacion-de-dig" class="md-nav__link">
-    Instalación de dig
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sintaxis-basica" class="md-nav__link">
-    Sintaxis básica
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-de-uso" class="md-nav__link">
-    Ejemplo de uso
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#otros-registros" class="md-nav__link">
-    Otros registros
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modificando-las-consultas" class="md-nav__link">
-    Modificando las consultas
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#otras-opciones" class="md-nav__link">
-    Otras opciones
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1060,91 +1042,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nslookup-windows-linux-y-mac" class="md-nav__link">
-    Nslookup (Windows, Linux y Mac)
+  <a href="#creando-archivo-de-configuracion-del-host-virtual" class="md-nav__link">
+    Creando archivo de configuración del Host Virtual
   </a>
-  
-    <nav class="md-nav" aria-label="Nslookup (Windows, Linux y Mac)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#iniciando-nslookup" class="md-nav__link">
-    Iniciando nslookup
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consultando-direcciones-ip" class="md-nav__link">
-    Consultando direcciones ip
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consultando-nombres-de-dominio" class="md-nav__link">
-    Consultando nombres de dominio
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dig-linux-y-mac" class="md-nav__link">
-    dig (Linux y Mac)
-  </a>
-  
-    <nav class="md-nav" aria-label="dig (Linux y Mac)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#instalacion-de-dig" class="md-nav__link">
-    Instalación de dig
+  <a href="#habilitando-el-host-virtual" class="md-nav__link">
+    Habilitando el Host Virtual
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#sintaxis-basica" class="md-nav__link">
-    Sintaxis básica
+      
+        <li class="md-nav__item">
+  <a href="#deshabilitando-el-host-virtual" class="md-nav__link">
+    Deshabilitando el Host Virtual
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ejemplo-de-uso" class="md-nav__link">
-    Ejemplo de uso
+      
+        <li class="md-nav__item">
+  <a href="#reiniciando-apache" class="md-nav__link">
+    Reiniciando Apache
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#otros-registros" class="md-nav__link">
-    Otros registros
+      
+        <li class="md-nav__item">
+  <a href="#resolucion-del-nombre-de-dominio" class="md-nav__link">
+    Resolución del nombre de dominio
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#modificando-las-consultas" class="md-nav__link">
-    Modificando las consultas
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#otras-opciones" class="md-nav__link">
-    Otras opciones
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1160,124 +1088,178 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/dns/dnsQuery.md" title="Editar esta página" class="md-content__button md-icon">
+                  <a href="https://github.com/la9una/redes/edit/master/docs/lamp/lamp-virtualhosts.md" title="Editar esta página" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Consultas DNS</h1>
+                  <h1>Hosts virtuales</h1>
                 
-                <p>Podemos comprobar el funcionamiento del servidor DNS empleando, entre otros, dos comandos: <code>dig</code> y <code>nslookup</code>.</p>
-<h2 id="nslookup-windows-linux-y-mac">Nslookup (Windows, Linux y Mac)<a class="headerlink" href="#nslookup-windows-linux-y-mac" title="Permanent link">&para;</a></h2>
-<p>Nslookup es un programa utilizado para saber si el DNS está resolviendo correctamente los nombres y las IPs. Se utiliza con el comando nslookup, que funciona tanto en Windows como en UNIX para obtener la dirección IP conociendo el nombre, y viceversa.</p>
-<h3 id="iniciando-nslookup">Iniciando nslookup<a class="headerlink" href="#iniciando-nslookup" title="Permanent link">&para;</a></h3>
-<p>Simplemente, ejecutamos el nombre del programa en un terminal: </p>
-<div class="highlight"><pre><span></span><code>nslookup
+                <p>Una de las aplicaciones de la característica de Apache llamada <em>VirtualHosts</em> consiste en la posibilidad de crear <strong>diferentes sitios web</strong> cada uno con su <strong>nombre de dominio propio</strong> aunque éstos se encuentren alojados en un mismo servidor y, por lo tanto, tengan <strong>la misma dirección IP</strong>. </p>
+<div class="admonition blockquote">
+<p class="admonition-title">¿Qué es Virtual Host?</p>
+<p>El término <strong>Hosting Virtual</strong> se refiere a hacer funcionar más de un sitio web tales como <code>www.company1.com</code> y <code>www.company2.com</code> en una sola máquina. </p>
+<p>Los sitios web virtuales pueden estar <strong>basados en direcciones IP</strong>, lo que significa que cada sitio web tiene una dirección IP diferente, o <strong>basados en nombres diferentes</strong>, lo que significa que con una sola dirección IP están funcionando sitios web con diferentes nombres (de dominio). </p>
+<p>El hecho de que estén funcionando en la misma máquina física pasa completamente desapercibido para el usuario que visita esos sitios web.</p>
+</div>
+<h2 id="creando-archivo-de-configuracion-del-host-virtual">Creando archivo de configuración del Host Virtual<a class="headerlink" href="#creando-archivo-de-configuracion-del-host-virtual" title="Permanent link">&para;</a></h2>
+<p>Para iniciar la configuración de nuestro <em>host virtual</em> nos dirigiremos a la siguiente carpeta: </p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> /etc/apache2/sites-available
 </code></pre></div>
-<p>El comando deberá devolvernos la <strong>dirección IP del servidor DNS</strong> que tenemos configurado en nuestro equipo (físico).</p>
+<p>Una vez ubicados en el directorio correspodiente nos disponemos a crear el <strong>archivo de configuracion del Host Virtual</strong> (el archivo en cuestión puede llamarse de cualquier forma, pero debe finalizar necesariamente con la extension <code>.conf</code>)</p>
+<div class="highlight"><pre><span></span><code>nano dominio.tld.conf
+</code></pre></div>
+<p>Y a continuación escribimos la configuración de nuestro Host Virtual. Un ejemplo simple de configuracion para el sitio ficticio <code>dominio.tld</code>:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c">###################################</span>
+<span class="c">### Definición del Host Virtual ###</span>
+<span class="c">###################################</span>
+
+<span class="nt">&lt;VirtualHost</span> <span class="s">*:80</span><span class="nt">&gt;</span>
+
+    <span class="c"># Correo del administrador del servidor</span>
+    <span class="nb">ServerAdmin</span>     nombre@mail.com
+
+    <span class="c"># Nombre de dominio del sitio</span>
+    <span class="nb">ServerName</span>      dominio.tld
+
+    <span class="c"># Alias del nombre de dominio del sitio</span>
+    <span class="nb">ServerAlias</span>     www.dominio.tld http://dominio.tld
+
+    <span class="c"># Carpeta raíz donde se alojarán las páginas web </span>
+    <span class="nb">DocumentRoot</span>    <span class="sx">/home/</span>&lt;usuario&gt;/public_html 
+
+    <span class="c"># Ruta en la que Apache escribirá el registro de errores</span>
+    <span class="nb">ErrorLog</span>        <span class="sx">/home/</span>&lt;usuario&gt;/public_html/errores.log
+
+    <span class="c"># Ruta en la que Apache escribirá el registro accesos</span>
+    <span class="nb">CustomLog</span>       <span class="sx">/home/</span>&lt;usuario&gt;/public_html/accessos.log combined
+
+<span class="nt">&lt;/VirtualHost&gt;</span>
+
+<span class="c"># Nota: reemplazar &lt;usuario&gt; por el nombre de usuario real en cada caso. </span>
+<span class="c"># Por ejemplo: /home/juan/public_html</span>
+
+
+<span class="c">#########################################</span>
+<span class="c">### Permisos sobre el directorio raíz ###</span>
+<span class="c">#########################################</span>
+
+<span class="nt">&lt;Directory</span> <span class="s">/home/&lt;usuario&gt;/public_html/</span><span class="nt">&gt;</span>
+
+    <span class="c"># Indexes permite indexar el contenido del directorio </span>
+    <span class="c"># FollowSymLinks permite acceder a enlaces simbólicos (accesos directos)</span>
+    <span class="nb">Options</span> Indexes FollowSymLinks
+
+    <span class="c"># Evita que el archivo .htaccess sobreescriba directivas de configuración</span>
+    <span class="nb">AllowOverride</span> <span class="k">None</span>
+
+    <span class="c"># Permitir el acceso al directorio</span>
+    <span class="nb">Require</span> <span class="k">all</span> granted
+
+<span class="nt">&lt;/Directory&gt;</span>     
+</code></pre></div>
+</td></tr></table>
 <div class="admonition tip">
-<p class="admonition-title">Abrir símbolo de sistema (terminal) en Windows<p>Para abrir rápidamente la terminal en sistemas basados en Windows, ejecutamos la combinación de teclas <kbd><i class="fab fa-windows"></i></kbd> + <kbd>R</kbd> y escribimos la palabra <code>cmd</code>. </p>
+<p class="admonition-title">Document Root</p>
+<p>Aunque no es necesario definir la carpeta raíz de los documentos web dentro del directorio del usuario, sí es una práctica recomendada, especialmente dentro de los proveedores de servicio de <a href="https://es.wikipedia.org/wiki/Alojamiento_web"><em>web hosting</em></a>.</p>
+<p>Bajo el mismo criterio, se incluyen en el directorio del usuario los archivos de <a href="https://es.wikipedia.org/wiki/Log_(inform%C3%A1tica)"><em>log</em></a> generados automáticamente por Apache.  </p>
+</div>
+<div class="admonition help">
+<p class="admonition-title">Documentación de Apache Web Server</p>
+<p>La presente guía está basada en la versión 2.4.x del servidor web incluida en Ubuntu Server 16.04 LTS. Es recomendable consultar la <a href="https://httpd.apache.org/docs/2.4/es/">extensa documentación oficial</a> para profundizar los conceptos abordados en la práctica.  </p>
+</div>
+<h2 id="habilitando-el-host-virtual">Habilitando el Host Virtual<a class="headerlink" href="#habilitando-el-host-virtual" title="Permanent link">&para;</a></h2>
+<p>Hasta ahora hemos definido nuestro <em>host</em> virtual, pero no lo hemos habilitado. Para "levantar" el sitio, es decir, para que Apache ponga el sitio en modo <strong>habilitado</strong> , ejecutamos en la terminal:</p>
+<p><div class="highlight"><pre><span></span><code>sudo a2ensite dominio.tld.conf
+</code></pre></div>
+Donde:</p>
+<ul>
+<li><code>a2</code>      Apache2</li>
+<li><code>en</code>      Enable (habilitar)</li>
+<li><code>site</code>    Sitio web </li>
+<li><code>dominio.tdl.conf</code> Archivo de configuración del <em>host</em> virtual</li>
+</ul>
+<div class="admonition done">
+<p class="admonition-title">¿Qué ocurre cuando habilitamos un sitio?<p>El comando anterior creará un <a href="https:_es.wikipedia.org/wiki/Enlace_simb%C3%B3lico">enlace simbólico</a> del archivo <code>dominio.tld.conf</code> desde la carpeta <code>/etc/apache2/sites-available</code> hacia la carpeta <code>/etc/apache2/sites-enabled</code>. </p>
 </p>
 </div>
-<h3 id="consultando-direcciones-ip">Consultando direcciones ip<a class="headerlink" href="#consultando-direcciones-ip" title="Permanent link">&para;</a></h3>
-<p>Luego, preguntaremos por algún nombre de dominio que hayamos definido. Por ejemplo: </p>
-<div class="highlight"><pre><span></span><code>&gt; host.midominio.lan
+<h2 id="deshabilitando-el-host-virtual">Deshabilitando el Host Virtual<a class="headerlink" href="#deshabilitando-el-host-virtual" title="Permanent link">&para;</a></h2>
+<p>Una vez que hayamos "levantado" el sitio web con el comando <code>a2ensite</code> y realicemos cambios en el archivo de configuración del <em>host</em> virtual, para hacer efectivos los cambios tendremos que "bajar" el sitio y luego, volverlo a subir. En ocasiones, tambén nos valeremos de este comando cuando deseemos dejar fuera de linea un sitio.</p>
+<p><div class="highlight"><pre><span></span><code>sudo a2dissite dominio.tld.conf
 </code></pre></div>
-<p>El comando deberá devolvernos la <strong>dirección IP asociada al nombre de dominio</strong> consultado.</p>
-<h3 id="consultando-nombres-de-dominio">Consultando nombres de dominio<a class="headerlink" href="#consultando-nombres-de-dominio" title="Permanent link">&para;</a></h3>
-<p>Además, podremos consultar <strong>a qué dominio corresponde determinada dirección ip</strong>, ingresándola en el <em>prompt</em>:</p>
-<div class="highlight"><pre><span></span><code>&gt; <span class="m">192</span>.168.0.200
-</code></pre></div>
-<p>o bien:</p>
-<div class="highlight"><pre><span></span><code>&gt; server <span class="m">192</span>.168.0.200
-</code></pre></div>
-<h2 id="dig-linux-y-mac">dig (Linux y Mac)<a class="headerlink" href="#dig-linux-y-mac" title="Permanent link">&para;</a></h2>
-<p><em>dig</em> (<em>domain information groper</em>) es una herramienta flexible para consultar información a los servidores DNS: ejecuta un <em>lookup</em> a los servicios de DNS y nos devuelve la salida que necesitemos.</p>
-<p>Constituye una herramienta útil para encontrar errores y hacer <em>troubleshooting</em> a los servicios de nombres, ya que es una herramienta muy útil, fácil de utilizar, y con una salida limpia.</p>
-<h3 id="instalacion-de-dig">Instalación de dig<a class="headerlink" href="#instalacion-de-dig" title="Permanent link">&para;</a></h3>
-<p>En la mayor parte de las distros es necesario instalarlo previamente. El paquete <code>dnsutils</code> suele incluir el programa <code>dig</code> en Debian o Ubuntu.</p>
-<div class="highlight"><pre><span></span><code>sudo apt install dnsutils
-</code></pre></div>
-<h3 id="sintaxis-basica">Sintaxis básica<a class="headerlink" href="#sintaxis-basica" title="Permanent link">&para;</a></h3>
-<p>La sintaxis del comando es la siguiente:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">dig</span> [@server] name [type]
-</code></pre></div>
-<p>Donde:</p>
+Donde:</p>
 <ul>
-<li><code>@server</code> es un servidor específico al que vamos a preguntarle.</li>
-<li><code>name</code> es el nombre de host/dominio sobre el que necesitamos información</li>
-<li><code>type</code> es el tipo de registro, y puede omitirse, en cuyo caso obtendremos la información para el registro A (address).</li>
+<li><code>a2</code>      Apache2</li>
+<li><code>dis</code>     Disable (deshabilitar)</li>
+<li><code>site</code>    Sitio web </li>
+<li><code>dominio.tdl.conf</code> Archivo de configuración del <em>host</em> virtual</li>
 </ul>
-<h3 id="ejemplo-de-uso">Ejemplo de uso<a class="headerlink" href="#ejemplo-de-uso" title="Permanent link">&para;</a></h3>
-<p>Podemos consultar información DNS sobre el dominio <code>google.com.ar</code></p>
-<div class="highlight"><pre><span></span><code>dig google.com.ar
+<h2 id="reiniciando-apache">Reiniciando Apache<a class="headerlink" href="#reiniciando-apache" title="Permanent link">&para;</a></h2>
+<p>Por último, para que Apache haga efectivo todos los cambios, lo reiniciamos: </p>
+<div class="highlight"><pre><span></span><code>sudo service apache2 restart
 </code></pre></div>
-<p>Y obtendremos una salida similar a la siguiente: </p>
-<div class="highlight"><pre><span></span><code><span class="err">;</span> <span class="nt">&lt;&lt;&gt;</span><span class="err">&gt;</span> <span class="nb">DiG</span> <span class="m">9</span>.10.3-P4-Ubuntu &lt;&lt;&gt;&gt; google.com.ar
-<span class="err">;;</span> <span class="nb">global</span> options: +cmd
-<span class="err">;;</span> <span class="nb">Got</span> answer:
-<span class="err">;;</span> <span class="err">-&gt;&gt;</span><span class="nb">HEADER</span>&lt;&lt;- opcode: QUERY, status: NOERROR, id: <span class="m">45490</span>
-<span class="err">;;</span> <span class="nb">flags</span>: qr rd ra; QUERY: <span class="m">1</span>, ANSWER: <span class="m">1</span>, AUTHORITY: <span class="m">0</span>, ADDITIONAL: <span class="m">1</span>
-
-<span class="err">;;</span> <span class="nb">OPT</span> PSEUDOSECTION:
-<span class="err">;</span> <span class="nb">EDNS</span>: version: <span class="m">0</span>, flags:; udp: <span class="m">512</span>
-<span class="err">;;</span> <span class="nb">QUESTION</span> SECTION:
-<span class="err">;</span><span class="nb">google</span>.com.ar.         IN  A
-
-<span class="err">;;</span> <span class="nb">ANSWER</span> SECTION:
-<span class="nb">google</span>.com.ar.      <span class="m">9</span>   IN  A   <span class="m">172.217.28.163</span>
-
-<span class="err">;;</span> <span class="nb">Query</span> time: <span class="m">117</span> msec
-<span class="err">;;</span> <span class="nb">SERVER</span>: <span class="m">8.8.8.8</span>#53(8.8.8.8)
-<span class="err">;;</span> <span class="nb">WHEN</span>: Wed Nov <span class="m">08</span> <span class="m">13</span>:52:16 ART <span class="m">2017</span>
-<span class="err">;;</span> <span class="nb">MSG</span> SIZE  rcvd: <span class="m">58</span>
+<p>Es posible que al hacerlo, Apache nos indique la presencia de errores. Para determinar cuáles son esos errores, ejecutamos: </p>
+<p><div class="highlight"><pre><span></span><code>sudo apache2ctl -t
 </code></pre></div>
-<p>Donde: </p>
+Una vez solucionado el problema, podremos reiniciar Apache sin problemas. </p>
+<div class="admonition tip">
+<p class="admonition-title">Comandos de gestión de Apache<p>Existen otros comandos ofrecidos por el servidor para gestionar diversas tareas y que podés encontrar en una sección anterior llamada <a href="../lamp-basics/#gestion-general-del-servidor">Gestión básica del servidor</a>. </p>
+</p>
+</div>
+<h2 id="resolucion-del-nombre-de-dominio">Resolución del nombre de dominio<a class="headerlink" href="#resolucion-del-nombre-de-dominio" title="Permanent link">&para;</a></h2>
+<p>Nuestro sitio ya está listo para ser "servido" por el Apache de manera que podamos acceder a él mediante un navegador web. Sin embargo, para que esto sea posible, antes tendremos que "avisarle" al resto de los equipos de la red LAN (o del mundo, si nuestro nombre de dominio no es local) que existe un nombre de dominio asociado a una dirección IP determinada y viceversa. </p>
+<p>En otras palabras, precisamos que nuestro equipo "resuelva" dicho nombre de dominio o, lo que es lo mismo, sea capaz de traducir a qué dirección IP apunta el mismo (por ejemplo, la dirección IP correpondiente al dominio <code>www.itel.edu.ar</code> es <code>168.197.51.107</code>). </p>
+<p>Existen dos caminos para configurar la resolución de nuestros nombres dominios (en nuestro caso, son dominios locales, es decir, no "reales" sólo accesibles desde nuestra red LAN), a saber: </p>
 <ul>
-<li>Todas las líneas que inician con “;” son comentarios</li>
-<li>La primer línea nos devuelve la versión del comando dig que estamos utilizando, DiG 9.10.3-P4-Ubuntu en este ejemplo. </li>
-<li>Luego muestra la sección de consulta con nuestra consulta (<em>question section</em>). Podemos ocultar esta sección con <code>+noquestion</code>.</li>
-<li>A continuación, la sección de la respuesta (<em>answer section</em>). Podemos ocultar esta sección con <code>+noanswer</code> (si es que tiene algún sentido <img alt="😄" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f604.svg" title=":smile:" />).</li>
-<li>Y por último, muestra estadísticas de la consulta. Con la opción <code>+nostats</code> podemos ocultar esta sección de estadísticas.</li>
+<li><a href="../../dns/dns-hosts/">Empleando el archivo hosts de cada equipo</a></li>
+<li><a href="../dns/bind">Configurando un servidor DNS local</a> </li>
 </ul>
-<h3 id="otros-registros">Otros registros<a class="headerlink" href="#otros-registros" title="Permanent link">&para;</a></h3>
-<p>Por defecto la respuesta está asociada a los registros A del dominio, es decir, por defecto nos devuelve la dirección o direcciones IP (Address) del dominio, pero no es la única opción. Podemos consultar cualquier otro registro del DNS, entre ellos:</p>
-<div class="highlight"><pre><span></span><code>dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</span>a<span class="o">]</span>      <span class="c1"># address record</span>
-dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</span>ns<span class="o">]</span>     <span class="c1"># nameserver record</span>
-dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</span>mx<span class="o">]</span>     <span class="c1"># mx record</span>
-dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</span>txt<span class="o">]</span>    <span class="c1"># txt record</span>
-dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</span>any<span class="o">]</span>    <span class="c1"># todos los registros</span>
-</code></pre></div>
-<h3 id="modificando-las-consultas">Modificando las consultas<a class="headerlink" href="#modificando-las-consultas" title="Permanent link">&para;</a></h3>
-<p><code>dig</code> permite, mediante el caracter <code>+</code>, agregar o quitar información de la salida. Veamos algunas opciones interesantes:</p>
-<ul>
-<li><code>+[no]additional</code>: muestra u oculta la sección de datos adicionales.</li>
-<li><code>+[no]all</code>: muestra u oculta todos los datos. Ocultar todos los datos sirve para luego mostrar algún dato específico que necesitemos. Por ejemplo, “+noall +answer” ocultará todos los datos, y solo mostrará la respuesta.</li>
-<li><code>+[no]answer</code>: muestra u oculta la sección de respuesta</li>
-<li><code>+[no]authority</code>: muestra u oculta la sección de autoridad SOA</li>
-<li><code>+[no]question</code>: muestra u oculta la sección de la consulta que hicimos.</li>
-<li><code>+[no]comments</code>: muestra u oculta los comentarios (líneas que inician con “;”.</li>
-<li><code>+[no]crypto</code>: muestra u oculta los datos del registro criptográfico DNSSEC utilizado para firmar las zonas en algunos servidores.</li>
-<li><code>+[no]dnssec</code>: muestra u oculta los datos del registro DNSSEC en la sección adicional.</li>
-<li><code>+[no]keepopen</code>: mantiene el socket tcp utilizado para una consulta abierto, de modo que subsiguientes consultas utilizarán el mismo socket contra el servidor DNS que estemos utilizando. Esto es válido cuando las consultas se realizan sobre TCP en vez de UDP.</li>
-<li><code>+[no]recurse</code>: habilita o deshabilita la búsqueda recursiva. Por defecto siempre está activada, salvo que la desactivemos directamente con esta opción, o utilicemos alguna opción que la desactive, como +nssearch.</li>
-<li><code>+[no]short</code>: permite o no imprimir una salida corta específica, por defecto está desactivada y vemos la salida completa.</li>
-<li><code>+[no]stats</code>: muestra u oculta la sección de estadísticas. Por defecto siempre está activada.</li>
-<li><code>+[no]tcp</code>: fuerza o no la utilización de TCP en vez de UDP para realizar las consultas. Por defecto es UDP, salvo que el tipo de registro sea AXFR (transferencia de zona).</li>
-<li><code>+[no]trace</code>: habilita o no la trazabilidad de la consulta, lo que permite ver la lista completa de nodos y pasos de resolución de un nombre, muy útil para entender cómo funciona un sistema de nombres de dominio.</li>
-<li><code>+[no]ttlid</code>: muestra o no la información del TTL cuando imprime cada registro.</li>
-</ul>
-<h3 id="otras-opciones">Otras opciones<a class="headerlink" href="#otras-opciones" title="Permanent link">&para;</a></h3>
-<p>El comando dig permite además varias opciones, como cualquier comando en Linux. Algunas de las más útiles son las siguientes:</p>
-<ul>
-<li><code>-6</code> o <code>-4</code>: para realizar consultas únicamente sobre una red IPv6 o IPv4 respectivamente.</li>
-<li><code>-b address[#port]</code>: permite especificar una dirección válida desde la que consultar, y opcionalmente un puerto de origen.</li>
-<li><code>-x</code>: permite hacer una resolución inversa sobre IPv4 (en IPv6 muestra el formato nibble bajo el dominio IP6.ARPA.</li>
-<li><code>-i</code>: permite una resolución inversa sobre IPv6.</li>
-</ul>
-<p>Para más opciones y documentación, nada mejor que leer el man:</p>
-<div class="highlight"><pre><span></span><code>man dig
-</code></pre></div>
                 
               
               
@@ -1286,7 +1268,7 @@ dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</
 
   <h2 id="__comments">Comentarios</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/0.1/dns/dnsQuery/",this.page.identifier="/dns/dnsQuery/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/0.1/lamp/lamp-virtualhosts/",this.page.identifier="/lamp/lamp-virtualhosts/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>
@@ -1301,7 +1283,7 @@ dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../clientes/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Configurando clientes" rel="prev">
+        <a href="../lamp-userdir/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Web de usuario" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1310,11 +1292,26 @@ dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Configurando clientes
+              Web de usuario
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../lamp-exercises/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Ejercicios" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Ejercicios
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
@@ -1358,6 +1355,15 @@ dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</
         
         
       
+      <a href="https://www.instagram.com/la9una" target="_blank" rel="noopener" title="www.instagram.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
       <a href="https://github.com/la9una" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
       </a>
@@ -1372,7 +1378,7 @@ dig <span class="o">[</span>@server<span class="o">]</span>  <span class="o">[</
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56a63758.min.js"></script>

@@ -13,14 +13,14 @@
         <meta name="author" content="Raul Jesus Lopez">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/0.1/dns/bind/zonasMultiplesEjemplo/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/0.1/dns/bind/bind-cache-example/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.5">
     
     
       
-        <title>Ejemplo - Zonas múltiples - Redes</title>
+        <title>Ejemplo práctico - Redes</title>
       
     
     
@@ -28,10 +28,6 @@
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#7e56c2">
         
       
     
@@ -59,13 +55,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
   
     
     <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-declaramos-los-archivos-de-zona" class="md-skip">
+        <a href="#dns-cache-ejemplo" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -103,12 +103,34 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ejemplo - Zonas múltiples
+              Ejemplo práctico
             
           </span>
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -368,6 +390,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../gnuLinux/basics-bash-scripting/" class="md-nav__link">
+        Scripting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../gnuLinux/basics-tips/" class="md-nav__link">
         Tips
       </a>
@@ -592,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lamp/queEs/" class="md-nav__link">
+      <a href="../../../lamp/" class="md-nav__link">
         ¿Qué es LAMP?
       </a>
     </li>
@@ -604,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lamp/instalacion/" class="md-nav__link">
+      <a href="../../../lamp/lamp-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -616,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lamp/gestionBasica/" class="md-nav__link">
+      <a href="../../../lamp/lamp-basics/" class="md-nav__link">
         Gestión básica
       </a>
     </li>
@@ -628,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lamp/userdir/" class="md-nav__link">
+      <a href="../../../lamp/lamp-userdir/" class="md-nav__link">
         Web de usuario
       </a>
     </li>
@@ -640,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lamp/virtualHosts/" class="md-nav__link">
+      <a href="../../../lamp/lamp-virtualhosts/" class="md-nav__link">
         Hosts virtuales
       </a>
     </li>
@@ -652,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../lamp/ejercicios/" class="md-nav__link">
+      <a href="../../../lamp/lamp-exercises/" class="md-nav__link">
         Ejercicios
       </a>
     </li>
@@ -705,7 +739,7 @@
   
     <li class="md-nav__item">
       <a href="../../" class="md-nav__link">
-        ¿Qué es el DNS?
+        Introducción
       </a>
     </li>
   
@@ -716,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../archivoHosts/" class="md-nav__link">
+      <a href="../../dns-hosts/" class="md-nav__link">
         El archivo hosts
       </a>
     </li>
@@ -763,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../instalacion/" class="md-nav__link">
+      <a href="../bind-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -773,12 +807,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_3" type="checkbox" id="__nav_4_3_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_3" type="checkbox" id="__nav_4_3_3" checked>
       
       <label class="md-nav__link" for="__nav_4_3_3">
         DNS caché
@@ -796,73 +832,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../cache/" class="md-nav__link">
+      <a href="../bind-cache/" class="md-nav__link">
         Teoría
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cacheEjemplo/" class="md-nav__link">
-        Ejemplo práctico
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-          
-            
-  
-  
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_4" type="checkbox" id="__nav_4_3_4" checked>
-      
-      <label class="md-nav__link" for="__nav_4_3_4">
-        DNS local
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="DNS local" data-md-level="3">
-        <label class="md-nav__title" for="__nav_4_3_4">
-          <span class="md-nav__icon md-icon"></span>
-          DNS local
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../zonas/" class="md-nav__link">
-        Archivos de zona
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../zonasEjemplo/" class="md-nav__link">
-        Ejemplo - Zonas
       </a>
     </li>
   
@@ -879,20 +850,24 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Ejemplo - Zonas múltiples
+          Ejemplo práctico
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Ejemplo - Zonas múltiples
+        Ejemplo práctico
       </a>
       
         
 <nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -902,43 +877,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-declaramos-los-archivos-de-zona" class="md-nav__link">
-    1. Declaramos los archivos de zona
+  <a href="#verificando-la-configuracion" class="md-nav__link">
+    Verificando la configuración
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-configurando-archivos-de-zona" class="md-nav__link">
-    2. Configurando archivos de zona
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Configurando archivos de zona">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#archivo-resolucion-directa-dominio1com" class="md-nav__link">
-    Archivo resolución directa - dominio1.com
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#archivo-resolucion-directa-dominio2org" class="md-nav__link">
-    Archivo resolución directa - dominio2.org
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#archivo-resolucion-inversa" class="md-nav__link">
-    Archivo resolución inversa
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -956,6 +897,69 @@
   
 
           
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3_4" type="checkbox" id="__nav_4_3_4" >
+      
+      <label class="md-nav__link" for="__nav_4_3_4">
+        DNS local
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="DNS local" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          DNS local
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bind-zones/" class="md-nav__link">
+        Archivos de zona
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bind-zones-example/" class="md-nav__link">
+        Ejemplo - Zonas
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bind-zones-example-multiple/" class="md-nav__link">
+        Ejemplo - Zonas múltiples
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -967,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../clientes/" class="md-nav__link">
+      <a href="../../dns-clients/" class="md-nav__link">
         Configurando clientes
       </a>
     </li>
@@ -979,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dnsQuery/" class="md-nav__link">
+      <a href="../../dns-query/" class="md-nav__link">
         Consultas DNS
       </a>
     </li>
@@ -1008,6 +1012,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1016,43 +1022,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-declaramos-los-archivos-de-zona" class="md-nav__link">
-    1. Declaramos los archivos de zona
+  <a href="#verificando-la-configuracion" class="md-nav__link">
+    Verificando la configuración
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-configurando-archivos-de-zona" class="md-nav__link">
-    2. Configurando archivos de zona
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Configurando archivos de zona">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#archivo-resolucion-directa-dominio1com" class="md-nav__link">
-    Archivo resolución directa - dominio1.com
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#archivo-resolucion-directa-dominio2org" class="md-nav__link">
-    Archivo resolución directa - dominio2.org
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#archivo-resolucion-inversa" class="md-nav__link">
-    Archivo resolución inversa
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1068,197 +1040,118 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/dns/bind/zonasMultiplesEjemplo.md" title="Editar esta página" class="md-content__button md-icon">
+                  <a href="https://github.com/la9una/redes/edit/master/docs/dns/bind/bind-cache-example.md" title="Editar esta página" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Ejemplo - Zonas múltiples</h1>
-                
-                <p>Es posible configurar un único servidor para que resuelva diferentes nombres de dominio. En este ejemplo, configuraremos nuestro servidor DNS para que sea capaz de resolver consultas directas en inversas para los dominios ficticios: <code>dominio1.com</code> y <code>dominio2.org</code>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Número de serie<p>Al configurar un mismo servidor para que resuelva varios dominios, los archivos de zona deberán tener el <strong>mismo número de serie</strong>.</p>
-</p>
+                <h1 id="dns-cache-ejemplo">DNS Caché - Ejemplo<a class="headerlink" href="#dns-cache-ejemplo" title="Permanent link">&para;</a></h1>
+<p>La configuración del servidor DNS caché se encuentra en el archivo <code>/etc/bind/named.conf.options</code></p>
+<p>Antes de comenzar, siempre conviene realizar una copia de seguridad del arvhivo en cuestión: </p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> /etc/bind <span class="se">\</span>
+sudo cp named.conf.options named.conf.options.original
+</code></pre></div>
+<p>Posteriormente, creamos un nuevo archivo para su edición: </p>
+<div class="highlight"><pre><span></span><code>sudo vim named.conf.options
+</code></pre></div>
+<p>Y agregamos el siguiente contenido, el cual deberás adaptar según necesidad: </p>
+<div class="highlight"><pre><span></span><code><span class="nb">options</span> {
+
+  <span class="c">#########################</span>
+  <span class="c">### Directorio chaché ###</span>
+  <span class="c">#########################</span>
+
+  <span class="nb">directory</span> <span class="s2">&quot;/var/cache/bind&quot;</span>;
+
+  <span class="c">####################</span>
+  <span class="c">### Reenviadores ###</span>
+  <span class="c">####################</span>
+
+  <span class="nb">forwarders</span> {
+    <span class="c"># Servidores DNS públicos de Google</span>
+    <span class="err">8</span>.<span class="err">8</span>.<span class="err">8</span>.<span class="err">8;</span>
+    <span class="err">8</span>.<span class="err">8</span>.<span class="err">4</span>.<span class="err">4;</span>
+    <span class="c"># Servidor DNS provisto por nuestro ISP (generalmente, el router)</span>
+    <span class="err">192</span>.<span class="err">168</span>.<span class="err">0</span>.<span class="err">1;</span>
+  <span class="err">};</span>
+
+  <span class="c">#############################</span>
+  <span class="c">### Opciones de seguridad ###</span>
+  <span class="c">#############################</span>
+
+  <span class="c"># Creando una lista de control de acceso (acl)  </span>
+  <span class="nb">acl</span> <span class="s2">&quot;permitidos&quot;</span> {
+      <span class="err">192</span>.<span class="err">168</span>.<span class="err">0</span>.<span class="err">0/24;</span>
+      <span class="nb">localhost</span>;
+      <span class="nb">localnets</span>;
+  <span class="err">};</span>
+
+  <span class="c"># Hosts que tienen permiso para escuchar peticiones por el puerto 53</span>
+  <span class="c"># Cambiar 192.168.0.xxx por la dirección IP de nuestro servidor DNS</span>
+  <span class="nb">listen</span>-on port <span class="m">53</span> { 
+      <span class="err">127</span>.<span class="err">0</span>.<span class="err">0</span>.<span class="err">1;</span> 
+      <span class="err">192</span>.<span class="err">168</span>.<span class="err">0</span>.<span class="nb">xxx</span>; # IP de tu servidor <span class="k">DNS</span>
+  <span class="err">};</span>
+
+  <span class="c"># Hosts que tienen permiso para escuchar peticiones IPv6</span>
+  <span class="nb">listen</span>-on-v6 { <span class="k">none</span>; };
+
+  <span class="c"># Hosts que tienen permiso para realizar consultas</span>
+  <span class="nb">allow</span>-query { permitidos; };
+
+  <span class="c"># Hosts que tienen permiso para realizar consultas recursivas</span>
+  <span class="nb">allow</span>-recursion { permitidos; };
+
+  <span class="c"># Permitiendo transferencia de zona a servidor DNS esclavo</span>
+  <span class="nb">allow</span>-transfer { <span class="k">none</span>; };
+
+  <span class="c"># Permitiendo validación DNSSEC</span>
+  <span class="nb">dnssec</span>-validation auto;
+
+  <span class="c"># Respuesta NXDOMAIN según RFC1035 (yes en servidores antiguos) </span>
+  <span class="nb">auth</span>-nxdomain no;
+
+<span class="err">};</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Comentarios</p>
+<p>La siguiente son etiquetas de comentarios válidas:</p>
+<ul>
+<li>
+<p><code>//</code> ó <code>#</code> Para realizar comentarios de una sola línea, al comienzo de la misma. </p>
+</li>
+<li>
+<p><code>/* texto */</code> Para realizar comentarios multilínea, colocando texto entre estas etiquetas. </p>
+</li>
+</ul>
 </div>
-<h2 id="1-declaramos-los-archivos-de-zona">1. Declaramos los archivos de zona<a class="headerlink" href="#1-declaramos-los-archivos-de-zona" title="Permanent link">&para;</a></h2>
-<p>Para ello, abrimos el archivo <code>named.conf.local</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">sudo</span> vim <span class="sx">/etc/bind/named.conf.local</span>
+<p>Donde: </p>
+<ul>
+<li>
+<p><strong>Directorio caché</strong>: es la carpeta en la cual el servidor DNS guardará las consultas realizadas. </p>
+</li>
+<li>
+<p><strong>Forwarders</strong>: son los servidores DNS a los cuáles consultará nuestro servidor DNS en caso de no ser capaz de resolver un nombre de dominio. En el ejemplo, se usan los servidores DNS públicos de <em>Google</em> y, para tener otra opción, también se añade la IP del <em>router</em>, puesto que generalmente, es la dirección IP  ofrecida por nuestro proveedor de internet para la resolución de nombres de dominio. </p>
+</li>
+<li>
+<p><strong>Listas de control de acceso</strong>: de manera conveniente se crea una lista de las direcciones IP que podrán realizar consultas a nuestro servidor DNS. En el ejemplo, se creó una lista llamada <em>permitidos</em>, la cual incluye todas las direcciones IP de la red <code>192.168.0.0/24</code>, la dirección local o <code>localhost</code> y todas las direcciones IP vinculadas con todas las interfaces de red del servidor, con la palabra reservada <code>localnets</code>. Todos los otros pedidos <strong>serán ignorados</strong>, para evitar eventuales utilizaciones abusivas de nuestro servidor DNS por parte de terceros</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Opciones de permisión</p>
+<p>Además de emplear el nombre de una <em>acl</em> creada (en nuestro ejemplo, <em>permitidos</em>), los valores que podemos utilizar a la hora de establecer los permisos para los distintos <em>hosts</em> son: </p>
+<ul>
+<li><code>none</code>: ninguno</li>
+<li><code>any</code>: todos</li>
+</ul>
+</div>
+<h2 id="verificando-la-configuracion">Verificando la configuración<a class="headerlink" href="#verificando-la-configuracion" title="Permanent link">&para;</a></h2>
+<p>Para cerciorase que los cambios realizados en el paso anterior fueron los correctos, ejecutamos el comando: </p>
+<div class="highlight"><pre><span></span><code>sudo named-checkconf
 </code></pre></div>
-<p>Y declaramos nuestros archivos de zona: de resolución directa para los dominios mencionados y un único archivo de zona de resolución inversa:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="err">//</span> <span class="nb">dominio1</span>.com - Resolución directa
-<span class="nb">zone</span> <span class="s2">&quot;dominio1.com&quot;</span>{
-    <span class="nb">type</span> master;
-    <span class="nb">file</span> <span class="s2">&quot;/etc/bind/zonas/db.dominio1.com&quot;</span>;
-<span class="err">};</span>
-
-<span class="err">//</span> <span class="nb">dominio2</span>.org - Resolución directa
-<span class="nb">zone</span> <span class="s2">&quot;dominio2.org&quot;</span>{
-    <span class="nb">type</span> master;
-    <span class="nb">file</span> <span class="s2">&quot;/etc/bind/zonas/db.dominio2.org&quot;</span>;
-<span class="err">};</span>
-
-<span class="err">//</span> <span class="nb">Ambos</span> dominios - Resolución inversa
-<span class="nb">zone</span> <span class="s2">&quot;0.168.192.in-addr.arpa&quot;</span>{
-    <span class="nb">type</span> master;
-    <span class="nb">notify</span> no;
-    <span class="nb">file</span> <span class="s2">&quot;/etc/bind/zonas/db.0.168.192&quot;</span>;
-<span class="err">};</span>
+<p>Y reiniciamos el servicio:</p>
+<div class="highlight"><pre><span></span><code>sudo service bind9 restart
 </code></pre></div>
-</td></tr></table>
-<h2 id="2-configurando-archivos-de-zona">2. Configurando archivos de zona<a class="headerlink" href="#2-configurando-archivos-de-zona" title="Permanent link">&para;</a></h2>
-<p>A continuación, se muestra contenido de ejemplo para los distintos archivos de zona. </p>
-<h3 id="archivo-resolucion-directa-dominio1com">Archivo resolución directa - dominio1.com<a class="headerlink" href="#archivo-resolucion-directa-dominio1com" title="Permanent link">&para;</a></h3>
-<p>Abrimos el archivo de zona de resolución directa: </p>
-<div class="highlight"><pre><span></span><code><span class="nb">sudo</span> vim <span class="sx">/etc/bind/zonas/db.dominio1.com</span>
-</code></pre></div>
-<p>Y agregamos el contenido:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="err">;</span>
-<span class="err">;</span> <span class="nb">Archivo</span> de zona de resolución directa para dominio1.com
-<span class="err">;</span>
-
-<span class="err">$</span><span class="nb">ORIGIN</span> dominio1.com.
-<span class="err">$</span><span class="nb">TTL</span>    <span class="m">604800</span>
-
-<span class="err">@</span>   <span class="nb">IN</span>  SOA dominio1.com. admin.dominio1.com. (
-                    <span class="err">101220150</span>   <span class="err">;</span> <span class="nb">Serial</span>
-                    <span class="err">604800</span>      <span class="err">;</span> <span class="nb">Refresh</span>
-                    <span class="err">86400</span>       <span class="err">;</span> <span class="nb">Retry</span>
-                    <span class="err">2419200</span>     <span class="err">;</span> <span class="nb">Expire</span>
-                    <span class="err">604800</span> <span class="err">)</span>    <span class="err">;</span> <span class="nb">Negative</span> Cache TTL
-
-        <span class="nb">IN</span>  NS      <span class="k">dns</span>
-<span class="nb">dns</span>     IN  A       <span class="m">192.168.0.50</span>
-<span class="nb">web1</span>    IN  A       <span class="m">192.168.0.51</span>
-<span class="nb">web2</span>    IN  A       <span class="m">192.168.0.12</span>
-<span class="nb">www1</span>    IN  CNAME   web1
-<span class="nb">www2</span>    IN  CNAME   web2
-</code></pre></div>
-</td></tr></table>
-<h3 id="archivo-resolucion-directa-dominio2org">Archivo resolución directa - dominio2.org<a class="headerlink" href="#archivo-resolucion-directa-dominio2org" title="Permanent link">&para;</a></h3>
-<p>Abrimos el archivo de zona de resolución directa: </p>
-<div class="highlight"><pre><span></span><code><span class="nb">sudo</span> vim <span class="sx">/etc/bind/zonas/db.dominio2.org</span>
-</code></pre></div>
-<p>Y colocamos el siguiente contenido (de ejemplo):</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="err">;</span>
-<span class="err">;</span> <span class="nb">Archivo</span> de zona de resolución directa para dominio2.org
-<span class="err">;</span>
-
-<span class="err">$</span><span class="nb">ORIGIN</span> dominio2.org.
-<span class="err">$</span><span class="nb">TTL</span>    <span class="m">604800</span>
-
-<span class="err">@</span>       <span class="nb">IN</span>  SOA dominio1.com. admin.dominio1.com. (
-                    <span class="err">101220150</span>   <span class="err">;</span> <span class="nb">Serial</span>
-                    <span class="err">604800</span>      <span class="err">;</span> <span class="nb">Refresh</span>
-                    <span class="err">86400</span>       <span class="err">;</span> <span class="nb">Retry</span>
-                    <span class="err">2419200</span>     <span class="err">;</span> <span class="nb">Expire</span>
-                    <span class="err">604800</span> <span class="err">)</span>    <span class="err">;</span> <span class="nb">Negative</span> Cache TTL
-
-        <span class="nb">IN</span>  NS      <span class="k">dns</span>.dominio1.com.
-<span class="nb">web1</span>    IN  A       <span class="m">192.168.0.51</span>
-<span class="nb">web2</span>    IN  A       <span class="m">192.168.0.12</span>
-<span class="nb">www1</span>    IN  CNAME   web1
-<span class="nb">www2</span>    IN  CNAME   web2
-</code></pre></div>
-</td></tr></table>
-<h3 id="archivo-resolucion-inversa">Archivo resolución inversa<a class="headerlink" href="#archivo-resolucion-inversa" title="Permanent link">&para;</a></h3>
-<p>Ambos nombres de dominio compartirán el mismo archivo de resolución inversa. </p>
-<p>Para ello, abrimos el archivo en cuestión:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">sudo</span> vim <span class="sx">/etc/bind/db.0.168.192</span>
-</code></pre></div>
-<p>Y agregamos el siguiente contenido (ejemplo):</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="err">;</span>
-<span class="err">;</span> <span class="nb">Archivo</span> de zona de resolución inversa para ambos dominios
-<span class="err">;</span>
-
-<span class="err">$</span><span class="nb">ORIGIN</span> <span class="m">0</span>.168.192.in-addr.arpa.
-<span class="err">$</span><span class="nb">TTL</span>    <span class="m">604800</span>
-<span class="err">@</span>    <span class="nb">IN</span>  SOA dominio1.com. root.dominio1.com. (
-                <span class="err">101220150</span>   <span class="err">;</span> <span class="nb">Serial</span>
-                <span class="err">604800</span>      <span class="err">;</span> <span class="nb">Refresh</span>
-                <span class="err">86400</span>       <span class="err">;</span> <span class="nb">Retry</span>
-                <span class="err">2419200</span>     <span class="err">;</span> <span class="nb">Expire</span>
-                <span class="err">604800</span> <span class="err">)</span>    <span class="err">;</span> <span class="nb">Negative</span> Cache TTL
-
-     <span class="nb">IN</span>  NS     <span class="k">dns</span>.dominio1.com.
-<span class="err">50</span>   <span class="nb">IN</span>  PTR    <span class="k">dns</span>.dominio1.com.
-<span class="err">51</span>   <span class="nb">IN</span>  PTR    web1.dominio1.com.
-<span class="err">51</span>   <span class="nb">IN</span>  PTR    web1.dominio2.org.
-<span class="err">12</span>   <span class="nb">IN</span>  PTR    web2.dominio1.com.
-<span class="err">12</span>   <span class="nb">IN</span>  PTR    web2.dominio2.org.
-</code></pre></div>
-</td></tr></table>
                 
               
               
@@ -1267,7 +1160,7 @@
 
   <h2 id="__comments">Comentarios</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/0.1/dns/bind/zonasMultiplesEjemplo/",this.page.identifier="/dns/bind/zonasMultiplesEjemplo/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/0.1/dns/bind/bind-cache-example/",this.page.identifier="/dns/bind/bind-cache-example/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>
@@ -1282,7 +1175,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../zonasEjemplo/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Ejemplo - Zonas" rel="prev">
+        <a href="../bind-cache/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Teoría" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1291,20 +1184,20 @@
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Ejemplo - Zonas
+              Teoría
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../clientes/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Configurando clientes" rel="next">
+        <a href="../bind-zones/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Archivos de zona" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Siguiente
               </span>
-              Configurando clientes
+              Archivos de zona
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1354,6 +1247,15 @@
         
         
       
+      <a href="https://www.instagram.com/la9una" target="_blank" rel="noopener" title="www.instagram.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
       <a href="https://github.com/la9una" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
       </a>
@@ -1368,7 +1270,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.56a63758.min.js"></script>

@@ -29,10 +29,6 @@
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
-          
-          
-          <meta name="theme-color" content="#7e56c2">
-        
       
     
     
@@ -59,23 +55,22 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#gestion-de-software" class="md-skip">
-          Saltar a contenido
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -109,6 +104,28 @@
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -370,6 +387,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../basics-bash-scripting/" class="md-nav__link">
+        Scripting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../basics-tips/" class="md-nav__link">
         Tips
       </a>
@@ -456,103 +485,10 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Repositorios
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Repositorios
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#repositorios-de-software" class="md-nav__link">
-    Repositorios de software
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formatos-de-paquetes" class="md-nav__link">
-    Formatos de paquetes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-software" class="md-nav__link">
-    Instalación de software
-  </a>
-  
-    <nav class="md-nav" aria-label="Instalación de software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comando-basicos-para-gestion-de-software" class="md-nav__link">
-    Comando básicos para gestión de software
-  </a>
-  
-    <nav class="md-nav" aria-label="Comando básicos para gestión de software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#actualizar-todos-los-paquetes-del-sistema" class="md-nav__link">
-    Actualizar todos los paquetes del sistema
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instalar-un-paquete-de-software-particular" class="md-nav__link">
-    Instalar un paquete de software particular
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eliminar-un-paquete-de-software" class="md-nav__link">
-    Eliminar un paquete de software
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remover-paquetes-no-utilizados" class="md-nav__link">
-    Remover paquetes no utilizados
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -697,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/queEs/" class="md-nav__link">
+      <a href="../../lamp/" class="md-nav__link">
         ¿Qué es LAMP?
       </a>
     </li>
@@ -709,7 +645,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/instalacion/" class="md-nav__link">
+      <a href="../../lamp/lamp-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -721,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/gestionBasica/" class="md-nav__link">
+      <a href="../../lamp/lamp-basics/" class="md-nav__link">
         Gestión básica
       </a>
     </li>
@@ -733,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/userdir/" class="md-nav__link">
+      <a href="../../lamp/lamp-userdir/" class="md-nav__link">
         Web de usuario
       </a>
     </li>
@@ -745,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/virtualHosts/" class="md-nav__link">
+      <a href="../../lamp/lamp-virtualhosts/" class="md-nav__link">
         Hosts virtuales
       </a>
     </li>
@@ -757,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/ejercicios/" class="md-nav__link">
+      <a href="../../lamp/lamp-exercises/" class="md-nav__link">
         Ejercicios
       </a>
     </li>
@@ -808,7 +744,7 @@
   
     <li class="md-nav__item">
       <a href="../../dns/" class="md-nav__link">
-        ¿Qué es el DNS?
+        Introducción
       </a>
     </li>
   
@@ -819,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/archivoHosts/" class="md-nav__link">
+      <a href="../../dns/dns-hosts/" class="md-nav__link">
         El archivo hosts
       </a>
     </li>
@@ -864,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/instalacion/" class="md-nav__link">
+      <a href="../../dns/bind/bind-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -897,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/cache/" class="md-nav__link">
+      <a href="../../dns/bind/bind-cache/" class="md-nav__link">
         Teoría
       </a>
     </li>
@@ -909,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/cacheEjemplo/" class="md-nav__link">
+      <a href="../../dns/bind/bind-cache-example/" class="md-nav__link">
         Ejemplo práctico
       </a>
     </li>
@@ -948,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/zonas/" class="md-nav__link">
+      <a href="../../dns/bind/bind-zones/" class="md-nav__link">
         Archivos de zona
       </a>
     </li>
@@ -960,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/zonasEjemplo/" class="md-nav__link">
+      <a href="../../dns/bind/bind-zones-example/" class="md-nav__link">
         Ejemplo - Zonas
       </a>
     </li>
@@ -972,7 +908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/zonasMultiplesEjemplo/" class="md-nav__link">
+      <a href="../../dns/bind/bind-zones-example-multiple/" class="md-nav__link">
         Ejemplo - Zonas múltiples
       </a>
     </li>
@@ -996,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/clientes/" class="md-nav__link">
+      <a href="../../dns/dns-clients/" class="md-nav__link">
         Configurando clientes
       </a>
     </li>
@@ -1008,7 +944,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/dnsQuery/" class="md-nav__link">
+      <a href="../../dns/dns-query/" class="md-nav__link">
         Consultas DNS
       </a>
     </li>
@@ -1028,99 +964,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#repositorios-de-software" class="md-nav__link">
-    Repositorios de software
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formatos-de-paquetes" class="md-nav__link">
-    Formatos de paquetes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-software" class="md-nav__link">
-    Instalación de software
-  </a>
-  
-    <nav class="md-nav" aria-label="Instalación de software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comando-basicos-para-gestion-de-software" class="md-nav__link">
-    Comando básicos para gestión de software
-  </a>
-  
-    <nav class="md-nav" aria-label="Comando básicos para gestión de software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#actualizar-todos-los-paquetes-del-sistema" class="md-nav__link">
-    Actualizar todos los paquetes del sistema
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instalar-un-paquete-de-software-particular" class="md-nav__link">
-    Instalar un paquete de software particular
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eliminar-un-paquete-de-software" class="md-nav__link">
-    Eliminar un paquete de software
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remover-paquetes-no-utilizados" class="md-nav__link">
-    Remover paquetes no utilizados
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -1131,69 +974,11 @@
                   </a>
                 
                 
-                <h1 id="gestion-de-software">Gestión de software<a class="headerlink" href="#gestion-de-software" title="Permanent link">&para;</a></h1>
-<p>El modelo de distribución y gestión de software en las diferentes versiones (llamadas comunmente "distribuciones") de GNU/Linux data de hace algunos años y se han ido optimizando con el tiempo, siendo emulado por otras plataformas y dispositivos. </p>
-<h2 id="repositorios-de-software">Repositorios de software<a class="headerlink" href="#repositorios-de-software" title="Permanent link">&para;</a></h2>
-<p>Cada distribución de GNU/Linux, en general, posee su propio repositorio de software. Esto es, servidores distribuidos a lo largo del planeta que ofrecen software bajo demanda, una suerte de "tienda de aplicaciones" para cada distribución. Para ser más precisos, cada distribución tiene su propio repositorio de software que es "espejado" (clonado) por otros servidores en diversos países y regiones y ofrecido a los usuarios finales del sistema operativo. </p>
-<div class="admonition done">
-<p class="admonition-title">Configuración del repositorio<p>En distribuciones basadas en Debian, el archivo del sistema que contiene información sobre los repositorios se encuentra en el archivo <code>/etc/apt/sources.list</code>. Repositorios secundarios, pueden encontrarse en archivos independientes dentro de la carpeta <code>/etc/apt/sources.list.d/</code>. </p>
-</p>
-</div>
-<h2 id="formatos-de-paquetes">Formatos de paquetes<a class="headerlink" href="#formatos-de-paquetes" title="Permanent link">&para;</a></h2>
-<p>En ambientes *NIX es común referirse a los distintos programas de software bajo el nombre de "paquetes". No obstante, no existe un único tipo/formato de paquetes: estos dependen de cada distribución. </p>
-<div class="admonition done">
-<p class="admonition-title">Formatos de paquetes más respresentativos<p>Algunos de los formatos de paquetes más importantes según familias de distribuciones:</p>
-<ul>
-<li><code>.rpm</code> (CenOS, Fedora, RedHat, etc)</li>
-<li><code>.deb</code> (Debian, Ubuntu, Linux Mint, etc)</li>
-</ul>
-</p>
-</div>
-<h2 id="instalacion-de-software">Instalación de software<a class="headerlink" href="#instalacion-de-software" title="Permanent link">&para;</a></h2>
-<p>La instalación de software en distribuciones GNU/Linux se puede llevar adelante mediante 3 maneras diferentes: </p>
-<ol>
-<li>A través de la tienda de aplicaciones de la distribución</li>
-<li>Mediante un gestor de paquetes alternativo</li>
-<li>Instalando paquetes de manera aislada</li>
-<li>Compilando paquetes a partir de su código fuente</li>
-</ol>
-<p>En este curso, pondremos incapié en el punto 2. </p>
-<h3 id="comando-basicos-para-gestion-de-software">Comando básicos para gestión de software<a class="headerlink" href="#comando-basicos-para-gestion-de-software" title="Permanent link">&para;</a></h3>
-<p>A continuación se listan comandos básicos de gestión de software para distribuciones basadas en Debian, mediante el gestor de paquetes <strong>apt</strong>.</p>
-<p><strong>Actualizar la información de los repositorios</strong>
-Esta acción no instalará ningún paquete, solo comparará la base de datos de paquetes remota con la base de datos de paquetes instalados localemnte e informará actualizaciones en caso de existir.  </p>
-<div class="highlight"><pre><span></span><code>sudo apt update
-</code></pre></div>
-<h4 id="actualizar-todos-los-paquetes-del-sistema">Actualizar todos los paquetes del sistema<a class="headerlink" href="#actualizar-todos-los-paquetes-del-sistema" title="Permanent link">&para;</a></h4>
-<p>Para actualizar los paquetes de software del sistema local, sólo ejecutaremos el siguiente comando: </p>
-<p><div class="highlight"><pre><span></span><code>sudo apt upgrade
-</code></pre></div>
-Si además queremos incluir los cambios de versión mayor (como una versión de la distribución) ejecutamos: </p>
-<div class="highlight"><pre><span></span><code>sudo apt dist-upgrade
-</code></pre></div>
-<h4 id="instalar-un-paquete-de-software-particular">Instalar un paquete de software particular<a class="headerlink" href="#instalar-un-paquete-de-software-particular" title="Permanent link">&para;</a></h4>
-<p>Si sólo deseamos instalar uno o más paquetes puntuales, ejecutamos el siguiente comando: </p>
-<p><div class="highlight"><pre><span></span><code>sudo apt install &lt;paquete1&gt; &lt;paquete2&gt;
-</code></pre></div>
-Y el sistema se encargará de instalar automáticamente, las <strong>dependencias</strong> que cada paquete posea (es decir, el software adicional necesario para que el software que instalamos, funcione correctamente). </p>
-<h4 id="eliminar-un-paquete-de-software">Eliminar un paquete de software<a class="headerlink" href="#eliminar-un-paquete-de-software" title="Permanent link">&para;</a></h4>
-<p>Para desinstalar un paquete podemos hacerlo de dos maneras: desinstalar el paquete pero conservar sus archivos de configuración o desinstalarlo completamente. </p>
-<p>Para desinstalar sólamente el paquete: </p>
-<div class="highlight"><pre><span></span><code>sudo apt remove &lt;paquete&gt;
-</code></pre></div>
-<p>Si además queremos remover todos los archivos de configuración relacionados con el paquete a desinstalar: </p>
-<div class="highlight"><pre><span></span><code>sudo apt purge &lt;paquete&gt;
-</code></pre></div>
-<h4 id="remover-paquetes-no-utilizados">Remover paquetes no utilizados<a class="headerlink" href="#remover-paquetes-no-utilizados" title="Permanent link">&para;</a></h4>
-<p>Luego de desinstalar un paquete o por cambios en las dependencias de uno de ellos, es posible que tengamos instalados en el sistema, paquetes que no se utilizan. Adicionalmente, al realizar una actualización de repositorio, la información de los paquetes en nuestro sistema local puede quedar obsoleta, respecto de las actualizaciones realizadas en el repositorio remoto. </p>
-<p>Para eliminar paquetes que no se usan: </p>
-<p><div class="highlight"><pre><span></span><code>sudo apt autoremove
-</code></pre></div>
-Para eliminar indice de paquetes obsoleto: </p>
-<div class="highlight"><pre><span></span><code>sudo apt autoclean
-</code></pre></div>
-<p>''' done "Gestores de paquetes"
-        En distribuciones Debien, existen otros gestores de paquetes alternativos que ofrecen una interfaz gráfica o más amigable para la gestión de software. </p>
+                  <h1>Repositorios</h1>
+                
+                <mark class="critic block">
+<p>El contenido se encuentra en desarrollo. Próximamente será publicado. <img alt="🧑🏽‍💻" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f9d1-1f3fd-200d-1f4bb.svg" title=":technologist_tone3:" /></p>
+</mark>
                 
               
               
@@ -1289,6 +1074,15 @@ Para eliminar indice de paquetes obsoleto: </p>
         
         
       
+      <a href="https://www.instagram.com/la9una" target="_blank" rel="noopener" title="www.instagram.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
       <a href="https://github.com/la9una" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
       </a>
@@ -1303,7 +1097,7 @@ Para eliminar indice de paquetes obsoleto: </p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56a63758.min.js"></script>

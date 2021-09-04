@@ -13,14 +13,14 @@
         <meta name="author" content="Raul Jesus Lopez">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/0.1/lamp/instalacion/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/0.1/dns/dns-hosts/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.5">
     
     
       
-        <title>Instalación - Redes</title>
+        <title>El archivo hosts - Redes</title>
       
     
     
@@ -28,10 +28,6 @@
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
-        
-          
-          
-          <meta name="theme-color" content="#7e56c2">
         
       
     
@@ -59,13 +55,17 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
   
     
     <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#instalacion-de-apache" class="md-skip">
+        <a href="#ubicacion-del-archivo-hosts" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -103,12 +103,34 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Instalación
+              El archivo hosts
             
           </span>
         </div>
       </div>
     </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+            </label>
+          
+        
+      </form>
     
     
     
@@ -368,6 +390,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../gnuLinux/basics-bash-scripting/" class="md-nav__link">
+        Scripting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../gnuLinux/basics-tips/" class="md-nav__link">
         Tips
       </a>
@@ -546,16 +580,14 @@
 
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       <label class="md-nav__link" for="__nav_3">
         Servidor web
@@ -571,14 +603,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
       
       <label class="md-nav__link" for="__nav_3_1">
         LAMP
@@ -596,7 +626,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../queEs/" class="md-nav__link">
+      <a href="../../lamp/" class="md-nav__link">
         ¿Qué es LAMP?
       </a>
     </li>
@@ -606,115 +636,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Instalación
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../lamp/lamp-install/" class="md-nav__link">
         Instalación
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-apache" class="md-nav__link">
-    Instalación de Apache
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-mariadb" class="md-nav__link">
-    Instalación de MaríaDB
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-php-74" class="md-nav__link">
-    Instalación de PHP 7.4
-  </a>
-  
-    <nav class="md-nav" aria-label="Instalación de PHP 7.4">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comandos-utiles-de-apache" class="md-nav__link">
-    Comandos útiles de Apache
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-phpmyadmin" class="md-nav__link">
-    Instalación de phpMyAdmin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verificando-la-instalacion" class="md-nav__link">
-    Verificando la instalación
-  </a>
-  
-    <nav class="md-nav" aria-label="Verificando la instalación">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#apache" class="md-nav__link">
-    Apache
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#php" class="md-nav__link">
-    PHP
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phpmyadmin" class="md-nav__link">
-    phpMyAdmin
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -724,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gestionBasica/" class="md-nav__link">
+      <a href="../../lamp/lamp-basics/" class="md-nav__link">
         Gestión básica
       </a>
     </li>
@@ -736,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../userdir/" class="md-nav__link">
+      <a href="../../lamp/lamp-userdir/" class="md-nav__link">
         Web de usuario
       </a>
     </li>
@@ -748,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../virtualHosts/" class="md-nav__link">
+      <a href="../../lamp/lamp-virtualhosts/" class="md-nav__link">
         Hosts virtuales
       </a>
     </li>
@@ -760,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ejercicios/" class="md-nav__link">
+      <a href="../../lamp/lamp-exercises/" class="md-nav__link">
         Ejercicios
       </a>
     </li>
@@ -785,14 +711,16 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       <label class="md-nav__link" for="__nav_4">
         Servidor de nombres
@@ -810,8 +738,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/" class="md-nav__link">
-        ¿Qué es el DNS?
+      <a href="../" class="md-nav__link">
+        Introducción
       </a>
     </li>
   
@@ -820,11 +748,81 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../dns/archivoHosts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          El archivo hosts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         El archivo hosts
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ubicacion-del-archivo-hosts" class="md-nav__link">
+    Ubicación del archivo hosts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modificando-el-archivo-hosts" class="md-nav__link">
+    Modificando el archivo hosts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#el-archivo-hosts-y-la-seguridad" class="md-nav__link">
+    El archivo hosts y la seguridad
+  </a>
+  
+    <nav class="md-nav" aria-label="El archivo hosts y la seguridad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tcp-wrappers" class="md-nav__link">
+    TCP Wrappers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blacklists" class="md-nav__link">
+    Blacklists
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -855,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/" class="md-nav__link">
+      <a href="../bind/" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -867,7 +865,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/instalacion/" class="md-nav__link">
+      <a href="../bind/bind-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -900,7 +898,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/cache/" class="md-nav__link">
+      <a href="../bind/bind-cache/" class="md-nav__link">
         Teoría
       </a>
     </li>
@@ -912,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/cacheEjemplo/" class="md-nav__link">
+      <a href="../bind/bind-cache-example/" class="md-nav__link">
         Ejemplo práctico
       </a>
     </li>
@@ -951,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/zonas/" class="md-nav__link">
+      <a href="../bind/bind-zones/" class="md-nav__link">
         Archivos de zona
       </a>
     </li>
@@ -963,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/zonasEjemplo/" class="md-nav__link">
+      <a href="../bind/bind-zones-example/" class="md-nav__link">
         Ejemplo - Zonas
       </a>
     </li>
@@ -975,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/zonasMultiplesEjemplo/" class="md-nav__link">
+      <a href="../bind/bind-zones-example-multiple/" class="md-nav__link">
         Ejemplo - Zonas múltiples
       </a>
     </li>
@@ -999,7 +997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/clientes/" class="md-nav__link">
+      <a href="../dns-clients/" class="md-nav__link">
         Configurando clientes
       </a>
     </li>
@@ -1011,7 +1009,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/dnsQuery/" class="md-nav__link">
+      <a href="../dns-query/" class="md-nav__link">
         Consultas DNS
       </a>
     </li>
@@ -1048,71 +1046,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-apache" class="md-nav__link">
-    Instalación de Apache
+  <a href="#ubicacion-del-archivo-hosts" class="md-nav__link">
+    Ubicación del archivo hosts
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-mariadb" class="md-nav__link">
-    Instalación de MaríaDB
+  <a href="#modificando-el-archivo-hosts" class="md-nav__link">
+    Modificando el archivo hosts
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-php-74" class="md-nav__link">
-    Instalación de PHP 7.4
+  <a href="#el-archivo-hosts-y-la-seguridad" class="md-nav__link">
+    El archivo hosts y la seguridad
   </a>
   
-    <nav class="md-nav" aria-label="Instalación de PHP 7.4">
+    <nav class="md-nav" aria-label="El archivo hosts y la seguridad">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#comandos-utiles-de-apache" class="md-nav__link">
-    Comandos útiles de Apache
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-phpmyadmin" class="md-nav__link">
-    Instalación de phpMyAdmin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verificando-la-instalacion" class="md-nav__link">
-    Verificando la instalación
-  </a>
-  
-    <nav class="md-nav" aria-label="Verificando la instalación">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#apache" class="md-nav__link">
-    Apache
+  <a href="#tcp-wrappers" class="md-nav__link">
+    TCP Wrappers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#php" class="md-nav__link">
-    PHP
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#phpmyadmin" class="md-nav__link">
-    phpMyAdmin
+  <a href="#blacklists" class="md-nav__link">
+    Blacklists
   </a>
   
 </li>
@@ -1134,73 +1098,78 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/lamp/instalacion.md" title="Editar esta página" class="md-content__button md-icon">
+                  <a href="https://github.com/la9una/redes/edit/master/docs/dns/dns-hosts.md" title="Editar esta página" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Instalación</h1>
+                  <h1>El archivo hosts</h1>
                 
-                <div class="admonition warning">
-<p class="admonition-title">Ingreso de datos</p>
-<p>Durante la instalación se solicitará en varias ocasiones el ingreso de información por parte del usuario. Por ejemplo, la contraseña del usuario root de la base de datos, o el tipo de servicio a instalar si usamos <code>tasksel</code>. Conviene prestar atención en cada paso para evitar errores de configuración. </p>
+                <p>El archivo <em>hosts</em> existe en todos los sistemas operativos. Si bien se puede emplear para la resolución de nombres de dominio en una red local, en redes medianas actualmente es reemplazado por el servicio de DNS. </p>
+<div class="admonition info">
+<p class="admonition-title">Wikipedia</p>
+<p>El archivo <strong>hosts</strong> de un ordenador es usado por el sistema operativo para guardar la <strong>correspondencia entre dominios de Internet y direcciones IP</strong>. Este es uno de los diferentes métodos que usa el sistema operativo para resolver nombres de dominios. </p>
+<p>Antiguamente cuando no había servidores DNS que resolvieran los dominios, el archivo hosts era el único encargado de hacerlo, pero dejó de utilizarse cuando Internet empezó a crecer en nombres de dominio, pasando a usar servidores de resolución de DNS. </p>
+<p>En muchos sistemas operativos este método es usado preferentemente respecto a otros como el DNS. En la actualidad también es usado para bloquear contenidos de Internet como la publicidad web.</p>
 </div>
-<p>Para disponer de un servidor web <strong>LAMP</strong> ejecutaremos los comandos que se indican a continuación. </p>
-<h3 id="instalacion-de-apache">Instalación de Apache<a class="headerlink" href="#instalacion-de-apache" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>sudo apt install apache2 apache2-utils -y
+<h2 id="ubicacion-del-archivo-hosts">Ubicación del archivo <em>hosts</em><a class="headerlink" href="#ubicacion-del-archivo-hosts" title="Permanent link">&para;</a></h2>
+<p>El archivo <strong>hosts</strong> es un archivo de texto plano que puede ser editado por el administrador del equipo y su ubicación depende del sistema operativo:</p>
+<table>
+<thead>
+<tr>
+<th>Sistema operativo</th>
+<th>Ubicación del archivo <em>hosts</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Windows</td>
+<td><code>C:\Windows\System32\drivers\etc\hosts</code></td>
+</tr>
+<tr>
+<td>Unix - GNU/Linux - BSD</td>
+<td><code>/etc/hosts</code></td>
+</tr>
+<tr>
+<td>Mac OS - iPhone OS</td>
+<td><code>/private/etc/hosts</code></td>
+</tr>
+<tr>
+<td>Android</td>
+<td><code>/system/etc/hosts</code></td>
+</tr>
+</tbody>
+</table>
+<p>Entonces, si deseamos abrir el archivo en <strong>GNU/Linux</strong>, ejecutamos:</p>
+<div class="highlight"><pre><span></span><code>sudo vim /etc/hosts
 </code></pre></div>
-<p>Podemos comprobar la instalación ejecutando: </p>
-<div class="highlight"><pre><span></span><code>apache2 -v
+<p>Si en cambio, deseamos abrir el archivo en <strong>Microsoft Windows</strong>, haremos clic derecho sobre el archivo <strong>hosts</strong> (ver ubicación en la tabla) y seleccionamos del menú contextual la opción "Abrir como Administrador". </p>
+<h2 id="modificando-el-archivo-hosts">Modificando el archivo <em>hosts</em><a class="headerlink" href="#modificando-el-archivo-hosts" title="Permanent link">&para;</a></h2>
+<p>Si importar el sistema operativo, la sintaxis del archivo <em>hosts</em> será la siguiente: </p>
+<div class="highlight"><pre><span></span><code>&lt;ip.del.equipo&gt;  &lt;nombre_De_Dominio&gt;
 </code></pre></div>
-<h3 id="instalacion-de-mariadb">Instalación de MaríaDB<a class="headerlink" href="#instalacion-de-mariadb" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>sudo apt install mariadb-server mariadb-client -y
+<p>Si tomamos como ejemplo el dominio ficticio <code>dominio.tld</code> y suponiendo que la dirección IP del equipo servidor es <code>192.168.0.33</code>, el contenido del archivo <em>hosts</em> nos quedará como sigue:</p>
+<div class="highlight"><pre><span></span><code><span class="m">192</span>.168.0.33  www.dominio.tld  dominio.tld  http://dominio.tld
 </code></pre></div>
-<p>Podemos comprobar la instalación ejecutando: </p>
-<div class="highlight"><pre><span></span><code>mariadb --version
-</code></pre></div>
-<p>El paso siguiente será establecer la contraseña de la base de datos</p>
-<div class="highlight"><pre><span></span><code>sudo mysql_secure_installation
-</code></pre></div>
-<h3 id="instalacion-de-php-74">Instalación de PHP 7.4<a class="headerlink" href="#instalacion-de-php-74" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>sudo apt install php7.4 libapache2-mod-php7.4 php7.4-mysql php-common php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-readline -y
-</code></pre></div>
-<p>Podemos comprobar la instalación ejecutando: </p>
-<div class="highlight"><pre><span></span><code>php --version
-</code></pre></div>
-<h4 id="comandos-utiles-de-apache">Comandos útiles de Apache<a class="headerlink" href="#comandos-utiles-de-apache" title="Permanent link">&para;</a></h4>
-<p>Podemos reiniciar Apache de la siguiente manera:  </p>
-<div class="highlight"><pre><span></span><code>sudo systemctl restart apache2
-</code></pre></div>
-<p>O bien: </p>
-<div class="highlight"><pre><span></span><code>sudo /etc/init.d/apache2 restart
-</code></pre></div>
-<h3 id="instalacion-de-phpmyadmin">Instalación de phpMyAdmin<a class="headerlink" href="#instalacion-de-phpmyadmin" title="Permanent link">&para;</a></h3>
-<p>Adicionalmente podemos instalar un gestor para nuestra base de datos, llamado <strong>phpmyadmin</strong> (junto a algunas librerías extra), ejecutando el siguiente comando: </p>
-<div class="highlight"><pre><span></span><code>sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
-</code></pre></div>
-<h2 id="verificando-la-instalacion">Verificando la instalación<a class="headerlink" href="#verificando-la-instalacion" title="Permanent link">&para;</a></h2>
-<p>Para verificar el correcto funcionamiento del servidor, seguiremos los pasos que se detallan a continuación.</p>
-<h3 id="apache">Apache<a class="headerlink" href="#apache" title="Permanent link">&para;</a></h3>
-<p>Abrimos el navegador web y nos dirigimos a la siguiente dirección: <code>http://nombreDominioServidor</code> o <code>http://direccionIPServidor</code>. En cualquier caso deberíamos visualizar la página de bienvenida del servidor web:</p>
-<p><img alt="Apache" src="../imgLamp/lampWorks.png" /></p>
-<h3 id="php">PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h3>
-<p>Dentro de la carpeta raíz por defecto del servidor web <code>/var/www/html</code>, creamos un archivo con el nombre <code>info.php</code> (en realidad, se puede llamar como prefieras):</p>
-<p><div class="highlight"><pre><span></span><code>sudo nano /var/www/html/info.php
-</code></pre></div>
-Y agregaremos al archivo el contenido:</p>
-<p><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
-<span class="nb">phpinfo</span><span class="p">();</span>
-<span class="cp">?&gt;</span><span class="x"></span>
-</code></pre></div>
-Luego de guardar los cambios al archivo, abrimos un navegador web y visitamos la dirección <code>http://nombreDominioServidor/info.php</code> ó <code>http://direccionIPServidor/ìnfo.php</code> y deberíamos la página de información sobre php:</p>
-<p><img alt="PHPInfo" src="../imgLamp/lampPhpInfo.png" /></p>
-<h3 id="phpmyadmin">phpMyAdmin<a class="headerlink" href="#phpmyadmin" title="Permanent link">&para;</a></h3>
-<p>Abrimos nuestro navegador y nos dirigimos a <code>http://nombreDominioServidor/phpmyadmin</code> ó <code>http://direccionIPServidor/phpmyadmin</code>. Veremos una página similar a ésta: </p>
-<p><img alt="phpMyAdmin" src="../imgLamp/lampPhpMyAdmin.png" /></p>
-<p>E iniciamos sesión con las siguientes credenciales: </p>
+<p>Si configuramos correctamente el archivo <em>hosts</em> de nuestro sistema, podremos acceder al/los dominio/s especificados. </p>
+<div class="admonition warning">
+<p class="admonition-title">Resolución de dominios empleando el archivo <em>hosts</em></p>
+<p>Si en una red local, decidimos resolver los nombres de dominio valiéndonos del archivo <em>hosts</em> tendremos que copiar el mismo archivo <em>hosts</em> en cada uno de los equipos que compongan la red.</p>
+</div>
+<h2 id="el-archivo-hosts-y-la-seguridad">El archivo hosts y la seguridad<a class="headerlink" href="#el-archivo-hosts-y-la-seguridad" title="Permanent link">&para;</a></h2>
+<p>Como estudiamos anteriormente, el arhivo <em>hosts</em> fue creado para la resolución de dominios. Sin embargo, dicho archivo posee opciones interesantes para securizar un sistema que compone una red informática. </p>
+<h3 id="tcp-wrappers">TCP Wrappers<a class="headerlink" href="#tcp-wrappers" title="Permanent link">&para;</a></h3>
+<p>{EN DESARROLLO}</p>
 <ul>
-<li><strong>Usuario</strong>: root</li>
-<li><strong>Contraseña</strong>: la definida durante el proceso de instalación</li>
+<li><a href="https://blog.carreralinux.com.ar/2016/10/reglas-para-tcp-wrappers-ejemplos-linux/">https://blog.carreralinux.com.ar/2016/10/reglas-para-tcp-wrappers-ejemplos-linux/</a></li>
+<li><a href="https://www.taringa.net/posts/linux/16178276/Asegurando-el-sistema-con-hosts-deny-allow.html">https://www.taringa.net/posts/linux/16178276/Asegurando-el-sistema-con-hosts-deny-allow.html</a></li>
+</ul>
+<h3 id="blacklists">Blacklists<a class="headerlink" href="#blacklists" title="Permanent link">&para;</a></h3>
+<p>Es posible bloquear el acceso a dominios indeseados (con contenido inapropiado o malware, por ejemplo) mediante el archivo <em>hosts</em>. Para este cometido, existen en la red diversas listas negras o <em>blacklists</em> que contienen información sobre dominios maliciosos, ahorrándonos gran parte del trabajo. </p>
+<ul>
+<li><a href="https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist">Ultimate Hosts Blacklist</a></li>
+<li><a href="https://www.dnsbl.info/dnsbl-list.php">DNSBL - Domain Name System Blacklists</a></li>
+<li><a href="https://github.com/StevenBlack/hosts">Hosts</a></li>
 </ul>
                 
               
@@ -1210,7 +1179,7 @@ Luego de guardar los cambios al archivo, abrimos un navegador web y visitamos la
 
   <h2 id="__comments">Comentarios</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/0.1/lamp/instalacion/",this.page.identifier="/lamp/instalacion/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/0.1/dns/dns-hosts/",this.page.identifier="/dns/dns-hosts/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>
@@ -1225,7 +1194,7 @@ Luego de guardar los cambios al archivo, abrimos un navegador web y visitamos la
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../queEs/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: ¿Qué es LAMP?" rel="prev">
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Introducción" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1234,20 +1203,20 @@ Luego de guardar los cambios al archivo, abrimos un navegador web y visitamos la
               <span class="md-footer__direction">
                 Anterior
               </span>
-              ¿Qué es LAMP?
+              Introducción
             </div>
           </div>
         </a>
       
       
         
-        <a href="../gestionBasica/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Gestión básica" rel="next">
+        <a href="../bind/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Introducción" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Siguiente
               </span>
-              Gestión básica
+              Introducción
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1297,6 +1266,15 @@ Luego de guardar los cambios al archivo, abrimos un navegador web y visitamos la
         
         
       
+      <a href="https://www.instagram.com/la9una" target="_blank" rel="noopener" title="www.instagram.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+      </a>
+    
+      
+      
+        
+        
+      
       <a href="https://github.com/la9una" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
       </a>
@@ -1311,7 +1289,7 @@ Luego de guardar los cambios al archivo, abrimos un navegador web y visitamos la
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56a63758.min.js"></script>

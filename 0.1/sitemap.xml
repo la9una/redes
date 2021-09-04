@@ -11,17 +11,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/dns/archivoHosts/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/dns/dns-clients/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/dns/clientes/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/dns/dns-hosts/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/dns/dnsQuery/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/dns/dns-query/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -31,32 +31,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/cache/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/bind-cache-example/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/cacheEjemplo/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/bind-cache/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/instalacion/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/bind-install/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/zonas/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/bind-zones-example-multiple/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/zonasEjemplo/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/bind-zones-example/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/zonasMultiplesEjemplo/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/dns/bind/bind-zones/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -141,42 +141,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/documentRoot/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/ejercicios/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/lamp-basics/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/gestionBasica/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/lamp-exercises/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/instalacion/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/lamp-install/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/queEs/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/lamp-userdir/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/userdir/</loc>
-         <lastmod>2021-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/virtualHosts/</loc>
-         <lastmod>2021-09-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/webDav/</loc>
+         <loc>http://www.rauljesus.xyz/redes/0.1/lamp/lamp-virtualhosts/</loc>
          <lastmod>2021-09-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
