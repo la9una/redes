@@ -1,4 +1,4 @@
-Tal vez se trate de una discusión eterna entre usuarios de computadoras: Escritorio vs Terminal. Lo cierto es que el empleo de un entorno de escritorio o _desktop_ (GUI Graphical User Interface) no tiene porqué rivalizar con el uso de una terminal de comandos  o _shell_ (CLI - Command Line Interface). Pueden usarse a la vez, o bien, elegir trabajar de una manera por encima de la otra. 
+Tal vez se trate de una discusión eterna entre usuarios de computadoras: Escritorio vs Terminal. Lo cierto es que el empleo de un entorno de escritorio o _desktop_ (GUI - Graphical User Interface) no tiene porqué rivalizar con el uso de una terminal de comandos  o _shell_ (CLI - Command Line Interface). Pueden usarse a la vez, o bien, elegir trabajar de una manera por encima de la otra. 
 
 Veamos un esquema de la arquitectura de sistemas basados en GNU/Linux:
 
@@ -11,6 +11,7 @@ Hechas las aclaraciones, cabe resaltar que en ambientes de administradores de si
 * Las órdenes de consola están estandarizadas [(POSIX)](https://es.wikipedia.org/wiki/POSIX) independientemente de la versión del sistema operativo
 * Ahorro de recursos (procesador, memoria, etc)
 * Fácil automatización de tareas
+* Mayor velocidad y eficencia en la gestión de tareas
 
 {==
 
@@ -18,11 +19,6 @@ Por lo antedicho, en la presente documentación, nos enfocaremos en la administr
 
 ==}
 
-
-
-
-!!! done ""
-    La terminal o consola es una herramienta poderosa copaz de realizar tareas de forma más rápida que mediante la interfaz gráfica del sistema operativo.
 
 
 ## Terminales online con GNU/Linux
