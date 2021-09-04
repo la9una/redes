@@ -151,13 +151,13 @@ El arcivo de configuración de PHP se llama `php.ini`. No existe un único archi
 
 | Ubicación de `php.ini`   | Uso           |
 | ------------------------ | --------------------------------------- |
-|`/etc/php/7.0/apache2/php.ini`| Plugin PHP utilizado por el servidor web Apache|
-|`/etc/php/7.0/fpm/php.ini`   | Plugin PHP utilizado por el servidor web NGINX|
-|`/etc/php/7.0/cli/php.ini`| Ejecución de PHP desde la terminal de comandos|
-|`/etc/php/7.0/cgi/php.ini`| Plugin PHP para CGI|
+|`/etc/php/<version>/apache2/php.ini`| Plugin PHP utilizado por el servidor web Apache|
+|`/etc/php/<version>/fpm/php.ini`   | Plugin PHP utilizado por el servidor web NGINX|
+|`/etc/php/<version>/cli/php.ini`| Ejecución de PHP desde la terminal de comandos|
+|`/etc/php/<version>/cgi/php.ini`| Plugin PHP para CGI|
 
-Donde `7.0` corresponde a la versión de PHP instalada. Luego, el archivo que tendremos que editar cuando querramos modificar el comportamiento de **PHP en un entorno LAMP** será el que aparece en la primer fila de la tabla. 
+Donde `<version>` corresponde a la versión de PHP instalada. Luego, el archivo que tendremos que editar cuando querramos modificar el comportamiento de **PHP en un entorno LAMP** será el que aparece en la primer fila de la tabla. 
 
 
 ## Base de datos
-Las bases de datos soportan administración a través de la línea de comandos, como podemos leer en la documentación oficial de [MySQL](https://dev.mysql.com/doc/refman/5.7/en/mysql-commands.html) y [MariaDB](https://mariadb.com/kb/en/mariadb/mysql-command-line-client/). No obstante, una de las opciones más elegidas a la hora de gestionar base de datos es [phpMyAdmin](instalacion#instalacion-de-phpmyadmin)
+Las bases de datos soportan administración a través de la línea de comandos, como podemos leer en la documentación oficial de [MySQL](https://dev.mysql.com/doc/refman/5.7/en/mysql-commands.html) y [MariaDB](https://mariadb.com/kb/en/mariadb/mysql-command-line-client/). No obstante, una de las opciones más elegidas a la hora de gestionar base de datos es [phpMyAdmin](lamp-install.md#phpmyadmin)
