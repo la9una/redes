@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#contenedores-con-docker-compose" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1345,6 +1350,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../docker-containers/" class="md-nav__link">
+        Contenedores
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -1354,10 +1371,77 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Docker Compose
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Docker Compose
       </a>
       
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenedores-con-docker-compose" class="md-nav__link">
+    Contenedores con Docker Compose
+  </a>
+  
+    <nav class="md-nav" aria-label="Contenedores con Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-docker-compose" class="md-nav__link">
+    Instalación de Docker Compose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-del-archivo-docker-composeyml" class="md-nav__link">
+    Creación del archivo docker-compose.yml
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejecucion-de-docker-compose" class="md-nav__link">
+    Ejecución de Docker Compose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker-utils/" class="md-nav__link">
+        Comandos útiles
+      </a>
     </li>
   
 
@@ -1381,6 +1465,63 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contenedores-con-docker-compose" class="md-nav__link">
+    Contenedores con Docker Compose
+  </a>
+  
+    <nav class="md-nav" aria-label="Contenedores con Docker Compose">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instalacion-de-docker-compose" class="md-nav__link">
+    Instalación de Docker Compose
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creacion-del-archivo-docker-composeyml" class="md-nav__link">
+    Creación del archivo docker-compose.yml
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejecucion-de-docker-compose" class="md-nav__link">
+    Ejecución de Docker Compose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -1393,7 +1534,53 @@
                 
                   <h1>Docker Compose</h1>
                 
-                
+                <h2 id="contenedores-con-docker-compose">Contenedores con Docker Compose<a class="headerlink" href="#contenedores-con-docker-compose" title="Permanent link">&para;</a></h2>
+<p>Para facilitar la tarea de creción de contenedores, podemos emplear la herramienta <strong>Docker Compose</strong>. </p>
+<h3 id="instalacion-de-docker-compose">Instalación de Docker Compose<a class="headerlink" href="#instalacion-de-docker-compose" title="Permanent link">&para;</a></h3>
+<p>Para instalar dicho software en Ubuntu 20.04 LTS, escribimos: </p>
+<div class="highlight"><pre><span></span><code>sudo apt install docker-compose
+</code></pre></div>
+<h3 id="creacion-del-archivo-docker-composeyml">Creación del archivo docker-compose.yml<a class="headerlink" href="#creacion-del-archivo-docker-composeyml" title="Permanent link">&para;</a></h3>
+<p>Para utilizar la herramienta, debemos crear un archivo llamado <code>docker-compose.yml</code>. El contenido básico de este archivo bien podría ser:</p>
+<div class="highlight"><pre><span></span><code>version: &lt;versión de Docker Compose&gt;
+services:
+ &lt;Nombre del servicio a lanzar&gt;:
+  image: &lt;Nombre de la imagen a emplear&gt;
+  container_name: &lt;Nombre del contenedor&gt;
+</code></pre></div>
+<p>Por ejemplo: </p>
+<div class="highlight"><pre><span></span><code>version: <span class="s2">&quot;3&quot;</span>
+services:
+ web1:
+  image: httpd
+  container_name: webserver1
+</code></pre></div>
+<p>Otro ejemplo mas completo: </p>
+<div class="highlight"><pre><span></span><code>version: <span class="s2">&quot;3&quot;</span>
+services:
+ web1:
+  image: httpd
+  container_name: webserver1
+  ports:
+   - <span class="s2">&quot;5000:80&quot;</span>
+  volumes:
+   - ./sitio1:/usr/local/apache2/htdocs
+ web2:
+  image: httpd
+  container_name: webserver2
+  volumes:
+   - ./sitio2:/usr/local/apache2/htdocs
+  ports:
+   - <span class="s2">&quot;5001:80&quot;</span>
+</code></pre></div>
+<h3 id="ejecucion-de-docker-compose">Ejecución de Docker Compose<a class="headerlink" href="#ejecucion-de-docker-compose" title="Permanent link">&para;</a></h3>
+<p>Para inicializar las órdenes contenidas en un archivo docker-compose.yml simplemente, debemos ubicarnos donde éste, y ejecutar: </p>
+<div class="highlight"><pre><span></span><code>docker-compose up -d
+</code></pre></div>
+<p>Para eliminar los contenedores creados por un archivo Docker Compose ejecutamos: </p>
+<div class="highlight"><pre><span></span><code>docker-compose down
+</code></pre></div>
+<p>Podés ver otras opciones sobre Docker Compose, <a href="https://docs.docker.com/compose/">consultando la documentación oficial</a></p>
                 
               
               
@@ -1417,7 +1604,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../docker-images/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Imágenes" rel="prev">
+        <a href="../docker-containers/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Contenedores" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1426,11 +1613,26 @@
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Imágenes
+              Contenedores
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../docker-utils/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Comandos útiles" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Comandos útiles
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   

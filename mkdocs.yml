@@ -168,4 +168,6 @@ nav:
       - ¿Qué es Docker?: 'containers/docker-introduction.md'
       - Instalación: 'containers/docker-install.md'
       - Imágenes: 'containers/docker-images.md'
+      - Contenedores: 'containers/docker-containers.md'
       - Docker Compose: 'containers/docker-compose.md'
+      - Comandos útiles: 'containers/docker-utils.md'
