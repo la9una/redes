@@ -31,25 +31,14 @@ Luego, reiniciamos el servidor para que incorpore los cambios:
 sudo systemctl restart apache2
 ```
 
-## Habilitando el módulo php7.0
+## Permitiendo el uso de PHP en public_html
 
-En caso de querer ejecutar **PHP** en las webs personales de los usuarios tendremos que instalar el módulo correspondiente:
-
-```bash
-sudo apt-get install libapache2-mod-php7.0
-```
-
-Acto seguido, habilitamos el módulo: 
+Para habilitar la ejecucción de scripts PHP dentro de directorio `public_html` de los usuarios, tendremos que asegurarnos que el módulo PHP esté activado. Una vez realizada esta comprobación, abriremos con permisos administrativos el siguiente archivo:
 
 ```bash
-sudo a2enmod php7.0
+nano /etc/apache2/mods-available/php<version>.conf
 ```
-
-Por último, debemos permitir la ejecucción de scripts PHP dentro de directorio `home` de los usuarios. Para ello, abrimos el archivo:
-
-```bash
-nano /etc/apache2/mods-available/php7.0.conf
-```
+Donde `<version>` hace referencia al número de versión de PHP instalada. 
 
 Un vez abierto el archivo, tenemos que desplazarnos hasta el final del archivo hasta ubicar el siguiente bloque de código:
 
@@ -78,7 +67,4 @@ sudo systemctl restart apache2
 
 ## Aceso a la web del usuario
 
-Una vez concluidos los pasos anteriores, podemos acceder a la web del usuario escribiendo en el navegador:
-
-* `http://nombreDominioServidor/~usuario` o `http://direccionIPServidor/~usuario` si incluimos en la raíz del sitio web contenido estático o
-* `http://nombreDominioServidor/~usuario/archivo.php` o `http://direccionIPServidor/~usuario/archivo.php` si agregamos a la web contenido dinámico (PHP). En el ejemplo, dicho contenido dinámico está representado por `archivo.php`
+Una vez concluidos los pasos anteriores, podemos acceder a la web del usuario escribiendo en el navegador `http://direccionIPServidor/~usuario` o bien `http://nombreDominioServidor/~usuario`.

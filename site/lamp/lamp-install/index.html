@@ -719,6 +719,26 @@
     PHP
   </a>
   
+    <nav class="md-nav" aria-label="PHP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#habitando-el-modulo-php-en-apache" class="md-nav__link">
+    Habitando el módulo PHP en Apache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creando-una-pagina-php-de-prueba" class="md-nav__link">
+    Creando una página PHP de prueba
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1143,6 +1163,26 @@
     PHP
   </a>
   
+    <nav class="md-nav" aria-label="PHP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#habitando-el-modulo-php-en-apache" class="md-nav__link">
+    Habitando el módulo PHP en Apache
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creando-una-pagina-php-de-prueba" class="md-nav__link">
+    Creando una página PHP de prueba
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1232,10 +1272,20 @@
 <p>Abrimos el navegador web y nos dirigimos a la siguiente dirección: <code>http://nombreDominioServidor</code> o <code>http://direccionIPServidor</code>. En cualquier caso deberíamos visualizar la página de bienvenida del servidor web:</p>
 <p><img alt="Apache" src="../imgLamp/lampWorks.png" /></p>
 <h3 id="php">PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h3>
-<p>Dentro de la carpeta raíz por defecto del servidor web <code>/var/www/html</code>, creamos un archivo con el nombre <code>info.php</code> (en realidad, se puede llamar como prefieras):</p>
+<p>Para verificar el correcto funcionamiento del motor PHP sobre el servidor web Apache, tendremos que habilitar el módulo de Apache correspondiente y creaar una página con contenido PHP (que deberá tener la extensión .php)</p>
+<h4 id="habitando-el-modulo-php-en-apache">Habitando el módulo PHP en Apache<a class="headerlink" href="#habitando-el-modulo-php-en-apache" title="Permanent link">&para;</a></h4>
+<p>Para habilitar el módulo de PHP en Apache, simplemente ejecutamos: </p>
+<p><div class="highlight"><pre><span></span><code>sudo a2enmod php&lt;version&gt;
+</code></pre></div>
+Donde <code>&lt;version&gt;</code> hace referencia al número de versión de PHP instalada. </p>
+<p>Finalmente, para mantener los cambios realizadosreiniciamos Apache: </p>
+<div class="highlight"><pre><span></span><code>sudo systemctl restart apache2
+</code></pre></div>
+<h4 id="creando-una-pagina-php-de-prueba">Creando una página PHP de prueba<a class="headerlink" href="#creando-una-pagina-php-de-prueba" title="Permanent link">&para;</a></h4>
+<p>Dentro de la carpeta raíz por defecto del servidor web <code>/var/www/html</code>, creamos un archivo con el nombre <code>info.php</code> (o con el nombre que prefieras):</p>
 <p><div class="highlight"><pre><span></span><code>sudo nano /var/www/html/info.php
 </code></pre></div>
-Y agregaremos al archivo el contenido:</p>
+Dentro de dicho archivo, agregamos el siguiente código (función <a href="https://www.php.net/manual/es/function.phpinfo.php"><code>phpinfo()</code></a>):</p>
 <p><div class="highlight"><pre><span></span><code><span class="cp">&lt;?php</span>
 <span class="nb">phpinfo</span><span class="p">();</span>
 <span class="cp">?&gt;</span><span class="x"></span>

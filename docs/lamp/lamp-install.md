@@ -80,12 +80,30 @@ Abrimos el navegador web y nos dirigimos a la siguiente dirección: `http://nomb
 
 ### PHP
 
-Dentro de la carpeta raíz por defecto del servidor web `/var/www/html`, creamos un archivo con el nombre `info.php` (en realidad, se puede llamar como prefieras):
+Para verificar el correcto funcionamiento del motor PHP sobre el servidor web Apache, tendremos que habilitar el módulo de Apache correspondiente y creaar una página con contenido PHP (que deberá tener la extensión .php)
+
+#### Habitando el módulo PHP en Apache
+Para habilitar el módulo de PHP en Apache, simplemente ejecutamos: 
+
+```bash
+sudo a2enmod php<version>
+```
+Donde `<version>` hace referencia al número de versión de PHP instalada. 
+
+
+Finalmente, para mantener los cambios realizadosreiniciamos Apache: 
+
+```bash
+sudo systemctl restart apache2
+```
+
+#### Creando una página PHP de prueba
+Dentro de la carpeta raíz por defecto del servidor web `/var/www/html`, creamos un archivo con el nombre `info.php` (o con el nombre que prefieras):
 
 ```bash
 sudo nano /var/www/html/info.php
 ```
-Y agregaremos al archivo el contenido:
+Dentro de dicho archivo, agregamos el siguiente código (función [`phpinfo()`](https://www.php.net/manual/es/function.phpinfo.php)):
 
 ```php
 <?php

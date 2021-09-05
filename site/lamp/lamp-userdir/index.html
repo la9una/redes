@@ -697,8 +697,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#habilitando-el-modulo-php70" class="md-nav__link">
-    Habilitando el módulo php7.0
+  <a href="#permitiendo-el-uso-de-php-en-public_html" class="md-nav__link">
+    Permitiendo el uso de PHP en public_html
   </a>
   
 </li>
@@ -1037,8 +1037,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#habilitando-el-modulo-php70" class="md-nav__link">
-    Habilitando el módulo php7.0
+  <a href="#permitiendo-el-uso-de-php-en-public_html" class="md-nav__link">
+    Permitiendo el uso de PHP en public_html
   </a>
   
 </li>
@@ -1090,16 +1090,11 @@ Solo resta agregar el contenido del sitio web dentro de la carpeta <code>public_
 <p>Luego, reiniciamos el servidor para que incorpore los cambios:</p>
 <div class="highlight"><pre><span></span><code>sudo systemctl restart apache2
 </code></pre></div>
-<h2 id="habilitando-el-modulo-php70">Habilitando el módulo php7.0<a class="headerlink" href="#habilitando-el-modulo-php70" title="Permanent link">&para;</a></h2>
-<p>En caso de querer ejecutar <strong>PHP</strong> en las webs personales de los usuarios tendremos que instalar el módulo correspondiente:</p>
-<div class="highlight"><pre><span></span><code>sudo apt-get install libapache2-mod-php7.0
+<h2 id="permitiendo-el-uso-de-php-en-public_html">Permitiendo el uso de PHP en public_html<a class="headerlink" href="#permitiendo-el-uso-de-php-en-public_html" title="Permanent link">&para;</a></h2>
+<p>Para habilitar la ejecucción de scripts PHP dentro de directorio <code>public_html</code> de los usuarios, tendremos que asegurarnos que el módulo PHP esté activado. Una vez realizada esta comprobación, abriremos con permisos administrativos el siguiente archivo:</p>
+<p><div class="highlight"><pre><span></span><code>nano /etc/apache2/mods-available/php&lt;version&gt;.conf
 </code></pre></div>
-<p>Acto seguido, habilitamos el módulo: </p>
-<div class="highlight"><pre><span></span><code>sudo a2enmod php7.0
-</code></pre></div>
-<p>Por último, debemos permitir la ejecucción de scripts PHP dentro de directorio <code>home</code> de los usuarios. Para ello, abrimos el archivo:</p>
-<div class="highlight"><pre><span></span><code>nano /etc/apache2/mods-available/php7.0.conf
-</code></pre></div>
+Donde <code>&lt;version&gt;</code> hace referencia al número de versión de PHP instalada. </p>
 <p>Un vez abierto el archivo, tenemos que desplazarnos hasta el final del archivo hasta ubicar el siguiente bloque de código:</p>
 <p><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1128,11 +1123,7 @@ Y <em>seteamos</em> la directiva <code>php_admin_flag engine</code> en <code>On<
 <div class="highlight"><pre><span></span><code>sudo systemctl restart apache2
 </code></pre></div>
 <h2 id="aceso-a-la-web-del-usuario">Aceso a la web del usuario<a class="headerlink" href="#aceso-a-la-web-del-usuario" title="Permanent link">&para;</a></h2>
-<p>Una vez concluidos los pasos anteriores, podemos acceder a la web del usuario escribiendo en el navegador:</p>
-<ul>
-<li><code>http://nombreDominioServidor/~usuario</code> o <code>http://direccionIPServidor/~usuario</code> si incluimos en la raíz del sitio web contenido estático o</li>
-<li><code>http://nombreDominioServidor/~usuario/archivo.php</code> o <code>http://direccionIPServidor/~usuario/archivo.php</code> si agregamos a la web contenido dinámico (PHP). En el ejemplo, dicho contenido dinámico está representado por <code>archivo.php</code></li>
-</ul>
+<p>Una vez concluidos los pasos anteriores, podemos acceder a la web del usuario escribiendo en el navegador <code>http://direccionIPServidor/~usuario</code> o bien <code>http://nombreDominioServidor/~usuario</code>.</p>
                 
               
               
