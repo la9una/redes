@@ -1353,8 +1353,32 @@
   
   
     <li class="md-nav__item">
+      <a href="docker-containers/" class="md-nav__link">
+        Contenedores
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="docker-compose/" class="md-nav__link">
         Docker Compose
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="docker-utils/" class="md-nav__link">
+        Comandos útiles
       </a>
     </li>
   
@@ -1391,8 +1415,13 @@
                 
                   <h1>Introducción</h1>
                 
-                <p>La contenerización de aplicaciones es un método de virtualización alternativo al de la virtualización tradicional basada en máquinas virtuales y que se basa en la implementación de y ejecucción de aplicaciones distribuidas en contenedores aislados en un mismo host y que acceden a un único kernel. </p>
-<p>Los contenedores de aplicaciones contienen los componentes, como archivos, variables de entorno y bibliotecas, necesarios para ejecutar el software deseado. Debido a que los recursos se comparten de esta manera, se pueden crear contenedores de aplicaciones que ponen menos presión a los recursos globales disponibles. Por ejemplo, si se desea una variación de la imagen estándar, se puede crear un contenedor que contenga solo la nueva biblioteca.</p>
+                <p>La contenerización de aplicaciones es un método de virtualización "ligero" alternativo al de la virtualización tradicional (enfocado en la virtualización de sistemas operativos completos) y que está basado en la implementación y ejecucción de aplicaciones distribuidas en contenedores aislados en un mismo host y que acceden a un único kernel. </p>
+<div style="margin:0 auto; text-align:center;" >
+<img src="imgContainer/vm-vs-ct.png" alt="CT vs VM">
+  <figcaption>Comparación de arquitecturas entre una VM y un CT</figcaption>
+</div>
+
+<p>Los contenedores consisten en uno o más procesos que se ejecutan de manera aislada en un mismo sistema. Esto facilita la migración y portabilidad de los mismos, independientemente del sistema oprtativo en el que se desplieguen. </p>
                 
               
               
