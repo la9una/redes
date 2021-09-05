@@ -1,6 +1,10 @@
 Bash es uno de los intérpretes de comandos más populares empleados en sistemas GNU/Linux. Además, consituye en sí mismo un lengua de programación con el que es posible desarrollar scripts para automatizar todo tipo de tareas. 
 
 
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/bash.png" alt="Linux Bash">
+</div>
+
 
 ## Creando scripts
 La terminal de GNU/Linux, en la mayoria de las distribuciones, emplea BASH un emulador de terminal que posee su propio lenguaje de programación, denominado _Bash scripting_. 

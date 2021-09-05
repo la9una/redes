@@ -6,6 +6,10 @@ Un repositorio de software está compuesto por un repositorio central (oficial) 
 
 Esto es, servidores distribuidos a lo largo del planeta que ofrecen software bajo demanda, una suerte de "tienda de aplicaciones" para cada distribución. Para ser más precisos, cada distribución tiene su propio repositorio de software que es "espejado" (clonado) por otros servidores en diversos países y regiones y ofrecido a los usuarios finales del sistema operativo. 
 
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/linux-packages.jpg" alt="Linux Packages">
+</div>
+
 
 ## Archivos de configuración de repositorios 
 En distribuciones basadas en Debian disponemos de un archivo que contiene información sobre el repositorio principal del sistema en la siguiente ubicación: 

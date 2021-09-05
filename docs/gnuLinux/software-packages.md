@@ -12,6 +12,12 @@ En ambientes *NIX es común referirse a los distintos programas de software bajo
 ## Instalación de software
 La instalación de software en distribuciones GNU/Linux se puede llevar adelante de diversas maneras: 
 
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/debian-software.svg" alt="Métodos de instalación de software en Linux Debian">
+  <figcaption>Algunos métodos de instalación de software en distribuciones basadas en Linux Debian y derivados</figcaption>
+</div>
+
+
 1. A través de la tienda de aplicaciones propia de la distribución
 2. Empleando un gestor de paquetes alternativo (como, por ejemplo, _synaptic_ o _aptitude_)
 2. Mediante un gestor de paquetes por terminal de comandos
@@ -24,7 +30,7 @@ En este curso, pondremos incapié en el punto 2.
 ### Comando básicos para gestión de software
 A continuación se listan comandos básicos de gestión de software para distribuciones basadas en Debian, mediante el gestor de paquetes **apt**.
 
-**Actualizar la información de los repositorios**
+#### Actualizar la información de los repositorios
 Esta acción no instalará ningún paquete, solo comparará la base de datos de paquetes remota con la base de datos de paquetes instalados localemnte e informará actualizaciones en caso de existir.  
 
 ```bash

@@ -3,6 +3,11 @@
 Se listan a continuación algunos comandos -los más importantes- para gestionar archivos y carpetas empleando la terminal. Estos comandos aplican a cualquier distribución GNU/Linux
 
 
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/fhs.png" alt="Linux Filesystem">
+  <figcaption>Estructura típica del sistema de archivos de un sistema GNU/Linux</figcaption>
+</div>
+
 
 ##ls
 El comando ls (list) nos permite ver el contenido de los directorios

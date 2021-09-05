@@ -2,6 +2,10 @@
 
 En informática, [nano](http://www.nano-editor.org/) (oficialmente GNU nano) es un editor de texto para terminal utilizado en sistemas Unix.
 
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/nano.png" alt="Linux Nano">
+</div>
+
 No es tan potente como [vim](basics-vim.md) o [emacs](https://es.wikipedia.org/wiki/Emacs) pero es mucho más fácil de manejar que estos. Así cualquier usuario por poco experimentado que sea es capaz de empezar a usar Nano desde el primer momento gracias a las dos líneas de ayuda que mantiene en su parte inferior.
 
 ## Instalación de Nano
@@ -9,7 +13,7 @@ No es tan potente como [vim](basics-vim.md) o [emacs](https://es.wikipedia.org/w
 El editor viene preinstalado en la mayoría de las distribuciones basadas en Unix. Sin embargo, puede ocurrir que esto no sea así. En ese caso, simplemente debemos abrir una terminal y ejecutar: 
 
 ```bash 
-$ sudo apt-get install nano
+sudo apt-get install nano
 ```
 
 ## Modo de uso
@@ -24,19 +28,19 @@ Una vez abierto el editor veremos en la parte inferior algunos atajos de teclado
 Para abrir una archivo determinado, tendremos que invocar el editor seguido de la ruta hacia el archivo en cuestión:
 
 ```bash 
-$ nano archivo.txt
+nano archivo.txt
 ```
 
 Para desactivar el ajuste de línea realizado por el editor. 
 
 ```bash 
-$ nano -w archivo.txt
+nano -w archivo.txt
 ```
 
 Abrimos el archivo a la vez que realizamos una copia de seguridad del mismo:
 
 ```bash 
-$ nano -B archivo.txt
+nano -B archivo.txt
 ```
 
 ## Seleccionar, copiar, cortar y pegar
@@ -86,7 +90,7 @@ $ ls /usr/share/nano
 Para habilitar el resaldado de sintaxis, tendermos que abrir el archivo: 
 
 ```bash 
-$ sudo nano /etc/nanorc
+sudo nano /etc/nanorc
 ```
 
 Y a continuación incluir las líneas de código que necesitemos: 

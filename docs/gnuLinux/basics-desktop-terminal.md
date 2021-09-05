@@ -3,7 +3,7 @@ Tal vez se trate de una discusión eterna entre usuarios de computadoras: Escrit
 Veamos un esquema de la arquitectura de sistemas basados en GNU/Linux:
 
 <div style="margin:0 auto; text-align:center;" >
-<img src="../imgGNULinux/linux-architecture.jpg" alt="Linus Torvalds en 1991">
+<img src="../imgGNULinux/linux-architecture.jpg" alt="Linux architecture">
   <figcaption>Arquitectura de un sistema GNU/Linux</figcaption>
 </div>
 

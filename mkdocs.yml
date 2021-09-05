@@ -37,7 +37,7 @@ theme:
     text: 'Roboto'
     code: 'Roboto Mono'
   features:
-    - navigation.sections
+  #  - navigation.sections
   #  - navigation.tabs
   #  - navigation.tabs.sticky
   #  - header.autohide

@@ -2,13 +2,17 @@
 
 [VIM](http://www.vim.org/) (del inglés _Vi IMproved_ ó _Vi mejorado_, en español) es un editor de texto basado en terminal creado a partir del editor [vi](https://es.wikipedia.org/wiki/Vi), presente en todos los sistemas UNIX. Dada su naturaleza, al igual que otros editores similares como [nano](basics-nano.md) se gestiona a través del teclado.
 
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/vim.svg" alt="Linux VIM Logo">
+</div>
+
 El desarrollo de este poderoso editor se remonta al año 1991 y desde aquel entonces no ha cesado de incorporar características. Amado u odiado, este editor [ofrece múltiples opciones](https://es.wikipedia.org/wiki/Vim#Principales_funcionalidades) en una sola herramienta, siendo altamente configurable para adaptarse a distintas necesidades de programadores y profesionales de la informática. 
 
 ## Instalación
 Para instalar el editor en nuestro sistema, ejecutamos en una terminal: 
 
 ```bash
-$ sudo apt-get install vim
+sudo apt-get install vim
 ```
 
 ## Modos de operación
@@ -38,7 +42,7 @@ Los modos **normal**, **inserción** y **línea de órdenes** suelen ser los má
 Luego de haber instalado VIM podremos abrir una terminal y comenzar a utilizar el editor ejecutando: 
 
 ```bash
-$ vim
+vim
 ```
 
 Veremos la ventana principal del editor con un archivo vacío listo para usar. 
@@ -46,7 +50,7 @@ Veremos la ventana principal del editor con un archivo vacío listo para usar.
 Si en cambio, quisiéramos abrir un archivo existente, simplemente deberíamos pasarle la ruta hacia el mismo como parámetro: 
 
 ```bash
-$ vim archivo.txt
+vim archivo.txt
 ```
 
 **No es necesario colocar la extensión del archivo. En el ejemplo se coloca sólo con fines explicativos.**
@@ -63,7 +67,7 @@ Antes de seguir, conviene distringuir desde la óptima de Vim a qué llamamos **
 De esta forma podríamos abrir varios archivos de la siguiente manera: 
 
 ```bash
-$ vim uno.txt dos.txt tres.txt
+vim uno.txt dos.txt tres.txt
 ```
 
 Luego, sólo veremos un archivo abierto en pantalla. El resto de los archivos también fueron abiertos, solo que se encuentran guardados en el _buffer_. 

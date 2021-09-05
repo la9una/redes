@@ -267,9 +267,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
@@ -664,9 +662,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
@@ -795,9 +791,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
@@ -1040,9 +1034,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
@@ -1168,9 +1160,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
@@ -1425,23 +1415,27 @@
                 
                 <h1 id="el-editor-de-texto-nano">El editor de texto nano<a class="headerlink" href="#el-editor-de-texto-nano" title="Permanent link">&para;</a></h1>
 <p>En informática, <a href="http://www.nano-editor.org/">nano</a> (oficialmente GNU nano) es un editor de texto para terminal utilizado en sistemas Unix.</p>
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/nano.png" alt="Linux Nano">
+</div>
+
 <p>No es tan potente como <a href="../basics-vim/">vim</a> o <a href="https://es.wikipedia.org/wiki/Emacs">emacs</a> pero es mucho más fácil de manejar que estos. Así cualquier usuario por poco experimentado que sea es capaz de empezar a usar Nano desde el primer momento gracias a las dos líneas de ayuda que mantiene en su parte inferior.</p>
 <h2 id="instalacion-de-nano">Instalación de Nano<a class="headerlink" href="#instalacion-de-nano" title="Permanent link">&para;</a></h2>
 <p>El editor viene preinstalado en la mayoría de las distribuciones basadas en Unix. Sin embargo, puede ocurrir que esto no sea así. En ese caso, simplemente debemos abrir una terminal y ejecutar: </p>
-<div class="highlight"><pre><span></span><code>$ sudo apt-get install nano
+<div class="highlight"><pre><span></span><code>sudo apt-get install nano
 </code></pre></div>
 <h2 id="modo-de-uso">Modo de uso<a class="headerlink" href="#modo-de-uso" title="Permanent link">&para;</a></h2>
 <p>Para abrir el editor, tendremos que abrir una terminal y escribir el nombre del editor: <strong>nano</strong></p>
 <p>Una vez abierto el editor veremos en la parte inferior algunos atajos de teclado útiles para trabajar: por ejemplo <code>^X Salir</code>, donde el símbolo <code>^</code> hace referencia la tecla <code>Control</code> y <code>X</code> a la tecla <code>x</code>. De esta manera, si deseamos salir del editor deberemos presionar conjuntamente las teclas <code>Control</code>+<code>`x</code>.</p>
 <h2 id="abriendo-archivos">Abriendo archivos<a class="headerlink" href="#abriendo-archivos" title="Permanent link">&para;</a></h2>
 <p>Para abrir una archivo determinado, tendremos que invocar el editor seguido de la ruta hacia el archivo en cuestión:</p>
-<div class="highlight"><pre><span></span><code>$ nano archivo.txt
+<div class="highlight"><pre><span></span><code>nano archivo.txt
 </code></pre></div>
 <p>Para desactivar el ajuste de línea realizado por el editor. </p>
-<div class="highlight"><pre><span></span><code>$ nano -w archivo.txt
+<div class="highlight"><pre><span></span><code>nano -w archivo.txt
 </code></pre></div>
 <p>Abrimos el archivo a la vez que realizamos una copia de seguridad del mismo:</p>
-<div class="highlight"><pre><span></span><code>$ nano -B archivo.txt
+<div class="highlight"><pre><span></span><code>nano -B archivo.txt
 </code></pre></div>
 <h2 id="seleccionar-copiar-cortar-y-pegar">Seleccionar, copiar, cortar y pegar<a class="headerlink" href="#seleccionar-copiar-cortar-y-pegar" title="Permanent link">&para;</a></h2>
 <p>Para <strong>seleccionar texto</strong> presionamos <code>Esc</code>+<code>a</code>, y con las <strong>teclas del cursor</strong> abarcamos hasta donde queremos seleccionar. A continuación, dependiendo de lo que queramos hacer:</p>
@@ -1578,7 +1572,7 @@
 <div class="highlight"><pre><span></span><code>$ ls /usr/share/nano
 </code></pre></div>
 <p>Para habilitar el resaldado de sintaxis, tendermos que abrir el archivo: </p>
-<div class="highlight"><pre><span></span><code>$ sudo nano /etc/nanorc
+<div class="highlight"><pre><span></span><code>sudo nano /etc/nanorc
 </code></pre></div>
 <p>Y a continuación incluir las líneas de código que necesitemos: </p>
 <div class="highlight"><pre><span></span><code><span class="c1">## Nanorc files</span>
@@ -1759,7 +1753,7 @@ include <span class="s2">&quot;/usr/share/nano/pov.nanorc&quot;</span>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56a63758.min.js"></script>

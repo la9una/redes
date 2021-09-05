@@ -2,6 +2,12 @@
 
 A continuación se listan las herramientas de compresión de línea de comandos más utilizadas en el universo GNU/Linux y el Open Source en general. 
 
+
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/file-compression.jpg" alt="Linux file compression">
+</div>
+
+
 ##Archivos .tar
 
 Para poder **empaquetar archivos .tar**, utilizamos el siguiente comando:
