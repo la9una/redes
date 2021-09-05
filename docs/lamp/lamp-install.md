@@ -1,6 +1,3 @@
-!!! warning "Ingreso de datos"
-	Durante la instalación se solicitará en varias ocasiones el ingreso de información por parte del usuario. Por ejemplo, la contraseña del usuario root de la base de datos, o el tipo de servicio a instalar si usamos `tasksel`. Conviene prestar atención en cada paso para evitar errores de configuración. 
-
 Para disponer de un servidor web **LAMP** ejecutaremos los comandos que se indican a continuación. 
 
 ### Instalación de Apache
@@ -20,6 +17,9 @@ apache2 -v
 ```bash
 sudo apt install mariadb-server -y
 ```
+
+!!! warning "Ingreso de datos"
+	Durante la instalación se solicitará en varias ocasiones el ingreso de información por parte del usuario. Por ejemplo, la contraseña del usuario root de la base de datos. Conviene prestar atención en cada paso para evitar errores de configuración. 
 
 Podemos comprobar la instalación ejecutando: 
 

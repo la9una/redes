@@ -1229,11 +1229,7 @@
                 
                   <h1>Instalación</h1>
                 
-                <div class="admonition warning">
-<p class="admonition-title">Ingreso de datos</p>
-<p>Durante la instalación se solicitará en varias ocasiones el ingreso de información por parte del usuario. Por ejemplo, la contraseña del usuario root de la base de datos, o el tipo de servicio a instalar si usamos <code>tasksel</code>. Conviene prestar atención en cada paso para evitar errores de configuración. </p>
-</div>
-<p>Para disponer de un servidor web <strong>LAMP</strong> ejecutaremos los comandos que se indican a continuación. </p>
+                <p>Para disponer de un servidor web <strong>LAMP</strong> ejecutaremos los comandos que se indican a continuación. </p>
 <h3 id="instalacion-de-apache">Instalación de Apache<a class="headerlink" href="#instalacion-de-apache" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>sudo apt install apache2 -y
 </code></pre></div>
@@ -1243,6 +1239,10 @@
 <h3 id="instalacion-de-mariadb">Instalación de MaríaDB<a class="headerlink" href="#instalacion-de-mariadb" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>sudo apt install mariadb-server -y
 </code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Ingreso de datos</p>
+<p>Durante la instalación se solicitará en varias ocasiones el ingreso de información por parte del usuario. Por ejemplo, la contraseña del usuario root de la base de datos. Conviene prestar atención en cada paso para evitar errores de configuración. </p>
+</div>
 <p>Podemos comprobar la instalación ejecutando: </p>
 <div class="highlight"><pre><span></span><code>mariadb --version
 </code></pre></div>
