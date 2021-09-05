@@ -4,7 +4,11 @@ Al año 2020, el kernel de Linux contenía 27,8 millones de líneas de código. 
 
 El sistema operativo Linux comenzó como un pasatiempo de un joven estudiante finlandés por entonces de 21 años, llamado [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds). 
 
-![Linus Torvalds en 1991](imgGNULinux/linus1991.jpg)
+
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/linus1991.jpg" alt="Linus Torvalds en 1991">
+  <figcaption>Linus Torvalds en 1991</figcaption>
+</div>
 
 He aquí el mensaje que publicó el 25 de agosto de 1991 al liberar la primera versión de su sistema: 
 
@@ -28,7 +32,7 @@ Años antes un tal [Richard Stallman](https://es.wikipedia.org/wiki/Richard_Stal
 
 Finalmente, ambos sumaron esfuerzos, ya que uno aportaba lo que le faltaba al otro. Así nació [Linux ó GNU/Linux](https://es.wikipedia.org/wiki/Controversia_por_la_denominaci%C3%B3n_GNU/Linux) (Kernel Linux + Software GNU)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MNXIXDbEmVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="margin:0 auto; text-align:center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/MNXIXDbEmVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 ## ¿Por qué usar GNU/Linux?
 

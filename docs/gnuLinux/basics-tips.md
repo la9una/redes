@@ -6,7 +6,7 @@ La herramienta `tree` como su nombre lo indica, muestra el sistema de archivos b
 Es necesario instalarla, ejecutando: 
 
 ```apache
-sudo apt install tree
+sudo apt install tree -y
 ```
 
 ### Opciones de uso frecuente
@@ -37,7 +37,7 @@ Shellinabox es una aplicación que nos permite ejecutar un emulador de terminal 
 Para instalar esta aplicación ejecutamos: 
 
 ```apache
-sudo apt install shellinabox
+sudo apt install shellinabox -y
 ```
 Luego, tendremos que editar el archivo de configuración de la aplicación: 
 

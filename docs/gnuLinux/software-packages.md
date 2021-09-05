@@ -9,16 +9,14 @@ En ambientes *NIX es común referirse a los distintos programas de software bajo
         * `.rpm` (CenOS, Fedora, RedHat, etc)
         * `.deb` (Debian, Ubuntu, Linux Mint, etc)
 
-!!! info "Sobre esta guía"
-	La presente documentación sólo abordará la gestión de software compatible con sistemas basados en [Debian](https://www.debian.org/index.es.html) o derviadas (como Ubuntu, Linux Mint, etc.), dejando de lado otro tipo de paqueterías.  
-
-
 ## Instalación de software
-La instalación de software en distribuciones GNU/Linux se puede llevar adelante mediante 4 maneras diferentes: 
+La instalación de software en distribuciones GNU/Linux se puede llevar adelante de diversas maneras: 
 
-1. A través de la tienda de aplicaciones de la distribución
-2. Mediante la terminal de comandos
-3. Instalando paquetes individuales (.deb o .rpm) 
+1. A través de la tienda de aplicaciones propia de la distribución
+2. Empleando un gestor de paquetes alternativo (como, por ejemplo, _synaptic_ o _aptitude_)
+2. Mediante un gestor de paquetes por terminal de comandos
+3. Descargando e instalando paquetes manualmente
+4. Usando paquetes _distribution agnostic_ como [Snap](https://snapcraft.io/store), [Flatpak](https://flathub.org/home) o [Appimage](https://appimage.github.io/apps/) 
 4. Compilando paquetes a partir de su código fuente
 
 En este curso, pondremos incapié en el punto 2. 

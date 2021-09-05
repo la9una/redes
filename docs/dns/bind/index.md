@@ -3,7 +3,9 @@
 Este servidor de nombres es patrocinado por la [Internet Systems Consortium](https://es.wikipedia.org/wiki/Internet_Systems_Consortium).
 
 
-![Logo de BIND](../imgDNS/bindLogo.png)
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgDNS/bindLogo.png" alt="BIND">
+</div>
 
 BIND fue creado originalmente por cuatro estudiantes de grado en la [University of California, Berkeley](https://es.wikipedia.org/wiki/Universidad_de_California_en_Berkeley).
 

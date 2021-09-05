@@ -4,10 +4,6 @@ El presente espacio recopila teoría y ejercicios prácticos sobre temas relacio
 
 :fontawesome-brands-telegram: &nbsp;[t.me/rauljesus](https://t.me/rauljesus)
 
-![GNU/Linux Networking](https://cdn.lynda.com/course/731746/731746-636652783882258193-16x9.jpg "GNU/Linux Networking")
-_Fuente: lynda.com_
-
-
 
 
 

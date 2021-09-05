@@ -1,6 +1,9 @@
 El **DNS** (por sus siglas en inglés _Domain Name System_) o **sistema de nombres de dominio** es un sistema de nomenclatura jerárquico descentralizado para dispositivos conectados a redes IP como Internet o una red privada.
 
-![DNS](imgDNS/dns.jpg)
+
+<div style="margin:0 auto; text-align:center;" >
+<img src="imgDNS/dns.jpg" alt="DNS">
+</div>
 
 !!!done "Uso del DNS"
 		El servicio DNS se emplea fundamentalmente en la resolución de nombres, es decir, determinar cuál es la dirección IP que corresponde a un nombre de dominio determinado y viceversa. 

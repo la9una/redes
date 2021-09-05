@@ -21,25 +21,25 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: 'deep purple'
-      accent: 'deep purple'
+      primary: 'deep orange'
+      accent: 'deep orange'
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/lightbulb
         name: Cambiar a modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: 'deep purple'
-      accent: 'deep purple'
+      primary: 'deep orange'
+      accent: 'deep orange'
       toggle:
-        icon: material/toggle-switch
+        icon: material/lightbulb-outline
         name: Cambiar a modo claro
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
   features:
+    - navigation.sections
   #  - navigation.tabs
   #  - navigation.tabs.sticky
-    - navigation.sections
   #  - header.autohide
 
 # Extra
@@ -97,6 +97,7 @@ extra_javascript:
 # Páginas
 nav: 
 - Inicio: 'index.md'
+- Sobre esta guía: 'about.md'
 - GNU/Linux:
   - Historia: 'gnuLinux/basics-history.md'
   - GUI vs CLI: 'gnuLinux/basics-desktop-terminal.md'
@@ -108,7 +109,6 @@ nav:
     - Búsquedas: 'gnuLinux/basics-search.md'
     - Bash scripting: 'gnuLinux/basics-bash-scripting.md'
     - Tips: 'gnuLinux/basics-tips.md'
-
   - Redes:
     - Interfaces de red: 'gnuLinux/network-interfaces.md'
   - Gestión de software:
@@ -125,13 +125,12 @@ nav:
         - Gestión básica: 'lamp/lamp-basics.md'
         - Web de usuario: 'lamp/lamp-userdir.md'
         - Hosts virtuales: 'lamp/lamp-virtualhosts.md'
-    #    - WebDav: 'lamp/webDav.md'
         - Ejercicios: 'lamp/lamp-exercises.md'
 - Servidor de nombres: 
     - Introducción: 'dns/index.md'
     - El archivo hosts: 'dns/dns-hosts.md'
     - BIND: 
-        - Introducción: 'dns/bind/index.md'
+        - ¿Qué es BIND?: 'dns/bind/index.md'
         - Instalación: 'dns/bind/bind-install.md'
         - DNS caché: 
             - Teoría: 'dns/bind/bind-cache.md'
@@ -142,3 +141,23 @@ nav:
             - Ejemplo - Zonas múltiples: 'dns/bind/bind-zones-example-multiple.md'
     - Configurando clientes: 'dns/dns-clients.md'
     - Consultas DNS: 'dns/dns-query.md'
+- Servidor de compartición:
+    - ¿Qué es SAMBA?: 'samba/index.md'
+    - Instalación: 'samba/samba-install.md'
+    - Gestión de usuarios: 'samba/samba-manage-users.md'
+    - Carpeta de usuario: 'samba/samba-share-user.md'
+    - Carpeta de grupo: 'samba/samba-share-group.md'
+    - Carpeta de invitados: 'samba/samba-share-guest.md'
+    - Clientes Windows: 'samba/samba-windos-client.md'
+    - Ejercicios: 'samba/samba-exercises.md'
+- Monitoreo de redes:
+  - Nagios: 
+      - ¿Qué es Nagios?: 'nagios/index.md'
+      - Instalación: 'nagios/nagios-install.md'
+      - Configuración inicial: 'nagios/nagios-onfiguration.md'
+      - Definiendo equipos: 'nagios/nagios-hosts.md'
+      - Definiendo grupos: 'nagios/nagios-groups.md'
+      - Definiendo servicios: 'nagios/nagios-services.md'
+      - Agente Windows: 'nagios/nagios-agent.md'
+      - Definiendo íconos: 'nagios/nagios-icons.md'
+      - Recursos adicionales: 'nagios/nagios-resources.md'
