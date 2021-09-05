@@ -1,0 +1,4 @@
+La contenerización de aplicaciones es un método de virtualización alternativo al de la virtualización tradicional basada en máquinas virtuales y que se basa en la implementación de y ejecucción de aplicaciones distribuidas en contenedores aislados en un mismo host y que acceden a un único kernel. 
+
+
+Los contenedores de aplicaciones contienen los componentes, como archivos, variables de entorno y bibliotecas, necesarios para ejecutar el software deseado. Debido a que los recursos se comparten de esta manera, se pueden crear contenedores de aplicaciones que ponen menos presión a los recursos globales disponibles. Por ejemplo, si se desea una variación de la imagen estándar, se puede crear un contenedor que contenga solo la nueva biblioteca.
