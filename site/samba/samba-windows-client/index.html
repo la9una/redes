@@ -13,14 +13,14 @@
         <meta name="author" content="Raul Jesus Lopez">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/docs/samba/samba-windows-users/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/docs/samba/samba-windows-client/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.5">
     
     
       
-        <title>Samba windows users - Redes</title>
+        <title>Clientes Windows - Redes</title>
       
     
     
@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#accediendo-a-las-carpetas-compartidas-de-manera-temporal" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -98,7 +103,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Samba windows users
+              Clientes Windows
             
           </span>
         </div>
@@ -954,14 +959,16 @@
 
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       <label class="md-nav__link" for="__nav_6">
         Servidor de compartición
@@ -1049,11 +1056,54 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../samba-windos-client/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Clientes Windows
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Clientes Windows
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accediendo-a-las-carpetas-compartidas-de-manera-temporal" class="md-nav__link">
+    Accediendo a las carpetas compartidas de manera temporal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accediendo-a-las-carpetas-compartidas-de-forma-permanente" class="md-nav__link">
+    Accediendo a las carpetas compartidas de forma permanente
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1152,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-onfiguration.md" class="md-nav__link">
+      <a href="../../nagios/nagios-configuration/" class="md-nav__link">
         Configuración inicial
       </a>
     </li>
@@ -1224,6 +1274,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../nagios/nagios-exercises/" class="md-nav__link">
+        Ejercicios
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../nagios/nagios-resources/" class="md-nav__link">
         Recursos adicionales
       </a>
@@ -1250,34 +1312,73 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accediendo-a-las-carpetas-compartidas-de-manera-temporal" class="md-nav__link">
+    Accediendo a las carpetas compartidas de manera temporal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accediendo-a-las-carpetas-compartidas-de-forma-permanente" class="md-nav__link">
+    Accediendo a las carpetas compartidas de forma permanente
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/samba/samba-windows-users.md" title="Editar esta página" class="md-content__button md-icon">
+                  <a href="https://github.com/la9una/redes/edit/master/docs/samba/samba-windows-client.md" title="Editar esta página" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Samba windows users</h1>
+                  <h1>Clientes Windows</h1>
                 
-                <p>====== Creación de usuario en Windows 7 ======
-Para el correcto funcionamiento de SAMBA es recomendable que existan en Windows los mismos usuarios que en el servidor de compartición. En otro tutorial se explica como crear y gestionar los usuarios en GNU/Linux. A continuación, se detallan los pasos para la creación de usuarios en Windows 7. </p>
-<p>===== Paso 0 =====
-{{ :redes:samba:usuariowin0.png |}}</p>
-<p>===== Paso 1 =====</p>
-<p>{{ :redes:samba:usuariowin1.png |}}</p>
-<p>===== Paso 2 =====</p>
-<p>{{ :redes:samba:usuariowin2.png |}}</p>
-<p>===== Paso 3 =====</p>
-<p>{{ :redes:samba:usuariowin3.png |}}</p>
-<p>===== Paso 4 =====</p>
-<p>{{ :redes:samba:usuariowin4.png |}}</p>
-<p>===== Paso 5 =====</p>
-<p>{{ :redes:samba:usuariowin5.png |}}</p>
-<p>===== Paso 6 =====</p>
-<p>{{ :redes:samba:usuariowin6.png |}}</p>
+                <p>Si todo quedó correctamente configurado, podremos acceder a los recursos compartidos por el servidor Samba desde una máquina con el sistema Windows.</p>
+<h2 id="accediendo-a-las-carpetas-compartidas-de-manera-temporal">Accediendo a las carpetas compartidas de manera temporal<a class="headerlink" href="#accediendo-a-las-carpetas-compartidas-de-manera-temporal" title="Permanent link">&para;</a></h2>
+<p>Para ello, tendremos que abrir con el explorador de Windows la dirección IP del servidor Samba (**usar barra invertida **), de la siguiente manera: </p>
+<p><img alt="Samba Windows 1" src="../imgSamba/sambawindows1.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note<p>El acceso a las carpetas compartidas <strong>no es permanente y se perderá cuando reiniciemos la maquina Windows</strong>. Para que los recursos compartidos estén disponibles cuando inicie el sistema, seguí las instrucciones que se detallan a continuación.</p>
+</p>
+</div>
+<h2 id="accediendo-a-las-carpetas-compartidas-de-forma-permanente">Accediendo a las carpetas compartidas de forma permanente<a class="headerlink" href="#accediendo-a-las-carpetas-compartidas-de-forma-permanente" title="Permanent link">&para;</a></h2>
+<p>Abrimos el <strong>Explorador de Windows</strong> y hacemos clic derecho en <strong>Equipo</strong> y seleccionaremos la opción "Conectar a una unidad de red" </p>
+<p><img alt="Samba Windows 2" src="../imgSamba/sambawindows2.png" /></p>
+<p>Luego ingresamos la <strong>dirección IP</strong> o el <strong>nombre del dominio</strong> del servidor Samba seguido del nombre del <strong>nombre de la carpeta compartida</strong> que queremos montar (usar barras invertidas):</p>
+<p><img alt="Samba Windows 3" src="../imgSamba/sambawindows3.png" /></p>
+<p>Finalmente veremos la carpeta compartida y que estará disponible cada vez que iniciemos sesión:</p>
+<p><img alt="Samba Windows 4" src="../imgSamba/sambawindows4.png" /></p>
+<p>Repetiremos el procedimiento con cada carpeta alojada en servidor Samba a la que deseemos acceder y para la cual poseamos los permisos de lectura y escritura correspondientes:</p>
+<p><img alt="Samba Windows 5" src="../imgSamba/sambawindows5.png" /></p>
+<p>Nota: en el ejemplo, se inició sesión en Windows con el usuario de Samba/Windows llamado <strong>prueba</strong>. La unidad de red con su nombre pertenece a dicho usuaruio. </p>
                 
               
               
@@ -1286,7 +1387,7 @@ Para el correcto funcionamiento de SAMBA es recomendable que existan en Windows 
 
   <h2 id="__comments">Comentarios</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/docs/samba/samba-windows-users/",this.page.identifier="/samba/samba-windows-users/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/docs/samba/samba-windows-client/",this.page.identifier="/samba/samba-windows-client/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>
@@ -1297,6 +1398,41 @@ Para el correcto funcionamiento de SAMBA es recomendable que existan en Windows 
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pie">
+      
+        
+        <a href="../samba-share-guest/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Carpeta de invitados" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              Carpeta de invitados
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../samba-exercises/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Ejercicios" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              Ejercicios
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
