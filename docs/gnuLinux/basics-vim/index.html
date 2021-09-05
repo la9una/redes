@@ -267,9 +267,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
@@ -812,9 +810,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
@@ -943,9 +939,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
@@ -1188,9 +1182,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
@@ -1316,9 +1308,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
@@ -1721,10 +1711,14 @@
                 
                 <h1 id="el-editor-de-textos-vim">El editor de textos vim<a class="headerlink" href="#el-editor-de-textos-vim" title="Permanent link">&para;</a></h1>
 <p><a href="http://www.vim.org/">VIM</a> (del inglés <em>Vi IMproved</em> ó <em>Vi mejorado</em>, en español) es un editor de texto basado en terminal creado a partir del editor <a href="https://es.wikipedia.org/wiki/Vi">vi</a>, presente en todos los sistemas UNIX. Dada su naturaleza, al igual que otros editores similares como <a href="../basics-nano/">nano</a> se gestiona a través del teclado.</p>
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/vim.svg" alt="Linux VIM Logo">
+</div>
+
 <p>El desarrollo de este poderoso editor se remonta al año 1991 y desde aquel entonces no ha cesado de incorporar características. Amado u odiado, este editor <a href="https://es.wikipedia.org/wiki/Vim#Principales_funcionalidades">ofrece múltiples opciones</a> en una sola herramienta, siendo altamente configurable para adaptarse a distintas necesidades de programadores y profesionales de la informática. </p>
 <h2 id="instalacion">Instalación<a class="headerlink" href="#instalacion" title="Permanent link">&para;</a></h2>
 <p>Para instalar el editor en nuestro sistema, ejecutamos en una terminal: </p>
-<div class="highlight"><pre><span></span><code>$ sudo apt-get install vim
+<div class="highlight"><pre><span></span><code>sudo apt-get install vim
 </code></pre></div>
 <h2 id="modos-de-operacion">Modos de operación<a class="headerlink" href="#modos-de-operacion" title="Permanent link">&para;</a></h2>
 <p>A modo de introducción al uso del editor de texto vim, se ofrece esta guía de uso. Para saber más, podés visitar <a href="http://vimdoc.sourceforge.net/htmldoc/help.html">la documentación oficial</a> del programa. </p>
@@ -1751,18 +1745,18 @@
 </ul>
 <h2 id="abrir-un-archivo">Abrir un archivo<a class="headerlink" href="#abrir-un-archivo" title="Permanent link">&para;</a></h2>
 <p>Luego de haber instalado VIM podremos abrir una terminal y comenzar a utilizar el editor ejecutando: </p>
-<div class="highlight"><pre><span></span><code>$ vim
+<div class="highlight"><pre><span></span><code>vim
 </code></pre></div>
 <p>Veremos la ventana principal del editor con un archivo vacío listo para usar. </p>
 <p>Si en cambio, quisiéramos abrir un archivo existente, simplemente deberíamos pasarle la ruta hacia el mismo como parámetro: </p>
-<div class="highlight"><pre><span></span><code>$ vim archivo.txt
+<div class="highlight"><pre><span></span><code>vim archivo.txt
 </code></pre></div>
 <p><strong>No es necesario colocar la extensión del archivo. En el ejemplo se coloca sólo con fines explicativos.</strong></p>
 <p>Antes de seguir, conviene distringuir desde la óptima de Vim a qué llamamos <strong>archivo</strong> y <em>buffer</em>: un <strong>archivo</strong> está guardado en el disco rígido mientras que un <em>buffer</em> se guarda en la memoria. </p>
 <p><strong>Cada vez que Vim abre un archivo en realidad lo que abre es una copia de éste y la guarda momentáneamente en memoria. A ésto es lo que llamamos <em>buffer</em>. Sólo cuando guardemos los cambios, la información contenida en el <em>buffer</em> se guardará en el archivo.</strong></p>
 <h3 id="abriendo-multiples-archivos">Abriendo múltiples archivos<a class="headerlink" href="#abriendo-multiples-archivos" title="Permanent link">&para;</a></h3>
 <p>De esta forma podríamos abrir varios archivos de la siguiente manera: </p>
-<div class="highlight"><pre><span></span><code>$ vim uno.txt dos.txt tres.txt
+<div class="highlight"><pre><span></span><code>vim uno.txt dos.txt tres.txt
 </code></pre></div>
 <p>Luego, sólo veremos un archivo abierto en pantalla. El resto de los archivos también fueron abiertos, solo que se encuentran guardados en el <em>buffer</em>. </p>
 <h2 id="desplazamiento-entre-archivos-o-buffers">Desplazamiento entre archivos o <em>buffers</em><a class="headerlink" href="#desplazamiento-entre-archivos-o-buffers" title="Permanent link">&para;</a></h2>
@@ -2537,7 +2531,7 @@ Dentro del archivo en cuestión podremos <em>setear</em> la configuración desea
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.56a63758.min.js"></script>
