@@ -13,21 +13,21 @@
         <meta name="author" content="Raul Jesus Lopez">
       
       
-        <link rel="canonical" href="http://www.rauljesus.xyz/redes/docs/gnuLinux/software-packages/">
+        <link rel="canonical" href="http://www.rauljesus.xyz/redes/docs/containers/">
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.5">
     
     
       
-        <title>Paquetes - Redes</title>
+        <title>Introducción - Redes</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.be71726b.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.be71726b.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -41,7 +41,7 @@
       
     
     
-      <link rel="manifest" href="../../manifest.webmanifest" crossorigin="use-credentials">
+      <link rel="manifest" href="../manifest.webmanifest" crossorigin="use-credentials">
     
     
     
@@ -63,7 +63,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -72,11 +72,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#formatos-de-paquetes" class="md-skip">
-          Saltar a contenido
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -84,7 +79,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabecera">
-    <a href="../.." title="Redes" class="md-header__button md-logo" aria-label="Redes" data-md-component="logo">
+    <a href=".." title="Redes" class="md-header__button md-logo" aria-label="Redes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M622.34 153.2 343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"/></svg>
@@ -103,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Paquetes
+              Introducción
             
           </span>
         </div>
@@ -203,7 +198,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Redes" class="md-nav__button md-logo" aria-label="Redes" data-md-component="logo">
+    <a href=".." title="Redes" class="md-nav__button md-logo" aria-label="Redes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M622.34 153.2 343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"/></svg>
@@ -235,7 +230,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         Inicio
       </a>
     </li>
@@ -250,7 +245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
+      <a href="../about/" class="md-nav__link">
         Sobre esta guía
       </a>
     </li>
@@ -263,14 +258,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       <label class="md-nav__link" for="__nav_3">
         GNU/Linux
@@ -288,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics-history/" class="md-nav__link">
+      <a href="../gnuLinux/basics-history/" class="md-nav__link">
         Historia
       </a>
     </li>
@@ -300,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics-desktop-terminal/" class="md-nav__link">
+      <a href="../gnuLinux/basics-desktop-terminal/" class="md-nav__link">
         GUI vs CLI
       </a>
     </li>
@@ -333,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics-filesystem/" class="md-nav__link">
+      <a href="../gnuLinux/basics-filesystem/" class="md-nav__link">
         Archivos y carpetas
       </a>
     </li>
@@ -345,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics-compression/" class="md-nav__link">
+      <a href="../gnuLinux/basics-compression/" class="md-nav__link">
         Compresión y descompresión
       </a>
     </li>
@@ -357,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics-nano/" class="md-nav__link">
+      <a href="../gnuLinux/basics-nano/" class="md-nav__link">
         El editor nano
       </a>
     </li>
@@ -369,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics-vim/" class="md-nav__link">
+      <a href="../gnuLinux/basics-vim/" class="md-nav__link">
         El editor vim
       </a>
     </li>
@@ -381,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics-search/" class="md-nav__link">
+      <a href="../gnuLinux/basics-search/" class="md-nav__link">
         Búsquedas
       </a>
     </li>
@@ -393,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics-bash-scripting/" class="md-nav__link">
+      <a href="../gnuLinux/basics-bash-scripting/" class="md-nav__link">
         Bash scripting
       </a>
     </li>
@@ -405,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../basics-tips/" class="md-nav__link">
+      <a href="../gnuLinux/basics-tips/" class="md-nav__link">
         Tips
       </a>
     </li>
@@ -444,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../network-interfaces/" class="md-nav__link">
+      <a href="../gnuLinux/network-interfaces/" class="md-nav__link">
         Interfaces de red
       </a>
     </li>
@@ -460,14 +453,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
       
       <label class="md-nav__link" for="__nav_3_5">
         Gestión de software
@@ -485,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../software-repositories/" class="md-nav__link">
+      <a href="../gnuLinux/software-repositories/" class="md-nav__link">
         Repositorios
       </a>
     </li>
@@ -495,108 +486,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Paquetes
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../gnuLinux/software-packages/" class="md-nav__link">
         Paquetes
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#formatos-de-paquetes" class="md-nav__link">
-    Formatos de paquetes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-software" class="md-nav__link">
-    Instalación de software
-  </a>
-  
-    <nav class="md-nav" aria-label="Instalación de software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comando-basicos-para-gestion-de-software" class="md-nav__link">
-    Comando básicos para gestión de software
-  </a>
-  
-    <nav class="md-nav" aria-label="Comando básicos para gestión de software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#actualizar-la-informacion-de-los-repositorios" class="md-nav__link">
-    Actualizar la información de los repositorios
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actualizar-todos-los-paquetes-del-sistema" class="md-nav__link">
-    Actualizar todos los paquetes del sistema
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instalar-un-paquete-de-software-particular" class="md-nav__link">
-    Instalar un paquete de software particular
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eliminar-un-paquete-de-software" class="md-nav__link">
-    Eliminar un paquete de software
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remover-paquetes-no-utilizados" class="md-nav__link">
-    Remover paquetes no utilizados
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -633,7 +527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../access-users/" class="md-nav__link">
+      <a href="../gnuLinux/access-users/" class="md-nav__link">
         Usuarios
       </a>
     </li>
@@ -645,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../access-groups/" class="md-nav__link">
+      <a href="../gnuLinux/access-groups/" class="md-nav__link">
         Grupos
       </a>
     </li>
@@ -657,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../access-permissions/" class="md-nav__link">
+      <a href="../gnuLinux/access-permissions/" class="md-nav__link">
         Permisos
       </a>
     </li>
@@ -726,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/" class="md-nav__link">
+      <a href="../lamp/" class="md-nav__link">
         ¿Qué es LAMP?
       </a>
     </li>
@@ -738,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/lamp-install/" class="md-nav__link">
+      <a href="../lamp/lamp-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -750,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/lamp-basics/" class="md-nav__link">
+      <a href="../lamp/lamp-basics/" class="md-nav__link">
         Gestión básica
       </a>
     </li>
@@ -762,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/lamp-userdir/" class="md-nav__link">
+      <a href="../lamp/lamp-userdir/" class="md-nav__link">
         Web de usuario
       </a>
     </li>
@@ -774,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/lamp-virtualhosts/" class="md-nav__link">
+      <a href="../lamp/lamp-virtualhosts/" class="md-nav__link">
         Hosts virtuales
       </a>
     </li>
@@ -786,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lamp/lamp-exercises/" class="md-nav__link">
+      <a href="../lamp/lamp-exercises/" class="md-nav__link">
         Ejercicios
       </a>
     </li>
@@ -834,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/" class="md-nav__link">
+      <a href="../dns/" class="md-nav__link">
         Introducción
       </a>
     </li>
@@ -846,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/dns-hosts/" class="md-nav__link">
+      <a href="../dns/dns-hosts/" class="md-nav__link">
         El archivo hosts
       </a>
     </li>
@@ -879,7 +773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/" class="md-nav__link">
+      <a href="../dns/bind/" class="md-nav__link">
         ¿Qué es BIND?
       </a>
     </li>
@@ -891,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/bind-install/" class="md-nav__link">
+      <a href="../dns/bind/bind-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -924,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/bind-cache/" class="md-nav__link">
+      <a href="../dns/bind/bind-cache/" class="md-nav__link">
         Teoría
       </a>
     </li>
@@ -936,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/bind-cache-example/" class="md-nav__link">
+      <a href="../dns/bind/bind-cache-example/" class="md-nav__link">
         Ejemplo práctico
       </a>
     </li>
@@ -975,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/bind-zones/" class="md-nav__link">
+      <a href="../dns/bind/bind-zones/" class="md-nav__link">
         Archivos de zona
       </a>
     </li>
@@ -987,7 +881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/bind-zones-example/" class="md-nav__link">
+      <a href="../dns/bind/bind-zones-example/" class="md-nav__link">
         Ejemplo - Zonas
       </a>
     </li>
@@ -999,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/bind/bind-zones-example-multiple/" class="md-nav__link">
+      <a href="../dns/bind/bind-zones-example-multiple/" class="md-nav__link">
         Ejemplo - Zonas múltiples
       </a>
     </li>
@@ -1023,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/dns-clients/" class="md-nav__link">
+      <a href="../dns/dns-clients/" class="md-nav__link">
         Configurando clientes
       </a>
     </li>
@@ -1035,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dns/dns-query/" class="md-nav__link">
+      <a href="../dns/dns-query/" class="md-nav__link">
         Consultas DNS
       </a>
     </li>
@@ -1077,7 +971,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samba/" class="md-nav__link">
+      <a href="../samba/" class="md-nav__link">
         ¿Qué es SAMBA?
       </a>
     </li>
@@ -1089,7 +983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samba/samba-install/" class="md-nav__link">
+      <a href="../samba/samba-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -1101,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samba/samba-manage-users/" class="md-nav__link">
+      <a href="../samba/samba-manage-users/" class="md-nav__link">
         Gestión de usuarios
       </a>
     </li>
@@ -1113,7 +1007,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samba/samba-share-user/" class="md-nav__link">
+      <a href="../samba/samba-share-user/" class="md-nav__link">
         Carpeta de usuario
       </a>
     </li>
@@ -1125,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samba/samba-share-group/" class="md-nav__link">
+      <a href="../samba/samba-share-group/" class="md-nav__link">
         Carpeta de grupo
       </a>
     </li>
@@ -1137,7 +1031,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samba/samba-share-guest/" class="md-nav__link">
+      <a href="../samba/samba-share-guest/" class="md-nav__link">
         Carpeta de invitados
       </a>
     </li>
@@ -1149,7 +1043,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samba/samba-windows-client/" class="md-nav__link">
+      <a href="../samba/samba-windows-client/" class="md-nav__link">
         Clientes Windows
       </a>
     </li>
@@ -1161,7 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../samba/samba-exercises/" class="md-nav__link">
+      <a href="../samba/samba-exercises/" class="md-nav__link">
         Ejercicios
       </a>
     </li>
@@ -1224,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/" class="md-nav__link">
+      <a href="../nagios/" class="md-nav__link">
         ¿Qué es Nagios?
       </a>
     </li>
@@ -1236,7 +1130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-install/" class="md-nav__link">
+      <a href="../nagios/nagios-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -1248,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-configuration/" class="md-nav__link">
+      <a href="../nagios/nagios-configuration/" class="md-nav__link">
         Configuración inicial
       </a>
     </li>
@@ -1260,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-hosts/" class="md-nav__link">
+      <a href="../nagios/nagios-hosts/" class="md-nav__link">
         Definiendo equipos
       </a>
     </li>
@@ -1272,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-groups/" class="md-nav__link">
+      <a href="../nagios/nagios-groups/" class="md-nav__link">
         Definiendo grupos
       </a>
     </li>
@@ -1284,7 +1178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-services/" class="md-nav__link">
+      <a href="../nagios/nagios-services/" class="md-nav__link">
         Definiendo servicios
       </a>
     </li>
@@ -1296,7 +1190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-agent/" class="md-nav__link">
+      <a href="../nagios/nagios-agent/" class="md-nav__link">
         Agente Windows
       </a>
     </li>
@@ -1308,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-icons/" class="md-nav__link">
+      <a href="../nagios/nagios-icons/" class="md-nav__link">
         Definiendo íconos
       </a>
     </li>
@@ -1320,7 +1214,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-exercises/" class="md-nav__link">
+      <a href="../nagios/nagios-exercises/" class="md-nav__link">
         Ejercicios
       </a>
     </li>
@@ -1332,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../nagios/nagios-resources/" class="md-nav__link">
+      <a href="../nagios/nagios-resources/" class="md-nav__link">
         Recursos adicionales
       </a>
     </li>
@@ -1357,12 +1251,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
       
       <label class="md-nav__link" for="__nav_8">
         Contenerización
@@ -1378,11 +1274,19 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../containers/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Introducción
       </a>
+      
     </li>
   
 
@@ -1413,7 +1317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/docker-introduction/" class="md-nav__link">
+      <a href="docker-introduction/" class="md-nav__link">
         ¿Qué es Docker?
       </a>
     </li>
@@ -1425,7 +1329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/docker-install/" class="md-nav__link">
+      <a href="docker-install/" class="md-nav__link">
         Instalación
       </a>
     </li>
@@ -1437,7 +1341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/docker-images/" class="md-nav__link">
+      <a href="docker-images/" class="md-nav__link">
         Imágenes
       </a>
     </li>
@@ -1449,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../containers/docker-compose/" class="md-nav__link">
+      <a href="docker-compose/" class="md-nav__link">
         Docker Compose
       </a>
     </li>
@@ -1475,172 +1379,20 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#formatos-de-paquetes" class="md-nav__link">
-    Formatos de paquetes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion-de-software" class="md-nav__link">
-    Instalación de software
-  </a>
-  
-    <nav class="md-nav" aria-label="Instalación de software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comando-basicos-para-gestion-de-software" class="md-nav__link">
-    Comando básicos para gestión de software
-  </a>
-  
-    <nav class="md-nav" aria-label="Comando básicos para gestión de software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#actualizar-la-informacion-de-los-repositorios" class="md-nav__link">
-    Actualizar la información de los repositorios
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actualizar-todos-los-paquetes-del-sistema" class="md-nav__link">
-    Actualizar todos los paquetes del sistema
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instalar-un-paquete-de-software-particular" class="md-nav__link">
-    Instalar un paquete de software particular
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eliminar-un-paquete-de-software" class="md-nav__link">
-    Eliminar un paquete de software
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remover-paquetes-no-utilizados" class="md-nav__link">
-    Remover paquetes no utilizados
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/la9una/redes/edit/master/docs/gnuLinux/software-packages.md" title="Editar esta página" class="md-content__button md-icon">
+                  <a href="https://github.com/la9una/redes/edit/master/docs/containers/index.md" title="Editar esta página" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Paquetes</h1>
+                  <h1>Introducción</h1>
                 
-                <p>El modelo de distribución y gestión de software en las diferentes <a href="https://es.wikipedia.org/wiki/Distribuci%C3%B3n_Linux">distribuciones de GNU/Linux</a> o versiones del sistema operativo GNU/Linux data de hace algunos años y se han ido optimizando con el tiempo, siendo emulado por otras plataformas y dispositivos. </p>
-<h2 id="formatos-de-paquetes">Formatos de paquetes<a class="headerlink" href="#formatos-de-paquetes" title="Permanent link">&para;</a></h2>
-<p>En ambientes *NIX es común referirse a los distintos programas de software bajo el nombre de "paquetes". No obstante, no existe un único tipo/formato de paquetes: estos dependen de cada distribución. </p>
-<div class="admonition done">
-<p class="admonition-title">Formatos de paquetes más respresentativos<p>Algunos de los formatos de paquetes más importantes según familias de distribuciones:</p>
-<ul>
-<li><code>.rpm</code> (CenOS, Fedora, RedHat, etc)</li>
-<li><code>.deb</code> (Debian, Ubuntu, Linux Mint, etc)</li>
-</ul>
-</p>
-</div>
-<h2 id="instalacion-de-software">Instalación de software<a class="headerlink" href="#instalacion-de-software" title="Permanent link">&para;</a></h2>
-<p>La instalación de software en distribuciones GNU/Linux se puede llevar adelante de diversas maneras: </p>
-<div style="margin:0 auto; text-align:center;" >
-<img src="../imgGNULinux/debian-software.svg" alt="Métodos de instalación de software en Linux Debian">
-  <figcaption>Algunos métodos de instalación de software en distribuciones basadas en Linux Debian y derivados</figcaption>
-</div>
-
-<ol>
-<li>A través de la tienda de aplicaciones propia de la distribución</li>
-<li>Empleando un gestor de paquetes alternativo (como, por ejemplo, <em>synaptic</em> o <em>aptitude</em>)</li>
-<li>Mediante un gestor de paquetes por terminal de comandos</li>
-<li>Descargando e instalando paquetes manualmente</li>
-<li>Usando paquetes <em>distribution agnostic</em> como <a href="https://snapcraft.io/store">Snap</a>, <a href="https://flathub.org/home">Flatpak</a> o <a href="https://appimage.github.io/apps/">Appimage</a> </li>
-<li>Compilando paquetes a partir de su código fuente</li>
-</ol>
-<p>En este curso, pondremos incapié en el punto 2. </p>
-<h3 id="comando-basicos-para-gestion-de-software">Comando básicos para gestión de software<a class="headerlink" href="#comando-basicos-para-gestion-de-software" title="Permanent link">&para;</a></h3>
-<p>A continuación se listan comandos básicos de gestión de software para distribuciones basadas en Debian, mediante el gestor de paquetes <strong>apt</strong>.</p>
-<h4 id="actualizar-la-informacion-de-los-repositorios">Actualizar la información de los repositorios<a class="headerlink" href="#actualizar-la-informacion-de-los-repositorios" title="Permanent link">&para;</a></h4>
-<p>Esta acción no instalará ningún paquete, solo comparará la base de datos de paquetes remota con la base de datos de paquetes instalados localemnte e informará actualizaciones en caso de existir.  </p>
-<div class="highlight"><pre><span></span><code>sudo apt update
-</code></pre></div>
-<h4 id="actualizar-todos-los-paquetes-del-sistema">Actualizar todos los paquetes del sistema<a class="headerlink" href="#actualizar-todos-los-paquetes-del-sistema" title="Permanent link">&para;</a></h4>
-<p>Para actualizar los paquetes de software del sistema local, sólo ejecutaremos el siguiente comando: </p>
-<p><div class="highlight"><pre><span></span><code>sudo apt upgrade
-</code></pre></div>
-Si además queremos incluir los cambios de versión mayor (como una versión de la distribución) ejecutamos: </p>
-<div class="highlight"><pre><span></span><code>sudo apt dist-upgrade
-</code></pre></div>
-<h4 id="instalar-un-paquete-de-software-particular">Instalar un paquete de software particular<a class="headerlink" href="#instalar-un-paquete-de-software-particular" title="Permanent link">&para;</a></h4>
-<p>Si sólo deseamos instalar uno o más paquetes puntuales, ejecutamos el siguiente comando: </p>
-<p><div class="highlight"><pre><span></span><code>sudo apt install &lt;paquete1&gt; &lt;paquete2&gt;
-</code></pre></div>
-Y el sistema se encargará de instalar automáticamente, las <strong>dependencias</strong> que cada paquete posea (es decir, el software adicional necesario para que el software que instalamos, funcione correctamente). </p>
-<h4 id="eliminar-un-paquete-de-software">Eliminar un paquete de software<a class="headerlink" href="#eliminar-un-paquete-de-software" title="Permanent link">&para;</a></h4>
-<p>Para desinstalar un paquete podemos hacerlo de dos maneras: desinstalar el paquete pero conservar sus archivos de configuración o desinstalarlo completamente. </p>
-<p>Para desinstalar sólamente el paquete: </p>
-<div class="highlight"><pre><span></span><code>sudo apt remove &lt;paquete&gt;
-</code></pre></div>
-<p>Si además queremos remover todos los archivos de configuración relacionados con el paquete a desinstalar: </p>
-<div class="highlight"><pre><span></span><code>sudo apt purge &lt;paquete&gt;
-</code></pre></div>
-<h4 id="remover-paquetes-no-utilizados">Remover paquetes no utilizados<a class="headerlink" href="#remover-paquetes-no-utilizados" title="Permanent link">&para;</a></h4>
-<p>Luego de desinstalar un paquete o por cambios en las dependencias de uno de ellos, es posible que tengamos instalados en el sistema, paquetes que no se utilizan. Adicionalmente, al realizar una actualización de repositorio, la información de los paquetes en nuestro sistema local puede quedar obsoleta, respecto de las actualizaciones realizadas en el repositorio remoto. </p>
-<p>Para eliminar paquetes que no se usan: </p>
-<p><div class="highlight"><pre><span></span><code>sudo apt autoremove
-</code></pre></div>
-Para eliminar indice de paquetes obsoleto: </p>
-<div class="highlight"><pre><span></span><code>sudo apt autoclean
-</code></pre></div>
-<p>''' done "Gestores de paquetes"
-        En distribuciones Debien, existen otros gestores de paquetes alternativos que ofrecen una interfaz gráfica o más amigable para la gestión de software. </p>
+                <p>La contenerización de aplicaciones es un método de virtualización alternativo al de la virtualización tradicional basada en máquinas virtuales y que se basa en la implementación de y ejecucción de aplicaciones distribuidas en contenedores aislados en un mismo host y que acceden a un único kernel. </p>
+<p>Los contenedores de aplicaciones contienen los componentes, como archivos, variables de entorno y bibliotecas, necesarios para ejecutar el software deseado. Debido a que los recursos se comparten de esta manera, se pueden crear contenedores de aplicaciones que ponen menos presión a los recursos globales disponibles. Por ejemplo, si se desea una variación de la imagen estándar, se puede crear un contenedor que contenga solo la nueva biblioteca.</p>
                 
               
               
@@ -1649,7 +1401,7 @@ Para eliminar indice de paquetes obsoleto: </p>
 
   <h2 id="__comments">Comentarios</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/docs/gnuLinux/software-packages/",this.page.identifier="/gnuLinux/software-packages/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
+  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/docs/containers/",this.page.identifier="/containers/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>
@@ -1664,7 +1416,7 @@ Para eliminar indice de paquetes obsoleto: </p>
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
         
-        <a href="../software-repositories/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Repositorios" rel="prev">
+        <a href="../nagios/nagios-resources/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Recursos adicionales" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1673,20 +1425,20 @@ Para eliminar indice de paquetes obsoleto: </p>
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Repositorios
+              Recursos adicionales
             </div>
           </div>
         </a>
       
       
         
-        <a href="../access-users/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Usuarios" rel="next">
+        <a href="docker-introduction/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: ¿Qué es Docker?" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Siguiente
               </span>
-              Usuarios
+              ¿Qué es Docker?
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1759,12 +1511,12 @@ Para eliminar indice de paquetes obsoleto: </p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copiar al portapapeles", "clipboard.copied": "Copiado al portapapeles", "search.config.lang": "es", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "B\u00fasqueda", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.term.missing": "Falta", "select.version.title": "Seleccionar versi\u00f3n"}, "search": "../assets/javascripts/workers/search.409db549.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56a63758.min.js"></script>
+      <script src="../assets/javascripts/bundle.56a63758.min.js"></script>
       
-        <script src="../../javascripts/config.js"></script>
+        <script src="../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
