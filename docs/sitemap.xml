@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/about/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://www.rauljesus.xyz/redes/docs/dns/</loc>
          <lastmod>2021-09-05</lastmod>
          <changefreq>daily</changefreq>
@@ -162,6 +167,96 @@
     </url>
     <url>
          <loc>http://www.rauljesus.xyz/redes/docs/lamp/lamp-virtualhosts/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/nagios/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/nagios/nagios-agent/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/nagios/nagios-configuration/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/nagios/nagios-groups/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/nagios/nagios-hosts/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/nagios/nagios-icons/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/nagios/nagios-install/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/nagios/nagios-resources/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/nagios/nagios-services/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/samba/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/samba/samba-exercises/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/samba/samba-install/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/samba/samba-manage-users/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/samba/samba-share-group/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/samba/samba-share-guest/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/samba/samba-share-user/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/samba/samba-windos-client/</loc>
+         <lastmod>2021-09-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://www.rauljesus.xyz/redes/docs/samba/samba-windows-users/</loc>
          <lastmod>2021-09-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
