@@ -105,3 +105,19 @@ E iniciamos sesión con las siguientes credenciales:
 
 * **Usuario**: root
 * **Contraseña**: la definida durante el proceso de instalación
+
+#### Creación de usuarios 
+Para crear nuevo usuario con privilegios para operar la base de datos o ingresar a phpmyadmin, ejecutamos en una terminal: 
+
+```bash
+sudo mysql -p -u root
+```
+E ingresamos la contraseña de root cuando se nos solicite. Habremos ingresado a mysql (veremos que el prompt ha cambiado a `MariaDB [(none)]> ` quedando a la espera de órdenes). A continuación ingresaremos los siguiente comandos, uno por vez: 
+
+```sql
+CREATE USER 'usuario'@'%' IDENTIFIED BY 'contraseña';
+GRANT ALL PRIVILEGES ON *.* TO 'itel'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+exit
+```
+Donde debemos reemplazar `usuario` por el nombre de usuario a crear y `contraseña` por la contraseña del mismo. 
