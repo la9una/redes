@@ -45,21 +45,6 @@ Podemos comprobar la instalación ejecutando:
 php --version
 ```
 
-#### Comandos útiles de Apache
-
-Podemos reiniciar Apache de la siguiente manera:  
-
-```bash
-sudo systemctl restart apache2
-```
-
-O bien: 
-
-```bash
-sudo /etc/init.d/apache2 restart
-```
-
-
 ### Instalación de phpMyAdmin
 Adicionalmente podemos instalar un gestor para nuestra base de datos, llamado **phpmyadmin** (junto a algunas librerías extra), ejecutando el siguiente comando: 
 
@@ -76,6 +61,22 @@ Para verificar el correcto funcionamiento del servidor, seguiremos los pasos que
 Abrimos el navegador web y nos dirigimos a la siguiente dirección: `http://nombreDominioServidor` o `http://direccionIPServidor`. En cualquier caso deberíamos visualizar la página de bienvenida del servidor web:
 
 ![Apache](imgLamp/lampWorks.png)
+
+#### Comandos útiles de Apache
+
+Podemos reiniciar Apache de la siguiente manera:  
+
+```bash
+sudo systemctl restart apache2
+```
+
+O bien: 
+
+```bash
+sudo /etc/init.d/apache2 restart
+```
+
+Se listan otros [comandos de uso frecuente en la presente documentación](lamp-basics.md#gestion-general-del-servidor). 
 
 
 ### PHP

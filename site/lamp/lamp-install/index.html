@@ -688,19 +688,6 @@
     Instalación de PHP 7.4
   </a>
   
-    <nav class="md-nav" aria-label="Instalación de PHP 7.4">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comandos-utiles-de-apache" class="md-nav__link">
-    Comandos útiles de Apache
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -722,6 +709,19 @@
   <a href="#apache" class="md-nav__link">
     Apache
   </a>
+  
+    <nav class="md-nav" aria-label="Apache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comandos-utiles-de-apache" class="md-nav__link">
+    Comandos útiles de Apache
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1433,19 +1433,6 @@
     Instalación de PHP 7.4
   </a>
   
-    <nav class="md-nav" aria-label="Instalación de PHP 7.4">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#comandos-utiles-de-apache" class="md-nav__link">
-    Comandos útiles de Apache
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1467,6 +1454,19 @@
   <a href="#apache" class="md-nav__link">
     Apache
   </a>
+  
+    <nav class="md-nav" aria-label="Apache">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comandos-utiles-de-apache" class="md-nav__link">
+    Comandos útiles de Apache
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1567,13 +1567,6 @@
 <p>Podemos comprobar la instalación ejecutando: </p>
 <div class="highlight"><pre><span></span><code>php --version
 </code></pre></div>
-<h4 id="comandos-utiles-de-apache">Comandos útiles de Apache<a class="headerlink" href="#comandos-utiles-de-apache" title="Permanent link">&para;</a></h4>
-<p>Podemos reiniciar Apache de la siguiente manera:  </p>
-<div class="highlight"><pre><span></span><code>sudo systemctl restart apache2
-</code></pre></div>
-<p>O bien: </p>
-<div class="highlight"><pre><span></span><code>sudo /etc/init.d/apache2 restart
-</code></pre></div>
 <h3 id="instalacion-de-phpmyadmin">Instalación de phpMyAdmin<a class="headerlink" href="#instalacion-de-phpmyadmin" title="Permanent link">&para;</a></h3>
 <p>Adicionalmente podemos instalar un gestor para nuestra base de datos, llamado <strong>phpmyadmin</strong> (junto a algunas librerías extra), ejecutando el siguiente comando: </p>
 <div class="highlight"><pre><span></span><code>sudo apt install phpmyadmin -y
@@ -1583,6 +1576,14 @@
 <h3 id="apache">Apache<a class="headerlink" href="#apache" title="Permanent link">&para;</a></h3>
 <p>Abrimos el navegador web y nos dirigimos a la siguiente dirección: <code>http://nombreDominioServidor</code> o <code>http://direccionIPServidor</code>. En cualquier caso deberíamos visualizar la página de bienvenida del servidor web:</p>
 <p><img alt="Apache" src="../imgLamp/lampWorks.png" /></p>
+<h4 id="comandos-utiles-de-apache">Comandos útiles de Apache<a class="headerlink" href="#comandos-utiles-de-apache" title="Permanent link">&para;</a></h4>
+<p>Podemos reiniciar Apache de la siguiente manera:  </p>
+<div class="highlight"><pre><span></span><code>sudo systemctl restart apache2
+</code></pre></div>
+<p>O bien: </p>
+<div class="highlight"><pre><span></span><code>sudo /etc/init.d/apache2 restart
+</code></pre></div>
+<p>Se listan otros <a href="../lamp-basics/#gestion-general-del-servidor">comandos de uso frecuente en la presente documentación</a>. </p>
 <h3 id="php">PHP<a class="headerlink" href="#php" title="Permanent link">&para;</a></h3>
 <p>Para verificar el correcto funcionamiento del motor PHP sobre el servidor web Apache, tendremos que habilitar el módulo de Apache correspondiente y creaar una página con contenido PHP (que deberá tener la extensión .php)</p>
 <h4 id="habitando-el-modulo-php-en-apache">Habitando el módulo PHP en Apache<a class="headerlink" href="#habitando-el-modulo-php-en-apache" title="Permanent link">&para;</a></h4>
