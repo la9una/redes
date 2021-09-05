@@ -21,15 +21,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: 'deep orange'
-      accent: 'deep orange'
+      primary: 'indigo'
+      accent: 'indigo'
       toggle:
         icon: material/lightbulb
         name: Cambiar a modo oscuro
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: 'deep orange'
-      accent: 'deep orange'
+      primary: 'indigo'
+      accent: 'indigo'
       toggle:
         icon: material/lightbulb-outline
         name: Cambiar a modo claro

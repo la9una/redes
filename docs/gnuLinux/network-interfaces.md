@@ -1,5 +1,10 @@
 En GNU/Linux disponemos de multitud de herramientas gráficas para configurar la red. Sin embargo, podemos realizar las mismas configuraciones desde la terminal, sobre todo, si estamos frente a un terminal que no posee entorno gráfico. 
 
+
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/linux-network.jpg" alt="Linux Network">
+</div>
+
 El presente tutorial aplica a sistemas basados en Debian. En cualquier caso, tendremos que editar el siguiente archivo: 
 
 ```bash

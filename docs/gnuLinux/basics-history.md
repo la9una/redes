@@ -2,7 +2,7 @@ Al año 2020, el kernel de Linux contenía 27,8 millones de líneas de código. 
 
 ## Los inicios de Linux
 
-El sistema operativo Linux comenzó como un pasatiempo de un joven estudiante finlandés por entonces de 21 años, llamado [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds). 
+El sistema operativo Linux comenzó como un pasatiempo de un joven estudiante finlandés de 21 años, llamado [Linus Torvalds](https://es.wikipedia.org/wiki/Linus_Torvalds). 
 
 
 <div style="margin:0 auto; text-align:center;" >

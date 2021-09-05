@@ -1,5 +1,9 @@
 Sugerencias, trucos para mejorar tu experiencia usando GNU/Linux
 
+<div style="margin:0 auto; text-align:center;" >
+<img src="../imgGNULinux/linux-tips.jpg" alt="Linux Tips">
+</div>
+
 ## Visualizando archivos y carpetas en forma de árbol
 La herramienta `tree` como su nombre lo indica, muestra el sistema de archivos bajo la forma de árbol, ofreciendo una experiencia más usable. 
 
