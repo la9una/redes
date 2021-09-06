@@ -44,7 +44,7 @@ theme:
 
 # Extra
 extra:
-  disqus: 'rauljesus-xyz'
+#  disqus: 'rauljesus-xyz'
   manifest: manifest.webmanifest
   social:
     - icon: fontawesome/brands/twitter

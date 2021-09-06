@@ -73,7 +73,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#imagenes-docker-hub" class="md-skip">
+        <a href="#gestion-de-imagenes" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -1369,11 +1369,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#imagenes-docker-hub" class="md-nav__link">
-    IMÁGENES (DOCKER HUB)
+  <a href="#gestion-de-imagenes" class="md-nav__link">
+    Gestión de imágenes
   </a>
   
-    <nav class="md-nav" aria-label="IMÁGENES (DOCKER HUB)">
+    <nav class="md-nav" aria-label="Gestión de imágenes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1391,8 +1391,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ver-imagenes-descargadas" class="md-nav__link">
-    Ver imagenes descargadas
+  <a href="#listar-imagenes-descargadas" class="md-nav__link">
+    Listar imagenes descargadas
   </a>
   
 </li>
@@ -1411,10 +1411,10 @@
       
         <li class="md-nav__item">
   <a href="#imagenes-personalizadas" class="md-nav__link">
-    IMÁGENES PERSONALIZADAS
+    Imágenes personalizadas
   </a>
   
-    <nav class="md-nav" aria-label="IMÁGENES PERSONALIZADAS">
+    <nav class="md-nav" aria-label="Imágenes personalizadas">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1422,8 +1422,7 @@
     El archivo Dockerfile
   </a>
   
-    <nav class="md-nav" aria-label="El archivo Dockerfile">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#algunas-instrucciones-de-un-dockerfile" class="md-nav__link">
@@ -1498,11 +1497,6 @@
   <a href="#ejemplos-de-dockerfile" class="md-nav__link">
     Ejemplos de Dockerfile
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1598,11 +1592,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#imagenes-docker-hub" class="md-nav__link">
-    IMÁGENES (DOCKER HUB)
+  <a href="#gestion-de-imagenes" class="md-nav__link">
+    Gestión de imágenes
   </a>
   
-    <nav class="md-nav" aria-label="IMÁGENES (DOCKER HUB)">
+    <nav class="md-nav" aria-label="Gestión de imágenes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1620,8 +1614,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ver-imagenes-descargadas" class="md-nav__link">
-    Ver imagenes descargadas
+  <a href="#listar-imagenes-descargadas" class="md-nav__link">
+    Listar imagenes descargadas
   </a>
   
 </li>
@@ -1640,10 +1634,10 @@
       
         <li class="md-nav__item">
   <a href="#imagenes-personalizadas" class="md-nav__link">
-    IMÁGENES PERSONALIZADAS
+    Imágenes personalizadas
   </a>
   
-    <nav class="md-nav" aria-label="IMÁGENES PERSONALIZADAS">
+    <nav class="md-nav" aria-label="Imágenes personalizadas">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1651,8 +1645,7 @@
     El archivo Dockerfile
   </a>
   
-    <nav class="md-nav" aria-label="El archivo Dockerfile">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#algunas-instrucciones-de-un-dockerfile" class="md-nav__link">
@@ -1730,11 +1723,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#generando-imagen-a-partir-del-dockerfile" class="md-nav__link">
     Generando imagen a partir del Dockerfile
@@ -1766,8 +1754,8 @@
                 
                   <h1>Imágenes</h1>
                 
-                <p>Las imagenes Docker son plantillas, una suerte de instantánea o fotografía del estado de un contenedor y que puede ser empleada para crear otros contenedores. Las imágenes están formadas por diferentes "capas", incluyendo una aplicación, los binarios y las librerias necesarias. </p>
-<h2 id="imagenes-docker-hub">IMÁGENES (DOCKER HUB)<a class="headerlink" href="#imagenes-docker-hub" title="Permanent link">&para;</a></h2>
+                <p>Las imagenes Docker son plantillas a partir de las cuáles pueden crearse contenedores. Las imágenes están formadas por diferentes "capas", incluyendo una aplicación, los binarios y las librerias necesarias. </p>
+<h2 id="gestion-de-imagenes">Gestión de imágenes<a class="headerlink" href="#gestion-de-imagenes" title="Permanent link">&para;</a></h2>
 <p>Docker posee un repositorio público de imágenes "prefabricadas", creadas por empresas o particulares. Las mimas pueden encontrarse en <a href="https://hub.docker.com/">Docker Hub</a>.</p>
 <p>Las instrucciones que siguen aplican a la gestión de imágenes Docker a través de la terminal de comandos. </p>
 <h3 id="buscar-imagenes">Buscar imágenes<a class="headerlink" href="#buscar-imagenes" title="Permanent link">&para;</a></h3>
@@ -1790,7 +1778,7 @@
 <div class="highlight"><pre><span></span><code>dockker pull debian:9.13
 </code></pre></div>
 <p><em>En este caso, se descargará a nuestro equipo la imagen de Debian, versión 9.13</em></p>
-<h3 id="ver-imagenes-descargadas">Ver imagenes descargadas<a class="headerlink" href="#ver-imagenes-descargadas" title="Permanent link">&para;</a></h3>
+<h3 id="listar-imagenes-descargadas">Listar imagenes descargadas<a class="headerlink" href="#listar-imagenes-descargadas" title="Permanent link">&para;</a></h3>
 <p>Para visualizar las imágenes que ya hemos descargado a nuestro equipo, ejecutamos: </p>
 <p><div class="highlight"><pre><span></span><code>docker images <span class="o">[</span>-a<span class="o">]</span> <span class="o">[</span>-q<span class="o">]</span>
 </code></pre></div>
@@ -1812,14 +1800,14 @@ Donde <code>-a</code> y <code>-q</code> son opcionales:</p>
 <p>O bien: </p>
 <div class="highlight"><pre><span></span><code>docker rmi <span class="k">$(</span>docker images -q<span class="k">)</span> -f
 </code></pre></div>
-<p>Por último: </p>
+<p>También: </p>
 <div class="highlight"><pre><span></span><code>docker images purge
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Borrar imágenes en uso</p>
 <p>Sólo se podrán borrar aquellas imágenes que no estén siendo utilizadas por ningún contenedor. </p>
 </div>
-<h2 id="imagenes-personalizadas">IMÁGENES PERSONALIZADAS<a class="headerlink" href="#imagenes-personalizadas" title="Permanent link">&para;</a></h2>
+<h2 id="imagenes-personalizadas">Imágenes personalizadas<a class="headerlink" href="#imagenes-personalizadas" title="Permanent link">&para;</a></h2>
 <p>Nó sólo podemos emplear las imágenes descargadas de Docker Hub "así como están" sino que podemos personalizarlas según nuestras necesidades. </p>
 <h3 id="el-archivo-dockerfile">El archivo Dockerfile<a class="headerlink" href="#el-archivo-dockerfile" title="Permanent link">&para;</a></h3>
 <p>Es un archivo de texto plano que contiene ciertas instrucciones mediante las cuáles crearemos nuestra imagen personalizada de Docker. Su sintaxis básica es la siguiente:</p>
@@ -1828,41 +1816,41 @@ INSTRUCTION1 arguments
 INSTRUCTION2 arguments
 ...
 </code></pre></div>
-<h4 id="algunas-instrucciones-de-un-dockerfile">Algunas instrucciones de un Dockerfile<a class="headerlink" href="#algunas-instrucciones-de-un-dockerfile" title="Permanent link">&para;</a></h4>
+<h3 id="algunas-instrucciones-de-un-dockerfile">Algunas instrucciones de un Dockerfile<a class="headerlink" href="#algunas-instrucciones-de-un-dockerfile" title="Permanent link">&para;</a></h3>
 <p>A continuación, listamos las instrucciones de Dockerfile más utilizadas</p>
-<h5 id="from">FROM<a class="headerlink" href="#from" title="Permanent link">&para;</a></h5>
+<h4 id="from">FROM<a class="headerlink" href="#from" title="Permanent link">&para;</a></h4>
 <p><div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="s">&lt;imagen&gt;[:tag]</span>
 </code></pre></div>
 Establece la imagen de base con la que se construirá la imagen personalizada.</p>
-<h5 id="maintainer">MAINTAINER<a class="headerlink" href="#maintainer" title="Permanent link">&para;</a></h5>
+<h4 id="maintainer">MAINTAINER<a class="headerlink" href="#maintainer" title="Permanent link">&para;</a></h4>
 <p><div class="highlight"><pre><span></span><code><span class="k">MAINTAINER</span><span class="s"> &lt;autor&gt; &lt;email&gt;</span>
 </code></pre></div>
 Nos permite indicar el autor del Dockerfile</p>
-<h5 id="run">RUN<a class="headerlink" href="#run" title="Permanent link">&para;</a></h5>
+<h4 id="run">RUN<a class="headerlink" href="#run" title="Permanent link">&para;</a></h4>
 <p><div class="highlight"><pre><span></span><code><span class="k">RUN</span> &lt;comandos&gt;
 </code></pre></div>
 Ejecuta comandos cuando se está construyendo una imagen personalizada.</p>
-<h5 id="cmd">CMD<a class="headerlink" href="#cmd" title="Permanent link">&para;</a></h5>
+<h4 id="cmd">CMD<a class="headerlink" href="#cmd" title="Permanent link">&para;</a></h4>
 <p><div class="highlight"><pre><span></span><code><span class="k">CMD</span> &lt;comandos&gt;
 </code></pre></div>
 Pasa valores por defecto en la imagen para que se ejecuten cuando se lance un contenedor.</p>
-<h5 id="copy">COPY<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h5>
+<h4 id="copy">COPY<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h4>
 <p><div class="highlight"><pre><span></span><code><span class="k">COPY</span> &lt;origen&gt; &lt;destino&gt;
 </code></pre></div>
 Copia archivos desde <origen> local hacia un <destino> en el contenedor</p>
-<h5 id="add">ADD<a class="headerlink" href="#add" title="Permanent link">&para;</a></h5>
+<h4 id="add">ADD<a class="headerlink" href="#add" title="Permanent link">&para;</a></h4>
 <p><div class="highlight"><pre><span></span><code><span class="k">ADD</span> &lt;origen&gt; &lt;destino&gt;
 </code></pre></div>
 Copia archivos desde <origen> local ó remoto hacia un <destino> en el contenedor</p>
-<h5 id="env">ENV<a class="headerlink" href="#env" title="Permanent link">&para;</a></h5>
+<h4 id="env">ENV<a class="headerlink" href="#env" title="Permanent link">&para;</a></h4>
 <p><div class="highlight"><pre><span></span><code><span class="k">ENV</span> &lt;<span class="nv">clave</span><span class="o">=</span>valor&gt;
 </code></pre></div>
 Inicializa variables de entorno (sistema), con el formato "clave=valor".</p>
-<h5 id="expose">EXPOSE<a class="headerlink" href="#expose" title="Permanent link">&para;</a></h5>
+<h4 id="expose">EXPOSE<a class="headerlink" href="#expose" title="Permanent link">&para;</a></h4>
 <p><div class="highlight"><pre><span></span><code><span class="k">EXPOSE</span><span class="s"> &lt;port&gt;</span>
 </code></pre></div>
 Indica los puertos TCP/IP por los que se pueden acceder a los servicios del contenedor.</p>
-<h4 id="ejemplos-de-dockerfile">Ejemplos de Dockerfile<a class="headerlink" href="#ejemplos-de-dockerfile" title="Permanent link">&para;</a></h4>
+<h3 id="ejemplos-de-dockerfile">Ejemplos de Dockerfile<a class="headerlink" href="#ejemplos-de-dockerfile" title="Permanent link">&para;</a></h3>
 <p>Ejemplo de contenido de un Dockerfile que creará una imagen partiendo de Centos e instalará un servidor web:</p>
 <div class="highlight"><pre><span></span><code><span class="k">FROM</span> <span class="s">centos</span>
 <span class="k">RUN</span> yum install httpd -y
@@ -1898,10 +1886,6 @@ Por ejemplo: </p>
               
                 
 
-
-  <h2 id="__comments">Comentarios</h2>
-  <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/docs/containers/docker-images/",this.page.identifier="/containers/docker-images/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>

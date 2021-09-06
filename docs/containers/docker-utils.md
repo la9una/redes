@@ -1,4 +1,5 @@
-## Comandos útiles
+Comandos de uso frecuente para la gestión de contenedores Docker. 
+
 ### Historial de una imagen
 
 ```bash

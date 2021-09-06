@@ -1,6 +1,6 @@
-Las imagenes Docker son plantillas, una suerte de instantánea o fotografía del estado de un contenedor y que puede ser empleada para crear otros contenedores. Las imágenes están formadas por diferentes "capas", incluyendo una aplicación, los binarios y las librerias necesarias. 
+Las imagenes Docker son plantillas a partir de las cuáles pueden crearse contenedores. Las imágenes están formadas por diferentes "capas", incluyendo una aplicación, los binarios y las librerias necesarias. 
 
-## IMÁGENES (DOCKER HUB)
+## Gestión de imágenes
 Docker posee un repositorio público de imágenes "prefabricadas", creadas por empresas o particulares. Las mimas pueden encontrarse en [Docker Hub](https://hub.docker.com/).
 
 Las instrucciones que siguen aplican a la gestión de imágenes Docker a través de la terminal de comandos. 
@@ -43,10 +43,7 @@ dockker pull debian:9.13
 
 *En este caso, se descargará a nuestro equipo la imagen de Debian, versión 9.13*
 
-
-
-
-### Ver imagenes descargadas
+### Listar imagenes descargadas
 Para visualizar las imágenes que ya hemos descargado a nuestro equipo, ejecutamos: 
 
 ```docker
@@ -83,7 +80,7 @@ O bien:
 docker rmi $(docker images -q) -f
 ```
 
-Por último: 
+También: 
 
 ```docker
 docker images purge
@@ -93,7 +90,7 @@ docker images purge
 	Sólo se podrán borrar aquellas imágenes que no estén siendo utilizadas por ningún contenedor. 
 
 
-## IMÁGENES PERSONALIZADAS
+## Imágenes personalizadas
 Nó sólo podemos emplear las imágenes descargadas de Docker Hub "así como están" sino que podemos personalizarlas según nuestras necesidades. 
 
 ### El archivo Dockerfile
@@ -106,58 +103,58 @@ INSTRUCTION2 arguments
 ...
 ```
 
-#### Algunas instrucciones de un Dockerfile
+### Algunas instrucciones de un Dockerfile
 A continuación, listamos las instrucciones de Dockerfile más utilizadas
 
-##### FROM
+#### FROM
 ```docker
 FROM <imagen>[:tag]
 ```
 Establece la imagen de base con la que se construirá la imagen personalizada.
 
-##### MAINTAINER
+#### MAINTAINER
 ```docker
 MAINTAINER <autor> <email>
 ```
 Nos permite indicar el autor del Dockerfile
 
-##### RUN
+#### RUN
 ```docker
 RUN <comandos>
 ```
 Ejecuta comandos cuando se está construyendo una imagen personalizada.
 
-##### CMD
+#### CMD
 ```docker
 CMD <comandos>
 ```
 Pasa valores por defecto en la imagen para que se ejecuten cuando se lance un contenedor.
 
-##### COPY 
+#### COPY 
 ```docker
 COPY <origen> <destino>
 ```
 Copia archivos desde <origen> local hacia un <destino> en el contenedor
 
-##### ADD
+#### ADD
 ```docker
 ADD <origen> <destino>
 ```
 Copia archivos desde <origen> local ó remoto hacia un <destino> en el contenedor
 
-##### ENV
+#### ENV
 ```docker
 ENV <clave=valor>
 ```
 Inicializa variables de entorno (sistema), con el formato "clave=valor".
 
-##### EXPOSE
+#### EXPOSE
 ```docker
 EXPOSE <port>
 ```
 Indica los puertos TCP/IP por los que se pueden acceder a los servicios del contenedor.
 
-#### Ejemplos de Dockerfile
+### Ejemplos de Dockerfile
 Ejemplo de contenido de un Dockerfile que creará una imagen partiendo de Centos e instalará un servidor web:
 
 ```docker
