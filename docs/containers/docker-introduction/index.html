@@ -72,6 +72,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#por-que-usar-docker" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1318,9 +1323,37 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ¿Qué es Docker?
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         ¿Qué es Docker?
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-usar-docker" class="md-nav__link">
+    ¿Por qué usar Docker?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1405,6 +1438,36 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-usar-docker" class="md-nav__link">
+    ¿Por qué usar Docker?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -1417,19 +1480,28 @@
                 
                   <h1>¿Qué es Docker?</h1>
                 
-                <div style="margin:0 auto; text-align:center;" >
+                <p>Según AWS (Amazon Web Services): </p>
+<blockquote>
+<p>Docker es una plataforma de software que le permite crear, probar e implementar aplicaciones rápidamente. Docker empaqueta software en unidades estandarizadas llamadas contenedores que incluyen todo lo necesario para que el software se ejecute, incluidas bibliotecas, herramientas de sistema, código y tiempo de ejecución. Con Docker, puede implementar y ajustar la escala de aplicaciones rápidamente en cualquier entorno con la certeza de saber que su código se ejecutará.</p>
+</blockquote>
+<div style="margin:0 auto; text-align:center;" >
 <img src="../imgContainer/docker-logo.png" alt="Logo de Docker">
-  <figcaption>Logo de Docker</figcaption>
 </div>
+
+<h2 id="por-que-usar-docker">¿Por qué usar Docker?<a class="headerlink" href="#por-que-usar-docker" title="Permanent link">&para;</a></h2>
+<p>Existen varios beneficios asociadas al uso de contenedores Docker: </p>
+<ul>
+<li>Despliegue rápido: de aplicaciones y servicios, con enfoque en <a href="https://es.wikipedia.org/wiki/Integraci%C3%B3n_continua">CI</a>/<a href="https://es.wikipedia.org/wiki/Entrega_continua">CD</a>. </li>
+<li>Estandarización de procesos: tanto de desarrollo como de despliegue de aplicaciones</li>
+<li>Portabilidad: transferencia ágil de contenedores de una plataforma a otra</li>
+<li>Consumo ínfimo de recursos, al segregar procesos que se ejecutan de manera independiente, gracias al empleo de características y funciones del kernel de Linux, como <a href="https://clibre.io/blog/por-secciones/hardening/item/425-cgroups-grupos-de-control-en-gnu-linux">Cgroups</a> y <a href="https://clibre.io/blog/por-secciones/hardening/item/384-namespaces-aislar-los-procesos-de-linux-en-sus-propios-entornos-de-sistema">namespaces</a></li>
+</ul>
+<p>Por diseño, Docker está orientado a los microservicios, los cuáles presentan <a href="https://aws.amazon.com/es/microservices/">notables ventajas en relación a arquitecturas monolíticas tradicionales</a> en ámbitos de desarrollo de software. </p>
                 
               
               
                 
 
-
-  <h2 id="__comments">Comentarios</h2>
-  <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="http://www.rauljesus.xyz/redes/docs/containers/docker-introduction/",this.page.identifier="/containers/docker-introduction/"};window.addEventListener("load",function(){var e=document,i=e.createElement("script");i.src="//rauljesus-xyz.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)})</script>
 
               
             </article>
