@@ -1,10 +1,10 @@
 Una de las aplicaciones de la característica de Apache llamada _VirtualHosts_ consiste en la posibilidad de crear **diferentes sitios web** cada uno con su **nombre de dominio propio** aunque éstos se encuentren alojados en un mismo servidor y, por lo tanto, tengan **la misma dirección IP**. 
 
-!!! blockquote "¿Qué es Virtual Host?"
+!!! blockquote "¿Qué es un Virtual Host?"
 
-	El término **Hosting Virtual** se refiere a hacer funcionar más de un sitio web tales como `www.company1.com` y `www.company2.com` en una sola máquina. 
+	El término **Host Virtual** está asociado a la creación de más de un sitio web (por ejemplo, `www.company1.com` y `www.company2.com`) en un mismo servidor. 
 
-	Los sitios web virtuales pueden estar **basados en direcciones IP**, lo que significa que cada sitio web tiene una dirección IP diferente, o **basados en nombres diferentes**, lo que significa que con una sola dirección IP están funcionando sitios web con diferentes nombres (de dominio). 
+	Los sitios web virtuales pueden estar **basados en direcciones IP**, lo que significa que cada sitio web tiene una dirección IP diferente, o **basados en nombres diferentes**, lo que significa que con una sola dirección IP podemos configurar diversos sitios web con diferentes nombres (de dominio). 
 
 	El hecho de que estén funcionando en la misma máquina física pasa completamente desapercibido para el usuario que visita esos sitios web.
 

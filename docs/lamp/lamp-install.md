@@ -101,7 +101,7 @@ sudo a2enmod php<version>
 Donde `<version>` hace referencia al número de versión de PHP instalada. 
 
 
-Finalmente, para mantener los cambios realizadosreiniciamos Apache: 
+Finalmente, para mantener los cambios realizados, reiniciamos Apache: 
 
 ```bash
 sudo systemctl restart apache2
@@ -130,12 +130,12 @@ Abrimos nuestro navegador y nos dirigimos a `http://nombreDominioServidor/phpmya
 ![phpMyAdmin](imgLamp/lampPhpMyAdmin.png)
 
 #### Creación de usuarios 
-Para crear nuevo usuario con privilegios para operar la base de datos o ingresar a phpmyadmin, ejecutamos en una terminal: 
+Para crear nuevo usuario con privilegios para operar la base de datos o ingresar a phpmyadmin, ejecutamos en una terminal (y escribimos la contraseña de root cuando se nos solicite): 
 
 ```bash
 sudo mysql -p -u root
 ```
-E ingresamos la contraseña de root cuando se nos solicite. Habremos ingresado a mysql (veremos que el prompt ha cambiado a `MariaDB [(none)]> ` quedando a la espera de órdenes). A continuación ingresaremos los siguiente comandos, uno por vez: 
+Habremos ingresado a la base de datos MariaDB (veremos que el prompt ha cambiado a `MariaDB [(none)]> ` quedando a la espera de órdenes). A continuación ingresaremos los siguiente comandos (una orden por vez): 
 
 ```sql
 CREATE USER 'user'@'%' IDENTIFIED BY 'password';
