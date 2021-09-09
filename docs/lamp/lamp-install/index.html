@@ -1736,7 +1736,7 @@ Luego, ejecutar como superusuario el siguiente comando, a fin de configurar Apac
 <p><div class="highlight"><pre><span></span><code>sudo a2enmod php&lt;version&gt;
 </code></pre></div>
 Donde <code>&lt;version&gt;</code> hace referencia al número de versión de PHP instalada. </p>
-<p>Finalmente, para mantener los cambios realizadosreiniciamos Apache: </p>
+<p>Finalmente, para mantener los cambios realizados, reiniciamos Apache: </p>
 <div class="highlight"><pre><span></span><code>sudo systemctl restart apache2
 </code></pre></div>
 <h4 id="creando-una-pagina-php-de-prueba">Creando una página PHP de prueba<a class="headerlink" href="#creando-una-pagina-php-de-prueba" title="Permanent link">&para;</a></h4>
@@ -1754,10 +1754,10 @@ Luego de guardar los cambios al archivo, abrimos un navegador web y visitamos la
 <p>Abrimos nuestro navegador y nos dirigimos a <code>http://nombreDominioServidor/phpmyadmin</code> ó <code>http://direccionIPServidor/phpmyadmin</code>. Veremos una página similar a ésta: </p>
 <p><img alt="phpMyAdmin" src="../imgLamp/lampPhpMyAdmin.png" /></p>
 <h4 id="creacion-de-usuarios">Creación de usuarios<a class="headerlink" href="#creacion-de-usuarios" title="Permanent link">&para;</a></h4>
-<p>Para crear nuevo usuario con privilegios para operar la base de datos o ingresar a phpmyadmin, ejecutamos en una terminal: </p>
+<p>Para crear nuevo usuario con privilegios para operar la base de datos o ingresar a phpmyadmin, ejecutamos en una terminal (y escribimos la contraseña de root cuando se nos solicite): </p>
 <p><div class="highlight"><pre><span></span><code>sudo mysql -p -u root
 </code></pre></div>
-E ingresamos la contraseña de root cuando se nos solicite. Habremos ingresado a mysql (veremos que el prompt ha cambiado a <code>MariaDB [(none)]&gt;</code> quedando a la espera de órdenes). A continuación ingresaremos los siguiente comandos, uno por vez: </p>
+Habremos ingresado a la base de datos MariaDB (veremos que el prompt ha cambiado a <code>MariaDB [(none)]&gt;</code> quedando a la espera de órdenes). A continuación ingresaremos los siguiente comandos (una orden por vez): </p>
 <p><div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="k">USER</span> <span class="s1">&#39;user&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span> <span class="n">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;password&#39;</span><span class="p">;</span>
 <span class="k">GRANT</span> <span class="k">ALL</span> <span class="k">PRIVILEGES</span> <span class="k">ON</span> <span class="o">*</span><span class="p">.</span><span class="o">*</span> <span class="k">TO</span> <span class="s1">&#39;user&#39;</span><span class="o">@</span><span class="s1">&#39;%&#39;</span> <span class="k">WITH</span> <span class="k">GRANT</span> <span class="k">OPTION</span><span class="p">;</span>
 <span class="n">FLUSH</span> <span class="k">PRIVILEGES</span><span class="p">;</span>
