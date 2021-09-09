@@ -33,7 +33,7 @@ El paso siguiente será establecer la contraseña de la base de datos
 sudo mysql_secure_installation
 ```
 
-### Instalación de PHP 7.4
+### Instalación de PHP
 
 ```bash
 sudo apt install php -y
@@ -51,6 +51,15 @@ Adicionalmente podemos instalar un gestor para nuestra base de datos, llamado **
 ```bash
 sudo apt install phpmyadmin -y
 ```
+Luego, ejecutar como superusuario el siguiente comando, a fin de configurar Apache con phpmyadmin:
+
+```bash
+echo "Include /etc/phpmyadmin/apache.conf" >> /etc/apache2/apache2.conf 
+```
+
+Finalmente, [reiniciar Apache](#comandos-utiles-de-apache). 
+
+
 
 ## Verificando la instalación
 
