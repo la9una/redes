@@ -2,7 +2,7 @@ El **DNS** (por sus siglas en inglés _Domain Name System_) o **sistema de nombr
 
 
 <div style="margin:0 auto; text-align:center;" >
-<img src="imgDNS/dns.jpg" alt="DNS">
+<img src="imgDNS/dns.png" alt="DNS">
 </div>
 
 !!!done "Uso del DNS"
@@ -80,6 +80,10 @@ Para resolver una consulta, un servidor de nombres debe conocer a lo menos a los
 
 8. El servidor inicial informa al cliente el nombre resuelto.
 
+
+<div style="margin:0 auto; text-align:center;" >
+<img src="imgDNS/dns-steps.png" alt="DNS Resolution">
+</div>
 
 ## Tipos de servidores DNS
 
