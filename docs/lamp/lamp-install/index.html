@@ -684,8 +684,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-php-74" class="md-nav__link">
-    Instalación de PHP 7.4
+  <a href="#instalacion-de-php" class="md-nav__link">
+    Instalación de PHP
   </a>
   
 </li>
@@ -1570,8 +1570,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#instalacion-de-php-74" class="md-nav__link">
-    Instalación de PHP 7.4
+  <a href="#instalacion-de-php" class="md-nav__link">
+    Instalación de PHP
   </a>
   
 </li>
@@ -1702,7 +1702,7 @@
 <p>El paso siguiente será establecer la contraseña de la base de datos</p>
 <div class="highlight"><pre><span></span><code>sudo mysql_secure_installation
 </code></pre></div>
-<h3 id="instalacion-de-php-74">Instalación de PHP 7.4<a class="headerlink" href="#instalacion-de-php-74" title="Permanent link">&para;</a></h3>
+<h3 id="instalacion-de-php">Instalación de PHP<a class="headerlink" href="#instalacion-de-php" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>sudo apt install php -y
 </code></pre></div>
 <p>Podemos comprobar la instalación ejecutando: </p>
@@ -1710,8 +1710,12 @@
 </code></pre></div>
 <h3 id="instalacion-de-phpmyadmin">Instalación de phpMyAdmin<a class="headerlink" href="#instalacion-de-phpmyadmin" title="Permanent link">&para;</a></h3>
 <p>Adicionalmente podemos instalar un gestor para nuestra base de datos, llamado <strong>phpmyadmin</strong> (junto a algunas librerías extra), ejecutando el siguiente comando: </p>
-<div class="highlight"><pre><span></span><code>sudo apt install phpmyadmin -y
+<p><div class="highlight"><pre><span></span><code>sudo apt install phpmyadmin -y
 </code></pre></div>
+Luego, ejecutar como superusuario el siguiente comando, a fin de configurar Apache con phpmyadmin:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;Include /etc/phpmyadmin/apache.conf&quot;</span> &gt;&gt; /etc/apache2/apache2.conf 
+</code></pre></div>
+<p>Finalmente, <a href="#comandos-utiles-de-apache">reiniciar Apache</a>. </p>
 <h2 id="verificando-la-instalacion">Verificando la instalación<a class="headerlink" href="#verificando-la-instalacion" title="Permanent link">&para;</a></h2>
 <p>Para verificar el correcto funcionamiento del servidor, seguiremos los pasos que se detallan a continuación.</p>
 <h3 id="apache">Apache<a class="headerlink" href="#apache" title="Permanent link">&para;</a></h3>
